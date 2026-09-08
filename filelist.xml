@@ -18,7 +18,6 @@
   <Afflictions file="%ModDir%/Afflictions/Afflictions.xml" />
   <NPCSets file="%ModDir%/Missions/CustomNPCs.xml" />
   <Item file="%ModDir%/Items/EMmaterials.xml" />
-  <Sounds file="%ModDir%/Audio/sounds.xml" />
   <Item file="%ModDir%/Items/Vanillacreatureitems.xml" />
   <Item file="%ModDir%/Items/Alienitems.xml" />
   <Item file="%ModDir%/Items/OtherScreatureitems.xml" />
