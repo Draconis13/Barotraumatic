@@ -18,30 +18,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
-  <!--<Affliction name="Cytokine Storm" identifier="cytokine" description="The patient has trouble breathing and is vomiting frequently." type="poison" limbspecific="false" showiconthreshold="10" maxstrength="100">
-    <Effect minstrength="0" maxstrength="30" strengthchange="0.5" />
-    <Affliction identifier="oxygenlow" amount="5" />
-    <Affliction identifier="nausea" amount="0.2" />
-    <Effect minstrength="30" maxstrength="85" strengthchange="0.5">
-      <StatusEffect target="Character">
-        <Affliction identifier="oxygenlow" amount="10" />
-        <Affliction identifier="nausea" amount="1" />
-      </StatusEffect>
-    </Effect>
-    <Effect minstrength="85" maxstrength="95" strengthchange="0.5">
-      <StatusEffect target="Character">
-        <Affliction identifier="oxygenlow" amount="15" />
-        <Affliction identifier="nausea" amount="3" />
-      </StatusEffect>
-    </Effect>
-    <Effect minstrength="95" maxstrength="100" strengthchange="0.5">
-      <StatusEffect target="Character">
-        <Affliction identifier="oxygenlow" amount="15" />
-        <Affliction identifier="paralysis" amount="0.4" />
-      </StatusEffect>
-    </Effect>
-    <icon texture="%ModDir:2518816103%/Items/Herbs/contaminationv1.png" sourcerect="0,0,130,128" origin="0,0" color="10,193,114,255" />
-  </Affliction>-->
+  
   <Affliction name="Armed" identifier="fractalarmed" description="This guardian has a weapon and is not afraid to use it!" type="fractalarmed" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
       <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
