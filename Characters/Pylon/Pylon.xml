@@ -70,19 +70,10 @@
   </StatusEffect>
   <StatusEffect type="OnActive" target="this" interval="10" stackable="false">
     <Conditional isdead="false" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar.ogg" range="30000" selectionmode="Random" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar2.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar3.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar4.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar5.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar6.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar7.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar8.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar9.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar10.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar11.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar12.ogg" range="30000" />
-    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar13.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Characters/Pylon/Pylon_thunder.ogg" range="30000" selectionmode="Random" />
+    <sound file="%ModDir:2518816103%/Characters/Pylon/Pylon_thunder2.ogg" range="30000" selectionmode="Random" />
+    <sound file="%ModDir:2518816103%/Characters/Pylon/Pylon_thunder3.ogg" range="30000" selectionmode="Random" />
+    <sound file="%ModDir:2518816103%/Characters/Pylon/Pylon_thunder4.ogg" range="30000" selectionmode="Random" />
   </StatusEffect>
   <StatusEffect type="OnActive" target="This,NearbyItems" targettags="junctionbox" range="8000.0" setvalue="true" stackable="false" delay="2.0" extraload="1200" duration="2.0" checkconditionalalways="true" comparison="and">
     <Conditional isdead="false" />
