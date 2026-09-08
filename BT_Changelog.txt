@@ -1,0 +1,1139 @@
+---------------------------------------------------------------------------
+
+KNOWN ISSUES:
+-
+
+---------------------------------------------------------------------------
+
+[hr]xx/xx/2026
+
+HOTFIX 
+
+[List]
+[*] 
+[/List]
+
+
+---------------------------------------------------------------------------
+
+[hr]xx/xx/2026
+
+[List]
+[*] 
+[/List]
+
+[b]Changes:[/b]
+
+[List]
+[*] 
+[/List]
+
+[b]Fixes:[/b] 
+
+[List]
+[*] 
+[/List]
+
+
+---------------------------------------------------------------------------
+
+[hr]header
+
+[b]Bold Text[/b]
+
+[u]Underlined[/u]
+
+[List]
+[*] List
+[*] List
+[*] List
+[/List]
+
+
+---------------------------------------------------------------------------
+
+
+   
+   
+   TODO: for later
+   - Remove all instances of Charybdisre
+   - Remove all instances of WatcherWanderer
+   - Remove all instances of Lurker
+   - Clean up file structure and file locations, update filelist
+   - Delete unused files
+   - Rename all creatures to group them on the list; for example remname Undying into Fractal_Undying or AlphaCharybdis to Charybdis_alpha
+   - Balance enemy loot
+   
+   Rework list:
+   - Shadowwhale: bright orange flash then turns invisible?
+   - Undyings: remove item from chest to kill them while incapacitated
+   - BruteBTC: sprite rework? make it look less human
+   - Watcherling: change ragdoll, floating eyestalk
+   - Charybdisold: rework sprite, change famility to "leatherback"
+   - Shadowleech: anticoagulan, adds bleeding on top of bleeding
+   - Trichordate: use secondary affliction to apply drunk but not lethal doses?
+   - Psilosaur: deformablesprite
+   - hermitspawn: glowing eyes
+   - Hullfish: increase health to 40?
+   - Goofyfish/Whitefish/Glowfish: remove pet property
+   - Guppy: add extra tail joint
+   - Huskchimerabroodmother: replace suit divers 
+
+
+<!--   
+  /////////////// MONSTER LIST PER BIOME ///////////////
+  /////////////// MONSTER LIST PER BIOME ///////////////
+  /////////////// MONSTER LIST PER BIOME ///////////////
+   -->
+  
+       
+<!--   
+  
+  Below is a list of all monsters that should appear in specific biomes
+  Number indicates the difficulty level at which it starts spawning (and keeps spawning for the rest of the map)
+  C indicates it spawns in caves only
+  R indicates it spawns in ruins only
+  A indicates it spawns in abyss only
+  W indicates it spawns in wrecks only
+  
+    FULL LIST
+    - Abyssalcrawler 3A
+    - Abyssalhammerhead 4A
+    - Abyssalthresher 4A
+    - Abyssmonster TBD
+    - Abysswatcher 5 
+    - AlphaCharybdis 6A
+    - AlphaEndworm 6A
+    - Ancientmudraptor 4R 7 
+    - Bioworm 3AC
+    - Biowormbig 3AC
+    - Bombshark 3
+    - Bonethresher 4
+    - Bossmoloch 5A
+    - Brainmoss1 4 
+    - Brainmoss2 4
+    - Brainmoss3 4
+    - BruteBTC 5W
+    - Carrier 3
+    - CarrierXXXXXRandom 3
+    - Carrierleviathan 4
+    - Caver 3C 
+    - Charybdis 5A
+    - Charybdisadol 5 
+    - charybdisold 6
+    - charybdisre TBD
+    - charybdissavage 7
+    - Chelicerate 7
+    - Clowns (grouop) 3
+    - Clownhead 7
+    - Cnidae 4
+    - Cnidaeprime 6
+    - Coelanth 5
+    - Crawler 1
+    - Crawleralphamale 4
+    - Crawlerbroodmother 3
+    - Crawlerbroodmotherold 7
+    - Crawlerhusk 3
+    - Crawlermetamorph 4
+    - Crawlernaught 5
+    - crawlerold 1
+    - Crawlersmart 2
+    - crawler_hatchling 1
+    - Crawler_large1 1
+    - Crawler_large2 1
+    - CrookBTCoutside 4
+    - Cthulhu 7A
+    - Cthulhuadolescent 5
+    - Cyclops 3
+    - Deathgill 6
+    - deepseaclown 5
+    - Defensebothostile 5W
+    - Endurance 5
+    - Endwhale 6A
+    - Endworm 5A
+    - Endwormcoral 2
+    - Endwormre 5A
+    - Endworm_young 7C 7
+    - Epicentrum 8A
+    - Europanboxcutter 3
+    - Europantrout 1
+    - Fault 7A 
+    - Fractalbreacher 5R
+    - Fractaldestroyer 6A
+    - FractalEnforcer 4R
+    - FractalEnforcer2 4R
+    - fractalguardian 3R 7
+    - fractalguardian2 3R 7
+    - fractalguardian3 3R 7
+    - Fractalguardianwanderer 7
+    - Fractalherald 3R
+    - Fractalpenance 7R
+    - fractalsinger 5R
+    - FractalSiren 5R
+    - Fractalwalker 4R 
+    - Ghostshrimp 3A 7
+    - Giantcrab 4
+    - Giantcrabice 1
+    - Gianttrapper 3A
+    - Glowfish 1
+    - Goofyfish 1
+    - GrayEel 2
+    - Guardianattackbot 5R
+    - Guppy 1
+    - hammerhead 2
+    - Hammerheadgold 3
+    - Hammerheadmatriarch 6
+    - Hammerheadmatriarchconcept 5
+    - Hammerheadmauler 5
+    - Hammerheadspawn 2
+    - Hammerhead_breacher 56
+    - Hammerhead_hard 7
+    - Hammerhead_swordfish 6
+    - Hammerhead_swordfishexplode 6
+    - Hammerhead_young 2
+    - Harpoonwhale 3
+    - Hermit 4
+    - Hermitbig 6
+    - Hermitdugong 5
+    - Hermitshell 5
+    - Hermitspawn 2
+    - Hornshrimp 4
+    - Hullfish 1
+    - Humanimmortals 3
+    - Huskchimerabroodmother 5
+    - Husker 5A
+    - Husknyx 5
+    - Husk_centipede 6
+    - Husk_RandomHeavy 5W 
+    - Husk_RandomLight 3W
+    - Husk_RandomTiny 3W
+    - Husk_scylla 6A
+    - Icecrab 1
+    - Iceshark 1
+    - Icewhale 2
+    - Jovians 3WC
+    - Latcher 3A
+    - LatcherAbyss 3A
+    - Latcher_hatchling 3A
+    - Lavathresher 9
+    - Leatherback 6
+    - LegacyCrawler 1
+    - Lionthresher 1
+    - Magmalarva 9
+    - Magmaworm 9
+    - Mantis 3C 
+    - Mantispink 2C
+    - MantisShrimp 5C
+    - MantisShrimpSmall 4C
+    - Mechflora 5W
+    - Mechflorathalamus 5W
+    - Mine 3
+    - Minedetached 3
+    - Minesmall 3C
+    - Minoga 1
+    - Molochrandom 3
+    - Molochbaby 3
+    - Molochblackrandom 6
+    - Molochgreen 5A
+    - Molochold 7
+    - Molochthermal 9
+    - Muddragon 5
+    - Mudraptor 2
+    - Mudraptorhuskhunter 5
+    - Mudraptor_hatchling 2
+    - Mudraptor_mother 3
+    - Mudraptor_unarmored 2
+    - mudraptor_veteran 4
+    - Mudraptor_veteran2 6
+    - Mudraptor_veteranold 8
+    - Mudrex 7
+    - Nightraptor 4
+    - Nuclearmine 6
+    - Observer 6
+    - Paralyticshark 2
+    - Peanutslug 4W
+    - Peanutslug2 5W
+    - PlantSkeleton 5
+    - Plantworm 3
+    - Praywhale 2
+    - Praywhalebaby 3
+    - Praywhalemineral 6
+    - Psilosaur 4
+    - Psilotoadadult 5
+    - Psilotoadmonster 3
+    - Psiloturtle 5
+    - Pylon 7A
+    - Razzershrimp_kse 5
+    - Riftworm 5A
+    - Rockworm 6
+    - ScavieBTC B
+    - Scorpion 2
+    - Seasnek 4
+    - Seasnekbiter 4
+    - Seaurchin 2
+    - Seaurchinqueen 3
+    - Shadowleech 4C
+    - Shadowwhale 7
+    - Shrimpbrut_kse 4C
+    - Silverhammerhead 3
+    - Skrimsl 3A
+    - Spineling 3
+    - Spineling_Electric2 7
+    - Spineling_giant 4
+    - Spineling_hard 7
+    - Spineling_morbusine 6
+    - Spineyfish 7
+    - Stalker 7
+    - StonewanderercrystaL 3
+    - Stonewanderercrystallarge 3
+    - Stonewandererice 2
+    - Stonewanderericelarge 2
+    - Stonewandererlava 9
+    - Stonewandererlavalarge 9
+    - Swarmfeeder 3R
+    - Teleglitch 6
+    - Teleglitch_paranormal 6
+    - Thalamid 4
+    - Thalamuscarrier 4
+    - Thalamusk 3W
+    - Thalatocyte 5
+    - Thalatocytebrain 5
+    - Thermaleel 9
+    - Thrasher 2
+    - Thresherking 7
+    - TigerSharkThresher 234
+    - Tigerthresher 4
+    - Tigerthresher_hatchling 4
+    - Trichordate_random 3CW 
+    - TuluWild 5
+    - Turretcarrier_random 3
+    - Undying 3R
+    - Viperling_giant 6
+    - Voidleviathan 7A
+    - Voidstalker 3
+    - Watcher 4
+    - Watcherelite 6
+    - Watcherling 7
+    - WatcherWanderer TBD
+    - Whitefish 1
+    - Wolfeel 2
+    - Xan_scavenger 5W
+    - Yellowboy 3C
+    - Yellowboyspawner 5C
+    - Yellowboywarrior 9C
+    - Yellowboywarrior 6C
+    
+  -->  
+  
+  <!-- /////////////////////////////////////////////// -->
+  <!-- /////////////////////////////////////////////// -->
+  <!-- /////////////////////////////////////////////// -->
+       
+<!--  
+  Cold Caverns spawnlist:
+    - Crawler 1
+    - crawlerold 1
+    - crawler_hatchling 1
+    - Crawler_large1 1
+    - Crawler_large2 1
+    - Europantrout 1
+    - Giantcrabice 1
+    - Glowfish 1
+    - Goofyfish 1
+    - Guppy 1
+    - Hullfish 1
+    - Icecrab 1
+    - Iceshark 1
+    - LegacyCrawler 1
+    - Lionthresher 1
+    - Minoga 1
+    - Whitefish 1
+    
+    - Crawlersmart 2
+    - Endwormcoral 2
+    - GrayEel 2
+    - hammerhead 2
+    - Hammerheadspawn 2
+    - Hammerhead_young 2
+    - Hermitspawn 2
+    - Icewhale 2
+    - Mantispink 2C
+    - Mudraptor 2
+    - Mudraptor_hatchling 2
+    - Mudraptor_unarmored 2
+    - Paralyticshark 2
+    - Praywhale 2
+    - Scorpion 2
+    - Seaurchin 2
+    - Stonewandererice 2
+    - Stonewanderericelarge 2
+    - Thrasher 2
+    - TigerSharkThresher 2
+    - Wolfeel 2
+    
+    
+  -->  
+  
+       
+<!--  
+  Europan Ridge spawnlist:
+  
+    - Crawler 1
+    - crawlerold 1
+    - crawler_hatchling 1
+    - Crawler_large1 1
+    - Crawler_large2 1
+    - Europantrout 1
+    - Glowfish 1
+    - Goofyfish 1
+    - Guppy 1
+    - Hullfish 1
+    - Icecrab 1
+    - Iceshark 1
+    - LegacyCrawler 1
+    - Lionthresher 1
+    - Minoga 1
+    - Whitefish 1    
+    - Crawlersmart 2
+    - Endwormcoral 2
+    - GrayEel 2
+    - hammerhead 2
+    - Hammerheadspawn 2
+    - Hammerhead_young 2
+    - Hermitspawn 2
+    - Icewhale 2
+    - Mantispink 2C
+    - Mudraptor 2
+    - Mudraptor_hatchling 2
+    - Mudraptor_unarmored 2
+    - Paralyticshark 2
+    - Praywhale 2
+    - Scorpion 2
+    - Seaurchin 2
+    - Stonewandererice 2
+    - Stonewanderericelarge 2
+    - Thrasher 2
+    - TigerSharkThresher 2
+    - Wolfeel 2
+    - Abyssalcrawler 3A
+    - Bioworm 3AC
+    - Biowormbig 3AC
+    - Bombshark 3
+    - Carrier 3
+    - CarrierXXXXXRandom 3
+    - Caver 3C 
+    - Clowns (grouop) 3
+    - Crawlerbroodmother 3
+    - Crawlerhusk 3
+    - Cyclops 3
+    - Europanboxcutter 3
+    - fractalguardian 3R 7
+    - fractalguardian2 3R 7
+    - fractalguardian3 3R 7
+    - Fractalherald 3R
+    - Ghostshrimp 3A 7
+    - Gianttrapper 3A
+    - Hammerheadgold 3
+    - Harpoonwhale 3
+    - Humanimmortals 3
+    - Husk_RandomLight 3W
+    - Husk_RandomTiny 3W
+    - Jovians 3WC
+    - Latcher 3A
+    - LatcherAbyss 3A
+    - Latcher_hatchling 3A
+    - Mantis 3C 
+    - Mine 3
+    - Minedetached 3
+    - Minesmall 3C
+    - Molochrandom 3
+    - Molochbaby 3
+    - Mudraptor_mother 3
+    - Plantworm 3
+    - Praywhalebaby 3
+    - Psilotoadmonster 3
+    - Seaurchinqueen 3
+    - Silverhammerhead 3
+    - Skrimsl 3A
+    - Spineling 3
+    - StonewanderercrystaL 3
+    - Stonewanderercrystallarge 3
+    - Swarmfeeder 3R
+    - Thalamusk 3W
+    - Trichordate_random 3CW 
+    - Turretcarrier_random 3
+    - Undying 3R
+    - Voidstalker 3
+    - Yellowboy 3C    
+    
+    - Abyssalhammerhead 4A
+    - Abyssalthresher 4A
+    - Ancientmudraptor 4R 7 
+    - Bonethresher 4
+    - Brainmoss1 4 
+    - Brainmoss2 4
+    - Brainmoss3 4
+    - Carrierleviathan 4
+    - Cnidae 4
+    - Crawleralphamale 4
+    - Crawlermetamorph 4
+    - CrookBTCoutside 4
+    - FractalEnforcer 4R
+    - FractalEnforcer2 4R
+    - Fractalwalker 4R 
+    - Hermit 4
+    - Hornshrimp 4
+    - Giantcrab 4
+    - MantisShrimpSmall 4C
+    - mudraptor_veteran 4
+    - Nightraptor 4
+    - Peanutslug 4W
+    - Psilosaur 4
+    - Seasnek 4
+    - Seasnekbiter 4
+    - Shadowleech 4C
+    - Shrimpbrut_kse 4C
+    - Spineling_giant 4
+    - Thalamid 4
+    - Thalamuscarrier 4
+    - Tigerthresher 4
+    - Tigerthresher_hatchling 4
+    - Watcher 4
+  -->  
+  
+       
+<!--  
+  Aphotic Plateau spawnlist:
+  
+    - Abyssalcrawler 3A
+    - Abyssalhammerhead 4A
+    - Abyssalthresher 4A
+    - Abysswatcher 5 
+    - Ancientmudraptor 4R 7 
+    - Bioworm 3AC
+    - Biowormbig 3AC
+    - Bombshark 3
+    - Bonethresher 4
+    - Bossmoloch 5A
+    - Brainmoss1 4 
+    - Brainmoss2 4
+    - Brainmoss3 4
+    - BruteBTC 5W
+    - Carrier 3
+    - CarrierXXXXXRandom 3
+    - Carrierleviathan 4
+    - Caver 3C 
+    - Charybdis 5A
+    - Charybdisadol 5 
+    - Clowns (grouop) 3
+    - Cnidae 4
+    - Coelanth 5
+    - Crawler 1
+    - Crawleralphamale 4
+    - Crawlerbroodmother 3
+    - Crawlerhusk 3
+    - Crawlermetamorph 4
+    - Crawlernaught 5
+    - crawlerold 1
+    - Crawlersmart 2
+    - crawler_hatchling 1
+    - Crawler_large1 1
+    - Crawler_large2 1
+    - CrookBTCoutside 4
+    - Cthulhuadolescent 5
+    - Cyclops 3
+    - deepseaclown 5
+    - Defensebothostile 5W
+    - Endurance 5
+    - Endworm 5A
+    - Endwormcoral 2
+    - Endwormre 5A
+    - Europanboxcutter 3
+    - Europantrout 1
+    - Fractalbreacher 5R
+    - FractalEnforcer 4R
+    - FractalEnforcer2 4R
+    - fractalguardian 3R 7
+    - fractalguardian2 3R 7
+    - fractalguardian3 3R 7
+    - Fractalguardianwanderer 7
+    - Fractalherald 3R
+    - fractalsinger 5R
+    - FractalSiren 5R
+    - Fractalwalker 4R 
+    - Ghostshrimp 3A 7
+    - Giantcrab 4
+    - Gianttrapper 3A
+    - Glowfish 1
+    - Goofyfish 1
+    - GrayEel 2
+    - Guardianattackbot 5R
+    - Guppy 1
+    - hammerhead 2
+    - Hammerheadgold 3
+    - Hammerheadmatriarchconcept 5
+    - Hammerheadmauler 5
+    - Hammerheadspawn 2
+    - Hammerhead_breacher 5
+    - Hammerhead_young 2
+    - Harpoonwhale 3
+    - Hermit 4
+    - Hermitdugong 5
+    - Hermitshell 5
+    - Hermitspawn 2
+    - Hornshrimp 4
+    - Hullfish 1
+    - Humanimmortals 3
+    - Huskchimerabroodmother 5
+    - Husker 5A
+    - Husknyx 5
+    - Husk_RandomHeavy 5W 
+    - Husk_RandomLight 3W
+    - Husk_RandomTiny 3W
+    - Jovians 3WC
+    - Latcher 3A
+    - LatcherAbyss 3A
+    - Latcher_hatchling 3A
+    - LegacyCrawler 1
+    - Lionthresher 1
+    - Mantis 3C 
+    - Mantispink 2C
+    - MantisShrimp 5C
+    - MantisShrimpSmall 4C
+    - Mechflora 5W
+    - Mechflorathalamus 5W
+    - Mine 3
+    - Minedetached 3
+    - Minesmall 3C
+    - Minoga 1
+    - Molochrandom 3
+    - Molochbaby 3
+    - Molochgreen 5A
+    - Muddragon 5
+    - Mudraptor 2
+    - Mudraptorhuskhunter 5
+    - Mudraptor_hatchling 2
+    - Mudraptor_mother 3
+    - Mudraptor_unarmored 2
+    - mudraptor_veteran 4
+    - Nightraptor 4
+    - Paralyticshark 2
+    - Peanutslug 4W
+    - Peanutslug2 5W
+    - PlantSkeleton 5
+    - Plantworm 3
+    - Praywhale 2
+    - Praywhalebaby 3
+    - Psilosaur 4
+    - Psilotoadadult 5
+    - Psilotoadmonster 3
+    - Psiloturtle 5
+    - Razzershrimp_kse 5
+    - Riftworm 5A
+    - Scorpion 2
+    - Seasnek 4
+    - Seasnekbiter 4
+    - Seaurchin 2
+    - Seaurchinqueen 3
+    - Shadowleech 4C
+    - Shrimpbrut_kse 4C
+    - Silverhammerhead 3
+    - Skrimsl 3A
+    - Spineling 3
+    - Spineling_giant 4
+    - StonewanderercrystaL 3
+    - Stonewanderercrystallarge 3
+    - Swarmfeeder 3R
+    - Thalamid 4
+    - Thalamuscarrier 4
+    - Thalamusk 3W
+    - Thalatocyte 5
+    - Thalatocytebrain 5
+    - Thrasher 2
+    - TigerSharkThresher 234
+    - Tigerthresher 4
+    - Tigerthresher_hatchling 4
+    - Trichordate_random 3CW 
+    - TuluWild 5
+    - Turretcarrier_random 3
+    - Undying 3R
+    - Voidstalker 3
+    - Watcher 4
+    - Whitefish 1
+    - Wolfeel 2
+    - Xan_scavenger 5W
+    - Yellowboy 3C
+    - Yellowboyspawner 5C
+    
+    
+    - AlphaCharybdis 6A
+    - AlphaEndworm 6A
+    - charybdisold 6
+    - Cnidaeprime 6
+    - Deathgill 6
+    - Endwhale 6A
+    - Fractaldestroyer 6A
+    - Hammerhead_swordfish 6
+    - Hammerhead_swordfishexplode 6
+    - Hammerheadmatriarch 6
+    - Hermitbig 6
+    - Husk_centipede 6
+    - Husk_scylla 6A
+    - Leatherback 6
+    - Molochblackrandom 6
+    - Mudraptor_veteran2 6
+    - Nuclearmine 6
+    - Observer 6
+    - Praywhalemineral 6
+    - Rockworm 6
+    - Spineling_morbusine 6
+    - Teleglitch 6
+    - Teleglitch_paranormal 6
+    - Viperling_giant 6
+    - Watcherelite 6
+    - Yellowboywarrior 6C
+  -->  
+  
+       
+<!--  
+  Great Sea spawnlist:
+    - Abyssalcrawler 3A
+    - Abyssalhammerhead 4A
+    - Abyssalthresher 4A
+    - Abysswatcher 5 
+    - AlphaCharybdis 6A
+    - AlphaEndworm 6A
+    - Ancientmudraptor 4R 7 
+    - Bioworm 3AC
+    - Biowormbig 3AC
+    - Bombshark 3
+    - Bonethresher 4
+    - Bossmoloch 5A
+    - Brainmoss1 4 
+    - Brainmoss2 4
+    - Brainmoss3 4
+    - BruteBTC 5W
+    - Carrier 3
+    - CarrierXXXXXRandom 3
+    - Carrierleviathan 4
+    - Caver 3C 
+    - Charybdis 5A
+    - Charybdisadol 5 
+    - charybdisold 6
+    - charybdissavage 7
+    - Chelicerate 7
+    - Clowns (grouop) 3
+    - Clownhead 7
+    - Cnidae 4
+    - Cnidaeprime 6
+    - Coelanth 5
+    - Crawler 1
+    - Crawleralphamale 4
+    - Crawlerbroodmother 3
+    - Crawlerbroodmotherold 7
+    - Crawlerhusk 3
+    - Crawlermetamorph 4
+    - Crawlernaught 5
+    - crawlerold 1
+    - Crawlersmart 2
+    - crawler_hatchling 1
+    - Crawler_large1 1
+    - Crawler_large2 1
+    - CrookBTCoutside 4
+    - Cthulhu 7A
+    - Cthulhuadolescent 5
+    - Cyclops 3
+    - Deathgill 6
+    - deepseaclown 5
+    - Defensebothostile 5W
+    - Endurance 5
+    - Endwhale 6A
+    - Endworm 5A
+    - Endwormcoral 2
+    - Endwormre 5A
+    - Endworm_young 7C 7
+    - Europanboxcutter 3
+    - Europantrout 1
+    - Fault 7A 
+    - Fractalbreacher 5R
+    - Fractaldestroyer 6A
+    - FractalEnforcer 4R
+    - FractalEnforcer2 4R
+    - fractalguardian 3R 7
+    - fractalguardian2 3R 7
+    - fractalguardian3 3R 7
+    - Fractalguardianwanderer 7
+    - Fractalherald 3R
+    - Fractalpenance 7R
+    - fractalsinger 5R
+    - FractalSiren 5R
+    - Fractalwalker 4R 
+    - Ghostshrimp 3A 7
+    - Giantcrab 4
+    - Giantcrabice 1
+    - Gianttrapper 3A
+    - Glowfish 1
+    - Goofyfish 1
+    - GrayEel 2
+    - Guardianattackbot 5R
+    - Guppy 1
+    - hammerhead 2
+    - Hammerheadgold 3
+    - Hammerheadmatriarch 6
+    - Hammerheadmatriarchconcept 5
+    - Hammerheadmauler 5
+    - Hammerheadspawn 2
+    - Hammerhead_breacher 56
+    - Hammerhead_hard 7
+    - Hammerhead_swordfish 6
+    - Hammerhead_swordfishexplode 6
+    - Hammerhead_young 2
+    - Harpoonwhale 3
+    - Hermit 4
+    - Hermitbig 6
+    - Hermitdugong 5
+    - Hermitshell 5
+    - Hermitspawn 2
+    - Hornshrimp 4
+    - Hullfish 1
+    - Humanimmortals 3
+    - Huskchimerabroodmother 5
+    - Husker 5A
+    - Husknyx 5
+    - Husk_centipede 6
+    - Husk_RandomHeavy 5W 
+    - Husk_RandomLight 3W
+    - Husk_RandomTiny 3W
+    - Husk_scylla 6A
+    - Icecrab 1
+    - Iceshark 1
+    - Icewhale 2
+    - Jovians 3WC
+    - Latcher 3A
+    - LatcherAbyss 3A
+    - Latcher_hatchling 3A
+    - Leatherback 6
+    - LegacyCrawler 1
+    - Lionthresher 1
+    - Mantis 3C 
+    - Mantispink 2C
+    - MantisShrimp 5C
+    - MantisShrimpSmall 4C
+    - Mechflora 5W
+    - Mechflorathalamus 5W
+    - Mine 3
+    - Minedetached 3
+    - Minesmall 3C
+    - Minoga 1
+    - Molochrandom 3
+    - Molochbaby 3
+    - Molochblackrandom 6
+    - Molochgreen 5A
+    - Molochold 7
+    - Muddragon 5
+    - Mudraptor 2
+    - Mudraptorhuskhunter 5
+    - Mudraptor_hatchling 2
+    - Mudraptor_mother 3
+    - Mudraptor_unarmored 2
+    - mudraptor_veteran 4
+    - Mudraptor_veteran2 6
+    - Mudrex 7
+    - Nightraptor 4
+    - Nuclearmine 6
+    - Observer 6
+    - Paralyticshark 2
+    - Peanutslug 4W
+    - Peanutslug2 5W
+    - PlantSkeleton 5
+    - Plantworm 3
+    - Praywhale 2
+    - Praywhalebaby 3
+    - Praywhalemineral 6
+    - Psilosaur 4
+    - Psilotoadadult 5
+    - Psilotoadmonster 3
+    - Psiloturtle 5
+    - Pylon 7A
+    - Razzershrimp_kse 5
+    - Riftworm 5A
+    - Rockworm 6
+    - Scorpion 2
+    - Seasnek 4
+    - Seasnekbiter 4
+    - Seaurchin 2
+    - Seaurchinqueen 3
+    - Shadowleech 4C
+    - Shadowwhale 7
+    - Shrimpbrut_kse 4C
+    - Silverhammerhead 3
+    - Skrimsl 3A
+    - Spineling 3
+    - Spineling_Electric2 7
+    - Spineling_giant 4
+    - Spineling_hard 7
+    - Spineling_morbusine 6
+    - Spineyfish 7
+    - Stalker 7
+    - StonewanderercrystaL 3
+    - Stonewanderercrystallarge 3
+    - Stonewandererice 2
+    - Stonewanderericelarge 2
+    - Swarmfeeder 3R
+    - Teleglitch 6
+    - Teleglitch_paranormal 6
+    - Thalamid 4
+    - Thalamuscarrier 4
+    - Thalamusk 3W
+    - Thalatocyte 5
+    - Thalatocytebrain 5
+    - Thrasher 2
+    - Thresherking 7
+    - TigerSharkThresher 234
+    - Tigerthresher 4
+    - Tigerthresher_hatchling 4
+    - Trichordate_random 3CW 
+    - TuluWild 5
+    - Turretcarrier_random 3
+    - Undying 3R
+    - Viperling_giant 6
+    - Voidleviathan 7A
+    - Voidstalker 3
+    - Watcher 4
+    - Watcherelite 6
+    - Watcherling 7
+    - Whitefish 1
+    - Wolfeel 2
+    - Xan_scavenger 5W
+    - Yellowboy 3C
+    - Yellowboyspawner 5C
+    - Yellowboywarrior 6C
+    
+    
+    - Mudraptor_veteranold 8
+    - Epicentrum 8A
+    
+  -->  
+  
+       
+<!--  
+  Hydrothermal Wastes spawnlist:
+    - Abyssalcrawler 3A
+    - Abyssalhammerhead 4A
+    - Abyssalthresher 4A
+    - Abysswatcher 5 
+    - AlphaCharybdis 6A
+    - AlphaEndworm 6A
+    - Ancientmudraptor 4R 7 
+    - Bioworm 3AC
+    - Biowormbig 3AC
+    - Bombshark 3
+    - Bonethresher 4
+    - Bossmoloch 5A
+    - Brainmoss1 4 
+    - Brainmoss2 4
+    - Brainmoss3 4
+    - BruteBTC 5W
+    - Carrier 3
+    - CarrierXXXXXRandom 3
+    - Carrierleviathan 4
+    - Caver 3C 
+    - Charybdis 5A
+    - Charybdisadol 5 
+    - charybdisold 6
+    - charybdissavage 7
+    - Chelicerate 7
+    - Clowns (grouop) 3
+    - Clownhead 7
+    - Cnidae 4
+    - Cnidaeprime 6
+    - Coelanth 5
+    - Crawler 1
+    - Crawleralphamale 4
+    - Crawlerbroodmother 3
+    - Crawlerbroodmotherold 7
+    - Crawlerhusk 3
+    - Crawlermetamorph 4
+    - Crawlernaught 5
+    - crawlerold 1
+    - Crawlersmart 2
+    - crawler_hatchling 1
+    - Crawler_large1 1
+    - Crawler_large2 1
+    - CrookBTCoutside 4
+    - Cthulhu 7A
+    - Cthulhuadolescent 5
+    - Cyclops 3
+    - Deathgill 6
+    - deepseaclown 5
+    - Defensebothostile 5W
+    - Endurance 5
+    - Endwhale 6A
+    - Endworm 5A
+    - Endwormcoral 2
+    - Endwormre 5A
+    - Endworm_young 7C 7
+    - Epicentrum 8A
+    - Europanboxcutter 3
+    - Fault 7A 
+    - Fractalbreacher 5R
+    - Fractaldestroyer 6A
+    - FractalEnforcer 4R
+    - FractalEnforcer2 4R
+    - fractalguardian 3R 7
+    - fractalguardian2 3R 7
+    - fractalguardian3 3R 7
+    - Fractalguardianwanderer 7
+    - Fractalherald 3R
+    - Fractalpenance 7R
+    - fractalsinger 5R
+    - FractalSiren 5R
+    - Fractalwalker 4R 
+    - Ghostshrimp 3A 7
+    - Giantcrab 4
+    - Gianttrapper 3A
+    - Glowfish 1
+    - Goofyfish 1
+    - GrayEel 2
+    - Guardianattackbot 5R
+    - Guppy 1
+    - hammerhead 2
+    - Hammerheadgold 3
+    - Hammerheadmatriarch 6
+    - Hammerheadmatriarchconcept 5
+    - Hammerheadmauler 5
+    - Hammerheadspawn 2
+    - Hammerhead_breacher 56
+    - Hammerhead_hard 7
+    - Hammerhead_swordfish 6
+    - Hammerhead_swordfishexplode 6
+    - Hammerhead_young 2
+    - Harpoonwhale 3
+    - Hermit 4
+    - Hermitbig 6
+    - Hermitdugong 5
+    - Hermitshell 5
+    - Hermitspawn 2
+    - Hornshrimp 4
+    - Hullfish 1
+    - Humanimmortals 3
+    - Huskchimerabroodmother 5
+    - Husker 5A
+    - Husknyx 5
+    - Husk_centipede 6
+    - Husk_RandomHeavy 5W 
+    - Husk_RandomLight 3W
+    - Husk_RandomTiny 3W
+    - Husk_scylla 6A
+    - Jovians 3WC
+    - Latcher 3A
+    - LatcherAbyss 3A
+    - Latcher_hatchling 3A
+    - Lavathresher 9
+    - Leatherback 6
+    - LegacyCrawler 1
+    - Magmalarva 9
+    - Magmaworm 9
+    - Mantis 3C 
+    - Mantispink 2C
+    - MantisShrimp 5C
+    - MantisShrimpSmall 4C
+    - Mechflora 5W
+    - Mechflorathalamus 5W
+    - Mine 3
+    - Minedetached 3
+    - Minesmall 3C
+    - Minoga 1
+    - Molochrandom 3
+    - Molochbaby 3
+    - Molochblackrandom 6
+    - Molochgreen 5A
+    - Molochold 7
+    - Molochthermal 9
+    - Muddragon 5
+    - Mudraptor 2
+    - Mudraptorhuskhunter 5
+    - Mudraptor_hatchling 2
+    - Mudraptor_mother 3
+    - Mudraptor_unarmored 2
+    - mudraptor_veteran 4
+    - Mudraptor_veteran2 6
+    - Mudraptor_veteranold 8
+    - Mudrex 7
+    - Nightraptor 4
+    - Nuclearmine 6
+    - Observer 6
+    - Paralyticshark 2
+    - Peanutslug 4W
+    - Peanutslug2 5W
+    - PlantSkeleton 5
+    - Plantworm 3
+    - Praywhale 2
+    - Praywhalebaby 3
+    - Praywhalemineral 6
+    - Psilosaur 4
+    - Psilotoadadult 5
+    - Psilotoadmonster 3
+    - Psiloturtle 5
+    - Pylon 7A
+    - Razzershrimp_kse 5
+    - Riftworm 5A
+    - Rockworm 6
+    - ScavieBTC B
+    - Scorpion 2
+    - Seasnek 4
+    - Seasnekbiter 4
+    - Seaurchin 2
+    - Seaurchinqueen 3
+    - Shadowleech 4C
+    - Shadowwhale 7
+    - Shrimpbrut_kse 4C
+    - Silverhammerhead 3
+    - Skrimsl 3A
+    - Spineling 3
+    - Spineling_giant 4
+    - Spineling_hard 7
+    - Spineling_morbusine 6
+    - Spineyfish 7
+    - Stalker 7
+    - Stonewandererlava 9
+    - Stonewandererlavalarge 9
+    - Swarmfeeder 3R
+    - Teleglitch 6
+    - Teleglitch_paranormal 6
+    - Thalamid 4
+    - Thalamuscarrier 4
+    - Thalamusk 3W
+    - Thalatocyte 5
+    - Thalatocytebrain 5
+    - Thermaleel 9
+    - Thrasher 2
+    - Thresherking 7
+    - Tigerthresher 4
+    - Tigerthresher_hatchling 4
+    - Trichordate_random 3CW 
+    - TuluWild 5
+    - Turretcarrier_random 3
+    - Undying 3R
+    - Viperling_giant 6
+    - Voidleviathan 7A
+    - Voidstalker 3
+    - Watcher 4
+    - Watcherelite 6
+    - Watcherling 7
+    - Wolfeel 2
+    - Xan_scavenger 5W
+    - Yellowboy 3C
+    - Yellowboyspawner 5C
+    - Yellowboywarrior 9C
+    - Yellowboywarrior 6C
+  -->  
+  
+  
+<!--   
+  /////////////// MONSTER LIST PER BIOME ///////////////
+  /////////////// MONSTER LIST PER BIOME ///////////////
+  /////////////// MONSTER LIST PER BIOME ///////////////
+   -->
+   
+   
