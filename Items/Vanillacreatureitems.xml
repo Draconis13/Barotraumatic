@@ -1812,61 +1812,8 @@
       </Attack>
     </Projectile>
   </Item>
-  <Item name="Moloch Egg" identifier="smallmolochegg" description="An egg of a Moloch. Its heavy and there is something pulsating inside. It takes years for a single Moloch egg to hatch into thousands of them so this egg is currently no use to you, but scientists are willing to buy it at a high price." nameidentifier="molochegg" Tags="largeitem" health="100" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" category="Misc" scale="0.4" impactsoundtag="impact_soft">
-        <PreferredContainer primary="storagecab" secondary="mineralcab" />
-	<Price baseprice="600">
-      <Price storeidentifier="merchantoutpost" multiplier="0.6" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="0.7" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
-      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
-    </Price>
-    <Sprite texture="%ModDir%/Items/Creatureegg/MolochEgg.png" depth="0.7" sourcerect="0,0,128,128" origin="0.5,0.5" />
-    <InventoryIcon texture="%ModDir%/Items/Creatureegg/MolochEgg.png" sourcerect="0,0,128,128" />
-    <Deconstruct time="25">
-      <Item identifier="alienblood" />
-      <Item identifier="alienblood" />
-      <Item identifier="saline" />
-    </Deconstruct>
-    <Body radius="55" width="5" friction="1.0" restitution="0.01" angulardamping="0.8" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,10" handle2="0,-10">
-      <StatusEffect type="OnBroken" target="This">
-        <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
-        <particleemitter particle="brownchunks" particleamount="50" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
-        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnFire" target="This" Condition="-5.0" />
-    </Holdable>
-  </Item>
-  <Item name="Black Moloch Egg" identifier="smallblackmolochegg" description="An egg of a Black Moloch. Its heavy and you feel great dread holding onto it for some reason. It takes years for a single Moloch egg to hatch into thousands of them so this egg is currently no use to you, but scientists are willing to buy it at a high price." nameidentifier="molochegg" Tags="largeitem" health="100" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" category="Misc" scale="0.4" impactsoundtag="impact_soft">
-       <PreferredContainer primary="storagecab" secondary="mineralcab" />
-   <Price baseprice="700">
-      <Price storeidentifier="merchantoutpost" multiplier="0.5" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="0.5" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
-      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
-    </Price>
-    <Sprite texture="%ModDir%/Items/Creatureegg/Blackmolochegg.png" depth="0.7" sourcerect="0,0,128,128" origin="0.5,0.5" />
-    <InventoryIcon texture="%ModDir%/Items/Creatureegg/Blackmolochegg.png" sourcerect="0,0,128,128" />
-    <Deconstruct time="25">
-      <Item identifier="alienblood" />
-      <Item identifier="alienblood" />
-      <Item identifier="saline" />
-    </Deconstruct>
-    <Body radius="55" width="5" friction="1.0" restitution="0.01" angulardamping="0.8" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,10" handle2="0,-10">
-      <StatusEffect type="OnBroken" target="This">
-        <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
-        <particleemitter particle="brownchunks" particleamount="50" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
-        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnFire" target="This" Condition="-5.0" />
-    </Holdable>
-  </Item>
-    <Item name="" variantof="spinelingspike" identifier="btcmorbusinespinelingspike" nameidentifier="spinelingspike" category="Misc" scale="0.5" sonarsize="2" hideinmenus="true">
+  
+  <Item name="" variantof="spinelingspike" identifier="btcmorbusinespinelingspike" nameidentifier="spinelingspike" category="Misc" scale="0.5" sonarsize="2" hideinmenus="true">
     <Sprite texture="Content/Characters/Spineling_morbusine/Spineling_morbusine.png" sourcerect="0,215,180,18" depth="0.55" />
     <Projectile>
       <Attack structuredamage="20" itemdamage="20" severlimbsprobability="0.5" penetration="0.2">
