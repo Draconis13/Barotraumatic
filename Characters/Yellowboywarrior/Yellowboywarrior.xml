@@ -1,0 +1,59 @@
+﻿<Character SpeciesName="Yellowboywarrior" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="mantisoid" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="btcbloodblue" BleedParticleAir="btcblooddropblue" BleedParticleWater="btcwaterbloodblue" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+  <ragdolls folder="%ModDir%/Characters/Yellowboywarrior/Ragdolls/" />
+  <animations folder="%ModDir%/Characters/Yellowboywarrior/Animations/" />
+  <damageemitter particle="gib" drawontop="True" particleamount="10" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.25" scalemax="0.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="blood" particleamount="10" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="waterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="gib" particleamount="20" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360" scalemin="1" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="heavygib" particleamount="5" velocitymin="50" velocitymax="500" anglemin="0" anglemax="360" scalemin="0.5" scalemax="0.8" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <health Vitality="300" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
+          <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+      <Item Identifier="btcsmallswimbladder" />
+      <Item Identifier="chitin" condition="100" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+      <Item Identifier="btcsmallswimbladder" />
+      <Item Identifier="chitin" condition="100" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.7">
+      <Item Identifier="btcsmallswimbladder" />
+      <Item Identifier="mantisleg" condition="100" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.7">
+      <Item Identifier="btcsmallswimbladder" />
+      <Item Identifier="mantisclaw" condition="100" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.7">
+      <Item Identifier="btcsmallswimbladder" />
+	 <Item Identifier="mantisleg" condition="100" />
+      <Item Identifier="mantisclaw" condition="100" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.7">
+      <Item Identifier="btcsmallswimbladder" />
+	  <Item Identifier="mantisclaw" condition="100" />
+      <Item Identifier="mantisleg" condition="100" />
+    </Inventory>
+  <ai combatstrength="350" sight="1" hearing="1" fleehealththreshold="0" aggressiveboarding="true" aggressiongreed="10" aggressionhurt="10" avoidgunfire="False" DamageThreshold="0">
+    <target tag="stronger" state="Avoid" priority="200" reactdistance="2000" />
+    <target tag="decoy" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+    <target tag="provocative" state="Attack" priority="100" ignoreifnotinsamesub="True"/>
+    <target tag="weapon" state="Attack" priority="100" ignoreifnotinsamesub="True"/>
+    <target tag="nasonov" state="Attack" priority="100" ignoreinside="True"/>
+    <target tag="weaker" state="Attack" priority="80" reactdistance="0" />
+    <target tag="human" state="Attack" priority="80" reactdistance="0" />
+    <target tag="door" state="Attack" priority="70" reactdistance="0" />
+    <target tag="tool" state="Aggressive" priority="50" reactdistance="1000" ignoreifnotinsamesub="True"/>
+    <target tag="leucocyte" state="Avoid" priority="50" reactdistance="1000"/>
+    <target tag="engine" state="Avoid" priority="50" reactdistance="400" ignoreinside="True" />
+    <target tag="room" state="Attack" priority="30" reactdistance="0" />
+    <target tag="wall" state="Attack" priority="15" reactdistance="0" />
+    <target tag="sonar" state="Attack" priority="5" reactdistance="0" ignoreinside="true"/>
+    <target tag="turret" state="Attack" priority="1" ignoreinside="true"/>
+    <target tag="searchlight" state="Attack" priority="1" ignoreinside="true"/>
+  </ai>
+  <sound File="Content/Characters/Mantis/MANTIS_attack1.ogg" State="Attack" Range="2000" Volume="1" />
+  <sound File="Content/Characters/Mantis/MANTIS_attack2.ogg" State="Attack" Range="2000" Volume="1" />
+  <sound File="Content/Characters/Mantis/MANTIS_attack3.ogg" State="Attack" Range="2000" Volume="1" />
+  <sound File="Content/Characters/Mantis/MANTIS_death1.ogg" State="Die" Range="2000" Volume="1" />
+  <sound File="Content/Characters/Mantis/MANTIS_death2.ogg" State="Die" Range="2000" Volume="1" />
+</Character>

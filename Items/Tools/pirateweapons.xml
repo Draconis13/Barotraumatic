@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Welding Fuel Bomb" identifier="banditweldingbomb" fireproof="false" category="Weapon" maxstacksize="1" cargocontaineridentifier="explosivecrate" tags="smallitem,handgrenade,weapon,explosive,demolitionsexpert" Scale="0.5" impactsoundtag="impact_metal_heavy" description="Welding fuel with a flare strapped to it as a fuse. Immolation on a budget.">
+    <PreferredContainer primary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="0" spawnprobability="0.1" />
+    <Upgrade gameversion="0.9.3.0" scale="0.5" />
+    <Price baseprice="147" canbespecial="true">
+      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="2" sold="true">
+        <Reputation faction="separatists" min="20" />
+      </Price>
+      <Price storeidentifier="merchantcity" minavailable="0" maxavailable="3" sold="true">
+        <Reputation faction="separatists" min="20" />
+      </Price>
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" sold="false" />
+      <Price storeidentifier="merchantmine" sold="false" />
+	  <Price storeidentifier="merchantengineering" minavailable="0"  maxavailable="3" multiplier="0.9" sold="true">
+      <Reputation faction="separatists" min="20" />
+      </Price>
+    </Price>
+    <Deconstruct>
+      <Item identifier="aluminium" amount="1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="1">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="weldingfueltank" amount="1" mincondition="0.9" maxcondition="1" />
+      <RequiredItem identifier="antibleeding1" />
+      <RequiredItem identifier="flare" />
+    </Fabricate>
+    <InventoryIcon texture="makeshiftfuelbomb.png" sourcerect="0,0,35,74" origin="0.5,0.5" />
+    <Sprite texture="makeshiftfuelbomb.png" sourcerect="0,0,35,74" depth="0.55" origin="0.5,0.5" />
+    <Body width="35" height="74" density="20" />
+	    <Throwable characterusable="false" slots="Any,RightHand+LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/IncendiumGrenade.ogg" />
+        <Explosion range="620" ballastfloradamage="420" structuredamage="14" itemdamage="45" force="8" distancefalloff="true" applyFireEffects="true" smoke="true" >
+          <Affliction identifier="burn" strength="50" />
+          <Affliction identifier="burning" strength="12.5" probability="0.3" dividebylimbcount="false" />
+          <Affliction identifier="bleeding" strength="10" probability="0.2" dividebylimbcount="false" />
+          <Affliction identifier="explosiondamage" strength="13" />
+          <Affliction identifier="stun" strength="3.35" />
+        </Explosion>
+		<Explosion range="800" ballastfloradamage="90" structuredamage="1" itemdamage="5" force="8" distancefalloff="true" applyFireEffects="true" smoke="true" >
+          <Affliction identifier="burn" strength="10" />
+          <Affliction identifier="burning" strength="7" probability="0.1" dividebylimbcount="false" />
+		  <Affliction identifier="bleeding" strength="2.5" probability="0.1" dividebylimbcount="false" />
+          <Affliction identifier="explosiondamage" strength="1.75" />
+          <Affliction identifier="stun" strength="0.15" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <!-- Skip the removal of safeties and explode immediatly if inside of a detonator, railgun shell or a depth charge-->
+      <StatusEffect type="OnUse" targettype="This" Condition="0" setvalue="true" comparison="OR">
+        <Conditional HasTag="detonator" targetcontainer="true" />
+        <Conditional HasTag="railgunammo" targetcontainer="true" />
+        <Conditional HasTag="depthchargeammo" targetcontainer="true" />
+      </StatusEffect>
+      <!-- forcefully pull the pin if player hasnt done so -->
+      <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+        <Use />
+      </StatusEffect>
+    </Throwable>
+    <!-- Activating the ItemComponent starts the timer -->
+    <ItemComponent IsActive="false" CharacterUsable="true">
+      <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
+      <StatusEffect type="OnUse" targettype="This" IsActive="true" DontCleanUp="true" IsDangerous="true" comparison="AND" condition="-1">
+        <Conditional HasTag="neq detonator" targetcontainer="true" />
+        <Conditional HasTag="neq railgunammo" targetcontainer="true" />
+        <Conditional HasTag="neq depthchargeammo" targetcontainer="true" />
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+        <ParticleEmitter particle="grenadepin" emitinterval="10" particleamount="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+        <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+        <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This" Condition="-10">
+      <ParticleEmitter particle="flamethrowersmoke" particlespersecond="10" anglemin="0" anglemax="0" velocitymin="90" velocitymax="175" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />
+      </StatusEffect>
+    </ItemComponent>
+    <LightComponent LightColor="255,0.0,0.0,255" Flicker="0.5" range="600" IsOn="false">
+      <StatusEffect type="OnUse" targettype="This" IsOn="true">
+        <Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
+        <sound file="Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This" Condition="-10" />
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional PhysicsBodyActive="eq true" />
+        <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+        <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" targettype="This" IsOn="false" />
+      <sound file="Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="800.0" loop="true" />
+    </LightComponent>
+    <AiTarget sightrange="4000" />
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="Oxygen Tank Bomb" identifier="banditoxygentankbomb" category="Weapon" maxstacksize="1" fireproof="false" cargocontaineridentifier="explosivecrate" tags="smallitem,handgrenade,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy" description="High pressure oxygen tanks prepped to fill enemies with shrapnel, A separatist classic.">
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.1" />
+    <Upgrade gameversion="0.9.3.0" scale="0.5" />
+    <Price baseprice="200" canbespecial="true">
+      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="2" sold="true">
+        <Reputation faction="separatists" min="20" />
+      </Price>
+      <Price storeidentifier="merchantcity" minavailable="0" maxavailable="3" sold="true">
+        <Reputation faction="separatists" min="20" />
+      </Price>
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" sold="false" />
+      <Price storeidentifier="merchantmine" sold="false" />
+	  <Price storeidentifier="merchantengineering" minavailable="0"  maxavailable="3" multiplier="0.9" sold="true">
+      <Reputation faction="separatists" min="20" />
+      </Price>
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="copper" />
+      <Item identifier="aluminium" amount="1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="oxygentank" amount="2" />
+      <RequiredItem identifier="fpgacircuit" />
+    </Fabricate>
+    <InventoryIcon texture="makeshifto2bomb.png" sourcerect="0,0,50,82" origin="0.5,0.5" />
+    <Sprite texture="makeshifto2bomb.png" sourcerect="0,0,50,82" depth="0.55" origin="0.5,0.5" />
+    <Body width="50" height="75" density="17" />
+	
+	    <Throwable characterusable="false" slots="Any,RightHand+LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="10000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="10000" />
+		<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="6" velocitymin="700" velocitymax="1200" scalemin="0.1" scalemax="0.15" />
+        <Explosion range="550.0" ballastfloradamage="100" structuredamage="30" levelwalldamage="140" itemdamage="300" force="5" severlimbsprobability="0.35" decal="explosion" decalsize="0.5" smoke="true" applyfireeffects="false" flames="false">
+          <Affliction identifier="explosiondamage" strength="15" />
+		  <Affliction identifier="lacerations" strength="15" />
+          <Affliction identifier="bleeding" strength="20" />
+          <Affliction identifier="bleeding" strength="10" probability="0.3" dividebylimbcount="false" />
+          <Affliction identifier="burn" strength="12" />
+          <Affliction identifier="stun" strength="2.65" />
+        </Explosion>
+		<Explosion range="1100" ballastfloradamage="10" structuredamage="5" levelwalldamage="0" itemdamage="0" force="5" severlimbsprobability="0.2" decal="explosion" decalsize="0" applyfireeffects="false" flames="false">
+          <Affliction identifier="explosiondamage" strength="10" />
+		  <Affliction identifier="lacerations" strength="8" />
+		  <Affliction identifier="burn" strength="5" />
+		  <Affliction identifier="bleeding" strength="8" />
+          <Affliction identifier="bleeding" strength="6" dividebylimbcount="false" probability="0.4" />
+          <Affliction identifier="stun" strength="1.75" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <!-- Skip the removal of safeties and explode immediatly if inside of a detonator, railgun shell or a depth charge-->
+      <StatusEffect type="OnUse" targettype="This" Condition="0" setvalue="true" comparison="OR">
+        <Conditional HasTag="detonator" targetcontainer="true" />
+        <Conditional HasTag="railgunammo" targetcontainer="true" />
+        <Conditional HasTag="depthchargeammo" targetcontainer="true" />
+      </StatusEffect>
+      <!-- forcefully pull the pin if player hasnt done so -->
+      <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+        <Use />
+      </StatusEffect>
+    </Throwable>
+    <!-- Activating the ItemComponent starts the timer -->
+    <ItemComponent IsActive="false" CharacterUsable="true">
+      <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
+      <StatusEffect type="OnUse" targettype="This" IsActive="true" DontCleanUp="true" IsDangerous="true" comparison="AND" condition="-1">
+        <Conditional HasTag="neq detonator" targetcontainer="true" />
+        <Conditional HasTag="neq railgunammo" targetcontainer="true" />
+        <Conditional HasTag="neq depthchargeammo" targetcontainer="true" />
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+        <ParticleEmitter particle="grenadepin" emitinterval="10" particleamount="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+        <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+        <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This" Condition="-9">
+        <ParticleEmitter particle="flamethrowersmoke" particlespersecond="25" anglemin="0" anglemax="0" velocitymin="85" velocitymax="150" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />
+      </StatusEffect>
+	    <LightComponent LightColor="255,0.0,0.0,255" Flicker="0.5" range="1" IsOn="false">
+        <StatusEffect type="OnUse" targettype="This" IsOn="true">
+          <Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
+          <sound file="Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" targettype="This">
+          <Conditional PhysicsBodyActive="eq true" />
+          <ParticleEmitter particle="spark" particleamount="0.7" particlespersecond="3" anglemin="0" anglemax="0" velocitymin="30" velocitymax="200" />
+          <ParticleEmitter particle="FlareBubbles" particlespersecond="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" targettype="This" IsOn="false" />
+      </LightComponent>
+    </ItemComponent>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+</Items>

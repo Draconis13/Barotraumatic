@@ -1,0 +1,2127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Crawler Fins" identifier="crawlerfin" category="Misc" tags="smallitem,monsterfood" maxstacksize="8" scale="0.4" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Fins of a once living Crawler. The scales and claws are mineral rich and can be deconstructed into carbon and calcium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+    <PreferredContainer primary="storagecab" secondary="mineralcab" />
+	<Price baseprice="55">
+      <Price storeidentifier="merchantoutpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="0.8" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="calcium" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Crawler/crawler.png" sourcerect="0,5,69,201" origin="0.5,0.5" />
+    <Sprite texture="Content/Characters/Crawler/crawler.png" depth="0.54" sourcerect="0,6,69,201" origin="0.5,0.5" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Crawler Belly" identifier="crawlerbelly" category="Misc" tags="smallitem,monsterfood" maxstacksize="3" scale="0.32" pickdistance="100" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="A bloated stomach of a Crawler. Looks like there might be something in it?">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+	  <Price baseprice="135">
+      <Price storeidentifier="merchantoutpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="0.8" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <PreferredContainer primary="storagecab" secondary="mineralcab" />
+	<Deconstruct time="10" chooserandom="true" amount="3">
+      <Item identifier="elastinplant" copycondition="true" commonness="0.7" />
+      <Item identifier="aquaticpoppy" copycondition="true" commonness="0.7" />
+      <Item identifier="decapitatedarm" copycondition="true" commonness="0.2" />
+      <Item identifier="decapitatedleg" copycondition="true" commonness="0.2" />
+      <Item identifier="crawlerleg" copycondition="true" commonness="0.2" />
+      <Item identifier="crawlerfins" copycondition="true" commonness="0.4" />
+      <Item identifier="scrap" copycondition="true" commonness="0.75" />
+      <Item identifier="slimebacteria" copycondition="true" commonness="0.75" />
+      <Item identifier="poop" copycondition="true" commonness="0.3" />
+      <Item identifier="humanribs" copycondition="true" commonness="0.4" />
+      <Item identifier="plastic" copycondition="true" commonness="0.7" />
+      <Item identifier="lead" copycondition="true" commonness="0.4" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Crawler/crawler.png" sourcerect="70,-1,232,208" origin="0.5,0.5" />
+    <Sprite texture="Content/Characters/Crawler/crawler.png" depth="0.54" sourcerect="69,0,232,208" origin="0.5,0.5" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Crawler Leg" identifier="crawlerleg" category="Misc" tags="smallitem,monsterfood" scale="0.4" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Extremity of a Crawler, it feels strangely hard and squishy, reeks of the sea. The bones and flesh can be deconstructed into calcium and magnesium or sold as cheap meat.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+        <PreferredContainer primary="storagecab" secondary="mineralcab" />
+	<Price baseprice="75">
+      <Price storeidentifier="merchantoutpost" multiplier="1.0" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.85" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="calcium" />
+      <Item identifier="magnesium" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Crawler/crawler.png" sourcerect="328,268,166,74" origin="0.5,0.5" />
+    <Sprite texture="Content/Characters/Crawler/crawler.png" depth="0.54" sourcerect="329,268,166,73" origin="0.5,0.5" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Broodmother Skin" identifier="motherskin" category="Misc" tags="smallitem,monsterfood" scale="0.8" pickdistance="150" maxstacksize="8" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="A piece of thick skin that was left on the Broodmother. Terrestrial biology does not utilize aluminium however the high content in this outer skin makes it extremely durable when exposed to heat, it can also be deconstructed into carbon.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+   <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="550">
+      <Price storeidentifier="merchantoutpost" multiplier="0.8" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.8" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.7" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="aluminium" amount="2" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/CreatureLoot/CreatureLoot.png" sourcerect="327,164,35,39" />
+    <Sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.54" sourcerect="327,164,35,39" />
+    <Body width="20" height="44" density="13" />
+    <Holdable canBeCombined="false" removeOnCombined="false" slots="Any" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Broodmother Breast" identifier="motherbreast" category="Misc" tags="smallitem,chem,medical,monsterfood" description="The breast of a Crawler Broodmother, will not elaborate further. Can be used to heal crew members. Can be deconstructed into saline." scale="0.3" pickdistance="150" impactsoundtag="impact_wetsplat" cargocontaineridentifier="metalcrate">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="580">
+      <Price storeidentifier="merchantoutpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.3" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="antibloodloss1" amount="4" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Crawlerbroodmother/Crawlerbroodmother.png" sourcerect="18,648,211,254" />
+    <Sprite texture="Content/Characters/Crawlerbroodmother/Crawlerbroodmother.png" depth="0.54" sourcerect="18,648,211,254" />
+    <Body width="20" height="44" density="13" />
+    <Holdable canBeCombined="false" removeOnCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="5" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character, This" duration="15">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="bloodloss" amount="1" />
+        <ReduceAffliction identifier="damage" amount="0.2" />
+        <ReduceAffliction identifier="psychosis" amount="25" />
+        <Affliction identifier="drunk" amount="1" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character, This" duration="15">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="bloodloss" amount="1.25" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+    <Item name="Observer Organ" identifier="obserrverorgan" category="Misc" tags="smallitem" scale="0.8" maxstacksize="2" pickdistance="150" impactsoundtag="impact_wetsplat" cargocontaineridentifier="metalcrate" description="A heavy heart shaped organ the size of a human head, the organometallic flesh is like rubbery bronze, It seems to still be giving off frequent pulses in various frequencies and particles. While slightly hazaordous, scientists would be very interested in this.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+	    <PreferredContainer primary="storagecab" secondary="mineralcab" />
+    <Price baseprice="850">
+      <Price storeidentifier="merchantoutpost" multiplier="0.65" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.8" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.6" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="copper" amount="2" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="427,149,40,60" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" depth="0.54" sourcerect="427,149,40,60" />
+    <Body width="20" height="20" radius="14" density="30" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+    <Item name="Horn Shrimp shell" identifier="hornshrimpshell" category="Misc" maxstacksize="4" Tags="smallitem" canbepicked="true" description="The heavy mineralized back of a Horn Shrimp. Rich in copper compounds, it flexes under extreme pressure without cracking." cargocontaineridentifier="metalcrate" scale="0.22" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="storagecab" secondary="mineralcab" />
+	<Price baseprice="170">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="copper" amount="2" />
+	  <Item identifier="carbon" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%\Characters\Hornshrimp\Hornschrimp.png" SourceRect="233,228,191,243" />
+    <Sprite texture="%ModDir:2518816103%\Characters\Hornshrimp\Hornschrimp.png" SourceRect="233,228,191,243" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="45" density="22" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+   <Item name="Razor Shrimp Fragment" identifier="razorshrimpshell" category="Misc" maxstacksize="4" Tags="smallitem" canbepicked="true" description="A thick organometallic fragment of the Razor Shrimp carapace. It appears to be biologically cemented alloy akin to black bronze made of copper but with titanium, It takes machinary to even bend this slightly and it instantly returns to its orginal form." cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="storagecab" secondary="mineralcab" />
+	<Price baseprice="220">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="copper" amount="2" />
+	  <Item identifier="titanium" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Characters/Razzershrimp/Razzershrimp.png" SourceRect="665,244,126,116" />
+    <Sprite texture="%ModDir:2518816103%/Characters/Razzershrimp/Razzershrimp.png" SourceRect="665,244,126,116" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="45" density="22" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Human Arm" identifier="decapitatedarm" category="Misc" tags="smallitem,monsterfood" scale="0.8" maxstacksize="8" pickdistance="150" impactsoundtag="impact_wetsplat" cargocontaineridentifier="metalcrate" description="A torn human arm. discolored and reeking of brine due to some oceanic pickling process. Can be brought to merchantresearchers for data analysis.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+        <PreferredContainer primary="storagecab" secondary="mineralcab" />
+	<Price baseprice="186">
+      <Price storeidentifier="merchantoutpost" multiplier="0.4" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.02" sold="false" />
+    </Price>
+	   	<Deconstruct time="10" chooserandom="true" amount="1">
+      <Item identifier="magnesium" commonness="50" />
+      <Item identifier="calcium" commonness="50" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="434,35,24,98" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" depth="0.54" sourcerect="434,35,24,98" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Human Leg" identifier="decapitatedleg" category="Misc" tags="smallitem,monsterfood" scale="0.6" maxstacksize="8" pickdistance="150" impactsoundtag="impact_wetsplat" cargocontaineridentifier="metalcrate" description="A severed human leg. The bones are mysteriously fused and the flesh is hard and rubbery making time of death impossible. Can be brought to researchers for data analysis.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="275">
+      <Price storeidentifier="merchantoutpost" multiplier="0.4" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.2" sold="false" />
+    </Price>
+	   	<Deconstruct time="10" chooserandom="true" amount="2">
+      <Item identifier="magnesium" commonness="50" />
+      <Item identifier="calcium" commonness="30" />
+	  <Item identifier="carbon" commonness="20" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="666,30,29,133" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" depth="0.54" sourcerect="666,30,29,133" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Human Torso" identifier="quarteredman" category="Misc" tags="smallitem,monsterfood" scale="0.6" maxstacksize="1" pickdistance="150" impactsoundtag="impact_wetsplat" cargocontaineridentifier="metalcrate" description="Chewed remains of a human, exhibiting partial ossification from unknown mineral or bacterial activity, Can be brought to researchers for data analysis.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="480">
+      <Price storeidentifier="merchantoutpost" multiplier="0.4" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.6" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.4" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+	   	<Deconstruct time="10" chooserandom="true" amount="2">
+      <Item identifier="magnesium" commonness="50" />
+      <Item identifier="calcium" commonness="50" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="669,182,54,116" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" depth="0.54" sourcerect="669,182,54,116" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Strange Meat" identifier="humanribs" category="Misc" tags="smallitem,monsterfood" scale="0.7" maxstacksize="4" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Large pieces of rich flesh from a rare source. Can be brought to merchants or researchers for data analysis or just fed to pets or the deconstructor.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="175">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10" chooserandom="true" amount="1" >
+      <Item identifier="magnesium" commonness="40" />
+      <Item identifier="calcium" commonness="40"  />
+      <Item identifier="carbon" commonness="20"  />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="493,66,68,164" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" depth="0.54" sourcerect="493,66,68,164" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Mudraptor Head Piece" identifier="mudhead" category="Misc" maxstacksize="4" Tags="smallitem" canbepicked="true" description="Armoured head exoskeleton of a Mudraptor. It feels heavy and rough." cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="120">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.65" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.8" sold="false" />
+    </Price>
+	   	<Deconstruct time="10" chooserandom="true" amount="1">
+      <Item identifier="titanium" commonness="10" />
+      <Item identifier="calcium" commonness="40" />
+      <Item identifier="iron" commonness="40" />
+      <Item identifier="lead" commonness="10" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Mudraptor/Mudraptor.png" sourcerect="357,260,213,85" />
+    <Sprite texture="Content/Characters/Mudraptor/Mudraptor.png" sourcerect="357,260,213,85" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="25" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Mudraptor Claw" identifier="mudclaw" category="Misc" Tags="smallitem" description="The short hand of the Mudraptor. Its fingers are very sharp and can be used as a makeshift weapon." cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="130">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.55" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.7" sold="false" />
+    </Price>
+	   	<Deconstruct time="10" chooserandom="true" amount="1">
+      <Item identifier="titanium" commonness="50" />
+      <Item identifier="iron" commonness="30" />
+      <Item identifier="lead" commonness="10" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Mudraptor/Mudraptor.png" sourcerect="972,7,39,114" />
+    <Sprite texture="Content/Characters/Mudraptor/Mudraptor.png" sourcerect="972,7,39,114" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="25" density="25" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-5,-5" holdangle="10" reload="1" range="50" DualWieldReloadTimePenaltyMultiplier="1.1" combatPriority="25" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="10" penetration="0.1">
+        <Affliction identifier="lacerations" strength="13" />
+        <Affliction identifier="bleeding" strength="8" />
+        <Affliction identifier="stun" strength="0.2" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </Attack>
+    </MeleeWeapon>
+  </Item>
+  <Item name="Mudraptor Waist Piece" identifier="mudhip" category="Misc" maxstacksize="4" Tags="smallitem" canbepicked="true" description="Armoured waist piece of a Mudraptor. Despite being big, its lighter than the other major armoured pieces." cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="120">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.55" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.7" sold="false" />
+    </Price>
+	   	<Deconstruct time="10" chooserandom="true" amount="1">
+      <Item identifier="titanium" commonness="20" />
+      <Item identifier="iron" commonness="60" />
+      <Item identifier="lead" commonness="20" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Mudraptor/Mudraptor.png" sourcerect="596,21,150,140" />
+    <Sprite texture="Content/Characters/Mudraptor/Mudraptor.png" sourcerect="596,21,150,140" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="25" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Charybdis Tongue" identifier="charybdistongue" category="Misc" maxstacksize="1" Tags="smallitem" canbepicked="true" description="The look of this thing makes you feel very uneasy as the bloody sharp end of this would easily rip you to shreds without the teeth.researchers will pay a large sum for these organs." cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="storagecab" secondary="mineralcab" />
+  <Price baseprice="1000">
+      <Price storeidentifier="merchantoutpost" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.4" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="16">
+      <Item identifier="titanium" amount="2" />
+      <Item identifier="magnesium" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="19,23,235,106" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="19,23,235,106" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="25" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Charybdis Stomach" identifier="charybdisstomach" category="Misc" tags="smallitem" maxstacksize="1" scale="0.8" pickdistance="100" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The gigantic stomach of the Charybdis. Maybe there's something valuable inside it? Researchers are willing to pay a lot for these organs.">
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="1250">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.7" sold="false" />
+    </Price>
+    <Deconstruct time="25" chooserandom="true" amount="3">
+      <Item identifier="fulgurium" copycondition="true" amount="1" commonness="0.1" />
+      <Item identifier="physicorium" copycondition="true" amount="1" commonness="0.1" />
+      <Item identifier="crawlerleg" copycondition="true" amount="3" commonness="0.34" />
+      <Item identifier="crawlerfins" copycondition="true" amount="3" commonness="0.34" />
+      <Item identifier="titanium" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="dementonite" copycondition="true" commonness="0.1" />
+      <Item identifier="thresherclaw" copycondition="true" commonness="0.5" />
+      <Item identifier="threshertail" copycondition="true" commonness="0.5" />
+      <Item identifier="latcherhair" copycondition="true" commonness="0.1" />
+      <Item identifier="bonetail" copycondition="true" commonness="0.5" />
+      <Item identifier="watchercornea" copycondition="true" commonness="0.5" />
+      <Item identifier="mudclaw" copycondition="true" amount="2" commonness="0.34" />
+      <Item identifier="mudhip" copycondition="true" amount="2" commonness="0.34" />
+      <Item identifier="coelanthfin" copycondition="true" commonness="0.5" />
+      <Item identifier="watcherspike" copycondition="true" commonness="0.5" />
+      <Item identifier="bonethresherclaw" copycondition="true" commonness="0.55" />
+      <Item identifier="plastic" copycondition="true" amount="4" commonness="0.7" />
+      <Item identifier="scrap" copycondition="true" amount="4" commonness="0.7" />
+      <Item identifier="watcherspike" copycondition="true" commonness="0.5" />
+      <Item identifier="molochpiece" copycondition="true" commonness="0.5" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Charybdis/Charybdis.png" sourcerect="1591,1282,447,78" />
+    <Sprite texture="Content/Characters/Charybdis/Charybdis.png" depth="0.54" sourcerect="1591,1282,447,78" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Tigerthresher Claws" identifier="thresherclaw" category="Misc" tags="smallitem" scale="0.8" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The claw like fin of the Tigerthresher. Small and dull. Can be deconstructed into iron.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+      <PreferredContainer primary="storagecab" secondary="mineralcab" />
+  <Price baseprice="100">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.4" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.7" sold="false" />
+    </Price>
+    <Deconstruct time="6">
+      <Item identifier="iron" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Tigerthresher/Tigerthresher.png" sourcerect="903,131,45,51" />
+    <Sprite texture="Content/Characters/Tigerthresher/Tigerthresher.png" depth="0.54" sourcerect="903,131,45,51" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Tigerthresher Tail" identifier="threshertail" category="Misc" tags="smallitem" scale="0.8" maxstacksize="4" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The tail of a Tigerthresher. Long and very rough the mineralized scales resemble bauxite. Can be deconstructed into aluminium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="105">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.8" sold="false" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Tigerthresher/Tigerthresher.png" sourcerect="35,27,286,68" />
+    <Sprite texture="Content/Characters/Tigerthresher/Tigerthresher.png" depth="0.54" sourcerect="35,27,286,68" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Bonethresher Claws" identifier="bonethresherclaw" category="Misc" tags="smallitem" scale="0.8" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The claw like fins of the Bonethresher. Bigger than the Tigerthresher, and much sharper. Can be used as a makeshift weapon, or be deconstructed into aluminium and iron.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+      <PreferredContainer primary="storagecab" secondary="mineralcab" />
+  <Price baseprice="450">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="6">
+      <Item identifier="aluminium" />
+      <Item identifier="iron" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Tigerthresher/Tigerthresher.png" sourcerect="903,131,45,51" />
+    <Sprite texture="Content/Characters/Tigerthresher/Tigerthresher.png" depth="0.54" sourcerect="903,131,45,51" />
+    <Body width="20" height="44" density="13" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-15,5" holdangle="10" reload="1" DualWieldReloadTimePenaltyMultiplier="1.15" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.1" structuredamage="6" itemdamage="12">
+        <Affliction identifier="lacerations" strength="12" />
+		<Affliction identifier="blunttrauma" strength="2" />
+        <Affliction identifier="bleeding" strength="13" />
+        <Affliction identifier="stun" strength="0.2" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </Attack>
+    </MeleeWeapon>
+  </Item>
+  <Item name="Bonethresher Tail" identifier="bonetail" category="Misc" tags="smallitem" scale="0.8" maxstacksize="4" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The tail of a Bonethresher. Long and very rough the scales resemble bauxite with hematite intrusion. Can be deconstructed into iron and aluminium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="130">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.8" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="iron" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Tigerthresher/Tigerthresher.png" sourcerect="24,297,214,44" />
+    <Sprite texture="Content/Characters/Tigerthresher/Tigerthresher.png" depth="0.54" sourcerect="24,297,214,44" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Bonethresher Skin" identifier="bonethresherskin" category="Misc" tags="smallitem,monsterfood" scale="0.8" pickdistance="150" maxstacksize="3" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="A piece of thick skin that was left on a Bonethresher. It feels really scaley and rough due to mineralized portions. Can be deconstructed into calcium and aluminium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+      <PreferredContainer primary="storagecab" secondary="mineralcab" />
+  <Price baseprice="330">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.7" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="aluminium" amount="2" />
+      <Item identifier="calcium" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/CreatureLoot/CreatureLoot.png" sourcerect="327,164,35,39" />
+    <Sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.54" sourcerect="327,164,35,39" />
+    <Body width="20" height="44" density="13" />
+    <Holdable canBeCombined="false" removeOnCombined="false" slots="Any" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Watcher Spikes" identifier="watcherspike" category="Misc" tags="smallitem" scale="0.5" maxstacksize="3" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The spiked parts of the Watcher's shell. It feels strangely squishy and inflates a bit. Can be deconstructed into sulphuric acid, carbon and rubber">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="270">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.8" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="16">
+      <Item identifier="sulphuricacid" />
+      <Item identifier="carbon" amount="2" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Watcher/Watcher.png" sourcerect="526,655,104,169" />
+    <Sprite texture="Content/Characters/Watcher/Watcher.png" depth="0.54" sourcerect="526,655,104,169" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Watcher Eye Gel" identifier="watchergel" category="Misc" tags="smallitem" scale="0.4" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The vitreous gel of the Watcher. Deconstructs into sulphuric acid and zinc. In high demand with researchers or more generalized applications in colonies.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="350">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.75" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" sold="false" />
+    </Price>
+    <Deconstruct time="16">
+      <Item identifier="sulphuricacid" amount="2" />
+      <Item identifier="zinc" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Chems.png" sourcerect="392,0,55,111" />
+    <Sprite texture="%ModDir:2518816103%/Items/Chems.png" depth="0.54" sourcerect="392,0,55,111" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Watcher Bursted Cornea" identifier="watchercornea" category="Misc" tags="smallitem" scale="0.5" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The bursted len of the Watcher. Deconstructs into silicon and carbon. Researchers will pay quite a bit for this as will craftsmen in colonies.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="270">
+      <Price storeidentifier="merchantoutpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="silicon" amount="2" />
+      <Item identifier="carbon" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Watcher/Watcher.png" sourcerect="1153,836,125,185" />
+    <Sprite texture="Content/Characters/Watcher/Watcher.png" depth="0.54" sourcerect="1153,836,125,185" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Moloch Pieces" identifier="molochpiece" category="Misc" tags="smallitem" scale="0.3" maxstacksize="3" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Large pieces of slimy flesh mixed with assorted materials taken from the body of a Moloch, highly valueable for study or crafting, Can be deconstructed into many materials.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="480">
+      <Price storeidentifier="merchantoutpost" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.55" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10" chooserandom="true" amount="2">
+      <Item identifier="iron" copycondition="true" commonness="0.125" />
+      <Item identifier="titanium" copycondition="true" commonness="0.2" />
+      <Item identifier="tin" copycondition="true" commonness="0.5" />
+      <Item identifier="copper" copycondition="true" commonness="0.5" />
+      <Item identifier="zinc" copycondition="true" commonness="0.5" />
+      <Item identifier="silicon" copycondition="true" commonness="0.5" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Moloch/Moloch.png" sourcerect="1401,4,94,315" />
+    <Sprite texture="Content/Characters/Moloch/Moloch.png" depth="0.54" sourcerect="1401,4,94,315" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Moloch Shell Piece" identifier="molochshellpiece" category="Misc" tags="smallitem" scale="0.2" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Cracked armour pieces taken from the dead Moloch. Often worked into high quality goods or as inlay though it can also be deconstructed for its base minerals.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="800">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.45" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10" chooserandom="true" amount="2">
+      <Item identifier="quartz" copycondition="true" commonness="0.5" />
+      <Item identifier="langbeinite" copycondition="true" commonness="0.5" />
+      <Item identifier="titanium" copycondition="true" commonness="0.5" />
+      <Item identifier="langbeinite" copycondition="true" commonness="0.5" />
+      <Item identifier="chamosite" copycondition="true" commonness="0.5" />
+      <Item identifier="esperite" copycondition="true" commonness="0.5" />
+      <Item identifier="galena" copycondition="true" commonness="0.5" />
+      <Item identifier="ironore" copycondition="true" commonness="0.5" />
+      <Item identifier="polyhalite" copycondition="true" commonness="0.5" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Moloch/Moloch.png" sourcerect="18,432,480,306" />
+    <Sprite texture="Content/Characters/Moloch/Moloch.png" depth="0.54" sourcerect="18,432,480,306" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Hammerhead Arms" identifier="hammerarm" category="Misc" tags="smallitem" scale="0.4" maxstacksize="3" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The sharp stabbing fin of the Hammerhead. Its feels more like its was fabricated than grown and is absurdly sharp. Can be deconstructed into calcium and iron.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="230">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="16">
+      <Item identifier="calcium" />
+      <Item identifier="iron" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="15,137,305,50" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" depth="0.54" sourcerect="15,137,305,50" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Hammerhead Eye" identifier="hammereye" category="Misc" tags="smallitem" scale="0.5" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Eye of a Hammerhead. This one still glows a sickly green, like far off light in the great sea. Can be deconstructed into zinc and magnesium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="230">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.7" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.8" sold="false" />
+    </Price>
+    <Deconstruct time="13">
+      <Item identifier="zinc" />
+      <Item identifier="magnesium" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="277,53,24,24" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" depth="0.54" sourcerect="277,53,24,24" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Hammerhead Nose" identifier="hammernose" category="Misc" tags="smallitem" scale="0.5" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The very hard nose of the Hammerhead. Can be deconstructed into calcium and titanium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="200">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="titanium" amount="1" />
+      <Item identifier="calcium" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Hammerhead/Hammerhead.png" sourcerect="975,54,33,142" />
+    <Sprite texture="Content/Characters/Hammerhead/Hammerhead.png" depth="0.54" sourcerect="975,54,33,142" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Golden Hammerhead Tail" identifier="goldenhammerheadtail" category="Misc" tags="smallitem" scale="0.4" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Rock solid and shines a lot, how does it turn when it is so stiff? Can be deconstructed into carbon, calcium, and iron.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="250">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.7" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="iron" amount="1" />
+      <Item identifier="carbon" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Hammerheadgold/Hammerheadgold.png" sourcerect="21,95,339,129" />
+    <Sprite texture="Content/Characters/Hammerheadgold/Hammerheadgold.png" depth="0.54" sourcerect="21,95,339,129" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Golden Hammerhead Arms" identifier="goldenhammerheadarm" category="Misc" tags="smallitem" scale="0.4" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Sharp enough to damage submarine hulls and shines brilliantly. It somehow flexes like an organic fusion of metal and plastic. Can be deconstructed into titanium, silicon, and iron.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="250">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.45" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.7" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="iron" amount="1" />
+      <Item identifier="titanium" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Hammerheadgold/Hammerheadgold.png" sourcerect="720,286,299,41" />
+    <Sprite texture="Content/Characters/Hammerheadgold/Hammerheadgold.png" depth="0.54" sourcerect="720,286,299,41" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Moloch Tentacles" identifier="molochtentacles" category="Misc" tags="smallitem,medical" description="A piece of tentacle taken from a Moloch. Can be used as a emergency bandage. Can be deconstructed into a fauna derived elastin type material." scale="0.4" pickdistance="150" impactsoundtag="impact_wetsplat" cargocontaineridentifier="metalcrate">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="300">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.55" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.55" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.95" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.7" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="Elastin" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Moloch/Moloch.png" sourcerect="1839,1272,152,439" />
+    <Sprite texture="Content/Characters/Moloch/Moloch.png" depth="0.54" sourcerect="1839,1272,152,439" />
+    <Body width="20" height="44" density="13" />
+    <Holdable canBeCombined="false" removeOnCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="5" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character, This" duration="15">
+        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <ReduceAffliction identifier="bleeding" amount="25" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character, This" duration="15">
+        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <ReduceAffliction identifier="bleeding" amount="1.25" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Black Moloch Shell Piece" identifier="blackmolochshellpiece" category="Misc" tags="smallitem" scale="0.2" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Cracked armour pieces taken from a Black Moloch. Holding it makes you feel tense. The rich material yields a large amount of various metals when deconstructed.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="600">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.55" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" sold="false" />
+    </Price>
+    <Deconstruct time="10" chooserandom="true" amount="3">
+      <Item identifier="copper" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="silicon" copycondition="true" amount="2" commonness="0.5" />
+	  <Item identifier="lead" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="magnesium" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="phosphorus" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="iron" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="zinc" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="tin" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="calcium" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="carbon" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="aluminium" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="lithium" copycondition="true" amount="2" commonness="0.5" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Molochblack/Molochblack.png" sourcerect="18,432,480,306" />
+    <Sprite texture="Content/Characters/Molochblack/Molochblack.png" depth="0.54" sourcerect="18,432,480,306" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0">
+    <!--   <StatusEffect type="Always" target="This" Condition="100" delay="30" stackable="false" setvalue="true">
+       <Explosion range="150.0" empstrength="5" camerashake="0" stun="0" force="2.0" flames="false" smoke="false" shockwave="false" sparks="true" underwaterbubble="false" />
+      </StatusEffect> -->
+    </Holdable>
+  </Item>
+  <Item name="Black Moloch Tentacles" identifier="blackmolochtentacles" category="Misc" tags="smallitem,medical" description="A piece of tentacle taken from a Black Moloch. Can be used as a emergency bandage or seal. Can be deconstructed into animal derived elastin and lithium." scale="0.4" pickdistance="150" impactsoundtag="impact_wetsplat" cargocontaineridentifier="metalcrate">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+        <PreferredContainer primary="storagecab" secondary="mineralcab" />
+	<Price baseprice="250">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.45" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.7" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.8" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="elastin" amount="2" />
+      <Item identifier="lithium" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Moloch/Moloch.png" sourcerect="1839,1272,152,439" />
+    <Sprite texture="Content/Characters/Moloch/Moloch.png" depth="0.54" sourcerect="1839,1272,152,439" />
+    <Body width="20" height="44" density="13" />
+    <Holdable canBeCombined="false" removeOnCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="5" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character, This" duration="15">
+        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <ReduceAffliction identifier="bleeding" amount="25" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character, This" duration="15">
+        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <ReduceAffliction identifier="bleeding" amount="1.25" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Spineling Head" identifier="spinelingpod" category="Misc" tags="smallitem" scale="0.5" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The head pod of the Spineling. Feels hollow inside and there is a nasty mess in it. Deconstructs into zinc and carbon.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="60">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.8" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="zinc" />
+	  <Item identifier="adrenaline" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Spineling/Spineling.png" sourcerect="158,7,55,102" />
+    <Sprite texture="Content/Characters/Spineling/Spineling.png" depth="0.54" sourcerect="158,7,55,102" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Spineling Tail" identifier="spinelingtail" category="Misc" tags="smallitem,monsterfood" scale="0.5" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Tail part of the Spineling displaying its characteristic partly metal physiology. Deconstructs into magnesium and calcium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+    <Price baseprice="60">
+      <Price storeidentifier="merchantoutpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.3" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="magnesium" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Spineling/Spineling.png" sourcerect="8,3,109,38" />
+    <Sprite texture="Content/Characters/Spineling/Spineling.png" depth="0.54" sourcerect="8,3,109,38" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+      <Item name="Viperling Spine" identifier="btviperlingspikeloot" category="Weapon" tags="smallitem,bohviperlingspikeloot" description="Rough and seemingly fragile, its just as durable as a normal spineling spike. Thin veins of crystalized morbusine snake through the uneven surface, While it takes a lot of work to poison a target with one of these, the poison can be extracted via deconstructor." cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.5" allowasextracargo="true" RequireAimToUse="True">
+      <Price baseprice="220" sold="false">
+        <Price storeidentifier="merchantoutpost" multiplier="1" />
+        <Price storeidentifier="merchantcity" multiplier="1" />
+        <Price storeidentifier="merchantresearch" multiplier="1.5" />
+        <Price storeidentifier="merchantmilitary" multiplier="1" />
+        <Price storeidentifier="merchantmine" multiplier="1" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="morbusine" />
+        <Item identifier="carbon" />
+        <Item identifier="zinc" />
+      </Deconstruct>
+      <PreferredContainer primary="armcab" />
+      <Sprite texture="Content/Characters/Spineling_morbusine/Spineling_morbusine.png" sourcerect="0,215,180,18" depth="0.55" />
+      <Body width="160" height="10" density="15" />
+      <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="30,5" handle1="-20,0" holdangle="65" reload="1.0" range="50" combatpriority="10" msg="ItemMsgPickUpSelect">
+        <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="2" structuredamage="2" structuresoundtype="StructureSlash">
+          <Affliction identifier="lacerations" strength="5" />
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="stun" strength="0.2" />
+          <Affliction identifier="morbusinepoisoning" strength="3" probability="0.4" />
+          <Affliction identifier="morbusinepoisoning" strength="2" probability="0.1" />
+          <StatusEffect type="OnUse" target="UseTarget">
+            <Conditional entitytype="eq Character" />
+            <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+          </StatusEffect>
+        </Attack>
+      </MeleeWeapon>
+    </Item>
+  <Item name="Giant Spineling Spike" identifier="giantspinespike" tags="smallitem" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" description="An extremely dense and razor sharp spine from a Giant Spineling. Can be processed into railgun munitions in a fabricator, sold for its diamond like properties or merely ground up for carbon and titanium.">
+   <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="1000">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="22">
+      <Item identifier="carbon" count="2" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/spineling_giant/spineling_giant.png" sourcerect="933,106,71,595" origin="0.5,0.5" />
+    <Sprite texture="Content/Characters/spineling_giant/spineling_giant.png" sourcerect="933,106,71,595" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="30" />
+    <Holdable slots="Any" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Giant Spineling Railgun Shell" identifier="giantrailspinespike" tags="railgunequipment,railgunammo" category="Equipment" sonarsize="5" scale="1.1" impactsoundtag="impact_metal_heavy" description="An extremely dense Giant Spineling spine, milled down to fit inside of a railgun casing. The words 'Return To Sender' are etched into the side.">
+    <PreferredContainer primary="railgunammoloader" />
+    <PreferredContainer primary="railgunammocontainer" />
+    <!--Ensure that Thalamus always has some railgun shells to use-->
+    <PreferredContainer secondary="wreckrailgunloader" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="wreckrailgunammocontainer" amount="1" spawnprobability="0.03" />
+	<Price baseprice="2000">
+      <Price storeidentifier="merchantoutpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.5" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" count="1" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="iron" amount="1" />
+      <RequiredItem identifier="giantspinespike" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/spinelingrailgun.png" sourcerect="1,44,99,15" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/spinelingrailgun.png" sourcerect="1,44,99,15" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="20" />
+    <Holdable canbecombined="false" slots="LeftHand,RightHand" holdpos="0,-15" handle1="-30,-5" holdangle="170" aimable="false" msg="ItemMsgPickUpSelect">
+      <!-- slow down the character when holding the item -->
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+      <!-- adjust hold position when swimming -->
+      <StatusEffect type="OnActive" target="This" holdpos="-10,-15" handle1="0,-5" holdangle="70" setvalue="true" interval="1.1">
+        <Conditional InWater="true" />
+      </StatusEffect>
+      <!-- revert hold position adjustment when walking -->
+      <StatusEffect type="OnActive" target="This" holdpos="0,-15" handle1="-30,-5" holdangle="170" setvalue="true" interval="1.1">
+        <Conditional InWater="false" />
+      </StatusEffect>
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="10" sticktocharacters="false" sticktoitems="false" sticktostructures="true">
+      <Attack structuredamage="100" severlimbsprobability="2.0" penetration="0.5">
+        <!--Hits up to 10 limbs, so the actual damage can be 10x-->
+        <Affliction identifier="lacerations" strength="105" />
+        <Affliction identifier="bleeding" strength="35" />
+        <Affliction identifier="stun" strength="1" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="0.5">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velomerchantcitymin="-10" velomerchantcitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velomerchantcitymin="100" velomerchantcitymax="2000" scalemin="0.1" scalemax="0.2" />
+        <Explosion ignorecover="true" onlyinside="true" range="600" force="0" playtinnitus="false" showeffects="false" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velomerchantcitymin="-10" velomerchantcitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="Giant Spineling Tail" identifier="giantspinelingtail" category="Misc" tags="smallitem" scale="0.3" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Rocky tail part of the Giant Spineling. Many small quills are attached with an organic plastic film. Deconstructs into zinc, plastic, iron, and calcium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="950">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.45" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.85" sold="false" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="zinc" amount="2" />
+      <Item identifier="carbon" />
+      <Item identifier="iron" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/spineling_giant/spineling_giant.png" sourcerect="13,6,457,160" />
+    <Sprite texture="Content/Characters/spineling_giant/spineling_giant.png" depth="0.54" sourcerect="13,6,457,160" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Giant Spineling Head" identifier="giantspinelingpod" category="Misc" tags="smallitem" scale="0.3" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The ceramic like head pod of this enlarged Spineling, You wonder how the disquieting mess inside it functions as a brain. Deconstructs into zinc, iron and carbon.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+    <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="950">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" />
+      <Price storeidentifier ="merchantmine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="zinc" amount="2" />
+      <Item identifier="carbon" amount="2" />
+      <Item identifier="iron" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/spineling_giant/spineling_giant.png" sourcerect="638,10,265,447" />
+    <Sprite texture="Content/Characters/spineling_giant/spineling_giant.png" depth="0.54" sourcerect="638,10,265,447" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Mother Leatherback Fins" identifier="leatherbackfin" category="Misc" tags="smallitem" scale="0.5" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The large piece of the Mother Leatherbacks fin. Hard and rough it can be ground and boiled into an edible jelly. Deconstructs into iron, carbon, titanium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="550">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="iron" amount="2" />
+      <Item identifier="titanium" />
+      <Item identifier="carbon" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/charybdisold/charybdis.png" sourcerect="1445,1081,556,107" />
+    <Sprite texture="Content/Characters/charybdisold/charybdis.png" depth="0.54" sourcerect="1445,1081,556,107" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Mother Leatherback Stomach" identifier="leatherbackstomach" category="Misc" tags="smallitem" scale="0.4" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Hard stomach of the Leatherback. Could be something inside?">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="1100">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.4" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.85" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="20" chooserandom="true" amount="3">
+      <Item identifier="alienblood" amount="3" commonness="1" />
+      <Item identifier="thorium" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="uranium" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="decapitatedarm" copycondition="true" commonness="0.5" />
+      <Item identifier="decapitatedleg" copycondition="true" commonness="0.5" />
+      <Item identifier="quarteredman" copycondition="true" commonness="0.5" />
+      <Item identifier="crawlerfin" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="mudhip" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="mudclaw" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="thresherclaw" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="bonethresherskin" copycondition="true" commonness="0.5" />
+      <Item identifier="watcherspike" copycondition="true" commonness="0.5" />
+      <Item identifier="threshertail" copycondition="true" amount="2" commonness="0.5" />
+      <Item identifier="bonetail" copycondition="true" commonness="0.5" />
+      <Item identifier="mudhead" copycondition="true" commonness="0.5" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/charybdisold/charybdis.png" sourcerect="324,248,193,192" />
+    <Sprite texture="Content/Characters/charybdisold/charybdis.png" depth="0.54" sourcerect="324,248,193,192" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Mother Leatherback Skin" identifier="leatherbackskin" category="Misc" tags="smallitem,monsterfood" scale="0.4" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Hard skin of the Leatherback. Merchants will pay top marks for the nearly bulletproof leather, The patchy mineralized sections can be crudely processed like undersea mineral nodules.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="1100">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.20" sold="false" />
+    </Price>
+    <Deconstruct time="20" chooserandom="true" amount="3">
+      <Item identifier="quartz" copycondition="true" commonness="0.5" />
+      <Item identifier="lazulite" copycondition="true" commonness="0.5" />
+      <Item identifier="sylvite" copycondition="true" commonness="0.5" />
+      <Item identifier="cassiterite" copycondition="true" commonness="0.5" />
+      <Item identifier="chrysoprase" copycondition="true" commonness="0.5" />
+      <Item identifier="langbeinite" copycondition="true" commonness="0.5" />
+      <Item identifier="titanium" copycondition="true" commonness="0.5" />
+      <Item identifier="langbeinite" copycondition="true" commonness="0.5" />
+      <Item identifier="chamosite" copycondition="true" commonness="0.5" />
+      <Item identifier="esperite" copycondition="true" commonness="0.5" />
+      <Item identifier="galena" copycondition="true" commonness="0.5" />
+      <Item identifier="ironore" copycondition="true" commonness="0.5" />
+      <Item identifier="aragonite" copycondition="true" commonness="0.5" />
+      <Item identifier="titaniumaluminiumalloy" copycondition="true" commonness="0.2" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/charybdisold/charybdis.png" sourcerect="1586,323,443,140" />
+    <Sprite texture="Content/Characters/charybdisold/charybdis.png" depth="0.54" sourcerect="1586,323,443,140" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Coelanth Fins" identifier="coelanthfin" category="Misc" tags="smallitem" maxstacksize="4" scale="0.5" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description=" The calcified fins of a once living Coelanth. Very big and scaly with surprising flexibility. Can be deconstructed into carbon, rubber and calcium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="700">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.85" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="calcium" />
+      <Item identifier="rubber" amount="1" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Coelanth/Coelanth.png" sourcerect="306,14,90,152" />
+    <Sprite texture="Content/Characters/Coelanth/Coelanth.png" depth="0.54" sourcerect="306,14,90,152" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Coelanth Eyes" identifier="coelantheye" category="Misc" tags="smallitem" maxstacksize="1" scale="0.5" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The eyes of the Coelanth. It looks clouded and glows very bright. It can be deconstructed into zinc, lithium and phosphorus.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="680">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.45" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.8" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="zinc" />
+      <Item identifier="lithium" />
+      <Item identifier="phosphorus" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="334,45,43,45" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" depth="0.54" sourcerect="334,45,43,45" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Mantis Claw" identifier="mantisclaw" category="Misc" Tags="smallitem" description="Raptorial legs of the Mantis. Is relatively very sharp and proves to be a good melee weapon. Deconstructs into titanium and chitin." cargocontaineridentifier="metalcrate" scale="0.42" impactsoundtag="impact_metal_light">
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="260">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.4" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.95" sold="false" />
+    </Price>
+    <Deconstruct time="9">
+      <Item identifier="titanium" />
+      <Item identifier="chitin" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Mantis/Mantis.png" sourcerect="180,268,36,162" />
+    <Sprite texture="Content/Characters/Mantis/Mantis.png" sourcerect="180,268,36,162" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="25" density="25" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-3, 18" holdangle="15" reload="1.25" range="65" combatPriority="25" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="8" structuredamage="13" penetration="0.15">
+        <Affliction identifier="lacerations" strength="15" />
+        <Affliction identifier="bleeding" strength="13" />
+        <Affliction identifier="stun" strength="0.25" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </Attack>
+    </MeleeWeapon>
+  </Item>
+  <Item name="Mantis Leg" identifier="mantisleg" category="Misc" tags="smallitem" scale="0.42" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Extremity of a Mantis, its limbs contain iron compounds which gives them a dull ochre color. Deconstructs into chitin, iron.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="220">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.45" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.85" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="chitin" amount="1" />
+      <Item identifier="iron" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Mantis/Mantis.png" sourcerect="178,134,37,123" />
+    <Sprite texture="Content/Characters/Mantis/Mantis.png" depth="0.54" sourcerect="178,134,37,123" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Shrimp Stomach" identifier="shrimpstomach" category="Misc" tags="smallitem" scale="0.5" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Small belly of the Shrimp. This one seems to be filled with mineralized nodules and other inorganic material.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="100">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.7" sold="false" />
+    </Price>
+    <Deconstruct time="20" chooserandom="true" amount="1">
+	  <Item identifier="quartz" copycondition="true" commonness="0.5" />
+      <Item identifier="lazulite" copycondition="true" commonness="0.5" />
+      <Item identifier="sylvite" copycondition="true" commonness="0.5" />
+      <Item identifier="cassiterite" copycondition="true" commonness="0.5" />
+      <Item identifier="chrysoprase" copycondition="true" commonness="0.5" />
+      <Item identifier="langbeinite" copycondition="true" commonness="0.5" />
+      <Item identifier="titanium" copycondition="true" commonness="0.5" />
+      <Item identifier="langbeinite" copycondition="true" commonness="0.5" />
+      <Item identifier="chamosite" copycondition="true" commonness="0.5" />
+      <Item identifier="esperite" copycondition="true" commonness="0.5" />
+      <Item identifier="galena" copycondition="true" commonness="0.5" />
+      <Item identifier="ironore" copycondition="true" commonness="0.5" />
+      <Item identifier="aragonite" copycondition="true" commonness="0.5" />
+      <Item identifier="titaniumaluminiumalloy" copycondition="true" commonness="0.2" />
+	  <Item identifier="titanium" copycondition="true" commonness="0.2" />
+	  <Item identifier="scrap" copycondition="true" amount="1" commonness="0.5" />
+	  <Item identifier="copper" copycondition="true" amount="1" commonness="0.5" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/legacycrawler/legacycrawler.png" sourcerect="57,7,57,54" />
+    <Sprite texture="Content/Characters/legacycrawler/legacycrawler.png" depth="0.54" sourcerect="57,7,57,54" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Shrimp Antenna" identifier="shrimpantenna" category="Misc" tags="smallitem" scale="0.8" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Antenna used by the shrimp to feel, taste, and sense.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="56">
+      <Price storeidentifier="merchantoutpost" multiplier="0.2" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.4" sold="false" />
+    </Price>
+    <Deconstruct time="3" chooserandom="true" amount="1">
+      <Item identifier="calcium" commonness="70" />
+	  <Item identifier="carbon" commonness="30" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/legacycrawler/legacycrawler.png" sourcerect="15,3,30,27" />
+    <Sprite texture="Content/Characters/legacycrawler/legacycrawler.png" depth="0.54" sourcerect="15,3,30,27" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Shrimp Claw" identifier="shrimpclaw" category="Misc" description="Curved with an exceedingly sharp tip, Able to slice not just thick hide but also metal like a living linolium knife." Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.82" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="56">
+      <Price storeidentifier="merchantmerchantoutpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantmerchantcity" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantmerchantresearch" multiplier="0.6" sold="false" />
+      <Price storeidentifier="merchantmerchantmilitary" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantmerchantmine" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.2" sold="false" />
+    </Price>
+    <Deconstruct time="6" chooserandom="true" amount="1">
+      <Item identifier="iron" commonness="40" />
+	  <Item identifier="copper" commonness="60" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/legacycrawler/legacycrawler.png" sourcerect="63,78,14,43" origin="0.5,0.5" />
+    <Sprite texture="Content/Characters/legacycrawler/legacycrawler.png" sourcerect="63,78,14,43" depth="0.55" origin="0.5,0.5" />
+    <Body width="65" height="15" density="25" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-5,-8" holdangle="10" aimangle="-60" reload="0.75" range="50" DualWieldReloadTimePenaltyMultiplier="1.1" combatPriority="25" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.2" itemdamage="8" structuredamage="8" penetration="0.15" structuresoundtype="StructureSlash">
+        <Affliction identifier="lacerations" strength="10" />
+        <Affliction identifier="bleeding" strength="12" />
+		<Affliction identifier="stun" strength="0.07" />
+        <StatusEffect type="OnUse" target="Character">
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <Quality>
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Barracuda Fins" identifier="legacysharkfin" category="Misc" tags="smallitem" scale="0.5" maxstacksize="3" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Fins from a Barracuda. Long and stiffened the bony protusions require careful handling. Deconstructs into carbon and calcium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="70">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="9">
+      <Item identifier="calcium" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Characters/TigerSharkThresher/tigersharkthresher.png" sourcerect="280,299,56,97" />
+    <Sprite texture="%ModDir:2518816103%/Characters/TigerSharkThresher/tigersharkthresher.png" depth="0.54" sourcerect="280,299,56,97" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Barracuda Jaw" identifier="legacysharkjaw" category="Misc" tags="smallitem" scale="0.6" maxstacksize="3" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Better not touch those teeth! Could still carry some poison on it. Deconstructs into calcium, iron, and paralyzant">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="70">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
+    </Price>
+    <Deconstruct time="9">
+      <Item identifier="calcium" />
+      <Item identifier="iron" />
+      <Item identifier="paralyzant" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Characters/TigerSharkThresher/tigersharkthresher.png" sourcerect="391,171,27,107" />
+    <Sprite texture="%ModDir:2518816103%/Characters/TigerSharkThresher/tigersharkthresher.png" depth="0.54" sourcerect="391,171,27,107" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Barracuda Skin" identifier="barracudaskin" category="Misc" tags="smallitem" scale="0.3" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The beautiful white and blue skin of the Barracuda. These mineralized scales are in high demand from crew captains and administrators. This will likely result in the extinction of the Barracuda at some point.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+      <PreferredContainer primary="storagecab" secondary="mineralcab" />
+  <Price baseprice="260">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" sold="false" />
+    </Price>
+    <Deconstruct time="10" chooserandom="true" amount="2">
+      <Item identifier="phosphorus" copycondition="true" commonness="0.5" />
+      <Item identifier="lithium" copycondition="true" commonness="0.5" />
+      <Item identifier="titanium" copycondition="true" commonness="0.5" />
+      <Item identifier="iron" copycondition="true" commonness="0.5" />
+      <Item identifier="carbon" copycondition="true" commonness="0.5" />
+      <Item identifier="calcium" copycondition="true" commonness="0.5" />
+      <Item identifier="steel" copycondition="true" commonness="0.5" />
+      <Item identifier="whitepaint" copycondition="true" commonness="1" />
+      <Item identifier="bluepaint" copycondition="true" commonness="1" />
+      <Item identifier="uranium" copycondition="true" commonness="0.5" />
+      <Item identifier="titaniumaluminiumalloy" copycondition="true" commonness="0.2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Characters/TigerSharkThresher/tigersharkthresher.png" sourcerect="327,3,34,289" />
+    <Sprite texture="%ModDir:2518816103%/Characters/TigerSharkThresher/tigersharkthresher.png" depth="0.54" sourcerect="327,3,34,289" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Husker Venom" identifier="huskervenom" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,poison,syringe" description="Extracted venom of a husker, the unique compounds form a complex and poorly understood cocktail of oxycyanide buffered with organic compounds that function similar to stabilozine. Allows the oxycyanide to hyperoxygenate tissue causing a brief aderenaline-like surge, which is toxic to the husk parasite. Valuable and dangerous in the extreme, as the cyanide remains once its oxygen is absorbed." useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True" inventoryiconcolor="50,80,50,255">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="toxcab" secondary="toxcontainer" />
+    <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,piratetoxcab" spawnprobability="0.05" />
+    <Price baseprice="375" sold="false">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" multiplier="0.9" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" />
+      <Price storeidentifier="merchanthusk" sold="true" minavailable="0" maxavailable="2">
+        <Reputation faction="huskcult" min="50" />
+      </Price>
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="chloralhydrate" />
+      <Item identifier="cyanide" />
+      <Item identifier="stabilozine" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,640,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="37,69,38,69" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="60" />
+      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnSuccess" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+        <Conditional ishuman="true" />
+        <Affliction identifier="cyanidepoisoning" amount="35" />
+        <Affliction identifier="stabilozineeffect" amount="45" />
+        <Affliction identifier="haste" amount="70" />
+        <Affliction identifier="adrenalinerush" amount="6" />
+        <Affliction identifier="huskinfectionresistance" amount="250" />
+      </StatusEffect>
+      <StatusEffect type="OnSuccess" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+        <Conditional ishuman="false" />
+        <Affliction identifier="cyanidepoisoning" amount="33" />
+        <Affliction identifier="stabilozineeffect" amount="35" />
+        <Affliction identifier="haste" amount="70" />
+        <Affliction identifier="adrenalinerush" amount="7" />
+        <Affliction identifier="huskinfectionresistance" amount="250" />
+      </StatusEffect>
+	   <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="60" delay="1">
+        <ReduceAffliction identifier="oxygenlow" amount="2.5"/>
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+        <!--This gunk is way deadly but serves as less dangerous way to treat husk than straight cyanide -->
+        <Affliction identifier="cyanidepoisoning" amount="33" />
+        <Affliction identifier="haste" amount="40" />
+        <Affliction identifier="stabilozineeffect" amount="20" />
+        <Affliction identifier="adrenalinerush" amount="4" />
+        <Affliction identifier="huskinfectionresistance" amount="100" />
+      </StatusEffect>
+	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="5" delay="1">
+        <ReduceAffliction identifier="oxygenlow" amount="2.5"/>
+      </StatusEffect>
+      <StatusEffect type="OnSuccess" target="UseTarget">
+        <Conditional entitytype="eq Character" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="UseTarget">
+        <Conditional entitytype="eq Character" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
+        <Affliction identifier="stun" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="18.0" sticktocharacters="true" launchrotation="-90" inheritStatusEffectsFrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
+    <SkillRequirementHint identifier="medical" level="60" />
+  </Item>
+  <Item name="Fractal Machine Parts" identifier="guardianparts" category="Misc" tags="smallitem" scale="0.4" maxstacksize="3" pickdistance="150" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate" description="Mysterious machine parts of the Fractal Guardian. Researchers will pay a decent bounty for these.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+      <PreferredContainer primary="storagecab" secondary="mineralcab" />
+  <Price baseprice="180">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.75" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="tin" />
+      <Item identifier="steel" />
+      <Item identifier="thorium" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Fractalguardian/Fractalguardian.png" sourcerect="116,286,43,153" />
+    <Sprite texture="Content/Characters/Fractalguardian/Fractalguardian.png" depth="0.54" sourcerect="116,286,43,153" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Fractal Ejector" identifier="guardianspeargun" category="Misc" tags="smallitem" scale="0.4" maxstacksize="3" pickdistance="150" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate" description="Fractal Guardians like to drag their intruders with this sort of device. Researchers will buy these for a fair amount.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+   <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="210">
+      <Price storeidentifier="merchantoutpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.6" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="tin" />
+      <Item identifier="steel" />
+      <Item identifier="iron" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Fractalguardian/Fractalguardian.png" sourcerect="398,612,102,33" />
+    <Sprite texture="Content/Characters/Fractalguardian/Fractalguardian.png" depth="0.54" sourcerect="398,612,102,33" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Fractal Biomechanic Parts" identifier="guardianlifesupport" category="Misc" tags="smallitem" scale="0.4" maxstacksize="1" pickdistance="150" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate" description="Seems like the biomechanical organ-like life support of a expired Guardian. There is still a lot to learn from these machines. Researchers will buy these, often just for the rare materials inside.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+    <Price baseprice="320">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.7" sold="false" />
+    </Price>
+    <Deconstruct time="10" chooserandom="true" amount="2">
+      <Item identifier="tin" commonness="100" amount="2" />
+      <Item identifier="fulgurium" commonness="0.5" />
+      <Item identifier="physicorium" commonness="0.5" />
+      <Item identifier="oxygeniteshard" commonness="0.5" />
+      <Item identifier="sulphuriteshard" commonness="0.5" />
+      <Item identifier="incendium" commonness="0.5" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Fractalguardian/Fractalguardian.png" sourcerect="219,358,122,141" />
+    <Sprite texture="Content/Characters/Fractalguardian/Fractalguardian.png" depth="0.54" sourcerect="219,358,122,141" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Fractal Steam Cannon" identifier="guardianbrokensteamcannon" category="Misc" tags="smallitem" scale="0.4" maxstacksize="3" pickdistance="150" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate" description="Steam Cannon that Fractal Guardians use against intruders. Unfortanatly you can't get it to work as a unexplained mechanism completely shuts down the weapon once its robotic user dies. Researchers pay an alright bounty for each one brought in.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="220">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.55" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.8" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="tin" />
+      <Item identifier="iron" />
+      <Item identifier="magnesium" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Fractalguardian/Fractalguardian.png" sourcerect="222,516,121,60" />
+    <Sprite texture="Content/Characters/Fractalguardian/Fractalguardian.png" depth="0.54" sourcerect="222,516,121,60" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Fractal Guardians Dome" identifier="guardiandome" category="Misc" tags="smallitem" scale="0.4" maxstacksize="8" pickdistance="150" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate" description="Broken pieces of the glass dome that housed the Fractal Guardians 'brain'. Researchers pay a fair price, far more than the scrap value.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+    <Price baseprice="245">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.7" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.4" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="8">
+      <Item identifier="sodium" />
+      <Item identifier="silicon" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Fractalguardian/Fractalguardian.png" sourcerect="215,672,196,73" />
+    <Sprite texture="Content/Characters/Fractalguardian/Fractalguardian.png" depth="0.54" sourcerect="215,672,196,73" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Endworm Tooth" identifier="endwormtooth" category="Misc" maxstacksize="1" Tags="smallitem" canbepicked="true" description="One of the many sharp fangs of the Endworm. Holding it could be very dangerous. Deconstructs into titanium, iron, calcium, and magnesium." cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="1500">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.50" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.95" sold="false" />
+    </Price>
+    <Deconstruct time="22">
+      <Item identifier="titanium" amount="2" />
+      <Item identifier="iron" amount="2" />
+      <Item identifier="magnesium" amount="2" />
+      <Item identifier="calcium" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Endworm/Endworm.png" sourcerect="570,15,64,110" />
+    <Sprite texture="Content/Characters/Endworm/Endworm.png" sourcerect="570,15,64,110" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="25" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Endworm Poop" identifier="bigpileofshit" category="Misc" maxstacksize="1" Tags="smallitem" canbepicked="true" description="Very large worm casting. The holy mother load of fertilizer. Deconstruction seperates out unstable compounds from a large amount of poop suitible for gardening." cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="storagecab" secondary="mineralcab" />
+  <Price baseprice="2000">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.4" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.8" sold="false" />
+    </Price>
+    <Deconstruct time="30">
+      <Item identifier="phosphorus" amount="3" />
+      <Item identifier="uranium" amount="3" />
+      <Item identifier="potassium" amount="3" />
+      <Item identifier="poop" amount="8" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="207,251,429,253" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="207,251,429,253" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="25" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Matriarch Arms" identifier="matriarchheadarm" category="Misc" tags="smallitem" scale="0.4" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Has a redder tint than the other Hammerheads, much more rubbery and flexible with a strong odor. Can be deconstructed into titanium, calcium, and iron.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="400">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.8" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="iron" amount="2" />
+      <Item identifier="calcium" amount="3" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Hammerheadmatriarch/Hammerheadmatriarch.png" sourcerect="1082,1970,418,70" />
+    <Sprite texture="Content/Characters/Hammerheadmatriarch/Hammerheadmatriarch.png" depth="0.54" sourcerect="1082,1970,418,70" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Matriarch Fins" identifier="matriarchfin" category="Misc" tags="smallitem" scale="0.4" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Has a redder tint than the other breeds and has more fins than others. Can be deconstructed into iron, rubber, and aluminium.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="450">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="iron" amount="2" />
+      <Item identifier="rubber" amount="2" />
+      <Item identifier="aluminium" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Hammerheadmatriarch/Hammerheadmatriarch.png" sourcerect="18,38,183,220" />
+    <Sprite texture="Content/Characters/Hammerheadmatriarch/Hammerheadmatriarch.png" depth="0.54" sourcerect="18,38,183,220" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Matriarch Eye" identifier="matriarcheye" category="Misc" tags="smallitem" scale="0.4" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Eye of the Matriarch, its almost the size of a dinner plate. Can be deconstructed into zinc, magnesium, and saline.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="600">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.8" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="zinc" amount="2" />
+      <Item identifier="magnesium" />
+      <Item identifier="antibloodloss1" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="360,152,43,43" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" depth="0.54" sourcerect="360,152,43,43" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Latcher Eye" identifier="latchereye" category="Misc" tags="smallitem,bohlatchereyeball" scale="0.5" maxstacksize="3" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Eye of the Latcher. It is souless and hollow and the iris seems to twitch a bit. Can be deconstructed into zinc, magnesium, and saline.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="1000">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="zinc" amount="2" />
+      <Item identifier="antibloodloss1" amount="2" />
+      <Item identifier="magnesium" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Latcher/Latcher.png" sourcerect="1850,58,140,140" />
+    <Sprite texture="Content/Characters/Latcher/Latcher.png" depth="0.54" sourcerect="1850,58,140,140" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Latcher Fangs" identifier="latcherfang" category="Misc" tags="smallitem" scale="0.6" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" description="Huge fangs of the Latcher. Can be deconstructed into titanium, calcium, and iron.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="1550">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.8" sold="false" />
+    </Price>
+    <Deconstruct time="45">
+      <Item identifier="zinc" amount="2" />
+      <Item identifier="calcium" amount="1" />
+      <Item identifier="magnesium" amount="1" />
+      <Item identifier="titanium" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Humangore.png" sourcerect="34,565,253,265" />
+    <Sprite texture="%ModDir:2518816103%/Items/Humangore.png" depth="0.54" sourcerect="34,565,253,265" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Latcher Hair" identifier="latcherhair" category="Misc" tags="smallitem,bohlatcherfur" scale="0.5" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Patches of large fur taken from a Latcher. It looks encrusted with mineral growths and small nodules.">
+    <!--<Price storeidentifier="merchantresearch" buyprice="450" />-->
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="1200">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.4" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10" chooserandom="true" amount="4">
+      <Item identifier="elastin" amount="5" commonness="100" />
+      <Item identifier="zinc" amount="3" commonness="100" />
+      <Item identifier="quartz" copycondition="true" commonness="0.5" />
+      <Item identifier="lazulite" copycondition="true" commonness="0.5" />
+      <Item identifier="sylvite" copycondition="true" commonness="0.5" />
+      <Item identifier="cassiterite" copycondition="true" commonness="0.5" />
+      <Item identifier="chrysoprase" copycondition="true" commonness="0.5" />
+      <Item identifier="langbeinite" copycondition="true" commonness="0.5" />
+      <Item identifier="titanium" copycondition="true" commonness="0.5" />
+      <Item identifier="chamosite" copycondition="true" commonness="0.5" />
+      <Item identifier="esperite" copycondition="true" commonness="0.5" />
+      <Item identifier="galena" copycondition="true" commonness="0.5" />
+      <Item identifier="ironore" copycondition="true" commonness="0.5" />
+      <Item identifier="polyhalite" copycondition="true" commonness="0.5" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Characters/Latcher/Latcher.png" sourcerect="1862,1036,117,222" />
+    <Sprite texture="Content/Characters/Latcher/Latcher.png" depth="0.54" sourcerect="1862,1036,117,222" />
+    <Body width="20" height="44" density="13" />
+    <Holdable slots="Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Latcher Spike" identifier="latchertooth" category="Misc" Tags="mediumitem,weapon,gunsmith" scale="0.3" requireaimtouse="true" impactsoundtag="impact_metal_light" description="Terrifyingly sharp spike of the latcher. Ranging from various sizes, this one seems oddly sized to the other spikes, allowing it to be used as a makeshift weapon.">
+        <PreferredContainer primary="storagecab" secondary="mineralcab" />
+	<Deconstruct time="20">
+      <Item identifier="titanium" />
+      <Item identifier="calcium" />
+    </Deconstruct>
+    <Price baseprice="1500">
+      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+    </Price>
+    <InventoryIcon texture="Content/Characters/Latcher/Latcher.png" sourcerect="1835,522,43,363" origin="0.5,0.5" />
+    <Sprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1835,522,43,363" depth="0.55" origin="0.5,0.2" />
+    <Body width="20" height="240" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" rotation="90" HoldPos="0,0" aimpos="10,40" handle1="-4,-65" handle2="-4,-52" aimangle="-15" holdangle="-18" reload="2.0" range="160" combatPriority="40" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="5" severlimbsprobability="5" itemdamage="23" structuredamage="20">
+        <Affliction identifier="lacerations" strength="22" />
+		<Affliction identifier="blunttrauma" strength="8" />
+        <Affliction identifier="bleeding" strength="26" />
+        <Affliction identifier="stun" strength="0.7" />
+        <StatusEffect type="OnUse" target="Character">
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+    <Quality>
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+    </Quality>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+  </Item>
+  <Item name="" identifier="spinelingspikedirectional" category="Misc" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,215,180,18" depth="0.55" />
+    <Body width="160" height="10" density="20" />
+    <Projectile characterusable="false" launchimpulse="200" maxtargetstohit="3" sticktocharacters="true" sticktodeflective="true" sticktoitems="false" sticktodoors="false" sticktostructures="true" penetration="0.25" friendlyfire="false" damagedoors="true">
+      <Attack structuredamage="20" itemdamage="20" severlimbsprobability="0.5" penetration="0.2">
+        <!--Hits up to 3 limbs, so the actual damage can be 3x-->
+        <Affliction identifier="lacerations" strength="10" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="stun" strength="0.25" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="0.5">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="-34" />
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="2000" scalemin="0.1" scalemax="0.2" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="90" checkconditionalalways="true">
+        <Conditional speciesname="eq human" />
+        <Affliction identifier="lacerations" strength="10" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="stun" strength="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <LightComponent range="200" castshadows="False" drawbehindsubs="False" ison="True" blinkfrequency="0" lightcolor="200,200,255,20" isactive="True" minvoltage="0" powerconsumption="0" vulnerabletoemp="False" pickingtime="0" canbepicked="False" allowingameediting="False" msg="">
+      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.6" alpha="0.5" />
+    </LightComponent>
+  </Item>
+  <Item name="" identifier="spinelingspikedeathdirectional" scale="1" health="1" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,1,0,1" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="10" damagedoors="true">
+      <Attack structuredamage="0" itemdamage="0" severlimbsprobability="0" penetration="0" />
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <SpawnItem identifier="spinelingspikedirectional" spawnposition="This" count="12" aimspread="120" rotationtype="Collider" rotation="90" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" Condition="-100" delay="0.1" stackable="false" />
+      <StatusEffect type="OnImpact" target="This" Condition="-100" stackable="false" />
+      <!-- child component of the Projectile = only active when the projectile is active -->
+      <MotionSensor range="325" canbeselected="false" IgnoreDead="True" minimumvelocity="0" updateinterval="0.025" target="Monster" DetectOwnMotion="false">
+        <StatusEffect type="OnNotContained" target="This" condition="-100" disabledeltatime="true" stackable="false" checkconditionalalways="true">
+          <Conditional targetitemcomponent="MotionSensor" MotionDetected="eq true" />
+        </StatusEffect>
+      </MotionSensor>
+    </Projectile>
+  </Item>
+  <Item name="spineling spike ammo directional" identifier="spinelingspikeammodirectional" scale="0.5" tags="smallitem,ammobox" category="Weapon" linkable="false" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
+    <Deconstruct time="10">
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.6" alpha="0.5" />
+    <Body width="90" height="72" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <!--  -2.5 per usage = 40 shots per box -->
+      <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="spinelingspikedeathdirectional" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="Contained" delay="0.9">
+        <RequiredItem items="spinelingspikedeathdirectional" type="Contained" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="spinelingspikedeathdirectional" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-2.5" disabledeltatime="true">
+        <RequiredItem items="spinelingspikedeathdirectional" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" delay="1">
+        <RemoveItem />
+      </StatusEffect>
+      <Containable items="spinelingspikedeathdirectional" />
+    </ItemContainer>
+  </Item>
+  <!-- Using deep diver duck as a base. -->
+  <Item name="" identifier="poopprojectile" nameidentifier="poop" Tags="smallitem" maxstacksize="1" hideinmenus="false" health="1" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.5" impactsoundtag="impact_soft" impacttolerance="6">
+    <Sprite texture="Content/Characters/Pets/pets.png" depth="0.7" sourcerect="387,15,53,41" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <Body width="53" height="41" density="9" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" delay="0.1">
+        <Use />
+      </StatusEffect>
+    </Throwable>
+    <Projectile characterusable="false" launchimpulse="30" sticktocharacters="false" friendlyfire="false">
+      <Attack structuredamage="5">
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character" />
+          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+          <Affliction identifier="shitstained" strength="25" />
+          <Affliction identifier="stun" strength="0.4" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1.5">
+          <Remove />
+        </StatusEffect>
+      </Attack>
+    </Projectile>
+  </Item>
+  <Item name="Moloch Egg" identifier="smallmolochegg" description="An egg of a Moloch. Its heavy and there is something pulsating inside. It takes years for a single Moloch egg to hatch into thousands of them so this egg is currently no use to you, but scientists are willing to buy it at a high price." nameidentifier="molochegg" Tags="largeitem" health="100" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" category="Misc" scale="0.4" impactsoundtag="impact_soft">
+        <PreferredContainer primary="storagecab" secondary="mineralcab" />
+	<Price baseprice="600">
+      <Price storeidentifier="merchantoutpost" multiplier="0.6" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.7" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Sprite texture="%ModDir%/Items/Creatureegg/MolochEgg.png" depth="0.7" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Creatureegg/MolochEgg.png" sourcerect="0,0,128,128" />
+    <Deconstruct time="25">
+      <Item identifier="alienblood" />
+      <Item identifier="alienblood" />
+      <Item identifier="saline" />
+    </Deconstruct>
+    <Body radius="55" width="5" friction="1.0" restitution="0.01" angulardamping="0.8" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,10" handle2="0,-10">
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+        <particleemitter particle="brownchunks" particleamount="50" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
+        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-5.0" />
+    </Holdable>
+  </Item>
+  <Item name="Black Moloch Egg" identifier="smallblackmolochegg" description="An egg of a Black Moloch. Its heavy and you feel great dread holding onto it for some reason. It takes years for a single Moloch egg to hatch into thousands of them so this egg is currently no use to you, but scientists are willing to buy it at a high price." nameidentifier="molochegg" Tags="largeitem" health="100" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" category="Misc" scale="0.4" impactsoundtag="impact_soft">
+       <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="700">
+      <Price storeidentifier="merchantoutpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.3" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.6" sold="false" />
+    </Price>
+    <Sprite texture="%ModDir%/Items/Creatureegg/Blackmolochegg.png" depth="0.7" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Creatureegg/Blackmolochegg.png" sourcerect="0,0,128,128" />
+    <Deconstruct time="25">
+      <Item identifier="alienblood" />
+      <Item identifier="alienblood" />
+      <Item identifier="saline" />
+    </Deconstruct>
+    <Body radius="55" width="5" friction="1.0" restitution="0.01" angulardamping="0.8" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,10" handle2="0,-10">
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+        <particleemitter particle="brownchunks" particleamount="50" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
+        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-5.0" />
+    </Holdable>
+  </Item>
+    <Item name="" variantof="spinelingspike" identifier="btcmorbusinespinelingspike" nameidentifier="spinelingspike" category="Misc" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Characters/Spineling_morbusine/Spineling_morbusine.png" sourcerect="0,215,180,18" depth="0.55" />
+    <Projectile>
+      <Attack structuredamage="20" itemdamage="20" severlimbsprobability="0.5" penetration="0.2">
+        <!--Hits up to 3 limbs, so the actual damage can be 3x-->
+        <Affliction identifier="lacerations" strength="10" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="stun" strength="0.25" />
+        <!-- 50% chance of doing 3 damage, which in practice would mean 4+ consequential hits for getting poisoned. -->
+        <!-- 10% chance of getting extra damage. 2 hits minimum to get poisoned low chance, 1 damage per second removed but keeps decay timer up if hit multiple times -->
+		<Affliction identifier="morbusinepoisoning" strength="3" probability="0.7" />		
+        <Affliction identifier="morbusinepoisoning" strength="4" probability="0.1" />
+      </Attack>
+    </Projectile>
+    <LightComponent range="200" castshadows="False" drawbehindsubs="False" ison="True" blinkfrequency="0" lightcolor="200,255,200,20" isactive="True" minvoltage="0" powerconsumption="0" vulnerabletoemp="False" pickingtime="0" canbepicked="False" allowingameediting="False" msg="">
+      <Sprite texture="Content/Characters/Spineling_morbusine/Spineling_morbusine.png" sourcerect="0,230,180,23" origin="0.5,0.6" alpha="0.5" />
+    </LightComponent>
+  </Item>
+  
+    <Item name="Husk Container" identifier="btchusktoolbox" category="Equipment" tags="mediumitem,mobilecontainer,tool" description="Rotten chiteneous flesh and mineralized filth forever clings to this container, you really don't want to touch this." cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+    <PreferredContainer primary="locker"/>
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab"/>
+    <PreferredContainer secondary="outpostcrewcabinet"/>
+    <Price baseprice="30" canbespecial="false" sold="false" >
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" multiplier="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" />
+    </Price>
+    <InventoryIcon texture="Content/Particles/ParticleAtlas.png" sourceRect="5,401,88,77" origin="0.5,0.5" />
+    <Sprite texture="Content/Particles/ParticleAtlas.png" sourceRect="5,401,88,77" origin="0.46,0.45" depth="0.6" />
+    <Body width="90" height="60" density="15" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect" DisableWhenRangedWeaponEquipped="true">
+      <Attack structuredamage="0" itemdamage="1.5" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2.5" />
+		<Affliction identifier="nausea" strength="4" probability="0.3" />
+        <Affliction identifier="stun" strength="0.6" />
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character"/>
+          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
+          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+        </StatusEffect>
+		<StatusEffect Target="this" type="OnUse">
+        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="3.0">
+          <Affliction identifier="nausea" strength="7.5" probability="0.1" />
+        </Explosion>
+      </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" maxstacksize="32" keepopenwhenequipped="true" movableframe="true" QuickUseMovesItemsInside="false">
+      <Containable items="smallitem" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <!-- the item used to have the (default) 64 max stack size, i.e. stack size was only limited by the max stack size of the contained items -->
+    <!-- set the stack size back in old saves/subs to prevent items from dropping from containers -->
+    <Upgrade gameversion="1.1.0.0" maxstacksize="64">
+      <ItemContainer maxstacksize="64" />
+    </Upgrade>
+  </Item>
+   <Item name="Giant Morbusine Spike" identifier="giantviperspinelingspike" nameidentifier="spinelingspike" translationidentifier="spinelingspike" interactthroughwalls="true" tags="light,dangerous" Scale="0.5" health="20" damagedbyexplosions="false" damagedbyprojectiles="true" ItemDamageMultiplier="0.2" damagedbymeleeweapons="true" damagedbyrepairtools="true" sonarsize="20" hideinmenus="true">
+    <Sprite texture="%ModDir%/Characters/Viperling_giant/Viperling_giant.png" sourcerect="0,860,720,72" depth="0.55" />
+    <Body width="300" height="35" density="20" />
+    <Projectile characterusable="false" launchimpulse="400" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktodoors="false" sticktostructures="true" friendlyfire="false" damagedoors="true">
+      <Attack structuredamage="60" itemdamage="60" severlimbsprobability="2.0" penetration="0.5">
+        <!--Hits up to 10 limbs, so the actual damage can be 10x-->
+        <Affliction identifier="lacerations" strength="15" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="stun" strength="1" />
+        <Affliction identifier="morbusinepoisoning" probability="0.8" strength="10" />
+      </Attack>
+      <!-- break after 5 minutes -->
+      <StatusEffect type="Always" target="This" delay="300" stackable="false" condition="-100" />
+      <!-- break after 3s if not stuck -->
+      <StatusEffect type="OnNotContained" target="This" delay="5" condition="-100" checkconditionalalways="true">
+        <Conditional IsStuckToTarget="false" />
+      </StatusEffect>
+      <!-- remove when breaking -->
+      <StatusEffect type="OnBroken" target="This">
+	    <SpawnItem identifiers="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+        <Remove />
+        <particleemitter particle="brownchunks" drawontop="true" particleamount="30" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.3" scalemax="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" lifetime="0.5">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <ItemComponent>
+      <!-- when the component activates, apply extra load to nearby items and deactive the component -->
+      <StatusEffect type="OnNotContained" target="This" delay="5" condition="-25" >
+        <SpawnItem identifiers="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+	  <Conditional IsStuckToTarget="true" />
+      </StatusEffect>
+      <!-- trigger discharge and load -->
+      <StatusEffect type="Always" target="UseTarget,This" interval="20">
+        <Conditional targetitemcomponent="Projectile" IsStuckToTarget="True" />
+        <Use />
+      </StatusEffect>
+    </ItemComponent>
+  </Item> 
+    <Item name="Electrospike" identifier="electrospikeBTC" category="Misc" interactthroughwalls="true" tags="light,ignorebyai" Scale="0.5" health="20" damagedbyexplosions="false" damagedbyprojectiles="true" ItemDamageMultiplier="0.2" damagedbymeleeweapons="true" damagedbyrepairtools="true" sonarsize="20" hideinmenus="true">
+      <Sprite texture="%ModDir%/Characters/Spineling_Electric2/Spineling_Electric2.png" sourcerect="0,860,720,72" depth="0.55" />
+      <Body width="300" height="35" density="20" />
+      <LightComponent range="200" castshadows="False" drawbehindsubs="False" ison="True" lightcolor="50,240,255,150" flicker="1.0" flickerspeed="5" vulnerabletoemp="False" pickingtime="0" canbepicked="False" allowingameediting="False" msg="">
+        <Sprite texture="%ModDir%/Characters/Spineling_Electric2/Spineling_Electric2.png" sourcerect="0,940,720,72" origin="0.5,0.5" alpha="0.1" />
+      </LightComponent>
+      <Projectile characterusable="false" launchimpulse="25" sticktocharacters="false" sticktoitems="false" sticktodoors="false" sticktostructures="true" friendlyfire="false" damagedoors="true">
+        <Attack structuredamage="30" itemdamage="15" targetforce="10" severlimbsprobability="0">
+          <Affliction identifier="lacerations" strength="15" />
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="stun" strength="1" />
+        </Attack>
+        <!-- break after 5 minutes -->
+        <StatusEffect type="Always" target="This" delay="300" stackable="false" condition="-100" />
+        <!-- break after 3s if not stuck -->
+        <StatusEffect type="OnNotContained" target="This" delay="3" condition="-100" checkconditionalalways="true">
+          <Conditional IsStuckToTarget="false" />
+        </StatusEffect>
+        <!-- remove when breaking -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+          <particleemitter particle="brownchunks" drawontop="true" particleamount="30" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.3" scalemax="0.5" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="This" lifetime="0.5">
+          <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+      </Projectile>
+      <ElectricalDischarger duration="0.2" outdoorsonly="false" powerconsumption="0" range="600" rangemultiplierinwalls="1">
+        <Attack targetimpulse="50">
+          <Affliction identifier="stun" strength="1" />
+          <Affliction identifier="burn" strength="5" />
+        </Attack>
+        <StatusEffect target="this" type="OnUse">
+          <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="2000" selectionmode="random" />
+          <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="2000" />
+          <ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particleamount="50" velocitymin="50" velocitymax="100" scalemin="1" scalemax="2" />
+          <Explosion range="2000.0" camerashake="3" stun="0" force="0.0" flames="false" shockwave="false" sparks="True" underwaterbubble="false" />
+        </StatusEffect>
+      </ElectricalDischarger>
+      <ItemComponent>
+        <!-- when the component activates, apply extra load to nearby items and deactive the component -->
+        <StatusEffect type="OnUse" target="NearbyItems" targettags="junctionbox" range="800.0" setvalue="true" extraload="1000" />
+        <StatusEffect type="OnActive" target="This" IsActive="false" delay="5" />
+        <!-- trigger discharge and load -->
+        <StatusEffect type="Always" target="UseTarget,This" interval="20">
+          <Conditional targetitemcomponent="Projectile" IsStuckToTarget="True" />
+          <Use />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This">
+          <ParticleEmitter particle="ElectricShock" distancemin="-150" distancemax="150" particlespersecond="2.0" particleamount="5" emitinterval="2.1" scalemin="0.1" scalemax="0.2" copyentityangle="true" />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>
+	 <Item name="Charybdis Scale" description="A large mostly undamaged scale from the Charybdis main body, Slightly flexible it is some kind of organometallic titanium iron alloy that is capable of flexing under extreme stress without breaking, cemented in extruded layers by clusters of oesteoblast-like organs. It should go without saying that researchers and craftsmen will pay a lot for this." identifier="BTCcharybdisscale" sonarsize="2" tags="mediumitem,bohcharybdisscale" category="Misc" canbepicked="true" scale="0.1" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab" secondary="mineralcab" />
+    <Price baseprice="450" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.45" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.95" />
+      <Price storeidentifier="merchantmine" multiplier="0.75" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="titanium" amount="3" />
+      <Item identifier="iron" />  
+    </Deconstruct>
+    <Sprite texture="Content/Characters/Charybdis/Charybdis.png" depth="0.18" SourceRect="4,1555,974,492" origin="0.5,0.5" />
+    <Body width="200" height="30" density="15" friction="1.0" restitution="0.01" angulardamping="1.0" />
+    <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Charybdis Tentacles" description="A sizeable mass of flexible tentacle like segments from the Charybdis. The black outer sheath seems to be a dense but seemingly soft mesh of microscopic carbon structures with a combination of fluid filled hydraulic and musculature control, all capable of resisting submarine weapons. Researchs will pay a lot for this." identifier="BTCcharybdistentacles" sonarsize="3" tags="mediumitem,bohcharybdistentacles" category="Misc" canbepicked="true" scale="0.12" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab" secondary="mineralcab" />
+    <Price baseprice="375" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1" />
+      <Price storeidentifier="merchantcity" multiplier="1.20" />
+      <Price storeidentifier="merchantresearch" multiplier="1.45" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.85" />
+      <Price storeidentifier="merchantmine" multiplier="0.75" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="carbon" amount="3" />
+      <Item identifier="phosphorus" />
+      <Item identifier="calcium" />  
+    </Deconstruct>
+    <Sprite texture="Content/Characters/Charybdis/Charybdis.png" depth="0.18" SourceRect="974,1390,1074,659" Origin="0.5488577,0.4754728" origin="0.5,0.5" />
+    <Body width="220" height="120" density="15" friction="1.0" restitution="0.01" angulardamping="1.0" />
+    <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+	<Item name="Spineling Spike" identifier="BTCspinelingspikeloot" category="Weapon" tags="smallitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.5" allowasextracargo="true" RequireAimToUse="True" nameidentifier="spinelingspike" translationidentifier="spinelingspike">
+    <Price baseprice="100" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1" />
+      <Price storeidentifier="merchantcity" multiplier="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="carbon" />
+      <Item identifier="zinc" />
+    </Deconstruct>
+    <PreferredContainer primary="armcab"/>
+    <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,215,180,18" depth="0.55" />
+    <Body width="160" height="10" density="15" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="30,5" handle1="-20,0" holdangle="65" reload="1.0" range="50" combatpriority="10" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="2" structuredamage="2" structuresoundtype="StructureSlash">
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="stun" strength="0.2" />
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character"/>
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+  </Item>
+
+  <Item name="Viperling Spike" identifier="BTCviperlingspikeloot" category="Weapon" description="An intact viperling spike, its like metallic carbon fiber inundated with toxic morbusine, you do not want to get stabbed by this." tags="smallitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.5" allowasextracargo="true" RequireAimToUse="True">
+   <PreferredContainer primary="storagecab" secondary="mineralcab" />
+   <Price baseprice="220" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1" />
+      <Price storeidentifier="merchantcity" multiplier="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1.5" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Deconstruct time="10">
+	  <Item identifier="morbusine" />
+      <Item identifier="carbon" />
+      <Item identifier="zinc" />
+    </Deconstruct>
+    <PreferredContainer primary="armcab"/>
+    <Sprite texture="Content/Characters/Spineling_morbusine/Spineling_morbusine.png" sourcerect="0,215,180,18" depth="0.55" />
+    <Body width="160" height="10" density="15" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="30,5" handle1="-20,0" holdangle="65" reload="1.0" range="50" combatpriority="10" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="2" structuredamage="2" structuresoundtype="StructureSlash">
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="stun" strength="0.2" />
+        <Affliction identifier="morbusinepoisoning" strength="3" probability="0.5"/>
+        <Affliction identifier="morbusinepoisoning" strength="3" probability="0.1"/>			
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character"/>
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+  </Item>
+</Items>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<npcsets>
+  <npcset identifier="abandonedoutpostnpcsbt">
+    <npc identifier="bandit_boss" commonness="0" moduleflags="crewmodule,engineeringmodule" job="captain" behavior="Patrol" healthmultiplier="1.15" healthmultiplierinmultiplayer="1.5" aimspeed="0.5" aimaccuracy="0.75" reportrange="3000">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="divingknife" equip="false" />
+        <Item identifier="captainscap2" equip="true" />
+        <Item identifier="captainsuniform2" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="steroids" />
+        <Item identifier="steroids" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="weldingtool">
+          <Item identifier="weldingfueltank" />
+        </Item>
+        <Item identifier="shotgun">
+          <Item identifier="shotgunshell" amount="6" />
+        </Item>
+        <Item identifier="shotgunshell" amount="6" />
+        <Item identifier="antibleeding1" amount="2" />
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="divingknife" equip="false" />
+        <Item identifier="wrench" equip="true" />
+        <Item identifier="captainscap2" equip="true" />
+        <Item identifier="captainsuniform2" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="steroids" />
+        <Item identifier="steroids" />
+        <Item identifier="toolbelt" equip="true" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="weldingtool">
+          <Item identifier="weldingfueltank" />
+        </Item>
+        <Item identifier="smg">
+          <Item identifier="smgmagazine" />
+        </Item>
+        <Item identifier="smgmagazine" />
+        <Item identifier="antibleeding1" amount="4" />
+      </ItemSet>
+    </npc>
+    <npc identifier="bandit_medic" commonness="0" moduleflags="crewmodule,engineeringmodule" job="medicaldoctor" behavior="Patrol" healthmultiplier="0.75" healthmultiplierinmultiplayer="1.0" aimspeed="0.5" aimaccuracy="0.1" reportrange="1000">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="banditclothes2" equip="true" />
+        <Item identifier="divingknife" />
+        <Item identifier="syringegun" equip="true">
+          <Item identifier="cyanide" amount="2" />
+        </Item>
+        <Item identifier="divingmask">
+          <Item identifier="oxygenitetank" />
+        </Item>
+        <Item identifier="opium" amount="4" />
+        <Item identifier="meth" />
+        <Item identifier="antibleeding1" amount="4" />
+        <Item identifier="antibloodloss1" amount="2" />
+      </ItemSet>
+    </npc>
+    <npc identifier="bandit_drudge" commonness="0" moduleflags="crewmodule,engineeringmodule" job="mechanic" behavior="Patrol" healthmultiplier="0.85" healthmultiplierinmultiplayer="1.15" aimspeed="1" aimaccuracy="0.1" reportrange="1000">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="banditclothes1" equip="true" />
+        <Item identifier="screwdriver" />
+        <Item identifier="wrench" />
+        <Item identifier="weldingtool">
+          <Item identifier="weldingfueltank" />
+        </Item>
+        <Item identifier="crowbar" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+      </ItemSet>
+    </npc>
+  </npcset>
+</npcsets>

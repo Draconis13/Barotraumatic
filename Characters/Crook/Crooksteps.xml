@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sounds>
+  <footstep_crook file="%ModDir%/Characters/Crook/footstep1.ogg" range="800" />
+  <footstep_crook file="%ModDir%/Characters/Crook/footstep2.ogg" range="800" />
+  <footstep_crook file="%ModDir%/Characters/Crook/footstep3.ogg" range="800" />
+  <footstep_crook file="%ModDir%/Characters/Crook/footstep4.ogg" range="800" />
+</sounds>

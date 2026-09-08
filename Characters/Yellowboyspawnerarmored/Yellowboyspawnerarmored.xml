@@ -1,0 +1,129 @@
+﻿<Character SpeciesName="Yellowboyspawnerarmored" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="mantisoid" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="btcbloodblue" BleedParticleAir="btcblooddropblue" BleedParticleWater="btcwaterbloodblue" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+  <ragdolls folder="%ModDir%/Characters/Yellowboyspawnerarmored/Ragdolls/" />
+  <animations folder="%ModDir%/Characters/Yellowboyspawnerarmored/Animations/" />
+  <damageemitter particle="gib" drawontop="True" particleamount="10" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.25" scalemax="0.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="blood" particleamount="10" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="waterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="gib" particleamount="20" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360" scalemin="1" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="heavygib" particleamount="5" velocitymin="50" velocitymax="500" anglemin="0" anglemax="360" scalemin="0.5" scalemax="0.8" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <health Vitality="300" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
+        <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+      <Item Identifier="btcsmallswimbladder" />
+      <Item Identifier="chitin" condition="100" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+      <Item Identifier="btcsmallswimbladder" />
+      <Item Identifier="chitin" condition="100" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.7">
+      <Item Identifier="btcsmallswimbladder" />
+      <Item Identifier="mantisleg" condition="100" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.7">
+      <Item Identifier="btcsmallswimbladder" />
+      <Item Identifier="mantisclaw" condition="100" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.7">
+      <Item Identifier="btcsmallswimbladder" />
+      <Item Identifier="mantisclaw" condition="100" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.7">
+      <Item Identifier="btcsmallswimbladder" />
+      <Item Identifier="mantisleg" condition="100" />
+    </Inventory>
+  <ai combatstrength="350" sight="1" hearing="1" fleehealththreshold="0" aggressiveboarding="true" aggressiongreed="10" aggressionhurt="10" avoidgunfire="False" DamageThreshold="0">
+    <target tag="stronger" state="Avoid" priority="200" reactdistance="2000" />
+    <target tag="decoy" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+    <target tag="provocative" state="Attack" priority="100" ignoreifnotinsamesub="True">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="weapon" state="Attack" priority="100" ignoreifnotinsamesub="True">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="nasonov" state="Attack" priority="100" ignoreinside="True"/>
+    <target tag="weaker" state="Attack" priority="80" reactdistance="0" />
+    <target tag="human" state="Attack" priority="80" reactdistance="0">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="human" state="Observe" priority="80" reactdistance="0">
+      <conditional TargetSelf="True" TeamID="eq Team1"/>
+    </target>
+    <target tag="tool" state="Aggressive" priority="50" reactdistance="1000" ignoreifnotinsamesub="True">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="leucocyte" state="Avoid" priority="50" reactdistance="1000"/>
+    <target tag="engine" state="Avoid" priority="50" reactdistance="400" ignoreinside="True" />
+    <target tag="room" state="Attack" priority="30" reactdistance="0">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="wall" state="Attack" priority="15" reactdistance="0">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="door" state="Attack" priority="5" reactdistance="0">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="sonar" state="Attack" priority="5" reactdistance="0" ignoreinside="true"/>
+    <target tag="turret" state="Attack" priority="1" ignoreinside="true">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="searchlight" state="Attack" priority="1" ignoreinside="true">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+  </ai>
+  <sound File="Content/Characters/Mantis/MANTIS_attack1.ogg" State="Attack" Range="2000" Volume="1" />
+  <sound File="Content/Characters/Mantis/MANTIS_attack2.ogg" State="Attack" Range="2000" Volume="1" />
+  <sound File="Content/Characters/Mantis/MANTIS_attack3.ogg" State="Attack" Range="2000" Volume="1" />
+  <sound File="Content/Characters/Mantis/MANTIS_death1.ogg" State="Die" Range="2000" Volume="1" />
+  <sound File="Content/Characters/Mantis/MANTIS_death2.ogg" State="Die" Range="2000" Volume="1" />
+  <StatusEffect type="OnSpawn" target="this">
+    <Affliction identifier="spawnerarmordamagereduction" strength="1000" />
+  </StatusEffect>
+  <StatusEffect type="OnSpawn" target="this">
+    <Conditional speciesname="yellowboyspawnerarmoredfriendly"/>
+    <Affliction identifier="armoredspawnerbreak" strength="100" probability="1" />
+    <Affliction identifier="armoredspawnerdamage" strength="100" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnSpawn" target="This" stackable="false" delay="5" oneshot="true" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND" spawnitemrandomly="true">
+    <Conditional isdead="false"/>
+    <SpawnItem identifier="barotraumatic_nothing" spawnposition="This" count="1" />
+	<SpawnItem identifier="yellowboyegg" spawnposition="This" count="1" />
+    <SpawnItem identifier="yellowboyegg" spawnposition="This" count="1" />
+    <SpawnItem identifier="yellowboyegg" spawnposition="This" count="1" />
+	<SpawnItem identifier="yellowboyegg" spawnposition="This" count="2" />
+	<SpawnItem identifier="yellowboyegg" spawnposition="This" count="2" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" ConditionalComparison="AND" OnlyWhenDamagedByPlayer="true">
+    <RequiredAffliction type="damage,burn" minstrength="1" />
+    <Affliction identifier="armorspawnerspare" strength="-10" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" ConditionalComparison="AND" OnlyWhenDamagedByPlayer="true">
+    <RequiredAffliction type="damage,burn" minstrength="10" />
+    <Affliction identifier="armorspawnerspare" strength="-30" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" ConditionalComparison="AND" OnlyWhenDamagedByPlayer="true">
+    <RequiredAffliction type="damage,burn" minstrength="1" />
+    <Conditional TeamID="eq Team1"/>
+    <Affliction identifier="armorspawnerunspare" strength="20" probability="1" multiplybymaxvitality="true" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" ConditionalComparison="AND" OnlyWhenDamagedByPlayer="true">
+    <RequiredAffliction type="damage,burn" minstrength="10" />
+    <Conditional TeamID="eq Team1"/>
+    <Affliction identifier="armorspawnerunspare" strength="40" probability="1" multiplybymaxvitality="true" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" targetlimb="Torso" stackable="false" disabledeltatime="true" ConditionalComparison="AND" forcePlaySounds="true">
+    <Conditional speciesname="yellowboyspawnerarmored"/>
+    <conditional armoredspawnerdamage="gte 99" />
+    <Conditional armoredspawnerbreak="lte 0"/>
+    <ParticleEmitter particle="brownchunks" AngleMax="360" DistanceMax="90" VelocityMin="150" VelocityMax="250" ScaleMax="0.1" ScaleMultiplier="0.5,0.5" EmitInterval="1" ParticleAmount="455" ColorMultiplier="70,0,50,255" />
+    <ParticleEmitter particle="dustcloud" AngleMax="360" DistanceMax="100" VelocityMin="50" VelocityMax="150" ScaleMax="2" ScaleMultiplier="1,1" EmitInterval="1" ParticleAmount="55" ColorMultiplier="255,255,255,255" />
+    <ParticleEmitter particle="waterdrop" AngleMax="360" DistanceMax="90" VelocityMin="100" VelocityMax="150" ScaleMax="1" ScaleMultiplier="5,5" EmitInterval="1" ParticleAmount="365" ColorMultiplier="70,0,30,255" />
+    <sound file="Content/Sounds/Damage/ArmorBreak1.ogg" range="1000.0" selectionmode="Random" frequencymultiplier="0.9,1.1"/>
+    <sound file="Content/Sounds/Damage/ArmorBreak2.ogg" range="1000.0" selectionmode="Random" frequencymultiplier="0.9,1.1"/>
+    <sound file="Content/Sounds/Damage/ArmorBreak3.ogg" range="1000.0" selectionmode="Random" frequencymultiplier="0.9,1.1"/>
+    <sound file="Content/Sounds/Damage/ArmorBreak4.ogg" range="1000.0" selectionmode="Random" frequencymultiplier="0.9,1.1"/>
+    <Affliction identifier="armoredspawnerbreak" strength="100" probability="1" />
+    <Affliction identifier="armorspawnerspare" strength="100" probability="1" />
+    <Affliction identifier="spawnerarmordamagereduction" strength="-1000" />
+    <Affliction identifier="stun" strength="5" probability="1" />
+  </StatusEffect>
+</Character>

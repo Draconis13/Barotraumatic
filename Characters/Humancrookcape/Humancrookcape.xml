@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character speciesname="Humancrookcape" displayname="" husk="True" humanoid="True" nonhuskedspecies="human" caninteract="True" hasinfo="True" usehuskappendage="True" needsair="False" specifiertags="true" canspeak="False" canclimb="True" ForceSlowClimbing="True" blooddecal="blood" group="husk" speciestranslationoverride="" needswater="False" noise="100" visibility="100" bleedparticleair="blooddrop" bleedparticlewater="waterblood" bleedparticlemultiplier="1" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" hideinthermalgoggles="True" sonardisruption="0" disabledistance="25000" despawncontainer="despawncontainer">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <huskappendage affliction="crookcapeBTC" path="%ModDir%/Characters/Humancrookcape/Crookcape.xml" />
+  <health usehealthwindow="True" vitality="100" crushdepth="6000" doesbleed="True" bleedingreduction="10" burnreduction="0.1" constanthealthregeneration="1" healthregenerationwheneating="0" applyafflictioncolors="true" poisonvulnerability="0.5" />
+  <ai />
+</Character>

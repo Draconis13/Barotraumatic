@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <loadingscreentip>The crook has learned to scavenge human environments for food. Most feed it monster corpses to keep it satisfied— otherwise, it might start eyeing humans as its next meal...</loadingscreentip>
+  <character.crookBTC>Crook</character.crookBTC>
+  <entityname.crookfurBTC>Crook Fur</entityname.crookfurBTC>
+  <entitydescription.crookfurBTC>Can be used as a crafting material in a fabricator.</entitydescription.crookfurBTC>
+  <entityname.crookcapeitem>Crook Cape</entityname.crookcapeitem>
+  <entitydescription.crookcapeitem>Crafted from the fur of a crook, this cape envelops its wearer in a subtle power of vaguely threatening persuasion, making mission-givers find themselves strangely inclined to offer better rewards.</entitydescription.crookcapeitem>
+  <afflictionname.crookcapeBTC>Crook Cape</afflictionname.crookcapeBTC>
+  <afflictiondescription.crookcapeBTC>Crafted from the fur of a crook, this cape envelops its wearer in a subtle power of vaguely threatening persuasion, making mission-givers find themselves strangely inclined to offer better rewards. It is slowly deteriorating.</afflictiondescription.crookcapeBTC>
+  <talentname.crookcapeinfluenceBTC>Crook Influence</talentname.crookcapeinfluenceBTC>
+  <talentdescription.crookcapeinfluenceBTC>All mission mark rewards are increased by [amount]% as long as a crewmember is wearing the crook cape.</talentdescription.crookcapeinfluenceBTC>
+</infotexts>

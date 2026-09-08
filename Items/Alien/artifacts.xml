@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Artifact Shard" identifier="pieceskyholderartifact" description="Pieces of an artifact. Its blue in color and it feels hard to breathe when you hold it." category="Alien" Tags="alien,alienartifact,smallalienartifact,smallitem" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" allowsellingwhenbroken="true" hideconditionbar="true">
+    <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
+    <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
+	<Upgrade gameversion="0.9.3.1" scale="0.5" />
+    <Price baseprice="1500" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="0.85" />
+      <Price storeidentifier="merchantcity" multiplier="0.85" />
+      <Price storeidentifier="merchantresearch" multiplier="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25 " />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" sourcerect="322,179,32,33" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" depth="0.6" sourcerect="322,179,32,33" origin="0.5,0.5" />
+    <Deconstruct time="20">
+      <Item identifier="oxygeniteshard" />
+    </Deconstruct>
+    <Body width="80" height="95" density="40" friction="0.95" />
+    <!-- drains water if not contained  -->
+    <Pump maxflow="100" IsOn="False" flowpercentage="-100" powerconsumption="10">
+      <PumpOutEmitter particle="shockwaveinverted" particlespersecond="10" position="41,-40" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" scalemin="0.25" scalemax="0.5" />
+      <sound file="Content/Items/Alien/AlienPump.ogg" type="OnActive" range="500.0" volume="1" loop="true" frequencymultiplier="2" />
+      <StatusEffect type="InWater" target="This" IsOn="True" checkconditionalalways="true">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="lte 0.0" targetcontainer="true" />
+      </StatusEffect>
+      <StatusEffect type="NotInWater" target="This" IsOn="False" setvalue="true" />
+      <StatusEffect type="Always" target="This" IsOn="False" setvalue="true">
+        <Conditional InPlayerSubmarine="False" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" voltage="1.0" setvalue="true" checkconditionalalways="true">
+        <Conditional InPlayerSubmarine="true" />
+      </StatusEffect>
+    </Pump>
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This,Hull" oxygen="-24200.0">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional voltage="lte 0" targetcontainer="true" />
+        <ParticleEmitter particle="skyholderfx2" anglemax="100" distancemin="40" distancemax="50" velocitymin="-100" velocitymax="-200" particlespersecond="50" />
+        <ParticleEmitter particle="skyholderfx" anglemax="100" particlespersecond="2" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Artifact Shard" identifier="piecethermalartifact" description="Pieces of an artifact. Its red hue in color and feels very hot!" category="Alien" Tags="alien,alienartifact,smallalienartifact,smallitem" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
+    <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
+    <Upgrade gameversion="0.9.3.1" scale="0.5" />
+    <Price baseprice="1500" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="0.85" />
+      <Price storeidentifier="merchantcity" multiplier="0.85" />
+      <Price storeidentifier="merchantresearch" multiplier="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25 " />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" sourcerect="279,217,40,39" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" depth="0.6" sourcerect="279,217,40,39" origin="0.5,0.5" />
+    <Deconstruct time="20">
+      <Item identifier="incendium" />
+    </Deconstruct>
+    <Body width="80" height="95" density="40" friction="0.95" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional voltage="lte 0" targetcontainer="true" />
+        <ParticleEmitter particle="thermalfx" anglemax="100" distancemax="5" particlespersecond="40" />
+        <sound file="Content/Items/Alien/AlienArtifactLoop1.ogg" range="500.0" loop="true" />
+      </StatusEffect>
+    </Holdable>
+    <!-- Emits steam periodically when in water, burns. Had to use Lightcomponent to make it work -->
+    <LightComponent range="150.0" lightcolor="210,120,30,120" IsOn="False" castshadows="false" allowingameediting="false" pulseamount="0.1" pulsefrequency="4">
+      <Statuseffect type="InWater" target="This" IsOn="True" Interval="20" />
+      <Statuseffect type="NotInWater" target="This" IsOn="False" />
+      <StatusEffect type="OnActive" target="This" IsOn="False" delay="5" stackable="False" />
+      <StatusEffect type="OnActive" target="This" interval="1" checkconditionalalways="true">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="lte 0.0" targetcontainer="true" />
+        <!-- burns via explosion, damages structures every second  -->
+        <Explosion range="200" structuredamage="1" itemdamage="0" smoke="False" flames="false" force="0" sparks="false" shockwave="False" underwaterbubble="false" camerashake="3" flash="false" playtinnitus="false">
+          <Affliction identifier="burn" amount="1.5" />
+        </Explosion>
+      </StatusEffect>
+      <!-- second statuseffect for visuals. Too many statuseffects? -->
+      <StatusEffect type="OnActive" target="This" checkconditionalalways="true">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="lte 0.0" targetcontainer="true" />
+        <ParticleEmitter particle="bubbles" particlespersecond="5" anglemin="60" anglemax="120" scalemin="0.5" scalemax="1" velocitymin="20" velocitymax="100" copyentityangle="false" drawontop="true" />
+        <ParticleEmitter particle="steamspray" particlespersecond="10" anglemin="60" anglemax="120" scalemin="1" scalemax="2" velocitymin="300" velocitymax="500" copyentityangle="false" highqualitycollisiondetection="true" drawontop="true" />
+        <ParticleEmitter particle="steamspray" particlespersecond="5" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1" velocitymin="20" velocitymax="50" copyentityangle="false" highqualitycollisiondetection="true" drawontop="true" colormultiplier="255,255,255,180" />
+        <sound file="Content/Items/Weapons/FlameThrowerLoop.ogg" type="OnUse" range="700.0" loop="True" />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+  <Item name="Artifact Shard" identifier="piecefaradayartifact" category="Alien" description="Pieces of an artifact. Its slightly green in color and it feels uneasy to hold onto." Tags="smallitem,alien,alienartifact,smallalienartifact" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" allowsellingwhenbroken="true" hideconditionbar="true">
+    <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
+    <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
+	<Upgrade gameversion="0.9.3.1" scale="0.5" />
+    <Price baseprice="1500" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="0.85" />
+      <Price storeidentifier="merchantcity" multiplier="0.85" />
+      <Price storeidentifier="merchantresearch" multiplier="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25 " />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" sourcerect="332,227,30,30" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" depth="0.6" sourcerect="332,227,30,30" origin="0.5,0.5" />
+    <Deconstruct time="20">
+      <Item identifier="fulgurium" />
+    </Deconstruct>
+    <Body width="80" height="95" density="50" friction="0.95" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" msg="ItemMsgPickUpSelect">
+      <!-- EMP explosion every 15 seconds. Increased range and reduced EMP strength -->
+      <StatusEffect type="Always" target="This" delay="15" stackable="false" checkconditionalalways="true">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="0.0" targetcontainer="true" />
+        <Explosion range="800.0" empstrength="0.25" camerashake="2" stun="0" force="2.0" flames="false" smoke="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <!-- separate smaller explosion for EMP affliction so it doesn't fry guardians -->
+        <Explosion range="200.0" camerashake="0" stun="0" force="0" flames="false" smoke="false" shockwave="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="emp" strength="7" multiplybymaxvitality="true" />
+        </Explosion>
+        <sound file="Content/Items/Alien/AlienCoil1.ogg" range="1000" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="0.0" targetcontainer="true" />
+        <sound file="Content/Items/Alien/AlienArtifactLoop1.ogg" range="500.0" loop="true" volume="0.5" />
+      </StatusEffect>
+    </Holdable>
+    <ElectricalDischarger duration="0.2" outdoorsonly="False" powerconsumption="0" range="500" rangemultiplierinwalls="1">
+      <Attack targetimpulse="20">
+        <Affliction identifier="stun" strength="1"/>
+        <Affliction identifier="electricshock" strength="20"/>
+        <Affliction identifier="burn" strength="1.75"/>
+      </Attack>
+      <!-- trigger discharge coil when not in water -->
+      <StatusEffect type="NotInWater" target="This" delay="15" stackable="false" checkconditionalalways="true">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="0.0" targetcontainer="true" />
+        <Use />
+        <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="6000" volume="0.5" selectionmode="random" />
+        <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="6000" volume="0.5" />
+      </StatusEffect>
+    </ElectricalDischarger>
+  </Item>
+  <Item name="Artifact Shard" identifier="piecenasonovartifact" category="Alien" description="A shard possibly from a larger artifact. Its orange in color and it looks really astonishing. It seems to attract peoples attention." Tags="smallitem,alien,nasonov,alienartifact,smallalienartifact" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" allowsellingwhenbroken="true" hideconditionbar="true">
+    <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
+    <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
+	<Upgrade gameversion="0.9.3.1" scale="0.5" />
+    <Price baseprice="1500" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="0.85" />
+      <Price storeidentifier="merchantcity" multiplier="0.85" />
+      <Price storeidentifier="merchantresearch" multiplier="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25 " />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" sourcerect="355,179,57,41" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" depth="0.6" sourcerect="355,179,57,41" origin="0.5,0.5" />
+    <Deconstruct time="20">
+      <Item identifier="physicorium" />
+    </Deconstruct>
+    <Body width="80" height="95" density="50" friction="0.95" />
+    <!-- Added sonar disruption -->
+    <AiTarget sightrange="4000" Soundrange="22000" sonardisruption="0.175" />
+    <Holdable slots="RightHand+LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="0.0" targetcontainer="true" />
+        <!-- Added particle -->
+        <ParticleEmitter particle="nasonovsparkles" anglemax="360" distancemax="8" velocitymin="10" velocitymax="40" scale="0.5" emitinterval="0.55" particleamount="3" particlespersecond="3" />
+        <sound file="Content/Items/Alien/AlienArtifactLoop1.ogg" range="500.0" loop="true" volume="0.4" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="1.1" stackable="false" SoundRange="50000" setvalue="true">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="0.0" targetcontainer="true" />
+        <ParticleEmitter particle="nasonovfx" anglemax="360" scale="0.5" particleamount="3" />
+        <sound file="Content/Items/Alien/Alien_ArtifactHolderLoop.ogg" range="1000.0" loop="true" volume="1.2" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Artifact Shard" identifier="piecepsychosisartifact" category="Alien" description="A shard possibly from a larger artifact. It seems to be slightly out of focus at all times though it feels solid enough." Tags="smallitem,alien,alienartifact,smallalienartifact" sonarsize="5" spritecolor="200,200,200,255" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
+    <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
+	<Upgrade gameversion="0.9.3.1" scale="0.5" />
+    <Price baseprice="1500" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="0.85" />
+      <Price storeidentifier="merchantcity" multiplier="0.85" />
+      <Price storeidentifier="merchantresearch" multiplier="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25 " />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" sourcerect="288,183,26,30" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" depth="0.6" sourcerect="288,183,26,30" origin="0.5,0.5" />
+    <Deconstruct time="20">
+      <Item identifier="dementonite" />
+    </Deconstruct>
+    <Body width="80" height="95" density="50" friction="0.95" />
+    <Holdable slots="RightHand+LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="0.0" targetcontainer="true" />
+        <sound file="Content/Items/Alien/AlienArtifactLoop1.ogg" range="200.0" loop="true" volume="0.3" />
+        <ParticleEmitter particle="psychosisfx" scalemultiplier="0.7,0.7" anglemax="360" emitinterval="1.1" particleamount="1" particlespersecond="1" />
+      </StatusEffect>
+      <!-- Releases a burst of watchers gaze in a 1500 radius periodically -->
+      <StatusEffect type="Always" target="This,NearbyCharacters" range="1000" Interval="30" Duration="5" stackable="false" checkconditionalalways="true">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="0.0" targetcontainer="true" />
+        <Affliction identifier="watchersgaze" strength="6"/>
+        <Affliction identifier="psychosis" strength="0.7" />
+        <ParticleEmitter particle="psychosisfx" anglemax="360" particlespersecond="6" />
+        <sound file="Content/Items/Alien/Alienpump.ogg" range="500.0" loop="true" volume="1" />
+      </StatusEffect>
+    </Holdable>
+    <LightComponent range="150.0" lightcolor="255,56,144,111" IsOn="true" castshadows="false" allowingameediting="false" pulseamount="0.9" pulsefrequency="0.25" />
+  </Item>
+  
+  <Item name="Golden Husk Figurine" description="A splendid depiction of the Velonaceps calyx, it is made of gold instead of the usual aluminium. The church will pay a lot for this." identifier="btcgoldhuskfigurine" category="Misc" maxstacksize="2" Tags="smallitem" scale="0.5" health="80" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" inventoryiconcolor="250,210,25,255" spritecolor="250,210,25,255">
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.004" />
+	<Price baseprice="650" sold="false" canbespecial="false" >
+      <Price storeidentifier="merchantoutpost" multiplier="0.7" sold="false"/>
+      <Price storeidentifier="merchantcity" multiplier="1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.8" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="0.5" sold="false" />
+      <Price storeidentifier="merchanthusk" multiplier="2" sold="false" >
+      </Price>
+    </Price>
+    <InventoryIcon texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="399,451,35,60" depth="0.55" origin="0.5,0.5" />
+    <Body width="30" height="55" density="50" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="3.0" aimpos="35,-10" handle1="0,0" attachable="true" attachedbydefault="false" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+      <StatusEffect type="OnNotContained" target="This" interval="25" >
+        <Conditional targetitemcomponent="Holdable" Attached="eq true" />
+        <particleemitter particle="shockwavesmall" particleamount="1" scalemin="0.5" scalemax="0.5" />
+        <Sound file="Content/Characters/Husk/Husk_Idle1.ogg" type="OnUse" range="350" selectionmode="Random" />
+        <Sound file="Content/Characters/Husk/Husk_Idle2.ogg" type="OnUse" range="350" />
+        <Sound file="Content/Characters/Husk/Husk_Idle3.ogg" type="OnUse" range="350" />
+        <Sound file="Content/Characters/Husk/Husk_Idle4.ogg" type="OnUse" range="350" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+
+</Items>

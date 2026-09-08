@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character speciesname="CrookBTC" humanoid="False" blooddecal="blackblood" caninteract="True" canclimb="true" ForceSlowClimbing="true" bleedparticleair="blackblooddrop" bleedparticlewater="blackwaterblood" group="human" husk="False" needsair="False" canspeak="False" noise="100" visiblity="100" eatingspeed="7" displayname="" visibility="100" SoundInterval="25" pathfinderpriority="15" hasinfo="False" usehuskappendage="False" AISlowTurretPriority="0.5" HideInSonar="true" HideInThermalGoggles="true">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <damageemitter particle="blackblood" particleamount="15" anglemin="0" anglemax="0" scalemin="0.7" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <damageemitter particle="blackwaterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1.5" scalemax="2" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="blackgib" particleamount="30" velocitymin="200" velocitymax="500" anglemin="0" anglemax="360" scalemin="0.7" scalemax="1.3" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <health vitality="265" doesbleed="True" crushdepth="Infinity" usehealthwindow="False" bleedingreduction="0.8" burnreduction="0" constanthealthregeneration="0.1" healthregenerationwheneating="1" poisonvulnerability="2">
+    <Limb Name="Other">
+      <VitalityMultiplier type="damage,burn" multiplier="1.0" />
+    </Limb>
+    <Limb Name="Head">
+      <VitalityMultiplier type="damage,burn" multiplier="1.5" />
+    </Limb>
+  </health>
+  <sound file="%ModDir%/Characters/Crook/idle1.ogg" state="Idle" range="500" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/idle2.ogg" state="Idle" range="500" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/idle3.ogg" state="Idle" range="500" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/idle4.ogg" state="Idle" range="500" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/death1.ogg" state="Die" range="2000" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/death2.ogg" state="Die" range="2000" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/damage1.ogg" state="Damage" range="2000" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/damage2.ogg" state="Damage" range="2000" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/damage3.ogg" state="Damage" range="2000" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/damage4.ogg" state="Damage" range="2000" volume="1" />
+  <inventory slots="Any, Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="4">
+    <Item identifier="idcard" equip="true" />
+  </inventory>
+  <inventory slots="Any, Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="3">
+    <Item identifier="idcard" equip="true" />
+    <Item identifier="alienblood" />
+  </inventory>
+  <inventory slots="Any, Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="1">
+    <Item identifier="idcard" equip="true" />
+    <Item identifier="alienblood" />
+    <Item identifier="crookfurBTC" />
+  </inventory>
+  <ai combatstrength="1" sight="5" hearing="5" avoidabyss="False" />
+  <StatusEffect type="OnActive" target="This" ConditionalComparison="AND">
+    <Conditional speciesname="crookBTCinside" />
+    <Conditional crookangerBTC="lte 0" />
+    <Affliction identifier="crookangerBTC" strength="1" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="1" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional AIState="Hiding" />
+    <Conditional speciesname="crookBTCoutside" />
+    <Conditional isdead="false" />
+    <SpawnCharacter speciesname="crookBTCinside" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="false" transferbuffs="true" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" setvalue="true" indetectable="true" teamid="Team1">
+    <Conditional speciesname="neq crookBTCaggressive" />
+  </StatusEffect>
+  <StatusEffect type="OnEating" target="This" targetlimb="Head" stackable="false" delay="1" checkconditionalalways="true" ConditionalComparison="AND" disabledeltatime="true">
+    <sound file="%ModDir%/Characters/Crook/eat1.ogg" range="5000.0" volume="1" frequencymultiplier="0.9,1.1" selectionmode="Random" />
+    <sound file="%ModDir%/Characters/Crook/eat2.ogg" range="5000.0" volume="1" frequencymultiplier="0.9,1.1" selectionmode="Random" />
+    <Affliction identifier="crookopenmouthBTC" strength="11" probability="1" />
+    <Affliction identifier="crooksatisfactionBTC" strength="3" probability="1" />
+    <ReduceAffliction identifier="crookangerBTC" strength="3" probability="1" />
+    <ParticleEmitter particle="blackgib" particleamount="37" velocitymin="80" velocitymax="150" anglemin="90" anglemax="180" scalemin="0.4" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  </StatusEffect>
+  <StatusEffect tags="recentlyate" duration="30" type="OnEating" target="This" disabledeltatime="true" />
+  <StatusEffect duration="1" type="OnEating" target="This" disabledeltatime="true">
+    <TriggerAnimation Type="Walk" filename="CrookBTCEat" priority="10" ExpectedSpecies="crook, crookBTCinside, crookBTCoutside, crookBTCaggressive, crookBTCsatisfied" />
+    <TriggerAnimation Type="Run" filename="CrookBTCEatRun" priority="10" ExpectedSpecies="crook, crookBTCinside, crookBTCoutside, crookBTCaggressive, crookBTCsatisfied" />
+  </StatusEffect>
+  <StatusEffect type="OnEating" target="This">
+    <sound file="%ModDir%/Characters/Crook/eatloop.ogg" range="800.0" volume="0.4" loop="true" />
+  </StatusEffect>
+  <StatusEffect duration="1" type="OnActive" target="This" disabledeltatime="true">
+    <Conditional AIState="Observe" />
+    <TriggerAnimation Type="Walk" filename="CrookBTCObserve" priority="5" ExpectedSpecies="crook, crookBTCinside, crookBTCoutside, crookBTCaggressive, crookBTCsatisfied" />
+    <TriggerAnimation Type="Run" filename="CrookBTCObserveRun" priority="5" ExpectedSpecies="crook, crookBTCinside, crookBTCoutside, crookBTCaggressive, crookBTCsatisfied" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="5" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional AIState="neq Eat" />
+    <Conditional isdead="false" />
+    <Conditional HasStatusTag="recentlyate" />
+    <sound file="%ModDir%/Characters/Crook/burp1.ogg" range="5000.0" volume="1" frequencymultiplier="0.8,1.05" selectionmode="Random" />
+    <sound file="%ModDir%/Characters/Crook/burp2.ogg" range="5000.0" volume="1" frequencymultiplier="0.8,1.05" selectionmode="Random" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="1" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional AIState="eq Observe" />
+    <Conditional isdead="false" />
+    <Conditional crookangerBTC="gt 65" />
+    <Affliction identifier="crookopenmouthBTC" strength="11" probability="1" />
+    <sound file="%ModDir%/Characters/Crook/snarl1.ogg" range="5000.0" volume="1" frequencymultiplier="0.85,1.05" selectionmode="Random" />
+    <sound file="%ModDir%/Characters/Crook/snarl2.ogg" range="5000.0" volume="1" frequencymultiplier="0.85,1.05" selectionmode="Random" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" targetlimb="Head" stackable="false" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional AIState="eq Observe" />
+    <Conditional isdead="false" />
+    <Conditional crookangerBTC="gt 65" />
+    <ParticleEmitter particle="waterdrop" AngleMin="270" AngleMax="270" DistanceMin="15" DistanceMax="35" VelocityMax="35" ScaleMin="0.55" ScaleMax="1.35" ScaleMultiplier="4,2" EmitInterval="0.08" ParticleAmount="1" ParticlesPerSecond="1" ColorMultiplier="255,255,255,255" DrawOrder="Foreground" Angle="270" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" ConditionalComparison="AND">
+    <Conditional speciesname="crookBTCaggressive" />
+    <Conditional isdead="false" />
+    <Affliction identifier="crookopenmouthBTC" strength="15" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" ConditionalComparison="AND">
+    <RequiredAffliction type="damage, burn" minstrength="1" />
+    <Affliction identifier="crookangerBTC" strength="12" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" ConditionalComparison="AND">
+    <RequiredAffliction type="damage, burn" minstrength="4" />
+    <Affliction identifier="crookangerBTC" strength="12" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" ConditionalComparison="AND">
+    <RequiredAffliction type="damage, burn" minstrength="6" />
+    <Affliction identifier="crookangerBTC" strength="15" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" ConditionalComparison="AND" onlyplayertriggered="true">
+    <RequiredAffliction type="damage, burn" minstrength="1" />
+    <Affliction identifier="crookangerBTC" strength="20" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="0.5" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional isdead="false" />
+    <Conditional crookangerBTC="gt 90" />
+    <Conditional speciesname="neq crookBTCaggressive" />
+    <SpawnCharacter speciesname="crookBTCaggressive" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="1" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional isdead="false" />
+    <Conditional crooksatisfactionBTC="gt 90" />
+    <Conditional speciesname="neq crookBTCaggressive" />
+    <Conditional speciesname="neq crookBTCsatisfied" />
+    <SpawnItem identifier="crookfurBTC" spawnposition="This" count="2" spread="1" SpawnRotationType="None" Rotation="90" aimspread="30" Impulse="3" />
+    <SpawnCharacter speciesname="crookBTCsatisfied" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="10" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND" onlyoutside="true">
+    <Conditional isdead="false" />
+    <Conditional speciesname="eq crookBTCinside" />
+    <SpawnCharacter speciesname="crookBTCoutside" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="60" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND" onlyoutside="true">
+    <Conditional isdead="false" />
+    <Conditional speciesname="eq crookBTCsatisfied" />
+    <RemoveCharacter />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="180" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional isdead="false" />
+    <Conditional speciesname="eq crookBTCoutside" />
+    <SpawnCharacter speciesname="crookBTCsatisfied" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="5" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND" onlyinside="true">
+    <Conditional isdead="false" />
+    <Conditional speciesname="neq crookBTCinside" />
+    <Conditional AIState="neq Eat" />
+    <Affliction identifier="stun" strength="0.5" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="0.2" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional isdead="false" />
+    <Conditional speciesname="eq crook" />
+    <SpawnCharacter speciesname="crookBTCoutside" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
+  </StatusEffect>
+  	<StatusEffect type="OnDeconstructed" target="Character">
+    <SpawnItem identifiers="alienblood" spawnposition="ThisInventory" count="1" probability="1" />
+  </StatusEffect>
+</Character>

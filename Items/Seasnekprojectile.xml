@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="seasnekprojectile" nameidentifier="seasnekprojectile" translationidentifier="seasnekprojectile" category="Misc" scale="0.5" sonarsize="6" hideinmenus="true">
+    <Sprite texture="%ModDir:2518816103%/Characters/Seasnek/Seasneksprite.png" sourcerect="10,210,300,40" origin="0.5,0.5" depth="0.55" />
+    <Body width="300" height="35" density="20" />
+    <Projectile characterusable="false" launchimpulse="20" maxtargetstohit="4" sticktocharacters="true" sticktoitems="false" sticktostructures="false" friendlyfire="false">
+      <Attack structuredamage="25" targetforce="4" severlimbsprobability="0" penetration="0.25">
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="0.3" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="0.3">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.2" scalemax="0.4" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="0.35" interval="2">
+        <SpawnCharacter speciesname="SeasnekBiter" />
+        <Remove />
+        <particleemitter particle="mudrapeggbrownchunks" particleamount="100" velocitymin="100" velocitymax="2000" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.1" />
+        <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+      </StatusEffect>
+    </Projectile>
+    <LightComponent range="400" castshadows="False" drawbehindsubs="False" ison="True" blinkfrequency="0" lightcolor="255,255,255,30" isactive="True" minvoltage="0" powerconsumption="0" vulnerabletoemp="False" pickingtime="0" canbepicked="False" allowingameediting="False" msg="">
+      <Sprite texture="%ModDir:2518816103%/Characters/Seasnek/Seasneksprite.png" sourcerect="10,210,300,40" origin="0.5,0.5" alpha="0.5" />
+    </LightComponent>
+  </Item>
+</Items>

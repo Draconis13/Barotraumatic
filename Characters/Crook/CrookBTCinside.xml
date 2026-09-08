@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="CrookBTC" speciesname="CrookBTCinside" speciestranslationoverride="CrookBTC" group="human">
+  <ai combatstrength="1" sight="5" hearing="5" aggressiveboarding="True" PatrolFlooded="false" patroldry="false" aggressiongreed="10" CanOpenDoors="true" UsePathFindingToGetInside="true" KeepDoorsClosed="true" aggressionhurt="100" avoidgunfire="False" AttackWhenProvoked="false" randomattack="True">
+    <target tag="human" state="Observe" priority="20" attackdistance="1000" timer="7" reactdistance="0">
+      <Conditional TargetSelf="True" aistate="neq Eat" />
+    </target>
+    <target tag="monsterfood" state="Eat" priority="5" PerceptionDistanceMultiplier="0.028" />
+    <target tag="dead" state="Eat" priority="5" PerceptionDistanceMultiplier="0.1" />
+  </ai>
+</Charactervariant>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Missions>
+  <Override>
+    <OutpostDestroyMission name="Outpost Recovery" identifier="abandonedoutposthumans" tags="abandonedoutpost" type="OutpostDestroy" reward="3000" difficulty="4" commonness="20" allowretry="true" targetitem="reactor" unhideentitysubcategories="abandonedhuman">
+      <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48" />
+      <LocationType identifier="Abandoned" />
+      <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="3,5" cooldownafterchange="5" />
+      <Characters>
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="crewmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="engineeringmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" />
+        <Character identifier="bandit_medic" from="abandonedoutpostnpcsbt" moduleflags="crewmodule" />
+        <Character identifier="bandit_drudge" from="abandonedoutpostnpcsbt" moduleflags="engineeringmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule" multiplayeronly="true" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true" />
+        <Character identifier="bandit_medic" from="abandonedoutpostnpcsbt" moduleflags="crewmodule" multiplayeronly="true" />
+        <Character identifier="bandit_drudge" from="abandonedoutpostnpcsbt" moduleflags="engineeringmodule" multiplayeronly="true" />
+        <Character identifier="banditleader" from="abandonedoutpostnpcs" spawnpointtags="banditleader" />
+      </Characters>
+      <TriggerEvent state="0" delay="5" eventidentifier="heartofgold" campaignonly="true" />
+    </OutpostDestroyMission>
+  </Override>
+  <Override>
+    <OutpostDestroyMission name="Outpost Recovery" identifier="abandonedoutpostrescue" tags="abandonedoutpost" type="OutpostRescue" reward="3000" difficulty="4" commonness="20" allowretry="true" hostageskilledmessage="hostageskilled" unhideentitysubcategories="abandonedhuman">
+      <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48" />
+      <LocationType identifier="Abandoned" />
+      <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+      <Characters>
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="crewmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="engineeringmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule" multiplayeronly="true" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true" />
+        <Character identifier="bandit_medic" from="abandonedoutpostnpcsbt" moduleflags="crewmodule" />
+        <Character identifier="bandit_drudge" from="abandonedoutpostnpcsbt" moduleflags="engineeringmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true" />
+        <Character identifier="bandit_medic" from="abandonedoutpostnpcsbt" moduleflags="crewmodule" />
+        <Character identifier="bandit_drudge" from="abandonedoutpostnpcsbt" moduleflags="engineeringmodule" multiplayeronly="true" />
+        <Character identifier="banditleader" from="abandonedoutpostnpcs" spawnpointtags="banditleader" />
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" />
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" />
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true" />
+      </Characters>
+    </OutpostDestroyMission>
+  </Override>
+  <Override>
+    <OutpostDestroyMission name="Outpost assassination" identifier="abandonedoutpostassassinate" tags="abandonedoutpost" type="OutpostDestroy" reward="3000" difficulty="4" commonness="20" allowretry="true" sonarlabel="target" unhideentitysubcategories="abandonedhuman">
+      <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48" />
+      <LocationType identifier="Abandoned" />
+      <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+      <Characters>
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="crewmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="engineeringmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule" multiplayeronly="true" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true" />
+        <Character identifier="bandit_medic" from="abandonedoutpostnpcsbt" moduleflags="crewmodule" />
+        <Character identifier="bandit_drudge" from="abandonedoutpostnpcsbt" moduleflags="engineeringmodule" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true" />
+        <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true" />
+        <Character identifier="bandit_medic" from="abandonedoutpostnpcsbt" moduleflags="crewmodule" />
+        <Character identifier="bandit_drudge" from="abandonedoutpostnpcsbt" moduleflags="engineeringmodule" multiplayeronly="true" />
+        <Character identifier="banditleader_heavy" from="abandonedoutpostnpcs" asfaraspossible="true" requirekill="true" />
+      </Characters>
+      <TriggerEvent state="0" delay="5" eventidentifier="heartofgold" campaignonly="true" />
+    </OutpostDestroyMission>
+  </Override>
+</Missions>

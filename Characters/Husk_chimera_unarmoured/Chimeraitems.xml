@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="intestinetendonchimeracharacter" nameidentifier="tonguetendon" tags="" health="100" hideinmenus="true" category="" sonarsize="0" scale="1" damagedbyexplosions="false" damagedbyprojectiles="false" damagedbyrepairtools="false" damagedbymeleeweapons="false" impactsoundtag="impact_soft">
+    <Sprite texture="Content/Particles/ParticleAtlas.png" SourceRect="0,482,41,30" Origin="0.5,0.5" depth="0.606" />
+    <Body radius="20" density="10" />
+    <Rope sourcepullforce="0" targetpullforce="250" projectilepullforce="0" maxlength="2100" snaponcollision="false" spritewidth="256" tile="true" snapanimduration="1" breakfrommiddle="false" maxangle="60" lerpforces="false">
+      <Sprite name="tongue" texture="Content/Particles/ParticleAtlas.png" SourceRect="0,482,41,30" Origin="0.5,0.5" depth="0.606" />
+      <EndSprite texture="Content/Particles/ParticleAtlas.png" SourceRect="41,482,90,30" Origin="0.5,0.5" depth="0.607" />
+      <SnapSound file="Content/Items/Weapons/HarpoonGun1.ogg" range="500" frequencymultiplier="3.0,4.0" />
+      <!-- Automatically snap after 5 seconds -->
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" />
+      <!-- Remove 1 second after snapping -->
+      <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
+        <Conditional Snapped="true" />
+        <Remove />
+      </StatusEffect>
+      <!-- Snap after 3 seconds if not stuck to anything -->
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" checkconditionalalways="true">
+        <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
+      </StatusEffect>
+    </Rope>
+    <Projectile characterusable="false" launchimpulse="60.0" sticktostructures="false" sticktoitems="false" sticktodoors="false" sticktodeflective="true" sticktocharacters="true" maxtargetstohit="1" sticktolighttargets="true" prismatic="false">
+      <Attack structuredamage="10">
+        <Affliction identifier="blunttrauma" strength="20" />
+        <Affliction identifier="stun" strength="5" />
+      </Attack>
+      <StatusEffect type="OnActive" target="UseTarget,This" comparison="And" disabledeltatime="true">
+        <Conditional Snapped="false" />
+        <Affliction identifier="drag" strength="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <particleemitter drawontop="true" particle="tonguehitsplash" particleamount="20" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
+        <particleemitter drawontop="false" particle="damagebubbles" particleamount="20" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
+        <particleemitter drawontop="true" particle="damagebubbles" particleamount="10" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This">
+        <Conditional Snapped="true" />
+        <sound file="Content/Characters/Latcher/ABYSSM_tongueMove_1.ogg" range="200" volume="1" dontmuffle="false" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+</Items>

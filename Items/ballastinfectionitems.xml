@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Items>
+    <Item name="ballastfloratoxinsthal" identifier="ballastfloratoxinsthal" Scale="1" tags="" sonarsize="0" hideinmenus="true" health="1" depth="0.1" damagedbyexplosions="false" damagedbyprojectiles="false" damagedbyrepairtools="true" isdangerous="true">
+      <Body width="100" height="100" density="0" bodytype="kinematic" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+      <ItemComponent>
+        <StatusEffect type="Always" target="This,Hull" oxygen="-30000.0" />
+        <StatusEffect type="Always" target="This">
+          <ParticleEmitter particle="toxinmist" particlespersecond="1" anglemax="360" velocitymin="0.1" velocitymax="1" scalemin="0.5" scalemax="1" />
+          <ParticleEmitter particle="acidmistgrenade" particlespersecond="1" anglemax="360" velocitymin="0.1" velocitymax="1" scalemin="0.5" scalemax="1" />
+          <sound file="Content/Items/Alien/AlienPump.ogg" range="500.0" loop="true" />
+        </StatusEffect>
+		<StatusEffect type="Always" target="NearbyItems" targettags="junctionbox" range="500.0" setvalue="true" stackable="false" extraload="450" delay="1" />
+        <StatusEffect type="Always" target="NearbyCharacters" stackable="false" range="200">
+          <Affliction identifier="acidburn" strength="0.70" />
+          <Affliction identifier="psychosis" strength="3" />
+          <Affliction identifier="nausea" strength="4.5" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This,NearbyCharacters" stackable="false" range="200">
+          <ParticleEmitter particle="smoke" particleburstamount="1" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="360" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="40.0" />
+          <ParticleEmitter particle="DarkSmoke" particleburstamount="1" particleburstinterval="0.5" particlespersecond="40" scalemin="2.5" scalemax="3.5" distancemin="-15" distancemax="15" anglemin="50" anglemax="130" velocitymin="10" velocitymax="100" mincondition="0.0" maxcondition="20.0" />
+          <ParticleEmitter particle="swirlysmoke" particlespersecond="1" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" stackable="false" delay="2.5">
+          <Explosion range="150.0" itemdamage="0" structuredamage="2" ballastfloradamage="0" empstrength="1" playtinnitus="false" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" applyfireeffects="false">
+            <Affliction identifier="emp" strength="1" />
+          </Explosion>
+          <Remove />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>
+	
+	  <Item name="ballastfloratoxins thalamussuit" identifier="ballastfloratoxinsthalsuit" Scale="1" tags="" sonarsize="0" hideinmenus="true" health="10" depth="0.1" isdangerous="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1">
+        <ParticleEmitter particle="toxins" particlespersecond="1" scalemin="0.2" scalemax="0.3" anglemin="0" anglemax="360" />
+        <sound file="Content/Items/Alien/AlienPump.ogg" range="500.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="200" disabledeltatime="false">
+        <Affliction identifier="acidburn" strength="0.16" />
+      </StatusEffect>
+	        <StatusEffect type="OnBroken" target="This" >
+            <Explosion range="200.0" itemdamage="0" structuredamage="6" ballastfloradamage="0" empstrength="0.15" playtinnitus="false" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" applyfireeffects="false">
+            <Affliction identifier="emp" strength="1" />
+			<Affliction identifier="nausea" strength="7" />
+			<Affliction identifier="psychosis" strength="3" />
+          </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.5">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+	
+	
+    <Item name="ruintoxins" identifier="ruintoxinsBTC" Scale="1" tags="" sonarsize="0" hideinmenus="true" health="1" depth="0.1" isdangerous="true">
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+      <ItemComponent>
+        <StatusEffect type="Always" target="This">
+          <ParticleEmitter particle="toxins" particlespersecond="5" scalemin="0.2" scalemax="0.5" distancemax="50" anglemax="360" />
+          <ParticleEmitter particle="toxinmist" anglemax="360" velocitymin="10" velocitymax="20" scalemin="0.2" scalemax="0.5" particlespersecond="20" />
+          <sound file="Content/Items/Alien/AlienPump.ogg" range="500.0" loop="true" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="NearbyCharacters" range="200" stackable="false" targets="human" disabledeltatime="false">
+          <Affliction identifier="acidburn" strength="0.5" />
+          <Affliction identifier="psychosis" strength="1" />
+          <Affliction identifier="nausea" strength="3" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" stackable="false" delay="30">
+          <ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particlespersecond="10" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" distancemin="0" distancemax="500" />
+          <Explosion range="150.0" itemdamage="10" ballastfloradamage="0" empstrength="1" playtinnitus="false" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="true" applyfireeffects="false">
+            <Affliction identifier="acidburn" strength="1" />
+            <Affliction identifier="emp" strength="1" />
+          </Explosion>
+          <Remove />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>
+    <!--  Removing flora spores + added medicines
+    <Item name="Thalidomide" identifier="thalidomide" category="Medical" maxstacksize="8" Tags="smallitem,chem,medical,syringe" description="Thalidomide is a medication used to treat tumorous thalamus infections. May Cause Birth Defects." cargocontaineridentifier="mediccrate" scale="0.5" useinhealthinterface="true" RequireAimToUse="True">
+      <Price baseprice="450" minleveldifficulty="15">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" />
+        <Price storeidentifier="merchantresearch" multiplier="0.8" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
+        <Price storeidentifier="merchantmine" multiplier="1.5" sold="false" />
+        <Price storeidentifier="merchantmedical" minavailable="2" multiplier="0.8" />
+      </Price>
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="897,449,63,63" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="223,69,38,70" depth="0.6" origin="0.5,0.5" />
+      <Body width="35" height="70" density="15" />
+      <Deconstruct time="20">
+        <Item identifier="stabilozine" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="90">
+        <RequiredSkill identifier="medical" level="60" />
+        <RequiredItem identifier="stabilozine" />
+        <RequiredItem identifier="sulphuricacid" />
+        <RequiredItem identifier="paralyxis" />
+      </Fabricate>
+      <SuitableTreatment type="damage" suitability="-33" />
+      <SuitableTreatment identifier="florainfection" suitability="100" />
+      <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+        <RequiredSkill identifier="medical" level="55" />
+        <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true">
+          <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnSuccess" target="This" Condition="-100.0" disabledeltatime="true">
+          <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="60.0">
+          <ReduceAffliction identifier="florainfection" amount="10" />
+          <ReduceAffliction identifier="paralysis" amount="10" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,Limb" duration="60.0">
+          <Affliction identifier="organdamage" amount="0.15" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" disabledeltatime="true">
+          <Affliction identifier="floraresistance" amount="600" />
+          <Affliction identifier="paralysisresistance" amount="400" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="30.0">
+          <ReduceAffliction identifier="florainfection" amount="1" />
+          <ReduceAffliction identifier="paralysis" amount="1" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="60.0">
+          <Affliction identifier="organdamage" amount="0.5" />
+          <Affliction identifier="nausea" amount="2" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnFailure" target="UseTarget" disabledeltatime="true">
+          <Affliction identifier="floraresistance" amount="100" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </MeleeWeapon>
+      <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
+    </Item> -->
+  </Items>
+</Override>

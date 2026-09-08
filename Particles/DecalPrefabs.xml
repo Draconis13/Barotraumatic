@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <btcbloodblue
+    color="0,80,192,255"
+    lifetime="6000"
+    fadeouttime="20">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="256,128,128,128"/>
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="256,254,128,128"/>
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="384,128,128,128"/>
+  </btcbloodblue>
+    <slugblood color="200,200,145,255" lifetime="6000" fadeouttime="20">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="256,128,128,128" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="256,254,128,128" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="384,128,128,128" />
+  </slugblood>
+</prefabs>

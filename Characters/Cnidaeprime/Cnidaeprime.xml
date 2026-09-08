@@ -1,0 +1,65 @@
+﻿<Character SpeciesName="Cnidaeprime" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="Cnidae" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="True" HideInThermalGoggles="False" SonarDisruption="0.35" DistantSonarRange="0" DisableDistance="50000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <health Vitality="980" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="1" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
+  <ai targetinnerwalls="True" CombatStrength="500" Sight="3" Hearing="3" MaxPerceptionDistance="-1" AggressionHurt="10" AggressionGreed="100" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="True" DamageThreshold="0" AvoidTime="4" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0">
+    <targetpriority damagethreshold="0" straightStartDistance="3000" straightRotationSpeed="1" DynamicstraightRotationSpeed="False" straightRandomRotationFactor="0" straightStrikeDistanceMultiplier="5" straightMaxRandomOffset="0" Tag="decoy" State="Attack" Priority="600" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority damagethreshold="0" straightStartDistance="3000" straightRotationSpeed="1" DynamicstraightRotationSpeed="False" straightRandomRotationFactor="0" straightStrikeDistanceMultiplier="5" straightMaxRandomOffset="0" Tag="stronger" State="Escape" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority damagethreshold="0" straightStartDistance="3000" straightRotationSpeed="1" DynamicstraightRotationSpeed="False" straightRandomRotationFactor="0" straightStrikeDistanceMultiplier="5" straightMaxRandomOffset="0" Tag="human" State="Attack" Priority="90" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority damagethreshold="0" straightStartDistance="3000" straightRotationSpeed="1" DynamicstraightRotationSpeed="False" straightRandomRotationFactor="0" straightStrikeDistanceMultiplier="5" straightMaxRandomOffset="0" Tag="wall" State="Attack" Priority="60" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="True" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority damagethreshold="0" straightStartDistance="3000" straightRotationSpeed="1" DynamicstraightRotationSpeed="False" straightRandomRotationFactor="0" straightStrikeDistanceMultiplier="5" straightMaxRandomOffset="0" Tag="weaker" State="Attack" Priority="50" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority damagethreshold="0" straightStartDistance="3000" straightRotationSpeed="1" DynamicstraightRotationSpeed="False" straightRandomRotationFactor="0" straightStrikeDistanceMultiplier="5" straightMaxRandomOffset="0" Tag="sonar" State="Attack" Priority="45" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority damagethreshold="0" straightStartDistance="3000" straightRotationSpeed="1" DynamicstraightRotationSpeed="False" straightRandomRotationFactor="0" straightStrikeDistanceMultiplier="5" straightMaxRandomOffset="0" Tag="dead" State="Eat" Priority="40" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority damagethreshold="0" straightStartDistance="3000" straightRotationSpeed="1" DynamicstraightRotationSpeed="False" straightRandomRotationFactor="0" straightStrikeDistanceMultiplier="5" straightMaxRandomOffset="0" Tag="nasonov" State="Attack" Priority="30" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <latchonto attachtowalls="false" attachtosub="true" mindeattachspeed="3.0" maxdeattachspeed="10.0" damageondetach="0.0" detachstun="5.0" attachlimb="Head" localattachpos="10,32" attachlimbrotation="40" />
+  </ai>
+  <sound gender="None" File="Content/Characters/Coelanth/attack1.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Coelanth/idle1.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Coelanth/idle2.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <StatusEffect type="OnDeath" target="This" targetlimb="Torso">
+    <Explosion range="450" force="2" smoke="false" sparks="false" shockwave="true" underwaterbubble="false" camerashake="12">
+      <Affliction identifier="stun" strength="2" />
+      <Affliction identifier="morbusinepoisoning" strength="13" />
+    </Explosion>
+    <ParticleEmitter particle="heavygib" particleamount="2" scalemin="15" scalemax="15" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="gib" particleamount="30" scalemin="1" scalemax="2" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+  </StatusEffect>
+  <!-- <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 17" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 22" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 27" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 32" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 42" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 67" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 72" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 47" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 52" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 57" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Limb" targetlimb="Limb 62" delay="5">
+    <SpawnItem identifier="morbusinegasemitter" spawnposition="This" count="1" spread="0" />
+  </StatusEffect> -->
+  <inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+    <item Identifier="adrenalinegland" />
+    <item amount="2" Identifier="morbusine" />
+    <item Identifier="alienblood" />
+  </inventory>
+</Character>

@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Items>
+    <Item name="" identifier="headset" scale="0.5" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="crewcab" secondary="divingcab"/>
+    <Price baseprice="40">
+      <Price storeidentifier="merchantoutpost" minavailable="3" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantresearch" minavailable="4" />
+      <Price storeidentifier="merchantmilitary" minavailable="6" />
+      <Price storeidentifier="merchantmine" minavailable="6" />
+    </Price>
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+      <Sprite name="Headset" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="28,321,49,62" origin="0.5,0.5" />
+      <Body radius="20" height="20" density="30" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="silicon" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+      <Deconstruct time="5">
+      </Deconstruct>
+      <!-- GreaterComponent is not accessible by users and is used to tell the item if it had spawned a battery yet (timeframe="0") or if it spawned one (timeframe="1") -->
+      <GreaterComponent canbeselected="false" canbepicked="false" allowingameediting="false" timeframe="0">
+        <!-- When the item is loaded, spawn a disposable battery inside it and set the timeframe value to 1 so this item remembers next round that it already spawned a battery. Only triggers once per round. -->
+  <!--   <StatusEffect type="OnSpawn" target="This" timeframe="1" delay="0.5" checkconditionalalways="true" setvalue="true" oneshot="true" comparison="And">
+          <Conditional timeframe="eq 0" />
+          <SpawnItem identifier="batterycelldisposable" spawnposition="ThisInventory" spawnifinventoryfull="false" />
+        </StatusEffect> -->
+      </GreaterComponent>
+      <WifiComponent range="15000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+        <StatusEffect type="OnActive" targettype="This">
+          <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+          <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+        </StatusEffect>
+      </WifiComponent>
+      <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+        <sprite name="Headset Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" sourcerect="28,321,49,62" origin="0.5,0.6" />
+        <StatusEffect type="OnWearing" interval="1" target="This,Contained,Character" setvalue="true">
+          <Affliction identifier="radio" strength="150" />
+        </StatusEffect>
+      <!--  <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.8" setvalue="true" disabledeltatime="true" /> -->
+      </Wearable>
+    </Item>
+    <Item name="Pressure Injector Headset" identifier="BTCpressureinjectorheadset" scale="0.5" category="Equipment,Medical" tags="smallitem,mobileradio,sonar" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" inventoryiconcolor="205,230,230,255" spritecolor="205,230,230,255">
+      <PreferredContainer primary="medcab" />
+      <Price baseprice="160" sold="false">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" />
+        <Price storeidentifier="merchantresearch" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantmine" />
+      </Price>
+ <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
+      <Body radius="20" height="20" density="30" />
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredSkill identifier="mechanical" level="40" />
+		<RequiredSkill identifier="medical" level="40" />
+        <RequiredItem identifier="autoinjectorheadset" />
+        <RequiredItem identifier="titanium" />
+      </Fabricate>
+      <Deconstruct time="10">
+        <Item identifier="copper" amount="2" />
+        <Item identifier="fpgacircuit" />
+      </Deconstruct>
+      <WifiComponent range="25000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+        <StatusEffect type="OnActive" targettype="This">
+          <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+          <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+        </StatusEffect>
+      </WifiComponent>
+    <ItemContainer capacity="1" maxstacksize="1" autoinject="false" containedstateindicatorstyle="syringe">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+      <Containable items="pressurestabilizer" />
+    </ItemContainer>
+      <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+        <StatusEffect type="OnWearing" interval="1" target="This,Contained,Character" setvalue="true">
+          <Affliction identifier="radio" strength="250" />
+        </StatusEffect>
+        <!-- For some reason lightcomponent doesn't turn on if not placed in the sprite section -->
+        <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="253,305,76,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5">
+          <LightComponent range="80.0" lightcolor="255,0,0,255" powerconsumption="1" pulseamount="1" blinkfrequency="2" IsOn="false" castshadows="false" allowingameediting="false">
+            <StatusEffect type="OnWearing" targettype="This" IsOn="true" setvalue="true">
+              <Conditional target="This" voltage="gt 2" />
+            </StatusEffect>
+            <StatusEffect type="OnWearing" targettype="This" IsOn="false" setvalue="true">
+              <Conditional target="This" voltage="lte 1" />
+            </StatusEffect>
+          </LightComponent>
+        </sprite>
+      <!--  <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.8" setvalue="true" disabledeltatime="true" /> -->
+        <!-- Give more voltage when wearer is in critical condition or incapacitated, turn off when out of battery, dead or unequiped -->
+        <StatusEffect type="OnWearing" target="This,Character" Comparaison="And" voltage="3" setvalue="true">
+          <Conditional healthpercentage="lt 0" />
+          <Conditional IsAlive="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="This,Character" Comparaison="And" voltage="3" setvalue="true">
+		<Conditional cardiacarrest="gte 1" />
+          <Conditional IsAlive="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="This,Character" Comparaison="And" voltage="3" setvalue="true">
+          <Conditional paralysis="gte 95" />
+          <Conditional IsAlive="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="This,Character" Comparaison="And" voltage="3" setvalue="true">
+          <Conditional respiratoryarrest="gte 1" />
+          <Conditional IsAlive="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="This,Character" voltage="0" setvalue="true">
+          <Conditional IsDead="true" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" voltage="0" setvalue="true" />
+		<StatusEffect type="OnWearing" target="Contained,Character" comparison="and" targetslot="0" condition="0" setvalue="true" disabledeltatime="true" interval="0.5" duration="10.0">
+        <RequiredItem items="pressurestabilizer" type="Contained" />
+        <Conditional isDead="false" />
+        <Conditional pressurestabilized="lte 0" /> 
+		<Conditional pressuretimer="gte 70" />
+        <Affliction identifier="pressurestabilized" amount="105.0" />
+        <ReduceAffliction identifier="organdamage" amount="3.5" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      </Wearable>
+	 <AiTarget soundrange="50000" sonarlabel="SOS" maxtextlength="3" sight="1000" staticsight="true"/>
+      <LightComponent range="100.0" lightcolor="0,0,0,0" powerconsumption="1" pulseamount="1" blinkfrequency="2" IsOn="false" castshadows="false" allowingameediting="false">
+        <StatusEffect type="OnWearing" targettype="This" SoundRange="1500" setvalue="true">
+          <Conditional target="This" voltage="gt 2" />
+          <sound file="Content/Items/WarningBeepSlow.ogg" range="1500.0" loop="true" volume="1" />
+        </StatusEffect>
+      </LightComponent>
+    </Item>
+	    <Item name="" identifier="autoinjectorheadset" scale="0.5" category="Equipment,Medical" tags="smallitem,mobileradio,sonar" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medcab" />
+      <Price baseprice="140" sold="false">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" />
+        <Price storeidentifier="merchantresearch" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantmine" />
+      </Price>
+ <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
+      <Body radius="20" height="20" density="30" />
+      <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+        <RequiredSkill identifier="mechanical" level="30" />
+        <RequiredItem identifier="zinc" />
+        <RequiredItem identifier="potassium" />
+        <RequiredItem identifier="fpgacircuit" />
+        <RequiredItem identifier="wificomponent" />
+      </Fabricate>
+      <Deconstruct time="10">
+        <Item identifier="copper" amount="2" />
+        <Item identifier="fpgacircuit" />
+      </Deconstruct>
+      <WifiComponent range="25000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+        <StatusEffect type="OnActive" targettype="This">
+          <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+          <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+        </StatusEffect>
+      </WifiComponent>
+      <ItemContainer capacity="1" maxstacksize="1" autoinject="true" containedstateindicatorslot="0">
+     <Containable items="chem,syringe" />
+      </ItemContainer>
+      <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+        <StatusEffect type="OnWearing" interval="1" target="This,Contained,Character" setvalue="true">
+          <Affliction identifier="radio" strength="250" />
+        </StatusEffect>
+        <!-- For some reason lightcomponent doesn't turn on if not placed in the sprite section -->
+        <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="253,305,75,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5">
+		  <LightComponent range="80.0" lightcolor="255,0,0,255" powerconsumption="1" pulseamount="1" blinkfrequency="2" IsOn="false" castshadows="false" allowingameediting="false">
+            <StatusEffect type="OnWearing" targettype="This" IsOn="true" setvalue="true">
+              <Conditional target="This" voltage="gt 2" />
+            </StatusEffect>
+            <StatusEffect type="OnWearing" targettype="This" IsOn="false" setvalue="true">
+              <Conditional target="This" voltage="lte 1" />
+            </StatusEffect>
+          </LightComponent>
+        </sprite>
+      <!--  <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.8" setvalue="true" disabledeltatime="true" /> -->
+        <!-- Give more voltage when wearer is in critical condition or incapacitated, turn off when out of battery, dead or unequiped -->
+        <StatusEffect type="OnWearing" target="This,Character" Comparaison="And" voltage="3" setvalue="true">
+          <Conditional healthpercentage="lt 0" />
+          <Conditional IsAlive="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="This,Character" Comparaison="And" voltage="3" setvalue="true">
+          <Conditional cardiacarrest="gte 1" />
+          <Conditional IsAlive="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="This,Character" Comparaison="And" voltage="3" setvalue="true">
+          <Conditional paralysis="gte 95" />
+          <Conditional IsAlive="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="This,Character" Comparaison="And" voltage="3" setvalue="true">
+          <Conditional respiratoryarrest="gte 1" />
+          <Conditional IsAlive="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="This,Character" voltage="0" setvalue="true">
+          <Conditional IsDead="true" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" voltage="0" setvalue="true" />
+      </Wearable>
+	  <AiTarget soundrange="50000" sonarlabel="SOS" maxtextlength="3" sight="1000" staticsight="true"/>
+      <LightComponent range="100.0" lightcolor="0,0,0,0" powerconsumption="1" pulseamount="1" blinkfrequency="2" IsOn="false" castshadows="false" allowingameediting="false">
+        <StatusEffect type="OnWearing" targettype="This" SoundRange="1500" setvalue="true">
+          <Conditional target="This" voltage="gt 2" />
+          <sound file="Content/Items/WarningBeepSlow.ogg" range="1500.0" loop="true" volume="1" />
+        </StatusEffect>
+      </LightComponent>
+    </Item>
+    <!-- Ek -->
+    <Item name="Advanced Headset" identifier="ekutility_advancedheadset" scale="0.5" category="Equipment" tags="smallitem,mobileradio,sonar" description="The perfect headset. Equipped with noise suppression, high frequency emitters, and adjustable comfort suspension, this headset is designed for onboard use by submarine crews muffling loud noises and protecting the users hearing and inner ear." cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="engcab" amount="0" spawnprobability="0" notcampaign="true" />
+      <PreferredContainer secondary="outpostengcab" amount="0" spawnprobability="0" />
+      <PreferredContainer secondary="abandonedstoragecab,wreckstoragecabcab,abandonedengcab,wreckengcab" amount="0" spawnprobability="0" />
+      <Price baseprice="200" minleveldifficulty="15">
+        <Price storeidentifier="outpost" multiplier="1" minavailable="1" />
+        <Price storeidentifier="city" multiplier="0.9" minavailable="3" />
+        <Price storeidentifier="research" multiplier="1" minavailable="0" />
+        <Price storeidentifier="military" multiplier="1" minavailable="1" />
+        <Price storeidentifier="mine" multiplier="0.8" minavailable="2" />
+      </Price>
+      <InventoryIcon texture="%ModDir:2518816103%/Items/AdvancedHeadsetIcon.png" sourcerect="0,0,176,163" origin="0.5,0.5" />
+      <Sprite texture="%ModDir:2518816103%/Items/AdvancedHeadset.png" depth="0.6" sourcerect="0,0,45,45" origin="0.5,0.5" />
+      <Body radius="15" height="10" density="30" />
+      <Deconstruct time="10">
+        <Item identifier="fpgacircuit" />
+        <Item identifier="copper" />
+        <Item identifier="copper" />
+        <Item identifier="iron" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="30">
+        <RequiredSkill identifier="electrical" level="50" />
+        <RequiredItem identifier="wificomponent" />
+        <RequiredItem identifier="fpgacircuit" />
+        <RequiredItem identifier="copper" />
+        <RequiredItem identifier="steel" />
+      </Fabricate>
+      <WifiComponent range="30000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+        <StatusEffect type="OnActive" targettype="This">
+          <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+          <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+        </StatusEffect>
+      </WifiComponent>
+      <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+        <sprite name="Headset Wearable" texture="%ModDir:2518816103%/Items/AdvancedHeadset.png" limb="Head" hidelimb="false" inheritlimbdepth="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="0,0,45,45" origin="0.5,0.6" />
+		<sprite name="Headset Torso Protect" texture="Content/Items/Jobgear/Mechanic/safetyharness.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="0,0,1,1" spritecolor="255,255,255,0" />
+        <StatusEffect type="OnWearing" interval="1" target="This,Contained,Character" setvalue="true">
+          <Affliction identifier="radio" strength="300" />
+        </StatusEffect>
+		<damagemodifier afflictiontypes="stun" armorsector="0.0,360.0" damagemultiplier="0.95" />
+		<damagemodifier afflictiontypes="nausea" armorsector="0.0,360.0" damagemultiplier="0.80" />
+        <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.7" setvalue="true" disabledeltatime="true" />
+      </Wearable>
+    </Item>
+    <Item name="Long Range Radio Backpack" identifier="ekutility_longrangeradio" scale="0.45" category="Equipment" tags="mediumitem,mobileradio,provocative,sonar,mobilecontainer" description="The perfect headset. Equipped with noise suppression, rotating high frequency emitters, and adjustable comfort suspension, this headset is designed for onboard use by submarine crews its atomic pile will last for years of constant use, can't be jammed and only slows the wearer a small amount. In addition to the general carrying space there are two bandolier ammo pouches." cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+      <Price baseprice="680" sold="false" minleveldifficulty="25">
+        <Price storeidentifier="outpost" multiplier="1" minavailable="0" maxavailable="0" />
+        <Price storeidentifier="city" multiplier="0.9" minavailable="0" maxavailable="0" />
+        <Price storeidentifier="research" multiplier="1" minavailable="0" maxavailable="0" />
+        <Price storeidentifier="military" multiplier="0.8" minavailable="0" maxavailable="0" />
+        <Price storeidentifier="mine" multiplier="1" minavailable="0" maxavailable="0" />
+      </Price>
+      <InventoryIcon texture="BTheadsets.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+      <Sprite texture="BTheadsets.png" depth="0.6" sourcerect="132,0,128,112" origin="0.5,0.5" />
+      <Body width="112" height="100" density="12" />
+      <Deconstruct time="10">
+        <Item identifier="thorium" />
+        <Item identifier="titanium" />
+        <Item identifier="fpgacircuit" />
+        <Item identifier="fulgurium" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="50">
+        <RequiredSkill identifier="electrical" level="65" />
+        <RequiredItem identifier="ek_security_radio" />
+        <RequiredItem identifier="thorium" />
+        <RequiredItem identifier="incendium" />
+        <RequiredItem identifier="alienpowercell" />
+        <RequiredItem identifier="fulguriumbatterycell" />
+      </Fabricate>
+      <WifiComponent range="80000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+     <StatusEffect type="OnActive" targettype="This">
+          <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+          <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+        </StatusEffect>
+      </WifiComponent>
+      <ItemContainer capacity="6">
+        <Containable items="smallitem" excludeditems="toolbelt,toolbox,mobilecontainer,rucksack,backpack,waistbelt" />
+        <Subcontainer capacity="2" maxstacksize="32">
+          <SlotIcon slotindex="6" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+          <SlotIcon slotindex="7" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+          <Containable items="handheldammo,grenade,handgrenade" />
+        </Subcontainer>
+      </ItemContainer>
+      <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+      <Wearable limbtype="Head" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+        <StatusEffect type="OnWearing" interval="1" target="This,Contained,Character" setvalue="true">
+          <Affliction identifier="radio" strength="800" />
+        </StatusEffect>
+        <sprite name="Headset Wearable" texture="BTheadsets.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" sourcerect="196,112,64,80" origin="0.5,0.6" scale="0.35" />
+        <sprite name="Backpack Wearable" texture="BTheadsets.png" limb="Torso" hidelimb="false" canbehiddenbyotherwearables="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" sourcerect="256,0,80,256" origin="1.4,0.8" scale="0.35" />
+        <StatusEffect tags="headset" type="OnWearing" target="Character" duration="1" stackable="false" />
+      <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.8" setvalue="true" disabledeltatime="true" />
+        <StatValue stattype="MovementSpeed" value="-0.1" />
+      </Wearable>
+      <AiTarget soundrange="50000" sonarlabel="entityname.sonarbeacon" sight="500" staticsight="true"/>
+    <LightComponent LightColor="0.0,1.0,0.0,1.0" range="50" powerconsumption="10" blinkfrequency="2" IsOn="false" canbeselected="false">
+      <StatusEffect type="OnActive" targettype="This" SoundRange="50000" setvalue="true">
+        <Conditional Voltage="gt 0.5" targetitemcomponent="LightComponent" />
+        <sound file="Content/Items/Weapons/SonarDecoy.ogg" range="500.0" loop="true" volume="0.25" />
+      </StatusEffect>
+    </LightComponent>
+	     <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+        <GuiFrame relativesize="0.13,0.095" anchor="CenterLeft" pivot="BottomLeft" relativeoffset="0.006,-0.05" style="ItemUI" />
+        <TickBox text="sonarbeacon.beaconactive">
+          <StatusEffect type="OnUse" targettype="This" IsOn="true" Voltage="1.0" />
+          <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
+        </TickBox>
+        <TextBox text="sonarbeacon.beaconsignal" propertyname="SonarLabel" maxtextlength="32" />
+      </CustomInterface>
+    </Item>
+    <Item name="Walkie Talkie" identifier="ek_security_radio" scale="0.35" category="Equipment" tags="smallitem,mobileradio" description="A low-profile radio transciever used mainly by ship and station security officers, this coalition special forces setup is excellent for diving teams as the radio frequency minimizes distortions from naturally occurring sources by using ULF in a relatively compact package." cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="armcab" amount="0" spawnprobability="0" notcampaign="true" />
+      <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="0" spawnprobability="0" />
+      <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="0" maxamount="0" spawnprobability="0" />
+      <Price baseprice="200" minleveldifficulty="15">
+        <Price storeidentifier="outpost" multiplier="1.2" minavailable="2" />
+        <Price storeidentifier="city" multiplier="0.9" minavailable="4" />
+        <Price storeidentifier="research" multiplier="1.4" minavailable="2" />
+        <Price storeidentifier="military" multiplier="0.6" minavailable="8" />
+        <Price storeidentifier="mine" multiplier="1.3" minavailable="1" />
+      </Price>
+      <InventoryIcon texture="BTheadsets.png" sourcerect="18,66,28,64" origin="0.5,0.5" />
+      <Sprite texture="BTheadsets.png" depth="0.6" sourcerect="0,132,48,96" origin="0.5,0.5" />
+      <Body width="35" height="55" density="30" />
+      <Deconstruct time="10">
+        <Item identifier="rubber" />
+        <Item identifier="titaniumaluminiumalloy" />
+        <Item identifier="fpgacircuit" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="15">
+        <RequiredSkill identifier="electrical" level="35" />
+        <RequiredItem identifier="rubber" />
+        <RequiredItem identifier="titaniumaluminiumalloy" />
+        <RequiredItem identifier="fpgacircuit" />
+        <RequiredItem identifier="wificomponent" />
+      </Fabricate>
+      <WifiComponent range="50000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+        <StatusEffect type="OnActive" targettype="This">
+          <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+          <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+        </StatusEffect>
+      </WifiComponent>
+      <Holdable slots="LeftHand,Any" holdpos="30,-15" handle1="0,-5" handle2="0,5" holdangle="80" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false">
+        <StatusEffect type="OnActive" interval="1" target="This,Contained,Character" setvalue="true">
+          <Affliction identifier="radio" strength="500" />
+        </StatusEffect>
+      </Holdable>
+      <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+        <StatusEffect type="OnWearing" interval="1" target="This,Contained,Character" setvalue="true">
+          <Affliction identifier="radio" strength="500" />
+        </StatusEffect>
+        <sprite name="Radio Head" texture="BTheadsets.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" sourcerect="56,204,24,24" origin="0.95,0.55" scale="0.4" />
+        <sprite name="Radio Torso" texture="BTheadsets.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" sourcerect="48,132,48,70" origin="0.15,1.05" scale="0.4" />
+      </Wearable>
+    </Item>
+  </Items>
+</Override>

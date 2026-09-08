@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Character SpeciesName="Mudraptor" SpeciesTranslationOverride="" DisplayName="" Group="mudraptor" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" CanSpeak="False" UseBossHealthBar="False" Noise="200" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False">
+    <ragdolls />
+    <animations />
+    <health Vitality="150" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="1" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="1" StunImmunity="False" PoisonImmunity="False" ApplyAfflictionColors="False">
+      <Limb name="Torso" />
+      <Limb name="Head" />
+      <Limb name="LeftLeg" />
+      <Limb name="RightLeg" />
+      <Limb name="Tail" />
+    </health>
+    <damageemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.15" ScaleMax="0.2" VelocityMin="200" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <bloodemitter Particle="blood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <bloodemitter Particle="waterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <gibemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.25" ScaleMax="0.5" VelocityMin="200" VelocityMax="700" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_attack1.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_attack2.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_attack3.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_damage1.ogg" State="Damage" Range="3000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_damage2.ogg" State="Damage" Range="3000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_damage3.ogg" State="Damage" Range="3000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_idle1.ogg" State="Idle" Range="2000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_idle2.ogg" State="Idle" Range="2000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_idle3.ogg" State="Idle" Range="2000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_idle4.ogg" State="Idle" Range="2000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_death1.ogg" State="Die" Range="3000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Mudraptor/MUDRAPTOR_death2.ogg" State="Die" Range="3000" Volume="1" Tags="" />
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="15">
+      <Item Identifier="hydroxyapatite" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+      <Item Identifier="hydroxyapatite" />
+      <Item forcetoslot="true" Identifier="mudraptorshell" />
+    </Inventory>
+	  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+      <Item Identifier="hydroxyapatite" />
+      <Item forcetoslot="true" Identifier="mudraptorshell" />
+	  <Item Identifier="mudhead" />
+    </Inventory>
+	<Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+      <Item Identifier="hydroxyapatite" />
+      <Item forcetoslot="true" Identifier="mudraptorshell" />
+	  <Item Identifier="mudclaw" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="smallmudraptoregg" />
+      <Item Identifier="mudhead" />
+      <Item Identifier="mudhip" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="smallmudraptoregg" />
+      <Item identifier="diversremains" />
+      <Item Identifier="mudclaw" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="mudhead" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="mudhip" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="mudclaw" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="mudclaw" />
+      <Item Identifier="mudhip" />
+    </Inventory>
+	    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="mudhead" />
+      <Item Identifier="mudhip" />
+    </Inventory>
+	  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="mudhead" />
+      <Item Identifier="mudclaw" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="mudhead" />
+      <Item identifier="diversremains" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="mudhip" />
+      <Item identifier="diversremains" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="mudclaw" />
+      <Item identifier="diversremains" />
+    </Inventory>
+    <Inventory slots="Any, Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="5">
+      <Item identifier="hydroxyapatite" />
+      <Item identifier="diversremains" />
+    </Inventory>
+	  <StatusEffect type="OnDeconstructed" target="Character">
+    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="2" probability="1" />
+    <SpawnItem identifiers="hydroxyapatite" spawnposition="ThisInventory" count="1" probability="1" />
+    <SpawnItem identifiers="smallmudraptoregg" spawnposition="ThisInventory" count="1" probability="0.03" />
+  </StatusEffect>
+    <ai combatstrength="240" sight="1" hearing="1" aggressiveboarding="True" fleehealththreshold="0" aggressiongreed="20" aggressionhurt="300" attackwhenprovoked="True" avoidgunfire="False" enforceaggressivebehaviorformissions="True" targetouterwalls="True" randomattack="True">
+      <latchonto attachtowalls="true" attachtosub="false" attachlimb="HeadArmor" />
+      <target tag="decoy" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+      <target tag="provocative" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+      <target tag="weapon" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+      <target tag="nasonov" state="Attack" priority="100" ignoreinside="True" />
+      <target tag="stronger" state="Avoid" priority="100" reactdistance="2000" attackdistance="0" />
+      <target tag="tigerthresher" state="Avoid" priority="100" reactdistance="2000" />
+      <target tag="human" state="Attack" priority="90" reactdistance="0" attackdistance="0" />
+      <target tag="tool" state="Aggressive" priority="80" reactdistance="1000" attackdistance="0" ignoreifnotinsamesub="True" />
+      <target tag="weaker" state="Attack" priority="60" reactdistance="0" attackdistance="0" />
+      <target tag="door" state="Attack" priority="30" reactdistance="0" attackdistance="0" />
+      <target tag="dead" state="Eat" priority="10" reactdistance="0" attackdistance="0" />
+      <target tag="wall" state="Attack" priority="10" reactdistance="0" attackdistance="0" />
+      <target tag="room" state="Attack" priority="10" reactdistance="0" attackdistance="0" />
+      <target tag="sonar" state="Attack" priority="10" reactdistance="0" attackdistance="0" ignoreinside="true" />
+      <target tag="turret" state="Attack" priority="1" reactdistance="0" attackdistance="0" ignoreinside="true" />
+      <target Tag="watcheroid" state="Protect" priority="1" ignoreinside="true" />
+      <target tag="mudraptor_veteran" state="Follow" priority="1" ignoreinside="true" reactdistance="750" />
+      <target tag="monsterfood" state="Eat" priority="1" />
+      <SwarmBehavior mindistfromclosest="300" maxdistfromcenter="1000" cohesion="0.25" />
+    </ai>
+    <StatusEffect type="OnEating" target="Character" stackable="false">
+      <Affliction identifier="growthvanilla" amount="0.2" />
+    </StatusEffect>
+  </Character>
+</Override>

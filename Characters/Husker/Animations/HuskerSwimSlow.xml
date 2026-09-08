@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HuskerSwimSlow UseSineMovement="False" Flip="True" FlipCooldown="1" FlipDelay="0.5" Mirror="True" MirrorLerp="True" WaveAmplitude="5.106969" WaveLength="27.73013" RotateTowardsMovement="True" TailTorque="50" TailTorqueMultiplier="1" FootAngles="" UpdateAnimationWhenNotMoving="False" TailAngle="NaN" SteerTorque="25" LegTorque="25" AnimationType="SwimSlow" MovementSpeed="2.501364" CycleSpeed="1" HeadAngle="90" TorsoAngle="NaN" HeadTorque="25" TorsoTorque="25" FootTorque="25" ArmIKStrength="1" HandIKStrength="1" />

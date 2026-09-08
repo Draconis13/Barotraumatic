@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotext language="English" nowhitespace="false" translatedname="English">
+  <!-- Items -->
+  <entityname.low_lootcrate>Supply Box</entityname.low_lootcrate>
+  <entitydescription.low_lootcrate>Deconstruct to get a random item!</entitydescription.low_lootcrate>
+  <entityname.ekutility_advancedheadset>Advanced Headset</entityname.ekutility_advancedheadset>
+  <entitydescription.ekutility_advancedheadset>The perfect headset. Equipped with noise suppression, high frequency emitters, and adjustable comfort suspension, this headset is designed for onboard use by submarine crews muffling loud noises and improving quiet ones when using dive suits while protecting the users hearing and inner ear. 300m Range</entitydescription.ekutility_advancedheadset>
+  <entityname.batterycelldisposable>Disposable Battery Cell</entityname.batterycelldisposable>
+  <entitydescription.batterycelldisposable>A dangerous attempt at solving the portable power crisis on Europa, This high output rechargeable chemical battery is prone to thermal run away and explode when used continously or when struck against a hard surface. Though it can be placed on a charger, if it begins to smoke it may be safer to just deconstruct or throw it away immediately.</entitydescription.batterycelldisposable>
+  <entityname.ekutility_longrangeradio>Long Range Radio Backpack</entityname.ekutility_longrangeradio>
+  <entitydescription.ekutility_longrangeradio>A portable radio pack. Equipped with noise suppression, rotating high frequency emitters, and adjustable comfort suspension, this headset is designed for onboard use by submarine crews its atomic pile will last for years of constant use, while only slowing the wearer down a small amount. In addition to the general carrying space there are two ammo pouches and the headset 'ear scout' system drastically reduces divesuit muffling. 800m Range</entitydescription.ekutility_longrangeradio>
+  <entityname.ek_security_radio>Walkie Talkie</entityname.ek_security_radio>
+  <entitydescription.ek_security_radio>A low-profile radio transceiver used mainly by ship and station security officers, this coalition special forces setup is excellent for diving teams as the long range radio frequency minimizes distortions from naturally occurring sources by using ULF in a relatively compact package. 500m Range</entitydescription.ek_security_radio>
+  <entitydescription.BTCpressureinjectorheadset>A field modifed injector headset designed specifically for pressure stabilizer, quickly injects the wearer if it detects Organ Damage while under High Pressure. Monitors the users vitals and sends out a SOS beacon should they become incapciatated including paralyzation or heart conditions, which will disengage once the user is stabilized or expires. 250m Range</entitydescription.BTCpressureinjectorheadset>
+  <Override>
+  <entitydescription.autoinjectorheadset>A modifed headset utilizing an integrated battery, capable of injecting medicine placed within once the user's vitals drop to a certain level. Monitors the users vitals and sends out a SOS beacon should they become incapciatated including paralyzation or heart conditions, which will disengage once the user is stabilized or expires. 250m Range</entitydescription.autoinjectorheadset>
+  </Override>
+ <!-- Missions -->
+  <!--!!! WARNING !!!-->
+  <!-- "Text was not defined" means there wasn't a tag with text. You either need to write you text there, or leave it commented -->
+  <missionname.salvagekillcarrier>Salvaging a Derelict</missionname.salvagekillcarrier>
+  <missiondescription.salvagekillcarrier>A small cargo vessel went missing approximately two months ago when transporting xenomaterials from [location1] to [location2]. The vessel was presumed to be taken by the abyss, but now its emergency beacon seems to have been activated near [location2]. Find the vessel and recover the cargo.</missiondescription.salvagekillcarrier>
+  <missionsonarlabel.salvagekillcarrier>Emergency Signal</missionsonarlabel.salvagekillcarrier>
+  <missionsuccess.salvagekillcarrier>The researchers of [location2] are eager to know all the details of the encounter, but seem hesitant to answer any questions regarding the vessel. They do, however, offer you 2000 credits as "reimbursement for your troubles".</missionsuccess.salvagekillcarrier>
+  <missionfailure.salvagekillcarrier>Mission failed.</missionfailure.salvagekillcarrier>
+  <missionheader0.salvagekillcarrier>Target destroyed</missionheader0.salvagekillcarrier>
+  <missionname.killmolochbt>Killing a Moloch Herd</missionname.killmolochbt>
+  <missiondescription.killmolochbt>A particularly aggressive Moloch and her offspring have been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creatures.</missiondescription.killmolochbt>
+  <missionsonarlabel.killmolochbt>Moloch</missionsonarlabel.killmolochbt>
+  <missionsuccess.killmolochbt>The Molochs have been killed.</missionsuccess.killmolochbt>
+  <missionfailure.killmolochbt>Mission failed.</missionfailure.killmolochbt>
+  <missionheader0.killmolochbt>Targets terminated</missionheader0.killmolochbt>
+  <missionname.killmolochblackbt>Killing a Moloch Herd</missionname.killmolochblackbt>
+  <missiondescription.killmolochblackbt>A particularly aggressive Moloch and her offspring have been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature.</missiondescription.killmolochblackbt>
+  <missionsonarlabel.killmolochblackbt>Moloch</missionsonarlabel.killmolochblackbt>
+  <missionsuccess.killmolochblackbt>The Molochs have been killed.</missionsuccess.killmolochblackbt>
+  <missionfailure.killmolochblackbt>Mission failed.</missionfailure.killmolochblackbt>
+  <missionheader0.killmolochblackbt>Targets terminated</missionheader0.killmolochblackbt>
+  <missionname.killhammerheadbt>Killing a Hammerhead Pack</missionname.killhammerheadbt>
+  <missiondescription.killhammerheadbt>A particularly aggressive Hammerhead pack has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature.</missiondescription.killhammerheadbt>
+  <missionsonarlabel.killhammerheadbt>Hammerhead</missionsonarlabel.killhammerheadbt>
+  <missionsuccess.killhammerheadbt>The Hammerheads have been killed.</missionsuccess.killhammerheadbt>
+  <missionfailure.killhammerheadbt>Mission failed.</missionfailure.killhammerheadbt>
+  <missionheader0.killhammerheadbt>Targets terminated</missionheader0.killhammerheadbt>
+  <missionname.killhammerheadgoldbt>Killing a Hammerhead Pack</missionname.killhammerheadgoldbt>
+  <missiondescription.killhammerheadgoldbt>A particularly aggressive Hammerhead pack has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature.</missiondescription.killhammerheadgoldbt>
+  <missionsonarlabel.killhammerheadgoldbt>Hammerhead</missionsonarlabel.killhammerheadgoldbt>
+  <missionsuccess.killhammerheadgoldbt>The Hammerheads have been killed.</missionsuccess.killhammerheadgoldbt>
+  <missionfailure.killhammerheadgoldbt>Mission failed.</missionfailure.killhammerheadgoldbt>
+  <missionheader0.killhammerheadgoldbt>Targets terminated</missionheader0.killhammerheadgoldbt>
+  <missionname.killmatriarchbt1>Killing a Matriarch</missionname.killmatriarchbt1>
+  <missiondescription.killmatriarchbt1>Eliminate the Hammerhead Matriarch and her minions.</missiondescription.killmatriarchbt1>
+  <missionsonarlabel.killmatriarchbt1>Hammerhead</missionsonarlabel.killmatriarchbt1>
+  <missionsuccess.killmatriarchbt1>The Matriarch has been eliminated.</missionsuccess.killmatriarchbt1>
+  <missionfailure.killmatriarchbt1>Mission failed.</missionfailure.killmatriarchbt1>
+  <missionheader0.killmatriarchbt1>Targets terminated</missionheader0.killmatriarchbt1>
+  <missionname.killmatriarchbt4>Killing a Matriarch Kingdom</missionname.killmatriarchbt4>
+  <missiondescription.killmatriarchbt4>Eliminate the Hammerhead Matriarch and her kingdom of minions.</missiondescription.killmatriarchbt4>
+  <missionsonarlabel.killmatriarchbt4>Matriarch</missionsonarlabel.killmatriarchbt4>
+  <missionsuccess.killmatriarchbt4>The Matriarch Kingdom has been eliminated.</missionsuccess.killmatriarchbt4>
+  <missionfailure.killmatriarchbt4>Mission failed.</missionfailure.killmatriarchbt4>
+  <missionheader0.killmatriarchbt4>Target terminated</missionheader0.killmatriarchbt4>
+  <missionname.killcrawlerswarmbt1>Terminate a Major Swarm</missionname.killcrawlerswarmbt1>
+  <missiondescription.killcrawlerswarmbt1>Eliminate a huge swarm of Crawlers.</missiondescription.killcrawlerswarmbt1>
+  <missionsonarlabel.killcrawlerswarmbt1>Swarm</missionsonarlabel.killcrawlerswarmbt1>
+  <missionsuccess.killcrawlerswarmbt1>The swarm has been terminated.</missionsuccess.killcrawlerswarmbt1>
+  <missionfailure.killcrawlerswarmbt1>Mission failed.</missionfailure.killcrawlerswarmbt1>
+  <missionheader0.killcrawlerswarmbt1>Target terminated</missionheader0.killcrawlerswarmbt1>
+  <missionname.killcrawlerswarmbt2>Terminate a Massive Swarm</missionname.killcrawlerswarmbt2>
+  <missiondescription.killcrawlerswarmbt2>A Massive swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missiondescription.killcrawlerswarmbt2>
+  <missionsonarlabel.killcrawlerswarmbt2>Swarm</missionsonarlabel.killcrawlerswarmbt2>
+  <missionsuccess.killcrawlerswarmbt2>The swarm has been terminated.</missionsuccess.killcrawlerswarmbt2>
+  <missionfailure.killcrawlerswarmbt2>Mission failed.</missionfailure.killcrawlerswarmbt2>
+  <missionheader0.killcrawlerswarmbt2>Target terminated</missionheader0.killcrawlerswarmbt2>
+  <missionname.killcrawlerhuskswarmbt>Terminate a Massive Swarm</missionname.killcrawlerhuskswarmbt>
+  <missiondescription.killcrawlerhuskswarmbt>A Massive swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missiondescription.killcrawlerhuskswarmbt>
+  <missionsonarlabel.killcrawlerhuskswarmbt>Swarm</missionsonarlabel.killcrawlerhuskswarmbt>
+  <missionsuccess.killcrawlerhuskswarmbt>Mission succeeded.</missionsuccess.killcrawlerhuskswarmbt>
+  <missionfailure.killcrawlerhuskswarmbt>Mission failed.</missionfailure.killcrawlerhuskswarmbt>
+  <missionheader0.killcrawlerhuskswarmbt>Husked Crawlers have been neutralized.</missionheader0.killcrawlerhuskswarmbt>
+<!-- <missionname.killspinelingswarm1>Kill Spineling Swarm</missionname.killspinelingswarm1>
+  <missiondescription.killspinelingswarm1>missiondescription.killspinelingswarm1</missiondescription.killspinelingswarm1> -->
+  <missionsonarlabel.killspinelingswarmbt1>Swarm</missionsonarlabel.killspinelingswarmbt1>
+  <missionsuccess.killspinelingswarmbt1>Mission succeeded.</missionsuccess.killspinelingswarmbt1>
+  <missionfailure.killspinelingswarmbt1>Mission failed.</missionfailure.killspinelingswarmbt1>
+  <missionheader0.killspinelingswarmbt1>Target terminated</missionheader0.killspinelingswarmbt1>
+  <missionname.killgiantspinelingbt1>Kill Giant Spineling</missionname.killgiantspinelingbt1>
+  <missiondescription.killgiantspinelingbt1>Kill Giant Spineling</missiondescription.killgiantspinelingbt1>
+  <missionsonarlabel.killgiantspinelingbt1>character.spineling</missionsonarlabel.killgiantspinelingbt1>
+  <missionsuccess.killgiantspinelingbt1>Mission succeeded.</missionsuccess.killgiantspinelingbt1>
+  <missionfailure.killgiantspinelingbt1>Mission failed.</missionfailure.killgiantspinelingbt1>
+  <missionheader0.killgiantspinelingbt1>The spineling have been eliminated. Navigate the submarine out of the cavern.</missionheader0.killgiantspinelingbt1>
+  <missionname.killgiantspinelingbt2>Kill Giant Spineling</missionname.killgiantspinelingbt2>
+  <missiondescription.killgiantspinelingbt2>The spineling have been eliminated. Navigate the submarine out of the cavern.</missiondescription.killgiantspinelingbt2>
+  <missionsonarlabel.killgiantspinelingbt2>character.spineling</missionsonarlabel.killgiantspinelingbt2>
+  <missionsuccess.killgiantspinelingbt2>Mission succeeded.</missionsuccess.killgiantspinelingbt2>
+  <missionfailure.killgiantspinelingbt2>Mission failed.</missionfailure.killgiantspinelingbt2>
+  <missionheader0.killgiantspinelingbt2>The spineling have been eliminated. Navigate the submarine out of the cavern.</missionheader0.killgiantspinelingbt2>
+  <missionname.killmudraptorsbt1>Kill Mudraptors</missionname.killmudraptorsbt1>
+  <missiondescription.killmudraptorsbt1>A huge swarm of mudraptors has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missiondescription.killmudraptorsbt1>
+  <missionsonarlabel.killmudraptorsbt1>character.mudraptor</missionsonarlabel.killmudraptorsbt1>
+  <missionsuccess.killmudraptorsbt1>Mission succeededed.</missionsuccess.killmudraptorsbt1>
+  <missionfailure.killmudraptorsbt1>Mission failed.</missionfailure.killmudraptorsbt1>
+  <missionheader0.killmudraptorsbt1>A huge swarm of mudraptors has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missionheader0.killmudraptorsbt1>
+  <missionname.killmudraptor_veteranbt>Kill Mudraptors</missionname.killmudraptor_veteranbt>
+  <missiondescription.killmudraptor_veteranbt>A swarm of Veteran Mudraptors has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missiondescription.killmudraptor_veteranbt>
+  <missionsonarlabel.killmudraptor_veteranbt>character.mudraptor</missionsonarlabel.killmudraptor_veteranbt>
+  <missionsuccess.killmudraptor_veteranbt>Mission succeeded.</missionsuccess.killmudraptor_veteranbt>
+  <missionfailure.killmudraptor_veteranbt>Mission failed.</missionfailure.killmudraptor_veteranbt>
+  <missionheader0.killmudraptor_veteranbt>A huge swarm of mudraptors has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missionheader0.killmudraptor_veteranbt>
+  <missionname.killmudraptorsbt2>Kill Mudraptors</missionname.killmudraptorsbt2>
+  <missiondescription.killmudraptorsbt2>A huge swarm of mudraptors has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missiondescription.killmudraptorsbt2>
+  <missionsonarlabel.killmudraptorsbt2>character.mudraptor</missionsonarlabel.killmudraptorsbt2>
+  <missionsuccess.killmudraptorsbt2>Mission succeeded.</missionsuccess.killmudraptorsbt2>
+  <missionfailure.killmudraptorsbt2>Mission failed.</missionfailure.killmudraptorsbt2>
+  <missionheader0.killmudraptorsbt2>A huge swarm of veteran mudraptors has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missionheader0.killmudraptorsbt2>
+  <missionname.killthresherswarmbt1>Kill Threshers Swarm</missionname.killthresherswarmbt1>
+  <missiondescription.killthresherswarmbt1>A huge swarm of threshers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missiondescription.killthresherswarmbt1>
+  <missionsonarlabel.killthresherswarmbt1>Swarm</missionsonarlabel.killthresherswarmbt1>
+  <missionsuccess.killthresherswarmbt1>Mission succeeded.</missionsuccess.killthresherswarmbt1>
+  <missionfailure.killthresherswarmbt1>Mission failed.</missionfailure.killthresherswarmbt1>
+  <missionheader0.killthresherswarmbt1>A huge swarm of threshers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missionheader0.killthresherswarmbt1>
+  <missionname.killthresherswarmbt2>Kill Threshers Swarm</missionname.killthresherswarmbt2>
+  <missiondescription.killthresherswarmbt2>A huge swarm of threshers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missiondescription.killthresherswarmbt2>
+  <missionsonarlabel.killthresherswarmbt2>Swarm</missionsonarlabel.killthresherswarmbt2>
+  <missionsuccess.killthresherswarmbt2>Mission succeeded.</missionsuccess.killthresherswarmbt2>
+  <missionfailure.killthresherswarmbt2>Mission failed.</missionfailure.killthresherswarmbt2>
+  <missionheader0.killthresherswarmbt2>A huge swarm of threshers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it.</missionheader0.killthresherswarmbt2>
+  <missionname.killseaurchin1>Kill Seaurchin Swarm</missionname.killseaurchin1>
+  <missiondescription.killseaurchin1>A large swarm of Seaurchin has been attacking vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can remove it.</missiondescription.killseaurchin1>
+  <missionsonarlabel.killseaurchin1>Swarm</missionsonarlabel.killseaurchin1>
+  <missionsuccess.killseaurchin1>Mission succeeded.</missionsuccess.killseaurchin1>
+  <missionfailure.killseaurchin1>Mission failed.</missionfailure.killseaurchin1>
+  <missionheader0.killseaurchin1>The seaurchin have been eliminated. Navigate the submarine out of the cavern.</missionheader0.killseaurchin1>
+  <missionname.beaconbt1>Activate Beacon</missionname.beaconbt1>
+  <missiondescription.beaconbt1>The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal.</missiondescription.beaconbt1>
+     <missionheader0.deadzone>Targets terminated?</missionheader0.deadzone>
+    <missionmessage0.deadzone>Anomolous activity has ceased. Navigate the submarine out of the cavern.</missionmessage0.deadzone>
+  <!-- Generic Mission Header for killing monsters -->
+   <missionheader0.generickill>Target terminated</missionheader0.generickill>
+    <missionmessage0.generickill>The target has been eliminated. Navigate the submarine out of the cavern.</missionmessage0.generickill>
+  
+  <!-- <missionsonarlabel.beaconbt1>Text was not defined</missionsonarlabel.beaconbt1>
+    <missionsuccess.beaconbt1>Text was not defined</missionsuccess.beaconbt1>
+    <missionfailure.beaconbt1>Mission failed.</missionfailure.beaconbt1>
+    <missionheader0.beaconbt1>Text was not defined</missionheader0.beaconbt1>
+    <missionmessage0.beaconbt1>Text was not defined</missionmessage0.beaconbt1> -->
+  <missionname.abandonedoutposthumansbt1>Outpost Recovery</missionname.abandonedoutposthumansbt1>
+  <!-- <missiondescription.abandonedoutposthumansbt1>Text was not defined</missiondescription.abandonedoutposthumansbt1>
+    <missionsonarlabel.abandonedoutposthumansbt1>Text was not defined</missionsonarlabel.abandonedoutposthumansbt1>
+    <missionsuccess.abandonedoutposthumansbt1>Text was not defined</missionsuccess.abandonedoutposthumansbt1>
+    <missionfailure.abandonedoutposthumansbt1>Mission failed.</missionfailure.abandonedoutposthumansbt1>
+    <missionheader0.abandonedoutposthumansbt1>Text was not defined</missionheader0.abandonedoutposthumansbt1>
+    <missionmessage0.abandonedoutposthumansbt1>Text was not defined</missionmessage0.abandonedoutposthumansbt1> -->
+  <missionname.abandonedoutposthumansbt2>Outpost Recovery</missionname.abandonedoutposthumansbt2>
+  <!-- <missiondescription.abandonedoutposthumansbt2>Text was not defined</missiondescription.abandonedoutposthumansbt2>
+    <missionsonarlabel.abandonedoutposthumansbt2>Text was not defined</missionsonarlabel.abandonedoutposthumansbt2>
+    <missionsuccess.abandonedoutposthumansbt2>Text was not defined</missionsuccess.abandonedoutposthumansbt2>
+    <missionfailure.abandonedoutposthumansbt2>Mission failed.</missionfailure.abandonedoutposthumansbt2>
+    <missionheader0.abandonedoutposthumansbt2>Text was not defined</missionheader0.abandonedoutposthumansbt2>
+    <missionmessage0.abandonedoutposthumansbt2>Text was not defined</missionmessage0.abandonedoutposthumansbt2> -->
+  <!-- File made by Enigma#0599 -->
+  <missionname.abandonedoutposthusks>Outpost Cleansing </missionname.abandonedoutposthusks>
+  <missiondescription.abandonedoutposthusks>Contact with [location1] was recently lost, and it's suspected that the husk infection has taken over. Destroy the reactor to purge any husk scourge from the outpost.</missiondescription.abandonedoutposthusks>
+  <missionsuccess.abandonedoutposthusks>The infection inside the outpost has been successfully eradicated.</missionsuccess.abandonedoutposthusks>
+  <missionfailure.abandonedoutposthusks>The outpost remains infected.</missionfailure.abandonedoutposthusks>
+  <missionheader0.abandonedoutposthusks>Nest destroyed</missionheader0.abandonedoutposthusks>
+  <missionmessage0.abandonedoutposthusks>The infection inside the outpost has been successfully eradicated. Undock from the outpost to complete the mission.</missionmessage0.abandonedoutposthusks>
+  <missionname.abandonedoutpostcultist>Outpost Cleansing </missionname.abandonedoutpostcultist>
+  <missiondescription.abandonedoutpostcultist>Contact with [location1] was recently lost, and it's suspected that a band of husk cultists has taken over. Destroy the reactor to purge any husk scourge from the outpost.</missiondescription.abandonedoutpostcultist>
+  <missionsuccess.abandonedoutpostcultist>The infection inside the outpost has been successfully eradicated.</missionsuccess.abandonedoutpostcultist>
+  <missionfailure.abandonedoutpostcultist>The outpost remains infected.</missionfailure.abandonedoutpostcultist>
+  <missionheader0.abandonedoutpostcultist>Outpost Cleared</missionheader0.abandonedoutpostcultist>
+  <missionmessage0.abandonedoutpostcultist>The infection inside the outpost has been successfully eradicated. Undock from the outpost to complete the mission.</missionmessage0.abandonedoutpostcultist>
+  <missionname.abandonedoutpostclown>Clown Outpost Assasination</missionname.abandonedoutpostclown>
+  <missiondescription.abandonedoutpostclown>Contact with [location1] was recently lost, and it's suspected that a band of insane clowns has taken over. Kill any psychopaths on the outpost.</missiondescription.abandonedoutpostclown>
+  <missionsuccess.abandonedoutpostclown>The clowns inside the outpost has been successfully killed.</missionsuccess.abandonedoutpostclown>
+  <missionfailure.abandonedoutpostclown>The outpost remains insane.</missionfailure.abandonedoutpostclown>
+  <missionheader0.abandonedoutpostclown>Outpost Cleared</missionheader0.abandonedoutpostclown>
+  <missionmessage0.abandonedoutpostclown>The clowns inside the outpost has been successfully killed. Undock from the outpost to complete the mission.</missionmessage0.abandonedoutpostclown>
+   <missionname.abandonedoutpostyellowboyzinthehoodBTC>Yellowboy Infestation</missionname.abandonedoutpostyellowboyzinthehoodBTC>
+  <missiondescription.abandonedoutpostyellowboyzinthehoodBTC>[location1] was abandoned some time ago, teams attempting to salvage the station report numerous yellowboys along with possible bandits and other horrors prowling the corridors.</missiondescription.abandonedoutpostyellowboyzinthehoodBTC>
+  <missionsuccess.abandonedoutpostyellowboyzinthehoodBTC>The Yellowboy Warriors and most everything else were destroyed.</missionsuccess.abandonedoutpostyellowboyzinthehoodBTC>
+  <missionfailure.abandonedoutpostyellowboyzinthehoodBTC>Scuttling noises still echo from the outpost.</missionfailure.abandonedoutpostyellowboyzinthehoodBTC>
+  <missionheader0.abandonedoutpostyellowboyzinthehoodBTC>Outpost Cleared</missionheader0.abandonedoutpostyellowboyzinthehoodBTC>
+  <missionmessage0.abandonedoutpostyellowboyzinthehoodBTC>The Yellowboy infestation inside the outpost have been adequately culled. Undock from the outpost to complete the mission.</missionmessage0.abandonedoutpostyellowboyzinthehoodBTC>
+  <missionname.salvageclowns1>Clown Relic Retrieval</missionname.salvageclowns1>
+  <missiondescription.salvageclowns1>A group of local clowns has posted a bounty to retrive a lost relic located between [location1] and [location2], they frustratingly refuse to elaborate what the item is and the reward of [reward] is not great, however the directions to the wreck which is sure to have other salvage are quite clear.</missiondescription.salvageclowns1>
+  <missionsonarlabel.salvageclowns1>Wreck</missionsonarlabel.salvageclowns1>
+  <missionsuccess.salvageclowns1>The odd relic object was retrieved</missionsuccess.salvageclowns1>
+  <missionfailure.salvageclowns1>Failed to retrieve the relic</missionfailure.salvageclowns1>
+  <missionheader0.salvageclowns1>Relic sucessfully retrieved</missionheader0.salvageclowns1>
+  <missionmessage0.salvageclowns1>A funny feeling tells you that this is the relic. leave the area to be rid of it and claim your reward.</missionmessage0.salvageclowns1>
+  <missionname.salvagehuskcult1>Husk Icon Recovery</missionname.salvagehuskcult1>
+  <missiondescription.salvagehuskcult1>The Church of the Husk has issued a reward for a religious icon located on a vessal that went down between [location1] and [location2], For a cheaply made aluminium figure they are offering a modest [reward] for its return.</missiondescription.salvagehuskcult1>
+  <missionsonarlabel.salvagehuskcult1>Wreck</missionsonarlabel.salvagehuskcult1>
+  <missionsuccess.salvagehuskcult1>Icon has been retrieved</missionsuccess.salvagehuskcult1>
+  <missionfailure.salvagehuskcult1>Failed to retrieve the Strange Figure.</missionfailure.salvagehuskcult1>
+  <missionheader0.salvagehuskcult1>Figure retrieved</missionheader0.salvagehuskcult1>
+  <missionmessage0.salvagehuskcult1>The strange figure has been retrieved. leave the area to return it and claim your reward.</missionmessage0.salvagehuskcult1>
+  <missionname.clearfractalruin>Clear fractal ruin</missionname.clearfractalruin>
+  <missiondescription.clearfractalruin>A salvager team listed as KIA during a mission long ago to a ruin located near [location1] have suddenly had their distress beacon activated, leading to fears of fractal corruption. A reward of [reward] credits has been posted to put the issue to rest once more.</missiondescription.clearfractalruin>
+  <missionmessage0.clearfractalruin>Fractal guardians have been wiped out. Navigate the submarine out of the cavern to claim the reward.</missionmessage0.clearfractalruin>
+  <missionsuccess.clearfractalruin>Fractals have been wiped out.</missionsuccess.clearfractalruin>
+  <missionname.clearmermaidruin>Clear singing ruin</missionname.clearmermaidruin>
+  <missiondescription.clearmermaidruin>Reports of radio transmissions resembling singing coming from a ruin close to [location1] have already resulted in several investigating teams going missing. A reward of [reward] credits has been issued to stop the source of the transmission.</missiondescription.clearmermaidruin>
+  <missionmessage0.clearmermaidruin>The Mermaid and fractal creatures have been wiped out. Navigate the submarine out of the cavern to claim the reward.</missionmessage0.clearmermaidruin>
+  <missionsuccess.clearmermaidruin>Mermaid has been destroyed.</missionsuccess.clearmermaidruin>
+  <character.fractaldestroyer>Fractal Destroyer</character.fractaldestroyer>
+  <character.voidleviathan>Void Leviathan</character.voidleviathan>
+  <character.Voidstalker>Void Stalker</character.Voidstalker>
+  <character.Voidleech>Void leech</character.Voidleech>
+  <character.Xan_Scavenger>Scavenger</character.Xan_Scavenger>
+  <character.Xanothresher>Xanothresher</character.Xanothresher>
+  <character.Crawler_hatchling>Crawler</character.Crawler_hatchling>
+  <character.Lionthresher>Barracuda</character.Lionthresher>
+  <character.Mudbouncer>Mudbouncer</character.Mudbouncer>
+  <character.Charybdisre>Baby Charybdis</character.Charybdisre>
+  <character.Bossmoloch>Hydrothermal Moloch</character.Bossmoloch>
+  <character.Immortal>Husk Immortal</character.Immortal>
+  <character.Bruteflora>Infected Brute</character.Bruteflora>
+  <character.Trichordate>Trichordate</character.Trichordate>
+  <character.TrichordateBloodsucker>Trichordate Bloodsucker</character.TrichordateBloodsucker>
+  <character.TrichordateMetalvore>Trichordate Metalvore</character.TrichordateMetalvore>
+  <character.TrichordateVitriolic>Trichordate Vitriolic</character.TrichordateVitriolic>
+  <character.grayeel>Gray Eel</character.grayeel>
+  <character.Mantisnew>Mantis</character.Mantisnew>
+  <character.Observer>Dybbuk</character.Observer>
+  <character.Hydrathresher>Hydrathresher</character.Hydrathresher>
+  <character.Carrier>Carrier</character.Carrier>
+  <character.Carrierleviathan>Carrier Leviathan</character.Carrierleviathan>
+  <character.Huskhammerspawn>Hammerhead Spawn</character.Huskhammerspawn>
+  <character.Huskbroodmother>Husk Broodmother</character.Huskbroodmother>
+  <character.Helmetcrablet>Helmet Crablet</character.Helmetcrablet>
+  <character.Crawlercrablet>Crawler crablet</character.Crawlercrablet>
+  <character.Endwormre>Europan Polychaetes</character.Endwormre>
+  <character.Crawlerhusk>Crawler Husk</character.Crawlerhusk>
+  <character.Huskslasher>Slasher</character.Huskslasher>
+  <character.Juggernaut>Juggernaut</character.Juggernaut>
+  <character.Paralyser>Paralyser</character.Paralyser>
+  <character.Huskinfector>Infector</character.Huskinfector>
+  <character.Huskbroodemperor>Husk Brood Emperor</character.Huskbroodemperor>
+  <character.Cnidae>Cnidae</character.Cnidae>
+  <character.Bomber>Husk Bomber</character.Bomber>
+  <character.Teleglitch>Electric Anomaly</character.Teleglitch>
+  <character.Thalamid>Thalamid</character.Thalamid>
+    <character.Thalamusksuitbomber>Thalamusk</character.Thalamusksuitbomber>
+  <character.Ravager>Ravager</character.Ravager>
+  <character.AlphaEndworm>Black Endworm</character.AlphaEndworm>
+  <character.AlphaEndworm_m>Black Endworm</character.AlphaEndworm_m>
+  <character.AlphaCharybdis>Alpha Charybdis</character.AlphaCharybdis>
+  <character.wastecrawler>Waste Crawler</character.wastecrawler>
+  <character.wastetigerthresher>Waste Tiger Thresher</character.wastetigerthresher>
+  <character.wastebonethresher>Waste Bone Thresher</character.wastebonethresher>
+  <character.wastemantis>Waste Mantis</character.wastemantis>
+  <character.Endwhale>End Whale</character.Endwhale>
+  <character.Rockworm>Rock Worm</character.Rockworm>
+  <character.Deadnought>Deadnought</character.Deadnought>
+  <character.Mine>Mine</character.Mine>
+  <character.MineSmall>Mine</character.MineSmall>
+  <character.Minedetachedmission>Mine</character.Minedetachedmission>
+  <character.Minemission>Mine</character.Minemission>
+  <character.Fractalwalker>Fractal Walker</character.Fractalwalker>
+  <character.Geosphere>Geosphere</character.Geosphere>
+  <character.Shadowleech>Shadow Leech</character.Shadowleech>
+  <character.Thermaleel>Thermal Eel</character.Thermaleel>
+  <character.Stonewanderer>Stone Wanderer</character.Stonewanderer>
+  <character.Hotdog>Hot Dog</character.Hotdog>
+  <character.Minoga>Minoga</character.Minoga>
+  <character.Archimorur>Archimorur</character.Archimorur>
+  <character.Husker>Calyxophage</character.Husker>
+  <character.Endwormcoral>The Glacier</character.Endwormcoral>
+  <character.Endwormnew>Giant Shellworm</character.Endwormnew>
+  <character.Abysswatcher>Dyatel</character.Abysswatcher>
+  <character.Charybdissavage>Savage Leatherback</character.Charybdissavage>
+  <character.Thalamuscarrier>Thalamus Carrier</character.Thalamuscarrier>
+  <character.Icedleatherback>Iced Leatherback</character.Icedleatherback>
+  <character.Icecrab>Ice Crab</character.Icecrab>
+  <character.Brainmoss1>Brain Moss</character.Brainmoss1>
+  <character.Brainmoss2>Radioactive Brain Moss</character.Brainmoss2>
+  <character.Brainmoss3>Brain Moss</character.Brainmoss3>
+  <character.Turretcarrier>Turret Carrier</character.Turretcarrier>
+  <character.Paralyticshark>Paralytic Shark</character.Paralyticshark>
+  <character.Epicentrum>Epicentrum</character.Epicentrum>
+  <character.Shadowwhale>Shadow Whale</character.Shadowwhale>
+  <character.Magmarlarva>Magmalarva</character.Magmarlarva>
+  <character.Magmaworm>Magma Worm</character.Magmaworm>
+  <character.Abyssalhammerhead>Abyssal Hammerhead</character.Abyssalhammerhead>
+  <character.Mantisbig>Big Mantis</character.Mantisbig>
+  <character.Abyssalmantis>Abyssal Mantis</character.Abyssalmantis>
+  <character.Abyssalthresher>Abyssal Thresher</character.Abyssalthresher>
+  <character.Deepseaclown>The Deep Sea Clown</character.Deepseaclown>
+    <character.DeepseaclownnewSaw>The Deep Sea Clown</character.DeepseaclownnewSaw>
+  <character.Mothercrawler>Mother Crawler</character.Mothercrawler>
+  <character.Europa>Reflection of Europa</character.Europa>
+  <character.Redfish>Red Fish</character.Redfish>
+  <character.Pirafish>Pira Fish</character.Pirafish>
+  <character.Clownbox>Metal Crate</character.Clownbox>
+  <character.Thrasher>Gnasher</character.Thrasher>
+  <character.Irma>Irma</character.Irma>
+  <character.CharybdisRex>Matured Leatherback</character.CharybdisRex>
+  <character.CharybdisUgly>Coral Leatherback</character.CharybdisUgly>
+  <character.Icewhale>Glacial Praywhale</character.Icewhale>
+  <character.Irmahusk>Irma Husk</character.Irmahusk>
+  <character.TigerSharkThresher>Barracuda</character.TigerSharkThresher>
+  <character.Thrasherhusk>Gnasher Husk</character.Thrasherhusk>
+  <character.Punkfish>Punk Fish</character.Punkfish>
+  <character.Punkfishhusk>Punk Fish Husk</character.Punkfishhusk>
+  <character.Impfish>Imp Fish</character.Impfish>
+  <character.Glowfish>Glow Fish</character.Glowfish>
+  <character.Glowfishhusk>Glow Fish Husk</character.Glowfishhusk>
+  <character.Devilfish>Devil Fish</character.Devilfish>
+  <character.Toothfish>Tooth Fish</character.Toothfish>
+  <character.Skeletonfish>Skeleton Fish</character.Skeletonfish>
+  <character.Goofyfish>Goofy Fish</character.Goofyfish>
+  <character.Hullfish>Hull Fish</character.Hullfish>
+  <character.Voidfish>Void Fish</character.Voidfish>
+  <character.Hullfishhusk>Hull Fish Husk</character.Hullfishhusk>
+  <character.Whitefish>White Fish</character.Whitefish>
+  <character.Babymoloch>Baby Moloch</character.Babymoloch>
+  <character.FractalguardianRe>Maneba</character.FractalguardianRe>
+  <character.Fractalguardianre2>Ronteal</character.Fractalguardianre2>
+  <character.GiantTrapper>Giant Trapper Spider</character.GiantTrapper>
+  <character.Fractalguardianre3>Harvester</character.Fractalguardianre3>
+  <character.Undying>Fractal Walker</character.Undying>
+  <character.Undyingrad>Fractal Radiant</character.Undyingrad>
+  <character.Fractalpenance>Penance Warrior</character.Fractalpenance>
+  <character.Latcher_hatchling>Latcher Hatchling</character.Latcher_hatchling>
+  <character.Hammerhead_hunter>Hammerhead Hunter</character.Hammerhead_hunter>
+  <character.Sermon>Jacov Subra</character.Sermon>
+  <character.Watcher_laser>Watcher?</character.Watcher_laser>
+  <character.Molochthermal>Lava Moloch</character.Molochthermal>
+  <character.Molochold>Moloch Matriarch</character.Molochold>
+  <character.Europanboxcutter>Europan Box Cutter</character.Europanboxcutter>
+  <character.Shroomjelly>Shroom Jelly</character.Shroomjelly>
+  <character.Endurance>Fractal Sentry</character.Endurance>
+  <character.Deepseaclownnew>Deep Sea Clown</character.Deepseaclownnew>
+  <character.Suffering>The Suffering</character.Suffering>
+  <character.Moloch_nuclear>Injured Moloch</character.Moloch_nuclear>
+  <character.Hammerhead_swordfish>Swordfish</character.Hammerhead_swordfish>
+  <character.Wasteskeleton>Bloodied Skeleton</character.Wasteskeleton>
+  <character.Clownsawcrazy>Meat Grinder</character.Clownsawcrazy>
+  <character.Clownwanderer>Lost Clown</character.Clownwanderer>
+  <character.Clownhomie>Lost Clown</character.Clownhomie>
+  <character.Clownbomber>Lost Clown</character.Clownbomber>
+  <character.Clownwrecker>Clown Wrecker</character.Clownwrecker>
+  <character.joviandiver>Pirate</character.joviandiver>
+  <character.jovianbomber>Pirate</character.jovianbomber>
+  <character.jovianwrecker>Pirate Salvager</character.jovianwrecker>
+  <character.spineling_hard>Spineling</character.spineling_hard>
+  <character.Cyclops>Cyclops</character.Cyclops>
+  <character.Cyclops2>Cyclops</character.Cyclops2>
+  <character.Cyclops3>Cyclops</character.Cyclops3>
+  <character.Cyclops_bossmusic>Cyclops</character.Cyclops_bossmusic>
+  <character.Crawlersmart>Crawler</character.Crawlersmart>
+  <character.Crawler_large2>Crawler</character.Crawler_large2>
+  <character.Teleglitch_paranormal>???</character.Teleglitch_paranormal>
+  <character.Crawlernaught>King Crawler</character.Crawlernaught>
+  <character.Abyssalcrawler>Abyssal Crawler</character.Abyssalcrawler>
+  <character.Abyssalcrawler2>Abyssal Crawler</character.Abyssalcrawler2>
+  <character.legacyendworm>Massive Shell Worm</character.legacyendworm>
+  <character.legacycrawler>Crawfish</character.legacycrawler>
+  <character.Watcheralpha>Watcher Urchin</character.Watcheralpha>
+  <character.Watcherold>Watcher</character.Watcherold>
+  <character.Crawlerold>Crawler</character.Crawlerold>
+  <character.WatcherWanderer>Wanderer</character.WatcherWanderer>
+  <character.Lurker>Lurker</character.Lurker>
+  <character.Charybdisold>Mother Leatherback</character.Charybdisold>
+  <character.Charybdisadol>Young Charybdis</character.Charybdisadol>
+  <character.Cnidaeprime>Prime Cnidae</character.Cnidaeprime>
+  <character.Giantcrab>Giant Crab</character.Giantcrab>
+  <character.Giantcrabice>Giant Ice Crab</character.Giantcrabice>
+  <character.PrayWhale>Praywhale</character.PrayWhale>
+  <character.Praywhalebaby>Baby Praywhale</character.Praywhalebaby>
+  <character.Praywhalemineral>Crystaline Praywhale</character.Praywhalemineral>
+  <character.Honkfather>The Honkfather</character.Honkfather>
+  <character.Cetus>Julia</character.Cetus>
+  <character.Endworm_m>Endworm</character.Endworm_m>
+  <character.Ghostshrimp>Ghost Shrimp</character.Ghostshrimp>
+  <character.Hornshrimp>Horn Shrimp</character.Hornshrimp>
+  <character.Razzershrimp_kse>Razor Shrimp</character.Razzershrimp_kse>
+  <character.Shrimpbrut_kse>Shrimp Spawn</character.Shrimpbrut_kse>
+  <character.IceShark>Ice Shark</character.IceShark>
+  <character.Muddragon>Mud Dragon</character.Muddragon>
+  <character.Caver>Caver</character.Caver>
+  <character.Harpoonwhale>Harpoon Whale</character.Harpoonwhale>
+  <character.Seaurchin>Sea Urchin</character.Seaurchin>
+  <character.Seaurchinqueen>Sea Urchin Queen</character.Seaurchinqueen>
+  <character.Bombshark>Mudraptor Gutbomb</character.Bombshark>
+  <character.Pylon>PYLON</character.Pylon>
+  <character.ancientmudraptor>Ancient Mudraptor</character.ancientmudraptor>
+  <character.Carrierflakrandom>Thalamus Mobile Flakcannon</character.Carrierflakrandom>
+  <character.Carrierflaknormal>Thalamus Mobile Flakcannon</character.Carrierflaknormal>
+  <character.Carrierflakdirectional>Thalamus Mobile Flakcannon</character.Carrierflakdirectional>
+  <character.Carrierflakphysicorium>Thalamus Mobile Flakcannon</character.Carrierflakphysicorium>
+  <character.Carrierflakexploding>Thalamus Mobile Flakcannon</character.Carrierflakexploding>
+  <character.Grayeel>Gray Eel</character.Grayeel>
+  <character.Defensebothostile>Hostile Defense Bot</character.Defensebothostile>
+  <character.Defensebothostilelaser>Hostile Defense Bot</character.Defensebothostilelaser>
+  <character.Guardianattackbot>Guardian Attack Bot</character.Guardianattackbot>
+  <character.Nightraptor>Night Raptor</character.Nightraptor>
+  <character.Mudraptor_veteran>Mudraptor veteran</character.Mudraptor_veteran>
+  <character.Mudraptor_veteran2>Mudraptor veteran</character.Mudraptor_veteran2>
+  <character.Wreckdemon>Moving Metal</character.Wreckdemon>
+  <character.Wolfeel>Wolf Eel</character.Wolfeel>
+  <character.Angel>Angel</character.Angel>
+  <character.HER>???</character.HER>
+  <character.SpinelingEMP>Spineling</character.SpinelingEMP>
+  <character.SpinelingFire>Spineling</character.SpinelingFire>
+  <character.Spinelingrandom>Spineling</character.Spinelingrandom>
+  <character.Stalker>Stalker</character.Stalker>
+  <character.Crawler_nightmare>Crawler</character.Crawler_nightmare>
+  <character.Crawler_faraday>Crawler</character.Crawler_faraday>
+  <character.Crawler_nasonov>Crawler</character.Crawler_nasonov>
+  <character.Crawler_sky>Crawler</character.Crawler_sky>
+  <character.Crawler_psychosis>Crawler</character.Crawler_psychosis>
+  <character.Crawler_thermal>Crawler</character.Crawler_thermal>
+  <character.Mudraptor_faraday>Mudraptor</character.Mudraptor_faraday>
+  <character.Mudraptor_nasonov>Mudraptor</character.Mudraptor_nasonov>
+  <character.Mudraptor_sky>Mudraptor</character.Mudraptor_sky>
+  <character.Mudraptor_psychosis>Mudraptor</character.Mudraptor_psychosis>
+  <character.Mudraptor_thermal>Mudraptor</character.Mudraptor_thermal>
+  <character.Crawlerrandom>Crawlerrandom</character.Crawlerrandom>
+  <character.Mudraptorrandom>Mudraptor</character.Mudraptorrandom>
+  <character.Husksprintercombat>Husk</character.Husksprintercombat>
+  <character.Husksprinterhumanold>Husk</character.Husksprinterhumanold>
+  <character.Husksprinterhumanraw>Husk</character.Husksprinterhumanraw>
+  <character.Husksprinterold>Husk</character.Husksprinterold>
+  <character.Husksprinterpoptop>Husk</character.Husksprinterpoptop>
+  <character.Crawler_spineling>Crawler</character.Crawler_spineling>
+  <character.Crawler_watcher>Crawler</character.Crawler_watcher>
+  <character.Mudraptor_watcher>Mudraptor</character.Mudraptor_watcher>
+  <character.Mudraptor_spineling>Mudraptor</character.Mudraptor_spineling>
+  <character.Mechflora>Lugger Cargo Robot</character.Mechflora>
+  <character.Mechflorathalamus>Infected Luggar Robot</character.Mechflorathalamus>
+  <character.Seasnek>Seasnek</character.Seasnek>
+  <character.Seasnekbiter>Seasnek</character.Seasnekbiter>
+  <character.fractalbreacher>Fractal Breacher</character.fractalbreacher>
+  <character.Carrier>Carrier</character.Carrier>
+  <character.Hammerhead_young>Hammerhead Young</character.Hammerhead_young>
+  <character.MudraptorGray>Mother Mudraptor</character.MudraptorGray>
+  <character.hammerheadmauler>Hammerhead Mauler</character.hammerheadmauler>
+  <character.Fractalgolem>Fractal Golem</character.Fractalgolem>
+  <character.ClownwandererElite>Lost Clown</character.ClownwandererElite>
+  <character.Exosuit>Broken Exosuit</character.Exosuit>
+  <character.Plantskeleton>Dessicated Husk</character.Plantskeleton>
+  <character.Hammerheadmatriarchconcept>Hammerhead Broodmother</character.Hammerheadmatriarchconcept>
+  <character.Sentinel>Sentinel</character.Sentinel>
+  <character.Sentinelinvisible></character.Sentinelinvisible>
+  <character.Latcherabyss>Latcher</character.Latcherabyss>
+  <character.TuluWild>Tulu</character.TuluWild>
+  <character.Psilotoadmonster>Psiloturtle</character.Psilotoadmonster>
+    <character.Europantrout>Europan Trout</character.Europantrout>
+	<character.Fractalguardian2>Fractal Guardian</character.Fractalguardian2>
+  <character.Fractalsiren>Fractal Siren</character.Fractalsiren>
+  <character.Hammerhead_Diger>Hammerhead Veteran</character.Hammerhead_Diger>
+  <character.Hammerhead_DigermNamed>Hammerhead Ancient</character.Hammerhead_DigermNamed>
+  <character.Hammerhead_Hard>Hammerhead Veteran</character.Hammerhead_Hard>
+  <character.Hammerhead_mNamed>Moping Jack</character.Hammerhead_mNamed>
+  <character.Largecabinent_mockery>Metal Crate</character.Largecabinent_mockery>  
+  <character.Mudrex>Tyrant Mudraptor</character.Mudrex> 
+  <character.AlphaEndworm_m>Black Endworm</character.AlphaEndworm_m> 
+  <character.Angelinvisible>???</character.Angelinvisible>
+  <character.Spineling_Electric2>Electric Spineling</character.Spineling_Electric2>
+  <character.Mantisshrimpsmall>Juvenile Mantis Shrimp</character.Mantisshrimpsmall>
+  <character.Huskchimerabroodmother>Husk Chimera Broodmother</character.Huskchimerabroodmother>
+  <character.Husk_chimera_elder>Husk Chimera Elder</character.Husk_chimera_elder>
+  <character.Husk_chimera_artifact>Husk Chimera</character.Husk_chimera_artifact>
+  <character.Viperling_giant>Giant viperling</character.Viperling_giant>
+  <character.Husk_prowlerhulk>Husk Rampager</character.Husk_prowlerhulk>
+  <character.Husk_Slipsuit>Husk Slipsuit</character.Husk_Slipsuit>
+  <character.Husk_PUCS>Husk PUCS</character.Husk_PUCS>
+  <character.Husk_Abyss>Husk Abyss</character.Husk_Abyss>
+  <character.Husk_Oldsuit>Husk Ancient</character.Husk_Oldsuit>
+  <character.Huskcontainerhostile>Husk Container</character.Huskcontainerhostile>
+  <character.ScavieBTC>Rotting Scavie</character.ScavieBTC>
+  <character.BruteBTC>Brute Security Robot</character.BruteBTC>
+  <character.Hermitdugong>Hermit Dugong</character.Hermitdugong>
+  <character.Hermitbig>Hermit Sundered</character.Hermitbig>
+  <character.Hermitnew>Hermit Shuttle</character.Hermitnew>
+  <character.Hermitshell>Hermit Moloch</character.Hermitshell>
+  <character.Hermitspawn>Hermit Spawn</character.Hermitspawn> 
+  <character.Hallucination1>Creepy Crawler</character.Hallucination1>
+  <character.Hallucination2>Murder Raptor</character.Hallucination2> 
+  <character.Huskcrawlie1>Husked Carcass</character.Huskcrawlie1>
+  <character.Huskcrawlie2>Husked Carcass</character.Huskcrawlie2>
+  <character.Huskcrawlie3>Husked Carcass</character.Huskcrawlie3>
+  <character.Huskcrawlie4>Husked Carcass</character.Huskcrawlie4>
+  <character.Huskcrawlie1nohead>Husked Carcass</character.Huskcrawlie1nohead>
+  <character.Psilosaur>Psilosaur</character.Psilosaur>
+  <character.Psiloturtle>Psiloturtle</character.Psiloturtle>
+  <character.Cthulhuadolescent>Cthulhu Progeny</character.Cthulhuadolescent>
+  <character.Endworm_young>Endworm Young</character.Endworm_young> 
+  <character.Clownhead>Clownhead</character.Clownhead>
+  <character.Clownhead_spawn>Spawn of Clownhead</character.Clownhead_spawn> 
+  <character.Fractalherald>Fractal Herald</character.Fractalherald>
+  <character.Molochgreen>Abyssal Moloch</character.Molochgreen>
+  <character.Bioworm>Bio Worm</character.Bioworm>
+  <character.Biowormbig>Bio Worm</character.Biowormbig>
+  <character.Thalatocyte>Thalatocyte</character.Thalatocyte>
+  <character.Molochvariant1>Moloch</character.Molochvariant1>
+  <character.Molochvariant2>Moloch</character.Molochvariant2>
+  <character.Molochvariant3>Moloch</character.Molochvariant3>
+  <character.Molochvariant4>Moloch</character.Molochvariant4>
+  <character.Molochvariant5>Moloch</character.Molochvariant5>
+  <character.Molochvariant6>Moloch</character.Molochvariant6> 
+  <character.Molochvariantblack1>Black Moloch</character.Molochvariantblack1>
+  <character.Molochvariantblack2>Black Moloch</character.Molochvariantblack2>
+  <character.Molochvariantblack3>Black Moloch</character.Molochvariantblack3>
+  <character.Molochvariantblack4>Black Moloch</character.Molochvariantblack4>
+  <character.Molochvariantblack5>Black Moloch</character.Molochvariantblack5>
+  <character.Molochvariantblack6>Black Moloch</character.Molochvariantblack6>
+  <character.Yellowboy>Yellowboy</character.Yellowboy>
+  <character.Yellowboyhatchling>Yellowboy Hatchling</character.Yellowboyhatchling>
+  <character.Yellowboyspawner>Yellowboy</character.Yellowboyspawner>
+  <character.Yellowboyspawnerarmored>Yellowboy</character.Yellowboyspawnerarmored>
+  <character.Yellowboywarrior>Yellowboy Warrior</character.Yellowboywarrior>
+  <character.Husknyx>Husk Nyx</character.Husknyx>
+  <character.Crawleralphamale>Crawler Alpha Male</character.Crawleralphamale>
+  <character.Crawlermetamorph>Crawler Metamorph</character.Crawlermetamorph>
+  <character.Mudraptorhuskhunter>Mudraptor Huskhunter</character.Mudraptorhuskhunter> 
+  <character.Hammerhead_swordfishexplode>Unstable Swordfish</character.Hammerhead_swordfishexplode>
+  <character.Spineyfish>Saberback</character.Spineyfish> 
+  <character.Abyssmonster>Latcher Scuttler</character.Abyssmonster> 
+  <character.Mantispink>Pink Mantis</character.Mantispink> 
+  <character.Mantispinkpet>Pink Mantis Pet</character.Mantispinkpet> 
+  <character.Crawlerbroodmotherold>Galvanic Crawler Broodmother</character.Crawlerbroodmotherold>
+  <character.DeadnoughtHomingshell>Homing Torpedo</character.DeadnoughtHomingshell>
+  <character.FractalEnforcer>Fractal Enforcer</character.FractalEnforcer>
+  <character.FractalEnforcer2>Fractal Enforcer</character.FractalEnforcer2>
+  <character.Fractalguardianrepairbot>Fractal Repair Bot</character.Fractalguardianrepairbot>
+  <character.Fractalguardianwanderer>Wandering Fractal Guardian</character.Fractalguardianwanderer>
+  <character.Fractalmermaid>Fractal Mermaid</character.Fractalmermaid>
+  <character.Lavathresher>Thermal Thresher</character.Lavathresher>
+  <character.Legacycharybdis>Leatherback</character.Legacycharybdis>
+  <character.Magmalarva>Pyrophoric Larva</character.Magmalarva>
+  <character.Mantisshrimp>Mantis Shrimp</character.Mantisshrimp>
+  <character.Minedetached> Mine</character.Minedetached>
+  <character.Minesmalldetached>Mine</character.Minesmalldetached>
+  <character.Minesmallmission>Mine</character.Minesmallmission>
+  <character.Minesmallmissiondetached>Mine</character.Minesmallmissiondetached>
+  <character.Mudraptor_veteranold>Mudraptor Veteran</character.Mudraptor_veteranold>
+  <character.NuclearMine>Nuclear Mine</character.NuclearMine>
+  <character.Psilotoadadult> </character.Psilotoadadult>
+  <character.Silverhammerhead>Silver Hammerhead</character.Silverhammerhead>
+  <character.Stonewanderercrystal>Crystal Wanderer</character.Stonewanderercrystal>
+  <character.Stonewanderercrystallarge>Large Crystal Wanderer </character.Stonewanderercrystallarge>
+  <character.Stonewandererice>Ice Wanderer</character.Stonewandererice>
+  <character.Stonewanderericelarge>Large Ice Wanderer</character.Stonewanderericelarge>
+  <character.Stonewandererlava>Lava Wanderer</character.Stonewandererlava>
+  <character.Stonewandererlavalarge>Large Lava Wanderer </character.Stonewandererlavalarge>
+  <character.Thresherking>Thresher King</character.Thresherking>
+  <character.Turretcarrierchaingun>Thalamus Chaingun</character.Turretcarrierchaingun>
+  <character.Turretcarriercoil>Thalamus Coilgun</character.Turretcarriercoil>
+  <character.Turretcarrierdoublecoil>Thalamus Double Coilgun </character.Turretcarrierdoublecoil>
+  <character.Turretcarrierflak>Thalamus Flakgun</character.Turretcarrierflak>
+  <character.Turretcarrierpulselaser>Thalamus Pulse Laser</character.Turretcarrierpulselaser>
+  <character.Turretcarrierrail>Thalamus Railgun</character.Turretcarrierrail>
+  <character.Undyingfaraday>Undying</character.Undyingfaraday> 
+  <character.Watcherelite>Sentinal Watcher</character.Watcherelite>
+  <character.Husk_scylla>Scylla</character.Husk_scylla> Husk_spawn1
+  <character.Husk_spawn1>Husk Spawn</character.Husk_spawn1>
+  <character.Husk_spawn2>Husk Spawn</character.Husk_spawn2>
+  <character.Husk_spawn3>Husk Spawn</character.Husk_spawn3>
+  <character.Husk_spawn4>Husk Spawn</character.Husk_spawn4>
+  <character.Husk_spawn5>Husk Spawn</character.Husk_spawn5>
+  <character.Husk_spawn6>Husk Spawn</character.Husk_spawn6>
+  <character.Husk_spawn6>Husk Spawn</character.Husk_spawn6>
+  <character.Peanutslug>Peanought</character.Peanutslug>
+  <character.Peanutslug2>Dreadnut</character.Peanutslug2>
+  <character.Husk_centipede>Husk Centipede</character.Husk_centipede>
+  <character.Manraptor>Spliced</character.Manraptor>
+  <character.Fractalguardianwanderer>Fractal Guardian Wanderer</character.Fractalguardianwanderer> 
+  <AfflictionDescription.BTradio.150>Basic Radio Range (150M).</AfflictionDescription.BTradio.150>
+  <AfflictionDescription.BTradio.250>Civilian Radio Range (250M).</AfflictionDescription.BTradio.250>
+  <AfflictionDescription.BTradio.300>FM Radio Range (300M).</AfflictionDescription.BTradio.300>
+  <AfflictionDescription.BTradio.500>Military Radio Range (500M).</AfflictionDescription.BTradio.500>
+  <AfflictionDescription.BTradio.800>Broadcast Radio Range (800M).</AfflictionDescription.BTradio.800>
+  <loadingscreentip>The crook has learned to scavenge human environments for food. Most feed it monster corpses to keep it satisfied— otherwise, it might start eyeing humans as its next meal...</loadingscreentip>
+  <character.crook>Crook</character.crook>
+  <entityname.crookfurBTC>Crook Fur</entityname.crookfurBTC>
+  <entitydescription.crookfurBTC>Can be used as a crafting material in a fabricator.</entitydescription.crookfurBTC>
+  <entityname.crookcapeitemBTC>Crook Cape</entityname.crookcapeitemBTC>
+  <entitydescription.crookcapeitemBTC>Crafted from the fur of a crook, this cape envelops its wearer in a subtle power of vaguely threatening persuasion, making mission-givers find themselves strangely inclined to offer better rewards.</entitydescription.crookcapeitemBTC>
+  <afflictionname.crookcapeBTC>Crook Cape</afflictionname.crookcapeBTC>
+  <afflictiondescription.crookcapeBTC>Crafted from the fur of a crook, this cape envelops its wearer in a subtle power of vaguely threatening persuasion, making mission-givers find themselves strangely inclined to offer better rewards. It is slowly deteriorating.</afflictiondescription.crookcapeBTC>
+  <talentname.crookcapeinfluenceBTC>Crook Influence</talentname.crookcapeinfluenceBTC>
+  <talentdescription.crookcapeinfluenceBTC>All mission mark rewards are increased by [amount]% as long as a crewmember is wearing the crook cape.</talentdescription.crookcapeinfluenceBTC>
+
+</infotext>

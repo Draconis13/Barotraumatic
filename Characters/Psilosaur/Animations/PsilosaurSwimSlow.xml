@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PsilosaurSwimSlow UseSineMovement="False" Flip="True" FlipCooldown="1" FlipDelay="0.5" Mirror="False" MirrorLerp="True" WaveAmplitude="86.65564" WaveLength="61.021057" RotateTowardsMovement="True" TailTorque="50" TailTorqueMultiplier="1" FootAngles="" UpdateAnimationWhenNotMoving="False" TailAngle="89" SteerTorque="25" LegTorque="25" AnimationType="SwimSlow" MovementSpeed="4.533995" CycleSpeed="1" HeadAngle="96" TorsoAngle="78" HeadTorque="50" TorsoTorque="250" FootTorque="25" ArmIKStrength="1" HandIKStrength="1" />

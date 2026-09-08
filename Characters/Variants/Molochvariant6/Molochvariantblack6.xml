@@ -1,0 +1,4 @@
+<Charactervariant inherit="Molochvariant6" speciesname="Molochvariantblack6" speciestranslationoverride="Molochblack" hideinsonar="True" sonardisruption="2" texture="Content/Characters/Molochblack/Molochblack.png">
+  <health vitality="1700"/>
+  <ai combatstrength="2000"/>
+</Charactervariant>

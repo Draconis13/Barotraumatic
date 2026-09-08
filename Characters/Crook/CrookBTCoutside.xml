@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="CrookBTC" speciesname="CrookBTCoutside" speciestranslationoverride="CrookBTC" SoundInterval="200" group="human">
+  <ai combatstrength="1" sight="5" hearing="5" aggressiveboarding="True" PatrolFlooded="false" patroldry="false" aggressiongreed="10" CanOpenDoors="true" UsePathFindingToGetInside="true" KeepDoorsClosed="False" aggressionhurt="100" avoidgunfire="False" AttackWhenProvoked="false" randomattack="True">
+    <target tag="reactor" state="HideTo" priority="100" threshold="500" reactdistance="100" offset="0,0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="True" ignoreincapacitated="False" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
+    <target tag="room" state="Attack" priority="250" attackdistance="500" reactdistance="0" ignoreinside="true" />
+  </ai>
+</Charactervariant>

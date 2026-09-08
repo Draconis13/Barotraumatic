@@ -1,0 +1,104 @@
+﻿<Character SpeciesName="Razzershrimp_kse" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="mantisoid" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="False" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="btcbloodblue" BleedParticleAir="btcblooddropblue" BleedParticleWater="btcwaterbloodblue" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="20" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <gibemitter particle="btcblueheavygib" particleamount="5" velocitymin="50" velocitymax="500" anglemin="0" anglemax="360" scalemin="0.5" scalemax="0.8" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <health Vitality="1001" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.5" BurnReduction="0.5" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="5" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
+  <ai CombatStrength="2000" Sight="3" Hearing="7" MaxPerceptionDistance="-1" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="25" WallTargetingMethod="5" PlayDeadProbability="0">
+    <target Tag="human" State="Attack" Priority="500" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="5" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0">
+      <Conditional TargetSelf="True" HealthPercentage="lt 50" />
+    </target>
+    <target Tag="decoy" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="provocative" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="weapon" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="weaker" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="dead" State="Eat" Priority="90" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="room" State="Attack" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="2000" IgnoreTargetSize="False" CircleRotationSpeed="2" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="2" CircleMaxRandomOffset="10" />
+    <target Tag="sonar" State="Attack" Priority="10" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="2000" IgnoreTargetSize="False" CircleRotationSpeed="2" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="2" CircleMaxRandomOffset="10" />
+    <target Tag="terminalcell" State="Idle" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="leucocyte" State="Idle" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="Shrimpbrut_kse" State="Idle" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="Hornshrimp_kse" State="Idle" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+    <Item forcetoslot="true" Identifier="diversremains" />
+    <Item forcetoslot="true" Identifier="scrap" />
+    <Item forcetoslot="true" Identifier="scrap" />
+    <Item forcetoslot="true" Identifier="razorshrimpshell" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.6">
+    <Item Identifier="diversremains" />
+    <Item Identifier="scrap" />
+    <Item Identifier="scrap" />
+    <Item Identifier="razorshrimpshell" />
+    <item Identifier="Hydroxyapatite" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.4">
+    <Item Identifier="diversremains" />
+    <Item Identifier="scrap" />
+    <Item Identifier="scrap" />
+    <item Identifier="Fulgurium" />
+    <Item Identifier="razorshrimpshell" />
+    <item Identifier="Hydroxyapatite" />
+  </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
+    <Item Identifier="shrimpstomach" />
+	<Item forcetoslot="true" Identifier="scrap" />
+    <Item forcetoslot="true" Identifier="scrap" />
+    <Item forcetoslot="true" Identifier="razorshrimpshell" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1.2">
+    <Item Identifier="shrimpstomach" />
+	<Item Identifier="scrap" />
+    <Item Identifier="scrap" />
+    <Item Identifier="razorshrimpshell" />
+    <item Identifier="Hydroxyapatite" />
+  </Inventory>
+      <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
+    <Item forcetoslot="true" Identifier="shrimpantenna" />
+	<Item forcetoslot="true" Identifier="scrap" />
+    <Item forcetoslot="true" Identifier="scrap" />
+    <Item forcetoslot="true" Identifier="razorshrimpshell" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1.2">
+    <Item Identifier="shrimpantenna" />
+	<Item Identifier="scrap" />
+    <Item Identifier="scrap" />
+    <Item Identifier="razorshrimpshell" />
+    <item Identifier="Hydroxyapatite" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.8">
+    <Item Identifier="scrap" />
+    <Item Identifier="scrap" />
+    <item Identifier="Fulgurium" />
+    <Item Identifier="razorshrimpshell" />
+    <item Identifier="Hydroxyapatite" />
+  </Inventory>
+  <!-- <StatusEffect targetlimb="Magen" target="This" type="OnDeath">
+    <Explosion range="100" applyFireEffects="false" structuredamage="5" camerashake="75" playtinnitus="true" underwaterbubble="false" flash="false" sparks="false" shockwave="true" flames="false" force="5" onlyinside="true" ignorecover="true">
+      <Affliction identifier="stun" strength="4.5" />
+    </Explosion>
+    <ParticleEmitter scalemax="2" scalemin="1" anglemax="360" anglemin="0" velocitymax="100" velocitymin="50" particleamount="30" particle="bubbles" />
+    <ParticleEmitter scalemax="5" scalemin="2" anglemax="360" anglemin="0" velocitymax="1000" velocitymin="200" particleamount="20" particle="bloodtrail" />
+    <ParticleEmitter scalemax="4" scalemin="2" anglemax="360" anglemin="0" velocitymax="20" velocitymin="0" particleamount="10" particle="blackwaterblood" />
+    <ParticleEmitter scalemax="4" scalemin="2" anglemax="360" anglemin="0" velocitymax="20" velocitymin="0" particleamount="10" drawontop="True" particle="waterblood" />
+    <ParticleEmitter scalemax="5" scalemin="3" anglemax="360" anglemin="0" velocitymax="20" velocitymin="0" particleamount="10" particle="blackwaterblood" />
+    <ParticleEmitter scalemax="15" scalemin="15" anglemax="360" anglemin="0" velocitymax="0" velocitymin="0" particleamount="2" particle="heavygib" />
+    <ParticleEmitter scalemax="2" scalemin="1" anglemax="360" anglemin="0" velocitymax="300" velocitymin="100" particleamount="200" particle="gib" />
+  </StatusEffect> -->
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\schaden.OGG" State="Attack" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\Hiss 2.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\knurren-2.OGG" State="Idle" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\Gore.OGG" State="Die" Range="2000" Volume="2" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\schaden 2.OGG" State="Attack" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\Hiss 6.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\schaden 5.OGG" State="Attack" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\Hiss 4.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\Hiss 3.OGG" State="Idle" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\Hiss 5.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\schaden 3.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\schaden 4.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\schaden 6.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\Blubb1.OGG" State="Idle" Range="10000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\Blubb2.OGG" State="Idle" Range="10000" Volume="1" Tags="" />
+  <sound File="%ModDir:2518816103%\Characters\Razzershrimp\Blubb3.OGG" State="Idle" Range="10000" Volume="1" Tags="" />
+</Character>

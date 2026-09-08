@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Particles>
+  <fn_snowwy lifetime="4" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="False" drag="0.5" waterdrag="0" velocitychange="0,0.5" velocitychangewater="0,0.5" collisionradius="10" usecollision="True" deleteoncollision="False" friction="0" restitution="0" startsizemin="1,1" startsizemax="1.5,1.5" sizechangemin="0.1,0.1" sizechangemax="0.1,0.1" growtime="0.1" startcolor="255,255,255,45" endcolor="80,100,40,50" drawtarget="Air" blendstate="AlphaBlend" animduration="4" loopanim="True" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False">
+    <animatedsprite texture="Content/Particles/Smoke.png" sourcerect="0,0,4096,4096" columns="8" rows="8" origin="0.5,0.5" />
+  </fn_snowwy>
+  <!--<fn_snow
+  startsizemin="1.5,1.5"
+  startsizemax="2.5,2.5"
+  sizechangemin="0,0"
+  sizechangemax="0,0"
+  startrotationmin="0"
+  startrotationmax="360"
+  angularvelocitymin="-10"
+  angularvelocitymax="10"
+  startcolor="255,255,255,85"
+  endcolor="255,255,255,50"
+  growtime="0"
+  lifetime="2"
+  drawtarget="Air"
+  velocitychange="0,0"
+  startdelaymin="0"
+  startdelaymax="0"
+  rotatetodirection="False"
+  drag="0"
+  waterdrag="0"
+  velocitychangewater="0,0"
+  collisionradius="1"
+  usecollision="False"
+  deleteoncollision="False"
+  friction="0"
+  restitution="0"
+  blendstate="AlphaBlend"
+  animduration="1"
+  loopanim="True"
+  drawontop="False">
+  <sprite
+    texture="Mods/Thalassophobia/Particles/cultparticles.png"
+    sourcerect="661,42,140,137"
+    origin="0.5,0.5" />
+</fn_snow> -->
+  <ElectrifiedWater2 startsizemin="0.6,0.6" startsizemax="1,1" sizechangemin="0.1,0.1" sizechangemax="0.3,0.3" startrotationmin="0" startrotationmax="360" startcolor="255,255,255,200" endcolor="255,255,255,0" lifetime="0.2" growtime="0.1" usecollision="True" deleteoncollision="True" drawtarget="Water" velocitychange="0,0.1" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychangewater="0,0" collisionradius="1" friction="0.5" restitution="0.5" blendstate="Additive" animduration="1" loopanim="True" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <sprite texture="Content/Particles/LightningParticleSheet.png" sourcerect="0,0,256,256" />
+    <sprite texture="Content/Particles/LightningParticleSheet.png" sourcerect="0,256,256,256" />
+    <sprite texture="Content/Particles/LightningParticleSheet.png" sourcerect="256,0,256,256" />
+    <sprite texture="Content/Particles/LightningParticleSheet.png" sourcerect="256,256,256,256" />
+  </ElectrifiedWater2>
+  <bloodspurtsplashing startsizemin="0.5,0.5" startsizemax="1,1" startrotationmin="0" startrotationmax="360" startcolor="255,22,22,255" endcolor="255,45,45,255" lifetime="1.5" growtime="0.8" velocitychange="0,-5" startdelaymin="0" startdelaymax="0.2" angularvelocitymin="0" angularvelocitymax="0" rotatetodirection="True" drag="0" waterdrag="0" velocitychangewater="0,-0.1" collisionradius="30" usecollision="True" deleteoncollision="True" friction="0.5" restitution="0.5" sizechangemin="1,1" sizechangemax="1,1" drawtarget="Air" blendstate="AlphaBlend" animduration="1.5" loopanim="True" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <animatedsprite texture="Content/Particles/Spatter1.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.2,0.5" />
+    <animatedsprite texture="Content/Particles/Spatter2.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.5,0.5" />
+    <animatedsprite texture="Content/Particles/Spatter3.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.3,0.5" />
+  </bloodspurtsplashing>
+  <blooddropfeedings lifetime="3" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="True" drag="0" waterdrag="0.3" velocitychange="0,-9.8" velocitychangewater="0,-5" collisionradius="10" usecollision="True" deleteoncollision="True" friction="0.5" restitution="0.2" startsizemin="0.4,0.2" startsizemax="1,0.3" sizechangemin="0,0" sizechangemax="0,0" growtime="0.5" startcolor="255,0,0,255" endcolor="200,0,0,0" drawtarget="Air" blendstate="AlphaBlend" animduration="1" loopanim="True" startdelaymin="0" startdelaymax="0" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="5">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="0,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="32,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="64,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="96,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="128,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="160,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="192,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="224,96,32,32" origin="0.9,0.9" />
+  </blooddropfeedings>
+  <enforcerflame LifeTime="0.8" LifeTimeMin="0" StartDelayMin="0" StartDelayMax="0" AngularVelocityMin="-20" AngularVelocityMax="10" StartRotationMin="-20" StartRotationMax="20" RotateToDirection="False" Drag="0.2" WaterDrag="0.2" VelocityChange="0,1" VelocityChangeWater="0,1" CollisionRadius="60" UseCollision="True" DeleteOnCollision="False" Friction="0.5" Restitution="0.1" StartSizeMin="0.5,0.3" StartSizeMax="0.8,0.5" SizeChangeMin="0,0" SizeChangeMax="0.1,0.1" GrowTime="0.2" StartColor="255,255,255,255" MiddleColor="255,255,255,255" EndColor="255,255,255,255" UseMiddleColor="False" DrawTarget="Both" DrawOnTop="False" BlendState="Additive" Priority="0" AnimDuration="0.8" LoopAnim="True">
+    <animatedsprite texture="%ModDir:2518816103%/Particles/enforcerflame.png" sourcerect="0,0,2048,2048" columns="10" rows="5" origin="0.5,0.8" premultiplyalpha="false" />
+  </enforcerflame>
+  <morbusinemistlargefade startsizemin="0.8,0.8" startsizemax="1,1" sizechangemin="0.2,0.2" sizechangemax="0.5,0.8" startrotationmin="0" startrotationmax="360" startcolor="80,100,40,1" endcolor="0,40,20,0" growtime="0" lifetime="8" velocitychange="0,0" startdelaymin="0" startdelaymax="0" angularvelocitymin="-50" angularvelocitymax="10" rotatetodirection="False" drag="1" waterdrag="1" velocitychangewater="0,0" collisionradius="1" usecollision="True" deleteoncollision="True" friction="0.5" restitution="0.5" drawtarget="Air" blendstate="AlphaBlend" animduration="1" loopanim="True" drawontop="True" lifetimemin="4" middlecolor="0,40,20,150" usemiddlecolor="True" priority="0">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="384,254,128,128" />
+  </morbusinemistlargefade>
+  <xanwatcherscreechparticle lifetime="4" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="1" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="2,2" startsizemax="2.5,2.5" sizechangemin="30,30" sizechangemax="35,35" growtime="2" startcolor="0,0,0,255" endcolor="200,200,200,0" drawtarget="Both" blendstate="AlphaBlend" animduration="1.0" loopanim="True" drawontop="True">
+    <sprite texture="%ModDir:2518816103%/Particles/watcherscreechparticle.png" sourcerect="0,0,128,128" />
+  </xanwatcherscreechparticle>
+  <ElectricAnomaly lifetime="3" angularvelocitymin="-20" angularvelocitymax="20" startrotationmin="0" startrotationmax="360" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="1" usecollision="True" deleteoncollision="False" friction="1.0" restitution="1.0" startsizemin="0.1,0.1" startsizemax="0.2,0.2" sizechangemin="0.1,0.1" sizechangemax="0.2,0.2" growtime="0.1" startcolor="202,231,255,255" endcolor=",255,255,200" drawtarget="Both" drawontop="True" blendstate="Additive" animduration="3" loopanim="True" startdelaymin="0" startdelaymax="0" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False">
+    <animatedsprite texture="Content/Particles/Smoke.png" sourcerect="0,0,4096,4096" columns="8" rows="8" origin="0.5,0.5" />
+  </ElectricAnomaly>
+  <acidsplash lifetime="0.5" startdelaymin="0" startdelaymax="0.2" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,-5" velocitychangewater="0,-0.1" collisionradius="1" usecollision="True" deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="1,1" startsizemax="1,1" sizechangemin="1,1" sizechangemax="1.2,1.2" growtime="0.1" startcolor="5,0,0,255" endcolor="200,200,0,255" drawtarget="Both" blendstate="AlphaBlend" animduration="1" loopanim="True" drawontop="True">
+    <animatedsprite texture="Content/Particles/Spatter1.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.2,0.5" />
+    <animatedsprite texture="Content/Particles/Spatter2.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.5,0.5" />
+    <animatedsprite texture="Content/Particles/Spatter3.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.3,0.5" />
+  </acidsplash>
+  <blackgooy lifetime="10" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="10" startrotationmax="360" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="10" usecollision="False" deleteoncollision="False" friction="0" restitution="0.5" startsizemin="2,2" startsizemax="3,3" sizechangemin="0.1,0.1" sizechangemax="0.1,0.1" growtime="1" startcolor="0,0,0,255" endcolor="0,0,0,0" drawtarget="Both" blendstate="AlphaBlend" animduration="3" loopanim="True" drawontop="False">
+    <animatedsprite texture="Content/Particles/ballastfloraSpore.png" sourcerect="0,0,1024,512" columns="8" rows="4" origin="0.5,0.5" />
+  </blackgooy>
+  <WasteSpores startsizemin="0.4,0.4" startsizemax="0.5,0.5" sizechangemin="0.25,0.25" sizechangemax="0.3,0.3" startrotationmin="0" startrotationmax="360" startcolor="239,212,0,125" endcolor="229,222,0,0" growtime="5" lifetime="10" velocitychange="0,-0.05" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychangewater="0,-0.05" collisionradius="1" usecollision="true" deleteoncollision="False" friction="0.5" restitution="0.5" drawtarget="Air" blendstate="AlphaBlend" animduration="5" loopanim="True" drawontop="True" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="384,254,128,128" />
+  </WasteSpores>
+  <WaterborneSpores startsizemin="0.4,0.4" startsizemax="0.5,0.5" sizechangemin="0.25,0.25" sizechangemax="0.3,0.3" startrotationmin="0" startrotationmax="360" startcolor="239,212,0,125" endcolor="229,222,0,0" growtime="5" lifetime="10" velocitychange="0,-0.05" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychangewater="0,-0.05" collisionradius="1" usecollision="true" deleteoncollision="False" friction="0.5" restitution="0.5" drawtarget="Water" blendstate="AlphaBlend" animduration="5" loopanim="True" drawontop="True" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="384,254,128,128" />
+  </WaterborneSpores>
+  <SporeBurn lifetime="5" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="1" usecollision="True" deleteoncollision="True" friction="0.5" restitution="0" startsizemin="0.1,0.1" startsizemax="0.1,0.1" sizechangemin="0,0" sizechangemax="0,0" growtime="3" startcolor="5,5,255,255" endcolor="255,100,50,1" drawtarget="Air" blendstate="Additive" animduration="5" loopanim="True" drawontop="False" lifetimemin="0" middlecolor="50,50,255,220" usemiddlecolor="True" priority="1">
+    <animatedsprite texture="Content/Particles/FlameRoundParticleSheet.png" sourcerect="0,0,2048,2048" columns="10" rows="5" origin="0.5,0.8" premultiplyalpha="false" />
+  </SporeBurn>
+  <dust startsizemin="3,3" startsizemax="3,3" sizechangemin="-4,-4" sizechangemax="-4,-4" startrotationmin="0" startrotationmax="360" angularvelocitymin="90" angularvelocitymax="90" startcolor="255,255,255,10" endcolor="150,150,150,255" growtime="0" lifetime="0.7" drawtarget="Air" velocitychange="0,0" startdelaymin="0" startdelaymax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychangewater="0,0" collisionradius="1" usecollision="False" deleteoncollision="False" friction="0" restitution="0" blendstate="AlphaBlend" animduration="1" loopanim="True" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False">
+    <sprite texture="%ModDir:2518816103%/Particles/blackhole.png" sourcerect="661,42,140,137" origin="0.5,0.5" />
+  </dust>
+  <tracerhandlaserfirearm lifetime="0.5" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="1" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="1,0.5" startsizemax="1,0.4" growtime="0.02" startcolor="255,255,255,180" endcolor="255,255,255,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False" lifetimemin="0" sizechangemin="0,0" sizechangemax="0,0" middlecolor="255,255,255,255" usemiddlecolor="False" animduration="1">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="157,440,1,22" origin="0.5,0.5" />
+  </tracerhandlaserfirearm>
+  <muzzleflashhandlaser lifetime="0.5" startdelaymin="0" startdelaymax="0.1" angularvelocitymin="-100" angularvelocitymax="100" startrotationmin="0" startrotationmax="359" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="1" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="2,2" startsizemax="6,6" growtime="0" startcolor="255,255,255,150" endcolor="255,255,255,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False" lifetimemin="0" sizechangemin="0,0" sizechangemax="0,0" middlecolor="255,255,255,255" usemiddlecolor="False" animduration="1">
+    <sprite texture="%ModDir:2518816103%/Particles/ParticleAtlas.png" sourcerect="0,0,60,60" />
+  </muzzleflashhandlaser>
+  <rainfall lifetime="5" lifetimemin="3" angularvelocitymin="-2" angularvelocitymax="2" startrotationmin="0" startrotationmax="0" rotatetodirection="True" drag="0.5" waterdrag="1" velocitychange="-120,-720" velocitychangewater="0,-900" collisionradius="5" usecollision="True" deleteoncollision="True" friction="0.01" restitution="0.01" startsizemin="1.25,0.2" startsizemax="1.5,0.4" sizechangemin="-0.1,-0.1" sizechangemax="-0.1,-0.1" growtime="0.2" startcolor="255,255,255,75" middlecolor="255,255,255,200" endcolor="255,255,255,100" usemiddlecolor="True" drawtarget="Air" blendstate="AlphaBlend" animduration="1" loopanim="True" startdelaymin="0" startdelaymax="0" drawontop="True">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="130,383,225,40" origin="0.9,0.5" />
+  </rainfall>
+  <whitegas startsizemin="0.5,0.5" startsizemax="1,1" startrotationmin="0" startrotationmax="360" startcolor="200,255,255,255" endcolor="200,255,255,255" lifetime="3.0" growtime="0.75" velocitychange="0,0" startdelaymin="0" startdelaymax="0.2" angularvelocitymin="10" angularvelocitymax="30" rotatetodirection="false" drag="0" waterdrag="0" velocitychangewater="0,0" collisionradius="30" usecollision="False" deleteoncollision="False" sizechangemin="0,0" sizechangemax="0,0" drawtarget="Both" blendstate="AlphaBlend" animduration="3.0" loopanim="True" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <animatedsprite texture="Content/Particles/Spatter1.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.2,0.5" />
+    <animatedsprite texture="Content/Particles/Spatter2.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.5,0.5" />
+    <animatedsprite texture="Content/Particles/Spatter3.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.3,0.5" />
+  </whitegas>
+  <xanhuskheadclaws startsizemin="1,1" startsizemax="1,1" sizechangemin="1,1" sizechangemax="1.1,1.1" startrotationmin="0" startrotationmax="360" startcolor="255,255,255,255" startalpha="255,255,255,255" lifetime="0.6" growtime="0.1" usecollision="False" friction="0.01" restitution="0.2" collisionradius="30" velocitychange="0,0" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychangewater="0,0" deleteoncollision="False" endcolor="255,255,255,200" drawtarget="Both" blendstate="AlphaBlend" animduration="0.2" loopanim="True" drawontop="True">
+    <animatedsprite texture="%ModDir:2518816103%/Particles/xanhuskheadattackparticle.png" sourcerect="0,0,144,32" columns="4" rows="1" origin="0.5,0.5" />
+  </xanhuskheadclaws>
+  <mermaidphaseblade LifeTime="0.45" LifeTimeMin="0" StartDelayMin="0" StartDelayMax="0" AngularVelocityMin="0" AngularVelocityMax="0" StartRotationMin="0" StartRotationMax="0" RotateToDirection="False" Drag="0" WaterDrag="0" VelocityChange="0,0" VelocityChangeWater="0,0" CollisionRadius="1" UseCollision="False" DeleteOnCollision="False" Friction="0.5" Restitution="0.5" StartSizeMin="1,1" StartSizeMax="1,1" SizeChangeMin="0.4,0.4" SizeChangeMax="0.4,0.4" GrowTime="0" StartColor="255,255,255,65" MiddleColor="255,255,255,100" EndColor="255,255,255,0" UseMiddleColor="False" DrawTarget="Both" DrawOnTop="False" BlendState="Additive" Priority="0" AnimDuration="1" LoopAnim="True">
+    <sprite texture="%ModDir:2518816103%/Particles/phaseblades.png" sourcerect="0,67,256,98" origin="0.5,0.5" />
+  </mermaidphaseblade>
+  <mermaidphasebladepath LifeTime="0.5" LifeTimeMin="0" StartDelayMin="0" StartDelayMax="0" AngularVelocityMin="0" AngularVelocityMax="0" StartRotationMin="0" StartRotationMax="0" RotateToDirection="False" Drag="0" WaterDrag="0" VelocityChange="0,0" VelocityChangeWater="0,0" CollisionRadius="1" UseCollision="False" DeleteOnCollision="False" Friction="0.5" Restitution="0.5" StartSizeMin="1,1" StartSizeMax="1,1" SizeChangeMin="-4,-0.1" SizeChangeMax="-4,-0.5" GrowTime="0" StartColor="199,199,255,255" MiddleColor="199,199,255,255" EndColor="199,199,255,100" UseMiddleColor="False" DrawTarget="Both" DrawOnTop="True" BlendState="Additive" Priority="0" AnimDuration="1" LoopAnim="True">
+    <sprite texture="%ModDir:2518816103%/Particles/phaseblades.png" sourcerect="0,179,256,98" origin="0.5,0.5" />
+  </mermaidphasebladepath>
+  <laserrifletracer2 lifetime="0.3" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="0" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="1.0,0.9" startsizemax="1.0,0.7" growtime="0.02" startcolor="255,255,255,255" endcolor="255,255,255,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False">
+    <sprite texture="%ModDir:2518816103%/Particles/lasertracers.png" sourcerect="8,0,1,32" origin="0.5,0.5" />
+  </laserrifletracer2>
+  <laserspark2 lifetime="0.3" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="True" drag="0" waterdrag="0" velocitychange="0,-10" velocitychangewater="0,-10" collisionradius="1" usecollision="True" deleteoncollision="True" friction="0.5" restitution="0.5" startsizemin="0.2,0.1" startsizemax="0.4,0.2" sizechangemin="-0.25,-0.12" sizechangemax="-0.25,-0.12" growtime="0.05" startcolor="255,178,96,255" endcolor="255,178,96,255" drawtarget="Both" blendstate="Additive" startdelaymin="0" startdelaymax="0" animduration="1" loopanim="True">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="392,83,106,16" />
+  </laserspark2>
+  <lasersmoke2 lifetime="1.5" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0.2" velocitychangewater="0,0.2" collisionradius="1" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="0.35,0.35" startsizemax="0.6,0.6" sizechangemin="0.1,0.1" sizechangemax="0.1,0.1" growtime="0.1" startcolor="202,231,255,255" endcolor="124,59,255,50" drawtarget="Both" drawontop="True" blendstate="AlphaBlend" animduration="1.5" loopanim="True" startdelaymin="0" startdelaymax="0">
+    <animatedsprite texture="Content/Particles/Smoke.png" sourcerect="0,0,4096,4096" columns="8" rows="8" origin="0.5,0.5" />
+  </lasersmoke2>
+  <laserrifleflare2 lifetime="0.08" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="-2" startrotationmax="2" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="0.6,0.6" startsizemax="0.9,0.9" sizechangemin="0,0" sizechangemax="0,0" growtime="0" startcolor="125,50,255,225" endcolor="125,50,255,75" drawtarget="Both" blendstate="Additive" animduration="1" loopanim="False">
+    <sprite texture="%ModDir:2518816103%/Particles/lightflare2.png" sourcerect="0,0,256,256" origin="0.5,0.5" premultiplyalpha="false" />
+  </laserrifleflare2>
+  <newvortexringtrail lifetimemin="1" lifetime="2" startdelaymin="0" startdelaymax="0.5" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="-20" startrotationmax="20" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,1" collisionradius="50" usecollision="True" deleteoncollision="True" friction="0.5" restitution="0.5" startsizemin="0.5,0.5" startsizemax="1,1" sizechangemin="0,0" sizechangemax="0,0" growtime="0.2" startcolor="255,255,255,255" endcolor="255,255,255,0" drawtarget="Water" blendstate="Additive" animduration="3" loopanim="True" drawontop="False" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <animatedsprite texture="Content/Particles/RisingBubbleSheet.png" sourcerect="0,0,1024,1024" columns="8" rows="8" origin="0.5,0.5" premultiplyalpha="false" />
+  </newvortexringtrail>
+  <bloodexplode LifeTime="0.5" LifeTimeMin="0" StartDelayMin="0" StartDelayMax="0" AngularVelocityMin="0" AngularVelocityMax="0" StartRotationMin="-2" StartRotationMax="2" RotateToDirection="False" Drag="0" WaterDrag="0" VelocityChange="0,0" VelocityChangeWater="0,0" CollisionRadius="1" InvariantCollisionSize="False" UseCollision="False" DeleteOnCollision="False" Friction="0.5" Restitution="0.5" StartSizeMin="0.2,0.2" StartSizeMax="0.2,0.2" SizeChangeMin="0,0" SizeChangeMax="0,0" GrowTime="0" StartColor="111,0,50,225" MiddleColor="255,255,255,255" EndColor="200,0,0,0" UseMiddleColor="False" DrawTarget="Both" DrawOnTop="True" DrawAlways="False" BlendState="Additive" Priority="0" AnimDuration="1" LoopAnim="False">
+    <sprite texture="%ModDir%/Particles/artmod_artbloodexplode.png" sourcerect="0,132,658,636" origin="0.5,0.5" premultiplyalpha="false" />
+  </bloodexplode>
+  <bloodexplodeA LifeTime="2" LifeTimeMin="0" StartDelayMin="0" StartDelayMax="0" AngularVelocityMin="0" AngularVelocityMax="0" StartRotationMin="0" StartRotationMax="0" RotateToDirection="False" Drag="0" WaterDrag="0" VelocityChange="0,0" VelocityChangeWater="0,0" CollisionRadius="60" InvariantCollisionSize="False" UseCollision="False" DeleteOnCollision="False" Friction="0.5" Restitution="0.1" StartSizeMin="1,1" StartSizeMax="1,1" SizeChangeMin="0,0" SizeChangeMax="0,0" GrowTime="0.2" StartColor="255,255,255,255" MiddleColor="255,255,255,255" EndColor="255,255,255,0" UseMiddleColor="False" DrawTarget="Both" DrawOnTop="True" DrawAlways="False" BlendState="Additive" Priority="0" AnimDuration="0.8" LoopAnim="False">
+    <animatedsprite texture="%ModDir%/Particles/artmod_artbloodexplodeA.png" sourcerect="0,0,512,512" columns="4" rows="4" origin="0.5,0.5" premultiplyalpha="false" />
+  </bloodexplodeA>
+  <psychosiseyes LifeTime="6" LifeTimeMin="6" StartDelayMin="0" StartDelayMax="0" AngularVelocityMin="0" AngularVelocityMax="0" StartRotationMin="0" StartRotationMax="360" RotateToDirection="False" Drag="0" WaterDrag="0" VelocityChange="0,0" VelocityChangeWater="0,0" CollisionRadius="1" InvariantCollisionSize="False" UseCollision="False" DeleteOnCollision="False" Friction="0" Restitution="0" StartSizeMin="0.1,0.1" StartSizeMax="0.1,0.1" SizeChangeMin="0,0" SizeChangeMax="0,0" GrowTime="0" StartColor="255,255,255,155" MiddleColor="255,255,255,155" EndColor="255,255,255,155" UseMiddleColor="True" DrawTarget="Both" DrawOnTop="False" DrawAlways="False" BlendState="Additive" Priority="0" AnimDuration="1" LoopAnim="True">
+    <sprite texture="%ModDir%/Particles/eye1.png" sourcerect="0,0,512,512" />
+    <sprite texture="%ModDir%/Particles/eye5.png" sourcerect="0,0,512,512" />
+    <sprite texture="%ModDir%/Particles/eye6.png" sourcerect="0,0,512,512" />
+    <sprite texture="%ModDir%/Particles/eye4.png" sourcerect="0,0,512,512" />
+    <sprite texture="%ModDir%/Particles/eye2.png" sourcerect="0,0,600,600" />
+    <sprite texture="%ModDir%/Particles/eye3.png" sourcerect="0,0,500,500" />
+  </psychosiseyes>
+  <narcoticmist startsizemin="2,2" startsizemax="3.5,3.5" sizechangemin="0.1,0.1" sizechangemax="0.2,0.2" startrotationmin="0" startrotationmax="360" startcolor="155,255,61,255" endcolor="255,50,0,0" growtime="2" lifetime="15" velocitychange="0,0" startdelaymin="0" startdelaymax="0" angularvelocitymin="-10" angularvelocitymax="10" rotatetodirection="False" drag="100" waterdrag="100" velocitychangewater="0,0" collisionradius="1" usecollision="True" deleteoncollision="True" friction="0.5" restitution="0.5" drawtarget="Water" blendstate="AlphaBlend" animduration="1" loopanim="True" drawontop="True">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="384,254,128,128" />
+  </narcoticmist>
+  <yellowheavygibs lifetime="1" angularvelocitymin="-500" angularvelocitymax="500" startrotationmin="0" startrotationmax="360" rotatetodirection="False" drag="0" waterdrag="0.3" velocitychange="0,-8" velocitychangewater="0,-1" collisionradius="10" usecollision="True" deleteoncollision="True" friction="0.5" restitution="0.5" startsizemin="0.8,0.8" startsizemax="1,1" sizechangemin="-0.5,-0.5" sizechangemax="-0.5,-0.5" growtime="0" startcolor="135,135,0,255" endcolor="50,0,0,0" drawtarget="Both" blendstate="AlphaBlend" animduration="1" loopanim="True" startdelaymin="0" startdelaymax="0" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="0,64,32,32" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="32,64,32,32" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="64,64,32,32" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="96,64,32,32" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="128,64,32,32" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="160,64,48,32" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="208,64,48,32" />
+    <ParticleEmitter particle="yellowbloodtrail" particlespersecond="10" position="0,0" anglemin="0" anglemax="360" velocitymin="10" velocitymax="20" DrawOrder="Foreground" />
+  </yellowheavygibs>
+  <clownyspark lifetime="3" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="True" drag="0" waterdrag="0" velocitychange="0,-5" velocitychangewater="0,-5" collisionradius="1" usecollision="True" deleteoncollision="False" friction="0.5" restitution="0.25" startsizemin="0.2,0.1" startsizemax="0.3,0.2" sizechangemin="-0.25,-0.12" sizechangemax="-0.25,-0.12" growtime="0.25" startcolor="255,178,96,255" endcolor="255,178,96,255" drawtarget="Both" blendstate="Additive" startdelaymin="0" startdelaymax="0" animduration="1" loopanim="True" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="392,83,106,16" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="392,83,106,16" />
+  </clownyspark>
+  
+
+  <blackgooycaver lifetime="10" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="10" startrotationmax="360" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="10" usecollision="False" deleteoncollision="False" friction="0" restitution="0.5" startsizemin="2,2" startsizemax="3,3" sizechangemin="0.1,0.1" sizechangemax="0.1,0.1" growtime="1" startcolor="0,0,0,255" endcolor="0,0,0,0" drawtarget="water" blendstate="AlphaBlend" animduration="3" loopanim="True" DrawOrder="Foreground">
+    <animatedsprite texture="Content/Particles/ballastfloraSpore.png" sourcerect="0,0,1024,512" columns="8" rows="4" origin="0.5,0.5" />
+  </blackgooycaver>
+  <blackwaterbloodcaver
+    startsizemin="0.1,0.1"
+    startsizemax="0.3,0.3"
+    sizechangemin="0.1,0.1"
+    sizechangemax="0.2,0.2"
+    startrotationmin="0"
+    startrotationmax="360"
+    startcolor="20,0,0,255"
+    endcolor="0,0,0,255"
+    animduration="5"
+    colorchange="0.0, 0.0, 0.0, -0.2"
+    growtime="0.1"
+    lifetime="5"
+    drawtarget="Water"
+    velocitychange="0,0"
+    startdelaymin="0"
+    startdelaymax="0"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0"
+    velocitychangewater="0,0"
+    collisionradius="1"
+    usecollision="False"
+    deleteoncollision="False"
+    friction="0.5"
+    restitution="0.5"
+    blendstate="AlphaBlend"
+    loopanim="True"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0"
+    DrawOrder="Foreground">
+    <animatedsprite
+      texture="Content/Particles/Smoke.png"
+      sourcerect="0,0,4096,4096"
+      columns="8"
+      rows="8"
+      origin="0.5,0.5" />
+  </blackwaterbloodcaver>
+    <btcbloodblue
+    startsizemin="0.5,0.5"
+    startsizemax="1,1"
+    startrotationmin="0"
+    startrotationmax="360"
+    startcolor="90,208,255,255"
+    endcolor="90,208,255,255"
+    lifetime="1"
+    growtime="0.1"
+    velocitychange="0,-0.1"
+    startdelaymin="0"
+    startdelaymax="0"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0"
+    velocitychangewater="0,-0.1"
+    collisionradius="1"
+    usecollision="False"
+    deleteoncollision="False"
+    friction="0.5"
+    restitution="0.5"
+    sizechangemin="0,0"
+    sizechangemax="0,0"
+    drawtarget="Both"
+    blendstate="AlphaBlend"
+    animduration="1"
+    loopanim="True"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="5">
+    <animatedsprite
+      texture="Content/Particles/Spatter1.png"
+      sourcerect="0,0,1024,1024"
+      columns="4"
+      rows="8"
+      origin="0.2,0.5" />
+    <animatedsprite
+      texture="Content/Particles/Spatter2.png"
+      sourcerect="0,0,1024,1024"
+      columns="4"
+      rows="8"
+      origin="0.5,0.5" />
+    <animatedsprite
+      texture="Content/Particles/Spatter3.png"
+      sourcerect="0,0,1024,1024"
+      columns="4"
+      rows="8"
+      origin="0.3,0.5" />
+  </btcbloodblue>
+    <btcwaterbloodblue 
+    startsizemin="0.1,0.1"
+    startsizemax="0.3,0.3"
+    sizechangemin="0.1,0.1"
+    sizechangemax="0.2,0.2"
+    startrotationmin="0"
+    startrotationmax="360"
+    startcolor="90,208,255,255"
+    endcolor="90,208,255,255"
+    animduration="5"
+    colorchange="0.0, 0.0, 0.0, -0.2"
+    growtime="0.1"
+    lifetime="5"
+    drawtarget="Water"
+    velocitychange="0,0"
+    startdelaymin="0"
+    startdelaymax="0"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0"
+    velocitychangewater="0,0"
+    collisionradius="1"
+    usecollision="False"
+    deleteoncollision="False"
+    friction="0.5"
+    restitution="0.5"
+    blendstate="AlphaBlend"
+    loopanim="True"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <animatedsprite
+      texture="Content/Particles/Smoke.png"
+      sourcerect="0,0,4096,4096"
+      columns="8"
+      rows="8"
+      origin="0.5,0.5" />
+  </btcwaterbloodblue>
+    <btcblooddropblue
+    lifetime="3"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    startrotationmin="0"
+    startrotationmax="360"
+    rotatetodirection="True"
+    drag="0"
+    waterdrag="0.3"
+    velocitychange="0,-9.8"
+    velocitychangewater="0,-5"
+    collisionradius="10"
+    usecollision="True"
+    deleteoncollision="True"
+    friction="0.5"
+    restitution="0.2"
+    startsizemin="0.4,0.2"
+    startsizemax="1,0.3"
+    sizechangemin="0,0"
+    sizechangemax="0,0"
+    growtime="0.5"
+    startcolor="90,208,255,255"
+    endcolor="40,158,205,255"
+    drawtarget="Air"
+    blendstate="AlphaBlend"
+    animduration="1"
+    loopanim="True"
+    startdelaymin="0"
+    startdelaymax="0"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="5">
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="0,96,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="32,96,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="64,96,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="96,96,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="128,96,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="160,96,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="192,96,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="224,96,32,32" />
+  </btcblooddropblue>
+    <btcbloodtrailblue
+    lifetime="0.5"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    startrotationmin="0"
+    startrotationmax="360"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0.8"
+    velocitychange="0,0"
+    collisionradius="30"
+    usecollision="False"
+    deleteoncollision="False"
+    friction="0.01"
+    restitution="0.2"
+    startsizemin="0.6,0.6"
+    startsizemax="1,1"
+    sizechangemin="0.2,0.2"
+    sizechangemax="0.5,0.5"
+    growtime="0.05"
+    startcolor="40,158,205,255"
+    endcolor="40,158,205,0"
+    drawtarget="Both"
+    blendstate="AlphaBlend"
+    animduration="1"
+    loopanim="True"
+    startdelaymin="0"
+    startdelaymax="0"
+    velocitychangewater="0,0"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="256,128,128,128" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="256,254,128,128" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="384,128,128,128" />
+  </btcbloodtrailblue>
+  <slugblood
+  drawontop="False"
+  LifeTime="1"
+  LifeTimeMin="0"
+  StartDelayMin="0"
+  StartDelayMax="0"
+  AngularVelocityMin="0"
+  AngularVelocityMax="0"
+  StartRotationMin="0"
+  StartRotationMax="360"
+  RotateToDirection="False"
+  Drag="0"
+  WaterDrag="0"
+  VelocityChange="0,-0.1"
+  VelocityChangeWater="0,-0.1"
+  CanEnterSubs="True"
+  CollisionRadius="1"
+  InvariantCollisionSize="False"
+  UseCollision="False"
+  DeleteOnCollision="False"
+  Friction="0.5"
+  Restitution="0.5"
+  StartSizeMin="0.5,0.5"
+  StartSizeMax="1,1"
+  SizeChangeMin="0,0"
+  SizeChangeMax="0,0"
+  GrowTime="0.1"
+  StartColor="200,200,145,255"
+  MiddleColor="255,255,255,255"
+  EndColor="255,255,255,255"
+  UseMiddleColor="False"
+  DrawTarget="Both"
+  DrawOrder="Default"
+  DrawAlways="False"
+  BlendState="AlphaBlend"
+  Priority="5"
+  AnimDuration="1"
+  LoopAnim="True">
+  <animatedsprite
+    texture="Content/Particles/Spatter1.png"
+    sourcerect="0,0,1024,1024"
+    columns="4"
+    rows="8"
+    origin="0.2,0.5" />
+  <animatedsprite
+    texture="Content/Particles/Spatter2.png"
+    sourcerect="0,0,1024,1024"
+    columns="4"
+    rows="8"
+    origin="0.5,0.5" />
+  <animatedsprite
+    texture="Content/Particles/Spatter3.png"
+    sourcerect="0,0,1024,1024"
+    columns="4"
+    rows="8"
+    origin="0.3,0.5" />
+</slugblood>
+<slugwaterblood
+  colorchange="0.0, 0.0, 0.0, -0.2"
+  drawontop="False"
+  LifeTime="5"
+  LifeTimeMin="0"
+  StartDelayMin="0"
+  StartDelayMax="0"
+  AngularVelocityMin="0"
+  AngularVelocityMax="0"
+  StartRotationMin="0"
+  StartRotationMax="360"
+  RotateToDirection="False"
+  Drag="0"
+  WaterDrag="0"
+  VelocityChange="0,0"
+  VelocityChangeWater="0,0"
+  CanEnterSubs="True"
+  CollisionRadius="1"
+  InvariantCollisionSize="False"
+  UseCollision="False"
+  DeleteOnCollision="False"
+  Friction="0.5"
+  Restitution="0.5"
+  StartSizeMin="0.1,0.1"
+  StartSizeMax="0.3,0.3"
+  SizeChangeMin="0.1,0.1"
+  SizeChangeMax="0.3,0.3"
+  GrowTime="0.1"
+  StartColor="200,200,145,255"
+  MiddleColor="255,255,255,255"
+  EndColor="255,255,255,100"
+  UseMiddleColor="False"
+  DrawTarget="Water"
+  DrawOrder="Default"
+  DrawAlways="False"
+  BlendState="AlphaBlend"
+  Priority="0"
+  AnimDuration="5"
+  LoopAnim="True">
+  <animatedsprite
+    texture="Content/Particles/Smoke.png"
+    sourcerect="0,0,4096,4096"
+    columns="8"
+    rows="8"
+    origin="0.5,0.5" />
+</slugwaterblood>
+<slugblooddrop
+  drawontop="False"
+  LifeTime="3"
+  LifeTimeMin="0"
+  StartDelayMin="0"
+  StartDelayMax="0"
+  AngularVelocityMin="0"
+  AngularVelocityMax="0"
+  StartRotationMin="0"
+  StartRotationMax="360"
+  RotateToDirection="True"
+  Drag="1"
+  WaterDrag="1"
+  VelocityChange="0,-1"
+  VelocityChangeWater="0,-1"
+  CanEnterSubs="True"
+  CollisionRadius="10"
+  InvariantCollisionSize="False"
+  UseCollision="True"
+  DeleteOnCollision="True"
+  Friction="0.5"
+  Restitution="0.2"
+  StartSizeMin="0.4,0.2"
+  StartSizeMax="1,0.3"
+  SizeChangeMin="0.5,0"
+  SizeChangeMax="2,0"
+  GrowTime="0.3"
+  StartColor="200,200,145,255"
+  MiddleColor="255,255,255,255"
+  EndColor="200,200,145,0"
+  UseMiddleColor="False"
+  DrawTarget="Air"
+  DrawOrder="Default"
+  DrawAlways="False"
+  BlendState="AlphaBlend"
+  Priority="5"
+  AnimDuration="1"
+  LoopAnim="True">
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="0,96,32,32" />
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="32,96,32,32" />
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="64,96,32,32" />
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="96,96,32,32" />
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="128,96,32,32" />
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="160,96,32,32" />
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="192,96,32,32" />
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="224,96,32,32" />
+</slugblooddrop>
+  <Pinkfaradayfx
+    lifetime="1"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    startrotationmin="0"
+    startrotationmax="360"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0"
+    velocitychange="0,0"
+    velocitychangewater="0,0"
+    collisionradius="10"
+    usecollision="False"
+    deleteoncollision="False"
+    friction="0.5"
+    restitution="0.5"
+    startsizemin="0.2,0.2"
+    startsizemax="0.3,0.5"
+    sizechangemin="0.2,0"
+    sizechangemax="0.2,0"
+    growtime="0"
+    startcolor="255,200,200,255"
+    endcolor="255,0,0,0"
+    drawtarget="Both"
+    blendstate="Additive"
+    animduration="1"
+    loopanim="True"
+    startdelaymin="0"
+    startdelaymax="0"
+    drawontop="True"
+    lifetimemin="0.1"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <sprite
+      texture="Content/Particles/LightningParticleSheet.png"
+      sourcerect="0,0,256,256" />
+    <sprite
+      texture="Content/Particles/LightningParticleSheet.png"
+      sourcerect="0,256,256,256" />
+    <sprite
+      texture="Content/Particles/LightningParticleSheet.png"
+      sourcerect="256,0,256,256" />
+    <sprite
+      texture="Content/Particles/LightningParticleSheet.png"
+      sourcerect="256,256,256,256" />
+  </Pinkfaradayfx>
+  <AlphaWormWaterblood
+    startsizemin="0.1,0.1"
+    startsizemax="0.3,0.3"
+    sizechangemin="0.1,0.1"
+    sizechangemax="0.2,0.2"
+    startrotationmin="0"
+    startrotationmax="360"
+    startcolor="0,230,255,255"
+    endcolor="0,0,167,167"
+    animduration="5"
+    colorchange="0.0, 0.0, 0.0, -0.2"
+    growtime="0.1"
+    lifetime="5"
+    drawtarget="Water"
+    velocitychange="0,0"
+    startdelaymin="0"
+    startdelaymax="0"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0"
+    velocitychangewater="0,0"
+    collisionradius="1"
+    usecollision="False"
+    deleteoncollision="False"
+    friction="0.5"
+    restitution="0.5"
+    blendstate="AlphaBlend"
+    loopanim="True"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <animatedsprite
+      texture="Content/Particles/Smoke.png"
+      sourcerect="0,0,4096,4096"
+      columns="8"
+      rows="8"
+      origin="0.5,0.5" />
+  </AlphaWormWaterblood>
+  <AlphaWormWaterblood_2
+    startsizemin="0.1,0.1"
+    startsizemax="0.3,0.3"
+    sizechangemin="0.1,0.1"
+    sizechangemax="0.2,0.2"
+    startrotationmin="0"
+    startrotationmax="360"
+    startcolor="20,0,0,255"
+    endcolor="0,0,0,255"
+    animduration="5"
+    colorchange="0.0, 0.0, 0.0, -0.2"
+    growtime="0.1"
+    lifetime="5"
+    drawtarget="Water"
+    velocitychange="0,0"
+    startdelaymin="0"
+    startdelaymax="0"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0"
+    velocitychangewater="0,0"
+    collisionradius="1"
+    usecollision="False"
+    deleteoncollision="False"
+    friction="0.5"
+    restitution="0.5"
+    blendstate="AlphaBlend"
+    loopanim="True"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <animatedsprite
+      texture="Content/Particles/Smoke.png"
+      sourcerect="0,0,4096,4096"
+      columns="8"
+      rows="8"
+      origin="0.5,0.5" />
+  </AlphaWormWaterblood_2>
+
+  <AlphaWormGib
+    lifetime="5"
+    angularvelocitymin="-500"
+    angularvelocitymax="500"
+    startrotationmin="0"
+    startrotationmax="360"
+    rotatetodirection="True"
+    drag="0"
+    waterdrag="0.3"
+    velocitychange="0,-8"
+    velocitychangewater="0,-1"
+    collisionradius="10"
+    usecollision="True"
+    deleteoncollision="False"
+    friction="0.5"
+    restitution="0.1"
+    startsizemin="0.3,0.3"
+    startsizemax="0.6,0.6"
+    sizechangemin="-0.1,-0.1"
+    sizechangemax="-0.1,-0.1"
+    growtime="0"
+    startcolor="50,150,255,255"
+    endcolor="200,175,255,0"
+    drawtarget="Both"
+    blendstate="AlphaBlend"
+    animduration="1"
+    loopanim="True"
+    startdelaymin="0"
+    startdelaymax="0"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="0,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="32,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="64,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="96,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="128,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="160,64,48,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="208,64,48,32" />
+  </AlphaWormGib>
+  <AlphaWormHeavyGib
+    lifetime="1"
+    angularvelocitymin="-500"
+    angularvelocitymax="500"
+    startrotationmin="0"
+    startrotationmax="360"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0.3"
+    velocitychange="0,-8"
+    velocitychangewater="0,-1"
+    collisionradius="10"
+    usecollision="True"
+    deleteoncollision="True"
+    friction="0.5"
+    restitution="0.5"
+    startsizemin="0.8,0.8"
+    startsizemax="1,1"
+    sizechangemin="-0.5,-0.5"
+    sizechangemax="-0.5,-0.5"
+    growtime="0"
+    startcolor="50,150,255,255"
+    endcolor="200,175,255,0"
+    drawtarget="Both"
+    blendstate="AlphaBlend"
+    animduration="1"
+    loopanim="True"
+    startdelaymin="0"
+    startdelaymax="0"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="50,150,255,255"
+    usemiddlecolor="true"
+    priority="0">
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="0,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="32,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="64,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="96,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="128,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="160,64,48,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="208,64,48,32" />
+    <ParticleEmitter
+      particle="AlphaWormBloodtrail"
+      particlespersecond="5"
+      position="0,0"
+      anglemin="0"
+      anglemax="360"
+      velocitymin="10"
+      velocitymax="20" />
+  </AlphaWormHeavyGib>
+  <AlphaWormBloodtrail
+    lifetime="0.5"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    startrotationmin="0"
+    startrotationmax="360"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0.8"
+    velocitychange="0,0"
+    collisionradius="30"
+    usecollision="False"
+    deleteoncollision="False"
+    friction="0.01"
+    restitution="0.2"
+    startsizemin="0.6,0.6"
+    startsizemax="1,1"
+    sizechangemin="0.2,0.2"
+    sizechangemax="0.5,0.5"
+    growtime="0.05"
+    startcolor="50,150,255,255"
+    endcolor="25,75,255,0"
+    drawtarget="Both"
+    blendstate="AlphaBlend"
+    animduration="1"
+    loopanim="True"
+    startdelaymin="0"
+    startdelaymax="0"
+    velocitychangewater="0,0"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="256,128,128,128" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="256,254,128,128" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="384,128,128,128" />
+  </AlphaWormBloodtrail>
+    <yellowheavygib
+    lifetime="1"
+    angularvelocitymin="-500"
+    angularvelocitymax="500"
+    startrotationmin="0"
+    startrotationmax="360"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0.3"
+    velocitychange="0,-8"
+    velocitychangewater="0,-1"
+    collisionradius="10"
+    usecollision="True"
+    deleteoncollision="True"
+    friction="0.5"
+    restitution="0.5"
+    startsizemin="0.8,0.8"
+    startsizemax="1,1"
+    sizechangemin="-0.5,-0.5"
+    sizechangemax="-0.5,-0.5"
+    growtime="0"
+    startcolor="135,135,0,255"
+    endcolor="50,0,0,0"
+    drawtarget="Both"
+    blendstate="AlphaBlend"
+    animduration="1"
+    loopanim="True"
+    startdelaymin="0"
+    startdelaymax="0"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="0,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="32,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="64,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="96,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="128,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="160,64,48,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="208,64,48,32" />
+    <ParticleEmitter
+      particle="yellowbloodtrail"
+      particlespersecond="10"
+      position="0,0"
+      anglemin="0"
+      anglemax="360"
+      velocitymin="10"
+      velocitymax="20" 
+      DrawOrder="Foreground" />
+  </yellowheavygib>
+  <yellowbloodtrail
+    lifetime="0.5"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    startrotationmin="0"
+    startrotationmax="360"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0.8"
+    velocitychange="0,0"
+    collisionradius="30"
+    usecollision="False"
+    deleteoncollision="False"
+    friction="0.01"
+    restitution="0.2"
+    startsizemin="0.6,0.6"
+    startsizemax="1,1"
+    sizechangemin="0.2,0.2"
+    sizechangemax="0.5,0.5"
+    growtime="0.05"
+    startcolor="125,125,0,255"
+    endcolor="125,125,0,0"
+    drawtarget="Both"
+    blendstate="AlphaBlend"
+    animduration="1"
+    loopanim="True"
+    startdelaymin="0"
+    startdelaymax="0"
+    velocitychangewater="0,0"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="256,128,128,128" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="256,254,128,128" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="384,128,128,128" />
+  </yellowbloodtrail>
+      <btcblueheavygib
+    lifetime="1"
+    angularvelocitymin="-500"
+    angularvelocitymax="500"
+    startrotationmin="0"
+    startrotationmax="360"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0.3"
+    velocitychange="0,-8"
+    velocitychangewater="0,-1"
+    collisionradius="10"
+    usecollision="True"
+    deleteoncollision="True"
+    friction="0.5"
+    restitution="0.5"
+    startsizemin="0.8,0.8"
+    startsizemax="1,1"
+    sizechangemin="-0.5,-0.5"
+    sizechangemax="-0.5,-0.5"
+    growtime="0"
+    startcolor="90,208,255,255"
+    endcolor="40,158,205,0"
+    drawtarget="Both"
+    blendstate="AlphaBlend"
+    animduration="1"
+    loopanim="True"
+    startdelaymin="0"
+    startdelaymax="0"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="0,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="32,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="64,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="96,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="128,64,32,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="160,64,48,32" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="208,64,48,32" />
+    <ParticleEmitter
+      particle="btcbluebloodtrail"
+      particlespersecond="10"
+      position="0,0"
+      anglemin="0"
+      anglemax="360"
+      velocitymin="10"
+      velocitymax="20" 
+      DrawOrder="Foreground" />
+  </btcblueheavygib>
+  <btcbluebloodtrail
+    lifetime="0.5"
+    angularvelocitymin="0"
+    angularvelocitymax="0"
+    startrotationmin="0"
+    startrotationmax="360"
+    rotatetodirection="False"
+    drag="0"
+    waterdrag="0.8"
+    velocitychange="0,0"
+    collisionradius="30"
+    usecollision="False"
+    deleteoncollision="False"
+    friction="0.01"
+    restitution="0.2"
+    startsizemin="0.6,0.6"
+    startsizemax="1,1"
+    sizechangemin="0.2,0.2"
+    sizechangemax="0.5,0.5"
+    growtime="0.05"
+    startcolor="40,158,205,255"
+    endcolor="40,158,205,0"
+    drawtarget="Both"
+    blendstate="AlphaBlend"
+    animduration="1"
+    loopanim="True"
+    startdelaymin="0"
+    startdelaymax="0"
+    velocitychangewater="0,0"
+    drawontop="False"
+    lifetimemin="0"
+    middlecolor="255,255,255,255"
+    usemiddlecolor="False"
+    priority="0">
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="256,128,128,128" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="256,254,128,128" />
+    <sprite
+      texture="Content/Particles/ParticleAtlas.png"
+      sourcerect="384,128,128,128" />
+  </btcbluebloodtrail>
+</Particles>

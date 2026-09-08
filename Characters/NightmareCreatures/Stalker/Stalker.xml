@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character SpeciesName="Stalker" SpeciesTranslationOverride="" DisplayName="" Group="anomaly" Humanoid="True" HasInfo="False" CanInteract="True" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="True" ShowHealthBar="True" UseBossHealthBar="True" Noise="750" Visibility="1" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="0.1" UsePathFinding="True" PathFinderPriority="0.6999999" HideInSonar="True" HideInThermalGoggles="True" SonarDisruption="1" DistantSonarRange="0" DisableDistance="10000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <health Vitality="100" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="10" BurnReduction="20" ConstantHealthRegeneration="1" HealthRegenerationWhenEating="100" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False" Immunities="">
+    <MedUISilhouette texture="Content/UI/Health/MedUI_Silhouette.png" columns="8" rows="2" sourcerect="0,0,1008,748" />
+    <MedUIExtra texture="Content/UI/Health/MedUIExtra.png" columns="4" rows="4" sourcerect="0,0,1024,1024" />
+    <Limb name="Head">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="1,0,126,374" highlightarea="41,0,45,54" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="1,515,126,374" />
+    </Limb>
+    <Limb name="Torso">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="631,0,126,374" highlightarea="29,56,70,134" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="631,515,126,374" />
+    </Limb>
+    <Limb name="LeftArm">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="379,0,126,374" highlightarea="1,69,27,140" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="379,515,126,374" />
+    </Limb>
+    <Limb name="RightArm">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="127,0,126,374" highlightarea="100,69,27,140" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="127,515,126,374" />
+    </Limb>
+    <Limb name="LeftLeg">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="505,0,126,374" highlightarea="3,180,57,194" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="505,515,126,374" />
+    </Limb>
+    <Limb name="RightLeg">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="253,0,126,374" highlightarea="68,180,57,194" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="253,515,126,374" />
+    </Limb>
+  </health>
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Teleglitch/Teleglitch1.ogg" State="Idle" Range="5000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Teleglitch/Teleglitch2.ogg" State="Idle" Range="5000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Teleglitch/Teleglitch3.ogg" State="Idle" Range="5000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Teleglitch/Teleglitch4.ogg" State="Idle" Range="5000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Teleglitch/Teleglitch5.ogg" State="Attack" Range="5000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Teleglitch/TeleglitchDie.ogg" State="Die" Range="5000" Volume="1" Tags="" />
+  <ai CombatStrength="100" Sight="3" Hearing="3" MaxPerceptionDistance="-1" AggressionHurt="100" AggressionGreed="5" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="0" MinFleeTime="0" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="False" RandomAttack="False" CanOpenDoors="True" UsePathFindingToGetInside="True" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="True" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target">
+    <target Tag="sonar" State="Attack" Priority="40" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="room" State="Attack" Priority="10" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="door" State="Attack" Priority="40" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="stronger" State="Aggressive" Priority="80" ReactDistance="5000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="500" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="human" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="junctionbox" State="Eat" Priority="100" ReactDistance="100" AttackDistance="10" Timer="5" IgnoreContained="True" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="100" SweepSpeed="1.0000001" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <inventory Slots="Any, Any, Any, RightHand, LeftHand" AccessibleWhenAlive="True" Commonness="1">
+    <item Identifier="idcard" />
+    <item slot="RightHand" Identifier="stalkerholdable" />
+    <item Identifier="diversremains" />
+  </inventory>
+  <StatusEffect type="Always" target="This" stackable="false" delay="0.1">
+    <Explosion range="500" empstrength="0.01" force="1" shockwave="false" flames="false" smoke="false" sparks="false" underwaterbubble="false" camerashake="5">
+      <Affliction identifier="radiationsickness" strength="0.2" />
+      <Affliction identifier="psychosis" strength="0.1" />
+    </Explosion>
+  </StatusEffect>
+  <StatusEffect type="Always" target="Character">
+    <Affliction identifier="concealed" amount="1" />
+  </StatusEffect>
+  <StatusEffect type="Always" target="This" delay="1" stackable="false">
+    <Explosion range="100.0" empstrength="0.01" camerashake="2" stun="0" force="5.0" flames="false" smoke="false" shockwave="false" sparks="true" underwaterbubble="false" />
+  </StatusEffect>
+  <StatusEffect type="Always" target="NearbyCharacters" tag="EMI" duration="0.1" stackable="false" range="1000" />
+  <StatusEffect type="Always" target="NearbyCharacters" range="500" onlyinside="true">
+    <Affliction identifier="stalkerhands" strength="2" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This">
+    <Explosion range="100" empstrength="10" force="350" shockwave="true" flames="false" smoke="true" sparks="true" underwaterbubble="true" camerashake="15">
+      <ParticleEmitter particle="ElectricShock" anglemin="0" anglemax="1" particleamount="100" velocitymin="1" velocitymax="5" />
+    </Explosion>
+    <RemoveCharacter />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This,NearbyItems" targettags="junctionbox" range="1000" onlyinside="true" setvalue="true" stackable="false" delay="5.0" extraload="1500" duration="2.0" checkconditionalalways="true" comparison="and">
+    <Conditional isdead="false" />
+  </StatusEffect>
+  <!-- big intermittent pulse, only if damaged -->
+  <StatusEffect type="OnActive" target="This" onlyinside="true" interval="30.0" >
+    <Conditional healthpercentage="lt 100" />
+    <Explosion range="1000" empstrength="0.2" showeffects="false" camerashake="0.1">
+    </Explosion>
+    <sound file="Content/Items/Alien/AlienCoil1.ogg" range="1000" selectionmode="random" />
+    <sound file="Content/Items/Alien/AlienCoil2.ogg" range="1000" selectionmode="random" />
+    <sound file="Content/Items/Alien/AlienCoil3.ogg" range="1000" selectionmode="random" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="this">
+    <Sound file="%ModDir:2518816103%/Characters/NightmareCreatures/Stalker/stalkerbreathe.ogg" loop="true" volume="5" range="5000" dontmuffle="true" />
+  </StatusEffect>
+</Character>

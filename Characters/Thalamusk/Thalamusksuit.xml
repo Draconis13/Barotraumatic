@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- HATS START -->
+  <!-- HATS END -->
+  <!-- UNIFORMS START -->
+  <Item name="Thalamusk A" identifier="Thalamusk_A" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft" nonplayerteaminteractable="False" hideinmenus="False">
+    <Deconstruct time="10" />
+    <InventoryIcon name="Icon" texture="%ModDir:2518816103%/Content/thalamusk_heads.png" sourcerect="2,134,112,112" origin="0.5,0.5" />
+    <Sprite name="Thalamusk" texture="%ModDir:2518816103%/Content/thalamusk_heads.png" sourcerect="2,134,112,112" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Head" texture="%ModDir:2518816103%/Content/thalamusk_heads.png" hidewearablesoftype="hair" limb="Head" scale="0.36" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" hidelimb="true" hideotherwearables="true" sourcerect="2,134,112,112" origin="0.5,0.5" />
+      <sprite name="Torso" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Hand" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Hand" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Lower Arm" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Lower Arm" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Upper Arm" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Upper Arm" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Waist" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Thigh" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Thigh" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Leg" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Leg" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Shoe" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Shoe" texture="%ModDir:2518816103%/Content/thalamusk_body_a.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+    </Wearable>
+  </Item>
+  <!-- UNIFORMS END -->
+</Items>

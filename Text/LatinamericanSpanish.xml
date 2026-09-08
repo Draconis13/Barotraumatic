@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotext language="Latinamerican Spanish" nowhitespace="false" translatedname="Español Latinoamericano">
+  <!-- Ítems -->
+  <entityname.low_lootcrate>Caja de suministros</entityname.low_lootcrate>
+  <entitydescription.low_lootcrate>¡Deconstrúyelo para obtener un objeto aleatorio!</entitydescription.low_lootcrate>
+  <entityname.ekutility_advancedheadset>Auriculares avanzados</entityname.ekutility_advancedheadset>
+  <entitydescription.ekutility_advancedheadset>Los auriculares perfectos. Equipados con supresión de ruido, emisores de alta frecuencia y suspensión de comodidad ajustable, estos auriculares están diseñados para su uso a bordo por las tripulaciones de submarinos utilizando la menor cantidad posible de energía de la batería.</entitydescription.ekutility_advancedheadset>
+  <entityname.ekutility_longrangeradio>Radio de largo alcance con mochila</entityname.ekutility_longrangeradio>
+  <entitydescription.ekutility_longrangeradio>Una mochila transmisora de radio ULF resistente al agua y de alta potencia con un faro, para uso por parte de los equipos de expedición de combate de la coalición, su diseño resistente de auriculares también proporciona cancelación de ruido.</entitydescription.ekutility_longrangeradio>
+  <entityname.ek_security_radio>Walkie Talkie</entityname.ek_security_radio>
+  <entitydescription.ek_security_radio>Un transceptor de radio de bajo perfil utilizado principalmente por los oficiales de seguridad de barcos y estaciones, esta configuración de fuerzas especiales de la coalición es excelente para equipos de buceo, ya que la frecuencia de radio minimiza las distorsiones de fuentes de origen natural al utilizar ULF en un paquete relativamente compacto.</entitydescription.ek_security_radio>
+  <!-- Misiones -->
+  <!--!!! ATENCIÓN !!!-->
+  <!-- "Text was not defined" significa que no había una etiqueta con texto. Usted necesita escribir su texto allí, o dejarlo comentado -->
+  <missionname.salvagekillcarrier>Recuperar un Naufragio</missionname.salvagekillcarrier>
+  <missiondescription.salvagekillcarrier>Hace aproximadamente dos meses, una pequeña nave de carga desapareció mientras transportaba xenomateriales desde [location1] hasta [location2]. Se presumía que la nave había sido tragada por el abismo, pero ahora su baliza de emergencia parece haber sido activada cerca de [location2]. Encuentra la nave y recupera la carga.</missiondescription.salvagekillcarrier>
+  <missionsonarlabel.salvagekillcarrier>Señal de Emergencia</missionsonarlabel.salvagekillcarrier>
+  <missionsuccess.salvagekillcarrier>Los investigadores de [location2] están ansiosos por conocer todos los detalles del encuentro, pero parecen vacilantes para responder cualquier pregunta sobre la nave. Sin embargo, te ofrecen 2000 créditos como "reembolso por tus problemas".</missionsuccess.salvagekillcarrier>
+  <missionfailure.salvagekillcarrier>Misión fallida.</missionfailure.salvagekillcarrier>
+  <missionheader0.salvagekillcarrier>Objetivo destruido</missionheader0.salvagekillcarrier>
+  <missionname.killmolochbt>Matar una Manada de Molochs</missionname.killmolochbt>
+  <missiondescription.killmolochbt>Una Moloch particularmente agresiva y sus crías han estado aterrorizando a las naves que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos para aquellos que maten a las criaturas.</missiondescription.killmolochbt>
+  <missionsonarlabel.killmolochbt>Moloch</missionsonarlabel.killmolochbt>
+  <missionsuccess.killmolochbt>Los Moloch han sido eliminados.</missionsuccess.killmolochbt>
+  <missionfailure.killmolochbt>Misión fallida.</missionfailure.killmolochbt>
+  <missionheader0.killmolochbt>Objetivos terminados</missionheader0.killmolochbt>
+  <missionname.killmolochblackbt>Matar una Manada de Molochs</missionname.killmolochblackbt>
+  <missiondescription.killmolochblackbt>Una Moloch particularmente agresiva y sus crías han estado aterrorizando a las naves que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos para aquellos que maten a las criaturas.</missiondescription.killmolochblackbt>
+  <missionsonarlabel.killmolochblackbt>Moloch</missionsonarlabel.killmolochblackbt>
+  <missionsuccess.killmolochblackbt>Los Moloch han sido eliminados.</missionsuccess.killmolochblackbt>
+  <missionfailure.killmolochblackbt>Misión fallida.</missionfailure.killmolochblackbt>
+  <missionheader0.killmolochblackbt>Objetivos terminados</missionheader0.killmolochblackbt>
+  <missionname.killhammerheadbt>Matar una Manada de Peces ariete</missionname.killhammerheadbt>
+  <missiondescription.killhammerheadbt>Un grupo de Peces ariete particularmente agresivos han estado aterrorizando a las embarcaciones que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos a aquellos que maten a las criaturas.</missiondescription.killhammerheadbt>
+  <missionsonarlabel.killhammerheadbt>Pez ariete</missionsonarlabel.killhammerheadbt>
+  <missionsuccess.killhammerheadbt>Los Peces ariete han sido eliminados.</missionsuccess.killhammerheadbt>
+  <missionfailure.killhammerheadbt>Misión fallida.</missionfailure.killhammerheadbt>
+  <missionheader0.killhammerheadbt>Objetivos terminados</missionheader0.killhammerheadbt>
+  <missionname.killhammerheadgoldbt>Eliminar un grupo de Peces ariete</missionname.killhammerheadgoldbt>
+  <missiondescription.killhammerheadgoldbt>Un grupo de Peces ariete particularmente agresivos han estado aterrorizando a las embarcaciones que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos a aquellos que maten a las criaturas.</missiondescription.killhammerheadgoldbt>
+  <missionsonarlabel.killhammerheadgoldbt>Pez ariete</missionsonarlabel.killhammerheadgoldbt>
+  <missionsuccess.killhammerheadgoldbt>Los Peces ariete han sido eliminados.</missionsuccess.killhammerheadgoldbt>
+  <missionfailure.killhammerheadgoldbt>Misión fallida.</missionfailure.killhammerheadgoldbt>
+  <missionheader0.killhammerheadgoldbt>Objetivos terminados</missionheader0.killhammerheadgoldbt>
+  <missionname.killmatriarchbt1>Eliminar a una Matriarca</missionname.killmatriarchbt1>
+  <missiondescription.killmatriarchbt1>Elimina a la Matriarca Pez ariete y a sus secuaces.</missiondescription.killmatriarchbt1>
+  <missionsonarlabel.killmatriarchbt1>Pez ariete</missionsonarlabel.killmatriarchbt1>
+  <missionsuccess.killmatriarchbt1>La Matriarca ha sido eliminada.</missionsuccess.killmatriarchbt1>
+  <missionfailure.killmatriarchbt1>Misión fallida.</missionfailure.killmatriarchbt1>
+  <missionheader0.killmatriarchbt1>Objetivos terminados</missionheader0.killmatriarchbt1>
+  <missionname.killmatriarchbt4>Eliminar un Reino de Matriarcas</missionname.killmatriarchbt4>
+  <missiondescription.killmatriarchbt4>Elimina a la Matriarca Pez ariete y a su reino de secuaces.</missiondescription.killmatriarchbt4>
+  <missionsonarlabel.killmatriarchbt4>Matriarca</missionsonarlabel.killmatriarchbt4>
+  <missionsuccess.killmatriarchbt4>El Reino de Matriarcas ha sido eliminado.</missionsuccess.killmatriarchbt4>
+  <missionfailure.killmatriarchbt4>Misión fallida.</missionfailure.killmatriarchbt4>
+  <missionheader0.killmatriarchbt4>Objetivo terminado</missionheader0.killmatriarchbt4>
+  <missionname.killcrawlerswarmbt1>Eliminar un Enjambre Mayor</missionname.killcrawlerswarmbt1>
+  <missiondescription.killcrawlerswarmbt1>Un gran enjambre de Reptadores ha estado aterrorizando a las embarcaciones que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos a cualquier tripulación que pueda neutralizarlos.</missiondescription.killcrawlerswarmbt1>
+  <missionsonarlabel.killcrawlerswarmbt1>Enjambre</missionsonarlabel.killcrawlerswarmbt1>
+  <missionsuccess.killcrawlerswarmbt1>El enjambre ha sido eliminado.</missionsuccess.killcrawlerswarmbt1>
+  <missionfailure.killcrawlerswarmbt1>Misión fallida.</missionfailure.killcrawlerswarmbt1>
+  <missionheader0.killcrawlerswarmbt1>Objetivo terminado</missionheader0.killcrawlerswarmbt1>
+  <missionname.killcrawlerswarmbt2>Eliminar un Enjambre Masivo</missionname.killcrawlerswarmbt2>
+  <missiondescription.killcrawlerswarmbt2>Se ha formado un enorme enjambre de Reptadores que está aterrorizando a las embarcaciones que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos a cualquier tripulación que logre neutralizarla.</missiondescription.killcrawlerswarmbt2>
+  <missionsonarlabel.killcrawlerswarmbt2>Enjambre</missionsonarlabel.killcrawlerswarmbt2>
+  <missionsuccess.killcrawlerswarmbt2>El enjambre ha sido eliminado.</missionsuccess.killcrawlerswarmbt2>
+  <missionfailure.killcrawlerswarmbt2>Misión fallida.</missionfailure.killcrawlerswarmbt2>
+  <missionheader0.killcrawlerswarmbt2>Objetivo eliminado</missionheader0.killcrawlerswarmbt2>
+  <missionname.killcrawlerhuskswarmbt>Terminar con un enorme enjambre</missionname.killcrawlerhuskswarmbt>
+  <missiondescription.killcrawlerhuskswarmbt>Se ha formado un enorme enjambre de Reptadores que está aterrorizando a las embarcaciones que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos a cualquier tripulación que logre neutralizarla.</missiondescription.killcrawlerhuskswarmbt>
+  <missionsonarlabel.killcrawlerhuskswarmbt>Enjambre</missionsonarlabel.killcrawlerhuskswarmbt>
+  <missionsuccess.killcrawlerhuskswarmbt>Misión exitosa.</missionsuccess.killcrawlerhuskswarmbt>
+  <missionfailure.killcrawlerhuskswarmbt>Misión fallida.</missionfailure.killcrawlerhuskswarmbt>
+  <missionheader0.killcrawlerhuskswarmbt>missionheader0.killcrawlerswarm2</missionheader0.killcrawlerhuskswarmbt>
+  <missionname.killspinelingswarm1>missionname.killspinelingswarm1</missionname.killspinelingswarm1>
+  <missiondescription.killspinelingswarm1>missiondescription.killspinelingswarm1</missiondescription.killspinelingswarm1>
+  <missionsonarlabel.killspinelingswarmbt1>Enjambre</missionsonarlabel.killspinelingswarmbt1>
+  <missionsuccess.killspinelingswarmbt1>Misión exitosa.</missionsuccess.killspinelingswarmbt1>
+  <missionfailure.killspinelingswarmbt1>Misión fallida.</missionfailure.killspinelingswarmbt1>
+  <missionheader0.killspinelingswarmbt1>Objetivo eliminado</missionheader0.killspinelingswarmbt1>
+  <missionname.killgiantspinelingbt1>Matar al Espinelante Gigante</missionname.killgiantspinelingbt1>
+  <missiondescription.killgiantspinelingbt1>missiondescription.killspinelingswarm1</missiondescription.killgiantspinelingbt1>
+  <missionsonarlabel.killgiantspinelingbt1>character.spineling</missionsonarlabel.killgiantspinelingbt1>
+  <missionsuccess.killgiantspinelingbt1>Misión exitosa.</missionsuccess.killgiantspinelingbt1>
+  <missionfailure.killgiantspinelingbt1>Misión fallida.</missionfailure.killgiantspinelingbt1>
+  <missionheader0.killgiantspinelingbt1>missionheader0.killgiantspineling1</missionheader0.killgiantspinelingbt1>
+  <missionname.killgiantspinelingbt2>Matar al Espinelante Gigante</missionname.killgiantspinelingbt2>
+  <missiondescription.killgiantspinelingbt2>missiondescription.killspinelingswarm1</missiondescription.killgiantspinelingbt2>
+  <missionsonarlabel.killgiantspinelingbt2>character.spineling</missionsonarlabel.killgiantspinelingbt2>
+  <missionsuccess.killgiantspinelingbt2>Misión exitosa.</missionsuccess.killgiantspinelingbt2>
+  <missionfailure.killgiantspinelingbt2>Misión fallida.</missionfailure.killgiantspinelingbt2>
+  <missionheader0.killgiantspinelingbt2>missionheader0.killgiantspineling1</missionheader0.killgiantspinelingbt2>
+  <missionname.killmudraptorsbt1>Matar a los Fangorraptores</missionname.killmudraptorsbt1>
+  <missiondescription.killmudraptorsbt1>Un enorme enjambre de Fangorraptores está aterrorizando a las embarcaciones que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos a cualquier tripulación que logre neutralizarla.</missiondescription.killmudraptorsbt1>
+  <missionsonarlabel.killmudraptorsbt1>character.mudraptor</missionsonarlabel.killmudraptorsbt1>
+  <missionsuccess.killmudraptorsbt1>Misión exitosa.</missionsuccess.killmudraptorsbt1>
+  <missionfailure.killmudraptorsbt1>Misión fallida.</missionfailure.killmudraptorsbt1>
+  <missionheader0.killmudraptorsbt1>missionheader0.killmudraptors1</missionheader0.killmudraptorsbt1>
+  <missionname.killmudraptor_veteranbt>Matar a los Fangorraptores</missionname.killmudraptor_veteranbt>
+  <missiondescription.killmudraptor_veteranbt>Un enjambre de Fangorraptores Veteranos está aterrorizando a las embarcaciones que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos a cualquier tripulación que logre neutralizarla.</missiondescription.killmudraptor_veteranbt>
+  <missionsonarlabel.killmudraptor_veteranbt>character.mudraptor</missionsonarlabel.killmudraptor_veteranbt>
+  <missionsuccess.killmudraptor_veteranbt>Misión exitosa.</missionsuccess.killmudraptor_veteranbt>
+  <missionfailure.killmudraptor_veteranbt>Misión fallida.</missionfailure.killmudraptor_veteranbt>
+  <missionheader0.killmudraptor_veteranbt>missionheader0.killmudraptors1</missionheader0.killmudraptor_veteranbt>
+  <missionname.killmudraptorsbt2>Matar a los Fangorraptores</missionname.killmudraptorsbt2>
+  <missiondescription.killmudraptorsbt2>Un enorme enjambre de Fangorraptores está aterrorizando a las embarcaciones que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos a cualquier tripulación que logre neutralizarla.</missiondescription.killmudraptorsbt2>
+  <missionsonarlabel.killmudraptorsbt2>character.mudraptor</missionsonarlabel.killmudraptorsbt2>
+  <missionsuccess.killmudraptorsbt2>Misión exitosa.</missionsuccess.killmudraptorsbt2>
+  <missionfailure.killmudraptorsbt2>Misión fallida.</missionfailure.killmudraptorsbt2>
+  <missionheader0.killmudraptorsbt2>missionheader0.killmudraptors1</missionheader0.killmudraptorsbt2>
+  <missionname.killthresherswarmbt1>Matar al Enjambre de Azotadores</missionname.killthresherswarmbt1>
+  <missiondescription.killthresherswarmbt1>Un enorme enjambre de Azotadores está aterrorizando a las embarcaciones que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos a cualquier tripulación que logre neutralizarla.</missiondescription.killthresherswarmbt1>
+  <missionsonarlabel.killthresherswarmbt1>Enjambre</missionsonarlabel.killthresherswarmbt1>
+  <missionsuccess.killthresherswarmbt1>Misión exitosa.</missionsuccess.killthresherswarmbt1>
+  <missionfailure.killthresherswarmbt1>Misión fallida.</missionfailure.killthresherswarmbt1>
+  <missionheader0.killthresherswarmbt1>missionheader0.killthresherswarm1</missionheader0.killthresherswarmbt1>
+  <missionname.killthresherswarmbt2>Eliminar enjambre de Azotadores</missionname.killthresherswarmbt2>
+  <missiondescription.killthresherswarmbt2>Un enorme enjambre de Azotadores ha estado aterrorizando a las embarcaciones que viajan entre [location1] y [location2]. Se ha prometido una recompensa de [reward] créditos a cualquier tripulación que pueda neutralizarlo.</missiondescription.killthresherswarmbt2>
+  <missionsonarlabel.killthresherswarmbt2>Enjambre</missionsonarlabel.killthresherswarmbt2>
+  <missionsuccess.killthresherswarmbt2>Misión exitosa.</missionsuccess.killthresherswarmbt2>
+  <missionfailure.killthresherswarmbt2>Misión fallida.</missionfailure.killthresherswarmbt2>
+  <missionheader0.killthresherswarmbt2>missionheader0.killthresherswarm1</missionheader0.killthresherswarmbt2>
+  <missionname.beaconbt1>Activar Baliza</missionname.beaconbt1>
+  <missiondescription.beaconbt1>La estación de balizas entre [location1] y [location2] está inactiva; ingresa y restablécela para que transmita una señal de sonar activa.</missiondescription.beaconbt1>
+  <!-- <missionsonarlabel.beaconbt1>Text was not defined</missionsonarlabel.beaconbt1>
+    <missionsuccess.beaconbt1>Text was not defined</missionsuccess.beaconbt1>
+    <missionfailure.beaconbt1>Mission failed.</missionfailure.beaconbt1>
+    <missionheader0.beaconbt1>Text was not defined</missionheader0.beaconbt1>
+    <missionmessage0.beaconbt1>Text was not defined</missionmessage0.beaconbt1> -->
+  <missionname.abandonedoutposthumansbt1>Recuperación del puesto de avanzada</missionname.abandonedoutposthumansbt1>
+  <!-- <missiondescription.abandonedoutposthumansbt1>Text was not defined</missiondescription.abandonedoutposthumansbt1>
+    <missionsonarlabel.abandonedoutposthumansbt1>Text was not defined</missionsonarlabel.abandonedoutposthumansbt1>
+    <missionsuccess.abandonedoutposthumansbt1>Text was not defined</missionsuccess.abandonedoutposthumansbt1>
+    <missionfailure.abandonedoutposthumansbt1>Mission failed.</missionfailure.abandonedoutposthumansbt1>
+    <missionheader0.abandonedoutposthumansbt1>Text was not defined</missionheader0.abandonedoutposthumansbt1>
+    <missionmessage0.abandonedoutposthumansbt1>Text was not defined</missionmessage0.abandonedoutposthumansbt1> -->
+  <missionname.abandonedoutposthumansbt2>Recuperación del puesto de avanzada</missionname.abandonedoutposthumansbt2>
+  <!-- <missiondescription.abandonedoutposthumansbt2>Text was not defined</missiondescription.abandonedoutposthumansbt2>
+    <missionsonarlabel.abandonedoutposthumansbt2>Text was not defined</missionsonarlabel.abandonedoutposthumansbt2>
+    <missionsuccess.abandonedoutposthumansbt2>Text was not defined</missionsuccess.abandonedoutposthumansbt2>
+    <missionfailure.abandonedoutposthumansbt2>Mission failed.</missionfailure.abandonedoutposthumansbt2>
+    <missionheader0.abandonedoutposthumansbt2>Text was not defined</missionheader0.abandonedoutposthumansbt2>
+    <missionmessage0.abandonedoutposthumansbt2>Text was not defined</missionmessage0.abandonedoutposthumansbt2> -->
+  <!-- File made by Enigma#0599 -->
+  <missionname.abandonedoutposthusks>Limpieza del puesto avanzado</missionname.abandonedoutposthusks>
+  <missiondescription.abandonedoutposthusks>Recientemente se perdió el contacto con [location1], y se sospecha que se ha apoderado la infección de la vaina. Destruye el reactor para purgar cualquier plaga de parásito de la vaina del puesto avanzado.</missiondescription.abandonedoutposthusks>
+  <missionsuccess.abandonedoutposthusks>La infección dentro del puesto avanzado ha sido erradicada con éxito.</missionsuccess.abandonedoutposthusks>
+  <missionfailure.abandonedoutposthusks>El puesto avanzado sigue infectado.</missionfailure.abandonedoutposthusks>
+  <missionheader0.abandonedoutposthusks>Nido destruido</missionheader0.abandonedoutposthusks>
+  <missionmessage0.abandonedoutposthusks>La infección dentro del puesto avanzado ha sido erradicada con éxito. Desacopla del puesto avanzado para completar la misión.</missionmessage0.abandonedoutposthusks>
+  <missionname.abandonedoutpostcultist>Limpieza del puesto avanzado</missionname.abandonedoutpostcultist>
+  <missiondescription.abandonedoutpostcultist>Recientemente se perdió el contacto con [location1], y se sospecha que se ha apoderado una banda de cultistas de la vaina. Destruye el reactor para purgar cualquier plaga de de parásito de la vaina del puesto avanzado.</missiondescription.abandonedoutpostcultist>
+  <missionsuccess.abandonedoutpostcultist>La infección dentro del puesto avanzado ha sido erradicada con éxito.</missionsuccess.abandonedoutpostcultist>
+  <missionfailure.abandonedoutpostcultist>El puesto avanzado sigue infectado.</missionfailure.abandonedoutpostcultist>
+  <missionheader0.abandonedoutpostcultist>Puesto avanzado despejado</missionheader0.abandonedoutpostcultist>
+  <missionmessage0.abandonedoutpostcultist>La infección dentro del puesto avanzado ha sido erradicada con éxito. Desacopla del puesto avanzado para completar la misión.</missionmessage0.abandonedoutpostcultist>
+  <missionname.abandonedoutpostclown>Asesinato del puesto avanzado de payasos</missionname.abandonedoutpostclown>
+  <missiondescription.abandonedoutpostclown>Recientemente se perdió el contacto con [location1], y se sospecha que se ha apoderado una banda de payasos insanos. Mata a cualquier psicópata en el puesto avanzado.</missiondescription.abandonedoutpostclown>
+  <missionsuccess.abandonedoutpostclown>Los payasos dentro del puesto avanzado han sido asesinados con éxito.</missionsuccess.abandonedoutpostclown>
+  <missionfailure.abandonedoutpostclown>El puesto sigue siendo un lugar de locura.</missionfailure.abandonedoutpostclown>
+  <missionheader0.abandonedoutpostclown>Puesto avanzado despejado</missionheader0.abandonedoutpostclown>
+  <missionmessage0.abandonedoutpostclown>Los payasos dentro del puesto avanzado han sido asesinados con éxito. Desacopla del puesto avanzado para completar la misión.</missionmessage0.abandonedoutpostclown>
+  <!-- Personajes -->
+  <character.fractaldestroyer>Destructor Fractal</character.fractaldestroyer>
+  <character.voidleviathan>Leviatán del Vacío</character.voidleviathan>
+  <character.Voidstalker>Cazador del Vacío</character.Voidstalker>
+  <character.Voidleech>Sanguijuela del Vacío</character.Voidleech>
+  <character.Xan_Scavenger>Carroñero Xan</character.Xan_Scavenger>
+  <character.Xanothresher>Xenoazotador</character.Xanothresher>
+  <character.Lionthresher>Barracuda</character.Lionthresher>
+  <character.Mudbouncer>Fangorrebotador</character.Mudbouncer>
+  <character.Charybdisre>Bebé Charybdis</character.Charybdisre>
+  <character.Bossmoloch>Moloch Hidrotermal</character.Bossmoloch>
+  <character.Immortal>character.Immortal</character.Immortal>
+  <character.Bruteflora>Bruto Infectado</character.Bruteflora>
+  <character.Observer>Dybbuk</character.Observer>
+  <character.Hydrathresher>Hydrazotador</character.Hydrathresher>
+  <character.Carrier>Transportador</character.Carrier>
+  <character.Carrierleviathan>Leviatán Transportador</character.Carrierleviathan>
+  <character.Huskhammerspawn>Cría de Martillo de la Vaina</character.Huskhammerspawn>
+  <character.Huskbroodmother>Madre de la Prole de la Vaina</character.Huskbroodmother>
+  <character.Helmetcrablet>Cangrejo de Casco</character.Helmetcrablet>
+  <character.Crawlercrablet>Cangrejo Rastreador</character.Crawlercrablet>
+  <character.Endwormre>Poliquetos Europanos</character.Endwormre>
+  <character.Crawlerhusk>Reptador de la Vaina</character.Crawlerhusk>
+  <character.Huskslasher>Desgarrador de la Vaina</character.Huskslasher>
+  <character.Juggernaut>Juggernaut</character.Juggernaut>
+  <character.Paralyser>Paralizador</character.Paralyser>
+  <character.Huskinfector>Infectador de la Vaina</character.Huskinfector>
+  <character.Huskbroodemperor>Emperador de la Prole de la Vaina</character.Huskbroodemperor>
+  <character.Cnidae>Cnidae</character.Cnidae>
+  <character.Bomber>Bombardero de la Vaina</character.Bomber>
+  <character.Teleglitch>Anomalía Eléctrica</character.Teleglitch>
+  <character.Thalamid>Thalamid</character.Thalamid>
+  <character.Ravager>Devastador</character.Ravager>
+  <character.AlphaEndworm>Gusano Final Alpha</character.AlphaEndworm>
+  <character.AlphaCharybdis>Charybdis Alpha</character.AlphaCharybdis>
+  <character.wastecrawler>Reptador de los Desperdicios</character.wastecrawler>
+  <character.wastetigerthresher>Azotador Tigre de los Desperdicios</character.wastetigerthresher>
+  <character.wastebonethresher>Azotador de Huesos de los Desperdicios</character.wastebonethresher>
+  <character.wastemantis>Mantis de los Desperdicios</character.wastemantis>
+  <character.Endwhale>Ballena del Fin</character.Endwhale>
+  <character.Rockworm>Gusano de Roca</character.Rockworm>
+  <character.Deadnought>Acorazado</character.Deadnought>
+  <character.Mine>Mina</character.Mine>
+  <character.Fractalwalker>Caminante Fractal</character.Fractalwalker>
+  <character.Geosphere>Geosfera</character.Geosphere>
+  <character.Shadowleech>Sanguijuela de las Sombras</character.Shadowleech>
+  <character.Thermaleel>Anguila Termal</character.Thermaleel>
+  <character.Stonewanderer>Viajero de Piedra</character.Stonewanderer>
+  <character.Hotdog>Perro Caliente</character.Hotdog>
+  <character.Minoga>Minoga</character.Minoga>
+  <character.Archimorur>Archimorur</character.Archimorur>
+  <character.Husker>Anguila</character.Husker>
+  <character.Endwormcoral>El Glaciar</character.Endwormcoral>
+  <character.Endwormnew>Gusano de Concha Gigante</character.Endwormnew>
+  <character.Abysswatcher>Vigilante del Abismo</character.Abysswatcher>
+  <character.Charybdissavage>Laúd Salvaje</character.Charybdissavage>
+  <character.Thalamuscarrier>Transportador de Thalamus</character.Thalamuscarrier>
+  <character.Icedleatherback>Laúd Helado</character.Icedleatherback>
+  <character.Icecrab>Cangrejo de Hielo</character.Icecrab>
+  <character.Brainmoss1>Musgo Cerebral</character.Brainmoss1>
+  <character.Brainmoss2>Musgo Cerebral Radioactivo</character.Brainmoss2>
+  <character.Brainmoss3>Musgo Cerebral</character.Brainmoss3>
+  <character.Turretcarrier>Transportador de Torretas</character.Turretcarrier>
+  <character.Paralyticshark>Tiburón Paralizador</character.Paralyticshark>
+  <character.Epicentrum>Epicentro</character.Epicentrum>
+  <character.Shadowwhale>Ballena de las Sombras</character.Shadowwhale>
+  <character.Magmarlarva>Larva de Magma</character.Magmarlarva>
+  <character.Magmaworm>Gusano de Magma</character.Magmaworm>
+  <character.Abyssalhammerhead>Pez ariete Abismal</character.Abyssalhammerhead>
+  <character.Mantisbig>Mantis Grande</character.Mantisbig>
+  <character.Abyssalmantis>Mantis Abismal</character.Abyssalmantis>
+  <character.Abyssalthresher>Azotador Abismal</character.Abyssalthresher>
+  <character.Deepseaclown>El Payaso del Mar Profundo</character.Deepseaclown>
+  <character.Mothercrawler>Madre Reptadora</character.Mothercrawler>
+  <character.Europa>Reflejo de Europa</character.Europa>
+  <character.Redfish>Pez Rojo</character.Redfish>
+  <character.Pirafish>Pez Pira</character.Pirafish>
+  <character.Clownbox>Caja de Metal</character.Clownbox>
+  <character.Thrasher>Desgarrador</character.Thrasher>
+  <character.Irma>Irma</character.Irma>
+  <character.CharybdisRex>Laúd Madurado</character.CharybdisRex>
+  <character.CharybdisUgly>Laúd de Coral</character.CharybdisUgly>
+  <character.Icewhale>Ballena de Hielo</character.Icewhale>
+  <character.Irmahusk>Esqueleto de Irma</character.Irmahusk>
+  <character.TigerSharkThresher>Barracuda</character.TigerSharkThresher>
+  <character.Thrasherhusk>Esqueleto de Desgarrador</character.Thrasherhusk>
+  <character.Punkfish>Pez Punk</character.Punkfish>
+  <character.Punkfishhusk>Esqueleto de Pez Punk</character.Punkfishhusk>
+  <character.Impfish>Pez Diablo</character.Impfish>
+  <character.Glowfish>Pez Brillante</character.Glowfish>
+  <character.Glowfishhusk>Esqueleto de Pez Brillante</character.Glowfishhusk>
+  <character.Devilfish>Pez Diablo</character.Devilfish>
+  <character.Toothfish>Pez Diente</character.Toothfish>
+  <character.Skeletonfish>Pez Esqueleto</character.Skeletonfish>
+  <character.Goofyfish>Pez Tonto</character.Goofyfish>
+  <character.Hullfish>Pez Casco</character.Hullfish>
+  <character.Voidfish>Pez del Vacío</character.Voidfish>
+  <character.Hullfishhusk>Pez espinoso de la Vaina</character.Hullfishhusk>
+  <character.Whitefish>Pez blanco</character.Whitefish>
+  <character.Babymoloch>Bebé Moloch</character.Babymoloch>
+  <character.FractalguardianRe>Maneba</character.FractalguardianRe>
+  <character.Fractalguardianre2>Ronteal</character.Fractalguardianre2>
+  <character.GiantTrapper>Araña trampa gigante</character.GiantTrapper>
+  <character.Fractalguardianre3>Cosechador</character.Fractalguardianre3>
+  <character.Undying>Paseante fractal</character.Undying>
+  <character.Fractalpenance>Guerrero penitente</character.Fractalpenance>
+  <character.Latcher_hatchling>Cría de Latcher</character.Latcher_hatchling>
+  <character.Hammerhead_hunter>Cazador de Pez ariete</character.Hammerhead_hunter>
+  <character.Hammerhead_diger>Moping Jack</character.Hammerhead_diger>
+  <character.Sermon>Jacov Subra</character.Sermon>
+  <character.Watcher_laser>¿Observador?</character.Watcher_laser>
+  <character.Molochthermal>Moloch de lava</character.Molochthermal>
+  <character.Molochold>Matriarca Moloch</character.Molochold>
+  <character.Europanboxcutter>Cortador de cajas europano</character.Europanboxcutter>
+  <character.Shroomjelly>Medusa de hongos</character.Shroomjelly>
+  <character.Endurance>Centinela fractal</character.Endurance>
+  <character.Deepseaclownnew>Payasito de las profundidades marinas</character.Deepseaclownnew>
+  <character.Suffering>El sufrimiento</character.Suffering>
+  <character.Moloch_nuclear>Moloch herido</character.Moloch_nuclear>
+  <character.Hammerhead_swordfish>Pez espada de Pez ariete</character.Hammerhead_swordfish>
+  <character.Wasteskeleton>Esqueleto ensangrentado</character.Wasteskeleton>
+  <character.Hammerhead_swordfishexplode>Pez espada de Pez ariete</character.Hammerhead_swordfishexplode>
+  <character.Clownsawcrazy>Triturador de carne</character.Clownsawcrazy>
+  <character.Clownwanderer>Payaso perdido</character.Clownwanderer>
+  <character.Clownhomie>Payaso perdido</character.Clownhomie>
+  <character.Clownbomber>Payaso perdido</character.Clownbomber>
+  <character.joviandiver>Pirata</character.joviandiver>
+  <character.jovianbomber>Pirata</character.jovianbomber>
+  <!-- Aflicciones -->
+  <AfflictionDescription.BTradio.100>Rango de radio pobre (menos de 100 m).</AfflictionDescription.BTradio.100>
+  <AfflictionDescription.BTradio.200>Rango de radio civil (+100 m).</AfflictionDescription.BTradio.200>
+  <AfflictionDescription.BTradio.300>Rango de radio FM (+200 m).</AfflictionDescription.BTradio.300>
+  <AfflictionDescription.BTradio.400>Rango de radio militar (+300 m).</AfflictionDescription.BTradio.400>
+  <AfflictionDescription.BTradio.500>Rango de radio de transmisión (máximo 500 m).</AfflictionDescription.BTradio.500>
+</infotext>

@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CaverSwimFast UseSineMovement="True" Flip="False" FlipCooldown="1" FlipDelay="0.5" Mirror="True" MirrorLerp="False" WaveAmplitude="32.41325" WaveLength="139.85257" RotateTowardsMovement="True" TailTorque="20" TailTorqueMultiplier="1" FootAngles="" UpdateAnimationWhenNotMoving="False" TailAngle="111" SteerTorque="25" LegTorque="25" AnimationType="SwimFast" MovementSpeed="3.5489051" CycleSpeed="0.7000001" HeadAngle="90" TorsoAngle="90" HeadTorque="50" TorsoTorque="150" FootTorque="25" ArmIKStrength="1" HandIKStrength="1" />

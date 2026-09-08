@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Disposable Battery" description="" identifier="batterycelldisposable" category="Equipment,Electrical" maxstacksize="8" health="50" tags="smallitem,mobilebattery,loadable" scale="0.3" cargocontaineridentifier="metalcrate" fireproof="false" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="batterycellrecharger" maxcondition="50"/>
+    <PreferredContainer primary="stunbaton,underwaterscooter,handheldsonar,sonarbeacon,flashlight,portablepump,poweredcontainer" spawnprobability="0.1" mincondition="25"/>
+    <PreferredContainer secondary="divingcab" amount="3" spawnprobability="0.01" notcampaign="true" />
+    <PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab,outpostengcab" minamount="1" maxamount="2" spawnprobability="0.005"/>
+    <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab" minamount="1" maxamount="2" spawnprobability="0.01"/>
+    <PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.08"  mincondition="15" />
+    <PreferredContainer secondary="drillsaw" spawnprobability="0.5" amount="1" />
+    <PreferredContainer secondary="trimmer" spawnprobability="1" amount="1" />
+	<PreferredContainer secondary="sawcutter" spawnprobability="0.5" amount="1" />
+	<PreferredContainer secondary="bigshredder" spawnprobability="0.7" amount="1" />
+    <PreferredContainer secondary="clownsawcutter" spawnprobability="1.0" amount="1" />
+    <Deconstruct time="2" />
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="40" fabricationlimitmin="3" fabricationlimitmax="15" quality="0" />
+    <Sprite texture="%ModDir%/Items/LeadAcidBattery.png" sourcerect="0,0,59,35" depth="0.55" />
+    <Body width="54" height="30" density="30" />
+    <Throwable characterusable="true" canBeCombined="false" slots="Any,RightHand,LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="this">
+        <Sound file="Content/Items/Weapons/Emp.ogg" range="75" volume="0.3" dontmuffle="true" />
+        <Explosion range="70.0" structuredamage="2" ballastfloradamage="90" empstrength="0.05" itemdamage="0" force="15.0" severlimbsprobability="0.0" flames="true" >
+          <Affliction identifier="acidburn" strength="15" /> 
+		  <Affliction identifier="electricshock" strength="15" />
+          <Affliction identifier="burn" strength="5" />
+		  <Affliction identifier="explosiondamage" strength="2.5" probability="0.6" DivideByLimbCount="False" />
+		  <Affliction identifier="burning" strength="8" probability="0.2" DivideByLimbCount="False" />
+          <Sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="150" volume="0.5" selectionmode="Random" />
+          <Sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="150" volume="0.5" selectionmode="Random" />
+          <Sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="150" volume="0.5" selectionmode="Random" />
+          <Sound file="Content/Items/Weapons/ExplosionDebris4.ogg" range="150" volume="0.5" selectionmode="Random" />
+          <Sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="150" volume="0.5" selectionmode="Random" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <!-- <StatusEffect type="Always" target="this" condition="-0.005" disabledeltatime="true" /> -->
+      <StatusEffect type="Always" target="this" condition="-0.02">
+        <Conditional condition="lteq 10" />
+        <ParticleEmitter particle="damagebubbles" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemax="360" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+        <ParticleEmitter particle="MistSmoke" particlespersecond="35" anglemin="0" anglemax="360" distancemin="0" distancemax="30" velocitymin="0" velocitymax="20" mincondition="0.0" maxcondition="50.0" />
+      </StatusEffect>
+      <!-- Use projectile component -->
+      <StatusEffect type="OnSecondaryUse" target="This" delay="0.01">
+        <Use />
+      </StatusEffect>
+    </Throwable>
+    <Projectile characterusable="false" launchimpulse="0" impulsespread="0.0" hitscan="false" removeonhit="false">
+      <StatusEffect type="OnImpact" target="This" Condition="-16" disabledeltatime="true" />
+      <Attack targetimpulse="15" severlimbsprobability="0.01" itemdamage="2" structuredamage="1" structuresoundtype="StructureSlash">
+        <Affliction identifier="blunttrauma" strength="9" />
+      </Attack>
+    </Projectile>
+	    <Quality>
+	  <QualityStat stattype="Condition" value="0.20"/>
+      <QualityStat stattype="ExplosionRadius" value="0.334"/>
+      <QualityStat stattype="ExplosionDamage" value="0.334"/>
+    </Quality>
+  </Item>
+</Items>

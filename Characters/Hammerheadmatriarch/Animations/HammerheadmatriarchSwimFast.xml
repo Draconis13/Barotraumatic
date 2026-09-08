@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HammerheadmatriarchSwimFast UseSineMovement="False" Flip="False" FlipCooldown="1" FlipDelay="0.5" Mirror="False" MirrorLerp="True" WaveAmplitude="100" WaveLength="149.115" RotateTowardsMovement="True" TailTorque="100" TailTorqueMultiplier="1" FootAngles="" UpdateAnimationWhenNotMoving="False" TailAngle="90" SteerTorque="65" LegTorque="25" MovementSpeed="8" CycleSpeed="1" HeadAngle="90" TorsoAngle="90" HeadTorque="280" TorsoTorque="200" FootTorque="100" AnimationType="SwimFast" ArmIKStrength="1" HandIKStrength="1" />

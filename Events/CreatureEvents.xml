@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Randomevents>
+  <EventPrefabs>
+    
+    <ScriptedEvent identifier="teleportteleglitch">
+      <WaitAction time="0.1" />
+      <RNGAction chance="0.2">
+        <Success>
+          <StatusEffectAction targettag="teleportglitch">
+            <StatusEffect target="this" oneshot="true" duration="0.3" >
+              <ParticleEmitter particle="shockwaveinverted" particlespersecond="30" anglemin="0" anglemax="360" scalemin="0.3" scalemax="1" colormultiplier="100,255,150,255" lifetimemultiplier="1"/>
+              <Sound file="Content/Sounds/Damage/Ricochet2.ogg" range="800" frequencymultiplier="0.5" volume="1" />
+            </StatusEffect>
+          </StatusEffectAction>
+          <WaitAction time="0.3" />
+          <TeleportAction targettag="teleportglitch" position="MainSub" SpawnType="Human" />
+          <StatusEffectAction targettag="teleportglitch">
+            <StatusEffect target="this" oneshot="true"  >
+              <Explosion range="300" empstrength="0.1" force="8" shockwave="false" flames="false" smoke="false" sparks="true" underwaterbubble="false" camerashake="6">
+                <Affliction identifier="stun" strength="1" />
+              </Explosion>
+            </StatusEffect>
+            <StatusEffect target="this" oneshot="true" duration="0.3" >
+              <ParticleEmitter particle="ElectricAnomaly" anglemin="0" anglemax="360" velocitymin="50" velocitymax="100" distancemin="10" distancemax="30" particlespersecond="10" animduration="1" />
+              <ParticleEmitter particle="shockwave" particlespersecond="30" anglemin="0" anglemax="360" scalemin="15" scalemax="20" colormultiplier="100,255,150,255" lifetimemultiplier="1"/>
+              <Sound file="Content/Items/Weapons/GRAVITYSHELLS_boom.ogg" range="800" frequencymultiplier="2" volume="2" />
+            </StatusEffect>
+          </StatusEffectAction>
+          <ClearTagAction tag="teleportglitch" />
+          <WaitAction time="2" />
+        </Success>
+      </RNGAction>
+    </ScriptedEvent>
+    
+  </EventPrefabs>
+  
+</Randomevents>

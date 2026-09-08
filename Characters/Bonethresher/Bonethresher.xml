@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Character SpeciesName="Bonethresher" SpeciesTranslationOverride="" DisplayName="" Group="thresher" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="True" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="1000" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="20" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+    <ragdolls folder="default" />
+    <animations folder="default" />
+    <health Vitality="300" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="2" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="2" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False" />
+    <ai targetinnerwalls="True" CombatStrength="500" Sight="0" Hearing="3" AggressionHurt="100" AggressionGreed="100" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="False" PatrolFlooded="True" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target">
+      <target tag="decoy" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+      <target tag="provocative" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+      <target tag="weapon" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+      <target tag="nasonov" state="Attack" priority="100" ignoreinside="True" />
+      <target tag="stronger" state="Aggressive" priority="80" reactdistance="2000" attackdistance="0" timer="0" ignorecontained="False" />
+      <target tag="equal" state="Aggressive" priority="80" reactdistance="2000" attackdistance="0" timer="0" ignorecontained="False" />
+      <target tag="leucocyte" state="Avoid" priority="50" reactdistance="1000" attackdistance="0" timer="0" ignorecontained="False" />
+      <target tag="human" state="Aggressive" priority="50" reactdistance="1000" attackdistance="0" timer="0" ignorecontained="False" />
+      <target tag="wall" state="Attack" priority="50" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" />
+      <target tag="door" state="Attack" priority="50" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" />
+      <target tag="tool" state="Aggressive" priority="30" reactdistance="1000" attackdistance="0" timer="0" ignorecontained="False" ignoreifnotinsamesub="True" />
+      <target tag="room" state="Attack" priority="20" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" />
+      <target tag="sonar" state="Attack" priority="10" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" />
+      <target tag="weaker" state="Aggressive" priority="10" reactdistance="2000" attackdistance="0" timer="0" ignorecontained="False" />
+      <target tag="terminalcell" state="Idle" priority="1" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" />
+      <target tag="turret" state="Attack" priority="1" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" />
+      <target Tag="watcheroid" state="Protect" priority="1" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" />
+      <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="2000" cohesion="0.25" />
+    </ai>
+    <sound gender="None" File="Content/Characters/Bonethresher/TIGERTRESHERb_idle1.ogg" State="Idle" Range="4000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Bonethresher/TIGERTRESHERb_idle2.ogg" State="Idle" Range="4000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Bonethresher/TIGERTRESHERb_damage1.ogg" State="Damage" Range="4000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Bonethresher/TIGERTRESHERb_damage1.ogg" State="Damage" Range="4000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" State="Attack" Range="5000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" State="Attack" Range="5000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Bonethresher/TIGERTRESHERb_death1.ogg" State="Die" Range="4000" Volume="1" Tags="" />
+    <sound gender="None" File="Content/Characters/Bonethresher/TIGERTRESHERb_death2.ogg" State="Die" Range="4000" Volume="1" Tags="" />
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="alienblood" />
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="bonethresherskin" />
+      <Item amount="1" Identifier="bonethresherclaw" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="swimbladder" />
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="bonetail" />
+      <Item Identifier="bonethresherclaw" />
+    </Inventory>
+	    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="alienblood" />
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="bonetail" />
+      <Item Identifier="bonethresherclaw" />
+    </Inventory>
+	    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+      <Item Identifier="swimbladder" />
+      <Item Identifier="hydroxyapatite" />
+      <Item Identifier="bonethresherskin" />
+      <Item amount="1" Identifier="bonethresherclaw" />
+    </Inventory>
+    <bloodemitter Particle="blood" AngleMin="1" AngleMax="2" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <bloodemitter Particle="waterblood" AngleMin="1" AngleMax="2" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <gibemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="2" VelocityMin="200" VelocityMax="1500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="30" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1.2" VelocityMin="50" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="5" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <damageemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.25" ScaleMax="0.5" VelocityMin="50" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <StatusEffect type="OnEating" target="Character" stackable="false">
+      <Affliction identifier="growthvanilla" amount="0.5" />
+    </StatusEffect>
+  </Character>
+</Override>

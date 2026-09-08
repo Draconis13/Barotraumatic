@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StonewandererSwimFast UseSineMovement="False" Flip="True" FlipCooldown="0.5" FlipDelay="1" Mirror="True" MirrorLerp="True" WaveAmplitude="33.010815" WaveLength="15.024042" RotateTowardsMovement="False" TailTorque="50" TailTorqueMultiplier="1" FootAngles="" UpdateAnimationWhenNotMoving="False" TailAngle="3" SteerTorque="25" LegTorque="25" MovementSpeed="2.988312" CycleSpeed="1" HeadAngle="NaN" TorsoAngle="NaN" HeadTorque="25" TorsoTorque="25" FootTorque="25" AnimationType="SwimFast" ArmIKStrength="1" HandIKStrength="1" />

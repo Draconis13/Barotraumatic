@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PsiloturtleSwimSlow UseSineMovement="False" Flip="False" FlipCooldown="1" FlipDelay="0.2" Mirror="False" MirrorLerp="True" WaveAmplitude="115" WaveLength="65.17245" RotateTowardsMovement="False" TailTorque="0" TailTorqueMultiplier="1" FootAngles="" UpdateAnimationWhenNotMoving="True" TailAngle="117.00001" SteerTorque="25" LegTorque="25" AnimationType="SwimSlow" MovementSpeed="0.1" CycleSpeed="1" HeadAngle="89" TorsoAngle="0" HeadTorque="0" TorsoTorque="900" FootTorque="0" ArmIKStrength="1" HandIKStrength="1" />

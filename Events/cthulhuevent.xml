@@ -1,0 +1,50 @@
+<ScriptedEvent Identifier="Cthulhu_event">
+  <TagAction Criteria="crew" Tag="crew" IgnoreIncapacitatedCharacters="false" />
+
+  <Label Name="loop" />
+  <WaitAction Time="1" />
+
+  <CountTargetsAction targetTag="cthulhu" minamount="1">
+    <Failure>
+      <GoTo Name="eventend" />
+    </Failure>
+  </CountTargetsAction>
+
+  <CheckConditionalAction TargetTag="cthulhu" IsDead="true">
+    <Success>
+      <GoTo Name="eventend" />
+    </Success>
+  </CheckConditionalAction>
+  
+  <AfflictionAction TargetTag="cthulhu" Affliction="cthulhucounter" Strength="0.01" MultiplyByMaxVitality="true" />
+
+  <CheckAfflictionAction Identifier="cthulhucounter" TargetTag="cthulhu" MinStrength="18">
+    <Failure>
+      <GoTo Name="loop" />
+    </Failure>
+  </CheckAfflictionAction>
+
+  <TriggerAction Target1Tag="cthulhu" Target2Tag="crew" Radius="20000" DisableInCombat="false" DisableIfTargetIncapacitated="false" />
+  <AfflictionAction TargetTag="cthulhu" Affliction="cthulhucounter" Strength="-10" MultiplyByMaxVitality="true" />
+  <RNGAction Chance="0.5">
+    <Success>
+      <SpawnAction SpeciesName="Hallucination1" TargetTag="hallucination" SpawnPointTag="crew" />
+    </Success>
+    <Failure>
+      <SpawnAction SpeciesName="Hallucination2" TargetTag="hallucination" SpawnPointTag="crew" />
+    </Failure>
+  </RNGAction>
+  <GoTo Name="loop" />
+
+  <Label Name="eventend" />
+
+  <StatusEffectAction TargetTag="hallucination">
+    <StatusEffect target="This">
+      <RemoveCharacter />
+    </StatusEffect>
+  </StatusEffectAction>
+
+  <AfflictionAction TargetTag="crew" Affliction="cthulhusgaze" Strength="-10" MultiplyByMaxVitality="true" />
+  <AfflictionAction TargetTag="crew" Affliction="fakebleeding" Strength="-10" MultiplyByMaxVitality="true" />
+  <AfflictionAction TargetTag="crew" Affliction="bitewoundsfake" Strength="-10" MultiplyByMaxVitality="true" />
+</ScriptedEvent>

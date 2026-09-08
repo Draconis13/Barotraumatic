@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+  <Talent identifier="crookcapeinfluenceBTC" AbilityEffectsStackWithSameTalent="false">
+    <Icon texture="%ModDir%/Characters/Crook/crooktalenticon.png" sourcerect="0,0,128,128" />
+    <Description tag="talentdescription.crookcapeinfluenceBTC">
+      <Replace tag="[amount]" value="120" color="gui.green" />
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="crookcape" minimumpercentage="0.1" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue multiplyvalue="1.2" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+</Talents>

@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Saw Cutter" identifier="sawcutter" category="Equipment" Tags="smallitem,sawcutter,tool" cargocontaineridentifier="metalcrate" preferredcontainers="locker" description="Cuts through various materials using a circular blade. It works on batteries." Scale="0.3" impactsoundtag="impact_gunhit">
+   <!-- <Price storeidentifier="City" buyprice="65" />
+    <Price storeidentifier="Military" buyprice="65" />
+    <Price storeidentifier="Mine" buyprice="65" /> -->
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="aluminium" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+   <!-- <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>  -->
+    <Sprite texture="%ModDir:2518816103%/Items/Tools/tools.png" sourcerect="0,402,268,172" depth="0.55" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir:2518816103%/Items/Tools/tools.png" sourcerect="0,575,268,172" depth="0.55" maxcondition="40" fadein="true" />
+    <Body width="224" radius="45" density="40" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="50,0" handle1="-40,4" msg="ItemMsgPickUpSelect" />
+    <RepairTool structurefixamount="-0.5" range="60" barrelpos="15,10" combatpriority="25">
+      <RequiredItems identifiers="batterycell,fulguriumbatterycell" type="Contained" />
+      <StatusEffect type="OnUse" targettype="Contained" Condition="-5.2" />
+      <StatusEffect type="OnUse" targettype="UseTarget" targets="door,ductblock,aliendoor" Stuck="-20" Condition="-2.0">
+        <sound file="%ModDir:2518816103%/Items/Tools/chainsawMetal.ogg" range="500.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="structure">
+        <sound file="%ModDir:2518816103%/Items/Tools/chainsawMetal.ogg" range="500.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Limb" severlimbsprobability="0.012">
+        <Conditional EntityType="eq Limb" />
+        <Affliction identifier="bleeding" amount="12" />
+        <Affliction identifier="lacerations" amount="15" />
+        <Affliction identifier="internaldamage" amount="8.5" />
+        <Affliction identifier="stun" amount="0.15" probability="0.10" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" range="800" selectionmode="Random" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="800" />
+        <RequiredItems identifier="batterycell,fulguriumbatterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="UseTarget" targettags="damageableitem" Condition="-1.5" />
+      <ParticleEmitter particle="bubbles" particlespersecond="50" />
+      <ParticleEmitterHitStructure particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
+      <ParticleEmitterHitStructure particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
+      <ParticleEmitterHitItem identifiers="ore" particle="iceshards" particlespersecond="5" anglemin="-40" anglemax="40" velocitymin="10" velocitymax="300" scalemin="0.5" scalemax="1.0" />
+      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
+      <sound file="%ModDir:2518816103%/Items/Tools/SawLoop.ogg" type="OnUse" range="750" loop="true" />
+      <Fixable identifier="structure" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <StatusEffect type="OnFailure" targettype="Contained" Condition="-6.0" />
+      <LightComponent LightColor="0.8,0.7,1.0,0.5" Flicker="0.5">
+        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      </LightComponent>
+    </RepairTool>
+    <ItemContainer capacity="1" hideitems="true" itempos="20,-30" containedspritedepth="0.56" maxstacksize="1">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="1,70,107,31" />
+      <Containable identifiers="batterycell,fulguriumbatterycell" />
+    </ItemContainer>
+  </Item>
+    <Item name="Wrecker Buzzsaw" identifier="bigshredder" category="Equipment,Weapon" Tags="mediumitem,cuttingequipment,tool,mountableweapon" cargocontaineridentifier="metalcrate" description="A large electric buzzsaw capable of making ragged cuts in bulkheads and battery life. Expensive to produce decades ago, the remaining examples are lost in wrecks." Scale="0.475" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="divingcab" secondary="engcab,weaponholder" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.008" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.0065" />
+    <Price baseprice="555" soldeverywhere="false">
+      <Price storeidentifier="outpost" multiplier="1" sold="false" />
+      <Price storeidentifier="city" multiplier="0.9" sold="false" />
+      <Price storeidentifier="research" multiplier="1.4" sold="false" />
+      <Price storeidentifier="military" multiplier="1" sold="false" />
+      <Price storeidentifier="mine" multiplier="1.35" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/items/tools/meleeweapons.png" sourcerect="0,0,126,122" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/tools/meleeweapons.png" sourcerect="0,351,226,88" depth="0.55" origin="0.5,0.5" />
+	<DecorativeSprite texture="%ModDir%/items/tools/meleeweapons.png" sourcerect="0,439,226,88" offset="-1,-8" depth="0.53" origin="0.5,0.5"/>
+	<DecorativeSprite texture="%ModDir%/items/tools/meleeweapons.png" depth="0.54" offset="68,0" sourcerect="226,439,87,87" origin="0.5,0.5" rotationspeed="-1700">
+      <AnimationConditional IsActive="True" targetitemcomponent="RepairTool" />
+    </DecorativeSprite>
+    <Body width="114" radius="22" density="15" />
+	 <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Buzzsaw Worn" texture="%ModDir%/items/tools/meleeweapons.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="136,0,230,91" limb="Torso" scale="0.45" origin="0.5,1" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-40" holdangle="-15" aimpos="60,-20" aimangle="25" handle1="-98,20" handle2="17,13" blocksplayers="true" msg="ItemMsgPickUpSelect" />
+    <RepairTool structurefixamount="-0.85" range="26" barrelpos="55,0" combatpriority="5" repairmultiple="true" repairthroughwalls="false" maxoverlappingwalldist="0.0" repairthroughholes="true" levelwallfixamount="-10.0" targetforce="50">
+      <RequiredItems items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="mobilebattery" Condition="-1.85" />
+      <StatusEffect type="OnUse" targettype="UseTarget" targets="door,ductblock,aliendoor" Stuck="-25" Condition="-35.0">
+        <sound file="%ModDir%/items/tools/chainsawMetal.ogg" frequencymultiplier="0.8" range="500.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="structure">
+        <sound file="%ModDir%/items/tools/chainsawMetal.ogg" frequencymultiplier="0.8" range="500.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnSuccess" target="Limb" severlimbsprobability="0.06">
+        <Conditional EntityType="eq Limb" />
+		<Affliction identifier="lacerations" strength="26" />
+        <Affliction identifier="lacerations" strength="13" probability="0.4" />
+        <Affliction identifier="internaldamage" strength="15" />
+        <Affliction identifier="internaldamage" strength="12" probability="0.3" />
+        <Affliction identifier="bleeding" strength="18" />
+        <Affliction identifier="bleeding" strength="10" probability="0.2" />
+        <Affliction identifier="Stun" strength="1.3" />
+        <Affliction identifier="Stun" strength="1.70" probability="0.3" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" range="800" selectionmode="Random" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="800" />
+      </StatusEffect>
+      <ParticleEmitterHitStructure particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />
+      <ParticleEmitterHitStructure particle="GlowDot" particlespersecond="60" emitinterval="0.7" particleamount="10" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="10" velocitymax="50" />
+      <ParticleEmitterHitStructure particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="0" velocitymax="50" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="10" velocitymax="100" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="GlowDot" particlespersecond="60" emitinterval="0.7" particleamount="10" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="10" velocitymax="50" />
+	  <ParticleEmitterHitItem identifiers="ore" particle="iceshards" particlespersecond="5" anglemin="-40" anglemax="40" velocitymin="10" velocitymax="300" scalemin="0.5" scalemax="1.0" />
+      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="0" velocitymax="50" />
+      <sound file="Content/Items/Tools/PlasmaCutterLoop.ogg" type="OnUse" range="750.0" loop="true" frequencymultiplier="1.2" volume="0.75" />
+      <Fixable identifier="structure" />     
+    </RepairTool>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+	  <Containable items="mobilebattery" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="500" fadeouttime="3" />
+  </Item>
+  <Item name="HumanSaw" identifier="wreckerbigshredder" category="Hidden" Tags="mediumitem,cuttingequipment,tool,mountableweapon" cargocontaineridentifier="metalcrate" description="" Scale="0.475" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="weaponholder,armcab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/items/tools/meleeweapons.png" sourcerect="0,0,126,122" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/tools/meleeweapons.png" sourcerect="0,351,226,88" depth="0.55" origin="0.5,0.5" />
+	<DecorativeSprite texture="%ModDir%/items/tools/meleeweapons.png" sourcerect="0,439,226,88" offset="-1,-8" depth="0.53" origin="0.5,0.5"/>
+	<DecorativeSprite texture="%ModDir%/items/tools/meleeweapons.png" depth="0.54" offset="68,0" sourcerect="226,439,87,87" origin="0.5,0.5" rotationspeed="1500">
+      <AnimationConditional IsActive="True" targetitemcomponent="RepairTool" />
+    </DecorativeSprite>
+    <Body width="114" radius="22" density="15" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-40" holdangle="-15" aimpos="60,-20" aimangle="25" handle1="-98,20" handle2="17,13" blocksplayers="true" msg="ItemMsgPickUpSelect" >
+	      <StatusEffect type="OnNotContained" target="This" delay="0.1">
+        <SpawnItem identifiers="bigshredder" spawnposition="This" />
+        <Remove />
+      </StatusEffect>
+	  </Holdable>
+    <RepairTool structurefixamount="-0.85" range="26" barrelpos="55,0" combatpriority="5" repairmultiple="true" repairthroughwalls="false" maxoverlappingwalldist="0.0" repairthroughholes="true" levelwallfixamount="-10.0" targetforce="50">
+      <StatusEffect type="OnUse" targettype="Contained" targets="mobilebattery" Condition="-2.5" />
+      <StatusEffect type="OnUse" targettype="UseTarget" targets="door,ductblock,aliendoor" Stuck="-25" Condition="-35.0">
+        <sound file="%ModDir%/items/tools/chainsawMetal.ogg" frequencymultiplier="0.8" range="500.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="structure">
+        <sound file="%ModDir%/items/tools/chainsawMetal.ogg" frequencymultiplier="0.8" range="500.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnSuccess" target="Limb" severlimbsprobability="0.06">
+        <Conditional EntityType="eq Limb" />
+		<Affliction identifier="lacerations" strength="26" />
+        <Affliction identifier="lacerations" strength="13" probability="0.4" />
+        <Affliction identifier="internaldamage" strength="15" />
+        <Affliction identifier="internaldamage" strength="12" probability="0.3" />
+        <Affliction identifier="bleeding" strength="18" />
+        <Affliction identifier="bleeding" strength="10" probability="0.2" />
+        <Affliction identifier="Stun" strength="1.3" />
+        <Affliction identifier="Stun" strength="1.70" probability="0.3" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" range="800" selectionmode="Random" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="800" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="800" />
+      </StatusEffect>
+      <ParticleEmitterHitStructure particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />
+      <ParticleEmitterHitStructure particle="GlowDot" particlespersecond="60" emitinterval="0.7" particleamount="10" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="10" velocitymax="50" />
+      <ParticleEmitterHitStructure particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="0" velocitymax="50" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="10" velocitymax="100" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="GlowDot" particlespersecond="60" emitinterval="0.7" particleamount="10" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="10" velocitymax="50" />
+	  <ParticleEmitterHitItem identifiers="ore" particle="iceshards" particlespersecond="5" anglemin="-40" anglemax="40" velocitymin="10" velocitymax="300" scalemin="0.5" scalemax="1.0" />
+      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="0" velocitymax="50" />
+      <sound file="Content/Items/Tools/PlasmaCutterLoop.ogg" type="OnUse" range="750.0" loop="true" frequencymultiplier="1.2" volume="0.75" />
+      <Fixable identifier="structure" />     
+    </RepairTool>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+	  <Containable items="mobilebattery" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="500" fadeouttime="3" />
+  </Item>
+<Override>
+  <!-- 
+    <Item name="" identifier="flare" category="Equipment" maxstacksize="12" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,light,provocative" impactsoundtag="impact_soft" isshootable="true">
+      <PreferredContainer primary="divingcab" minamount="2" maxamount="5" spawnprobability="1" notcampaign="true" />
+      <PreferredContainer secondary="abandonedstoragecab,wreckstoragecab" amount="1" spawnprobability="0.05" />
+      <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
+      <Price baseprice="30" minavailable="6">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="10" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="8" />
+        <Price storeidentifier="merchantmine" minavailable="10" />
+        <Price storeidentifier="merchantarmory" multiplier="1.25" minavailable="8" />
+      </Price>
+      <Deconstruct time="5" />
+      <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="12">
+        <RequiredItem identifier="flashpowder" amount="2" />
+        <RequiredItem identifier="plastic" />
+      </Fabricate>
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,0,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Tools/tools.png" sourcerect="227,205,54,18" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="15" density="10" />
+      <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="90" throwforce="2.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
+      <LightComponent LightColor="255,0.0,0.0,255" Flicker="0.5" range="600" IsOn="false">
+        <StatusEffect type="OnUse" targettype="This" IsOn="true">
+          <Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
+          <sound file="Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" targettype="This" Condition="-0.25" />
+        <StatusEffect type="OnActive" targettype="This">
+          <Conditional PhysicsBodyActive="eq true" />
+          <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+          <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" targettype="This" IsOn="false" />
+        <sound file="Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="800.0" loop="true" />
+      </LightComponent>
+      <AiTarget sightrange="4000" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item> -->
+    <Item name="Disposable Emergency Beacon" identifier="BTdistressbeacon" category="Equipment" Tags="smallitem,sonar,provocative" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
+      <Price baseprice="150" sold="false">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+        <Price storeidentifier="merchantmine" />
+        <Price storeidentifier="merchantengineering" multiplier="0.9" />
+      </Price>
+      <Deconstruct time="15">
+        <Item identifier="fpgacircuit" />
+        <Item identifier="plastic" />
+      </Deconstruct>
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,320,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Tools/tools.png" sourcerect="473,1,29,65" depth="0.55" origin="0.5,0.5" />
+      <Body width="27" height="60" density="12" />
+      <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="0,-15" msg="ItemMsgPickUpSelect" />
+      <AiTarget soundrange="100000" sonarlabel="Distress Beacon" sight="500" staticsight="true" />
+      <LightComponent LightColor="1.0,0.0,0.0,1.0" range="50" powerconsumption="0" blinkfrequency="2" IsOn="true" canbeselected="false">
+        <StatusEffect type="OnActive" targettype="This" SoundRange="100000" setvalue="true" />
+        <StatusEffect type="OnActive" targettype="This" Condition="-0.02" />
+      </LightComponent>
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+        <GuiFrame relativesize="0.10,0.08" anchor="CenterLeft" pivot="BottomLeft" relativeoffset="0.006,0.17" style="ItemUI" />
+        <TickBox text="Disable">
+          <StatusEffect type="OnUse" targettype="This" IsOn="false" />
+          <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="true" />
+        </TickBox>
+      </CustomInterface>
+    </Item>
+  </Override>
+</Items>

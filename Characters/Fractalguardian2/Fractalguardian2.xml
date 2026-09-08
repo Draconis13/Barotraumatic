@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Character speciesname="Fractalguardian2" humanoid="False" caninteract="True" canclimb="false" blooddecal="" speciestranslationoverride="" displayname="" group="ancientalien" tags="ruinguardian" hasinfo="False" husk="False" usehuskappendage="False" needsair="False" needswater="False" canspeak="False" usebosshealthbar="False" noise="100" visibility="100" bleedparticleair="blooddrop" bleedparticlewater="waterblood" bleedparticlemultiplier="1" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" hideinthermalgoggles="True" sonardisruption="0" distantsonarrange="0" disabledistance="25000" soundinterval="10" caneat="False" ismachine="true">
+    <ragdolls folder="default" />
+    <animations folder="default" />
+    <health vitality="400" doesbleed="False" crushdepth="Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="1" constanthealthregeneration="0" healthregenerationwheneating="0" stunimmunity="true" poisonimmunity="true" empvulnerability="1">
+      <Limb name="Torso">
+        <VitalityMultiplier identifier="explosiondamage" multiplier="1.5" />
+        <VitalityMultiplier type="burn" multiplier="0.25" />
+        <VitalityMultiplier identifier="bitewounds" multiplier="0.5" />
+      </Limb>
+      <Limb name="Head">
+        <VitalityMultiplier identifier="explosiondamage" multiplier="1.5" />
+        <VitalityMultiplier type="burn" multiplier="0.25" />
+        <VitalityMultiplier identifier="bitewounds" multiplier="0.5" />
+      </Limb>
+      <Limb name="RightArm">
+        <VitalityMultiplier identifier="explosiondamage" multiplier="1" />
+        <VitalityMultiplier type="burn" multiplier="0.25" />
+        <VitalityMultiplier identifier="lacerations" multiplier="0.5" />
+        <VitalityMultiplier identifier="bitewounds" multiplier="0.5" />
+      </Limb>
+      <Limb name="LeftArm">
+        <VitalityMultiplier identifier="explosiondamage" multiplier="1" />
+        <VitalityMultiplier type="burn" multiplier="0.25" />
+        <VitalityMultiplier identifier="lacerations" multiplier="0.5" />
+        <VitalityMultiplier identifier="bitewounds" multiplier="0.5" />
+      </Limb>
+      <Limb>
+        <!-- Tail -->
+        <VitalityMultiplier identifier="explosiondamage" multiplier="1" />
+        <VitalityMultiplier type="burn" multiplier="0.25" />
+        <VitalityMultiplier identifier="lacerations" multiplier="0.5" />
+        <VitalityMultiplier identifier="bitewounds" multiplier="0.5" />
+      </Limb>
+    </health>
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_idle1.ogg" state="Idle" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_idle2.ogg" state="Idle" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle1.ogg" state="Idle" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle2.ogg" state="Idle" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle3.ogg" state="Idle" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle4.ogg" state="Idle" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack1.ogg" state="Attack" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack2.ogg" state="Attack" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack3.ogg" state="Attack" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack4.ogg" state="Attack" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack5.ogg" state="Attack" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_attack1.ogg" state="Attack" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage.ogg" state="Damage" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage2.ogg" state="Damage" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage3.ogg" state="Damage" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage4.ogg" state="Damage" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage5.ogg" state="Damage" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_damage1.ogg" state="Damage" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_damage2.ogg" state="Damage" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_damage3.ogg" state="Damage" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_damage4.ogg" state="Damage" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_damage5.ogg" state="Damage" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_death1.ogg" state="Die" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_death2.ogg" state="Die" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_death3.ogg" state="Die" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_death4.ogg" state="Die" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_death1.ogg" state="Die" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_death2.ogg" state="Die" range="3000" volume="1" gender="None" />
+    <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_death3.ogg" state="Die" range="3000" volume="1" gender="None" />
+    <ai combatstrength="550" sight="2" hearing="1" aggressiveboarding="False" fleehealththreshold="0" aggressionhurt="0" aggressiongreed="0" attackwhenprovoked="True" avoidgunfire="False" avoidtime="3" minfleetime="20" enforceaggressivebehaviorformissions="True" targetouterwalls="True" randomattack="False" canopendoors="True" keepdoorsclosed="False" avoidabyss="False" stayinabyss="False" startaggression="0" maxaggression="100" aggressioncumulation="0" walltargetingmethod="Target" patrolflooded="True" patroldry="False" damagethreshold="10">
+      <target tag="guardianshelter" state="FleeTo" priority="1000" reactdistance="25" offset="0,60" thresholdmin="30" thresholdmax="99" ignoreoutside="True" ignoreifnotinsamesub="True" />
+      <target tag="provocative" state="Attack" priority="200" ignoreifnotinsamesub="True" />
+      <target tag="weapon" state="Attack" priority="200" ignoreifnotinsamesub="True" />
+      <target tag="human" state="Attack" priority="100" />
+      <target tag="tool" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+      <target tag="stronger" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+      <target tag="weaker" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+      <target tag="portalguardian" state="Follow" priority="5" ignoreinside="true" reactdistance="1000" />
+      <target tag="fractalguardian_emp" state="Follow" priority="1" ignoreinside="true" reactdistance="1000" />
+      <target tag="guardiantrap" state="HideTo" priority="1" threshold="100" reactdistance="25" offset="0,60" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="True" ignoreifnotinsamesub="True" ignoreincapacitated="False" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
+    </ai>
+    <inventory accessiblebyowner="True" Slots="RightHand, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="100">
+      <Item slot="RightHand" Identifier="guardiansteamcannon" />
+      <Item Identifier="guardianparts" />
+      <Item Identifier="aliencircuitry" />
+      <Item Identifier="guardianbrokensteamcannon" />
+    </inventory>
+    <inventory accessiblebyowner="True" Slots="RightHand, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="100">
+      <Item slot="RightHand" Identifier="guardiansteamcannon" />
+      <Item Identifier="guardianbrokensteamcannon" />
+      <Item Identifier="aliencircuitry" />
+      <Item Identifier="guardianlifesupport" />
+    </inventory>
+    <inventory accessiblebyowner="True" Slots="RightHand, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="100">
+      <Item slot="RightHand" Identifier="guardiansteamcannon" />
+      <Item Identifier="guardianbrokensteamcannon" />
+      <Item Identifier="aliencircuitry" />
+      <Item Identifier="guardiandome" />
+    </inventory>
+    <inventory accessiblebyowner="True" Slots="RightHand, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="25">
+      <Item slot="RightHand" Identifier="guardiansteamcannon" />
+      <Item Identifier="guardianbrokensteamcannon" />
+      <Item Identifier="aliencircuitry" />
+      <Item Identifier="oxygeniteshard" />
+    </inventory>
+    <inventory accessiblebyowner="True" Slots="RightHand, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="25">
+      <Item slot="RightHand" Identifier="guardiansteamcannon" />
+      <Item Identifier="guardianbrokensteamcannon" />
+      <Item Identifier="aliencircuitry" />
+      <Item Identifier="fulgurium" />
+    </inventory>
+    <inventory accessiblebyowner="True" Slots="RightHand, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="25">
+      <Item slot="RightHand" Identifier="guardiansteamcannon" />
+      <Item Identifier="guardianbrokensteamcannon" />
+      <Item Identifier="aliencircuitry" />
+      <Item Identifier="physicorium" />
+    </inventory>
+    <inventory accessiblebyowner="True" Slots="RightHand, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="25">
+      <Item slot="RightHand" Identifier="guardiansteamcannon" />
+      <Item Identifier="guardianbrokensteamcannon" />
+      <Item Identifier="aliencircuitry" />
+      <Item Identifier="dementonite" />
+    </inventory>
+    <inventory slots="RightHand, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="5">
+      <Item identifier="guardiansteamcannon" slot="RightHand" />
+      <Item identifier="aliencircuitry" />
+    </inventory>
+    <inventory slots="RightHand, Any, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="1">
+      <Item identifier="guardiansteamcannon" slot="RightHand" />
+      <Item identifier="aliencircuitry" />
+      <Item identifier="alientrinket1" />
+      <Item Identifier="guardianbrokensteamcannon" />
+    </inventory>
+    <inventory slots="RightHand, Any, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="1">
+      <Item identifier="guardiansteamcannon" slot="RightHand" />
+      <Item identifier="aliencircuitry" />
+      <Item identifier="alientrinket2" />
+      <Item Identifier="guardianbrokensteamcannon" />
+    </inventory>
+    <inventory slots="RightHand, Any, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="1">
+      <Item identifier="guardiansteamcannon" slot="RightHand" />
+      <Item identifier="aliencircuitry" />
+      <Item identifier="alientrinket3" />
+      <Item Identifier="guardianbrokensteamcannon" />
+    </inventory>
+    <inventory accessiblebyowner="True" Slots="RightHand, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+      <Item slot="RightHand" Identifier="guardiansteamcannon" />
+      <Item Identifier="guardianbrokensteamcannon" />
+      <Item amount="1" Identifier="guardianparts" />
+      <Item Identifier="aliencircuitry" />
+    </inventory>
+    <StatusEffect type="OnActive" target="this">
+      <Conditional HealthPercentage="lte 30" />
+      <Affliction identifier="internaldamage" strength="0.4" />
+      <Affliction identifier="strengthen" strength="50" />
+      <Sound file="Content/Characters/Fractalguardian/ALIEN_fractalGuardianPanicLoop.ogg" loop="true" range="3000" />
+    </StatusEffect>
+  </Character>
+</Override>

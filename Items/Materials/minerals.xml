@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- <Item name="Waste Blood" identifier="wasteblood" maxstacksize="32" maxstacksizecharacterinventory="8" category="Material" Tags="smallitem,chem,medical" canbepicked="true" description="A nasty green poison that can cause acid burns from the inside. Still haven't been classified throughly." useinhealthinterface="true" cargocontaineridentifier="chemicalcrate" scale="0.5" RequireAimToUse="True" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="1" spawnprobability="0.02" />
+    <Price baseprice="250" soldeverywhere="false">
+      <Price storeidentifier="research" multiplier="1.1" sold="true" />
+    </Price>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Herbs/CreatureLoot.png" sourcerect="0,0,50,101" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Herbs/CreatureLoot.png" sourcerect="0,0,50,101" depth="0.6" origin="0.5,0.5" />
+    <Body width="45" height="30" density="50" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="40" />
+      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnSuccess" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="wasteinfection" strength="10" />
+        <Reduceaffliction identifier="bloodloss" strength="2.5" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="UseTarget">
+        <Conditional entitytype="eq Character" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item> -->
+  <!--<Item name="" identifier="piezocrystal" category="Material" Tags="" canbepicked="false" description="" scale="0.5" sonarsize="30" health="100" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true">
+      <Sprite texture="Content/Items/Materials/Crystal.png" depth="1.0" sourcerect="0,4,1024,1020" origin="0.5,0.6" />
+      <Body width="500" height="500" density="50" bodytype="Static" />
+      <LightComponent lightcolor="178,196,207,255" range="4000.0" powerconsumption="0" flicker="0.2" flickerspeed="0.5" pulsefrequency="0.2" pulseamount="0.8" ison="true" drawbehindsubs="true">
+        <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+          <particleemitter particle="iceshards" particleamount="200" velocitymin="100" velocitymax="3000" anglemin="0" anglemax="360" scalemin="0.5" scalemax="3.0" />
+          <Explosion range="2000.0" ballastfloradamage="1000" structuredamage="600" itemdamage="1000" force="50.0" severlimbsprobability="1.5" decal="explosion" decalsize="1.0" camerashake="500" camerashakerange="50000" flashrange="10000" flashduration="5.0" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="3.0">
+            <Affliction identifier="explosiondamage" strength="600" />
+            <Affliction identifier="burn" strength="450" />
+            <Affliction identifier="stun" strength="30" />
+          </Explosion>
+          <RemoveItem />
+        </StatusEffect>
+      </LightComponent>
+      <LightComponent lightcolor="178,196,207,255" range="4000.0" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="1.0" ison="true" drawbehindsubs="true">
+        <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+      </LightComponent>
+      <ElectricalDischarger duration="0.2" outdoorsonly="true" powerconsumption="0" range="3500" rangemultiplierinwalls="1">
+        <StatusEffect type="OnUse">
+          <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="6000" selectionmode="random" />
+          <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="6000" />
+          <Explosion range="7000.0" camerashake="3" stun="0" force="0.0" flames="false" shockwave="false" sparks="false" underwaterbubble="false" />
+        </StatusEffect>
+        <StatusEffect type="OnUse">
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar.ogg" range="15000" selectionmode="Random" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar2.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar3.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar4.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar5.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar6.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar7.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar8.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar9.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar10.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar11.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar12.ogg" range="15000" />
+          <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar13.ogg" range="15000" />
+        </StatusEffect>
+      </ElectricalDischarger>
+      <ItemComponent>
+        <StatusEffect type="OnActive" target="NearbyItems" targettags="junctionbox" range="3000.0" setvalue="true" stackable="false" delay="0.95" extraload="500" />
+        <StatusEffect type="OnActive" target="This" IsActive="false" />
+
+        <StatusEffect type="Always" target="This" stackable="false" delay="1.0" IsActive="true" />
+        <StatusEffect type="Always" target="This" stackable="false" delay="10.0">
+          <Use />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This">
+          <ParticleEmitter particle="ElectricShock" distancemin="100" distancemax="120" particlespersecond="5.0" particleamount="5" emitinterval="2.1" anglemin="0" anglemax="360" scalemin="1.0" scalemax="1.2" />
+        </StatusEffect>
+      </ItemComponent>
+      <LevelResource deattachduration="Infinity" allowatstart="false">
+        <Commonness fixedquantity="true" clusterquantity="23" clustersize="1" leveltype="thegreatsea" isislandspecific="true" />
+        <RequiredItem items="nonexistentitem" type="Equipped" />
+      </LevelResource>
+    </Item>-->
+</Items>

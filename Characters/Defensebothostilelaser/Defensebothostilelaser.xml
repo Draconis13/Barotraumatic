@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character SpeciesName="Defensebothostilelaser" SpeciesTranslationOverride="" DisplayName="" Group="bot" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" IsMachine="True" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="" BleedParticleAir="blackblooddrop" BleedParticleWater="blackwaterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="False" PathFinderPriority="0.25" HideInSonar="True" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="10000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <health Vitality="75" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="2" ConstantHealthRegeneration="1.5" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="1" ApplyAfflictionColors="False">
+    <Limb>
+	<VitalityMultiplier Identifier="gunshotwound" multiplier="0.85" />
+	<VitalityMultiplier Identifier="bitewounds" multiplier="0.5" />
+    <VitalityMultiplier Identifier="lacerations" multiplier="0.7" />
+	<VitalityMultiplier Identifier="explosiondamage" multiplier="0.5" />
+    <VitalityMultiplier type="burn" multiplier="0.5" />
+    </Limb>
+  </health>
+  <Inventory Slots="Any,Any,Any,Card" AccessibleWhenAlive="False">
+    <Item Identifier="defensebotammobox" slot="Any" />
+    <Item Identifier="fpgacircuit" />
+    <Item Identifier="batterycell" conditionmin="0.1" conditionmax="0.5" />
+    <Item Identifier="idcard" slot="Card" />
+  </Inventory>
+    <StatusEffect type="OnDeconstructed" target="Character">
+    <SpawnItem identifiers="steel" spawnposition="ThisInventory" count="1" probability="1" />
+    <SpawnItem identifiers="wire" spawnposition="ThisInventory" count="4" probability="1" />
+    <SpawnItem identifiers="fpgacircuit" spawnposition="ThisInventory" count="1" probability="0.25" />
+  </StatusEffect>
+  <ai UsePathFindingToGetInside="True" CombatStrength="105" Sight="2" Hearing="0" AggressionHurt="0" AggressionGreed="0" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="False" TargetOuterWalls="False" RandomAttack="False" CanOpenDoors="True" KeepDoorsClosed="True" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="True" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target">
+    <target Tag="hostile" State="Aggressive" Priority="50" ReactDistance="1500" AttackDistance="1500" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="human" State="Aggressive" Priority="50" ReactDistance="1500" AttackDistance="1500" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="stronger" State="Aggressive" Priority="50" ReactDistance="1500" AttackDistance="1500" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="weaker" State="Aggressive" Priority="50" ReactDistance="1500" AttackDistance="1500" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="equal" State="Aggressive" Priority="50" ReactDistance="1500" AttackDistance="1500" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <StatusEffect type="OnDeath" comparison="and" checkconditionalalways="true" target="Character" onlyplayertriggered="true" targetlimb="Torso" delay="0.2">
+    <Conditional isdead="true" />
+    <Conditional gunshotwound="gte 5" />
+    <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="100" velocitymin="100" velocitymax="1000" scalemin="0.3" scalemax="0.5" />
+    <Explosion range="150" force="10" flash="true" shockwave="true" sparks="true" flames="true" smoke="true" underwaterbubble="true" structuredamage="50" itemdamage="120" decal="explosion" decalsize="0.3">
+      <Affliction identifier="explosiondamage" strength="50" />
+      <Affliction identifier="stun" strength="0.75" />
+    </Explosion>
+    <RemoveCharacter />
+    <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="3000.0" selectionmode="Random" />
+    <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" range="3000.0" selectionmode="Random" />
+    <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="3000.0" selectionmode="Random" />
+  </StatusEffect>
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_idle1.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_idle1.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_idle1.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_idle1.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_damage1.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_damage2.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_damage3.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_damage4.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_interact1.ogg" State="Happy" Range="1000" Volume="1" Tags="" />
+  <!--interact2.ogg intentionally omitted, because decided to use it to indicate the state change (see the ragdoll file)-->
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_interact3.ogg" State="Happy" Range="1000" Volume="1" Tags="" />
+  <sound File="Content/Characters/Defensebot/DEFENCEBOT_interact4.ogg" State="Happy" Range="1000" Volume="1" Tags="" />
+</Character>

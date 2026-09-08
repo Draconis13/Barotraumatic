@@ -1,0 +1,94 @@
+﻿<Character SpeciesName="Pylon" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="ancientalien" Humanoid="False" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="True" CanSpeak="True" ShowHealthBar="False" UseBossHealthBar="True" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="2" DistantSonarRange="20000" DisableDistance="100000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <health Vitality="7500" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="1" ConstantHealthRegeneration="0.02" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0.1" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="">
+    <Limb name="Torso">
+      <VitalityMultiplier identifier="explosiondamage" multiplier="1.5" />
+      <VitalityMultiplier type="burn" multiplier="0.25" />
+      <VitalityMultiplier identifier="bitewounds" multiplier="0.5" />
+    </Limb>
+    <Limb name="Head">
+      <VitalityMultiplier identifier="explosiondamage" multiplier="1.5" />
+      <VitalityMultiplier type="burn" multiplier="0.25" />
+      <VitalityMultiplier identifier="bitewounds" multiplier="0.5" />
+    </Limb>
+    <!--   <Limb name="LeftArm">
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="RightArm">
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb> -->
+  </health>
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_idle.ogg" State="Idle" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_idle2.ogg" State="Idle" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_idle3.ogg" State="Idle" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_idle4.ogg" State="Idle" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_idle5.ogg" State="Idle" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_idle6.ogg" State="Idle" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_idle7.ogg" State="Idle" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_idle8.ogg" State="Idle" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_damage.ogg" State="Damage" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_damage2.ogg" State="Damage" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_damage3.ogg" State="Damage" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_damage4.ogg" State="Damage" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_damage5.ogg" State="Damage" Range="9000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Pylon/Pylon_damage6.ogg" State="Damage" Range="9000" Volume="2" Tags="" />
+  <ai CombatStrength="10050" Sight="4" Hearing="2" MaxPerceptionDistance="-1" AggressionHurt="50" AggressionGreed="10" FleeHealthThreshold="10" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="10" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="True" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0">
+    <target Tag="portalguardian" State="Follow" Priority="5" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="fractalguardian_emp" State="Protect" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="leucocyte" State="Avoid" Priority="100" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="decoy" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="provocative" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="wall" State="Attack" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="True" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="door" State="Attack" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="sonar" State="Attack" Priority="10" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="True" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="terminalcell" State="Idle" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <SwarmBehavior mindistfromclosest="300" maxdistfromcenter="3000" cohesion="0.25" />
+  </ai>
+  <inventory accessiblebyowner="True" Slots="Any, Any, Any, Any, Any, Any, RightHand, LeftHand" AccessibleWhenAlive="False" Commonness="1">
+    <item amount="4" Identifier="fulgurium" />
+    <item amount="6" Identifier="thorium" />
+    <item amount="6" Identifier="alienpowercell" />
+    <item Identifier="pylonholdable" />
+  </inventory>
+  <StatusEffect type="OnActive" target="this">
+    <Conditional HealthPercentage="lte 60" />
+    <Affliction identifier="internaldamage" strength="0.4" />
+    <Affliction identifier="strengthen" strength="50" />
+    <Sound file="Content/Characters/Fractalguardian/ALIEN_fractalGuardianPanicLoop.ogg" loop="true" range="3000" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Character" stackable="false">
+    <Sound file="%ModDir:2518816103%/Audio/PYLON_movingloop.ogg" volume="1.6" range="15000" loop="true" dontmuffle="true" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="this" Interval="32" stackable="false">
+    <Conditional isdead="false" />
+    <SpawnCharacter speciesname="pylonbolt" spawnposition="This" count="2" spread="1000" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="this" interval="17" stackable="false">
+    <Conditional isdead="false" />
+    <SpawnItem identifier="pylonexplosivethunder" spawnposition="This" count="1" spread="1" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="this" interval="10" stackable="false">
+    <Conditional isdead="false" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar.ogg" range="30000" selectionmode="Random" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar2.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar3.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar4.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar5.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar6.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar7.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar8.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar9.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar10.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar11.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar12.ogg" range="30000" />
+    <sound file="%ModDir:2518816103%/Items/Materials/Piezocrystalfar13.ogg" range="30000" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This,NearbyItems" targettags="junctionbox" range="8000.0" setvalue="true" stackable="false" delay="2.0" extraload="1200" duration="2.0" checkconditionalalways="true" comparison="and">
+    <Conditional isdead="false" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" checkconditionalways="true" Interval="7" stackable="false">
+    <Conditional isdead="false" />
+    <SpawnItem identifier="pylonelectropulse" spawnposition="This" count="2" spread="3000" />
+  </StatusEffect>
+</Character>

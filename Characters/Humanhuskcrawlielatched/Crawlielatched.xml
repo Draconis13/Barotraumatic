@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <AfflictionHusk name="Crawlielatched" identifier="Crawlielatched1" type="Crawlielatched" healableinmedicalclinic="false" limbspecific="false" targets="human" huskedspeciesname="huskcrawlielatched" indicatorlimb="Head" hideiconafterdelay="true" showiconthreshold="1000" showinhealthscannerthreshold="1000" showicontoothersthreshold="1000" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="4" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="100" iconcolors="94,54,95;163,73,164;200,191,231">
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+    <Effect minstrength="0" maxstrength="100" strengthchange="-8">
+      <StatusEffect type="Always" target="Character" stackable="true" interval="0.5" disabledeltatime="true">
+        <Conditional Crawlielatched1="lte 5" />
+        <SpawnCharacter speciesname="huskcrawlie1" count="1" spread="0" AfflictionOnSpawn="gunshotwound" AfflictionStrength="30" />
+        <ReduceAffliction identifier="Crawlielatched1" strength="100" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character" stackable="true" disabledeltatime="true">
+        <Conditional Crawlielatched1="gt 0" />
+        <Sound file="%ModDir%/Characters/Huskcrawlie1/latchedloop.ogg" loop="true" range="500" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character" targetlimbs="Torso" stackable="false" delay="0.8" disabledeltatime="true">
+        <Conditional Crawlielatched1="gt 0" />
+        <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="20" velocitymin="85" velocitymax="130" scalemin="0.4" scalemax="0.6" ColorMultiplier="185,0,0,255" DrawOrder="Foreground" DistanceMax="15" />
+        <ParticleEmitter particle="brownchunks" anglemin="0" anglemax="360" particleamount="15" velocitymin="35" velocitymax="100" scalemin="0.1" scalemax="0.2" ColorMultiplier="125,0,0,255" DrawOrder="Foreground" DistanceMax="15" />
+        <ParticleEmitter particle="heavygib" particleamount="20" scalemin="0.2" scalemax="0.6" velocitymin="50" velocitymax="80" anglemin="0" anglemax="360" DistanceMax="15" DrawOrder="Foreground" />
+        <Affliction identifier="lacerations" strength="3" probability="1" />
+        <Affliction identifier="bleeding" strength="1" probability="1" />
+      </StatusEffect>
+    </Effect>
+  </AfflictionHusk>
+  <AfflictionHusk name="Crawlielatched" identifier="Crawlielatched2" type="Crawlielatched" healableinmedicalclinic="false" limbspecific="false" targets="human" huskedspeciesname="huskcrawlielatched" indicatorlimb="Head" hideiconafterdelay="true" showiconthreshold="1000" showinhealthscannerthreshold="1000" showicontoothersthreshold="1000" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="4" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="100" iconcolors="94,54,95;163,73,164;200,191,231">
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+    <Effect minstrength="0" maxstrength="100" strengthchange="-8">
+      <StatusEffect type="Always" target="Character" stackable="true" interval="0.5" disabledeltatime="true">
+        <Conditional Crawlielatched2="lte 5" />
+        <SpawnCharacter speciesname="huskcrawlie1nohead" count="1" spread="0" AfflictionOnSpawn="gunshotwound" AfflictionStrength="30" />
+        <ReduceAffliction identifier="Crawlielatched2" strength="100" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character" stackable="true" disabledeltatime="true">
+        <Conditional Crawlielatched2="gt 0" />
+        <Sound file="%ModDir%/Characters/Huskcrawlie1/latchedloop.ogg" loop="true" range="500" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character" targetlimbs="Torso" stackable="false" delay="0.8" disabledeltatime="true">
+        <Conditional Crawlielatched2="gt 0" />
+        <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="20" velocitymin="85" velocitymax="130" scalemin="0.4" scalemax="0.6" ColorMultiplier="185,0,0,255" DrawOrder="Foreground" DistanceMax="15" />
+        <ParticleEmitter particle="brownchunks" anglemin="0" anglemax="360" particleamount="15" velocitymin="35" velocitymax="100" scalemin="0.1" scalemax="0.2" ColorMultiplier="125,0,0,255" DrawOrder="Foreground" DistanceMax="15" />
+        <ParticleEmitter particle="heavygib" particleamount="20" scalemin="0.2" scalemax="0.6" velocitymin="50" velocitymax="80" anglemin="0" anglemax="360" DistanceMax="15" DrawOrder="Foreground" />
+        <Affliction identifier="lacerations" strength="3" probability="1" />
+        <Affliction identifier="bleeding" strength="1" probability="1" />
+      </StatusEffect>
+    </Effect>
+  </AfflictionHusk>
+  <Affliction name="crawliebeheaded" identifier="crawliebeheaded" type="crawliebeheaded" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" />
+  </Affliction>
+</Afflictions>

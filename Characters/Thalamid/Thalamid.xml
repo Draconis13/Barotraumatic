@@ -1,0 +1,64 @@
+﻿<Character SpeciesName="Thalamid" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="thalamus" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="True" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="2" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="10" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <health targetinnerwalls="True" Vitality="1000" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0.1" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" >
+      <Limb>
+	  <VitalityMultiplier identifier="burn" multiplier="1.3" />
+      <VitalityMultiplier identifier="acidburn" multiplier="0.1" />
+    </Limb>
+  </health>
+  <sound File="Content/Characters/Leucocyte/CARRIER_cellIdle1.ogg" State="Idle" Range="2000" Volume="0.75" Tags="" />
+  <sound File="Content/Characters/Leucocyte/CARRIER_cellIdle2.ogg" State="Idle" Range="2000" Volume="0.75" Tags="" />
+  <sound File="Content/Characters/Leucocyte/CARRIER_cellIdle3.ogg" State="Idle" Range="2000" Volume="0.75" Tags="" />
+  <sound File="Content/Characters/Leucocyte/CARRIER_cellIdle4.ogg" State="Idle" Range="2000" Volume="0.75" Tags="" />
+  <sound File="Content/Characters/Leucocyte/CARRIER_cellIdle5.ogg" State="Idle" Range="2000" Volume="0.75" Tags="" />
+  <sound File="Content/map/thalamus/sounds/CARRIER_spikeLaunch1.ogg" State="Attack" Range="2000" Volume="1.5" Tags="" />
+  <sound File="Content/map/thalamus/sounds/CARRIER_spikeLaunch2.ogg" State="Attack" Range="2000" Volume="1.5" Tags="" />
+  <sound File="Content/map/thalamus/sounds/CARRIER_spikeLaunch3.ogg" State="Attack" Range="2000" Volume="1.5" Tags="" />
+  <sound File="Content/map/thalamus/sounds/CARRIER_brainHit1.ogg" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="Content/map/thalamus/sounds/CARRIER_brainHit2.ogg" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="Content/map/thalamus/sounds/CARRIER_brainHit3.ogg" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="Content/map/Thalamus/sounds/CARRIER_brainHit5.ogg" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="Content/map/thalamus/sounds/CARRIER_brainHit6.ogg" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="Content/map/thalamus/sounds/CARRIER_brainHit7.ogg" State="Damage" Range="2000" Volume="1" Tags="" />
+  <ai CombatStrength="550" Sight="5" Hearing="5" MaxPerceptionDistance="-1" AggressionHurt="0" AggressionGreed="0" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0">
+    <target damagethreshold="0" Tag="nasonov" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="wall" State="Attack" Priority="50" ReactDistance="5500" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="2000" IgnoreTargetSize="False" CircleRotationSpeed="2" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <StatusEffect type="OnDeath" target="This" targetlimb="Torso">
+    <ParticleEmitter particle="organeruption" particleamount="50" scalemin="0.5" scalemax="1" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="heavygib" drawontop="true" particleamount="1" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="gib" particleamount="100" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="bloodsplash" particleamount="30" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="1" scalemax="1.5" />
+    <ParticleEmitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="1" scalemax="1.5" />
+    <sound file="Content/map/thalamus/sounds/CARRIER_brainDeath1.ogg" range="3000" volume="1" selectionmode="Random" />
+    <sound file="Content/map/thalamus/sounds/CARRIER_brainDeath2.ogg" range="3000" volume="1" selectionmode="Random" />
+  </StatusEffect>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+    <Item Identifier="adrenalinegland" />
+    <Item Identifier="adrenalinegland" />
+    <Item Identifier="adrenalinegland" />
+  </Inventory>
+  <StatusEffect type="OnDeath" target="This" disabledeltatime="true" stackable="false" onlyoutside="false" delay="3">
+    <Sound file="Content/Sounds/Damage/Gore1.ogg" range="700" volume="0.5" selectionmode="Random" />
+    <Sound file="Content/Sounds/Damage/Gore2.ogg" range="700" volume="0.5" />
+    <Sound file="Content/Sounds/Damage/Gore3.ogg" range="700" volume="0.5" />
+    <Explosion range="300.0" structuredamage="3" itemdamage="0" force="3.0" severlimbsprobability="0.0" decal="blood" decalSize="3.0">
+      <Affliction identifier="nausea" strength="25" />
+	  <Affliction identifier="acidburn" strength="5" />
+    </Explosion>
+    <ParticleEmitter particle="organeruption" particleamount="15" scalemin="0.4" scalemax="0.5" velocitymin="150" velocitymax="500" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="heavygib" drawontop="true" particleamount="13" scalemin="0.35" scalemax="0.4" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="gib" particleamount="5" scalemin="0.25" scalemax="0.3" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="bloodsplash" particleamount="30" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.75" scalemax="1.7" />
+    <ParticleEmitter particle="whitegoosplash" particleamount="15" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.8" scalemax="1.0" />
+  </StatusEffect>
+  	  <StatusEffect type="OnActive" oneshot="true" target="this">
+      <Conditional HealthPercentage="lte 35" />
+      <SpawnItem identifier="acidemitter" count="1" />
+    </StatusEffect>
+	<StatusEffect type="OnActive" oneshot="true" target="this">
+      <Conditional HealthPercentage="lte 70" />
+      <SpawnItem identifier="acidemitter" count="1" />
+    </StatusEffect>
+</Character>

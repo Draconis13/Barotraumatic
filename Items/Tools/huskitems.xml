@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Large Flesh Stinger" identifier="largefleshstinger" category="Weapon" tags="mediumitem,weapon,gunsmith,mountableweapon" scale="0.9" allowasextracargo="true" requireaimtouse="true" description="A husk chimera claw has been somehow coaxed into grafting itself unto a flesh encrusted metal pole. Unwholesome in the extreme it tingles to the touch and glows with ruddy contaminated light." impactsoundtag="impact_metal_heavy">
+      <PreferredContainer primary="secarmcab" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.0092" />
+    <Price baseprice="995" minleveldifficulty="35" canbespecial="true" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantmine" multiplier="1.0" sold="false" />
+      <Price storeidentifier="merchanthusk" minavailable="0" maxavailable="1" sold="true">
+        <Reputation faction="huskcult" min="80" />
+      </Price>
+    </Price>
+ <!--   <Fabricate suitablefabricators="fabricator" requiredtime="25">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="huskstinger" amount="5" />
+    </Fabricate> -->
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Tools/largefleshstinger.png" sourcerect="159,105,68,66" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Tools/largefleshstinger.png" sourcerect="0,0,218,84" depth="0.55" origin="0.5,0.2" />
+    <Body width="218" height="84" density="25" />
+    <MeleeWeapon allowhitmultiple="true" slots="RightHand+LeftHand" aimpos="90,45" holdpos="20,-60" handle1="-60,8" handle2="-10,18" holdangle="45" reload="2.6" range="315" combatPriority="40" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="-36.0" severlimbsprobability="5.0" penetration="0.2" itemdamage="22" structuredamage="9">
+        <Affliction identifier="lacerations" strength="18" />
+		<Affliction identifier="bitewounds" strength="5" />
+        <Affliction identifier="bleeding" strength="15" />
+		<Affliction identifier="bleeding" strength="8" probability="0.3" />
+        <Affliction identifier="stun" strength="0.5" />
+        <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
+          <Conditional radiationsickness="lte 35" />
+          <Affliction identifier="radiationsickness" strength="13" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="UseTarget">
+		  <Conditional entitytype="eq Character" />
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="900" volume="1.8" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="900" volume="1.8" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="900" volume="1.8" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="900" volume="1.8" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="900" volume="1.8" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="900" volume="1.8" />
+          <ParticleEmitter particle="heavygib" drawontop="true" particleamount="1" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" anglemin="255" anglemax="285" distancemin="-15" distancemax="30" />
+          <ParticleEmitter particle="gib" particleamount="6" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="255" anglemax="285" distancemin="-15" distancemax="30" />
+          <ParticleEmitter particle="bloodsplash" particleamount="4" velocitymin="0" velocitymax="300" anglemin="255" anglemax="285" distancemin="-15" distancemax="30" scalemin="0.5" scalemax="1" />
+          <ParticleEmitter particle="whitegoosplash" particleamount="3" colormultiplier="255,0,0,255" velocitymin="0" velocitymax="300" anglemin="255" anglemax="285" distancemin="-15" distancemax="30" scalemin="0.5" scalemax="1" />
+        </StatusEffect>	
+      </Attack>
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="200.0" force="-1.5" showeffects="false" camerashake="3.5" />
+		<Affliction identifier="radiationsickness" strength="1.75" probability="0.3" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="whitegas" particlespersecond="6" colormultiplier="255,0,0,128" copyentityangle="true" distancemin="-109" distancemax="109" />
+      </StatusEffect>
+      <LightComponent AllowInGameEditing="false" lightcolor="100,10,20,100" range="0" pulsefrequency="0.3" pulseamount="0.7">
+        <Sprite texture="%ModDir:2518816103%/Items/Tools/largefleshstinger.png" sourcerect="0,256,218,84" origin="0.5,0.2" alpha="1.0" />
+      </LightComponent>
+      <LightComponent AllowInGameEditing="false" lightcolor="100,10,20,100" range="0" pulsefrequency="0.3" pulseamount="0.7">
+        <Sprite texture="%ModDir:2518816103%/Items/Tools/largefleshstinger.png" sourcerect="0,384,218,84" origin="0.5,0.2" alpha="1.0" />
+      </LightComponent>
+    </MeleeWeapon>
+   <!-- <Quality>
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+    </Quality> -->
+    <aitarget sightrange="900" soundrange="450" fadeouttime="1" />
+  </Item>
+  <Item identifier="endwormarmor" name="Endworm Chest Piece" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" allowasextracargo="true" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Jobgear/AlienGear.png" sourcerect="17,10,97,131" depth="0.6" origin="0.5,0.5" />
+    <Body width="97" height="131" density="40" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.4" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite texture="Content/Items/Jobgear/AlienGear.png" limb="Torso" hidelimb="false" hideotherwearables="false" inherittexturescale="true" inheritscale="false" scale="0.4" inheritorigin="false" origin="0.45,0.75" inheritsourcerect="false" sourcerect="17,10,97,131" />
+    </Wearable>
+  </Item>
+  <Item identifier="endwormhelmet" name="Endworm Helmet" nameidentifier="alienhelmet" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" allowasextracargo="true" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Jobgear/AlienGear.png" depth="0.6" sourcerect="133,21,95,94" origin="0.5,0.5" />
+    <Body width="95" height="94" density="40" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite texture="Content/Items/Jobgear/AlienGear.png" limb="Head" inheritlimbdepth="true" hidelimb="false" hideotherwearables="false" inherittexturescale="true" inheritscale="false" scale="0.35" inheritorigin="false" origin="0.5,0.55" sourcerect="133,21,95,94" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" setvalue="true" disabledeltatime="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.4" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+    </Wearable>
+  </Item>
+</Items>

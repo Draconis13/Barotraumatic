@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character visiblity="100" SpeciesName="Hallucination1" SpeciesTranslationOverride="" DisplayName="" Group="abyss" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="False" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="5" UsePathFinding="True" PathFinderPriority="0.4999999" HideInSonar="True" HideInThermalGoggles="True" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="0" AISlowTurretPriority="0" DespawnContainer="">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <damageemitter drawontop="True" Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.25" ScaleMax="0.5" VelocityMin="50" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="blood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="waterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="200" VelocityMax="700" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="0.5" ScaleMax="0.8" VelocityMin="50" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="5" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <health Vitality="100" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.2" BurnReduction="0" ConstantHealthRegeneration="0.01" HealthRegenerationWhenEating="10" StunImmunity="True" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False">
+    <Limb name="Torso">
+      <VitalityMultiplier type="damage" multiplier="1.0" />
+    </Limb>
+    <Limb name="Head">
+      <VitalityMultiplier type="damage" multiplier="1.5" />
+    </Limb>
+    <Limb name="LeftLeg">
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="RightLeg">
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+         <!--Tail-->
+   <Limb>
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+  </health>
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_attack1.ogg" state="Attack" range="2000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_attack2.ogg" state="Attack" range="2000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_attack3.ogg" state="Attack" range="2000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_attack4.ogg" state="Attack" range="2000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_idle1.ogg" state="Idle" range="1000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_idle2.ogg" state="Idle" range="1000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_idle3.ogg" state="Idle" range="1000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_death1.ogg" state="Die" range="2000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_death2.ogg" state="Die" range="2000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_damage1.ogg" state="Damage" range="2000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_damage2.ogg" state="Damage" range="2000" volume="1" gender="None" />
+  <sound file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/sCRAWLER_damage3.ogg" state="Damage" range="2000" volume="1" gender="None" />
+  <ai combatstrength="5" sight="1" hearing="1" fleehealththreshold="10" aggressiveboarding="True" aggressiongreed="10" aggressionhurt="200" attackwhenprovoked="False" avoidgunfire="False" avoidtime="3" minfleetime="20" enforceaggressivebehaviorformissions="True" targetouterwalls="True" randomattack="False" canopendoors="False" avoidabyss="False" stayinabyss="False" startaggression="0" maxaggression="100" aggressioncumulation="0" walltargetingmethod="Target" keepdoorsclosed="False" patrolflooded="False" patroldry="False">
+    <target tag="decoy" state="Attack" priority="600" reactdistance="0" ignoreifnotinsamesub="True" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="stronger" state="Attack" priority="200" reactdistance="2000" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="husk" state="Attack" priority="200" reactdistance="2000" attackdistance="500" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="provocative" state="Attack" priority="500" reactdistance="0" ignoreifnotinsamesub="True" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="weapon" state="Attack" priority="100" reactdistance="0" ignoreifnotinsamesub="True" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="dead" state="Eat" priority="1" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="True" ignoreoutside="False" ignoreifnotinsamesub="True" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="weaker" state="Attack" priority="80" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="human" state="Attack" priority="120" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="tool" state="Aggressive" priority="50" reactdistance="1000" ignoreifnotinsamesub="True" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="leucocyte" state="Attack" priority="50" reactdistance="1000" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="engine" state="Avoid" priority="50" reactdistance="400" ignoreinside="True" attackdistance="0" timer="0" ignorecontained="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="sonar" state="Attack" priority="30" reactdistance="0" ignoreinside="True" attackdistance="0" timer="0" ignorecontained="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="wall" state="Attack" priority="20" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="room" state="Attack" priority="20" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="door" state="Attack" priority="15" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="turret" state="Attack" priority="1" ignoreinside="True" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target Tag="watcheroid" state="Idle" priority="0" ignoreinside="False" reactdistance="10000" attackdistance="0" timer="0" ignorecontained="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <chooserandom>
+      <latchonto attachtowalls="true" attachtosub="true" mindeattachspeed="1.0" maxdeattachspeed="2.0" damageondetach="20" detachstun="5.0" attachlimb="Jaw" localattachpos="40,10" offset="50" attachlimbrotation="100" />
+    </chooserandom>
+    <SwarmBehavior mindistfromclosest="200" maxdistfromcenter="1000" cohesion="0.5" />
+  </ai>
+  <StatusEffect type="OnDeath" target="This" disabledeltatime="true" stackable="false" delay="2">
+    <RemoveCharacter />
+  </StatusEffect>
+  <StatusEffect target="This" type="OnSpawn" targetlimb="Torso" stackable="false" setvalue="true">
+    <sound file="Content/Items/Alien/AlienButton.ogg" range="1000" selectionmode="random" />
+    <ParticleEmitter particle="bloodexplode" distancemax="0" anglemin="0" anglemax="360" particlespersecond="1" particleamount="1" velocitymin="1" velocitymax="10" scalemin="3.25" scalemax="3.25" />
+    <ParticleEmitter particle="bloodexplodeA" distancemax="0" anglemin="0" anglemax="360" particlespersecond="1" particleamount="1" velocitymin="1" velocitymax="10" scalemin="3.25" scalemax="3.25" />
+  </StatusEffect>
+  <StatusEffect target="This" type="OnDeath" targetlimb="Torso" stackable="false" setvalue="true" delay="5.05">
+    <ParticleEmitter particle="bloodexplode" distancemax="0" anglemin="0" anglemax="360" particlespersecond="1" particleamount="1" velocitymin="1" velocitymax="10" scalemin="5" scalemax="5" />
+    <ParticleEmitter particle="bloodexplodeA" distancemax="0" anglemin="0" anglemax="360" particlespersecond="1" particleamount="1" velocitymin="1" velocitymax="10" scalemin="5" scalemax="5" />
+  </StatusEffect>
+  <StatusEffect target="This" type="OnDeath" stackable="false" setvalue="true" delay="5.1">
+    <RemoveCharacter />
+  </StatusEffect>
+  <StatusEffect type="Always" target="Character" delay="20" stackable="false">
+    <RemoveCharacter />
+    <ParticleEmitter particle="bloodexplode" distancemax="0" anglemin="0" anglemax="360" particlespersecond="1" particleamount="1" velocitymin="1" velocitymax="10" scalemin="5" scalemax="5" />
+    <ParticleEmitter particle="bloodexplodeA" distancemax="0" anglemin="0" anglemax="360" particlespersecond="1" particleamount="1" velocitymin="1" velocitymax="10" scalemin="5" scalemax="5" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="NearbyCharacters" targets="human" delay="1" range="1000">
+    <ReduceAffliction identifier="bitewoundsfake" strength="9999" />
+    <ReduceAffliction identifier="fakebleeding" strength="9999" />
+  </StatusEffect>
+</Character>

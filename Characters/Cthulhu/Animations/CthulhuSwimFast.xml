@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CthuluSwimFast UseSineMovement="False" Flip="True" FlipCooldown="1" FlipDelay="1" Mirror="False" MirrorLerp="False" WaveAmplitude="400" WaveLength="250" RotateTowardsMovement="True" TailTorque="100" TailTorqueMultiplier="50" FootAngles="" UpdateAnimationWhenNotMoving="False" TailAngle="118" SteerTorque="200" LegTorque="25" AnimationType="SwimFast" MovementSpeed="14.866408" CycleSpeed="1" HeadAngle="65" TorsoAngle="-150" HeadTorque="1000" TorsoTorque="500" FootTorque="25" ArmIKStrength="1" HandIKStrength="1" />

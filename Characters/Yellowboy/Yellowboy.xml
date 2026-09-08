@@ -1,0 +1,98 @@
+﻿<Character SpeciesName="Yellowboy" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="mantisoid" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="btcbloodblue" BleedParticleAir="btcblooddropblue" BleedParticleWater="btcwaterbloodblue" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+  <ragdolls folder="%ModDir%/Characters/Yellowboy/Ragdolls/" />
+  <animations folder="%ModDir%/Characters/Yellowboy/Animations/" />
+  <damageemitter particle="gib" drawontop="True" particleamount="10" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.25" scalemax="0.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="blood" particleamount="10" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="waterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="gib" particleamount="20" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360" scalemin="1" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="heavygib" particleamount="5" velocitymin="50" velocitymax="500" anglemin="0" anglemax="360" scalemin="0.5" scalemax="0.8" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <health Vitality="60" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
+    </Inventory>
+	    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+      <Item Identifier="chitin" condition="100" />
+    </Inventory>
+  <ai combatstrength="40" sight="1" hearing="1" fleehealththreshold="0" aggressiveboarding="true" aggressiongreed="10" aggressionhurt="10" avoidgunfire="False" DamageThreshold="0">
+    <target tag="dead" state="HideTo" PerceptionDistanceMultiplier="0.5" priority="700" reactdistance="1" ignorecontained="False" ignoreinside="false" ignoreoutside="true" ignoreifnotinsamesub="True" IgnoreTargetInside="false" ignoreincapacitated="false">
+      <conditional speciesname="yellowboyspawnerarmored"/>
+      <conditional TargetSelf="True" speciesname="eq yellowboy2"/>
+    </target>
+    <target tag="stronger" state="Avoid" priority="200" reactdistance="2000" />
+    <target tag="decoy" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+    <target tag="provocative" state="Attack" priority="100" ignoreifnotinsamesub="True">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="weapon" state="Attack" priority="100" ignoreifnotinsamesub="True">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="nasonov" state="Attack" priority="100" ignoreinside="True"/>
+    <target tag="weaker" state="Attack" priority="80" reactdistance="0" />
+    <target tag="human" state="Attack" priority="80" reactdistance="0">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="human" state="Observe" priority="80" reactdistance="0">
+      <conditional TargetSelf="True" TeamID="eq Team1"/>
+    </target>
+    <target tag="tool" state="Aggressive" priority="50" reactdistance="1000" ignoreifnotinsamesub="True">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="leucocyte" state="Avoid" priority="50" reactdistance="1000"/>
+    <target tag="engine" state="Avoid" priority="50" reactdistance="400" ignoreinside="True" />
+    <target tag="room" state="Attack" priority="30" reactdistance="0">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="wall" state="Attack" priority="15" reactdistance="0">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="door" state="Attack" priority="5" reactdistance="0">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="sonar" state="Attack" priority="5" reactdistance="0" ignoreinside="true"/>
+    <target tag="turret" state="Attack" priority="1" ignoreinside="true">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+    <target tag="searchlight" state="Attack" priority="1" ignoreinside="true">
+      <conditional TargetSelf="True" TeamID="neq Team1"/>
+    </target>
+  </ai>  
+  <sound file="Content/Characters/Orangeboy/ORANGEBOY_takeDamage1.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="Content/Characters/Orangeboy/ORANGEBOY_takeDamage2.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="Content/Characters/Orangeboy/ORANGEBOY_takeDamage1.ogg" state="Die" range="2000" volume="1" />
+  <sound file="Content/Characters/Orangeboy/ORANGEBOY_takeDamage2.ogg" state="Die" range="2000" volume="1" />
+  <StatusEffect duration="5" type="OnActive" target="This" tags="mourning" disabledeltatime="true">
+    <Conditional AIState="HideTo"/>
+    <TriggerAnimation Type="Walk" filename="YellowboyWalkSad" priority="5" ExpectedSpecies="Yellowboy" />
+    <TriggerAnimation Type="Run" filename="YellowboyRunSad" priority="5" ExpectedSpecies="Yellowboy" />
+  </StatusEffect>
+  <StatusEffect interval="4" type="OnActive" stackable="false" target="This" disabledeltatime="true">
+    <Conditional AIState="HideTo"/>
+    <AITrigger state="Flee" duration="1.3" probability="1" allowtobeoverridden="false" allowtooverride="true" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" interval="2" duration="1" target="This" offset="0,8" targetlimb="Head" stackable="false" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional AIState="eq HideTo"/>
+    <Conditional isdead="false"/>
+    <ParticleEmitter particle="waterdrop" AngleMin="270" AngleMax="270" DistanceMin="15" DistanceMax="35" VelocityMax="35" ScaleMin="1" ScaleMax="1.15" ScaleMultiplier="4,2" EmitInterval="0.08" ParticleAmount="3" ParticlesPerSecond="0" ColorMultiplier="255,255,255,255" DrawOrder="Foreground" Angle="270" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" interval="5" target="This" targetlimb="Head" stackable="false" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional AIState="eq HideTo"/>
+    <Conditional isdead="false"/>
+    <sound file="%ModDir%/Characters/Yellowboy/cry1.ogg" range="1400.0" volume="1" frequencymultiplier="0.85,1" selectionmode="Random"/>
+    <sound file="%ModDir%/Characters/Yellowboy/cry1.ogg" range="1400.0" volume="0" frequencymultiplier="0.85,1" selectionmode="Random"/>
+    <sound file="%ModDir%/Characters/Yellowboy/cry2.ogg" range="1400.0" volume="1" frequencymultiplier="0.85,1" selectionmode="Random"/>
+    <sound file="%ModDir%/Characters/Yellowboy/cry3.ogg" range="1400.0" volume="1" frequencymultiplier="0.85,1" selectionmode="Random"/>
+    <sound file="%ModDir%/Characters/Yellowboy/cry4.ogg" range="1400.0" volume="1" frequencymultiplier="0.85,1" selectionmode="Random"/>
+  </StatusEffect>
+  <StatusEffect type="OnActive" interval="10" target="This" targetlimb="Head" stackable="false" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+    <Conditional HasStatusTag="neq mourning" />
+    <Conditional AIState="eq Idle"/>
+    <Conditional isdead="false"/>
+    <sound file="Content/Characters/Orangeboy/ORANGEBOY_idle1.ogg" state="Idle" range="1000" volume="1" frequencymultiplier="0.85,1" selectionmode="Random"/>
+    <sound file="Content/Characters/Orangeboy/ORANGEBOY_idle2.ogg" state="Idle" range="1000" volume="1" frequencymultiplier="0.85,1" selectionmode="Random"/>
+    <sound file="Content/Characters/Orangeboy/ORANGEBOY_idle2.ogg" state="Idle" range="1000" volume="1" frequencymultiplier="0.85,1" selectionmode="Random"/>
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" ConditionalComparison="AND" OnlyWhenDamagedByPlayer="true">
+    <RequiredAffliction type="damage,burn" minstrength="1" />
+    <Conditional TeamID="eq Team1"/>
+    <Affliction identifier="armorspawnerunspare" strength="50" probability="1" multiplybymaxvitality="true" />
+  </StatusEffect>
+</Character>

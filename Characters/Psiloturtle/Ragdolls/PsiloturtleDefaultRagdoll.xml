@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Ragdoll type="Psiloturtle" Texture="%ModDir%/Characters/psiloturtle/Psilturtle_spritesheet-min.png" Color="255,255,255,255" SpritesheetOrientation="90" LimbScale="1.08" JointScale="1.08" TextureScale="1" SourceRectScale="1" ColliderHeightFromFloor="45" ImpactTolerance="50" CanEnterSubmarine="True" CanWalk="False" Draggable="True" MainLimb="Torso">
+  <collider Name="Main Collider" Radius="185" Height="250" Width="0" BodyType="Dynamic" />
+  <limb Name="Torso" ID="0" Type="Torso" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="145" Height="0" Width="255" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="72,493,855,405" Origin="0.5,0.57" Depth="0.5" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <conditionalsprite exclusive="True">
+      <conditional psiloturtletorsotuck="gt 1" />
+      <deformablesprite texture="%ModDir%/Characters/psiloturtle/Psiloturtletucked.png" sourcerect="0,0,1081,407" origin="0.6325,0.567" depth="0.5" subdivisions="5,5" />
+    </conditionalsprite>
+  </limb>
+  <limb Name="Neck" ID="1" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="50" Height="75" Width="0" Density="15" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="1061,525,207,260" Origin="0.5,0.53" Depth="0.49" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <damagemodifier DamageSound="LimbSlash" DamageParticle="" DamageMultiplier="0.7" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="" AfflictionTypes="damage,bleeding" />
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This">
+      <Conditional psiloturtleheadtuck="gt 1" />
+    </StatusEffect>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This">
+      <Conditional psiloturtleheadtuck="lte 1" />
+    </StatusEffect>
+    <conditionalsprite exclusive="True">
+      <conditional psiloturtleheadtuck="gt 1" />
+      <deformablesprite texture="%ModDir%/Characters/psiloturtle/Psiloturtletuckedhead.png" sourcerect="0,0,329,250" origin="0.45,0.5" depth="0.49" subdivisions="5,5" />
+    </conditionalsprite>
+    <StatusEffect type="OnDamaged" target="Character">
+      <RequiredAffliction type="damage,burn" minstrength="1" />
+      <Affliction identifier="psiloturtleheaddamage" strength="15" probability="1" MultiplyByMaxVitality="True" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Head" ID="2" Type="Head" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="85" Height="0" Width="115" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="1334,535,317,184" Origin="0.5,0.5" Depth="0.491" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <damagemodifier DamageSound="LimbSlash" DamageParticle="" DamageMultiplier="0.9" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="" AfflictionTypes="damage,bleeding" />
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="true" ignorecollisions="true">
+      <Conditional psiloturtleheadtuck="gt 1" />
+    </StatusEffect>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="false" ignorecollisions="false">
+      <Conditional psiloturtleheadtuck="lte 1" />
+    </StatusEffect>
+    <StatusEffect type="OnDamaged" target="Character">
+      <RequiredAffliction type="damage,burn" minstrength="1" />
+      <Affliction identifier="psiloturtleheaddamage" strength="15" probability="1" MultiplyByMaxVitality="True" />
+    </StatusEffect>
+    <attack StructureSoundType="StructureSlash" Context="Any" TargetType="Any" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FallBackUntilCanAttack" AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="350" DamageRange="350" MinRange="0" Duration="0.3" CoolDown="4" SecondaryCoolDown="0" CoolDownRandomFactor="0.1" FullSpeedAfterAttack="False" StructureDamage="50" CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="60" Penetration="0" LevelWallDamage="50" Ranged="False" AvoidFriendlyFire="False" RequiredAngle="20" RequiredAngleToShoot="0" AimRotationTorque="0" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="1, 2, 3" Force="40" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="150" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="100" TargetForceWorld="0,0" SubmarineImpactMultiplier="1" SeverLimbsProbability="2" Priority="0" Blink="False">
+      <affliction Strength="50" Identifier="bitewounds" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+      <affliction Strength="20" Identifier="bleeding" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+      <affliction Strength="1" Identifier="stun" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+    </attack>
+  </limb>
+  <limb Name="Jaw" ID="3" Type="Jaw" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="65" Height="0" Width="145" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="1322,772,309,148" Origin="0.5,0.5" Depth="0.492" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <damagemodifier DamageSound="LimbSlash" DamageParticle="" DamageMultiplier="0.8" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="" AfflictionTypes="damage,bleeding" />
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="true" ignorecollisions="true">
+      <Conditional psiloturtleheadtuck="gt 1" />
+    </StatusEffect>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="false" ignorecollisions="false">
+      <Conditional psiloturtleheadtuck="lte 1" />
+    </StatusEffect>
+    <StatusEffect type="OnDamaged" target="Character">
+      <RequiredAffliction type="damage,burn" minstrength="1" />
+      <Affliction identifier="psiloturtleheaddamage" strength="15" probability="1" MultiplyByMaxVitality="True" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Eye" ID="4" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="35" Height="0" Width="0" Density="10" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="2" BlinkDurationIn="0.7" BlinkDurationOut="0.8" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="0" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="True" BlinkTextureOffsetIn="0.6,0.5" BlinkTextureOffsetOut="0.4,0.5" BlinkTransitionIn="Smoother" BlinkTransitionOut="Smoother" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite subdivisions="5,5" SourceRect="1130,839,69,67" Origin="0.5,0.5" Depth="0.49" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0">
+      <spritedeformation type="inflate" typename="inflate" Frequency="10" Scale="0.03" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="True" OnlyInWater="False" SineOffset="0" Resolution="5,5" />
+    </deformablesprite>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="true" ignorecollisions="true">
+      <Conditional psiloturtleheadtuck="gt 1" />
+    </StatusEffect>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="false" ignorecollisions="false">
+      <Conditional psiloturtleheadtuck="lte 1" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail1" ID="5" Type="Tail" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="85" Height="0" Width="115" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="397,1004,335,169" Origin="0.5,0.5" Depth="0.51" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="true" ignorecollisions="true">
+      <Conditional psiloturtletorsotuck="gt 1" />
+    </StatusEffect>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="false" ignorecollisions="false">
+      <Conditional psiloturtletorsotuck="lte 1" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail2" ID="6" Type="Tail" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="55" Height="0" Width="135" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="76,1009,268,130" Origin="0.5,0.5" Depth="0.511" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="true" ignorecollisions="true">
+      <Conditional psiloturtletorsotuck="gt 1" />
+    </StatusEffect>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="false" ignorecollisions="false">
+      <Conditional psiloturtletorsotuck="lte 1" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Flipper1" ID="7" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="100" Height="0" Width="75" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="True" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="1718,657,309,233" Origin="0.5,0.5" Depth="0.45" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="true" ignorecollisions="true">
+      <Conditional psiloturtletorsotuck="gt 1" />
+    </StatusEffect>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="false" ignorecollisions="false">
+      <Conditional psiloturtletorsotuck="lte 1" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Flipper2" ID="8" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="120" Height="0" Width="100" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="True" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite subdivisions="5,5" SourceRect="1616,963,387,238" Origin="0.5,0.53" Depth="0.44" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0">
+      <spritedeformation type="bendjoint" typename="bendjoint" Sync="-1" BlendMode="Add" Strength="5" MaxRotation="30" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="5,5" />
+    </deformablesprite>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="true" ignorecollisions="true">
+      <Conditional psiloturtletorsotuck="gt 1" />
+    </StatusEffect>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="false" ignorecollisions="false">
+      <Conditional psiloturtletorsotuck="lte 1" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Flipper3" ID="9" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="65" Height="0" Width="245" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="True" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite subdivisions="5,5" SourceRect="1224,963,392,238" Origin="0.55,0.7" Depth="0.441" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0">
+      <spritedeformation type="bendjoint" typename="bendjoint" Sync="-1" BlendMode="Add" Strength="5" MaxRotation="30" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="5,5" />
+    </deformablesprite>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="true" ignorecollisions="true">
+      <Conditional psiloturtletorsotuck="gt 1" />
+    </StatusEffect>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="false" ignorecollisions="false">
+      <Conditional psiloturtletorsotuck="lte 1" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Flipper4" ID="10" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="65" Height="0" Width="225" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="True" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="813,1033,356,153" Origin="0.5,0.5" Depth="0.441" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="true" ignorecollisions="true">
+      <Conditional psiloturtletorsotuck="gt 1" />
+    </StatusEffect>
+    <StatusEffect type="Always" stackable="false" delay="0.05" target="This" hide="false" ignorecollisions="false">
+      <Conditional psiloturtletorsotuck="lte 1" />
+    </StatusEffect>
+  </limb>
+  <limb Name="ShellCore" ID="11" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="145" Height="0" Width="400" Density="2" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="1071,117,824,345" Origin="0.5,0.5" Depth="0.3" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+  </limb>
+  <limb Name="Shell1" ID="12" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="110" Height="0" Width="125" Density="2" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="15" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="672,127,300,273" Origin="0.5,0.5" Depth="0.29" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <damagemodifier DamageSound="LimbArmor" DamageParticle="brownchunks" DamageMultiplier="0.1" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="damage" />
+    <damagemodifier DamageSound="LimbArmor" DamageParticle="" DamageMultiplier="0" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="bleeding" />
+    <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.25" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="burn" />
+    <StatusEffect type="OnSevered" target="This">
+      <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="100" velocitymin="165" velocitymax="300" scalemin="1.2" scalemax="1.5" DrawOrder="Foreground" DistanceMax="225" />
+      <ParticleEmitter particle="brownchunks" anglemin="0" anglemax="360" particleamount="55" velocitymin="265" velocitymax="500" scalemin="1.1" scalemax="1.3" ColorMultiplier="35,35,35,255" DrawOrder="Foreground" DistanceMax="225" />
+      <sound file="Content/Sounds/Damage/ArmorBreak1.ogg" range="9000.0" selectionmode="Random" frequencymultiplier="0.9,1.1" />
+      <sound file="Content/Sounds/Damage/ArmorBreak2.ogg" range="9000.0" selectionmode="Random" frequencymultiplier="0.9,1.1" />
+      <sound file="Content/Sounds/Damage/ArmorBreak3.ogg" range="9000.0" selectionmode="Random" frequencymultiplier="0.9,1.1" />
+      <sound file="Content/Sounds/Damage/ArmorBreak4.ogg" range="9000.0" selectionmode="Random" frequencymultiplier="0.9,1.1" />
+    </StatusEffect>
+    <StatusEffect type="OnSevered" target="Character">
+      <Affliction identifier="psiloturtlesmallarmorremoved" strength="100" probability="1" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Shell2" ID="13" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="140" Height="0" Width="145" Density="2" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="15" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="101,134,475,274" Origin="0.5,0.5" Depth="0.289" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <damagemodifier DamageSound="LimbArmor" DamageParticle="brownchunks" DamageMultiplier="0.1" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="damage" />
+    <damagemodifier DamageSound="LimbArmor" DamageParticle="" DamageMultiplier="0" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="bleeding" />
+    <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.25" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="burn" />
+    <StatusEffect type="OnSevered" target="This">
+      <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="100" velocitymin="165" velocitymax="300" scalemin="1.2" scalemax="1.5" DrawOrder="Foreground" DistanceMax="225" />
+      <ParticleEmitter particle="brownchunks" anglemin="0" anglemax="360" particleamount="55" velocitymin="265" velocitymax="500" scalemin="1.1" scalemax="1.3" ColorMultiplier="35,35,35,255" DrawOrder="Foreground" DistanceMax="225" />
+      <sound file="Content/Sounds/Damage/ArmorBreak1.ogg" range="9000.0" selectionmode="Random" frequencymultiplier="0.9,1.1" />
+      <sound file="Content/Sounds/Damage/ArmorBreak2.ogg" range="9000.0" selectionmode="Random" frequencymultiplier="0.9,1.1" />
+      <sound file="Content/Sounds/Damage/ArmorBreak3.ogg" range="9000.0" selectionmode="Random" frequencymultiplier="0.9,1.1" />
+      <sound file="Content/Sounds/Damage/ArmorBreak4.ogg" range="9000.0" selectionmode="Random" frequencymultiplier="0.9,1.1" />
+    </StatusEffect>
+    <StatusEffect type="OnSevered" target="Character">
+      <Affliction identifier="psiloturtlebigarmorremoved" strength="100" probability="1" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Weakpoint" ID="14" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="110" Height="0" Width="175" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="0,0,1,1" Origin="0.5,0.5" Depth="0.5" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <damagemodifier DamageSound="LimbSlash" DamageParticle="" DamageMultiplier="1.2" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="" AfflictionTypes="damage,bleeding" />
+    <lightsource castshadows="false" Color="255,255,0,255" Range="360" Scale="1" Offset="0,0" Rotation="0" Directional="False" Flicker="0" FlickerSpeed="1" PulseFrequency="0.5" PulseAmount="1" BlinkFrequency="0">
+      <lighttexture Texture="Content/Lights/pointlight_falloff.png" Origin="0.5,0.5" Size="1,1" />
+      <Conditional psiloturtlebigarmorremoved="gt 0" />
+    </lightsource>
+    <StatusEffect type="OnDamaged" target="This">
+      <ParticleEmitter particle="yellowheavygib" particleamount="20" scalemin="1" scalemax="1" velocitymin="200" velocitymax="400" anglemin="0" anglemax="360" DistanceMax="150" DrawOrder="Foreground" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Weakpointlight" ID="15" Type="None" SecondaryType="None" Notes="" Scale="1.3" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="110" Height="0" Width="0" Density="10" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <deformablesprite SourceRect="0,0,1,1" Origin="0.5,0.5" Depth="0.5" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <damagemodifier DamageSound="LimbSlash" DamageParticle="" DamageMultiplier="1.2" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="" AfflictionTypes="damage,bleeding" />
+    <lightsource castshadows="false" Color="255,255,0,255" Range="180" Scale="1" Offset="0,0" Rotation="0" Directional="False" Flicker="0" FlickerSpeed="1" PulseFrequency="0.5" PulseAmount="1" BlinkFrequency="0">
+      <lighttexture Texture="Content/Lights/pointlight_falloff.png" Origin="0.5,0.5" Size="1,1" />
+      <Conditional psiloturtlebigarmorremoved="lte 0" />
+      <Conditional psiloturtlesmallarmorremoved="gt 0" />
+    </lightsource>
+  </limb>
+  <joint Name="Joint 0 - 1" Limb1="0" Limb2="1" Limb1Anchor="359.15402,65.78373" Limb2Anchor="-48.257534,0.07586197" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="6" LowerLimit="-6" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 1 - 2" Limb1="1" Limb2="2" Limb1Anchor="47.590714,43.978966" Limb2Anchor="-133.8933,-5.056343" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="6" LowerLimit="-6" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 2 - 3" Limb1="2" Limb2="3" Limb1Anchor="-130.75108,-103.97767" Limb2Anchor="-119.88091,-10.001983" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="5" LowerLimit="-35" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 2 - 4" Limb1="2" Limb2="4" Limb1Anchor="41.62304,32.36491" Limb2Anchor="0,0" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 0 - 5" Limb1="0" Limb2="5" Limb1Anchor="-398.93118,29.888948" Limb2Anchor="159.42836,-9.249617" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-11" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 5 - 6" Limb1="5" Limb2="6" Limb1Anchor="-135.94469,-3.4049332" Limb2Anchor="141.0859,-39.00151" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="11" LowerLimit="-11" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 0 - 7" Limb1="0" Limb2="7" Limb1Anchor="307.5931,-65.90204" Limb2Anchor="21.18385,57.68409" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 7 - 8" Limb1="7" Limb2="8" Limb1Anchor="-2.6101015,-32.31085" Limb2Anchor="46.652733,96.6848" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="6" LowerLimit="-6" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 8 - 9" Limb1="8" Limb2="9" Limb1Anchor="-251.55469,-48.42608" Limb2Anchor="227.09813,2.115288" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="9" LowerLimit="-2" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 0 - 10" Limb1="0" Limb2="10" Limb1Anchor="-382.9004,-59.924835" Limb2Anchor="148.43285,20.344145" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="7" LowerLimit="-7" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 0 - 11" Limb1="0" Limb2="11" Limb1Anchor="13.120755,10.211341" Limb2Anchor="11.200399,-67.927734" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="armorbreak" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="True" ClockWiseRotation="False" />
+  <joint Name="Joint 0 - 12" Limb1="0" Limb2="12" Limb1Anchor="213.2828,257.8797" Limb2Anchor="-63.127655,18.737633" CanBeSevered="True" SeveranceProbabilityModifier="0.2" BreakSound="armorbreak" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="True" ClockWiseRotation="False" />
+  <joint Name="Joint 0 - 13" Limb1="0" Limb2="13" Limb1Anchor="-140.20174,210.61337" Limb2Anchor="3.49,-17.46" CanBeSevered="True" SeveranceProbabilityModifier="0.2" BreakSound="armorbreak" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 0 - 14" Limb1="0" Limb2="14" Limb1Anchor="6.303663,140.28961" Limb2Anchor="-11.535526,-2.0058784" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 0 - 15" Limb1="0" Limb2="15" Limb1Anchor="168.1,203.1" Limb2Anchor="-11.535526,-2.0058784" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+</Ragdoll>

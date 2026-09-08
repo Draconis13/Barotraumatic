@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Character SpeciesName="Legacyfractalguardian" SpeciesTranslationOverride="" Group="ancientalien" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="True" CanSpeak="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="0.5" HideInSonar="False" HideInThermalGoggles="True" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False">
+    <ragdolls folder="default" />
+    <animations folder="default" />
+    <health Vitality="80" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" ApplyAfflictionColors="False" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_idle1.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_idle2.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack1.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack2.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack3.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack4.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack5.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage1.ogg" State="Damage" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage2.ogg" State="Damage" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage3.ogg" State="Damage" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage4.ogg" State="Damage" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage5.ogg" State="Damage" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death1.ogg" State="Die" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death2.ogg" State="Die" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death3.ogg" State="Die" Range="3000" Volume="1" Tags="" />
+    <sound File="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death4.ogg" State="Die" Range="3000" Volume="1" Tags="" />
+    <ai CombatStrength="500" Sight="1" Hearing="3" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="0" AttackWhenProvoked="False" AvoidGunfire="True" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="False" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="10" MaxAggression="100" AggressionCumulation="25" WallTargetingMethod="Heading,Steering">
+      <targetpriority Tag="decoy" State="Attack" Priority="600" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <targetpriority Tag="sonar" State="Attack" Priority="60" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="6000" CircleRotationSpeed="2" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="wall" State="Attack" Priority="70" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="2" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="room" State="Attack" Priority="70" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="2" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    </ai>
+  </Character>
+</Override>

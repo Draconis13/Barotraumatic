@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character speciesname="Endurance" humanoid="False" speciestranslationoverride="" group="ancientalien" hasinfo="False" husk="False" usehuskappendage="False" needsair="False" needswater="False" canspeak="False" IsMachine="True" usebosshealthbar="True" noise="100" visibility="100" blooddecal="blood" bleedparticleair="blooddrop" bleedparticlewater="waterblood" bleedparticlemultiplier="1" eatingspeed="10" pathfinderpriority="0.7" hideinsonar="False" sonardisruption="0" distantsonarrange="0" disabledistance="25000" caninteract="False" caneat="False" usepathfinding="True" hideinthermalgoggles="False" soundinterval="10">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <health vitality="3350" doesbleed="False" crushdepth="Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="0" EmpVulnerability="0.4" stunimmunity="True" applyafflictioncolors="False" />
+  <Limb>
+    <VitalityMultiplier type="burn" multiplier="0.40" />
+    <VitalityMultiplier identifier="bitewounds" multiplier="0.55" />
+  </Limb>
+  <ai combatstrength="550" sight="10" hearing="10" aggressionhurt="100" aggressiongreed="10" fleehealththreshold="0" attackwhenprovoked="True" aggressiveboarding="False" avoidgunfire="False" avoidtime="3" minfleetime="20" enforceaggressivebehaviorformissions="True" targetouterwalls="True" randomattack="False" canopendoors="False" avoidabyss="False" stayinabyss="False" startaggression="50" maxaggression="100" aggressioncumulation="0" walltargetingmethod="Heading" keepdoorsclosed="False" patrolflooded="False" patroldry="False">
+    <target tag="wall" state="Attack" priority="90" reactdistance="0" attackdistance="10" timer="0" ignorecontained="False" ignorewhileinside="False" ignorewhileoutside="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" sweepdistance="0" sweepstrength="10" sweepspeed="1" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="Human" state="Attack" priority="120" reactdistance="0" attackdistance="10" timer="0" ignorecontained="False" ignorewhileinside="False" ignorewhileoutside="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" sweepdistance="0" sweepstrength="10" sweepspeed="1" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+  </ai>
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_idle1.ogg" state="Idle" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_idle2.ogg" state="Idle" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle1.ogg" state="Idle" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle2.ogg" state="Idle" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle3.ogg" state="Idle" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle4.ogg" state="Idle" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack1.ogg" state="Attack" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack2.ogg" state="Attack" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack3.ogg" state="Attack" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack4.ogg" state="Attack" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_attack5.ogg" state="Attack" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_attack1.ogg" state="Attack" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage.ogg" state="Damage" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage2.ogg" state="Damage" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage3.ogg" state="Damage" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage4.ogg" state="Damage" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_damage5.ogg" state="Damage" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_damage1.ogg" state="Damage" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_damage2.ogg" state="Damage" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_damage3.ogg" state="Damage" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_damage4.ogg" state="Damage" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_damage5.ogg" state="Damage" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_death1.ogg" state="Die" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_death2.ogg" state="Die" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_death3.ogg" state="Die" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_death4.ogg" state="Die" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_death1.ogg" state="Die" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_death2.ogg" state="Die" range="6000" volume="1.2" gender="None" />
+  <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_death3.ogg" state="Die" range="6000" volume="1.2" gender="None" />
+  <Inventory slots="Any, Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="1">
+    <Item amount="2" identifier="alienpowercell" />
+    <Item amount="4" identifier="scrap" />
+    <Item identifier="alientrinket1" />
+  </Inventory>
+  <Inventory slots="Any, Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="1">
+    <Item amount="2" identifier="alienpowercell" />
+    <Item amount="4" identifier="scrap" />
+    <Item identifier="alientrinket2" />
+  </Inventory>
+  <Inventory slots="Any, Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="1">
+    <Item amount="2" identifier="alienpowercell" />
+    <Item amount="4" identifier="scrap" />
+    <Item identifier="alientrinket3" />
+  </Inventory>
+  <StatusEffect type="OnActive" target="this">
+    <Conditional HealthPercentage="lte 22" />
+    <Affliction identifier="internaldamage" strength="0.35" />
+    <Affliction identifier="strengthen" strength="30" />
+    <Sound file="Content/Characters/Fractalguardian/ALIEN_fractalGuardianPanicLoop.ogg" loop="true" range="6000" volume="1.2" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" oneshot="true" target="this">
+    <Conditional HealthPercentage="lte 20" />
+    <SpawnCharacter speciesname="Fractalguardianrepairbot" count="2" spread="100" />
+  </StatusEffect>
+  <!--   <StatusEffect type="OnSpawn" target="This" timeframe="1" delay="0.5" checkconditionalalways="true" setvalue="true" oneshot="true" comparison="And">
+          <Conditional timeframe="eq 0" />
+          <SpawnItem identifier="batterycelldisposable" spawnposition="ThisInventory" spawnifinventoryfull="false" />
+        </StatusEffect> -->
+</Character>

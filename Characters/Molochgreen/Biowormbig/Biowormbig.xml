@@ -1,0 +1,59 @@
+﻿<Character speciesname="Biowormbig" humanoid="False" blooddecal="" BleedParticleAir="cellgib" BleedParticleWater="cellgib" group="moloch" husk="False" needsair="False" canspeak="False" noise="100" visiblity="100" eatingspeed="5" displayname="" visibility="100" pathfinderpriority="1" hasinfo="False" usehuskappendage="False" AISlowTurretPriority="0.5">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <DamageEmitter particle="cellgib" particleamount="45" scalemin="1" scalemax="2" velocitymin="15" velocitymax="50" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255" />
+  <GibEmitter particle="cellgib" particleamount="45" scalemin="1" scalemax="2" velocitymin="15" velocitymax="50" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255" />
+  <health vitality="80" doesbleed="True" crushdepth="Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="0" poisonvulnerability="0"/>
+  <Inventory slots="Any, Any, Any, Any" accessiblewhenalive="False" commonness="50">
+  </Inventory>
+  <ai combatstrength="100" sight="1" hearing="1.0" fleehealththreshold="0" aggressiveboarding="true" aggressiongreed="10" aggressionhurt="200" avoidgunfire="False">
+    <target tag="stronger" state="Avoid" priority="200" reactdistance="2000" />
+    <target tag="decoy" state="Attack" priority="100" ignoreifnotinsamesub="True" />
+    <target tag="provocative" state="Attack" priority="100" ignoreifnotinsamesub="True"/>
+    <target tag="weapon" state="Attack" priority="100" ignoreifnotinsamesub="True"/>
+    <target tag="nasonov" state="Attack" priority="100" ignoreinside="True"/>
+    <target tag="weaker" state="Attack" priority="80" reactdistance="0" />
+    <target tag="human" state="Attack" priority="120" reactdistance="0" />
+    <target tag="tool" state="Aggressive" priority="50" reactdistance="1000" ignoreifnotinsamesub="True"/>
+    <target tag="leucocyte" state="Avoid" priority="50" reactdistance="1000"/>
+    <target tag="engine" state="Avoid" priority="50" reactdistance="400" ignoreinside="True" />
+    <target tag="room" state="Attack" priority="30" reactdistance="0" />
+    <target tag="wall" state="Attack" priority="15" reactdistance="0" />
+    <target tag="door" state="Attack" priority="100" reactdistance="0" />
+    <target tag="sonar" state="Attack" priority="5" reactdistance="0" ignoreinside="true"/>
+  </ai>
+  <StatusEffect type="OnDeath" target="AllLimbs">
+    <ParticleEmitter particle="cellgib" particleamount="5" scalemin="3" scalemax="4" velocitymin="15" velocitymax="50" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255"  />
+    <Explosion range="170.0" ballastfloradamage="0" structuredamage="5" levelwalldamage="5" itemdamage="2" shockwave="false" flash="false" smoke="false" playtinnitus="false" flames="false" sparks="false" underwaterbubble="false" camerashake="0" severlimbsprobability="0" debris="false">
+      <Affliction identifier="biowormburndamage" strength="5" />
+    </Explosion>
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="AllLimbs" delay="0.2">
+    <ParticleEmitter particle="cellgib" particleamount="5" scalemin="3" scalemax="4" velocitymin="15" velocitymax="50" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255"  />
+    <Explosion range="170.0" ballastfloradamage="0" structuredamage="5" levelwalldamage="5" itemdamage="2" shockwave="false" flash="false" smoke="false" playtinnitus="false" flames="false" sparks="false" underwaterbubble="false" camerashake="0" severlimbsprobability="0" debris="false">
+      <Affliction identifier="biowormburndamage" strength="5" />
+    </Explosion>
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="AllLimbs" delay="0.5">
+    <ParticleEmitter particle="cellgib" particleamount="5" scalemin="4" scalemax="6" velocitymin="15" velocitymax="50" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255"  />
+    <Explosion range="170.0" ballastfloradamage="0" structuredamage="5" levelwalldamage="5" itemdamage="2" shockwave="false" flash="false" smoke="false" playtinnitus="false" flames="false" sparks="false" underwaterbubble="false" camerashake="0" severlimbsprobability="0" debris="false">
+      <Affliction identifier="biowormburndamage" strength="5" />
+    </Explosion>
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="AllLimbs" delay="0.7">
+    <ParticleEmitter particle="cellgib" particleamount="5" scalemin="4.3" scalemax="6.5" velocitymin="15" velocitymax="50" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255"  />
+    <Explosion range="170.0" ballastfloradamage="0" structuredamage="5" levelwalldamage="5" itemdamage="2" shockwave="false" flash="false" smoke="false" playtinnitus="false" flames="false" sparks="false" underwaterbubble="false" camerashake="0" severlimbsprobability="0" debris="false">
+      <Affliction identifier="biowormburndamage" strength="5" />
+    </Explosion>
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="AllLimbs" duration="5" Alpha="-0.8"/>
+  <StatusEffect type="OnDeath" target="this" delay="1">
+    <SpawnItem identifier="wormacidremnant" spawnposition="This" count="4" spread="8" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This" delay="1.2">
+    <RemoveCharacter/>
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This">
+    <sound file="%ModDir%/Characters/Molochgreen/acidexplode.ogg" range="1650" volume="1" dontmuffle="true" frequencymultiplier="0.8,1.1"/>
+  </StatusEffect>
+</Character>

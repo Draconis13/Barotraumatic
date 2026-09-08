@@ -1,0 +1,236 @@
+﻿<Ragdoll type="endworm_young" Texture="%ModDir:2518816103%/Characters/Endworm_young/Endworm_young.png" Color="255,255,255,255" SpritesheetOrientation="0" LimbScale="0.3014" JointScale="0.3014" TextureScale="1" SourceRectScale="1" ColliderHeightFromFloor="45" ImpactTolerance="50" CanEnterSubmarine="True" CanWalk="False" Draggable="True" MainLimb="Head">
+  <collider Name="Main Collider" Radius="500" Height="0" Width="0" BodyType="Dynamic" />
+  <!-- Head -->
+  <limb Name="Head" ID="0" Type="Head" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="5" Radius="400" Height="0" Width="0" Density="50" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,1" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="1,2,1071,1117" Origin="0.5,0.5" Depth="0.2" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <attack stickchance="0" targetdistance="0" StructureSoundType="StructureBlunt" Context="Any" TargetType="Any" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough" AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="400" DamageRange="400" MinRange="0" Duration="0.5" CoolDown="5" SecondaryCoolDown="0" CoolDownRandomFactor="0.1" FullSpeedAfterAttack="True" StructureDamage="120" CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="1000" Ranged="False" AvoidFriendlyFire="False" RequiredAngle="20" RequiredAngleToShoot="0" AimRotationTorque="0" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="113, 114" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="1000" TargetForceWorld="0,0" SubmarineImpactMultiplier="1" SeverLimbsProbability="10" Priority="0" Blink="True">
+      <Affliction Strength="80" Identifier="bitewounds" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+      <Affliction Strength="100" Identifier="bleeding" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+      <Affliction Strength="0.4" Identifier="stun" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+      <StatusEffect type="OnUse" target="This">
+        <sound file="Content/Characters/Endworm/ENDWORM_attack2.ogg" range="2000" volume="1" dontmuffle="True" selectionmode="random" />
+        <sound file="Content/Characters/Endworm/ENDWORM_attack3.ogg" range="2000" volume="1" dontmuffle="True" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <Explosion ignorecover="true" onlyinside="true" range="800" force="1000" flames="false" shockwave="false" sparks="false" flash="false" underwaterbubble="false" camerashake="800" playtinnitus="false" structuredamage="100" applyFireEffects="false">
+          <Affliction identifier="stun" strength="1" probability="1" />
+        </Explosion>
+      </StatusEffect>
+    </attack>
+  </limb>
+  <!-- Tail -->
+  <limb Name="Tail1" ID="1" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="Character" disabledeltatime="true" targetlimbs="Head">
+      <Affliction identifier="internaldamage" strength="50" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail2" ID="2" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="internaldamage" strength="50" probability="1" />
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail3" ID="3" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="internaldamage" strength="50" probability="1" />
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail4" ID="4" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="internaldamage" strength="50" probability="1" />
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail5" ID="5" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail6" ID="6" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="500" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail7" ID="7" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail8" ID="8" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail9" ID="9" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail10" ID="10" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail11" ID="11" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail12" ID="12" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail13" ID="13" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail14" ID="14" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="Tail15" ID="15" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="220" Height="0" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="100" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="37,1118,999,569" Origin="0.5,0.55" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <Affliction identifier="bleedingnonstop" strength="50" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <limb Name="TailEnd" ID="16" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="350" Height="0" Width="0" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="10" CanBeSeveredAlive="True" SeveredFadeOutTime="1" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="1038,1122,1010,924" Origin="0.5,0.5003128" Depth="0.05" Texture="" IgnoreTint="False" Color="225,120,50,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <damagemodifier DamageSound="LimbArmor" DamageParticle="brownchunks" DamageMultiplier="0.1" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="damage" />
+    <damagemodifier DamageSound="LimbArmor" DamageParticle="" DamageMultiplier="0" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="bleeding" />
+    <StatusEffect type="OnSevered" target="This">
+      <particleemitter particle="brownchunks" drawontop="true" particleamount="100" velocitymin="300" velocitymax="1000" anglemin="0" anglemax="360" scalemin="0.5" scalemax="2" />
+    </StatusEffect>
+    <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
+      <Affliction identifier="bleeding" strength="100" probability="1" />
+      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="3000" volume="1" dontmuffle="true" />
+    </StatusEffect>
+  </limb>
+  <!--Armor Head-->
+  <!--Armor Tail1-->
+  <!--Armor Tail2-->
+  <!--Armor Tail3-->
+  <!--Armor Tail4-->
+  <!--Armor Tail5-->
+  <!--Armor Tail6-->
+  <!--Armor Tail7-->
+  <!--Armor Tail8-->
+  <!--Armor Tail9-->
+  <!--Armor Tail10-->
+  <!--Armor Tail11-->
+  <!--Armor Tail12-->
+  <!--Armor Tail13-->
+  <!--Armor Tail14-->
+  <!--Armor Tail15-->
+  <!--Teeth-->
+  <!--Mouth-->
+  <limb Name="Limb 17" ID="17" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="True" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="2" Width="2" Density="0.01" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="0.5" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="2" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="459,8,164,139" Origin="0.5,0.5" Depth="0" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <attack stickchance="0" targetdistance="0" StructureSoundType="StructureBlunt" Context="Any" TargetType="Character" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough" AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="200" DamageRange="200" MinRange="0" Duration="0.5" CoolDown="7" SecondaryCoolDown="0" CoolDownRandomFactor="0.1" FullSpeedAfterAttack="True" StructureDamage="0" CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="1000" Ranged="False" AvoidFriendlyFire="False" RequiredAngle="20" RequiredAngleToShoot="0" AimRotationTorque="0" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="113, 114" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="1000" TargetForceWorld="0,0" SubmarineImpactMultiplier="1" SeverLimbsProbability="10" Priority="0" Blink="True">
+      <Affliction Strength="50" Identifier="bitewounds" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+      <Affliction Strength="25" Identifier="bleeding" Probability="0.75" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+      <Affliction Strength="0.2" Identifier="stun" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+      <StatusEffect type="OnUse" target="This">
+        <sound file="Content/Characters/Endworm/ENDWORM_attack2.ogg" range="30000" volume="1" dontmuffle="True" selectionmode="random" />
+        <sound file="Content/Characters/Endworm/ENDWORM_attack3.ogg" range="30000" volume="1" dontmuffle="True" />
+      </StatusEffect>
+    </attack>
+  </limb>
+  <limb Name="Limb 18" ID="18" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="True" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="2" Width="2" Density="0.01" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="0.5" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="2" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+    <sprite SourceRect="459,8,164,139" Origin="0.5,0.5" Depth="0" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <attack stickchance="1" targetdistance="0" StructureSoundType="StructureBlunt" Context="Any" TargetType="Structure" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough" AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="200" DamageRange="200" MinRange="0" Duration="0.5" CoolDown="7" SecondaryCoolDown="0" CoolDownRandomFactor="0.1" FullSpeedAfterAttack="True" StructureDamage="55" CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="50" Penetration="0" LevelWallDamage="50" Ranged="False" AvoidFriendlyFire="False" RequiredAngle="20" RequiredAngleToShoot="0" AimRotationTorque="0" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="113, 114" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="5" SeverLimbsProbability="0" Priority="0" Blink="True">
+      <StatusEffect type="OnUse" target="This">
+        <Explosion ignorecover="true" onlyinside="true" range="900" force="100" flames="false" shockwave="false" sparks="false" flash="false" underwaterbubble="false" camerashake="0" playtinnitus="false" structuredamage="10" itemdamage="0" applyFireEffects="false">
+          <Affliction identifier="stun" strength="0.3" probability="1" />
+        </Explosion>
+        <sound file="Content/Characters/Endworm/ENDWORM_attack2.ogg" range="30000" volume="1" dontmuffle="True" selectionmode="random" />
+        <sound file="Content/Characters/Endworm/ENDWORM_attack3.ogg" range="30000" volume="1" dontmuffle="True" />
+      </StatusEffect>
+    </attack>
+  </limb>
+  <!--Tail-->
+  <joint Name="Joint 0 - 1" Limb1="0" Limb2="1" Limb1Anchor="0,-380.89972" Limb2Anchor="0,279.50577" CanBeSevered="True" SeveranceProbabilityModifier="0.05" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 1 - 2" Limb1="1" Limb2="2" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.125" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 2 - 3" Limb1="2" Limb2="3" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.15" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 3 - 4" Limb1="3" Limb2="4" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.2" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 4 - 5" Limb1="4" Limb2="5" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.25" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 5 - 6" Limb1="5" Limb2="6" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.3" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 6 - 7" Limb1="6" Limb2="7" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.35" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 7 - 8" Limb1="7" Limb2="8" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.4" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 8 - 9" Limb1="8" Limb2="9" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.45" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 9 - 10" Limb1="9" Limb2="10" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.5" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 10 - 11" Limb1="10" Limb2="11" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.55" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 11 - 12" Limb1="11" Limb2="12" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.6" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 12 - 13" Limb1="12" Limb2="13" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.7" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 13 - 14" Limb1="13" Limb2="14" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.8" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 14 - 15" Limb1="14" Limb2="15" Limb1Anchor="0,-66" Limb2Anchor="0,292.45953" CanBeSevered="True" SeveranceProbabilityModifier="0.9" BreakSound="gore" LimitEnabled="True" UpperLimit="15" LowerLimit="-15" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <joint Name="Joint 15 - 16" Limb1="15" Limb2="16" Limb1Anchor="0,-135.03262" Limb2Anchor="0,352.67" CanBeSevered="True" SeveranceProbabilityModifier="1" BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />
+  <!--Armor Head-->
+  <!--Armor Tail1-->
+  <!--Armor Tail2-->
+  <!--Armor Tail3-->
+  <!--Armor Tail4-->
+  <!--Armor Tail5-->
+  <!--Armor Tail6-->
+  <!--Armor Tail7-->
+  <!--Armor Tail8-->
+  <!--Armor Tail9-->
+  <!--Armor Tail10-->
+  <!--Armor Tail11-->
+  <!--Armor Tail12-->
+  <!--Armor Tail13-->
+  <!--Armor Tail14-->
+  <!--Armor Tail15-->
+  <!--Teeth-->
+  <!--Mouth-->
+  <joint Name="Joint 0 - 17" Limb1="0" Limb2="17" Limb1Anchor="0,400" Limb2Anchor="-0,0" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="True" ClockWiseRotation="False" />
+  <joint Name="Joint 0 - 18" Limb1="0" Limb2="18" Limb1Anchor="0,200" Limb2Anchor="-0,0" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="True" ClockWiseRotation="False" />
+</Ragdoll>

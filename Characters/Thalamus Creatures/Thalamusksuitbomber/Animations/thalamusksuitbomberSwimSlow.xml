@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<thalamuskDroneSwimSlow footrotatestrength="25" LegMoveAmount="0.15699378" LegCycleLength="18.678097" HandMoveAmount="-0.1551362,0.44621792" HandCycleSpeed="-0.6205448" HandMoveOffset="0,0" FootAngle="-50" ArmMoveStrength="1" HandMoveStrength="0.5" FixedHeadAngle="True" SteerTorque="1" LegTorque="25" MovementSpeed="1" CycleSpeed="0.43722367" HeadAngle="-18" TorsoAngle="0" HeadTorque="15" TorsoTorque="20" FootTorque="25" AnimationType="SwimSlow" ArmIKStrength="1" HandIKStrength="1" />

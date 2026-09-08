@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DeathgillSwimSlow UseSineMovement="False" Flip="True" FlipCooldown="1" FlipDelay="0.5" Mirror="True" MirrorLerp="True" WaveAmplitude="26.67176" WaveLength="41.55172" RotateTowardsMovement="True" TailTorque="50" TailTorqueMultiplier="1" FootAngles="" UpdateAnimationWhenNotMoving="False" TailAngle="89" SteerTorque="25" LegTorque="25" AnimationType="SwimSlow" MovementSpeed="3.9514601" CycleSpeed="1" HeadAngle="89" TorsoAngle="90" HeadTorque="50" TorsoTorque="65" FootTorque="25" ArmIKStrength="1" HandIKStrength="1" />

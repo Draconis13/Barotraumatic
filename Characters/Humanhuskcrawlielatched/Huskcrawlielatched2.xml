@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<huskappendage>
+  <limb name="Body" id="15" height="65" width="205" density="3" ignorecollisions="False" flip="True" scale="0.85" SpriteOrientation="90" ConstantTorque="0" ConstantAngle="0" mirrorvertically="True" mirrorhorizontally="False">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/Characters/Humanhuskcrawlielatched/latched1.png" sourcerect="268,0,268,272" depth="0.12" origin="0.5,0.5" ignoretint="true" />
+    <StatusEffect type="OnDamaged" target="This" duration="1" ConditionalComparison="AND">
+      <RequiredAffliction type="damage" minstrength="1" />
+      <Affliction identifier="Crawlielatched2" strength="-35" probability="1" />
+    </StatusEffect>
+    <StatusEffect type="OnDamaged" target="This" duration="1" ConditionalComparison="AND">
+      <RequiredAffliction type="damage" minstrength="3" />
+      <Affliction identifier="Crawlielatched2" strength="-45" probability="1" />
+    </StatusEffect>
+    <StatusEffect type="OnDamaged" target="This" duration="1" ConditionalComparison="AND">
+      <RequiredAffliction type="damage" minstrength="15" />
+      <Affliction identifier="Crawlielatched2" strength="-55" probability="1" />
+    </StatusEffect>
+    <StatusEffect type="OnDamaged" target="This" duration="1" ConditionalComparison="AND">
+      <RequiredAffliction type="damage" minstrength="40" />
+      <Affliction identifier="Crawlielatched2" strength="-70" probability="1" />
+    </StatusEffect>
+  </limb>
+  <joint name="Torso to Sus Appendage" limb1="0" limb2="15" limb1anchor="34.1,-1.3" limb2anchor="16.9,4.4" UpperLimit="88" LowerLimit="82" canbesevered="False" limitenabled="True" />
+</huskappendage>

@@ -1,0 +1,142 @@
+﻿<Character SpeciesName="Watcherold" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="watcheroid" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="True" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="50" Visibility="50" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="30000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage1.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage2.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage3.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage4.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" dontmuffle="true" File="Content/Characters/Watcher/WATCHER_death1.ogg" State="Die" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" dontmuffle="true" File="Content/Characters/Watcher/WATCHER_death2.ogg" State="Die" Range="10000" Volume="1" Tags="" />
+  <damageemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.2" ScaleMax="0.4" VelocityMin="200" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="blood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="2" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="waterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="3" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="3" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <health Vitality="500" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="">
+    <Limb name="Head">
+      <VitalityMultiplier identifier="acidburn" multiplier="0" />
+      <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+      <VitalityMultiplier identifier="psychosis" multiplier="0" />
+    </Limb>
+    <Limb name="Torso">
+      <VitalityMultiplier identifier="acidburn" multiplier="0" />
+      <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+      <VitalityMultiplier identifier="psychosis" multiplier="0" />
+    </Limb>
+    <Limb name="RightArm">
+      <VitalityMultiplier identifier="acidburn" multiplier="0" />
+      <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+      <VitalityMultiplier identifier="psychosis" multiplier="0" />
+    </Limb>
+    <Limb name="RightLeg">
+      <VitalityMultiplier identifier="acidburn" multiplier="0" />
+      <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+      <VitalityMultiplier identifier="psychosis" multiplier="0" />
+    </Limb>
+    <Limb name="LeftArm">
+      <VitalityMultiplier identifier="acidburn" multiplier="0" />
+      <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+      <VitalityMultiplier identifier="psychosis" multiplier="0" />
+    </Limb>
+    <Limb>
+      <!--Spikes-->
+      <VitalityMultiplier identifier="acidburn" multiplier="0" />
+      <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+      <VitalityMultiplier identifier="psychosis" multiplier="0" />
+    </Limb>
+  </health>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+    <Item Identifier="watcherspike" />
+    <Item Identifier="adrenaline" />
+    <Item Identifier="watchergel" />
+    <Item Identifier="watchershell" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
+    <Item amount="2" Identifier="watcherspike" />
+    <Item Identifier="adrenaline" />
+    <Item Identifier="watchergel" />
+    <Item Identifier="watchershell" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+    <Item amount="2" Identifier="watcherspike" />
+    <Item Identifier="watchergel" />
+    <Item Identifier="watchercornea" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="4">
+    <Item Identifier="watchercornea" />
+    <Item Identifier="adrenaline" />
+    <Item Identifier="watchergel" />
+  </Inventory>
+  <ai CombatStrength="400" Sight="5" Hearing="0" MaxPerceptionDistance="-1" AggressionHurt="100" AggressionGreed="0" FleeHealthThreshold="75" AttackWhenProvoked="False" AvoidGunfire="True" DamageThreshold="0" AvoidTime="5" MinFleeTime="45" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="False" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0">
+    <target Tag="weapon" State="Avoid" Priority="500" ReactDistance="3000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="decoy" State="Observe" Priority="300" ReactDistance="0" AttackDistance="1000" Timer="20" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="provocative" State="Observe" Priority="200" ReactDistance="0" AttackDistance="1000" Timer="20" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="light" State="Observe" Priority="100" ReactDistance="0" AttackDistance="1000" Timer="20" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="human" State="Observe" Priority="20" ReactDistance="0" AttackDistance="1000" Timer="20" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="weaker" State="Observe" Priority="20" ReactDistance="0" AttackDistance="1000" Timer="20" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="stronger" State="Observe" Priority="20" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="wall" State="Observe" Priority="1" ReactDistance="0" AttackDistance="1500" Timer="10" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <StatusEffect type="OnActive" target="NearbyCharacters" range="5000">
+    <Affliction identifier="watchersgaze" strength="5" />
+    <Sound file="%ModDir%/Characters/Watcherold/Watcheralpha_loop.ogg" volume="0.1" loop="true" range="5000" dontmuffle="true" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="NearbyCharacters" range="2400" targets="human" onlyoutside="true">
+    <Affliction identifier="watchersgaze" strength="20" />
+    <Sound file="%ModDir%/Characters/Watcherold/Watcheralpha_loop.ogg" volume="1" loop="true" range="2400" dontmuffle="true" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="NearbyCharacters" range="20000">
+    <ReduceAffliction identifier="watchersgaze" strength="100" />
+    <Affliction identifier="nausea" strength="2" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="0.4" stackable="false">
+    <RequiredAffliction type="damage,burn" minstrength="1" />
+    <Conditional isdead="false" />
+    <SpawnItem identifier="acidemitter" spawnposition="This" count="3" spread="500" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="0.6" stackable="false">
+    <RequiredAffliction type="damage,burn" minstrength="1" />
+    <Conditional isdead="false" />
+    <SpawnItem identifier="acidemitter" spawnposition="This" count="2" spread="300" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="0.8" stackable="false">
+    <RequiredAffliction type="damage,burn" minstrength="1" />
+    <Conditional isdead="false" />
+    <SpawnItem identifier="acidemitter" spawnposition="This" count="3" spread="400" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="1.0" stackable="false">
+    <RequiredAffliction type="damage,burn" minstrength="1" />
+    <Conditional isdead="false" />
+    <SpawnItem identifier="acidemitter" spawnposition="This" count="1" spread="200" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
+    <Sound file="Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
+  </StatusEffect>
+</Character>

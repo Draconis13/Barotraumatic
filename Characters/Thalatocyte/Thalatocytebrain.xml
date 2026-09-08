@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="Thalatocyte" speciesname="Thalatocytebrain" speciestranslationoverride="Thalatocyte" texture="%ModDir%/Characters/Thalatocyte/thalamidnew2.png" MusicType="bossfight2" MusicCommonness="2.0" MusicRangeMultiplier="6000">
+  <animations folder="%ModDir%/Characters/Thalatocyte/Brainanimations/"/>
+  <health vitality="1950" />
+  <ragdoll scalemultiplier="1.35"/>
+</Charactervariant>

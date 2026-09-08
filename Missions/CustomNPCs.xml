@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<npcsets>
+
+  <npcset identifier="BTPsychoclownstation">
+    <npc identifier="BTPsychoclown" job="killer" behavior="passive" tags="btkillerclown" TeamID="Team1" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.5" aimspeed="1.2" aimaccuracy="1" reportrange="500" hearing="1.0" findweaponsrange="500">
+      <!-- Clowns usually have little protection and only a goofy suit but due to their crazed nmature they have a large amount of talents to increase their lethality and toughness including lonewolf which gives them conservation of prankjitsu where one clown is stronger laughing alone -->
+      <talents>
+        <talent identifier="veteran" />
+        <talent identifier="daringdolphin" />
+        <talent identifier="easyturtle" />
+        <talent identifier="crustyseaman" />
+        <talent identifier="swole" />
+        <talent identifier="firstaidtraining" />
+        <talent identifier="lonewolf" />
+        <talent identifier="enrollintoclowncollege" />
+        <talent identifier="skedaddle" />
+        <talent identifier="waterprankster" />
+      </talents>
+	  <!-- 5 Knives -->
+	 <ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="clowncostume" equip="true"/>
+        <Item identifier="clownmask" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="divingknife" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	<ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="cultistcostume" equip="true"/>
+        <Item identifier="cultistmask" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="divingknife" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	<ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="mimeoutfit" equip="true"/>
+        <Item identifier="mimemask" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="divingknife" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	 <ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="pierrotmask" equip="true"/>
+        <Item identifier="pierrotcostume" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="divingknife" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	  	  	        <ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="raggedclownmask" equip="true"/>
+        <Item identifier="clowncostumesleeveless" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="divingknife" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+  	  <!-- 5 Crowbar -->
+	        <ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="clowncostume" equip="true"/>
+        <Item identifier="clownmask" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="crowbar" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	        <ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="mimeoutfit" equip="true"/>
+        <Item identifier="mimemask" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="crowbar" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	        <ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="cultistcostume" equip="true"/>
+        <Item identifier="cultistmask" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="crowbar" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	  	<ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="mimeoutfit" equip="true"/>
+        <Item identifier="mimemask" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="crowbar" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	  	        <ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="pierrotmask" equip="true"/>
+        <Item identifier="pierrotcostume" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="crowbar" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	  	  	        <ItemSet commonness="10">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="raggedclownmask" equip="true"/>
+        <Item identifier="clowncostumesleeveless" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="crowbar" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	  <!-- 3 Meatcleaver -->
+	  	        <ItemSet commonness="5">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="pierrotmask" equip="true"/>
+        <Item identifier="pierrotcostume" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+		  <Item identifier="antibloodloss1"/>
+        <Item identifier="meatcleaver" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	  	  	        <ItemSet commonness="5">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="cultistmask" equip="true"/>
+        <Item identifier="cultistcostume" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+		  <Item identifier="antibloodloss1"/>
+        <Item identifier="meatcleaver" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	  	  	  	        <ItemSet commonness="5">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="raggedclownmask" equip="true"/>
+        <Item identifier="clowncostumesleeveless" equip="true"/>
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="meatcleaver" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	  <!-- 2 Flamer -->	  
+	 <ItemSet commonness="5">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="harlequinsuit" equip="true" />
+          <Item identifier="raggedclownmask" equip="true" />
+          <Item identifier="clowndivingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="pressurestabilizer" />
+        <Item identifier="antibloodloss1"/>
+        <Item identifier="antidama1"/>
+          <Item identifier="flamer" equip="true" >
+		   <Item identifier="incendiumfueltank" />
+          </Item>
+          <Item identifier="bikehorn" equip="true" />
+        </ItemSet>
+			 <ItemSet commonness="5">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="cultistcostume" equip="true" />
+          <Item identifier="cultistmask" equip="true" />
+          <Item identifier="clowndivingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="pressurestabilizer" />
+        <Item identifier="antibloodloss1"/>
+        <Item identifier="antidama1"/>
+          <Item identifier="flamer" equip="true" >
+		   <Item identifier="incendiumfueltank" />
+          </Item>
+          <Item identifier="bikehorn" equip="true" />
+        </ItemSet>
+		<!-- 2 Chainsaw -->
+	  	 <ItemSet commonness="5">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="clowncostumesleeveless" equip="true" />
+          <Item identifier="raggedclownmask" equip="true" />
+          <Item identifier="clowndivingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="pressurestabilizer" />
+		  <Item identifier="steroids"/>
+          <Item identifier="trimmer" equip="true" >
+		   <Item identifier="batterycell" />
+          </Item>
+          <Item identifier="bikehorn" equip="true" />
+        </ItemSet>
+		 <ItemSet commonness="5">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="cultistcostume" equip="true" />
+          <Item identifier="cultistmask" equip="true" />
+          <Item identifier="clowndivingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="pressurestabilizer" />
+          <Item identifier="steroids"/>
+          <Item identifier="trimmer" equip="true" >
+		   <Item identifier="batterycell" />
+          </Item>
+          <Item identifier="bikehorn" equip="true" />
+        </ItemSet>
+			  <!-- 2 Axes -->
+	  	 <ItemSet commonness="5">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="clowncostume" equip="true" />
+          <Item identifier="clownmask" equip="true" />
+          <Item identifier="clowndivingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="pressurestabilizer" />
+		  <Item identifier="antibloodloss1"/>
+          <Item identifier="antidama1"/>
+          <Item identifier="boardingaxe" equip="true" />
+          <Item identifier="bikehorn" equip="true" />
+        </ItemSet>
+		  <ItemSet commonness="5">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="harlequinsuit" equip="true" />
+          <Item identifier="raggedclownmask" equip="true" />
+          <Item identifier="clowndivingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="pressurestabilizer" />
+        <Item identifier="antibloodloss1"/>
+        <Item identifier="antidama1"/>
+          <Item identifier="boardingaxe" equip="true" />
+          <Item identifier="bikehorn" equip="true" />
+        </ItemSet>
+			  <!-- 2 Rare -->
+		<ItemSet commonness="3">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="pierrotcostume" equip="true" />
+          <Item identifier="raggedclownmask" equip="true" />
+		   <Item identifier="makeshiftarmor" equip="true" />
+          <Item identifier="clowndivingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="pressurestabilizer" />
+          <Item identifier="boardingaxe" equip="true" />
+          <Item identifier="bikehorn" equip="true" />
+        </ItemSet>
+		<ItemSet commonness="3">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="harlequinsuit" equip="true" />
+          <Item identifier="clownmaskunique" equip="true" />
+		  <Item identifier="safetyharness" equip="true" />
+          <Item identifier="clowndivingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="pressurestabilizer" />
+          <Item identifier="flamerunique" equip="true" >
+		   <Item identifier="incendiumfueltank" />
+          </Item>
+          <Item identifier="bikehorn" equip="true" />
+        </ItemSet>
+		 <!-- 2 Shiny -->
+      <ItemSet commonness="3"> 
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="clownsuitunique" equip="true"/>
+        <Item identifier="clownmaskunique" equip="true"/>
+		<Item identifier="bodyarmor" equip="true" />
+        <Item identifier="clowndivingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="oxygentank" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="steroids"/>
+        <Item identifier="divingknifeunique" equip="true"/>
+        <Item identifier="bikehorn" equip="true"/>
+      </ItemSet>
+	  <ItemSet commonness="3">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="clownsuitunique" equip="true" />
+          <Item identifier="clownmaskunique" equip="true" />
+		  <Item identifier="bodyarmor" equip="true" />
+          <Item identifier="clowndivingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="pressurestabilizer" />
+          <Item identifier="steroids"/>
+          <Item identifier="boardingaxe" equip="true" />
+          <Item identifier="bikehorn" equip="true" />
+        </ItemSet>
+    </npc>
+  </npcset>
+
+  <npcset identifier="MiningsurvivorsBT">
+    <npc identifier="SolesurvivorBT" job="commoner" behavior="Passive" tags="btlostdiver" TeamID="Team1" AllowDraggingIndefinitely="true" requirerescue="true" allowordering="true" healthmultiplier="2.25" healthmultiplierinmultiplayer="2.25" aimspeed="1.95" aimaccuracy="0.25">
+      <!-- Objective: Survive -->
+      <talents>
+        <talent identifier="veteran" />
+        <talent identifier="warlord" />
+        <talent identifier="physicalconditioning" />
+        <talent identifier="daringdolphin" />
+        <talent identifier="easyturtle" />
+        <talent identifier="crustyseaman" />
+        <talent identifier="stonewall" />
+        <talent identifier="crustyseaman" />
+        <talent identifier="iamthatguy" />
+        <talent identifier="rifleman" />
+        <talent identifier="swole" />
+        <talent identifier="firstaidtraining" />
+        <talent identifier="lonewolf" />
+        <talent identifier="implacable" />
+        <talent identifier="enrollintoclowncollege" />
+        <talent identifier="skedaddle" />
+        <talent identifier="waterprankster" />
+      </talents>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="securityuniform1" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
+        <Item identifier="toolbelt" equip="true">
+          <Item identifier="titanite" amount="2" />
+          <Item identifier="tonicliquid" amount="1" />
+          <Item identifier="BTdistressbeacon" amount="1" />
+          <Item identifier="plasmacutter" amount="1">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="abyssdivingsuit" equip="true">
+          <Item identifier="oxygenitetank" />
+        </Item>
+        <Item identifier="assaultrifle">
+          <Item identifier="assaultriflemagazine" />
+        </Item>
+        <Item identifier="assaultriflemagazine" amount="2" />
+        <Item identifier="antidama3" amount="2" />
+        <Item identifier="divingknifehardened" equip="false" />
+        <Item identifier="antibleeding3" />
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="minerclothes" equip="true" />
+        <Item identifier="ballistichelmet3" equip="true" />
+        <Item identifier="toolbelt" equip="true">
+          <Item identifier="brockite" amount="2" />
+          <Item identifier="tonicliquid" amount="1" />
+          <Item identifier="sonarbeacon" amount="1" ison="true" />
+          <Item identifier="plasmacutter" amount="1">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="abyssdivingsuit" equip="true">
+          <Item identifier="oxygenitetank" />
+        </Item>
+        <Item identifier="smg">
+          <Item identifier="smgmagazinedepletedfuel" />
+        </Item>
+        <Item identifier="smgmagazine" amount="2" />
+        <Item identifier="antidama3" amount="2" />
+        <Item identifier="heavywrench" equip="false" />
+        <Item identifier="antibleeding3" />
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="ballistichelmet2" equip="true" />
+        <Item identifier="toolbelt" equip="true">
+          <Item identifier="langbeinite" amount="2" />
+          <Item identifier="antidama1" amount="1" />
+          <Item identifier="BTdistressbeacon" amount="1" />
+          <Item identifier="plasmacutter" amount="1">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="abyssdivingsuit" equip="true">
+          <Item identifier="oxygenitetank" />
+        </Item>
+        <Item identifier="shotgun">
+          <Item identifier="shotgunshell" amount="6" />
+        </Item>
+        <Item identifier="shotgunshell" amount="12" />
+        <Item identifier="antidama3" amount="2" />
+        <Item identifier="boardingaxe" equip="false" />
+        <Item identifier="antibleeding3" />
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="pirateclotheshard" equip="true" />
+        <Item identifier="piratehelmet" equip="true" />
+        <Item identifier="toolbelt" equip="true">
+          <Item identifier="langbeinite" amount="2" />
+          <Item identifier="rum" amount="1" />
+          <Item identifier="BTdistressbeacon" amount="1" />
+          <Item identifier="riflebullet" amount="6" />
+          <Item identifier="plasmacutter" amount="1">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="abyssdivingsuit" equip="true">
+          <Item identifier="oxygenitetank" />
+        </Item>
+        <Item identifier="rifle">
+          <Item identifier="riflebullet" amount="6" />
+          <Item identifier="40mmgrenade" amount="1" />
+        </Item>
+        <Item identifier="riflebullet" amount="12" />
+        <Item identifier="antidama3" amount="2" />
+        <Item identifier="divingknifeunique" equip="false" />
+        <Item identifier="antibleeding3" />
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="clowncostume" equip="true" />
+        <Item identifier="clownmask" equip="true" />
+        <Item identifier="toolbelt" equip="true">
+          <Item identifier="polyhalite" amount="2" />
+          <Item identifier="banana" amount="1" />
+          <Item identifier="BTdistressbeacon" amount="1" />
+          <Item identifier="revolverround" amount="1" />
+          <Item identifier="plasmacutter" amount="1">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="abyssdivingsuit" equip="true">
+          <Item identifier="oxygenitetank" />
+        </Item>
+        <Item identifier="revolver">
+          <Item identifier="revolverrounddepletedfuel" amount="6" />
+        </Item>
+        <Item identifier="revolverrounddepletedfuel" amount="12" />
+        <Item identifier="antidama3" amount="2" />
+        <Item identifier="crowbardementonite" equip="false" />
+        <Item identifier="antibleeding3" />
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="zealotrobes" equip="true" />
+        <Item identifier="ballistichelmet3" equip="true" />
+        <Item identifier="toolbelt" equip="true">
+          <Item identifier="hydroxyapatite" amount="2" />
+          <Item identifier="huskeggsbasic" amount="1" />
+          <Item identifier="BTdistressbeacon" ison="true" amount="1" />
+          <Item identifier="revolverround" amount="6" />
+          <Item identifier="plasmacutter" amount="1">
+            <Item identifier="oxygentank" />
+          </Item>
+          <Item identifier="oxygentank" />
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="abyssdivingsuit" equip="true">
+          <Item identifier="oxygenitetank" />
+        </Item>
+        <Item identifier="machinepistol" equip="true">
+          <Item identifier="smgmagazinedepletedfuel" amount="6" />
+        </Item>
+        <Item identifier="machinepistol" equip="true">
+          <Item identifier="smgmagazinedepletedfuel" amount="6" />
+        </Item>
+        <Item identifier="smgmagazine" amount="2" />
+        <Item identifier="antidama3" amount="2" />
+        <Item identifier="crowbardementonite" equip="false" />
+        <Item identifier="antibleeding3" />
+      </ItemSet>
+    </npc>
+  </npcset>
+  
+  
+  
+</npcsets>

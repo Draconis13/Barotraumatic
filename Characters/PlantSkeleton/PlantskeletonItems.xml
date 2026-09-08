@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" nameidentifier="fiberplant" identifier="plantskeletonitem" category="Material" Tags="smallitem,plant" maxstacksize="1" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.9" impactsoundtag="impact_soft" health="1" noninteractable="true" damagedbyprojectiles="true" hideinmenus="true">
+    <ContainedSprite texture="Content/Items/Materials/Minerals.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="257,0,96,128" origin="0.5,0.5" />
+    <LightComponent lightcolor="208,139,211,150" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.2" sourcerect="545,386,54,78" origin="0.5,0.5" />
+    <Body radius="30" height="50" density="10.1" />
+    <LevelResource deattachduration="1" randomoffsetfromwall="40">
+      <Commonness commonness="0.01" cavecommonness="0.03" abysscommonness="0" leveltype="coldcaverns" />
+      <Commonness commonness="0.1" cavecommonness="0.2" abysscommonness="0" leveltype="europanridge" />
+      <Commonness commonness="0.2" cavecommonness="0.3" abysscommonness="0" />
+    </LevelResource>
+    <!-- motion sensor activates when a human is nearby and spawns the monster -->
+    <MotionSensor range="400" canbeselected="false" IgnoreDead="True" minimumvelocity="0" updateinterval="0.025" target="Human" DetectOwnMotion="false">
+      <StatusEffect type="Always" target="This" delay="2" condition="-100" disabledeltatime="true" stackable="false" checkconditionalalways="true">
+        <Conditional targetitemcomponent="MotionSensor" MotionDetected="eq true" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Plantskeleton" MaximumAmount="1" probability="0.8" AfflictionOnSpawn="strengthen" AfflictionStrength="12" />
+        <Sound file="Content/Sounds/Damage/ArmorBreak1.ogg" range="1000" dontmuffle="true" volume="0.5" />
+        <particleemitter particle="brownchunks" particleamount="12" velocitymin="500" velocitymax="1000" distancemin="0" distancemax="100" anglemin="0" anglemax="359" scalemin="0.5" scalemax="1.5" drawontop="true" copyentityangle="true" colormultiplier="255,20,255,250" />
+        <Remove />
+      </StatusEffect>
+    </MotionSensor>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" canbepicked="False" allowingameediting="False" attachable="true" reattachable="false" />
+  </Item>
+  <Item name="Ruined Diving Suit" description="This diving suit has been grown over by fiber plants and has decayed heavily leaving little to salvage." identifier="PlantSkeletonDive" category="Wrecked,Diving,Equipment" tags="diving,deepdiving,provocative" scale="0.5" fireproof="true" botpriority="0" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon name="Icon" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" sourcerect="400,0,112,112" origin="0.5,0.5" />`
+    <Sprite name="" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive_Item.png" sourcerect="0,8,147,112" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+   	<Deconstruct time="15" chooserandom="true" amount="1">
+      <Item identifier="titanium" commonness="60" />
+      <Item identifier="rubber" commonness="50" />
+      <Item identifier="aluminium" commonness="40" />
+      <Item identifier="titaniumaluminiumalloy" commonness="30" />
+	  <Item identifier="fiberplant" commonness="20" />
+    </Deconstruct>
+    <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Head" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" hidewearablesoftype="Hair, Beard, Hat" limb="Head" scale="0.55" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" hidelimb="false" hideotherwearables="false" sourcerect="403,2,104,107" origin="0.5,0.5">
+        <!-- Light -->
+        <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="5" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <IsActive condition="gt 10.0" />
+        </LightComponent>
+        <!-- Light -->
+        <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="5" IsOn="true" flicker="0.8" flickerspeed="5.0" pulsefrequency="1" pulseamount="1">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="true" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <IsActive condition="lte 10.0" />
+        </LightComponent>
+      </sprite>
+      <sprite name="Torso" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Hand" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Hand" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Lower Arm" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Lower Arm" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Upper Arm" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Upper Arm" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Waist" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Thigh" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Thigh" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Leg" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Leg" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Shoe" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Shoe" texture="%ModDir:2518816103%/Characters/PlantSkeleton/SkeletonDive.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <!-- Vis/Movement -->
+      <StatusEffect type="OnWearing" target="Character" HideFace="false" ObstructVision="true" SpeedMultiplier="0.7" PropulsionSpeedMultiplier="0.5" setvalue="true" disabledeltatime="true" />
+      <!-- Pressure Protection -->
+      <StatusEffect type="OnWearing" target="this,Character" PressureProtection="2500.0" setvalue="true" disabledeltatime="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.90" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="1.5" probabilitymultiplier="1.25" damagesound="LimbArmor" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use">
+      <aitarget maxsightrange="1500" />
+    </Holdable>
+  </Item>
+</Items>

@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Infected dive suit" identifier="Infected_divingsuit" category="Diving" tags="diving,deepdiving,divingsuit" scale="0.5" fireproof="true" description="This suit seems to have been infected by some kind of ballast flora that produces oxygen as a byproduct to being fed blood. The entire suit is covered inside and out. Extremely contagious to nearby personnel and items." equipconfirmationtext="handcuffequipconfirmation" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="wreckdivingsuitcontainer" spawnprobability="0.01" />
+    <Price baseprice="3750" soldeverywhere="false">
+      <Price storeidentifier="outpost" multiplier="1" sold="false" />
+      <Price storeidentifier="city" multiplier="1" sold="false" />
+      <Price storeidentifier="research" multiplier="2" sold="false" />
+      <Price storeidentifier="military" multiplier="1" sold="false" />
+      <Price storeidentifier="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="30">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="alienblood" amount="2" />
+      <Item identifier="paralyxis" amount="2" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Clothes/InfectedInventoryIconAtlas2.png" sourcerect="0,256,128,128" origin="0.5,0.5" />
+    <!--
+    <Sprite name="Diving Suit" texture="DivingSuit_Item.png" sourcerect="157,0,90,307" depth="0.55" origin="0.4888889,0.5439739" />
+    -->
+    <Sprite name="Diving Suit Item" texture="%ModDir:2518816103%/Items/Clothes/InfectedDivingSuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
+    <ContainedSprite name="Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:2518816103%/Items/Clothes/InfectedDivingSuit_Item.png" sourcerect="181,0,75,193" depth="0.55" origin="0.5,0.5" />
+    <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:2518816103%/Items/Clothes/Infectedcontainers.png" sourcerect="724,373,77,209" depth="0.55" origin="-0.12,-0.13" />
+    <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:2518816103%/Items/Clothes/InfectedDivingSuit_Item.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
+    <Body radius="45" width="34" density="15" />
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect">
+      <sprite name="Diving Suit Helmet Wearable" texture="%ModDir:2518816103%/Items/Clothes/Infectedheadgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.70" hidelimb="true" hideotherwearables="true" sourcerect="5,4,94,96" origin="0.5,0.5"></sprite>
+      <sprite name="Regular Diving Suit Torso" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Right Hand" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Left Hand" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Right Lower Arm" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Left Lower Arm" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Right Upper Arm" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Left Upper Arm" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Waist" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Right Thigh" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Left Thigh" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Right Leg" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Left Leg" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Left Shoe" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Regular Diving Suit Right Shoe" texture="%ModDir:2518816103%/Items/Clothes/reg_InfectedDivingSuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="100000.0" LowPassMultiplier="0.1" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="1" />
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="1" />
+		<TriggerAnimation Type="Walk" FileName="HumanWalkDivingSuit" priority="1" ExpectedSpecies="Human" />
+        <!-- high prio for run animation so e.g. affliction-based run animations won't make the character run faster -->
+        <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="10" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.05" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="antibloodloss2" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.30" setvalue="true" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="antibloodloss2" type="Contained" />
+      </StatusEffect>
+	   <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.15" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="alienblood" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.1" setvalue="true" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="alienblood" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" Comparaison="or" target="Character">
+        <Conditional healthpercentage="lt -70" />
+        <Conditional IsDead="true" />
+        <Affliction identifier="infectedsuitinfection" strength="1" />
+      </StatusEffect>
+	    <StatusEffect type="OnWearing" Comparaison="or" delay="5" target="This">
+        <Conditional healthpercentage="lt -70" />
+        <Conditional IsDead="true" />
+		<particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
+        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="5500" volume="0.7" />
+		<SpawnItem identifier="ballastfloratoxinsthalsuit" />
+        <Remove />
+      </StatusEffect>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,explosiondamage,stun" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.8" probabilitymultiplier="1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="1" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+	  <StatValue stattype="SwimmingSpeed" value="-0.1" />
+      <StatValue stattype="PropulsionSpeed" value="0.4" />
+	  <StatusEffect type="OnNotContained" interval="325" target="This" stackable="false" >
+      <Conditional InWater="false" />
+      <SpawnItem identifier="ballastfloratoxinsthalsuit" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" comparison="and" hideitems="true" containedstateindicatorstyle="tank">
+      <Containable items="alienblood,antibloodloss2" blameequipperfordeath="true" />
+      <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
+        <RequiredItem items="alienblood,antibloodloss2" type="Contained" matchonempty="true" />
+        <Conditional condition="lt 3.5" />
+        <conditional ishuman="true" />
+        <Affliction identifier="infectedsuitinfection" strength="1" />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use">
+      <Upgrade gameversion="0.1401.0.0" msg="ItemMsgPickUpUse" />
+    </Holdable>
+    <aitarget maxsightrange="1000" />
+  </Item>
+  <Item name="Wrecked Exosuit" identifier="wreckexosuit" category="Diving,Equipment" tags="diving,deepdiving,deepdivinglarge" scale="0.605" fireproof="true" description="Rusted, ruined and riven with thalamus flora that was powering and puppeting this walking coffin for a drowned mariner. The storage and reactor destroyed, along with the servos and life support. Some titanium parts are salvagable." isshootable="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0.01" cargocontaineridentifier="">
+    <InventoryIcon texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" sourcerect="384,384,128,128" origin="0.5,0.5" />
+    <Sprite name="Exosuit Item" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" sourcerect="2,266,203,244" depth="0.55" origin="0.5,0.5" />
+    <Body width="150" height="230" density="30" />
+	  <Deconstruct time="20">
+      <Item identifier="titanium" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+	 <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use">
+      <Upgrade gameversion="0.1401.0.0" msg="ItemMsgPickUpUse" />
+	<StatValue stattype="MovementSpeed" value="-0.4" />
+    </Holdable>
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+      <sprite name="Exosuit Helmet Wearable" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
+      <sprite name="Exosuit Torso" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="Torso" scale="1.2" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.8" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="167,1,203,193">
+        <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false" offset="-50,-50">
+          <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <sprite name="Exosuit Right Hand" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" origin="0.1,0.4" SourceRect="398,170,31,36" />
+      <sprite name="Exosuit Left Hand" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" origin="0.1,0.4" SourceRect="461,165,39,41" />
+      <sprite name="Exosuit Right Upper Arm" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightArm" depthlimb="Head" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="383,0,64,96" />
+      <sprite name="Exosuit Left Upper Arm" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" SourceRect="447,0,64,96" />
+      <sprite name="Exosuit Right Forearm" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="383,96,64,64" />
+      <sprite name="Exosuit Left Forearm" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" SourceRect="447,96,64,64" />
+      <sprite name="Exosuit Waist" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="182,196,178,53" />
+      <sprite name="Exosuit Right Thigh" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="0,0,96,112" />
+      <sprite name="Exosuit Left Thigh" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="0,0,96,112" />
+      <sprite name="Exosuit Right Leg" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritlimbdepth="true" inheritsourcerect="true" />
+      <sprite name="Exosuit Left Leg" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Exosuit Left Shoe" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.2,0.5" inheritsourcerect="false" sourcerect="371,211,133,37" />
+      <sprite name="Exosuit Right Shoe" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.2,0.5" inheritsourcerect="false" sourcerect="371,211,133,37" />
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+      <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.2" HideFace="true" ObstructVision="true" PressureProtection="7000.0" PropulsionSpeedMultiplier="0.5" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
+        <TriggerAnimation Type="Walk" FileName="HumanWalkExosuit" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" FileName="HumanRunExosuit" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <!-- no HMG stun -->
+      <!-- slow movement -->
+      <StatusEffect type="OnWearing" target="This,Character" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="gt 0.5" />
+      </StatusEffect>
+      <!-- 0 movement speed when out of fuel-->
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.4" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
+      </StatusEffect>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,lacerations,explosiondamage" damagemultiplier="0.45" damagesound="MetalImpact" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, bleeding" damagemultiplier="0.65" probabilitymultiplier="0.8" damagesound="MetalImpact" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.75" probabilitymultiplier="0.60" damagesound="MetalImpact" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.90" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.7" />
+      <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
+      <StatValue stattype="FlowResistance" value="0.9" />
+    </Wearable>
+    <ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <StatusEffect type="OnWearing" target="Contained" targetslot="0" playsoundonrequireditemfailure="true">
+        <RequiredItem items="oxygensource" type="Contained" targetslot="0" matchonempty="true" />
+        <Conditional condition="lte 0.0" />
+        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true" />
+      </StatusEffect>
+      <aitarget maxsightrange="1500" />
+    </ItemContainer>
+  </Item>
+  <Item name="Wrecked Exosuit" identifier="wreckexosuitholder" category="Diving,Equipment" tags="extinguisher" scale="0.605" nonplayerteaminteractable="true" fireproof="true" description="" isshootable="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0.01" cargocontaineridentifier="">
+    <PreferredContainer primary="wreckextinguisherholder" spawnprobability="0.1" />
+    <InventoryIcon texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" sourcerect="384,384,128,128" origin="0.5,0.5" />
+    <Sprite name="Exosuit Item" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" sourcerect="2,266,203,244" depth="0.55" origin="0.5,0.5" />
+    <Body width="150" height="230" density="30" bodytype="Static" />
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+      <sprite name="Exosuit Helmet Wearable" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
+      <sprite name="Exosuit Torso" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="Torso" scale="1.2" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.8" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="167,1,203,193">
+        <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false" offset="-50,-50">
+          <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <sprite name="Exosuit Right Hand" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" origin="0.1,0.4" SourceRect="398,170,31,36" />
+      <sprite name="Exosuit Left Hand" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" origin="0.1,0.4" SourceRect="461,165,39,41" />
+      <sprite name="Exosuit Right Upper Arm" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightArm" depthlimb="Head" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="383,0,64,96" />
+      <sprite name="Exosuit Left Upper Arm" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" SourceRect="447,0,64,96" />
+      <sprite name="Exosuit Right Forearm" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="383,96,64,64" />
+      <sprite name="Exosuit Left Forearm" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" SourceRect="447,96,64,64" />
+      <sprite name="Exosuit Waist" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="182,196,178,53" />
+      <sprite name="Exosuit Right Thigh" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="0,0,96,112" />
+      <sprite name="Exosuit Left Thigh" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="0,0,96,112" />
+      <sprite name="Exosuit Right Leg" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritlimbdepth="true" inheritsourcerect="true" />
+      <sprite name="Exosuit Left Leg" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Exosuit Left Shoe" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.2,0.5" inheritsourcerect="false" sourcerect="371,211,133,37" />
+      <sprite name="Exosuit Right Shoe" texture="%ModDir%/Characters/Exosuit/WreckExosuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.2,0.5" inheritsourcerect="false" sourcerect="371,211,133,37" />
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+      <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.2" HideFace="true" ObstructVision="true" PressureProtection="7000.0" PropulsionSpeedMultiplier="0.5" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
+        <TriggerAnimation Type="Walk" FileName="HumanWalkExosuit" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" FileName="HumanRunExosuit" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <!-- no HMG stun -->
+      <!-- slow movement -->
+      <StatusEffect type="OnWearing" target="This,Character" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="gt 0.5" />
+      </StatusEffect>
+      <!-- 0 movement speed when out of fuel-->
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.4" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
+      </StatusEffect>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,lacerations,explosiondamage" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, bleeding" damagemultiplier="0.25" probabilitymultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.5" probabilitymultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.1" damagesound="LimbArmor" />
+      <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
+      <StatValue stattype="FlowResistance" value="0.9" />
+    </Wearable>
+    <MotionSensor range="400" canbeselected="false" IgnoreDead="True" minimumvelocity="0" updateinterval="0.025" target="Human" DetectOwnMotion="false">
+      <StatusEffect type="Always" target="This" delay="2" condition="-100" disabledeltatime="true" stackable="false" checkconditionalalways="true">
+        <Conditional targetitemcomponent="MotionSensor" MotionDetected="eq true" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Exosuit" MaximumAmount="1" AfflictionOnSpawn="stun" AfflictionStrength="1" />
+        <Sound file="Content/Items/PowerOnHeavy2.ogg" range="1000" dontmuffle="true" volume="1" />
+        <Remove />
+      </StatusEffect>
+    </MotionSensor>
+    <ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <StatusEffect type="OnWearing" target="Contained" targetslot="0" playsoundonrequireditemfailure="true">
+        <RequiredItem items="oxygensource" type="Contained" targetslot="0" matchonempty="true" />
+        <Conditional condition="lte 0.0" />
+        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true" />
+      </StatusEffect>
+      <aitarget maxsightrange="1500" />
+    </ItemContainer>
+  </Item>
+  <Item name="Bones" identifier="deadskeleton" category="hidden" description="" nonplayerteaminteractable="true" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10" />
+    <InventoryIcon name="Icon" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" sourcerect="418,7,80,91" origin="0.5,0.5" />
+    <Sprite name="Skeleton" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" sourcerect="0,1,0,1" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Head" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="Head" scale="0.5" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" hidelimb="true" hideotherwearables="true" sourcerect="3,3,97,99" origin="0.5,0.5" />
+      <sprite name="Torso" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Hand" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Hand" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Lower Arm" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Lower Arm" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Upper Arm" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Upper Arm" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Waist" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Thigh" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Thigh" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Leg" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Leg" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Left Shoe" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Right Shoe" texture="%ModDir%/Characters/PlantSkeleton/Skeleton.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+    </Wearable>
+  </Item>
+</Items>

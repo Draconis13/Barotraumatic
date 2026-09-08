@@ -1,0 +1,188 @@
+﻿<Character SpeciesName="Carrierleviathan" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="thalamus" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="True" ForceSlowClimbing="False" Husk="True" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="True" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blackblood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="5" UsePathFinding="True" PathFinderPriority="0.4999999" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="20000" DisableDistance="50000" SoundInterval="20" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <health Vitality="1200" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.05" ConstantHealthRegeneration="0.1" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="False" PoisonVulnerability="0" EmpVulnerability="0.4" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
+  <ai targetinnerwalls="False" CombatStrength="1100" Sight="5" Hearing="4" MaxPerceptionDistance="-1" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="150" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="True" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0">
+    <target Tag="decoy" State="Attack" Priority="300" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="provocative" State="Attack" Priority="150" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="weapon" State="Attack" Priority="150" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="stronger" State="Escape" Priority="110" ReactDistance="2000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="human" State="Aggressive" Priority="100" ReactDistance="2000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="sonar" State="Attack" Priority="60" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="wall" State="Attack" Priority="60" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="weaker" State="Aggressive" Priority="70" ReactDistance="2000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="husk" State="Idle" Priority="0" ReactDistance="2000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Carrierleviathan/Carrier_Attack_1.ogg" State="Attack" Range="6000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Carrierleviathan/Carrier_Attack_2.ogg" State="Attack" Range="5000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Carrierleviathan/Carrier_Death.ogg" State="Die" Range="10000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Carrierleviathan/Carrier_Idle_1.ogg" State="Idle" Range="8000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="true" File="%ModDir:2518816103%/Characters/Carrierleviathan/Carrier_Idle_2.ogg" State="Idle" Range="8000" Volume="2" Tags="" />
+  <sound gender="None" dontmuffle="false" File="%ModDir:2518816103%/Characters/Carrierleviathan/SonarSweep1.ogg" State="Idle" Range="18000" Volume="1" Tags="" />
+  <sound gender="None" dontmuffle="false" File="%ModDir:2518816103%/Characters/Carrierleviathan/SonarSweep2.ogg" State="Idle" Range="18000" Volume="1" Tags="" />
+  <sound gender="None" dontmuffle="false" File="%ModDir:2518816103%/Characters/Carrierleviathan/SonarSweep3.ogg" State="Idle" Range="18000" Volume="1" Tags="" />
+  <sound gender="None" dontmuffle="false" File="%ModDir:2518816103%/Characters/Carrierleviathan/SonarSweep4.ogg" State="Idle" Range="18000" Volume="1" Tags="" />
+  <sound gender="None" dontmuffle="false" File="%ModDir:2518816103%/Characters/Carrierleviathan/SonarSweep5.ogg" State="Idle" Range="18000" Volume="1" Tags="" />
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="2">
+    <Item Identifier="huskeggsbasic" />
+    <Item Identifier="huskeggsbasic" />
+    <Item Identifier="fuelrod" />
+    <Item Identifier="scrap" />
+    <Item Identifier="calyxanide" />
+    <Item Identifier="huskeggs" />
+    <item Identifier="diversremains" />
+    <Item amount="2" Identifier="titanium" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="2">
+    <Item Identifier="huskeggsbasic" />
+    <Item Identifier="huskeggsbasic" />
+    <Item Identifier="fuelrod" />
+    <Item Identifier="huskeggs" />
+    <item Identifier="scrap" />
+    <Item amount="2" Identifier="titanium" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="2">
+    <Item amount="2" Identifier="huskeggsbasic" />
+    <Item Identifier="titanium" />
+    <Item Identifier="titanium" />
+    <Item Identifier="titanium" />
+    <Item amount="1" forcetoslot="true" Identifier="fuelrod" />
+    <Item forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item Identifier="scrap" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="2">
+    <Item amount="2" Identifier="huskeggsbasic" />
+    <Item amount="1" forcetoslot="true" Identifier="fulguriumfuelrod" />
+    <Item amount="1" forcetoslot="true" Identifier="thoriumfuelrod" />
+    <item Identifier="scrap" />
+    <item Identifier="scrap" />
+    <item Identifier="diversremains" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="2">
+    <Item amount="2" Identifier="titanium" />
+    <Item amount="1" forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item amount="1" forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item amount="2" Identifier="huskeggsbasic" />
+    <Item Identifier="scrap" />
+    <item Identifier="scrap" />
+    <item Identifier="fuelrod" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="1">
+    <Item amount="2" Identifier="huskeggsbasic" />
+    <Item amount="1" forcetoslot="true" Identifier="fulguriumfuelrodvolatile" />
+    <Item amount="1" forcetoslot="true" Identifier="fuelrod" />
+    <item Identifier="scrap" />
+    <item Identifier="scrap" />
+    <item Identifier="diversremains" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="1">
+    <Item amount="2" Identifier="titanium" />
+    <Item amount="1" forcetoslot="true" Identifier="fulguriumfuelrodvolatile" />
+    <Item amount="1" forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item amount="2" Identifier="huskeggsbasic" />
+    <Item Identifier="scrap" />
+    <item Identifier="scrap" />
+    <item Identifier="scrap" />
+  </Inventory>
+  <StatusEffect type="OnActive" target="NearbyCharacters" stackable="false" range="13000">
+    <Affliction identifier="carrierbeacon" strength="999" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="NearbyCharacters" stackable="false" range="4800">
+    <ReduceAffliction identifier="carrierbeacon" strength="999" />
+    <ReduceAffliction identifier="carriersound" strength="999" />
+    <Affliction identifier="carrierbeaconclose" strength="999" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="NearbyCharacters" duration="0.1" interval="50" stackable="false" range="10000">
+    <sound file="%ModDir:2518816103%/Characters/Carrierleviathan/Carrier_Idle_2.ogg" range="10000" volume="2" dontmuffle="true" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" interval="40" targetlimb="Head" stackable="false">
+    <SpawnItem identifier="xandepthchargeshell" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="NearbyCharacters" range="10000">
+    <ReduceAffliction identifier="carrierbeacon" strength="999" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" delay="0" target="This" targetlimb="Body">
+    <Explosion range="3000" structuredamage="60" force="300" smoke="false" distancefalloff="true" sparks="false" shockwave="true" underwaterbubble="true" severlimbsprobability="0" camerashake="100" camerashakerange="2000" flashrange="10000" flashduration="1.0" screencolor="255,255,255,25" screencolorrange="5000" screencolorduration="1.0">
+      <Affliction identifier="burn" strength="10" />
+      <Affliction identifier="stun" strength="2" />
+    </Explosion>
+    <Explosion range="1500" structuredamage="0" force="0" distancefalloff="true" smoke="false" sparks="false" shockwave="false" underwaterbubble="false" severlimbsprobability="0.5">
+      <Affliction identifier="explosiondamage" strength="80" />
+      <Affliction identifier="stun" strength="10" />
+    </Explosion>
+    <sound file="Content/Characters/Carrier/CARRIER_death1.ogg" range="10000" volume="2" />
+    <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="5" scalemax="5" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="shrapnel" drawontop="True" particleamount="50" scalemin="5" scalemax="5" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="shrapnel" drawontop="True" particleamount="50" scalemin="5" scalemax="5" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" delay="3" target="This">
+    <sound file="%ModDir:2518816103%/Characters/Carrierleviathan/derelictreactordie.ogg" range="8000" volume="2" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" delay="3" target="This" targetlimb="Head" offset="500,0">
+    <Explosion range="2000" structuredamage="50" force="300" smoke="false" sparks="false" shockwave="true" underwaterbubble="true" severlimbsprobability="0" camerashake="300" camerashakerange="8000" flashrange="0" flashduration="0.0" screencolor="255,255,255,55" screencolorrange="5000" screencolorduration="3.0">
+      <Affliction identifier="burn" strength="5" />
+      <Affliction identifier="stun" strength="2" />
+      <Affliction identifier="radiationsickness" strength="10" />
+    </Explosion>
+    <ParticleEmitter particle="bubbles" particleamount="60" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="blackwaterblood" drawontop="True" particleamount="10" scalemin="9" scalemax="10" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="heavygib" particleamount="4" scalemin="15" scalemax="15" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="gib" particleamount="60" scalemin="1" scalemax="2" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="shrapnel" drawontop="True" particleamount="50" scalemin="5" scalemax="5" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="shrapnel" drawontop="True" particleamount="50" scalemin="5" scalemax="5" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="10000" volume="2" />
+    <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="7" scalemax="7" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" delay="6" target="This" targetlimb="Body">
+    <SpawnCharacter speciesname="Husk_RandomLight" count="1" spread="100" />
+    <SpawnCharacter speciesname="Husk_RandomTiny" count="1" spread="200" />
+    <ParticleEmitter particle="bubbles" particleamount="30" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="7" scalemax="7" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" delay="10" target="This" targetlimb="Body" offset="0,100">
+    <ParticleEmitter particle="bubbles" particleamount="60" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="0" anglemax="360" />
+    <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="10000" volume="2" />
+    <ParticleEmitter particle="shrapnel" drawontop="True" particleamount="50" scalemin="5" scalemax="5" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="shrapnel" drawontop="True" particleamount="50" scalemin="5" scalemax="5" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="3" scalemax="4" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <SpawnItem identifier="carriersirenitem" spawnposition="ThisInventory" />
+    <SpawnCharacter speciesname="Husk_RandomTiny" count="1" spread="100" />
+    <SpawnCharacter speciesname="Husk_RandomLight" count="1" spread="100" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" delay="26" target="This" targetlimb="Head" offset="100,50">
+    <SpawnCharacter speciesname="Husk_RandomLight" count="1" spread="100" probability="0.7" />
+    <SpawnCharacter speciesname="Husk_RandomLight" count="1" spread="100" probability="0.9" />
+    <SpawnCharacter speciesname="Husk_RandomTiny" count="1" spread="100" probability="0.7" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" delay="57" target="This" targetlimb="Head" offset="0,100">
+    <Explosion range="3500" structuredamage="30" itemdamage="20" force="300" empstrength="0.7" smoke="false" sparks="false" shockwave="true" underwaterbubble="true" severlimbsprobability="0" camerashake="400" camerashakerange="10000" flashrange="9000" flashduration="1" screencolor="255,255,255,55" screencolorrange="5000" screencolorduration="4.0">
+      <Affliction identifier="burn" strength="20" />
+      <Affliction identifier="stun" strength="10" />
+      <Affliction identifier="radiationsickness" strength="15" />
+    </Explosion>
+    <Explosion range="1500" structuredamage="80" itemdamage="80" force="0" distancefalloff="true" smoke="false" sparks="false" shockwave="false" underwaterbubble="false" severlimbsprobability="0.3">
+      <Affliction identifier="explosiondamage" strength="50" />
+      <Affliction identifier="burn" strength="60" />
+    </Explosion>
+    <ParticleEmitter particle="bubbles" particleamount="60" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="0" anglemax="360" />
+    <sound file="%ModDir:2518816103%/Characters/Carrierleviathan/ReactorBigBoom.ogg" range="10000" volume="2" dontmuffle="true" />
+    <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="7" scalemax="7" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <SpawnItem identifier="flakshrapneldirectional" spawnposition="This" count="8" aimspread="360" rotationtype="Collider" rotation="0" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" delay="58" target="This" targetlimb="Head" offset="0,100">
+    <Explosion range="1200" structuredamage="60" itemdamage="60" distancefalloff="true" force="0" smoke="false" sparks="false" shockwave="false" underwaterbubble="false" severlimbsprobability="0.75">
+      <Affliction identifier="explosiondamage" strength="20" />
+      <Affliction identifier="burn" strength="20" />
+    </Explosion>
+    <ParticleEmitter particle="bubbles" particleamount="60" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="0" anglemax="360" />
+    <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="10000" volume="2" />
+    <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="7" scalemax="7" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="heavygib" particleamount="3" scalemin="15" scalemax="15" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="gib" particleamount="6" scalemin="1" scalemax="2" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="8" velocitymin="100" velocitymax="2000" scalemin="0.1" scalemax="0.2" />
+  </StatusEffect>
+  <!-- <StatusEffect type="OnActive" target="This" stackable="false" interval="35">
+    <SpawnCharacter speciesname="DeadnoughtHomingshell" count="1" spread="50" />
+    <Sound file="%ModDir:2518816103%/Characters/Deadnought/FIRE.ogg" range="6000" dontmuffle="true" />
+  </StatusEffect> -->
+</Character>

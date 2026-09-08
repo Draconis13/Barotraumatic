@@ -1,0 +1,33 @@
+﻿<Items>
+  <Item name="Yellow Boy Egg" identifier="yellowboyegg" nameidentifier="" Tags="ignorebyai" sonarsize="2" health="10" scale="0.85" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" impactsoundtag="impact_soft" impacttolerance="0.05" hideinmenus="true" IsAITurretTarget="true" AITurretPriority="2" AISlowTurretPriority="0">
+    <Sprite texture="%ModDir%/Characters/Yellowboy/Yellowboyegg.png" depth="0.18" sourcerect="10,12,50,58" origin="0.5,0.5" />
+    <Body radius="25" density="10" />
+    <Deconstruct time="10">
+      <Item identifier="sulphuricacid" />
+    </Deconstruct>
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,-70" handle1="0,10" handle2="0,-10">
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="mudrapeggbrownchunks" particleamount="30" velocitymin="100" velocitymax="2000" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
+        <particleemitter particle="acidmistsmall" particleamount="1" />
+        <particleemitter particle="eggsplashwater" particleamount="5" scalemin="0.7" scalemax="0.8" anglemin="0" anglemax="360" />
+        <Sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit1.ogg" range="2000" selectionmode="Random" />
+        <Sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit2.ogg" range="2000" selectionmode="Random" />
+        <Sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit3.ogg" range="2000" selectionmode="Random" />
+        <Sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit4.ogg" range="2000" selectionmode="Random" />
+        <Sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit5.ogg" range="2000" selectionmode="Random" />
+        <SpawnCharacter speciesname="Yellowboyhatchling" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This">
+        <particleemitter particle="mudrapeggbrownchunks" particleamount="15" velocitymin="100" velocitymax="1000" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.3" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" forcePlaySounds="true">
+        <sound file="Content/Sounds/Damage/Gore7.ogg" range="1000.0" selectionmode="Random" frequencymultiplier="1.1,1.5"/>
+        <sound file="Content/Sounds/Damage/Gore8.ogg" range="1000.0" selectionmode="Random" frequencymultiplier="1.1,1.5"/>
+        <sound file="Content/Sounds/Damage/Gore9.ogg" range="1000.0" selectionmode="Random" frequencymultiplier="1.1,1.5"/>
+        <particleemitter particle="mudrapeggbrownchunks" particleamount="15" velocitymin="100" velocitymax="1000" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-7"/>
+    </Holdable>
+  </Item>
+</Items>

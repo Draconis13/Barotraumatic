@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- <Item name="Glowfish" identifier="GlowfishItem" Tags="smallitem,fishitem" hideinmenus="true" cargocontaineridentifier="thezoo" health="100" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.1" impactsoundtag="impact_soft">
+    <Price baseprice="150" soldeverywhere="false" minleveldifficulty="50">
+      <Price storeidentifier="outpost" multiplier="1.5" minavailable="1" sold="false" />
+      <Price storeidentifier="city" multiplier="1.25" sold="false" />
+      <Price storeidentifier="research" multiplier="1.25" sold="false" />
+      <Price storeidentifier="military" multiplier="1" minavailable="2" />
+      <Price storeidentifier="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir:2518816103%/Characters/Glowfish/Glowfish.png" sourcerect="0,0,300,218" origin="0.5,0.5" />
+    <Sprite name="Glowfish" texture="%ModDir:2518816103%/Characters/Glowfish/Glowfish.png" depth="0.7" sourcerect="0,0,300,218" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="10,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFire" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <SpawnCharacter speciesname="Glowfish" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <Deconstruct time="10">
+      <Item identifier="alienblood" />
+      <Item identifier="glowgland" />
+      <Item identifier="zinc" />
+      <Item identifier="fishscale" />
+    </Deconstruct>
+  </Item>
+  <Item name="Goofyfish" identifier="GoofyfishItem" Tags="smallitem,fishitem" hideinmenus="true" health="100" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.1" impactsoundtag="impact_soft">
+    <Price baseprice="150" minleveldifficulty="50">
+      <Price storeidentifier="outpost" multiplier="1" minavailable="2" />
+      <Price storeidentifier="city" multiplier="0.9" minavailable="2" />
+    </Price>
+    <InventoryIcon texture="%ModDir:2518816103%/Characters/Goofyfish/Goofyfish.png" sourcerect="0,0,300,218" origin="0.5,0.5" />
+    <Sprite name="Pirafish" texture="%ModDir:2518816103%/Characters/Goofyfish/Goofyfish.png" depth="0.7" sourcerect="0,0,300,218" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,10" handle2="0,-10">
+      <StatusEffect type="OnFire" target="This" Condition="-5.0" />
+      <StatusEffect type="OnNotContained" target="This">
+        <SpawnCharacter speciesname="Goofyfish" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <Deconstruct time="10">
+      <Item identifier="alienblood" />
+      <Item identifier="phosphorus" />
+      <Item identifier="poop" />
+    </Deconstruct>
+  </Item>  -->
+  <Item name="Fish Bone" identifier="fishbone" category="Misc" tags="smallitem" scale="0.5" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="A particularly dense bone from a piscine horror, Good scrimshaw material its also ready to be deconstructed into calcium or boiled in soup.">
+    <Price baseprice="110">
+      <Price storeidentifier="city" multiplier="0.8" minavailable="6" sold="false" />
+      <Price storeidentifier="research" multiplier="1" minavailable="6" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="calcium" />
+      <Item identifier="calcium" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="772,706,64,64" />
+    <Sprite texture="Content/Items/InventoryIconAtlas.png" depth="0.54" sourcerect="772,706,64,64" />
+    <Body width="29" height="42" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Fish Oil" identifier="fishoil" category="Misc" tags="engineoil,oil,smallitem,chem,medical" maxstacksize="8" health="50" scale="0.5" pickdistance="150" impactsoundtag="impact_soft" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="Foul smelling creamy oil found in the guts of several Europan sea monsters, useful for submarines that require lubricant, ingesting this putrid gunk alters blood slowing bleeding similar to vikasolumm, most also submarinars know it as an early quack cure for husk infection.">
+    <Price baseprice="100">
+      <Price storeidentifier="outpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="city" multiplier="0.8" sold="false" />
+      <Price storeidentifier="research" multiplier="1" minavailable="0" />
+      <Price storeidentifier="military" multiplier="0.6" sold="false" />
+      <Price storeidentifier="mine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ethanol" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/Materials/Minerals.png" sourcerect="524,644,114,102" />
+    <Sprite texture="Content/Items/Materials/Minerals.png" depth="0.54" sourcerect="524,644,114,102" />
+    <Body width="29" height="42" density="13" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="5" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character, This" duration="15">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="bloodloss" amount="2" />
+		<Affliction identifier="nausea" amount="2.25" />
+      </StatusEffect>
+	   <StatusEffect type="OnSuccess" target="UseTarget" disabledeltatime="true">
+        <Affliction identifier="huskinfectionresistance" amount="100" />
+      </StatusEffect>
+	   <StatusEffect type="OnUse" target="Character, This" duration="10" stackable="false" ConditionalComparison="And">
+        <Conditional Condition="lte 1" />
+        <Conditional huskinfection="lt 30.0" />
+        <ReduceAffliction identifier="huskinfection" amount="1" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character, This" duration="15">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="bloodloss" amount="1.25" />
+		<Affliction identifier="nausea" amount="2.25" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+  <!--<Item name="Fish Tooth" identifier="fishtooth" category="Misc" tags="smallitem" scale="0.5" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="" >
+    <Price baseprice="80" >
+      <Price storeidentifier="outpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="city" multiplier="0.8" sold="false" />
+      <Price storeidentifier="research" multiplier="1" minavailable="0" />
+      <Price storeidentifier="military" multiplier="0.6" sold="false" />
+	  <Price storeidentifier="mine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="calcium" />
+    </Deconstruct>
+    <InventoryIcon texture="" sourcerect="0,0,64,64" />
+    <Sprite texture="" depth="0.54" sourcerect="0,0,64,64" />
+    <Body width="29" height="42" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-10,0" holdangle="30" reload="0.75" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="10" structuredamage="3" structuresoundtype="StructureSlash">
+        <Affliction identifier="lacerations" strength="6" />
+        <Affliction identifier="bleeding" strength="14" />
+        <Affliction identifier="stun" strength="0.1" />
+        <StatusEffect type="OnUse" target="Character">
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+  </Item>-->
+  <Item name="Fish Scale" identifier="fishscale" category="Misc" tags="smallitem" maxstacksize="8" scale="0.5" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Shiny organometallic armor, these resilient scales are cemented with iron and calcium compounds.">
+    <Price baseprice="175">
+      <Price storeidentifier="outpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="city" multiplier="0.8" sold="false" />
+      <Price storeidentifier="research" multiplier="1" minavailable="0" />
+      <Price storeidentifier="military" multiplier="0.6" sold="false" />
+      <Price storeidentifier="mine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="calcium" />
+	  <Item identifier="iron" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Petitems/Fish_Scale.png" sourcerect="0,0,60,38" />
+    <Sprite texture="%ModDir:2518816103%/Items/Petitems/Fish_Scale.png" depth="0.54" sourcerect="0,0,60,38" />
+    <Body width="29" height="42" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Sebum" identifier="sebum" category="Misc" tags="smallitem" scale="0.5" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="Phlegmatized from combustion by a thick disgusting wax this material is rich in potassium and phosphorus several industrial uses and husk cultist make special votive candles out of this.">
+    <Price baseprice="130">
+      <Price storeidentifier="outpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="city" multiplier="0.8" sold="false" />
+      <Price storeidentifier="research" multiplier="1" minavailable="0" />
+      <Price storeidentifier="military" multiplier="0.6" sold="false" />
+      <Price storeidentifier="mine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="potassium" />
+	   <Item identifier="phosphorus" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Petitems/SlimeBall.png" sourcerect="0,0,42,44" />
+    <Sprite texture="%ModDir:2518816103%/Items/Petitems/SlimeBall.png" depth="0.54" sourcerect="0,0,64,64" />
+    <Body width="29" height="42" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Glow Gland" identifier="glowgland" category="Misc" tags="smallitem" scale="0.5" maxstacksize="8" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="A flexible tongue like esca that has a bulbous glowing gland at the end. It is filled with a phosphorus rich reactive soup which continues to glow for days after the white fish has died.">
+    <Price baseprice="80">
+      <Price storeidentifier="outpost" multiplier="0.5" sold="false" />
+      <Price storeidentifier="city" multiplier="0.8" sold="false" />
+      <Price storeidentifier="research" multiplier="1" minavailable="0" />
+      <Price storeidentifier="military" multiplier="0.6" sold="false" />
+      <Price storeidentifier="mine" multiplier="0.6" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="phosphorus" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Petitems/WhiteFish_Light.png" sourcerect="0,0,13,21" />
+    <Sprite texture="%ModDir:2518816103%/Items/Petitems/WhiteFish_Light.png" depth="0.54" sourcerect="0,0,13,21" />
+    <Body width="29" height="42" density="13" />
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Fish Cage" identifier="thezoo" tags="crate" scale="0.2" linkable="true" pickdistance="150" impactsoundtag="impact_metal_heavy">
+    <Deconstruct time="5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Petitems/Cage.png" depth="0.54" sourcerect="0,0,500,250" origin="0.5,0.5" />
+    <Body width="140" height="82" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer capacity="10" canbeselected="false" hideitems="true" keepopenwhenequipped="true">
+      <Containable items="smallitem,mediumitem" />
+    </ItemContainer>
+  </Item>
+  <Item name="Pet Carcass" identifier="petdufflebag" category="Equipment" tags="mobilecontainer" fireproof="true" description="A wrapped bag containing a deceased pet creature, its starting to stink really bad." impactsoundtag="impact_soft" scale="0.45">
+    <Deconstruct time="5" />
+    <Sprite texture="Content/map/outposts/art/HuskDistrict.png" sourcerect="582,956,138,56" origin="0.5,0.56" depth="0.56" />
+    <!--  <BrokenSprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="818,398,206,114" origin="0.5,0.56" depth="0.56" maxcondition="80" fadein="true" /> -->
+    <Body width="120" radius="22" density="20" friction="1.0" restitution="0.01" />
+    <Holdable slots="RightHand,LeftHand" holdpos="0,-30" handle1="0,-30" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" targettype="This" Condition="-0.15" />
+      <StatusEffect type="OnBroken" delay="0.1" target="This">
+        <DropContainedItems />
+        <Remove />
+      </StatusEffect>
+	        <StatusEffect type="OnBroken" target="This" >
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" range="700" volume="0.5" selectionmode="Random" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" range="700" volume="0.5" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" range="700" volume="0.5" />
+		<Explosion range="150.0" structuredamage="0" itemdamage="0" force="3.0" severlimbsprobability="0.0" decal="blood" decalSize="3.0">
+          <Affliction identifier="nausea" strength="35" />
+        </Explosion>
+        <ParticleEmitter particle="organeruption" particleamount="4" scalemin="0.3" scalemax="0.4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="heavygib" drawontop="true" particleamount="3" scalemin="0.2" scalemax="0.3" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="gib" particleamount="5" scalemin="0.25" scalemax="0.3" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="bloodsplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.75" scalemax="1.7"/>
+        <ParticleEmitter particle="whitegoosplash" particleamount="3" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.8" scalemax="1.0"/>
+      </StatusEffect>  
+    </Holdable>
+    <ItemContainer capacity="4" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem" excludeditems="largemobilecontainer,toolbelt,toolbox,bandolier" />
+    </ItemContainer>
+  </Item>
+    <Item name="Broken Bot" identifier="robotdufflebag" category="Equipment" tags="mobilecontainer" fireproof="true" description="The ruined chassis of a robot, the interior is scorched and smells faintly of burnt wires, it is starting to fall apart." impactsoundtag="impact_metal_heavy" scale="0.4">
+    <Deconstruct time="5" />
+    <Sprite  Texture="Content/Characters/Defensebot/DefenseBot.png" Color="255,255,255,255" SourceRect="0,0,154,134" origin="0.5,0.56" depth="0.56" />
+    <!--  <BrokenSprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="818,398,206,114" origin="0.5,0.56" depth="0.56" maxcondition="80" fadein="true" /> -->
+    <Body width="120" radius="22" density="20" friction="1.0" restitution="0.01" />
+    <Holdable slots="RightHand,LeftHand" holdpos="0,-30" handle1="0,-30" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" targettype="This" Condition="-0.10" />
+      <StatusEffect type="OnBroken" delay="0.1" target="This">
+        <DropContainedItems />
+        <Remove />
+      </StatusEffect>
+	        <StatusEffect type="OnBroken" target="This" >
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" range="700" volume="0.5" selectionmode="Random" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" range="700" volume="0.5" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" range="700" volume="0.5" />
+		<Explosion range="150.0" structuredamage="0" itemdamage="0" force="3.0" severlimbsprobability="0.0" decal="blackblood" decalSize="3.0">
+        </Explosion>
+        <ParticleEmitter particle="shrapnel" particleamount="6" scalemin="0.3" scalemax="0.4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="heavygib" drawontop="true" particleamount="1" scalemin="0.2" scalemax="0.3" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="gib" particleamount="2" scalemin="0.25" scalemax="0.3" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particleamount="3" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.75" scalemax="1.7"/>
+        <ParticleEmitter particle="blackgib" particleamount="3" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.8" scalemax="1.0"/>
+      </StatusEffect>  
+    </Holdable>
+    <ItemContainer capacity="4" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem" excludeditems="largemobilecontainer,toolbelt,toolbox,bandolier" />
+    </ItemContainer>
+  </Item>
+</Items>

@@ -1,0 +1,99 @@
+﻿<Afflictions>
+  <Affliction
+    name="Armored Spawner Damage"
+    identifier="armoredspawnerdamage"
+    type="armoredspawnerdamage"
+    showiconthreshold="1000"
+    ShowIconToOthersThreshold ="1000"
+    showinhealthscannerthreshold="1000"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0"/>
+  </Affliction>
+  <Affliction
+    name="Armored Spawner Break"
+    identifier="armoredspawnerbreak"
+    type="armoredspawnerbreak"
+    showiconthreshold="1000"
+    ShowIconToOthersThreshold ="1000"
+    showinhealthscannerthreshold="1000"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0"/>
+  </Affliction>
+  <Affliction
+    name="Spawner Armor Damage Reduction"
+    identifier="spawnerarmordamagereduction"
+    type="spawnerarmordamagereduction"
+    showiconthreshold="100"
+    ShowIconToOthersThreshold ="100"
+    showinhealthscannerthreshold="100"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage" minresistance="0.85" maxresistance="0.85"/>
+  </Affliction>
+  <Affliction
+    name="Armored Spawner Grace Period"
+    identifier="armorspawnerspare"
+    type="armorspawnerspare"
+    showiconthreshold="0"
+    ShowIconToOthersThreshold ="0"
+    showinhealthscannerthreshold="0"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0">
+      <StatusEffect type="Always" target="Character,NearbyCharacters" stackable="true" checkconditionalalways="true" delay="4.5" disabledeltatime="true" range="2700" targets="monster">
+        <Conditional armorspawnerspare="gt 0"/>
+        <Affliction identifier="becomepassivehatchlings" strength="150" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character" stackable="true" checkconditionalalways="true" delay="5" disabledeltatime="true" TeamID="Team1">
+        <Conditional armorspawnerspare="gt 0"/>
+        <ReduceAffliction identifier="armorspawnerspare" strength="1000"/>
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction
+    name="Armored Spawner Unspare"
+    identifier="armorspawnerunspare"
+    type="armorspawnerunspare"
+    showiconthreshold="0"
+    ShowIconToOthersThreshold ="0"
+    showinhealthscannerthreshold="0"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0">
+      <StatusEffect type="Always" target="Character,NearbyCharacters" stackable="true" checkconditionalalways="true" disabledeltatime="true" range="2700" targets="monster">
+        <Conditional armorspawnerunspare="gt 99"/>
+        <Affliction identifier="becomeaggressiveagainyellowboys" strength="150" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction
+    name="BecomePassiveHatchlings"
+    identifier="becomepassivehatchlings"
+    type="becomepassivehatchlings"
+    showiconthreshold="0"
+    ShowIconToOthersThreshold ="0"
+    showinhealthscannerthreshold="0"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-10">
+      <StatusEffect type="Always" target="Character" stackable="true" checkconditionalalways="true" delay="1" disabledeltatime="true" TeamID="Team1">
+        <Conditional speciesname="yellowboy2"/>
+        <ReduceAffliction identifier="becomepassivehatchlings" strength="1000"/>
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction
+    name="BecomeAggressiveAgainYellowBoys"
+    identifier="becomeaggressiveagainyellowboys"
+    type="becomeaggressiveagainyellowboys"
+    showiconthreshold="0"
+    ShowIconToOthersThreshold ="0"
+    showinhealthscannerthreshold="0"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-10">
+      <StatusEffect type="Always" target="Character" stackable="true" checkconditionalalways="true" disabledeltatime="true" TeamID="Team2" ConditionalComparison="AND">
+        <Conditional TeamID="eq Team1"/>
+        <Conditional Group="eq mantisold"/>
+        <ReduceAffliction identifier="becomeaggressiveagainyellowboys" strength="1000"/>
+        <ReduceAffliction identifier="armorspawnerunspare" strength="1000"/>
+        <Affliction identifier="stun" strength="0.05" probability="1" multiplybymaxvitality="true" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+</Afflictions>

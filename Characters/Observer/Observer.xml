@@ -1,0 +1,98 @@
+﻿<Character SpeciesName="Observer" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="watcheroid" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="True" ShowHealthBar="True" UseBossHealthBar="True" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="True" HideInThermalGoggles="False" SonarDisruption="0.4" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage1.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage2.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage3.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage4.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" dontmuffle="true" File="Content/Characters/Watcher/WATCHER_death1.ogg" State="Die" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" dontmuffle="true" File="Content/Characters/Watcher/WATCHER_death2.ogg" State="Die" Range="10000" Volume="1" Tags="" />
+  <bloodemitter Particle="blood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="2" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="waterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="2" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="2" VelocityMin="200" VelocityMax="1500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="30" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="2" VelocityMin="50" VelocityMax="1000" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="15" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <Limb name="Head">
+    <VitalityMultiplier identifier="acidburn" multiplier="0" />
+    <VitalityMultiplier identifier="radiationsickness" multiplier="0" />
+    <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+    <VitalityMultiplier identifier="psychosis" multiplier="0" />
+  </Limb>
+  <Limb name="Torso">
+    <VitalityMultiplier identifier="radiationsickness" multiplier="0" />
+    <VitalityMultiplier identifier="acidburn" multiplier="0" />
+    <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+    <VitalityMultiplier identifier="psychosis" multiplier="0" />
+  </Limb>
+  <Limb name="RightArm">
+    <VitalityMultiplier identifier="radiationsickness" multiplier="0" />
+    <VitalityMultiplier identifier="acidburn" multiplier="0" />
+    <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+    <VitalityMultiplier identifier="psychosis" multiplier="0" />
+  </Limb>
+  <Limb name="RightLeg">
+    <VitalityMultiplier identifier="radiationsickness" multiplier="0" />
+    <VitalityMultiplier identifier="acidburn" multiplier="0" />
+    <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+    <VitalityMultiplier identifier="psychosis" multiplier="0" />
+  </Limb>
+  <Limb name="LeftArm">
+    <VitalityMultiplier identifier="radiationsickness" multiplier="0" />
+    <VitalityMultiplier identifier="acidburn" multiplier="0" />
+    <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+    <VitalityMultiplier identifier="psychosis" multiplier="0" />
+  </Limb>
+  <Limb>
+    <!--Spikes-->
+    <VitalityMultiplier identifier="radiationsickness" multiplier="0" />
+    <VitalityMultiplier identifier="acidburn" multiplier="0" />
+    <VitalityMultiplier identifier="watchersgaze" multiplier="0" />
+    <VitalityMultiplier identifier="psychosis" multiplier="0" />
+  </Limb>
+  <health Vitality="1200" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.5" BurnReduction="0.5" ConstantHealthRegeneration="0.1" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="False" PoisonVulnerability="0.6" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Abysswatcher/attack1.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Abysswatcher/attack2.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Abysswatcher/attack3.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Abysswatcher/watch1.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Abysswatcher/watch2.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Abysswatcher/watch3.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Abysswatcher/watch4.ogg" State="Idle" Range="500" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Abysswatcher/watch5.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Abysswatcher/watch6.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <ai targetinnerwalls="False" infiltrate="False" CombatStrength="1000" Sight="6" Hearing="5" MaxPerceptionDistance="-1" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="150" AttackWhenProvoked="True" AvoidGunfire="True" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="6" PlayDeadProbability="0">
+    <target damagethreshold="0" Tag="decoy" State="Observe" Priority="600" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="8000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="stronger" State="Escape" Priority="15" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="8000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="human" State="Observe" Priority="10" ReactDistance="4000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="8000" IgnoreTargetSize="False" CircleRotationSpeed="2" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="light" State="Observe" Priority="10" ReactDistance="5000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="8000" IgnoreTargetSize="False" CircleRotationSpeed="2" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="provocative" State="Attack" Priority="20" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="8000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <StatusEffect type="OnActive" target="NearbyCharacters" tag="EMI" range="12000">
+    <Affliction identifier="observerpresense" strength="20" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="NearbyCharacters" tag="EMI" range="7000">
+    <Affliction identifier="observerpresense" strength="50" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="NearbyCharacters" tag="EMI" range="5000">
+    <Affliction identifier="observerpresense" strength="100" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="NearbyItems" targettags="junctionbox" range="5000.0" setvalue="true" stackable="false" extraload="500" delay="1" />
+  <StatusEffect type="OnDeath" target="NearbyCharacters" range="20000">
+    <ReduceAffliction identifier="observerpresense" strength="100" />
+    <ReduceAffliction identifier="observersgaze" strength="100" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" checkconditionalways="true" comparison="or" delay="10" stackable="false">
+    <Conditional isdead="false" />
+    <SpawnItem identifier="electropulse" spawnposition="This" count="2" spread="3000" />
+  </StatusEffect>
+  <inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+    <item amount="2" Identifier="swimbladder" />
+    <item amount="3" Identifier="elastin" />
+    <item Identifier="obserrverorgan" />
+    <item Identifier="piecepsychosisartifact" />
+  </inventory>
+  <inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+    <item amount="2" Identifier="swimbladder" />
+    <item amount="3" Identifier="elastin" />
+    <item Identifier="obserrverorgan" />
+    <item Identifier="piecepsychosisartifact" />
+  </inventory>
+</Character>

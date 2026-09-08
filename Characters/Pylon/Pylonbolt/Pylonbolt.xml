@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character SpeciesName="Pylonbolt" SpeciesTranslationOverride="" DisplayName="" Group="ancientalien" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="False" UseBossHealthBar="False" Noise="250" Visibility="100" BloodDecal="" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+  <!--group="ek_shell_ai"-->
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <health Vitality="20" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="20" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False" Immunities="organdamage,radiationsickness" />
+  <ai attackpriorityrooms="0" attackpriorityhumans="0" attackonlywhenprovoked="False" retaliatewhentakingdamage="True" CombatStrength="80" Sight="6" Hearing="3" AggressionHurt="50" AggressionGreed="0" FleeHealthThreshold="0" AttackWhenProvoked="False" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target">
+    <!--<targetpriority tag="decoy" state="Attack" priority="600" />-->
+    <targetpriority Tag="wall" State="Attack" Priority="200" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="True" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority Tag="human" State="Avoid" Priority="0" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority Tag="sonar" State="Attack" Priority="10" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="True" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority Tag="room" State="Attack" Priority="200" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="True" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+	<targetpriority Tag="pylon" State="Idle" Priority="200" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="True" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <StatusEffect type="Always" target="Character" multiplyafflictionsbymaxvitality="true">
+    <Affliction identifier="dashing" amount="200" />
+  </StatusEffect>
+  <!--<talents>
+          <talent identifier="dualspecops" />
+        </talents>-->
+  <!--<StatusEffect type="OnSpawn" target="Character">
+    <GiveTalent identifier="dualspecops" />
+ 	</StatusEffect>-->
+  <StatusEffect type="OnActive" target="This">
+    <ParticleEmitter particle="faradayfx" anglemax="360" distancemax="0" particlespersecond="150" scalemultiplier="3,3" />
+    <ParticleEmitter particle="psychosisfx" anglemax="360" distancemax="0" particlespersecond="50" />
+  </StatusEffect>
+  <StatusEffect type="InWater" target="Character" maxvelocity="40" force="285" afflictionidentifier="dashing" />
+  <StatusEffect type="Always" target="This">
+    <Affliction identifier="internaldamage" strength="0.5" />
+  </StatusEffect>
+  <StatusEffect type="Always" target="Character">
+    <Affliction identifier="concealed" amount="1" />
+  </StatusEffect>
+  <StatusEffect type="Always" target="This">
+    <ParticleEmitter particle="ElectricShock" distancemin="100" distancemax="120" particlespersecond="5.0" particleamount="5" emitinterval="2.1" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.2" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This">
+    <ParticleEmitter particle="faradayfx" anglemax="360" distancemax="300" scalemultiplier="5,5" particleamount="40" />
+    <Explosion range="300.0" structuredamage="20" stun="1" force="20.0" severlimbsprobability="0.5" flames="false" smoke="false" shockwave="true" sparks="true" underwaterbubble="false">
+      <Affliction identifier="burn" strength="25" />
+	  <Affliction identifier="electricShock" strength="20" />
+      <Affliction identifier="explosiondamage" strength="10" />
+      <Affliction identifier="emp" strength="2" />
+      <Affliction identifier="organdamage" strength="5" />
+    </Explosion>
+    <Explosion range="1300.0" structuredamage="0" empstrength="0.05" stun="0" force="0" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This" disabledeltatime="true" stackable="false" delay="0.2">
+    <RemoveCharacter />
+  </StatusEffect>
+</Character>

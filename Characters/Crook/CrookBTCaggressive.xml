@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="CrookBTC" speciesname="CrookBTCaggressive" speciestranslationoverride="CrookBTC" group="crook" SoundInterval="13">
+  <sound file="%ModDir%/Characters/Crook/attack1.ogg" state="Attack" range="2000" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/attack2.ogg" state="Attack" range="2000" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/attack3.ogg" state="Attack" range="2000" volume="1" />
+  <sound file="%ModDir%/Characters/Crook/attack4.ogg" state="Attack" range="2000" volume="1" />
+  <ai combatstrength="250" sight="5" hearing="5" aggressiveboarding="True" PatrolFlooded="false" patroldry="true" aggressiongreed="10" CanOpenDoors="true" UsePathFindingToGetInside="true" KeepDoorsClosed="false" aggressionhurt="100" avoidgunfire="False" AttackWhenProvoked="true" randomattack="True">
+    <target tag="human" state="Attack" priority="80" PerceptionDistanceMultiplier="2" reactdistance="0" ignoreincapacitated="True" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" threshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
+    <target tag="crook" state="Idle" priority="80" reactdistance="0" ignoreincapacitated="True" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" threshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
+    <target tag="dead" state="Eat" priority="50" PerceptionDistanceMultiplier="0.1" />
+  </ai>
+</Charactervariant>

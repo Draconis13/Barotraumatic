@@ -1,0 +1,1110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="crawlerthermalspawn" identifier="crawlerthermalspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="crawler_thermal" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="crawlerskyalienspawn" identifier="crawlerskyalienspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="crawler_sky" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="crawlernasonovspawn" identifier="crawlernasonovspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="crawler_nasonov" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="crawlerfaradayspawn" identifier="crawlerfaradayspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="crawler_faraday" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="crawlerpsychosisspawn" identifier="crawlerpsychosisspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="crawler_psychosis" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="crawlernightmarespawn" identifier="crawlernightmarespawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="crawler_nightmare" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="crawlerwatcherspawn" identifier="crawlerwatcherspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="crawler_watcher" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="crawlersmartspawn" identifier="crawlersmartspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Crawlersmart" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="crawlerspinelingspawn" identifier="crawlerspinelingspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="crawler_spineling" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="mudraptorfaradayspawn" identifier="mudraptorfaradayspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="mudraptor_faraday" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="mudraptorthermalspawn" identifier="mudraptorthermalspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="mudraptor_thermal" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="mudraptorskyalienspawn" identifier="mudraptorskyalienspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="mudraptor_sky" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="mudraptornasonovspawn" identifier="mudraptornasonovspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="mudraptor_nasonov" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="mudraptorpsychosisspawn" identifier="mudraptorpsychosisspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="mudraptor_psychosis" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="mudraptordiamondspawn" identifier="mudraptordiamondspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="mudraptor_diamond" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="mudraptorpiezospawn" identifier="mudraptorpiezospawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="mudraptor_piezo" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="mudraptorwatcherspawn" identifier="mudraptorwatcherspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="mudraptor_watcher" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="mudraptorspinelingspawn" identifier="mudraptorspinelingspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="mudraptor_spineling" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Carriernormal" identifier="carrierflaknormalspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Carrierflaknormal" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Carrierexplosive" identifier="carrierflakexplosivespawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Carrierflakexploding" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Carrierphysicorium" identifier="carrierflakphysicoriumspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Carrierflakphysicorium" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Carrierdirectional" identifier="carrierflakdirectionalspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Carrierflakdirectional" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="helmetcrablet" identifier="helmetcrabletspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Helmetcrablet" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+      <Item name="crawlercrablet" identifier="crawlercrabletspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Crawlercrablet" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+      <Item name="husk crawlie1" identifier="Huskcrawlie1spawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Huskcrawlie1" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+      <Item name="husk crawlie1" identifier="Huskcrawlie1noheadspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Huskcrawlie1nohead" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>     
+  <Item name="husk crawlie2" identifier="Huskcrawlie2spawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Huskcrawlie2" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>  
+  <Item name="husk crawlie3" identifier="Huskcrawlie3spawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Huskcrawlie3" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>    
+  <Item name="husk crawlie4" identifier="Huskcrawlie4spawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Huskcrawlie4" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="husk" identifier="btchuskspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="husksprinterold" identifier="husksprinteroldspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husksprinterold" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="husksprinterhumanold" identifier="husksprinterhumanoldspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husksprinterhumanold" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+      <Item name="husksprinterhumanraw" identifier="husksprinterhumanrawspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husksprinterhumanraw" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+        <Item name="Husksprinterpoptop" identifier="Husksprinterpoptopspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husksprinterpoptop" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="Husk_Slipsuit" identifier="Husk_Slipsuitspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk_Slipsuit" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+      <Item name="Husksprintercombat" identifier="Husksprintercombatspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husksprintercombat" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="Husk_prowlerhulk" identifier="Husk_prowlerhulkspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk_prowlerhulk" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="Husk_prowler" identifier="Husk_prowlerspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk_prowler" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="Husk_chimera_unarmoured" identifier="Husk_chimera_unarmouredspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk_chimera_unarmoured" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="Husk_Chimera" identifier="Husk_Chimeraspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk_Chimera" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="Husk_exosuit" identifier="Husk_exosuitspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk_exosuit" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+      <Item name="Husk_chimera_Elder" identifier="Husk_chimera_Elderspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk_chimera_Elder" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+        <Item name="Husk_chimera_Nyz" identifier="Husk_Nyxspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husknyx" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+        <Item name="Husk_Oldsuit" identifier="Husk_Oldsuitspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk_Oldsuit" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+          <Item name="Husk_PUCS" identifier="Husk_PUCSspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk_PUCS" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+            <Item name="Husk_Abyss" identifier="Husk_Abyssspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Husk_Abyss" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+      <Item name="Trichordate_random" identifier="Trichordate_randomspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Holdable slots="Any,RightHand+LeftHand" holdpos="55,-20" aimpos="58,-2" handle1="-20,-20" handle2="40,0" holdangle="-25" />
+   <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it, this spawner item is made to be put on another creature and piggy back spawning a spawner creature, very recursive -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Trichordate_random" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+    <Item name="Trichordate" identifier="Trichordatespawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Trichordate" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+              <Item name="TrichordateBloodsucker" identifier="TrichordateBloodsuckerspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="TrichordateBloodsucker" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+              <Item name="TrichordateMetalvore" identifier="TrichordateMetalvorespawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="TrichordateMetalvore" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+              <Item name="TrichordateVitriolic" identifier="TrichordateVitriolicspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="TrichordateVitriolic" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+              <Item name="Turret_Carrier" identifier="Turretcarrierspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Turretcarrier" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+                <Item name="Turret_carriercoil" identifier="Turretcarriercoilspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Turretcarriercoil" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+                <Item name="Turret_carrierchaingun" identifier="Turretcarrierchaingunspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Turretcarrierchaingun" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+                <Item name="Turret_carrierdoublecoil" identifier="Turretcarrierdoublecoilspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Turretcarrierdoublecoil" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+                <Item name="Turret_carrierflak" identifier="Turretcarrierflakspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Turretcarrierflak" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+                <Item name="Turret_carrierpulselaser" identifier="Turretcarrierpulselaserspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Turretcarrierpulselaser" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+                <Item name="Turret_Carrierrail" identifier="Turretcarrierrailspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Turretcarrierrail" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+    <Item name="Teleglitch_Zap" identifier="Teleglitchspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Teleglitch" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+    <Item name="Teleglitch_Ghost" identifier="Teleglitchparanormalspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Teleglitch_paranormal" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+  <!-- replacing ScavieBTC with Husksprinterhumanold due to issues lol, ok Pickman's Model is back. -->
+  
+    <Item name="ScavieBTC Spawn" identifier="ScavieBTCSpawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+	<PreferredContainer primary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.0245" />
+	<PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0285" />
+    <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.035" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="ScavieBTC" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name=" " identifier="tpsentineltrack" category="Equipment" description="Ow fuck" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.85" hideinmenus="true" pickdistance="0" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="7" radius="7" density="15" bodytype="Kinematic" />
+    <LightComponent lightcolor="255,10,10,100" range="150" powerconsumption="0" allowingameediting="false" castshadows="false" IsOn="False">
+      <StatusEffect type="Always" target="This" delay="0.09" stackable="false" checkconditionalalways="True">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="99999" delay="0.08" stackable="false" checkconditionalalways="True">
+        <Affliction identifier="tpsentinelremove" amount="9999" />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+  <Item name=" " identifier="tpsentineltrackreset" category="Equipment" description="Ow fuck" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.85" hideinmenus="true" pickdistance="0" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="7" radius="7" density="15" bodytype="Kinematic" />
+    <LightComponent lightcolor="255,10,10,100" range="150" powerconsumption="0" allowingameediting="false" castshadows="false" IsOn="False">
+      <StatusEffect type="Always" target="This" delay="0.1" stackable="false" checkconditionalalways="True">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="99999" delay="0.08" stackable="false" checkconditionalalways="True">
+        <ReduceAffliction identifier="attacksentineltptracker" amount="9999" />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+  <Item name=" " identifier="despawnsentinel" category="Equipment" description="A strange rust-crusted black splotch. What could have made this?" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.85" hideinmenus="true" pickdistance="0" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" radius="30" density="15" bodytype="Kinematic" />
+    <LightComponent lightcolor="255,10,10,100" range="150" powerconsumption="0" allowingameediting="false" castshadows="false" IsOn="False">
+      <StatusEffect type="OnActive" target="This" stackable="false" delay="0.5">
+        <Conditional speciesname="eq Sentinel" />
+        <RemoveCharacter />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" duration="1.25" stackable="false" checkconditionalalways="True">
+        <ParticleEmitter particle="blackblood" particlespersecond="100" scalemin="1.25" scalemax="2.0" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="NearbyCharacters" comparison="and" stackable="false" delay="0.2" checkconditionalalways="True" range="9000000">
+        <Conditional speciesname="eq Sentinel" />
+        <RemoveCharacter />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+  <Item name="" identifier="invisprojectile" nameidentifier="" translationidentifier="" category="Misc" scale="0.5" sonarsize="6" hideinmenus="true">
+    <Sprite texture="%ModDir%/Characters/Cthulhu/invisiblecthulhuspawner/nothing.png" sourcerect="0,1,0,1" origin="0.5,0.5" depth="0.55" />
+    <Body width="300" height="35" density="20" />
+    <Projectile characterusable="false" launchimpulse="20" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false">
+      <Attack structuredamage="25" targetforce="4" severlimbsprobability="0" penetration="0.25">
+        <Affliction identifier="cthulhucursetest" strength="20" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="0.3">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.2" scalemax="0.4" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" spawnitemrandomly="true" stackable="false" delay="0.25">
+        <SpawnItem identifier="Crawlerhalluspawner" spawnposition="This" count="1" />
+        <SpawnItem identifier="Crawlerhalluspawner" spawnposition="This" count="1" />
+        <SpawnItem identifier="Crawlerhalluspawner" spawnposition="This" count="1" />
+        <SpawnItem identifier="mudraptorhalluspawner" spawnposition="This" count="1" />
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="Hallucination Crawler" identifier="Crawlerhalluspawner" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Hallucination1" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Hallucination Mudraptor" identifier="mudraptorhalluspawner" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Hallucination2" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="Molochspawn" identifier="Molochspawner" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Moloch" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochspawnpiezo" identifier="Molochspawnerpiezo" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Moloch_piezo" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochspawnvariant1" identifier="Molochspawnvariant1" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariant1" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochspawnvariant2" identifier="Molochspawnvariant2" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariant2" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochspawnvariant3" identifier="Molochspawnvariant3" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariant3" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochspawnvariant4" identifier="Molochspawnvariant4" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariant4" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochspawnvariant5" identifier="Molochspawnvariant5" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariant5" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochspawnvariant6" identifier="Molochspawnvariant6" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariant6" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochblackspawnvariant1" identifier="Molochblackspawnvariant1" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariantblack1" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochblackspawnvariant2" identifier="Molochblackspawnvariant2" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariantblack2" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochblackspawnvariant3" identifier="Molochblackspawnvariant3" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariantblack3" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochblackspawnvariant4" identifier="Molochblackspawnvariant4" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariantblack4" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochblackspawnvariant5" identifier="Molochblackspawnvariant5" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariantblack5" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochblackspawnvariant6" identifier="Molochblackspawnvariant6" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochvariantblack6" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Molochblackspawn" identifier="Molochblackspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Molochblack" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="nospawn" identifier="btspawnnothing" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="wormspawn" identifier="wormspawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit1.ogg" dontmuffle="true" range="2000" selectionmode="Random" frequencymultiplier="0.3,0.5"/>
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit2.ogg" dontmuffle="true" range="2000" selectionmode="Random" frequencymultiplier="0.3,0.5"/>
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit3.ogg" dontmuffle="true" range="2000" selectionmode="Random" frequencymultiplier="0.3,0.5"/>
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit4.ogg" dontmuffle="true" range="2000" selectionmode="Random" frequencymultiplier="0.3,0.5"/>
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit5.ogg" dontmuffle="true" range="2000" selectionmode="Random" frequencymultiplier="0.3,0.5"/>
+        <ParticleEmitter particle="cellgib" particleamount="25" scalemin="1" scalemax="2" velocitymin="100" velocitymax="150" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255" />
+        <ParticleEmitter particle="leucogib" particleamount="7" scalemin="2.5" scalemax="3.5" velocitymin="20" velocitymax="60" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255" />
+        <ParticleEmitter particle="whitegoosplash" particleamount="7" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="1" scalemax="1.5" ColorMultiplier="0,200,0,255"/>
+        <SpawnCharacter speciesname="bioworm" count="1" spread="35" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="wormspawnbig" identifier="wormspawnbig" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit1.ogg" dontmuffle="true" range="2000" selectionmode="Random" frequencymultiplier="0.3,0.5"/>
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit2.ogg" dontmuffle="true" range="2000" selectionmode="Random" frequencymultiplier="0.3,0.5"/>
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit3.ogg" dontmuffle="true" range="2000" selectionmode="Random" frequencymultiplier="0.3,0.5"/>
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit4.ogg" dontmuffle="true" range="2000" selectionmode="Random" frequencymultiplier="0.3,0.5"/>
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit5.ogg" dontmuffle="true" range="2000" selectionmode="Random" frequencymultiplier="0.3,0.5"/>
+        <ParticleEmitter particle="cellgib" particleamount="35" scalemin="1" scalemax="2" velocitymin="100" velocitymax="150" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255" />
+        <ParticleEmitter particle="leucogib" particleamount="7" scalemin="2.5" scalemax="3.5" velocitymin="20" velocitymax="60" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255" />
+        <ParticleEmitter particle="whitegoosplash" particleamount="10" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="1" scalemax="1.5" ColorMultiplier="0,200,0,255"/>
+        <SpawnCharacter speciesname="biowormbig" count="1" spread="35" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="" identifier="wormacidremnant" category="Misc" scale="0.65" sonarsize="0" health="10" hideinmenus="true" damagedbyexplosions="false" damagedbyprojectiles="false" damagedbyrepairtools="false" damagedbymeleeweapons="false">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="25" height="25" density="18" />
+    <ItemComponent>
+      <StatusEffect type="Always" interval="0.5" target="This" checkconditionalalways="true">
+        <Conditional condition="gt 0"/>
+        <Explosion range="130.0" ballastfloradamage="0" structuredamage="8" levelwalldamage="8" itemdamage="4" shockwave="false" flash="false" smoke="false" playtinnitus="false" flames="false" sparks="false" underwaterbubble="false" camerashake="0" severlimbsprobability="0" debris="false">
+          <Affliction identifier="biowormburndamage" strength="7.5" />
+        </Explosion> 
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" checkconditionalalways="True" delay="1.2" onlyoutside="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" checkconditionalalways="True" delay="3" onlyinside="true">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+    <Item name="leucoctytespawn" identifier="leucoctytespawn" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.001">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- reduce condition to remove the emitter shortly after spawning it -->
+      <StatusEffect type="Always" target="This" condition="-50" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit1.ogg" dontmuffle="true" range="1000" selectionmode="Random" frequencymultiplier="0.3,0.5" />
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit2.ogg" dontmuffle="true" range="1000" selectionmode="Random" frequencymultiplier="0.3,0.5" />
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit3.ogg" dontmuffle="true" range="1000" selectionmode="Random" frequencymultiplier="0.3,0.5" />
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit4.ogg" dontmuffle="true" range="1000" selectionmode="Random" frequencymultiplier="0.3,0.5" />
+        <sound file="Content/Characters/Crawlerbroodmother/CRAWLERBR_eggHit5.ogg" dontmuffle="true" range="1000" selectionmode="Random" frequencymultiplier="0.3,0.5" />
+        <ParticleEmitter particle="cellgib" particleamount="45" scalemin="1" scalemax="2" velocitymin="100" velocitymax="150" anglemin="0" anglemax="360" ColorMultiplier="0,125,0,255" />
+        <ParticleEmitter particle="leucogib" particleamount="7" scalemin="2.5" scalemax="3.5" velocitymin="20" velocitymax="60" ColorMultiplier="0,125,0,255" />
+        <ParticleEmitter particle="whitegoosplash" particleamount="10" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="1" scalemax="1.5" ColorMultiplier="0,125,0,255" />
+        <SpawnCharacter speciesname="leucocyte" count="1" spread="0" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+</Items>

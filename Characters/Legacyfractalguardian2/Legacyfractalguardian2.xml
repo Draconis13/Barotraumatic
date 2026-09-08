@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Character speciesname="Legacyfractalguardian2" humanoid="false" group="ancientalien">
+    <ragdolls folder="default" />
+    <animations folder="default" />
+    <health vitality="100" doesbleed="false" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_idle1.ogg" state="Idle" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_idle2.ogg" state="Idle" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_idle3.ogg" state="Idle" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_idle4.ogg" state="Idle" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_attack1.ogg" state="Attack" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_attack2.ogg" state="Attack" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_attack3.ogg" state="Attack" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_attack4.ogg" state="Attack" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_attack5.ogg" state="Attack" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_damage1.ogg" state="Damage" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_damage2.ogg" state="Damage" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_damage3.ogg" state="Damage" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_damage4.ogg" state="Damage" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_damage5.ogg" state="Damage" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_death1.ogg" state="Die" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_death2.ogg" state="Die" range="3000" />
+    <sound file="Content/Characters/Legacyfractalguardian2/FRACTALGUARDIAN2_death3.ogg" state="Die" range="3000" />
+    <ai CombatStrength="500" Sight="1" Hearing="3" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="0" AttackWhenProvoked="False" AvoidGunfire="True" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="False" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="10" MaxAggression="100" AggressionCumulation="25" WallTargetingMethod="Heading,Steering">
+      <targetpriority Tag="decoy" State="Attack" Priority="600" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <targetpriority Tag="sonar" State="Attack" Priority="60" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="6000" CircleRotationSpeed="2" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="wall" State="Attack" Priority="70" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="2" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="room" State="Attack" Priority="70" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="2" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    </ai>
+  </Character>
+</Override>

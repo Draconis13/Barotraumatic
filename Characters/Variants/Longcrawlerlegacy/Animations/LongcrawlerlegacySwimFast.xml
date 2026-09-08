@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LongcrawlerlegacySwimFast movementspeed="8" steertorque="20" waveamplitude="33.344913" wavelength="30" flip="True" headangle="81" torsoangle="84" mirror="True" rotatetowardsmovement="True" torsotorque="25" headtorque="25" foottorque="25" tailtorque="50" footangles="5: 0.9673765,7: 0.3874607,9: 0.3782401,4: 0,6: 0,8: 0" cyclespeed="1" animationtype="SwimFast" usesinemovement="False" tailangle="87" flipcooldown="1" flipdelay="0.5" mirrorlerp="True" tailtorquemultiplier="1" type="Longcrawlerlegacy" />

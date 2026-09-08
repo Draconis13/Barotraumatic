@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotext language="Russian" nowhitespace="false" translatedname="Русский">
+  <!-- Items -->
+  <entityname.ekutility_advancedheadset>Улучшенные Наушники</entityname.ekutility_advancedheadset>
+  <entitydescription.ekutility_advancedheadset>Идеальная гарнитура. Оснащённая шумоподавлением, высокочастотными излучателями и регулируемой комфортной подвеской, эта гарнитура предназначена для использования на борту экипажами подводных лодок при минимальном потреблении энергии батареи.</entitydescription.ekutility_advancedheadset>
+  <entityname.ekutility_longrangeradio>Рюкзак с Радиостанцией Дальнего Действия</entityname.ekutility_longrangeradio>
+  <entitydescription.ekutility_longrangeradio>Водонепроницаемый рюкзак с мощным радиопередатчиком и маяком для экспедиционных команд, его прочная конструкция гарнитуры также обеспечивает шумоподавление.</entitydescription.ekutility_longrangeradio>
+  <entityname.ek_security_radio>Рация</entityname.ek_security_radio>
+  <entitydescription.ek_security_radio>Низкопрофильный радиопередатчик, используемый в основном сотрудниками безопасности кораблей и станций. Эта рация отлично подходит для подводных вылазок, поскольку радиочастота минимизирует искажения от естественных источников благодаря использованию УНЧ в относительно компактном корпусе.</entitydescription.ek_security_radio>
+  <entityname.low_lootcrate>Ящик с Припасами</entityname.low_lootcrate>
+  <entitydescription.low_lootcrate>Разберите, чтобы получить случайный предмет!</entitydescription.low_lootcrate>
+  <!-- Missions -->
+  <missionname.salvagekillcarrier>Разбор Обломков</missionname.salvagekillcarrier>
+  <missiondescription.salvagekillcarrier>Небольшое грузовое судно пропало примерно два месяца назад при перевозке инопланетных материалов из [location1] в [location2]. Предполагалось, что судно пропало в бездне, но его аварийный маяк, похоже, активировался возле [location2]. Найдите судно и верните груз.</missiondescription.salvagekillcarrier>
+  <missionsonarlabel.salvagekillcarrier>Сигнал бедствия</missionsonarlabel.salvagekillcarrier>
+  <missionsuccess.salvagekillcarrier>Исследователи из [location2] хотят узнать все подробности о событии, но, похоже, не решаются отвечать на вопросы о судне. Тем не менее, они предлагают вам [reward] кредитов в качестве "компенсации за ваши проблемы".</missionsuccess.salvagekillcarrier>
+  <missionfailure.salvagekillcarrier>Миссия провалена.</missionfailure.salvagekillcarrier>
+  <missionheader0.salvagekillcarrier>Цель уничтожена</missionheader0.salvagekillcarrier>
+  <missionname.killmolochbt>Уничтожение стада Молохов</missionname.killmolochbt>
+  <missiondescription.killmolochbt>Особенно агрессивный Молох и её потомство терроризируют суда, проходящие между [location1] и [location2]. Тем, кто убьёт этих существ, обещана награда в размере [reward] кредитов.</missiondescription.killmolochbt>
+  <missionsonarlabel.killmolochbt>Молох</missionsonarlabel.killmolochbt>
+  <missionsuccess.killmolochbt>Молохи убиты.</missionsuccess.killmolochbt>
+  <missionfailure.killmolochbt>Миссия провалена.</missionfailure.killmolochbt>
+  <missionheader0.killmolochbt>Цели уничтожены</missionheader0.killmolochbt>
+  <missionname.killmolochblackbt>Уничтожение стада Молохов</missionname.killmolochblackbt>
+  <missiondescription.killmolochblackbt>Особенно агрессивный Молох и её потомство терроризируют суда, проходящие между [location1] и [location2]. Тем, кто убьёт этих существ, обещана награда в размере [reward] кредитов.</missiondescription.killmolochblackbt>
+  <missionsonarlabel.killmolochblackbt>Молох</missionsonarlabel.killmolochblackbt>
+  <missionsuccess.killmolochblackbt>Молохи убиты.</missionsuccess.killmolochblackbt>
+  <missionfailure.killmolochblackbt>Миссия провалена.</missionfailure.killmolochblackbt>
+  <missionheader0.killmolochblackbt>Цели уничтожены</missionheader0.killmolochblackbt>
+  <missionname.killhammerheadbt>Уничтожение стаи Молотоглавов</missionname.killhammerheadbt>
+  <missiondescription.killhammerheadbt>Особенно агрессивная стая молотоголовых терроризирует суда, проходящие между [location1] и [location2]. Тому, кто убьет это существо, обещана награда в размере [reward] кредитов.</missiondescription.killhammerheadbt>
+  <missionsonarlabel.killhammerheadbt>Молотоглав</missionsonarlabel.killhammerheadbt>
+  <missionsuccess.killhammerheadbt>Молотоглавы убиты.</missionsuccess.killhammerheadbt>
+  <missionfailure.killhammerheadbt>Миссия провалена.</missionfailure.killhammerheadbt>
+  <missionheader0.killhammerheadbt>Цели уничтожены</missionheader0.killhammerheadbt>
+  <missionname.killhammerheadgoldbt>Уничтожение стаи Молотоглавов</missionname.killhammerheadgoldbt>
+  <missiondescription.killhammerheadgoldbt>Особенно агрессивная стая молотоголовых терроризирует суда, проходящие между [location1] и [location2]. Тому, кто убьет это существо, обещана награда в размере [reward] кредитов.</missiondescription.killhammerheadgoldbt>
+  <missionsonarlabel.killhammerheadgoldbt>Молотоглав</missionsonarlabel.killhammerheadgoldbt>
+  <missionsuccess.killhammerheadgoldbt>Молотоглавы убиты.</missionsuccess.killhammerheadgoldbt>
+  <missionfailure.killhammerheadgoldbt>Миссия провалена.</missionfailure.killhammerheadgoldbt>
+  <missionheader0.killhammerheadgoldbt>Цели уничтожены</missionheader0.killhammerheadgoldbt>
+  <missionname.killmatriarchbt1>Убийство Матриарха</missionname.killmatriarchbt1>
+  <missiondescription.killmatriarchbt1>Уничтожьте молотоглава матриарха и её потомство.</missiondescription.killmatriarchbt1>
+  <missionsonarlabel.killmatriarchbt1>Молотоглав</missionsonarlabel.killmatriarchbt1>
+  <missionsuccess.killmatriarchbt1>Матриарх убит.</missionsuccess.killmatriarchbt1>
+  <missionfailure.killmatriarchbt1>Миссия провалена.</missionfailure.killmatriarchbt1>
+  <missionheader0.killmatriarchbt1>Цели уничтожены</missionheader0.killmatriarchbt1>
+  <missionname.killmatriarchbt4>Убийство семьи Матриарха</missionname.killmatriarchbt4>
+  <missiondescription.killmatriarchbt4>Уничтожьте молотоглава матриарха и её огромное потомство.</missiondescription.killmatriarchbt4>
+  <missionsonarlabel.killmatriarchbt4>Молотоглав</missionsonarlabel.killmatriarchbt4>
+  <missionsuccess.killmatriarchbt4>Семья матриарха убита.</missionsuccess.killmatriarchbt4>
+  <missionfailure.killmatriarchbt4>Миссия провалена.</missionfailure.killmatriarchbt4>
+  <missionheader0.killmatriarchbt4>Цели уничтожены</missionheader0.killmatriarchbt4>
+  <missionname.killcrawlerswarmbt1>Уничтожение большого роя</missionname.killcrawlerswarmbt1>
+  <missiondescription.killcrawlerswarmbt1>Большой рой ползунов терроризирует суда, проходящие между [location1] и [location2]. Обещана награда в размере [reward] кредитов любому экипажу, который сможет уничтожить его.</missiondescription.killcrawlerswarmbt1>
+  <missionsonarlabel.killcrawlerswarmbt1>Рой</missionsonarlabel.killcrawlerswarmbt1>
+  <missionsuccess.killcrawlerswarmbt1>Рой уничтожен.</missionsuccess.killcrawlerswarmbt1>
+  <missionfailure.killcrawlerswarmbt1>Миссия провалена.</missionfailure.killcrawlerswarmbt1>
+  <missionheader0.killcrawlerswarmbt1>Цели уничтожены</missionheader0.killcrawlerswarmbt1>
+  <missionname.killcrawlerswarmbt2>Уничтожение огромного роя</missionname.killcrawlerswarmbt2>
+  <missiondescription.killcrawlerswarmbt2>Огромный рой ползунов терроризирует суда, проходящие между [location1] и [location2]. Обещана награда в размере [reward] кредитов любому экипажу, который сможет уничтожить его.</missiondescription.killcrawlerswarmbt2>
+  <missionsonarlabel.killcrawlerswarmbt2>Рой</missionsonarlabel.killcrawlerswarmbt2>
+  <missionsuccess.killcrawlerswarmbt2>Рой уничтожен.</missionsuccess.killcrawlerswarmbt2>
+  <missionfailure.killcrawlerswarmbt2>Миссия провалена.</missionfailure.killcrawlerswarmbt2>
+  <missionheader0.killcrawlerswarmbt2>Цели уничтожены</missionheader0.killcrawlerswarmbt2>
+  <missionname.killcrawlerhuskswarmbt>Уничтожение огромного роя</missionname.killcrawlerhuskswarmbt>
+  <missiondescription.killcrawlerhuskswarmbt>Огромный рой ползунов терроризирует суда, проходящие между [location1] и [location2]. Обещана награда в размере [reward] кредитов любому экипажу, который сможет уничтожить его.</missiondescription.killcrawlerhuskswarmbt>
+  <missionsonarlabel.killcrawlerhuskswarmbt>Рой</missionsonarlabel.killcrawlerhuskswarmbt>
+  <missionsuccess.killcrawlerhuskswarmbt>Рой уничтожен.</missionsuccess.killcrawlerhuskswarmbt>
+  <missionfailure.killcrawlerhuskswarmbt>Миссия провалена.</missionfailure.killcrawlerhuskswarmbt>
+  <missionheader0.killcrawlerhuskswarmbt>missionheader0.killcrawlerswarm2</missionheader0.killcrawlerhuskswarmbt>
+  <missionname.killspinelingswarm1>missionname.killspinelingswarm1</missionname.killspinelingswarm1>
+  <missiondescription.killspinelingswarm1>missiondescription.killspinelingswarm1</missiondescription.killspinelingswarm1>
+  <missionsonarlabel.killspinelingswarmbt1>Рой</missionsonarlabel.killspinelingswarmbt1>
+  <missionsuccess.killspinelingswarmbt1>Цели уничтожены.</missionsuccess.killspinelingswarmbt1>
+  <missionfailure.killspinelingswarmbt1>Миссия провалена.</missionfailure.killspinelingswarmbt1>
+  <missionheader0.killspinelingswarmbt1>Цели уничтожены</missionheader0.killspinelingswarmbt1>
+  <missionname.killgiantspinelingbt1>Убийство огромного Шпинелина</missionname.killgiantspinelingbt1>
+  <missiondescription.killgiantspinelingbt1>missiondescription.killspinelingswarm1</missiondescription.killgiantspinelingbt1>
+  <missionsonarlabel.killgiantspinelingbt1>character.spineling</missionsonarlabel.killgiantspinelingbt1>
+  <missionsuccess.killgiantspinelingbt1>Цели уничтожены.</missionsuccess.killgiantspinelingbt1>
+  <missionfailure.killgiantspinelingbt1>Миссия провалена.</missionfailure.killgiantspinelingbt1>
+  <missionheader0.killgiantspinelingbt1>missionheader0.killgiantspineling1</missionheader0.killgiantspinelingbt1>
+  <missionname.killgiantspinelingbt2>Убийство огромного Шпинелина</missionname.killgiantspinelingbt2>
+  <missiondescription.killgiantspinelingbt2>missiondescription.killspinelingswarm1</missiondescription.killgiantspinelingbt2>
+  <missionsonarlabel.killgiantspinelingbt2>character.spineling</missionsonarlabel.killgiantspinelingbt2>
+  <missionsuccess.killgiantspinelingbt2>Цели уничтожены.</missionsuccess.killgiantspinelingbt2>
+  <missionfailure.killgiantspinelingbt2>Миссия провалена.</missionfailure.killgiantspinelingbt2>
+  <missionheader0.killgiantspinelingbt2>missionheader0.killgiantspineling1</missionheader0.killgiantspinelingbt2>
+  <missionname.killmudraptorsbt1>Убийство Грязевых Рапторов</missionname.killmudraptorsbt1>
+  <missiondescription.killmudraptorsbt1>Огромная стая грязевых рапторов терроризирует суда, проходящие между [location1] и [location2]. Обещана награда в размере [reward] кредитов любому экипажу, который сможет её нейтрализовать.</missiondescription.killmudraptorsbt1>
+  <missionsonarlabel.killmudraptorsbt1>character.mudraptor</missionsonarlabel.killmudraptorsbt1>
+  <missionsuccess.killmudraptorsbt1>Цели уничтожены.</missionsuccess.killmudraptorsbt1>
+  <missionfailure.killmudraptorsbt1>Миссия провалена.</missionfailure.killmudraptorsbt1>
+  <missionheader0.killmudraptorsbt1>missionheader0.killmudraptors1</missionheader0.killmudraptorsbt1>
+  <missionname.killmudraptor_veteranbt>Убийство Грязевых Рапторов Ветеранов</missionname.killmudraptor_veteranbt>
+  <missiondescription.killmudraptor_veteranbt>Огромная стая грязевых рапторов ветеранов терроризирует суда, проходящие между [location1] и [location2]. Обещана награда в размере [reward] кредитов любому экипажу, который сможет её нейтрализовать.</missiondescription.killmudraptor_veteranbt>
+  <missionsonarlabel.killmudraptor_veteranbt>character.mudraptor</missionsonarlabel.killmudraptor_veteranbt>
+  <missionsuccess.killmudraptor_veteranbt>Цели уничтожены.</missionsuccess.killmudraptor_veteranbt>
+  <missionfailure.killmudraptor_veteranbt>Миссия провалена.</missionfailure.killmudraptor_veteranbt>
+  <missionheader0.killmudraptor_veteranbt>missionheader0.killmudraptors1</missionheader0.killmudraptor_veteranbt>
+  <missionname.killmudraptorsbt2>Убийство Грязевых Рапторов</missionname.killmudraptorsbt2>
+  <missiondescription.killmudraptorsbt2>Огромная стая грязевых рапторов терроризирует суда, проходящие между [location1] и [location2]. Обещана награда в размере [reward] кредитов любому экипажу, который сможет её нейтрализовать.</missiondescription.killmudraptorsbt2>
+  <missionsonarlabel.killmudraptorsbt2>character.mudraptor</missionsonarlabel.killmudraptorsbt2>
+  <missionsuccess.killmudraptorsbt2>Цели уничтожены.</missionsuccess.killmudraptorsbt2>
+  <missionfailure.killmudraptorsbt2>Миссия провалена.</missionfailure.killmudraptorsbt2>
+  <missionheader0.killmudraptorsbt2>missionheader0.killmudraptors1</missionheader0.killmudraptorsbt2>
+  <missionname.killthresherswarmbt1>Уничтожение роя Акульих Тигров</missionname.killthresherswarmbt1>
+  <missiondescription.killthresherswarmbt1>Огромная стая акульих тигров терроризирует суда, проходящие между [location1] и [location2]. Обещана награда в размере [награда] кредитов любому экипажу, который сможет её уничтожить.</missiondescription.killthresherswarmbt1>
+  <missionsonarlabel.killthresherswarmbt1>Рой</missionsonarlabel.killthresherswarmbt1>
+  <missionsuccess.killthresherswarmbt1>Цели уничтожены.</missionsuccess.killthresherswarmbt1>
+  <missionfailure.killthresherswarmbt1>Миссия провалена.</missionfailure.killthresherswarmbt1>
+  <missionheader0.killthresherswarmbt1>missionheader0.killthresherswarm1</missionheader0.killthresherswarmbt1>
+  <missionname.killthresherswarmbt2>Уничтожение роя Акульих Тигров</missionname.killthresherswarmbt2>
+  <missiondescription.killthresherswarmbt2>Огромная стая акульих тигров терроризирует суда, проходящие между [location1] и [location2]. Обещана награда в размере [награда] кредитов любому экипажу, который сможет её уничтожить.</missiondescription.killthresherswarmbt2>
+  <missionsonarlabel.killthresherswarmbt2>Рой</missionsonarlabel.killthresherswarmbt2>
+  <missionsuccess.killthresherswarmbt2>Цели уничтожены.</missionsuccess.killthresherswarmbt2>
+  <missionfailure.killthresherswarmbt2>Миссия провалена.</missionfailure.killthresherswarmbt2>
+  <missionheader0.killthresherswarmbt2>missionheader0.killthresherswarm1</missionheader0.killthresherswarmbt2>
+  <missionname.beaconbt1>Активировать Маяк</missionname.beaconbt1>
+  <missiondescription.beaconbt1>Радиомаяк между [location1] и [location2] не работает - восстановите его работу и активируйте сонар.</missiondescription.beaconbt1>
+  <!-- <missionsonarlabel.beaconbt1>Text was not defined</missionsonarlabel.beaconbt1>
+    <missionsuccess.beaconbt1>Text was not defined</missionsuccess.beaconbt1>
+    <missionfailure.beaconbt1>Миссия провалена.</missionfailure.beaconbt1>
+    <missionheader0.beaconbt1>Text was not defined</missionheader0.beaconbt1>
+    <missionmessage0.beaconbt1>Text was not defined</missionmessage0.beaconbt1> -->
+  <missionname.abandonedoutposthumansbt1>Захват Аванпоста</missionname.abandonedoutposthumansbt1>
+  <!-- <missiondescription.abandonedoutposthumansbt1>Text was not defined</missiondescription.abandonedoutposthumansbt1>
+    <missionsonarlabel.abandonedoutposthumansbt1>Text was not defined</missionsonarlabel.abandonedoutposthumansbt1>
+    <missionsuccess.abandonedoutposthumansbt1>Text was not defined</missionsuccess.abandonedoutposthumansbt1>
+    <missionfailure.abandonedoutposthumansbt1>Миссия провалена.</missionfailure.abandonedoutposthumansbt1>
+    <missionheader0.abandonedoutposthumansbt1>Text was not defined</missionheader0.abandonedoutposthumansbt1>
+    <missionmessage0.abandonedoutposthumansbt1>Text was not defined</missionmessage0.abandonedoutposthumansbt1> -->
+  <missionname.abandonedoutposthumansbt2>Захват Аванпоста</missionname.abandonedoutposthumansbt2>
+  <!-- <missiondescription.abandonedoutposthumansbt2>Text was not defined</missiondescription.abandonedoutposthumansbt2>
+    <missionsonarlabel.abandonedoutposthumansbt2>Text was not defined</missionsonarlabel.abandonedoutposthumansbt2>
+    <missionsuccess.abandonedoutposthumansbt2>Text was not defined</missionsuccess.abandonedoutposthumansbt2>
+    <missionfailure.abandonedoutposthumansbt2>Миссия провалена.</missionfailure.abandonedoutposthumansbt2>
+    <missionheader0.abandonedoutposthumansbt2>Text was not defined</missionheader0.abandonedoutposthumansbt2>
+    <missionmessage0.abandonedoutposthumansbt2>Text was not defined</missionmessage0.abandonedoutposthumansbt2> -->
+  <missionname.abandonedoutpostmudraptorbt>Захват Аванпоста</missionname.abandonedoutpostmudraptorbt>
+  <!-- <missiondescription.abandonedoutpostmudraptorbt>Text was not defined</missiondescription.abandonedoutpostmudraptorbt>
+    <missionsonarlabel.abandonedoutpostmudraptorbt>Nest</missionsonarlabel.abandonedoutpostmudraptorbt>
+    <missionsuccess.abandonedoutpostmudraptorbt>Text was not defined</missionsuccess.abandonedoutpostmudraptorbt>
+    <missionfailure.abandonedoutpostmudraptorbt>Миссия провалена.</missionfailure.abandonedoutpostmudraptorbt>
+    <missionheader0.abandonedoutpostmudraptorbt>Text was not defined</missionheader0.abandonedoutpostmudraptorbt>
+    <missionmessage0.abandonedoutpostmudraptorbt>Text was not defined</missionmessage0.abandonedoutpostmudraptorbt> -->
+  <missionname.abandonedoutpostcrawlerbt>Захват Аванпоста</missionname.abandonedoutpostcrawlerbt>
+  <!-- <missiondescription.abandonedoutpostcrawlerbt>Text was not defined</missiondescription.abandonedoutpostcrawlerbt>
+    <missionsonarlabel.abandonedoutpostcrawlerbt>Nest</missionsonarlabel.abandonedoutpostcrawlerbt>
+    <missionsuccess.abandonedoutpostcrawlerbt>Text was not defined</missionsuccess.abandonedoutpostcrawlerbt>
+    <missionfailure.abandonedoutpostcrawlerbt>Миссия провалена.</missionfailure.abandonedoutpostcrawlerbt>
+    <missionheader0.abandonedoutpostcrawlerbt>Text was not defined</missionheader0.abandonedoutpostcrawlerbt>
+    <missionmessage0.abandonedoutpostcrawlerbt>Text was not defined</missionmessage0.abandonedoutpostcrawlerbt> -->
+  <missionname.abandonedoutpostcrawlerhusk>Зачистка Аванпоста</missionname.abandonedoutpostcrawlerhusk>
+  <!-- <missiondescription.abandonedoutpostcrawlerhusk>Text was not defined</missiondescription.abandonedoutpostcrawlerhusk>
+    <missionsonarlabel.abandonedoutpostcrawlerhusk>target</missionsonarlabel.abandonedoutpostcrawlerhusk>
+    <missionsuccess.abandonedoutpostcrawlerhusk>Text was not defined</missionsuccess.abandonedoutpostcrawlerhusk>
+    <missionfailure.abandonedoutpostcrawlerhusk>Миссия провалена.</missionfailure.abandonedoutpostcrawlerhusk>
+    <missionheader0.abandonedoutpostcrawlerhusk>Text was not defined</missionheader0.abandonedoutpostcrawlerhusk>
+    <missionmessage0.abandonedoutpostcrawlerhusk>Text was not defined</missionmessage0.abandonedoutpostcrawlerhusk> -->
+  <missionname.abandonedoutposthusk>Зачистка Аванпоста</missionname.abandonedoutposthusk>
+  <!-- <missiondescription.abandonedoutposthusk>Text was not defined</missiondescription.abandonedoutposthusk>
+    <missionsonarlabel.abandonedoutposthusk>target</missionsonarlabel.abandonedoutposthusk>
+    <missionsuccess.abandonedoutposthusk>Text was not defined</missionsuccess.abandonedoutposthusk>
+    <missionfailure.abandonedoutposthusk>Миссия провалена.</missionfailure.abandonedoutposthusk>
+    <missionheader0.abandonedoutposthusk>Text was not defined</missionheader0.abandonedoutposthusk>
+    <missionmessage0.abandonedoutposthusk>Text was not defined</missionmessage0.abandonedoutposthusk> -->
+  <missionname.abandonedoutpostcultist>Рейд на аванпост Культистов</missionname.abandonedoutpostcultist>
+  <!-- <missiondescription.abandonedoutpostcultist>Text was not defined</missiondescription.abandonedoutpostcultist>
+    <missionsonarlabel.abandonedoutpostcultist>target</missionsonarlabel.abandonedoutpostcultist>
+    <missionsuccess.abandonedoutpostcultist>Text was not defined</missionsuccess.abandonedoutpostcultist>
+    <missionfailure.abandonedoutpostcultist>Миссия провалена.</missionfailure.abandonedoutpostcultist>
+    <missionheader0.abandonedoutpostcultist>Text was not defined</missionheader0.abandonedoutpostcultist>
+    <missionmessage0.abandonedoutpostcultist>Text was not defined</missionmessage0.abandonedoutpostcultist> -->
+  <missionname.abandonedoutpostclown>Рейд на аванпост Клоунов</missionname.abandonedoutpostclown>
+  <!-- <missiondescription.abandonedoutpostclown>Text was not defined</missiondescription.abandonedoutpostclown>
+    <missionsonarlabel.abandonedoutpostclown>target</missionsonarlabel.abandonedoutpostclown>
+    <missionsuccess.abandonedoutpostclown>Text was not defined</missionsuccess.abandonedoutpostclown>
+    <missionfailure.abandonedoutpostclown>Миссия провалена.</missionfailure.abandonedoutpostclown>
+    <missionheader0.abandonedoutpostclown>Text was not defined</missionheader0.abandonedoutpostclown>
+    <missionmessage0.abandonedoutpostclown>Text was not defined</missionmessage0.abandonedoutpostclown> -->
+  <!-- Перевод сделал Enigma#0599 -->
+</infotext>

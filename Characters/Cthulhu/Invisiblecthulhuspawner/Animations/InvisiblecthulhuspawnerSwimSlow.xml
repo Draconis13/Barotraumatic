@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SeasnekSwimSlow type="Seasnek" UseSineMovement="False" Flip="False" FlipCooldown="2" FlipDelay="0.1" Mirror="False" MirrorLerp="False" WaveAmplitude="3.2965915" WaveLength="48.0164" RotateTowardsMovement="True" TailTorque="5" TailTorqueMultiplier="50" FootAngles="" UpdateAnimationWhenNotMoving="False" TailAngle="90" SteerTorque="4" LegTorque="25" AnimationType="SwimSlow" MovementSpeed="20" CycleSpeed="1" HeadAngle="90" TorsoAngle="90" HeadTorque="10" TorsoTorque="25" FootTorque="20" ArmIKStrength="1" HandIKStrength="1" />

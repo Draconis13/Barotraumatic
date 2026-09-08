@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="Psilotoadadult" speciesname="Psilotoadadultpet">
+  <ragdoll scalemultiplier="0.85" />
+</Charactervariant>
