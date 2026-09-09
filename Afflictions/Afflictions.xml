@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
 <Afflictions>
   <Affliction name="Radio" identifier="radio" target="human" duration="1.1" isbuff="true" limbspecific="false" indicatorlimb="Head" ShowIconToOthersThreshold="801" ShowInHealthCcannerThreshold="801" showiconthreshold="1" maxstrength="800">
     <Description textidentifier="AfflictionDescription.BTradio.150" minstrength="1" maxstrength="150"></Description>
@@ -127,44 +128,9 @@
     <Effect minstrength="0" maxstrength="3" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="0.0" MaxAfflictionOverlayAlphaMultiplier="1.0" />
     <Effect minstrength="3" maxstrength="20" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="1.0" MaxAfflictionOverlayAlphaMultiplier="1.0" />
     <AfflictionOverlay texture="%ModDir:2518816103%/UI/WhiteScreen.png" />
-    <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
   </Affliction>
 
-  <!-- <Affliction name="Shocked" identifier="stalkershocked" description="Bzzzzt" type="debuff" maxstrength="20" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
-    <Effect minstrength="0" maxstrength="20" strengthchange="-1">
-      <StatusEffect target="Character" interval="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-        <Affliction identifier="stalkershock1" strength="100" probability="0.3" />
-        <Affliction identifier="stalkershock2" strength="100" probability="0.3" />
-        <Affliction identifier="stalkershock3" strength="100" probability="0.3" />
-        <Affliction identifier="stalkershock4" strength="100" probability="0.3" />
-      </StatusEffect>
-      <StatusEffect target="Character" interval="1" duration="1.1">
-        <Conditional IsLocalPlayer="true" />
-        <Sound file="%ModDir:2518816103%/Audio/ShockLoop.ogg" volume="5" loop="true" dontmuffle="true" />
-      </StatusEffect>
-    </Effect>
-    <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
-  </Affliction>
-
-  <Affliction name="Shocked" identifier="eggshocked" description="Bzzzzt" type="debuff" maxstrength="20" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
-    <Effect minstrength="0" maxstrength="20" strengthchange="-1">
-      <StatusEffect target="Character" interval="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-        <Affliction identifier="stalkershock1" strength="100" probability="0.3" />
-        <Affliction identifier="stalkershock2" strength="100" probability="0.3" />
-        <Affliction identifier="stalkershock3" strength="100" probability="0.3" />
-        <Affliction identifier="stalkershock4" strength="100" probability="0.3" />
-      </StatusEffect>
-      <StatusEffect target="Character" interval="1" duration="1.1">
-        <Conditional IsLocalPlayer="true" />
-        <Sound file="%ModDir%/Audio/ShockLoop.ogg" volume="5" loop="true" dontmuffle="true" />
-      </StatusEffect>
-      <StatusEffect target="Character" interval="0.8">
-        <Conditional InWater="eq false" />
-        <ReduceAffliction identifier="eggshocked" amount="100" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
- -->
   <Affliction name="Shocked" identifier="stalkershocked" description="Bzzzzt" type="debuff" maxstrength="20" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="20" strengthchange="-1">
       <StatusEffect target="Character" interval="1" duration="1.1">
@@ -172,7 +138,7 @@
         <Sound file="%ModDir:2518816103%/Audio/ShockLoop.ogg" volume="5" loop="true" dontmuffle="true" />
       </StatusEffect>
     </Effect>
-    <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
     <AfflictionOverlayAnimated texture="%ModDir:2518816103%/Afflictions/ShockAnimation2.png" sourcerect="0,0,2048,1280" origin="0.5,0.5" alpha="1.0" animspeed="12" columns="2" rows="2" />
   </Affliction>
 
@@ -183,7 +149,7 @@
         <Sound file="%ModDir:2518816103%/Audio/ShockLoop.ogg" volume="5" loop="true" dontmuffle="true" />
       </StatusEffect>
     </Effect>
-    <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
     <AfflictionOverlayAnimated texture="%ModDir:2518816103%/Afflictions/ShockAnimation2.png" sourcerect="0,0,2048,1280" origin="0.5,0.5" alpha="1.0" animspeed="12" columns="2" rows="2" />
   </Affliction>
 
@@ -198,7 +164,7 @@
         <Sound file="%ModDir:2518816103%/Characters/NightmareCreatures/Stalker/stalkernear.ogg" volume="0.4" loop="true" dontmuffle="true" />
       </StatusEffect> -->
     </Effect>
-    <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
   </Affliction>
 
   <Affliction identifier="stalkerhands1" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" afflictionoverlayalphaislinear="true">
@@ -606,77 +572,6 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,896,128,128" color="195,136,60,255" origin="0,0" />
   </Affliction>
 
-  <!-- Removing Thalamus infection, keeping thalahusk as their own monster/suitspawned
-   <Affliction name="Flora Spores" identifier="floraspores" description="You can see green spores floating around you" type="gaze" targets="human" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" activationthreshold="1" showiconthreshold="1" showinhealthscannerthreshold="1" karmachangeonapplied="-1" maxstrength="10" iconcolors="100,155,50,255">
-    <Effect minstrength="0" maxstrength="1" strengthchange="-1" />
-    <Effect minstrength="1" maxstrength="10" strengthchange="-1">
-      <StatusEffect type="Always" target="Character" stackable="false" delay="1" comparison="and">
-        <Conditional HideFace="eq False" />
-        <Conditional oxygenlow="ne 0" />
-        <Affliction Identifier="florainfection" amount="1" />
-      </StatusEffect>
-    </Effect>
-    <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="512,768,128,128" color="100,155,50,255" origin="0,0" />
-  </Affliction>
-
-  <Affliction name="Thalassemia" identifier="florainfection" type="alieninfection" targets="human" causeofdeathdescription="Thalassemia" description="The patient complains about chest pain while gasping. The throat is a pale green with little holes forming around the tonsils." selfcauseofdeathdescription="You suffocated from having a plant grow in your lungs" limbspecific="false" indicatorlimb="Head" showiconthreshold="150" showicontoothersthreshold="100" showinhealthscannerthreshold="50" karmachangeonapplied="-1" maxstrength="200" iconcolors="100,155,50,255">
-    <Effect minstrength="0" maxstrength="50" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="0.2" />
-    <Effect minstrength="50" maxstrength="100" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="0.3">
-      <StatusEffect Type="Always" target="Character" duration="1" stackable="false" delay="30">
-        <Affliction identifier="psychosis" strength="15" />
-        <Affliction identifier="nausea" strength="15" />
-      </StatusEffect>
-    </Effect>
-    <Effect minstrength="100" maxstrength="150" multiplybymaxvitality="true" strengthchange="0.4">
-      <StatusEffect Type="Always" target="Character" duration="1" stackable="false" delay="20">
-        <Affliction identifier="psychosis" strength="20" />
-        <Affliction identifier="organdamage" strength="3" />
-        <Affliction identifier="nausea" strength="20" />
-      </StatusEffect>
-    </Effect>
-    <Effect minstrength="150" maxstrength="199" multiplybymaxvitality="true" strengthchange="0.5">
-      <StatusEffect target="Character" Type="Always" targetlimbs="Head" duration="1" stackable="false" delay="20">
-        <Conditional HideFace="eq False" />
-        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="50" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-        <ParticleEmitter particle="toxins" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="5" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-        <ParticleEmitter particle="acidmistgrenade" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="1" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-        <SpawnItem identifier="ballastfloratoxins" />
-      </StatusEffect>
-      <StatusEffect target="Character" Type="Always" duration="1" stackable="false" delay="10">
-        <Affliction identifier="organdamage" strength="4" />
-        <Affliction identifier="psychosis" strength="25" />
-        <Affliction identifier="nausea" strength="25" />
-      </StatusEffect>
-      <StatusEffect Type="OnDeath" target="Character" stackable="false" delay="120">
-        <DropContainedItems /> 
-		<SpawnCharacter speciesname="Thalamusk" />
-        <RemoveCharacter />
-      </StatusEffect>
-    </Effect>
-    <Effect minstrength="199" maxstrength="200" multiplybymaxvitality="true" strengthchange="0.4">
-      <StatusEffect target="Character" Type="Always" targetlimbs="Head" duration="1" stackable="false" delay="10">
-        <Conditional HideFace="eq False" />
-        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="30" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-        <ParticleEmitter particle="bloodsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="20" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-        <ParticleEmitter particle="toxins" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="5" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-        <ParticleEmitter particle="acidmistgrenade" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="1" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-        <SpawnItem identifier="ballastfloratoxins" />
-      </StatusEffect>
-      <StatusEffect Type="Always" target="Character" duration="1" stackable="false" delay="5">
-        <Affliction identifier="organdamage" strength="5" />
-        <Affliction identifier="psychosis" strength="30" />
-        <Affliction identifier="nausea" strength="30" />
-        <Affliction identifier="paralysis" strength="1" />
-      </StatusEffect>
-      <StatusEffect Type="OnDeath" target="Character" stackable="false" delay="60">
-        <DropContainedItems />
-        <SpawnCharacter speciesname="Thalamusk" />
-        <RemoveCharacter />
-      </StatusEffect>
-    </Effect>
-    <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="0,384,128,128" color="60,107,255,255" origin="0,0" />
-  </Affliction>
- -->
   <Affliction name="Infected Suit" identifier="infectedsuitinfection" type="alieninfection" targets="human" causeofdeathdescription="Thalassemia" description="The patient has encased himself inside the Infected Suit and was melted inside." selfcauseofdeathdescription="You've been trapped inside the suit and melted." limbspecific="True" indicatorlimb="Torso" showiconthreshold="150" showicontoothersthreshold="100" showinhealthscannerthreshold="50" karmachangeonapplied="-1" maxstrength="5" iconcolors="100,155,50,255">
     <Effect minstrength="0" maxstrength="2" multiplybymaxvitality="true" strengthchange="0.2">
       <StatusEffect Type="Always" target="Character" duration="1" stackable="false">
@@ -744,173 +639,6 @@
     <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="129,0,127,128" color="195,177,60,255" origin="0,0" />
   </Affliction>
 
-  <Override>
-    <!-- <Affliction name="Waterborne Waste Spores" identifier="waterbornespores" description="Spores are in the water." type="gaze" targets="human" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1" showinhealthscannerthreshold="1000" maxstrength="10" iconcolors="128,128,0,255">
-      <Effect minstrength="0" maxstrength="1" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1" />
-      <Effect minstrength="1" maxstrength="10" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1">
-        <StatusEffect type="Always" target="Character" stackable="false" delay="1">
-          <SpawnItem identifier="wastewaterdetector" />
-        </StatusEffect>
-      </Effect>
-    </Affliction>
-
-    <Affliction name="Waste Spores" identifier="wastespores" description="You can visibly see yellow spores floating around you like a foul stench." type="gaze" targets="human,mantis,tigerthresher,bonethresher,crawler" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" activationthreshold="0" showiconthreshold="1" showinhealthscannerthreshold="1" karmachangeonapplied="-1" maxstrength="10" strengthchange="-0.1" iconcolors="128,128,0,255">
-      <Effect minstrength="1" maxstrength="10">
-        <StatusEffect type="Always" target="Character" stackable="false" delay="10">
-          <SpawnItem identifier="wastesporeemitter" />
-        </StatusEffect>
-        <StatusEffect type="Always" target="Character" stackable="false" delay="1" comparison="and">
-          <Conditional oxygenlow="ne 0" />
-          <Conditional HideFace="eq False" />
-          <Affliction Identifier="wasteinfection" amount="0.1" />
-        </StatusEffect>
-        <StatusEffect Type="Always" target="Character">
-          <Conditional speciesname="crawler" />
-          <Spawncharacter speciesname="wastecrawler" />
-          <RemoveCharacter />
-        </StatusEffect>
-        <StatusEffect Type="Always" target="Character">
-          <Conditional speciesname="mantis" />
-          <Spawncharacter speciesname="wastemantis" />
-          <RemoveCharacter />
-        </StatusEffect>
-        <StatusEffect Type="Always" target="Character">
-          <Conditional speciesname="tigerthresher" />
-          <Spawncharacter speciesname="wastetigerthresher" />
-          <RemoveCharacter />
-        </StatusEffect>
-        <StatusEffect Type="Always" target="Character">
-          <Conditional speciesname="bonethresher" />
-          <Spawncharacter speciesname="wastebonethresher" />
-          <RemoveCharacter />
-        </StatusEffect>
-      </Effect>
-      <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="512,768,128,128" color="60,107,195,255" origin="0,0" />
-    </Affliction>
-
-    <Affliction name="Waste infection" identifier="wasteinfection" description="Patient complains about itching and internal burning sensations. The skin is a pale green." type="alieninfection" targets="human" huskedspeciesname="wastehuman" causeofdeathdescription="Melted by waste infection" selfcauseofdeathdescription="Your body melted from waste infection" limbspecific="false" indicatorlimb="Torso" showiconthreshold="100" showinhealthscannerthreshold="50" karmachangeonapplied="-1" maxstrength="200" transferbuffs="true" dormantthreshold="100" activethreshold="100" transformthresholdondeath="100" transitionthreshold="200" causespeechimpediment="false" sendmessages="true" needsair="false" iconcolors="128,128,0,255">
-      <Effect minstrength="0" maxstrength="50" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="0.2" minfacetint="0,255,0,0" maxfacetint="0,255,0,20">
-        <StatusEffect Type="Always" target="Character">
-          <ReduceAffliction identifier="oxygenlow" amount="1" />
-        </StatusEffect>
-      </Effect>
-      <Effect minstrength="0" maxstrength="50" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="0.2" minfacetint="0,255,0,0" maxfacetint="0,255,0,20">
-        <StatusEffect Type="Always" target="Character">
-          <ReduceAffliction identifier="oxygenlow" amount="1" />
-        </StatusEffect>
-      </Effect>
-      <Effect minstrength="50" maxstrength="100" strengthchange="0.4" minchromaticaberration="0.0" maxchromaticaberration="5.0" minfacetint="0,255,0,20" maxfacetint="0,255,0,40">
-        <StatusEffect target="Character" stackable="false" delay="0.1">
-          <Affliction identifier="organdamage" amount="1" />
-          <Affliction identifier="nausea" amount="0.5" />
-        </StatusEffect>
-        <StatusEffect Type="Always" target="Character">
-          <ReduceAffliction identifier="oxygenlow" amount="1" />
-          <ReduceAffliction identifier="bleeding" amount="0.01" />
-        </StatusEffect>
-      </Effect>
-      <Effect minstrength="100" maxstrength="150" minscreendistort="0.1" maxscreendistort="0.5" strengthchange="0.6" minchromaticaberration="0.0" maxchromaticaberration="0.2" minfacetint="0,255,0,40" maxfacetint="0,255,0,60" tag="huskinfected">
-        <StatusEffect target="Character" Type="Always" targetlimbs="Head" duration="1" stackable="false" delay="30">
-          <Conditional HideFace="eq False" />
-          <ParticleEmitter particle="bloodsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="50" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-          <SpawnItem identifier="wastesporeemitter" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="5" velocitymin="50" velocitymax="200" />
-        </StatusEffect>
-        <StatusEffect Type="Always" target="Character" stackable="false" delay="0.1">
-          <Affliction identifier="organdamage" amount="1" />
-          <Affliction identifier="burn" amount="0.5" />
-          <Affliction identifier="nausea" amount="1" />
-        </StatusEffect>
-        <StatusEffect Type="Always" target="Character">
-          <ReduceAffliction identifier="oxygenlow" amount="1" />
-          <ReduceAffliction identifier="bleeding" amount="0.1" />
-          <ReduceAffliction identifier="bloodloss" amount="0.01" />
-        </StatusEffect>
-        <StatusEffect type="OnDeath" target="Character" setvalue="true" stackable="false" duration="30">
-          <particleemitter particle="heavygib" particlespersecond="2" velocitymin="30" velocitymax="60" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" copyentityangle="True" />
-          <ParticleEmitter particle="fleshsmoke" particlespersecond="10" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
-          <particleemitter particle="whitegoosplash" particlespersecond="4" velocitymin="10" velocitymax="30" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" copyentityangle="True" />
-        </StatusEffect>
-        <StatusEffect type="OnDeath" target="Character" stackable="false" delay="30">
-          <SpawnCharacter speciesname="Wastehuman" count="1" spread="0" />
-          <RemoveCharacter />
-        </StatusEffect>
-      </Effect>
-      <Effect minstrength="150" maxstrength="199" minscreendistort="0.5" maxscreendistort="1.0" strengthchange="0.8" minchromaticaberration="0.2" maxchromaticaberration="0.3" minfacetint="0,255,0,60" maxfacetint="0,255,0,80" tag="huskinfected">
-        <StatusEffect target="Character" targetlimbs="Head" stackable="false" delay="1">
-          <Conditional ishuman="true" />
-          <ParticleEmitter particle="MistSmoke" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="5" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-        </StatusEffect>
-        <StatusEffect target="Character" Type="Always" targetlimbs="Head" duration="1" stackable="false" delay="20">
-          <Conditional HideFace="eq False" />
-          <ParticleEmitter particle="bloodsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="50" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-          <SpawnItem identifier="wastesporeemitter" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="5" velocitymin="50" velocitymax="200" />
-        </StatusEffect>
-        <StatusEffect target="Character" stackable="false" delay="0.1">
-          <Conditional ishuman="true" />
-          <Affliction identifier="organdamage" amount="1" />
-          <Affliction identifier="nausea" amount="5" />
-          <Affliction identifier="burn" amount="1" />
-          <ReduceAffliction identifier="oxygenlow" amount="10" />
-        </StatusEffect>
-        <StatusEffect Type="Always" target="Character">
-          <Conditional ishuman="true" />
-          <ReduceAffliction identifier="oxygenlow" amount="1" />
-          <ReduceAffliction identifier="bleeding" amount="0.5" />
-          <ReduceAffliction identifier="bloodloss" amount="0.1" />
-        </StatusEffect>
-        <StatusEffect type="OnDeath" target="Character" setvalue="true" stackable="false" duration="20">
-          <particleemitter particle="heavygib" particlespersecond="2" velocitymin="30" velocitymax="60" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" copyentityangle="True" />
-          <ParticleEmitter particle="fleshsmoke" particlespersecond="10" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
-          <particleemitter particle="whitegoosplash" particlespersecond="4" velocitymin="10" velocitymax="30" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" copyentityangle="True" />
-        </StatusEffect>
-        <StatusEffect type="OnDeath" target="Character" stackable="false" delay="20">
-          <SpawnCharacter speciesname="Wastehuman" count="1" spread="0" />
-          <RemoveCharacter />
-        </StatusEffect>
-      </Effect>
-      <Effect minstrength="199" maxstrength="200" minscreendistort="2.0" maxscreendistort="3.0" strengthchange="1" minchromaticaberration="10.0" maxchromaticaberration="10.0" minradialdistort="2.0" maxradialdistort="5.0" minfacetint="0,255,0,80" maxfacetint="0,255,0,120" tag="huskinfected">
-        <StatusEffect target="Character" targetlimbs="Head">
-          <Conditional ishuman="true" />
-          <ParticleEmitter particle="MistSmoke" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="1" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-        </StatusEffect>
-        <StatusEffect target="Character" Type="Always" targetlimbs="Head" duration="1" stackable="false" delay="10">
-          <Conditional HideFace="eq False" />
-          <ParticleEmitter particle="bloodsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="50" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-          <SpawnItem identifier="wastesporeemitter" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="5" velocitymin="50" velocitymax="200" />
-        </StatusEffect>
-        <StatusEffect Type="Always" target="Character" stackable="false" delay="0.1">
-          <Conditional ishuman="true" />
-          <Affliction identifier="burn" amount="3" />
-          <Affliction identifier="nausea" amount="10" />
-          <Affliction identifier="organdamage" amount="10" />
-          <Affliction identifier="internaldamage" amount="1" />
-        </StatusEffect>
-        <StatusEffect Type="Always" target="Character">
-          <Conditional ishuman="true" />
-          <ReduceAffliction identifier="oxygenlow" amount="1" />
-          <ReduceAffliction identifier="bleeding" amount="1" />
-          <ReduceAffliction identifier="bloodloss" amount="0.5" />
-        </StatusEffect>
-        <StatusEffect type="OnDeath" target="Character" setvalue="true" stackable="false" duration="10">
-          <particleemitter particle="heavygib" particlespersecond="2" velocitymin="30" velocitymax="60" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" copyentityangle="True" />
-          <ParticleEmitter particle="fleshsmoke" particlespersecond="10" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
-          <particleemitter particle="whitegoosplash" particlespersecond="4" velocitymin="10" velocitymax="30" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" copyentityangle="True" />
-        </StatusEffect>
-        <StatusEffect type="OnDeath" target="Character" stackable="false" delay="10">
-          <DropContainedItems />
-          <SpawnCharacter speciesname="Wastehuman" count="1" spread="0" />
-          <RemoveCharacter />
-        </StatusEffect>
-      </Effect>
-      <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="0,384,128,128" color="60,107,195,255" origin="0,0" />
-    </Affliction>
-
-    <Affliction name="Waste Infection Resistance" identifier="wasteresistance" description="Waste be gone." type="resistance" isbuff="true" limbspecific="false" maxstrength="600">
-      <Effect minstrength="0" maxstrength="600" strengthchange="-1" resistancefor="waste" minresistance="0" maxresistance="0.75" />
-      <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="384,896,128,128" color="10,193,114,255" origin="0,0" />
-    </Affliction>
- -->
-  </Override>
   <!--<Affliction
     name="Temporary Morbusine Poisoning"
     identifier="tempmorb"
@@ -928,6 +656,7 @@
     iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
   </Affliction>
  -->
+ 
   <Affliction name="Growth" identifier="growthmod1" description="The creature is growing." type="creaturegrowth" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" activationthreshold="0" showinhealthscannerthreshold="0" showicontoothersthreshold="0" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
       <StatusEffect target="Character" stackable="false" SpeedMultiplier="1.1" setvalue="true" />
@@ -2639,3 +2368,4 @@
   </Affliction>
   
 </Afflictions>
+</Override>
