@@ -9,6 +9,7 @@
     <Effect minstrength="1" maxstrength="800" strengthchange="0" tag="headset"></Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,128,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Distress Beacon" identifier="EMcarrierbeacon" description="" type="gaze" limbspecific="false" indicatorlimb="Head" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="10">
     <Effect minstrength="1" maxstrength="10" strengthchange="-4">
       <StatusEffect target="Character" comparison="and" targetlimb="Head" checkconditionalalways="true">
@@ -18,6 +19,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   
   <Affliction name="Armed" identifier="fractalarmed" description="This guardian has a weapon and is not afraid to use it!" type="fractalarmed" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
@@ -25,6 +27,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <!--<Affliction
     name="EMI"
     identifier="EMI"
@@ -66,6 +69,7 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Extra Storage" identifier="xanhuskhunterextrastorage" description="The monster is cloning its ammo!" type="xanhuskhunterextrastorage" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
     <PeriodicEffect mininterval="2" maxinterval="5">
@@ -80,6 +84,7 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Crawlersrun" identifier="runcrawler" description="The broodmother is dead! Run for your lives!" type="runcrawlerrun" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
       <StatusEffect target="NearbyCharacters" targetlimb="Torso">
@@ -92,12 +97,14 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Armed" identifier="humanarmed" description="Arming humans with guns" type="humanarmed" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
       <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <!--<Affliction name="Badass Music" identifier="pirateinside" description="Jovian pirate has entered the submarine." type="gaze" limbspecific="false" indicatorlimb="Head" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="10">
     <Effect minstrength="1" maxstrength="10" strengthchange="-9">
       <StatusEffect target="Character" comparison="and" targetlimb="Head" checkconditionalalways="true">
@@ -106,6 +113,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="Badass Music" identifier="bossbattle1" description="Random boss music." type="gaze" limbspecific="false" indicatorlimb="Head" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="10">
     <Effect minstrength="1" maxstrength="10" strengthchange="-9">
       <StatusEffect target="Character" comparison="and" targetlimb="Head" checkconditionalalways="true">
@@ -113,13 +121,15 @@
         <Sound file="%ModDir:2518816103%/Audio/Combat/COMBAT_SuddenBossEncounter.ogg" loop="True" volume="1.8" dontmuffle="true" />
       </StatusEffect>
     </Effect>
-  </Affliction>-->
+  </Affliction>
+-->
   <Affliction name="Blinded" identifier="stalkerblinded" description="MY EYES!!!" type="debuff" maxstrength="20" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="3" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="0.0" MaxAfflictionOverlayAlphaMultiplier="1.0" />
     <Effect minstrength="3" maxstrength="20" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="1.0" MaxAfflictionOverlayAlphaMultiplier="1.0" />
     <AfflictionOverlay texture="%ModDir:2518816103%/UI/WhiteScreen.png" />
     <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
   </Affliction>
+
   <!-- <Affliction name="Shocked" identifier="stalkershocked" description="Bzzzzt" type="debuff" maxstrength="20" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="20" strengthchange="-1">
       <StatusEffect target="Character" interval="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
@@ -135,6 +145,7 @@
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Shocked" identifier="eggshocked" description="Bzzzzt" type="debuff" maxstrength="20" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="20" strengthchange="-1">
       <StatusEffect target="Character" interval="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
@@ -152,7 +163,8 @@
         <ReduceAffliction identifier="eggshocked" amount="100" />
       </StatusEffect>
     </Effect>
-  </Affliction> -->
+  </Affliction>
+ -->
   <Affliction name="Shocked" identifier="stalkershocked" description="Bzzzzt" type="debuff" maxstrength="20" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="20" strengthchange="-1">
       <StatusEffect target="Character" interval="1" duration="1.1">
@@ -163,6 +175,7 @@
     <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
     <AfflictionOverlayAnimated texture="%ModDir:2518816103%/Afflictions/ShockAnimation2.png" sourcerect="0,0,2048,1280" origin="0.5,0.5" alpha="1.0" animspeed="12" columns="2" rows="2" />
   </Affliction>
+
   <Affliction name="Shocked" identifier="eggshocked" description="Bzzzzt" type="debuff" maxstrength="20" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="20" strengthchange="-1">
       <StatusEffect target="Character" interval="1" duration="1.1">
@@ -173,6 +186,7 @@
     <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
     <AfflictionOverlayAnimated texture="%ModDir:2518816103%/Afflictions/ShockAnimation2.png" sourcerect="0,0,2048,1280" origin="0.5,0.5" alpha="1.0" animspeed="12" columns="2" rows="2" />
   </Affliction>
+
   <Affliction name="Scare" identifier="stalkerhands" description="HE IS CLOSE" type="debuff" maxstrength="20" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="20" strengthchange="-1">
       <StatusEffect target="Character" interval="0.1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
@@ -186,14 +200,17 @@
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
   </Affliction>
+
   <Affliction identifier="stalkerhands1" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" afflictionoverlayalphaislinear="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="-300" />
     <AfflictionOverlay texture="%ModDir:2518816103%/UI/horror_claws_spr3.png" />
   </Affliction>
+
   <Affliction identifier="stalkerhands2" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" afflictionoverlayalphaislinear="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="-300" />
     <AfflictionOverlay texture="%ModDir:2518816103%/UI/horror_claws_spr4.png" />
   </Affliction>
+
   <Affliction name="Ravaged" identifier="attackstalker" description="..." type="" causeofdeathdescription="Electrocuted to death." selfcauseofdeathdescription="The Stalker ravaged you to death." limbspecific="False" indicatorlimb="Head" showiconthreshold="9999" showinhealthscannerthreshold="9999" maxstrength="6">
     <Effect minstrength="0" maxstrength="6" strengthchange="-1">
       <StatusEffect target="Character" setvalue="True" SpeedMultiplier="0.85">
@@ -211,6 +228,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,639,128,130" color="125,0,0,255" origin="0,0" />
   </Affliction>
+
   <Affliction identifier="stalkerkill" maxstrength="2" targets="human" limbspecific="False" showiconthreshold="1000">
     <Effect minstrength="0" maxstrength="2">
       <StatusEffect target="Character" delay="0.1" targetlimb="Head" comparison="and" disabledeltatime="true">
@@ -224,6 +242,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="Randomness" identifier="creaturerandomchance" description="This affliction is like, totally random." type="creaturerandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5">
       <StatusEffect target="Character" comparison="and" duration="4">
@@ -249,11 +268,13 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,1,0,1" color="255,255,255,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="FUCKING FAST" identifier="fastspeed" type="haste" isbuff="true" limbspecific="false" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="3">
     <Effect minstrength="0" maxstrength="3" strengthchange="99" minspeedmultiplier="20" maxspeedmultiplier="20" minfacetint="255,0,0,0" maxfacetint="255,0,0,150">
       <StatValue stattype="SwimmingSpeed" minvalue="5" maxvalue="5" />
     </Effect>
   </Affliction>
+
   <Affliction name="Random flak" identifier="flakspawnrandomchance" description="This affliction is like, totally random." type="flakspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" activationthreshold="0" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5">
       <!-- Spawn a random item which will spawn one of the flaks. -->
@@ -276,6 +297,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Random carrier" identifier="turretcarrierrandomchance" description="This affliction is like, totally random." type="flakspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" activationthreshold="0" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5">
       <!-- Spawn a random item which will spawn one of the flaks. -->
@@ -302,6 +324,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Husk Tiny Randomness" identifier="husktinyspawnrandomchance" description="This affliction is like, totally random." type="huskspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" activationthreshold="0" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5">
       <!-- Spawn a random item which will spawn one of the husks. -->
@@ -330,6 +353,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Husk Light Randomness" identifier="husklightspawnrandomchance" description="This affliction is like, totally random." type="huskspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" activationthreshold="0" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5">
       <!-- Spawn a random item which will spawn one of the husks. -->
@@ -378,6 +402,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Husk Heavy Randomness" identifier="huskheavyspawnrandomchance" description="This affliction is like, totally random." type="huskspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" activationthreshold="0" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5">
       <!-- Spawn a random item which will spawn one of the chimera. -->
@@ -406,6 +431,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Moloch Randomness" identifier="molochspawnrandomchance" description="This affliction is like, totally random." type="huskspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" activationthreshold="0" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5">
       <!-- Spawn a random item which will spawn one of the chimera. -->
@@ -423,6 +449,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Black Moloch Randomness" identifier="blackmolochspawnrandomchance" description="This affliction is like, totally random." type="huskspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" activationthreshold="0" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5">
       <!-- Spawn a random item which will spawn one of the chimera. -->
@@ -440,6 +467,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Trichordatespawn" identifier="trichordaterandomchance" description="This affliction is like, totally random." type="huskspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" activationthreshold="0" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5">
       <!-- Spawn a random item which will spawn one of the chimera. -->
@@ -468,6 +496,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <!-- <Affliction name="Honkfather sound far" identifier="fatherlong" description="" type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="2">
     <Effect minstrength="0" maxstrength="2" strengthchange="-1">
       <StatusEffect target="Character" delay="0.2">
@@ -477,6 +506,7 @@
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
   </Affliction>
+
   <Affliction name="Honkfather Presense" identifier="fatherpresense" description="" type="gaze" limbspecific="false" indicatorlimb="Head" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="1" maxstrength="100" strengthchange="-9">
       <StatusEffect target="Character" checkconditionalalways="true" targetlimb="Head" stackable="false" comparison="and">
@@ -486,7 +516,8 @@
         <Affliction identifier="fatherlong" strength="999" />
       </StatusEffect>
     </Effect>
-  </Affliction> -->
+  </Affliction>
+ -->
   <Affliction name=" " identifier="clownscare" description="" type="psiscare" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="11" showiconthreshold="11" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="-17.5">
       <StatusEffect target="Character">
@@ -499,12 +530,14 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="Armedbtc" identifier="shamblerarmedbtc" description="This shambler has a weapon and is not afraid to use it!" type="shamblerarmed" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
       <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Fake death" identifier="huskfakedeathbtc" description="It's not really dead!" type="huskfakedeathbtc" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="-1">
       <StatusEffect target="Character" comparison="and" indetectable="true">
@@ -551,11 +584,13 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,640,128,128" color="68,157,198,255" origin="0,0" />
   </Affliction>
+
   <!-- Paralysis effect in order to keep the husk completely still and make it not make noise. -->
   <!-- Unused for now as the most recent update broke modded paralysis functionality -->
   <Affliction name="Fake death" identifier="huskfakedeathbtcparalysis" description="It's not really dead!" type="paralysis" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,640,128,128" color="68,157,198,255" origin="0,0" />
   </Affliction>
+
   <!-- Affliction to remember that this monster was wounded. Used by humanhuskold and huskpucsold/huskmutantarmoredpucs -->
   <Affliction name="Damaged" identifier="huskdamagedbtc" description="The monster is DAMAGED. Becomes slower and has less health." type="huskdamagedbtc" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
@@ -570,6 +605,7 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,896,128,128" color="195,136,60,255" origin="0,0" />
   </Affliction>
+
   <!-- Removing Thalamus infection, keeping thalahusk as their own monster/suitspawned
    <Affliction name="Flora Spores" identifier="floraspores" description="You can see green spores floating around you" type="gaze" targets="human" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" activationthreshold="1" showiconthreshold="1" showinhealthscannerthreshold="1" karmachangeonapplied="-1" maxstrength="10" iconcolors="100,155,50,255">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" />
@@ -582,6 +618,7 @@
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="512,768,128,128" color="100,155,50,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Thalassemia" identifier="florainfection" type="alieninfection" targets="human" causeofdeathdescription="Thalassemia" description="The patient complains about chest pain while gasping. The throat is a pale green with little holes forming around the tonsils." selfcauseofdeathdescription="You suffocated from having a plant grow in your lungs" limbspecific="false" indicatorlimb="Head" showiconthreshold="150" showicontoothersthreshold="100" showinhealthscannerthreshold="50" karmachangeonapplied="-1" maxstrength="200" iconcolors="100,155,50,255">
     <Effect minstrength="0" maxstrength="50" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="0.2" />
     <Effect minstrength="50" maxstrength="100" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="0.3">
@@ -638,7 +675,8 @@
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="0,384,128,128" color="60,107,255,255" origin="0,0" />
-  </Affliction> -->
+  </Affliction>
+ -->
   <Affliction name="Infected Suit" identifier="infectedsuitinfection" type="alieninfection" targets="human" causeofdeathdescription="Thalassemia" description="The patient has encased himself inside the Infected Suit and was melted inside." selfcauseofdeathdescription="You've been trapped inside the suit and melted." limbspecific="True" indicatorlimb="Torso" showiconthreshold="150" showicontoothersthreshold="100" showinhealthscannerthreshold="50" karmachangeonapplied="-1" maxstrength="5" iconcolors="100,155,50,255">
     <Effect minstrength="0" maxstrength="2" multiplybymaxvitality="true" strengthchange="0.2">
       <StatusEffect Type="Always" target="Character" duration="1" stackable="false">
@@ -666,10 +704,12 @@
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="0,384,128,128" color="60,107,255,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Flora Resistance" identifier="floraresistance" description="Flora be gone." type="resistance" isbuff="true" limbspecific="false" maxstrength="600">
     <Effect minstrength="0" maxstrength="600" strengthchange="-1" resistancefor="florainfection,paralysis,sufforinp" minresistance="1" maxresistance="1" />
     <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="384,896,128,128" color="100,155,50,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Boxcutter Dizziness" identifier="JellyStun" type="damage" description="You were hit by a Europan Boxcutter, your vision gets blurry and your feel your stomach turning inside out." limbspecific="false" indicatorlimb="Head" activationthreshold="0" maxstrength="10" healcostmultiplier="2.5">
     <Effect minstrength="0" maxstrength="10" minvitalitydecrease="0" maxvitalitydecrease="0" minscreendistort="0.02" maxscreendistort="0.1" minscreenblur="0.1" maxscreenblur="2.0" screeneffectfluctuationfrequency="0.05" strengthchange="-1.6" />
     <PeriodicEffect mininterval="30" maxinterval="60">
@@ -696,12 +736,14 @@
         <Conditional HideFace="eq False" />
       </StatusEffect>
     </PeriodicEffect>
-    <icon texture="%ModDir:2518816103%/UI/JellyIconsAtlas.png" sourcerect="0,0,128,128" color="255,0,60,255" origin="0,0" />
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,0,128,128" color="255,0,60,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Discombobulate" identifier="Discombobulate" description="Your try to move but your limbs seem to have a mind of its own." type="invertcontrols" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" minscreendistort="0.0" maxscreendistort="0.5" minradialdistort="0.0" maxradialdistort="0.5" minspeedmultiplier="0.7" maxspeedmultiplier="0.7" strengthchange="-0.5"></Effect>
-    <icon texture="%ModDir:2518816103%/UI/JellyIconsAtlas.png" sourcerect="129,0,127,128" color="195,177,60,255" origin="0,0" />
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="129,0,127,128" color="195,177,60,255" origin="0,0" />
   </Affliction>
+
   <Override>
     <!-- <Affliction name="Waterborne Waste Spores" identifier="waterbornespores" description="Spores are in the water." type="gaze" targets="human" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1" showinhealthscannerthreshold="1000" maxstrength="10" iconcolors="128,128,0,255">
       <Effect minstrength="0" maxstrength="1" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1" />
@@ -711,6 +753,7 @@
         </StatusEffect>
       </Effect>
     </Affliction>
+
     <Affliction name="Waste Spores" identifier="wastespores" description="You can visibly see yellow spores floating around you like a foul stench." type="gaze" targets="human,mantis,tigerthresher,bonethresher,crawler" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" activationthreshold="0" showiconthreshold="1" showinhealthscannerthreshold="1" karmachangeonapplied="-1" maxstrength="10" strengthchange="-0.1" iconcolors="128,128,0,255">
       <Effect minstrength="1" maxstrength="10">
         <StatusEffect type="Always" target="Character" stackable="false" delay="10">
@@ -744,6 +787,7 @@
       </Effect>
       <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="512,768,128,128" color="60,107,195,255" origin="0,0" />
     </Affliction>
+
     <Affliction name="Waste infection" identifier="wasteinfection" description="Patient complains about itching and internal burning sensations. The skin is a pale green." type="alieninfection" targets="human" huskedspeciesname="wastehuman" causeofdeathdescription="Melted by waste infection" selfcauseofdeathdescription="Your body melted from waste infection" limbspecific="false" indicatorlimb="Torso" showiconthreshold="100" showinhealthscannerthreshold="50" karmachangeonapplied="-1" maxstrength="200" transferbuffs="true" dormantthreshold="100" activethreshold="100" transformthresholdondeath="100" transitionthreshold="200" causespeechimpediment="false" sendmessages="true" needsair="false" iconcolors="128,128,0,255">
       <Effect minstrength="0" maxstrength="50" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="0.2" minfacetint="0,255,0,0" maxfacetint="0,255,0,20">
         <StatusEffect Type="Always" target="Character">
@@ -860,10 +904,12 @@
       </Effect>
       <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="0,384,128,128" color="60,107,195,255" origin="0,0" />
     </Affliction>
+
     <Affliction name="Waste Infection Resistance" identifier="wasteresistance" description="Waste be gone." type="resistance" isbuff="true" limbspecific="false" maxstrength="600">
       <Effect minstrength="0" maxstrength="600" strengthchange="-1" resistancefor="waste" minresistance="0" maxresistance="0.75" />
       <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="384,896,128,128" color="10,193,114,255" origin="0,0" />
-    </Affliction> -->
+    </Affliction>
+ -->
   </Override>
   <!--<Affliction
     name="Temporary Morbusine Poisoning"
@@ -880,7 +926,8 @@
     karmachangeonapplied="-1"
     maxstrength="100"
     iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
-  </Affliction> -->
+  </Affliction>
+ -->
   <Affliction name="Growth" identifier="growthmod1" description="The creature is growing." type="creaturegrowth" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" activationthreshold="0" showinhealthscannerthreshold="0" showicontoothersthreshold="0" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
       <StatusEffect target="Character" stackable="false" SpeedMultiplier="1.1" setvalue="true" />
@@ -896,6 +943,7 @@
       </StatusEffect>
     </PeriodicEffect>
   </Affliction>
+
   <!-- <Affliction name="Mysterious Signal" identifier="spooky1" description="You begin to hear strange screams from your headset, perhaps a nearby relay is emitting these sounds?" type="gaze" limbspecific="false" indicatorlimb="Head" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="0" showicontoothersthreshold="0" maxstrength="10">
     <Effect minstrength="1" maxstrength="10" strengthchange="-9">
       <StatusEffect target="Character" comparison="and" targetlimb="Head" checkconditionalalways="true">
@@ -905,7 +953,8 @@
       </StatusEffect>
     </Effect>
     <Icon texture="Content/UI/TalentsIcons2.png" sourcerect="901,645,118,119" color="155,0,0,255" origin="0,0" />
-  </Affliction> -->
+  </Affliction>
+ -->
   <!--<Affliction name="Reflected" identifier="shocker" description="" type="shocker" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" minscreendistort="0.7" maxscreendistort="0.9" minradialdistort="0.7" maxradialdistort="0.9" minscreenblur="0.8" maxscreenblur="1.2" minchromaticaberration="0.5" maxchromaticaberration="1.0" strengthchange="-3">
       <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" />
@@ -920,7 +969,8 @@
       </StatusEffect>
       <AfflictionOverlay texture="%ModDir:2518816103%/Ambient/screenblack.png" />
     </PeriodicEffect>
-  </Affliction>-->
+  </Affliction>
+-->
   <!--  <Affliction name="Tapeworm Infection" identifier="tapeworminfection" description="Buldge in the patients stomach that is moving as if somethings alive.." type="tapeworm" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" maxstrength="100" activationthreshold="5" showiconthreshold="50" showicontoothersthreshold="50" showinhealthscannerthreshold="15" damageoverlayalpha="1">
     <Effect minstrength="0" maxstrength="18" strengthchange="0.1" />
     <Effect minstrength="19" maxstrength="50" strengthchange="1" minscreenblur="0.1" maxscreenblur="0.1"></Effect>
@@ -952,7 +1002,8 @@
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="255,0,129,128" color="139,60,42,255" origin="0,0" />
-  </Affliction> -->
+  </Affliction>
+ -->
   
   
   <Affliction name="Mermaid Call" identifier="mermaidsound" description="" type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="2">
@@ -964,6 +1015,7 @@
     </Effect>
     <icon texture="Content/UI/MissionIcons.png" sourcerect="778,11,235,234" origin="0,0" />
   </Affliction>
+
   <Affliction name="Receiving Signal..." identifier="sirensoundinterference" description="" type="gaze" limbspecific="false" indicatorlimb="Head" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="1" maxstrength="100" strengthchange="-9">
       <StatusEffect target="Character" stackable="false" checkconditionalalways="true" targetlimb="Head" comparison="and">
@@ -974,6 +1026,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="Mermaid Call" identifier="sirensound" description="" type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="2">
     <Effect minstrength="0" maxstrength="2" strengthchange="-1">
       <StatusEffect target="Character" stackable="false" delay="0.2">
@@ -983,10 +1036,12 @@
     </Effect>
     <icon texture="Content/UI/MissionIcons.png" sourcerect="778,11,235,234" origin="0,0" />
   </Affliction>
+
   <Affliction name="Carved (Internal)" identifier="thal_gutted" description="INTERNAL USE ONLY" type="resistance" causeofdeathdescription="Carved Organs" selfcauseofdeathdescription="You have died from having your muscles carved out of you." limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" maxstrength="100" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000">
     <Effect minstrength="0" maxstrength="100" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="0.0"></Effect>
     <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="896,640,128,128" color="139,60,42,255" origin="0,0" />
   </Affliction>
+
   <!-- <Affliction name="Carved" identifier="thal_unguttable" description="The patient's muscles are removed." type="resistance" causeofdeathdescription="Carved Organs" selfcauseofdeathdescription="You have died from having your muscles carved out of you." limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" maxstrength="1"  >
     <Effect minstrength="0" maxstrength="100" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="0.0">
     <StatusEffect target="Character" type="Always" delay="1" stackable="false" >
@@ -995,12 +1050,14 @@
     </StatusEffect>
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="896,640,128,128" color="139,60,42,255" origin="0,0" />
-  </Affliction> -->
+  </Affliction>
+ -->
   <!-- <Affliction name="Repletion" identifier="yummyeating" description="The patient's stomach is busy digesting food; At maximum affliction, they are full. When repletion reaches 100, they will be unable to consume any food. Notably seperate from nutrition, which is beneficial." type="resistance" causeofdeathdescription="Ate themselves to death." selfcauseofdeathdescription="You have eaten yourself to death." limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" maxstrength="100">
     <Effect minstrength="0" maxstrength="97" strengthchange="-0.1"></Effect>
     <Effect minstrength="97" maxstrength="100" strengthchange="-0.04"></Effect>
     <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="0,640,128,128" color="139,60,42,255" origin="0,0" />
   </Affliction>
+
   
   <Affliction name="Nutrition" identifier="bodynutrition" description="The patient's body is benefitting from the nutrition of a previous meal. Natural regenerative processes of cells are sped up, and buffs circulate in the bloodstream for longer.  These effects become more pronounced the more nutrition there is. Healthy food has a better nutrition to fillingness ratio." type="resistance" isbuff="true" causeofdeathdescription="Ate themselves to death." selfcauseofdeathdescription="You have eaten yourself to death." limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" maxstrength="100">
     <Effect minstrength="0" maxstrength="30" strengthchange="-0.1" minbuffmultiplier="1.2" maxbuffmultiplier="1.3">
@@ -1033,6 +1090,7 @@
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/Thalicons.png" sourcerect="128,640,128,128" color="139,60,42,255" origin="0,0" />
   </Affliction>
+
   
   <Affliction name="Dark Craving" identifier="darkcraving" description="You have a compelling urge to eat human flesh." type="poison" causeofdeathdescription="Unknown." selfcauseofdeathdescription="You have lost yourself." limbspecific="false" indicatorlimb="Torso" showiconthreshold="10" maxstrength="100">
     <Effect minstrength="5" maxstrength="30" minscreendistort="0.0" maxscreendistort="0.5" strengthchange="-0.1">
@@ -1063,6 +1121,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
 	
    <Affliction name="Kuru" identifier="brainprion" description="You feel like you've lost sense of your body and cannot move at all." type="poison" causeofdeathdescription="Died of Kuru." selfcauseofdeathdescription="Died of Kuru. (Avoid eating any brain parts!)" limbspecific="false" indicatorlimb="Torso" showiconthreshold="40" maxstrength="100">
     <Effect minstrength="0" maxstrength="30" strengthchange="-0.01">
@@ -1095,7 +1154,8 @@
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/Thalicons2.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
-  </Affliction> -->
+  </Affliction>
+ -->
   <!--<Affliction
     name="Egg laying"
     identifier="egglay"
@@ -1122,7 +1182,8 @@
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0"/>
-  </Affliction>-->
+  </Affliction>
+-->
   <Affliction name="" identifier="testing1" description="" type="testing1" limbspecific="false" indicatorlimb="Torso" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
       <StatusEffect target="Character" targetlimb="Torso" checkconditionalalways="true" delay="1">
@@ -1134,6 +1195,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,512,128,128" color="195,136,60,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="" identifier="testing2" description="" type="testing1" limbspecific="false" indicatorlimb="Torso" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="5">
     <Effect minstrength="0" maxstrength="5" strengthchange="0">
       <StatusEffect target="Character" targetlimb="Torso" checkconditionalalways="true" delay="1">
@@ -1143,9 +1205,11 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,512,128,128" color="195,136,60,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Fish" identifier="fish" isbuff="true" description="Fish Fish McBites, McBites" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="1">
     <Effect minstrength="0" maxstrength="1" strengthchange="-0.5" disabledeltatime="true" stackable="false" delay="0.1" />
   </Affliction>
+
   <Affliction name="Tryposlugs" identifier="tryposlugs" description="The area has clustered holes caused by an infestation of parasites that quickly reproduce at an alarming rate under the skin." type="minorparasite" causeofdeathdescription="Tryposlug infestation" selfcauseofdeathdescription="You have succumbed to a tryposlug infestation." limbspecific="true" activationthreshold="1" showiconthreshold="8" maxstrength="50">
     <Effect minstrength="0" maxstrength="50" minvitalitydecrease="0" maxvitalitydecrease="20" strengthchange="-0.1">
       <StatusEffect target="Character">
@@ -1157,6 +1221,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="195,22,22,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Tryposlug Infestation" identifier="tryposluginfestation" description="An infestation of parasites that quickly reproduce at an alarming rate under the skin." type="minorparasite" limbspecific="true" activationthreshold="200" showiconthreshold="1000" maxstrength="16.6">
     <Effect minstrength="0" maxstrength="16.6" strengthchange="0.05">
       <StatusEffect target="Limb">
@@ -1165,16 +1230,19 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="195,22,22,255" origin="0,0" />
   </Affliction>
+
   <Affliction identifier="repairhax" type="testing2" isbuff="true" limbspecific="false" maxstrength="7" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" showiconthreshold="1000" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
     <Effect minstrength="0" maxstrength="7" strengthchange="-1">
       <StatValue stattype="RepairSpeed" value="0.7" />
     </Effect>
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Attacked" identifier="hurting" description="Something that has to do with attacking." type="hurting" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="-1" />
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Growth" identifier="growthvanilla" description="The creature is growing." type="creaturegrowth" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" activationthreshold="0" showinhealthscannerthreshold="0" showicontoothersthreshold="0" maxstrength="100">
     <PeriodicEffect mininterval="10" maxinterval="30">
       <!-- Grow creatures to enhanced forms when affliction reaches 100 strength -->
@@ -1264,6 +1332,7 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Mother Growth" identifier="mothercrawlergrowth" description="The crawler is becoming a mother!" type="creaturegrowth" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" activationthreshold="0" showinhealthscannerthreshold="0" showicontoothersthreshold="0" maxstrength="100">
     <Effect minstrength="0" maxstrength="89" strengthchange="0.5">
       <!-- Grow creatures to enhanced forms when affliction reaches 100 strength -->
@@ -1282,6 +1351,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Crawler Egg Randomness" identifier="crawlereggrandom" description="This affliction is like, totally random." type="eggspawning" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5" />
     <PeriodicEffect mininterval="50" maxinterval="60">
@@ -1299,6 +1369,7 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Mudraptor Egg Randomness" identifier="mudraptoreggrandom" description="This affliction is like, totally random." type="eggspawning" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5" />
     <PeriodicEffect mininterval="50" maxinterval="60">
@@ -1308,6 +1379,7 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Crushing Pressure" identifier="pressure2" description="Crushed but deadlier" type="pressure" causeofdeathdescription="Crushed by water pressure" selfcauseofdeathdescription="You have been crushed by water pressure." limbspecific="false" maxstrength="1" karmachangeonapplied="-0.1" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" damageoverlayalpha="1" iconcolors="255,0,140,255;255,0,140,255">
     <Effect minstrength="0" maxstrength="100">
       <StatusEffect target="Character" setvalue="true" pressuretimer="9999">
@@ -1316,6 +1388,7 @@
     </Effect>
     <icon name="crushdisorder" texture="Content/UI/MainIconsAtlas.png" sourcerect="768,768,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Randomness" identifier="crawlerspawnrandomchance" description="This affliction is like, totally random." type="crawlerspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5" />
     <PeriodicEffect mininterval="0.1" maxinterval="0.1">
@@ -1343,6 +1416,7 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Randomness" identifier="mudraptorspawnrandomchance" description="This affliction is like, totally random." type="mudraptorspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5" />
     <PeriodicEffect mininterval="0.1" maxinterval="0.1">
@@ -1368,6 +1442,7 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Randomness" identifier="hammerheadspawnrandomchance" description="This affliction is like, totally random." type="hammerheadspawnrandomchance" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="5.5" />
     <PeriodicEffect mininterval="0.1" maxinterval="0.1">
@@ -1393,11 +1468,13 @@
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Stained" identifier="shitstained" description="Someone has thrown shit at the subject." type="debuff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1" showinhealthscannerthreshold="1" maxstrength="100" treatmentthreshold="1000" karmachangeonapplied="0" iconcolors="255,255,255,255;255,255,255,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="-1" minafflictionoverlayalphamultiplier="0.8" maxafflictionoverlayalphamultiplier="1" minfacetint="150,75,0,255" maxfacetint="150,75,0,255"></Effect>
     <afflictionoverlay texture="%ModDir:2518816103%/UI/shitstainview.png" />
     <icon texture="%ModDir:2518816103%/UI/shitstainicon.png" sourcerect="0,0,128,128" color="103,103,103,255" origin="0.5,0.5" />
   </Affliction>
+
   <Affliction name="Cthulhu's Curse" identifier="cthulhucursetest" description="Something is not quite right." type="insanity" limbspecific="false" indicatorlimb="Head" activationthreshold="0" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="30" iconcolors="60,10,10,0;90,2,5,125;125,0,0,255">
     <Effect minstrength="0" maxstrength="25" strengthchange="-30"></Effect>
     <Effect minstrength="25" maxstrength="30" strengthchange="-30"></Effect>
@@ -1414,30 +1491,35 @@
     </PeriodicEffect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Spooked 1" identifier="cthulhuspook" description="Watch out.." type="cthulhuspookeffect" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <Effect minstrength="1" maxstrength="2" strengthchange="-1" minafflictionoverlayalphamultiplier="0.4" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <AfflictionOverlay texture="%ModDir%/UI/insane1.png" sourcerect="0,0,1024,640" color="255,255,255,10" />
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Spooked 2" identifier="cthulhuspook2" description="Watch out.." type="cthulhuspookeffect" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <Effect minstrength="1" maxstrength="2" strengthchange="-1" minafflictionoverlayalphamultiplier="0.4" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <AfflictionOverlay texture="%ModDir%/UI/insane2.png" sourcerect="0,0,1024,640" color="0,0,255,10" />
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Spooked 3" identifier="cthulhuspook3" description="Watch out.." type="cthulhuspookeffect" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <Effect minstrength="1" maxstrength="2" strengthchange="-1" minafflictionoverlayalphamultiplier="0.4" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <AfflictionOverlay texture="%ModDir%/UI/insane3.png" sourcerect="0,0,1024,640" color="255,255,255,10" />
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Spooked 4" identifier="cthulhuspook4" description="Watch out.." type="cthulhuspookeffect" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <Effect minstrength="1" maxstrength="2" strengthchange="-1" minafflictionoverlayalphamultiplier="0.85" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <AfflictionOverlay texture="%ModDir%/UI/insane4.png" sourcerect="0,0,1024,640" color="255,255,255,10" />
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
   </Affliction>
+
   <!-- acts as watcher buff on enemies + icon indicator for players and visual distortion, always present -->
   <Affliction name="Cthulhu's Gaze" identifier="cthulhugaze" description="" type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="100" affectmachines="false">
     <Description textidentifier="afflictiondescription.watchersgaze.self" target="Self" />
@@ -1482,16 +1564,19 @@
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" color="0,125,0,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Head damage" identifier="cthulhuheadarmordamage" description="ow" type="" isbuff="false" limbspecific="true" targetlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="60" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
     <Effect minstrength="0" maxstrength="60" strengthchange="0"></Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Bite Wounds" nameidentifier="bitewounds" identifier="bitewoundsfake" description="You got bit." causeofdeathdescription="Mauled to death" selfcauseofdeathdescription="You have been mauled to death." limbspecific="true" maxstrength="200" damageoverlayalpha="2">
     <Description textidentifier="afflictiondescription.bitewounds.low" minstrength="0" maxstrength="40" />
     <Description textidentifier="afflictiondescription.bitewounds" minstrength="40" maxstrength="200" />
     <Effect minstrength="0" maxstrength="200" strengthchange="-1" />
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,512,128,128" color="195,136,60,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Bleeding" nameidentifier="bleeding" identifier="fakebleeding" causeofdeathdescription="Bled to death" selfcauseofdeathdescription="You have bled to death." limbspecific="true" maxstrength="100" karmachangeonapplied="-1" damageoverlayalpha="0.6">
     <Description textidentifier="afflictiondescription.bleeding.low" minstrength="0" maxstrength="20" />
     <Description textidentifier="afflictiondescription.bleeding" minstrength="20" maxstrength="60" />
@@ -1524,6 +1609,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,640,128,128" color="139,60,42,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Hallucination" identifier="cthulhuhallucinating" limbspecific="false" indicatorlimb="Head" activationthreshold="0" showiconthreshold="0" showicontoothersthreshold="1000" karmachangeonapplied="-1" maxstrength="100" affectmachines="false">
     <Description textidentifier="afflictiondescription.hallucinating.low" target="Self" minstrength="0" maxstrength="50" />
     <Description textidentifier="afflictiondescription.hallucinating" target="Self" minstrength="50" maxstrength="100" />
@@ -1531,6 +1617,7 @@
     <Effect minstrength="30" maxstrength="100" minscreendistort="0.0" maxscreendistort="1" minscreenblur="0.0" maxscreenblur="0.0" minradialdistort="0" maxradialdistort="1" minchromaticaberration="0" maxchromaticaberration="2" strengthchange="-1.0"></Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,640,128,128" color="150,26,26,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="He Watches" identifier="cthulhuwatches" description="You feel like your being watched but you don't know what it is..." causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Head" causespeechimpediment="false" showiconthreshold="1" showicontoothersthreshold="1" showinhealthscannerthreshold="1000" maxstrength="50" iconcolors="94,54,95;163,73,164;200,191,231" targets="human">
     <Effect minstrength="0" maxstrength="25" multiplybymaxvitality="true" strengthchange="-10"></Effect>
     <Effect minstrength="25" maxstrength="50" multiplybymaxvitality="true" strengthchange="-10">
@@ -1556,6 +1643,7 @@
     </PeriodicEffect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="386,386,124,124" color="150,26,26,255" origin="5,5" />
   </Affliction>
+
   <Affliction name="Narcotic Poisoning" identifier="narcoticpoison" description="The victim feels sleepy and dizzy, occasionally passing out." type="poison" limbspecific="false" indicatorlimb="Head" showiconthreshold="5" showicontoothersthreshold="5" maxstrength="100" iconcolors="50,100,0,255;100,0,0,255;30,0,0,255">
     <Effect minstrength="0" maxstrength="59" strengthchange="-1" minscreendistort="0.0" maxscreendistort="0.2" minscreenblur="0.0" maxscreenblur="0.4">
       <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.9" />
@@ -1577,6 +1665,7 @@
     </PeriodicEffect>
     <icon texture="%ModDir%/UI/narco.png" sourcerect="0,0,128,128" color="23,93,14,255" origin="0,0" />
   </Affliction>
+
   <Override>
     <Affliction name="Watcher's Gaze" identifier="watchersgaze" description="" type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" karmachangeonapplied="0" maxstrength="100">
       <Effect minstrength="0" maxstrength="50" minafflictionoverlayalphamultiplier="0.02" maxafflictionoverlayalphamultiplier="0.10" minscreendistort="0" maxscreendistort="0.4" minscreenblur="0" maxscreenblur="0.4" minradialdistort="0" maxradialdistort="0" minchromaticaberration="0" maxchromaticaberration="0" strengthchange="-4">
@@ -1718,12 +1807,14 @@
       <!-- <AfflictionOverlay texture="%ModDir%/Characters/Watcher/seeyou.png" sourcerect="0,0,1024,680" color="255,255,255,8" origin="0,0" /> -->
       <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
     </Affliction>
+
     <Affliction name="Disoriented" identifier="invertcontrols" description="" type="invertcontrols" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" showiconthreshold="100" maxstrength="100">
       <Description textidentifier="afflictiondescription.invertcontrols" target="OtherCharacter" />
       <Description textidentifier="afflictiondescription.invertcontrols.self" target="Self" />
       <Effect minstrength="0" maxstrength="100" indicatorlimb="Head" activationthreshold="0" showiconthreshold="1" showicontoothersthreshold="1" showinhealthscannerthreshold="1" treatmentthreshold="1" karmachangeonapplied="-1" affectmachines="false" healcostmultiplier="0.2" minscreendistort="0.0" maxscreendistort="0.5" minradialdistort="0.0" maxradialdistort="0.5" minspeedmultiplier="0.7" maxspeedmultiplier="0.7" strengthchange="-2"></Effect>
       <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,640,128,128" color="195,177,60,255" origin="0,0" />
     </Affliction>
+
   </Override>
   <Affliction name="Observer Presense" identifier="observerpresense" description="" type="gaze" limbspecific="false" indicatorlimb="Head" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="1" maxstrength="100" strengthchange="-9">
@@ -1736,6 +1827,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="Observer's Interference" identifier="observersgaze" description="Your headset is screeching an unknown spectrogram that causes pressure inside your skull. You have a sudden urge to throw off your headset." type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="1" showicontoothersthreshold="1" karmachangeonapplied="0" maxstrength="100">
     <Effect minstrength="0" maxstrength="10" minscreendistort="0" maxscreendistort="0.1" minscreenblur="0" maxscreenblur="0.1" minradialdistort="0" maxradialdistort="0" minchromaticaberration="0" maxchromaticaberration="0" strengthchange="-1">
       <StatusEffect target="Character" delay="0.2" stackable="false">
@@ -1767,6 +1859,7 @@
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
   </Affliction>
+
   <Affliction name="Observer's Sound" identifier="observerssound" description="" type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="2">
     <Effect minstrength="0" maxstrength="2" strengthchange="-1">
       <StatusEffect target="Character" stackable="false">
@@ -1776,6 +1869,7 @@
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
   </Affliction>
+
   
   <!-- used as a proxy to apply mermaidscall, prevents building up the affliction X times as fast if there are multiple mermaids   -->
   <Affliction identifier="applymermaidscall" type="gaze" maxstrength="100" targets="human" limbspecific="false" showiconthreshold="999" showicontoothersthreshold="999" showinhealthscannerthreshold="999" >
@@ -1787,6 +1881,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   
   <!-- Builds up if you have a headset on - very slowly gain psychosis, reduce speed and reduce max health at high levels -->
   <Affliction name="Mermaids Call" identifier="mermaidscall" description="Your headset amplifies the singing in stereo, making you feel comfortable, but your heart feels like its slowing down." type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="1" showicontoothersthreshold="1" karmachangeonapplied="0" maxstrength="100" targets="human">
@@ -1835,10 +1930,12 @@
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
   </Affliction>
+
     
   <Affliction name="Specialxan1" identifier="specialxan1" description="" type="poison" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" showiconthreshold="20" karmachangeonapplied="0" maxstrength="100">
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0" />
   </Affliction>
+
   
   <!-- Morb gas broke after an update and we have more morbin time on different enemies so sufforin was a shoe in for a poison gas attack due to its easier treatment -->
   <!-- old  <Affliction
@@ -1868,7 +1965,8 @@
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0" />
-  </Affliction> -->
+  </Affliction>
+ -->
   <!-- <Affliction
   name="Sufforin Gas"
   identifier="morbusinegas"
@@ -1904,6 +2002,7 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0" />
   </Affliction>
+
   <!-- <Affliction
     name="Sufforin Poisoning TEST"
     identifier="sufforinpoisoningtest"
@@ -2029,7 +2128,8 @@
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
-  </Affliction> -->
+  </Affliction>
+ -->
   <!-- Due to games mod fractor breaking the file paths for other mods. I have to copy Huskmods so I could get this creature fixed and prevent crashing-->
   <!-- <Affliction name="Watcher husk's broadcast" identifier="xanwatcherhuskbroadcast" description="The watcher husk's screech shakes you to your core..." type="xanwatcherhuskbroadcast" limbspecific="false" indicatorlimb="Torso" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="-3" minscreendistort="0.5" maxscreendistort="1" minscreenblur="0.5" maxscreenblur="1" minradialdistort="0" maxradialdistort="2" minchromaticaberration="0" maxchromaticaberration="50" />
@@ -2042,7 +2142,8 @@
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,512,128,128" color="195,136,60,255" origin="0,0" />
-  </Affliction> -->
+  </Affliction>
+ -->
   <!--  <Affliction name="Derailed" identifier="xanwatcherderailed" description="" type="xanwatcherderailed" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" minscreendistort="0.7" maxscreendistort="0.9" minradialdistort="0.7" maxradialdistort="0.9" minscreenblur="0.8" maxscreenblur="1.2" minchromaticaberration="0.5" maxchromaticaberration="1.0" strengthchange="-5.0" MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.7" mingrainstrength="0" maxgrainstrength="1">
       <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" stackable="false" />
@@ -2052,7 +2153,8 @@
       </StatusEffect>
     </Effect>
     <AfflictionOverlay texture="%ModDir:2518816103%/Afflictions/zombiemaster.png" />
-  </Affliction> -->
+  </Affliction>
+ -->
   <Affliction name="Receiving Signal..." identifier="carrierbeacon" description="" type="gaze" limbspecific="false" indicatorlimb="Head" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="1" maxstrength="100" strengthchange="-9">
       <StatusEffect target="Character" checkconditionalalways="true" targetlimb="Head" comparison="and">
@@ -2063,6 +2165,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="Carrier Distress" identifier="carriersound" description="" type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="2">
     <Effect minstrength="0" maxstrength="2" strengthchange="-1">
       <StatusEffect target="Character" delay="0.2" stackable="false">
@@ -2072,6 +2175,7 @@
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
   </Affliction>
+
   <Affliction name="Carrier Distress" identifier="carrierbeaconclose" description="" type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="2">
     <Effect minstrength="0" maxstrength="2" strengthchange="-1">
       <StatusEffect target="Character" comparison="and" delay="0.2">
@@ -2083,41 +2187,53 @@
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
   </Affliction>
+
   <Affliction name="Head Hijacking in progress" identifier="xanhuskheadhijackinginprogress" description="This human is either already having its head hijacked by a skittering head or just managed to save itself after being attacked by one." type="huskheadhijackinginprogress" limbspecific="false" indicatorlimb="Head" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="-3" />
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Head Hijacking" identifier="xanhuskheadhijacking" description="The victim was just attacked by a severed skittering head." type="huskheadhijacking" limbspecific="false" indicatorlimb="Head" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="-6" />
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Front Carrier Wreck Damage" identifier="frontcarrierwreckdamage" type="frontcarrierwreckdamage" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
+
   <Affliction name="Back Carrier Wreck Damage" identifier="backcarrierwreckdamage" type="backcarrierwreckdamage" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
+
   <Affliction name="Front Carrier Wreck Break" identifier="frontcarrierwreckbreak" type="frontcarrierwreckbreak" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
+
   <Affliction name="Back Carrier Wreck Break" identifier="backcarrierwreckbreak" type="backcarrierwreckbreak" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
+
   <Affliction name="psiloturtleheadtuck" identifier="psiloturtleheadtuck" type="psiloturtleheadtuck" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="-2" />
   </Affliction>
+
   <Affliction name="psiloturtletorsotuck" identifier="psiloturtletorsotuck" type="psiloturtletorsotuck" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="-2" />
   </Affliction>
+
   <Affliction name="psiloturtlebigarmorremoved" identifier="psiloturtlebigarmorremoved" type="psiloturtlebigarmorremoved" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
+
   <Affliction name="psiloturtlesmallarmorremoved" identifier="psiloturtlesmallarmorremoved" type="psiloturtlesmallarmorremoved" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
+
   <Affliction name="psiloturtleheaddamage" identifier="psiloturtleheaddamage" type="psiloturtleheaddamage" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="-1.35" />
   </Affliction>
+
   <AfflictionHusk name="Crawlielatched" identifier="Crawlielatched1" type="Crawlielatched" healableinmedicalclinic="false" limbspecific="false" targets="human" huskedspeciesname="huskcrawlielatched" indicatorlimb="Head" hideiconafterdelay="true" showiconthreshold="1000" showinhealthscannerthreshold="1000" showicontoothersthreshold="1000" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="4" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="100" iconcolors="94,54,95;163,73,164;200,191,231">
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
     <Effect minstrength="0" maxstrength="100" strengthchange="-8">
@@ -2165,6 +2281,7 @@
   <Affliction name="crawliebeheaded" identifier="crawliebeheaded" type="crawliebeheaded" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
+
   <Affliction name="Eaten Alive" identifier="vore" description="Your being swallowed alive!" type="debuff" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" activationthreshold="0" showinhealthscannerthreshold="0" showicontoothersthreshold="0" maxstrength="50">
     <Effect minstrength="0" maxstrength="48" strengthchange="1.5">
       <!-- Grow creatures to enhanced forms when affliction reaches 100 strength -->
@@ -2182,19 +2299,24 @@
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="Cthulhu Counter" identifier="cthulhucounter" type="cthulhucounter" limbspecific="false" maxstrength="100" targets="cthulhu">
     <Effect minstrength="0" maxstrength="100" />
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,768,128,128" color="195,136,60,255" origin="0,0" />
   </Affliction>
+
   <Affliction name="crookanger" identifier="crookangerBTC" type="crookanger" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0.2" />
   </Affliction>
+
   <Affliction name="crooksatisfaction" identifier="crooksatisfactionBTC" type="crooksatisfaction" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="-0.05" />
   </Affliction>
+
   <Affliction name="crookopenmouth" identifier="crookopenmouthBTC" type="crookopenmouth" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="-5" />
   </Affliction>
+
   <AfflictionHusk name="Crook Cape" identifier="crookcapeBTC" type="crookcape" healableinmedicalclinic="false" limbspecific="false" targets="human" huskedspeciesname="crookcape" indicatorlimb="Torso" showiconthreshold="0.5" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="0.5" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="100" hideiconafterdelay="true" isbuff="true" iconcolors="125,175,130,255;125,175,130,255;125,175,130,255">
     <Icon texture="%ModDir%/Characters/Crook/crooktalenticon.png" sourcerect="0,0,128,128" color="125,175,130,255" />
     <Effect minstrength="0" maxstrength="100" strengthchange="-0.015" />
@@ -2208,15 +2330,19 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="fractalusemelee" identifier="fractalusemelee" type="fractalusemelee" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
+
   <Affliction name="fractaluseranged" identifier="fractaluseranged" type="fractaluseranged" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
+
   <Affliction name="fractalusedflash" identifier="fractalusedflash" type="fractalusedflash" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="-0.2" />
   </Affliction>
+
   <Affliction name="fractaluseflash" identifier="fractaluseflash" type="fractaluseflash" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" convulseamount="3">
       <StatusEffect type="Always" target="Character" delay="1" stackable="false" checkconditionalalways="true" forcesounds="true" forcePlaySounds="true" comparison="AND">
@@ -2237,9 +2363,11 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="thalamidspikeanim" identifier="thalamidspikeanim" type="thalamidspikeanim" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
+
   <Affliction name="thalamidspikeanimadd" identifier="thalamidspikeanimadd" type="thalamidspikeanimadd" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
       <StatusEffect target="Character" interval="0.001" disabledeltatime="true">
@@ -2247,6 +2375,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="thalamidspikeanimremove" identifier="thalamidspikeanimremove" type="thalamidspikeanimremove" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
       <StatusEffect target="Character" interval="0.001" disabledeltatime="true">
@@ -2254,6 +2383,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="thalamidburndamage" identifier="thalamidburndamage" type="thalamidburndamage" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="-5">
       <StatusEffect type="OnActive" target="Character" stackable="false" interval="0.2" disabledeltatime="true">
@@ -2263,6 +2393,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="thalamidkillcellsondeath" identifier="thalamidkillcellsondeath" type="thalamidkillcellsondeath" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="-5">
       <StatusEffect type="OnActive" target="Character" stackable="false" interval="0.2" disabledeltatime="true" comparison="or">
@@ -2272,6 +2403,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <!-- <Affliction
     name="Bagpipe Inspiration"
     identifier="bagpipeinspiration"
@@ -2292,7 +2424,8 @@
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
-  </Affliction> -->
+  </Affliction>
+ -->
   <Affliction name="Elec damage" identifier="elecdamage" type="elecdamage" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="-5">
       <StatusEffect type="OnActive" target="Character" stackable="false" interval="0.2" disabledeltatime="true">
@@ -2312,11 +2445,13 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="caverinkblind" identifier="caverinkblind" description="MY EYES!!!" type="debuff" maxstrength="10" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="3" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="0.0" MaxAfflictionOverlayAlphaMultiplier="0.8" />
     <Effect minstrength="3" maxstrength="10" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="1.0" />
     <AfflictionOverlay texture="%ModDir:2518816103%/Characters/Caver/Inkstain.png" />
   </Affliction>
+
   <Affliction name="" identifier="slimed" description="" type="" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" MinAfflictionOverlayAlphaMultiplier="0.1" MaxAfflictionOverlayAlphaMultiplier="1" strengthchange="-15">
       <StatusEffect type="OnActive" target="Character" interval="1" disabledeltatime="true" ConditionalComparison="And">
@@ -2329,6 +2464,7 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0" />
     <AfflictionOverlay texture="%ModDir%/Characters/Peanutslug/GooOverlay1.png" />
   </Affliction>
+
   <Affliction name="psilotoadvore" identifier="psilotoadvore" type="psilotoadvore" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="0">
       <StatusEffect target="Character" interval="0.1" checkconditionalalways="true" ConditionalComparison="And">
@@ -2367,6 +2503,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   
   <Affliction name="psilotoadvoredamaged" identifier="psilotoadvoredamaged" type="psilotoadvoredamaged" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="-5">
@@ -2377,6 +2514,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction identifier="bruteconvulse" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" healableinmedicalclinic="false" MedicalSkillGain="0.0" targets="bruteBTC">
     <Effect minstrength="0" maxstrength="1" strengthchange="0">
       <StatusEffect type="Always" target="Character" interval="10" comparison="And" multiplyafflictionsbymaxvitality="true" setvalue="true">
@@ -2391,6 +2529,7 @@
       </StatusEffect>
     </Effect>
   </Affliction>
+
   <Affliction name="Young Watcher's Gaze" identifier="watchersgazelite" description="" type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="100" affectmachines="false">
     <Description textidentifier="afflictiondescription.watchersgaze.self" target="Self" />
     <Description textidentifier="afflictiondescription.watchersgaze" target="OtherCharacter" />
@@ -2411,6 +2550,7 @@
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
   </Affliction>
+
   
   <Affliction
     identifier="huskkillerpoison"
