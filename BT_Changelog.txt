@@ -71,23 +71,14 @@ HOTFIX
    - BruteBTC: sprite rework? make it look less human
    - Watcherling: change ragdoll, floating eyestalk
    - Charybdisold: rework sprite, change famility to "leatherback"
-   - Shadowleech: anticoagulan, adds bleeding on top of bleeding
-   - Trichordate: use secondary affliction to apply drunk but not lethal doses?
-   - Psilosaur: deformablesprite
-   - hermitspawn: glowing eyes
-   - Hullfish: increase health to 40?
    - Goofyfish/Whitefish/Glowfish: remove pet property
    - Guppy: add extra tail joint
-   - Huskchimerabroodmother: replace suit divers 
    
    CRITICAL
-   - Charybdisre: delete, replace with charybdisadol
-   - WatcherWanderer: delete
    - Lurker: delete, replace with CrookBTCoutside
    - Cnidae/Cnidaeprime: resprite and ragdoll
    - Pylon: resprite and ragdoll
    - Voidstalker: resprite and ragdoll
-   - Watcherling: resprite and ragdoll
    
 
 <!--   
