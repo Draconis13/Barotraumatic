@@ -1,7 +1,7 @@
 ﻿<CarrierSwimFast
   footangle="NaN"
   UseSineMovement="False"
-  Flip="True"
+  Flip="False"
   FlipCooldown="1"
   FlipDelay="0.5"
   Mirror="True"
@@ -12,7 +12,7 @@
   TailTorque="50"
   TailTorqueMultiplier="1"
   FootAngles=""
-  UpdateAnimationWhenNotMoving="False"
+  UpdateAnimationWhenNotMoving="True"
   TailAngle="NaN"
   SteerTorque="25"
   LegTorque="25"
