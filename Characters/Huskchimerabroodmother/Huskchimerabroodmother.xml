@@ -91,7 +91,7 @@
       <SpawnCharacter speciesname="Crawlerhusk" count="1" spread="100" />
       <SpawnCharacter speciesname="Crawlerhusk" count="1" spread="100" />
       <SpawnCharacter speciesname="Husk_RandomTiny" count="1" spread="100" />
-      <SpawnCharacter speciesname="Husk_RandomLight" count="1" spread="100" />
+      <SpawnCharacter speciesname="Husk_RandomTiny" count="1" spread="100" />
 	  <BreakLimb />
     </StatusEffect>
 </Character>
