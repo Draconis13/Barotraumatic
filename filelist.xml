@@ -4,7 +4,6 @@
   <UIStyle file="%ModDir%/Text/style.xml" />
   <Missions file="%ModDir%/Events/Missions.xml" />
   <Item file="%ModDir%/Items/misc.xml" />
-  <Item file="%ModDir%/Items/disposable_battery.xml" />
   <NPCSets file="%ModDir%/Events/BanditTweak.xml" />
   <RandomEvents file="%ModDir%/Events/randomcampaignevents.xml" />
   <Text file="%ModDir%/Text/English.xml" />

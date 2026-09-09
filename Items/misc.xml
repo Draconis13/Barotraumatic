@@ -1,22 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
   <Items>
+
     <Item name="" identifier="headset" scale="0.5" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="crewcab" secondary="divingcab"/>
-    <Price baseprice="40">
-      <Price storeidentifier="merchantoutpost" minavailable="3" />
-      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="10" />
-      <Price storeidentifier="merchantresearch" minavailable="4" />
-      <Price storeidentifier="merchantmilitary" minavailable="6" />
-      <Price storeidentifier="merchantmine" minavailable="6" />
-    </Price>
+      <PreferredContainer primary="crewcab" secondary="divingcab"/>
+      <Price baseprice="40">
+        <Price storeidentifier="merchantoutpost" minavailable="3" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="10" />
+        <Price storeidentifier="merchantresearch" minavailable="4" />
+        <Price storeidentifier="merchantmilitary" minavailable="6" />
+        <Price storeidentifier="merchantmine" minavailable="6" />
+      </Price>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
       <Sprite name="Headset" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="28,321,49,62" origin="0.5,0.5" />
       <Body radius="20" height="20" density="30" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
-      <RequiredItem identifier="silicon" />
-      <RequiredItem identifier="copper" />
-    </Fabricate>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredItem identifier="silicon" />
+        <RequiredItem identifier="copper" />
+      </Fabricate>
       <Deconstruct time="5">
       </Deconstruct>
       <!-- GreaterComponent is not accessible by users and is used to tell the item if it had spawned a battery yet (timeframe="0") or if it spawned one (timeframe="1") -->
@@ -41,6 +42,7 @@
       <!--  <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.8" setvalue="true" disabledeltatime="true" /> -->
       </Wearable>
     </Item>
+
     <Item name="Pressure Injector Headset" identifier="BTCpressureinjectorheadset" scale="0.5" category="Equipment,Medical" tags="smallitem,mobileradio,sonar" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" inventoryiconcolor="205,230,230,255" spritecolor="205,230,230,255">
       <PreferredContainer primary="medcab" />
       <Price baseprice="160" sold="false">
@@ -50,12 +52,12 @@
         <Price storeidentifier="merchantmilitary" />
         <Price storeidentifier="merchantmine" />
       </Price>
- <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
-    <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
+      <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
+      <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
       <Body radius="20" height="20" density="30" />
       <Fabricate suitablefabricators="fabricator" requiredtime="10">
         <RequiredSkill identifier="mechanical" level="40" />
-		<RequiredSkill identifier="medical" level="40" />
+        <RequiredSkill identifier="medical" level="40" />
         <RequiredItem identifier="autoinjectorheadset" />
         <RequiredItem identifier="titanium" />
       </Fabricate>
@@ -69,10 +71,10 @@
           <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
         </StatusEffect>
       </WifiComponent>
-    <ItemContainer capacity="1" maxstacksize="1" autoinject="false" containedstateindicatorstyle="syringe">
+      <ItemContainer capacity="1" maxstacksize="1" autoinject="false" containedstateindicatorstyle="syringe">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
       <Containable items="pressurestabilizer" />
-    </ItemContainer>
+      </ItemContainer>
       <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
         <StatusEffect type="OnWearing" interval="1" target="This,Contained,Character" setvalue="true">
           <Affliction identifier="radio" strength="250" />
@@ -120,7 +122,7 @@
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       </Wearable>
-	 <AiTarget soundrange="50000" sonarlabel="SOS" maxtextlength="3" sight="1000" staticsight="true"/>
+      <AiTarget soundrange="50000" sonarlabel="SOS" maxtextlength="3" sight="1000" staticsight="true"/>
       <LightComponent range="100.0" lightcolor="0,0,0,0" powerconsumption="1" pulseamount="1" blinkfrequency="2" IsOn="false" castshadows="false" allowingameediting="false">
         <StatusEffect type="OnWearing" targettype="This" SoundRange="1500" setvalue="true">
           <Conditional target="This" voltage="gt 2" />
@@ -128,7 +130,8 @@
         </StatusEffect>
       </LightComponent>
     </Item>
-	    <Item name="" identifier="autoinjectorheadset" scale="0.5" category="Equipment,Medical" tags="smallitem,mobileradio,sonar" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+
+	  <Item name="" identifier="autoinjectorheadset" scale="0.5" category="Equipment,Medical" tags="smallitem,mobileradio,sonar" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="medcab" />
       <Price baseprice="140" sold="false">
         <Price storeidentifier="merchantoutpost" />
@@ -137,8 +140,8 @@
         <Price storeidentifier="merchantmilitary" />
         <Price storeidentifier="merchantmine" />
       </Price>
- <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
-    <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
+      <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
+      <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
       <Body radius="20" height="20" density="30" />
       <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
         <RequiredSkill identifier="mechanical" level="30" />
@@ -198,7 +201,7 @@
         </StatusEffect>
         <StatusEffect type="OnNotContained" target="This" voltage="0" setvalue="true" />
       </Wearable>
-	  <AiTarget soundrange="50000" sonarlabel="SOS" maxtextlength="3" sight="1000" staticsight="true"/>
+      <AiTarget soundrange="50000" sonarlabel="SOS" maxtextlength="3" sight="1000" staticsight="true"/>
       <LightComponent range="100.0" lightcolor="0,0,0,0" powerconsumption="1" pulseamount="1" blinkfrequency="2" IsOn="false" castshadows="false" allowingameediting="false">
         <StatusEffect type="OnWearing" targettype="This" SoundRange="1500" setvalue="true">
           <Conditional target="This" voltage="gt 2" />
@@ -206,6 +209,7 @@
         </StatusEffect>
       </LightComponent>
     </Item>
+
     <!-- Ek -->
     <Item name="Advanced Headset" identifier="ekutility_advancedheadset" scale="0.5" category="Equipment" tags="smallitem,mobileradio,sonar" description="The perfect headset. Equipped with noise suppression, high frequency emitters, and adjustable comfort suspension, this headset is designed for onboard use by submarine crews muffling loud noises and protecting the users hearing and inner ear." cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="engcab" amount="0" spawnprobability="0" notcampaign="true" />
@@ -251,6 +255,7 @@
         <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.7" setvalue="true" disabledeltatime="true" />
       </Wearable>
     </Item>
+
     <Item name="Long Range Radio Backpack" identifier="ekutility_longrangeradio" scale="0.45" category="Equipment" tags="mediumitem,mobileradio,provocative,sonar,mobilecontainer" description="The perfect headset. Equipped with noise suppression, rotating high frequency emitters, and adjustable comfort suspension, this headset is designed for onboard use by submarine crews its atomic pile will last for years of constant use, can't be jammed and only slows the wearer a small amount. In addition to the general carrying space there are two bandolier ammo pouches." cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
       <Price baseprice="680" sold="false" minleveldifficulty="25">
         <Price storeidentifier="outpost" multiplier="1" minavailable="0" maxavailable="0" />
@@ -317,6 +322,7 @@
         <TextBox text="sonarbeacon.beaconsignal" propertyname="SonarLabel" maxtextlength="32" />
       </CustomInterface>
     </Item>
+
     <Item name="Walkie Talkie" identifier="ek_security_radio" scale="0.35" category="Equipment" tags="smallitem,mobileradio" description="A low-profile radio transciever used mainly by ship and station security officers, this coalition special forces setup is excellent for diving teams as the radio frequency minimizes distortions from naturally occurring sources by using ULF in a relatively compact package." cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="armcab" amount="0" spawnprobability="0" notcampaign="true" />
       <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="0" spawnprobability="0" />
@@ -362,5 +368,63 @@
         <sprite name="Radio Torso" texture="BTheadsets.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" sourcerect="48,132,48,70" origin="0.15,1.05" scale="0.4" />
       </Wearable>
     </Item>
+
+  <Item name="Disposable Battery" description="" identifier="batterycelldisposable" category="Equipment,Electrical" maxstacksize="8" health="50" tags="smallitem,mobilebattery,loadable" scale="0.3" cargocontaineridentifier="metalcrate" fireproof="false" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="batterycellrecharger" maxcondition="50"/>
+    <PreferredContainer primary="stunbaton,underwaterscooter,handheldsonar,sonarbeacon,flashlight,portablepump,poweredcontainer" spawnprobability="0.1" mincondition="25"/>
+    <PreferredContainer secondary="divingcab" amount="3" spawnprobability="0.01" notcampaign="true" />
+    <PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab,outpostengcab" minamount="1" maxamount="2" spawnprobability="0.005"/>
+    <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab" minamount="1" maxamount="2" spawnprobability="0.01"/>
+    <PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.08"  mincondition="15" />
+    <PreferredContainer secondary="drillsaw" spawnprobability="0.5" amount="1" />
+    <PreferredContainer secondary="trimmer" spawnprobability="1" amount="1" />
+	<PreferredContainer secondary="sawcutter" spawnprobability="0.5" amount="1" />
+	<PreferredContainer secondary="bigshredder" spawnprobability="0.7" amount="1" />
+    <PreferredContainer secondary="clownsawcutter" spawnprobability="1.0" amount="1" />
+    <Deconstruct time="2" />
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="40" fabricationlimitmin="3" fabricationlimitmax="15" quality="0" />
+    <Sprite texture="%ModDir%/Items/LeadAcidBattery.png" sourcerect="0,0,59,35" depth="0.55" />
+    <Body width="54" height="30" density="30" />
+    <Throwable characterusable="true" canBeCombined="false" slots="Any,RightHand,LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="this">
+        <Sound file="Content/Items/Weapons/Emp.ogg" range="75" volume="0.3" dontmuffle="true" />
+        <Explosion range="70.0" structuredamage="2" ballastfloradamage="90" empstrength="0.05" itemdamage="0" force="15.0" severlimbsprobability="0.0" flames="true" >
+          <Affliction identifier="acidburn" strength="15" /> 
+		  <Affliction identifier="electricshock" strength="15" />
+          <Affliction identifier="burn" strength="5" />
+		  <Affliction identifier="explosiondamage" strength="2.5" probability="0.6" DivideByLimbCount="False" />
+		  <Affliction identifier="burning" strength="8" probability="0.2" DivideByLimbCount="False" />
+          <Sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="150" volume="0.5" selectionmode="Random" />
+          <Sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="150" volume="0.5" selectionmode="Random" />
+          <Sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="150" volume="0.5" selectionmode="Random" />
+          <Sound file="Content/Items/Weapons/ExplosionDebris4.ogg" range="150" volume="0.5" selectionmode="Random" />
+          <Sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="150" volume="0.5" selectionmode="Random" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <!-- <StatusEffect type="Always" target="this" condition="-0.005" disabledeltatime="true" /> -->
+      <StatusEffect type="Always" target="this" condition="-0.02">
+        <Conditional condition="lteq 10" />
+        <ParticleEmitter particle="damagebubbles" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemax="360" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+        <ParticleEmitter particle="MistSmoke" particlespersecond="35" anglemin="0" anglemax="360" distancemin="0" distancemax="30" velocitymin="0" velocitymax="20" mincondition="0.0" maxcondition="50.0" />
+      </StatusEffect>
+      <!-- Use projectile component -->
+      <StatusEffect type="OnSecondaryUse" target="This" delay="0.01">
+        <Use />
+      </StatusEffect>
+    </Throwable>
+    <Projectile characterusable="false" launchimpulse="0" impulsespread="0.0" hitscan="false" removeonhit="false">
+      <StatusEffect type="OnImpact" target="This" Condition="-16" disabledeltatime="true" />
+      <Attack targetimpulse="15" severlimbsprobability="0.01" itemdamage="2" structuredamage="1" structuresoundtype="StructureSlash">
+        <Affliction identifier="blunttrauma" strength="9" />
+      </Attack>
+    </Projectile>
+	    <Quality>
+	  <QualityStat stattype="Condition" value="0.20"/>
+      <QualityStat stattype="ExplosionRadius" value="0.334"/>
+      <QualityStat stattype="ExplosionDamage" value="0.334"/>
+    </Quality>
+  </Item>
+
   </Items>
 </Override>
