@@ -1,6 +1,6 @@
 ﻿<ThermaleelSwimFast
   UseSineMovement="False"
-  Flip="True"
+  Flip="False"
   FlipCooldown="1"
   FlipDelay="0.1"
   Mirror="True"
