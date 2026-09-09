@@ -1663,7 +1663,7 @@
         <Affliction identifier="psychosis" strength="2" />
       </StatusEffect>
     </PeriodicEffect>
-    <icon texture="%ModDir%/UI/narco.png" sourcerect="0,0,128,128" color="23,93,14,255" origin="0,0" />
+    <icon texture="%ModDir%/UI/BTafflictionicons.png" sourcerect="256,0,128,128" color="23,93,14,255" origin="0,0" />
   </Affliction>
 
   <Override>
