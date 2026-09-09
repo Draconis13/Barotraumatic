@@ -186,15 +186,6 @@
     <Body width="29" height="42" density="13" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
-  <Item name="Fish Cage" identifier="thezoo" tags="crate" scale="0.2" linkable="true" pickdistance="150" impactsoundtag="impact_metal_heavy">
-    <Deconstruct time="5" />
-    <Sprite texture="%ModDir:2518816103%/Items/Petitems/Cage.png" depth="0.54" sourcerect="0,0,500,250" origin="0.5,0.5" />
-    <Body width="140" height="82" density="50" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="10" canbeselected="false" hideitems="true" keepopenwhenequipped="true">
-      <Containable items="smallitem,mediumitem" />
-    </ItemContainer>
-  </Item>
   <Item name="Pet Carcass" identifier="petdufflebag" category="Equipment" tags="mobilecontainer" fireproof="true" description="A wrapped bag containing a deceased pet creature, its starting to stink really bad." impactsoundtag="impact_soft" scale="0.45">
     <Deconstruct time="5" />
     <Sprite texture="Content/map/outposts/art/HuskDistrict.png" sourcerect="582,956,138,56" origin="0.5,0.56" depth="0.56" />
