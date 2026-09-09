@@ -597,12 +597,12 @@
         <RemoveCharacter />
       </StatusEffect>
     </Effect>
-    <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="0,384,128,128" color="60,107,255,255" origin="0,0" />
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,384,128,128" color="60,107,255,255" origin="0,0" />
   </Affliction>
 
   <Affliction name="Flora Resistance" identifier="floraresistance" description="Flora be gone." type="resistance" isbuff="true" limbspecific="false" maxstrength="600">
     <Effect minstrength="0" maxstrength="600" strengthchange="-1" resistancefor="florainfection,paralysis,sufforinp" minresistance="1" maxresistance="1" />
-    <icon texture="%ModDir:2518816103%/UI/Thalicons2.png" sourcerect="384,896,128,128" color="100,155,50,255" origin="0,0" />
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="384,896,128,128" color="100,155,50,255" origin="0,0" />
   </Affliction>
 
   <Affliction name="Boxcutter Dizziness" identifier="JellyStun" type="damage" description="You were hit by a Europan Boxcutter, your vision gets blurry and your feel your stomach turning inside out." limbspecific="false" indicatorlimb="Head" activationthreshold="0" maxstrength="10" healcostmultiplier="2.5">
