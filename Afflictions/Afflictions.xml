@@ -2136,5 +2136,30 @@
     <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="384,0,128,128" color="120,180,70,255" origin="0,0"/>
   </Affliction>
   
+  <!-- trichordate affliction that applies drunk, used to limit the amount of drunk inflicted to non-lethal doses -->
+  <Affliction identifier="trichordateapplydrunk"
+    type="applydrunkeffect"
+    limbspecific="false"
+    indicatorlimb="Torso"
+    activationthreshold="0"
+    showiconthreshold="1000"
+    showicontoothersthreshold="1000"
+    hideiconafterdelay="true"
+    showinhealthscannerthreshold="1000"
+    treatmentthreshold="1000"
+    maxstrength="50"
+    affectmachines="false"
+    MedicalSkillGain="0.0"
+    healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="50" strengthchange="-1.0">
+      <StatusEffect target="Character" >
+        <Conditional drunk="lt 50" />
+        <Affliction identifier="drunk" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,640,128,128" color="170,194,147,255" origin="0,0" />
+  </Affliction>
+  
+  
 </Afflictions>
 </Override>

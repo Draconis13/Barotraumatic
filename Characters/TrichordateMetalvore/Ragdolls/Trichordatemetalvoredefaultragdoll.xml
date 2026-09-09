@@ -6,7 +6,7 @@
       <affliction Strength="5" Identifier="bitewounds" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
       <affliction Strength="4" Identifier="bleeding" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
       <affliction Strength="2" Identifier="psychosis" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
-      <affliction Strength="3" Identifier="drunk" Probability="0.8" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+      <affliction Strength="3" Identifier="trichordateapplydrunk" Probability="0.8" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
     </attack>
     <lightsource Color="255,255,255,255" Range="100" Scale="1" Offset="0,0" Rotation="0" Directional="False" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
       <lighttexture Texture="Content/Lights/light.png" Origin="10.5,10.5" Size="11,11" />
