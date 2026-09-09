@@ -58,7 +58,7 @@
     <Sound file="Content/Characters/Fractalguardian/ALIEN_fractalGuardianPanicLoop.ogg" loop="true" range="3000" />
   </StatusEffect>
   <StatusEffect type="OnActive" target="Character" stackable="false">
-    <Sound file="%ModDir:2518816103%/Audio/PYLON_movingloop.ogg" volume="1.6" range="15000" loop="true" dontmuffle="true" />
+    <Sound file="%ModDir:2518816103%/Characters/Pylon/PYLON_movingloop.ogg" volume="1.6" range="15000" loop="true" dontmuffle="true" />
   </StatusEffect>
   <StatusEffect type="OnActive" target="this" Interval="32" stackable="false">
     <Conditional isdead="false" />
