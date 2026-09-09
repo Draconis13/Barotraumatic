@@ -127,7 +127,7 @@
   <Affliction name="Blinded" identifier="stalkerblinded" description="MY EYES!!!" type="debuff" maxstrength="20" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="3" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="0.0" MaxAfflictionOverlayAlphaMultiplier="1.0" />
     <Effect minstrength="3" maxstrength="20" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="1.0" MaxAfflictionOverlayAlphaMultiplier="1.0" />
-    <AfflictionOverlay texture="%ModDir:2518816103%/UI/WhiteScreen.png" />
+    <AfflictionOverlay texture="Content/UI/blindoverlay.png" />
     <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
   </Affliction>
 
