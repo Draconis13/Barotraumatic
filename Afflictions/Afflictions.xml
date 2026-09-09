@@ -2613,4 +2613,29 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
   </Affliction>
   
+  <!-- poison that increases bleeding if the target is already bleeding, lower value so stabilozine clears it more easily -->
+  <Affliction
+    identifier="leechanticoagulant"
+    type="poison"
+    limbspecific="true"
+    indicatorlimb="Torso"
+    showiconthreshold="0"
+    ShowIconToOthersThreshold="0" 
+    showinhealthscannerthreshold="0"
+    maxstrength="20"
+    affectmachines="false"
+    iconcolors="120,180,70,255;42,64,25,255">
+    <Effect minstrength="0" maxstrength="20"
+      strengthchange="-0.05"
+      minscreenblur="0.0"
+      maxscreenblur="0.1">
+      <StatusEffect target="Limb" >
+        <Conditional Bleeding="gt 0" />
+        <Conditional mass="lt 20" />
+        <Affliction identifier="Bleeding" amount="2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="384,0,128,128" color="120,180,70,255" origin="0,0"/>
+  </Affliction>
+  
 </Afflictions>

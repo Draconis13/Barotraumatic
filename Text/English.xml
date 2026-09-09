@@ -587,4 +587,10 @@
   <talentname.crookcapeinfluenceBTC>Crook Influence</talentname.crookcapeinfluenceBTC>
   <talentdescription.crookcapeinfluenceBTC>All mission mark rewards are increased by [amount]% as long as a crewmember is wearing the crook cape.</talentdescription.crookcapeinfluenceBTC>
 
+
+  <afflictionname.leechanticoagulant>Leech Venom</afflictionname.leechanticoagulant>
+  <Afflictiondescription.leechanticoagulant>Leech bites contain a powerful anti-coagulant effect. Any bleeding wound will gradually worsen over time unless fully cured.</Afflictiondescription.leechanticoagulant>
+
+
+
 </infotext>
