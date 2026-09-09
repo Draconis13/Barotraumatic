@@ -37,28 +37,8 @@ HOTFIX
 
 ---------------------------------------------------------------------------
 
-[hr]header
-
-[b]Bold Text[/b]
-
-[u]Underlined[/u]
-
-[List]
-[*] List
-[*] List
-[*] List
-[/List]
-
-
----------------------------------------------------------------------------
-
-
-   
    
    TODO: for later
-   - Remove all instances of Charybdisre
-   - Remove all instances of WatcherWanderer
-   - Remove all instances of Lurker
    - Clean up file structure and file locations, update filelist
    - Delete unused files
    - Rename all creatures to group them on the list; for example remname Undying into Fractal_Undying or AlphaCharybdis to Charybdis_alpha
