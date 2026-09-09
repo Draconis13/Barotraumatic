@@ -63,8 +63,9 @@ HOTFIX
    - Delete unused files
    - Rename all creatures to group them on the list; for example remname Undying into Fractal_Undying or AlphaCharybdis to Charybdis_alpha
    - Balance enemy loot
+   - Merge items in a single spritesheet
    
-   Rework list:
+   Rework list
    - Shadowwhale: bright orange flash then turns invisible?
    - Undyings: remove item from chest to kill them while incapacitated
    - BruteBTC: sprite rework? make it look less human
@@ -78,7 +79,16 @@ HOTFIX
    - Goofyfish/Whitefish/Glowfish: remove pet property
    - Guppy: add extra tail joint
    - Huskchimerabroodmother: replace suit divers 
-
+   
+   CRITICAL
+   - Charybdisre: delete, replace with charybdisadol
+   - WatcherWanderer: delete
+   - Lurker: delete, replace with CrookBTCoutside
+   - Cnidae/Cnidaeprime: resprite and ragdoll
+   - Pylon: resprite and ragdoll
+   - Voidstalker: resprite and ragdoll
+   - Watcherling: resprite and ragdoll
+   
 
 <!--   
   /////////////// MONSTER LIST PER BIOME ///////////////
