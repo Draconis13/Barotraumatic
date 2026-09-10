@@ -20,17 +20,33 @@ HOTFIX
 
 [List]
 [*] 
+[*] 
+[*] 
 [/List]
 
 [b]Changes:[/b]
 
 [List]
+[*] Shadowwhale resprited and updated
+[*] Shadowleech reworked, causes a bleding infection
+[*] Trichordates will no longer drunk you to death
+[*] Guppy resprited and updated
+[*] Gnasher and Hullfish are now in the "Scavenger" group
+[*] Goofyfish, Whitefish and Glowfish are no longer pets, moved to "Scavenger" group, will nibble at humans
+[*] Removed low quality creatures from spawnlist: Legacyendworm, Charybdisre, Watcherwanderer, Lurker
+[*] Psilosaur sprite updated 
+[*] 
+[*] 
 [*] 
 [/List]
 
 [b]Fixes:[/b] 
 
 [List]
+[*] Cleaned up the mod, deleted useless unused files
+[*] Several audio format fixes (stereo to mono)
+[*] 
+[*] 
 [*] 
 [/List]
 
