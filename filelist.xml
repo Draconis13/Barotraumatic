@@ -117,7 +117,6 @@
   <Character file="%ModDir%/Characters/Crawler/Crawler.xml" />
   <Character file="%ModDir%/Characters/Mantis/Mantis.xml" />
   <Character file="%ModDir%/Characters/Mantisnew/Mantisnew.xml" />
-  <Character file="%ModDir%/Characters/Lurker/Lurker.xml" />
   <Character file="%ModDir%/Characters/Spineling/Spineling.xml" />
   <Character file="%ModDir%/Characters/Spineling_giant/Spineling_giant.xml" />
   <Character file="%ModDir%/Characters/Latcher/Latcher.xml" />
