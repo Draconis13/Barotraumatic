@@ -2160,6 +2160,28 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,640,128,128" color="170,194,147,255" origin="0,0" />
   </Affliction>
   
+
+  <Affliction identifier="applyorangeflash" type="debuff" maxstrength="1" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" >
+      <StatusEffect target="Character" >
+        <Affliction identifier="orangeflash" amount="3" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="orangeflash" type="debuff" maxstrength="2" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="0.0" MaxAfflictionOverlayAlphaMultiplier="0.8">
+    </Effect>
+    <Effect minstrength="1" maxstrength="2" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="1.0">
+      <!-- <StatusEffect target="Character" >
+        <Conditional IsLocalPlayer="true" />
+        <Sound file="%ModDir:2518816103%/Audio/ShockLoop.ogg" volume="2" loop="true" dontmuffle="true" frequencymultiplier="0.5"/>
+      </StatusEffect> -->
+    </Effect>
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
+    <AfflictionOverlayAnimated texture="%ModDir:2518816103%/Afflictions/orangeflash.png" sourcerect="0,0,1920,1080" origin="0.5,0.5" alpha="1.0" animspeed="12" columns="2" rows="2" />
+  </Affliction>
+  
   
 </Afflictions>
 </Override>
