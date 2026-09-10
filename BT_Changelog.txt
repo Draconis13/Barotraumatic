@@ -46,16 +46,14 @@ HOTFIX
    - Merge items in a single spritesheet
    
    Rework list
-   - Shadowwhale: bright orange flash then turns invisible?
    - Undyings: remove item from chest to kill them while incapacitated
    - BruteBTC: sprite rework? make it look less human
    - Watcherling: change ragdoll, floating eyestalk
    - Charybdisold: rework sprite, change famility to "leatherback"
-   - Goofyfish/Whitefish/Glowfish: remove pet property
-   - Guppy: add extra tail joint
+   - Ancientmudraptor: make more fractal-looking
+   - Brainmoss: why drunk??
    
    CRITICAL
-   - Lurker: delete, replace with CrookBTCoutside
    - Cnidae/Cnidaeprime: resprite and ragdoll
    - Pylon: resprite and ragdoll
    - Voidstalker: resprite and ragdoll
