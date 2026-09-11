@@ -250,7 +250,6 @@
   <Character file="%ModDir%/Characters/Cthulhu/Invisiblecthulhuspawner/Invisiblecthulhuspawner2/Invisiblecthulhuspawner2.xml" />
   <Character file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination1/Hallucination1.xml" />
   <Character file="%ModDir%/Characters/Cthulhu/InsanityMonsters/Hallucination2/Hallucination2.xml" />
-  <Item file="%ModDir%/Items/Seasnekprojectile.xml" />
   <Character file="%ModDir%/Characters/Plantskeleton/Plantskeleton.xml" />
   <Character file="%ModDir%/Characters/Skrimsl/Skrimsl.xml" />
   <Character file="%ModDir%/Characters/Psilotoad/Psilotoad.xml" />
