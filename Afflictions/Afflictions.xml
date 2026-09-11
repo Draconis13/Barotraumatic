@@ -2160,7 +2160,7 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,640,128,128" color="170,194,147,255" origin="0,0" />
   </Affliction>
   
-
+  <!-- shadowwhale orange flash -->
   <Affliction identifier="applyorangeflash" type="debuff" maxstrength="1" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" >
       <StatusEffect target="Character" >
@@ -2179,7 +2179,7 @@
       </StatusEffect> -->
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
-    <AfflictionOverlayAnimated texture="%ModDir:2518816103%/Afflictions/orangeflash.png" sourcerect="0,0,1920,1080" origin="0.5,0.5" alpha="1.0" animspeed="12" columns="2" rows="2" />
+    <AfflictionOverlayAnimated texture="%ModDir:2518816103%/Characters/ShadowWhale/orangeflash.png" sourcerect="0,0,1920,1080" origin="0.5,0.5" alpha="1.0" animspeed="12" columns="2" rows="2" />
   </Affliction>
   
   
