@@ -25,8 +25,9 @@
     <!-- <target Tag="junctionbox" State="Eat" damagethreshold="0" Priority="100" ReactDistance="100" AttackDistance="10" Timer="5" IgnoreContained="True" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="100" SweepSpeed="1.0000001" IgnoreTargetSize="False"  /> -->
     <target Tag="watcher" State="Protect" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
   </ai>
-  <inventory Slots="Any" AccessibleWhenAlive="False" Commonness="1">
+  <inventory Slots="Any,Any" AccessibleWhenAlive="False" Commonness="1">
     <item Identifier="idcard" />
+    <item Identifier="dangerousenemyitem" />
   </inventory>
   <StatusEffect type="OnActive" target="Character" onlyoutside="true">
     <Affliction identifier="concealed" amount="1" />

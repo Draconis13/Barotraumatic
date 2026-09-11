@@ -2336,6 +2336,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
   
+  <!-- Fractal siren projectile, spawns a gravity well -->
   <Item name="" identifier="sirengravprojectile" category="Weapon" scale="0.5" sonarsize="1" hideinmenus="true" noninteractable="true">
     <Sprite texture="Content/items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" color="0,0,0,255" />
     <Body radius="5" density="10" gravityscale="0" />
@@ -2401,7 +2402,8 @@
     <LightComponent range="120" castshadows="False" drawbehindsubs="False" ison="True" flicker="1" flickerspeed="0.5" lightcolor="120,220,200,150" isactive="True" minvoltage="0" powerconsumption="0" />
   </Item>
   
-    <Item hideinmenus="true" name="Alien Pass key" identifier="alienpasskey" category="Misc" tags="guardiankey" noninteractable="true" >
+  <!-- Item for fractal enemies. Uses the guardiankey tag to allow opening the "guardian doors" in ruins -->
+   <Item name="Alien Pass key" identifier="alienpasskey" description="IF YOU SEE THIS ITEM, REPORT IT AS A BUG" category="Misc" tags="guardiankey" noninteractable="true" hideinmenus="true">
     <Sprite texture="Content/Items/Alien/AlienRuins_Items.png" depth="0.8" sourcerect="600,896,48,35" origin="0.5,0.5" />
     <Body radius="2" density="10" />
     <Holdable slots="Any" >
@@ -2411,6 +2413,17 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  
+
+  <!-- Item marked as IsDangerous, makes bots flee from whoever is holding the item. Useful if you want bots to get away from a creature  -->
+  <Item name="Dangerous Item" identifier="dangerousenemyitem" description="IF YOU SEE THIS ITEM, REPORT IT AS A BUG" category="Misc" tags="dangerous" IsDangerous="true" noninteractable="true" hideinmenus="true">
+  <Sprite texture="Content/Items/Alien/AlienRuins_Items.png" depth="0.8" sourcerect="600,896,48,35" origin="0.5,0.5" />
+  <Body radius="2" density="10" />
+  <Holdable slots="Any" >
+    <StatusEffect type="Always" target="This,Character" interval="1" >
+      <Conditional TargetContainer="true" IsDead="true" />
+      <RemoveItem />
+    </StatusEffect>
+  </Holdable>
+</Item>
   
 </Items>
