@@ -222,9 +222,9 @@
         <Price storeidentifier="military" multiplier="1" minavailable="1" />
         <Price storeidentifier="mine" multiplier="0.8" minavailable="2" />
       </Price>
-      <InventoryIcon texture="%ModDir:2518816103%/Items/AdvancedHeadsetIcon.png" sourcerect="0,0,176,163" origin="0.5,0.5" />
-      <Sprite texture="%ModDir:2518816103%/Items/AdvancedHeadset.png" depth="0.6" sourcerect="0,0,45,45" origin="0.5,0.5" />
-      <Body radius="15" height="10" density="30" />
+      <InventoryIcon texture="%ModDir:2518816103%/Items/BTheadsets.png" sourcerect="120,200,64,64" origin="0.5,0.5" />
+      <Sprite texture="%ModDir:2518816103%/Items/BTheadsets.png" depth="0.6" sourcerect="194,200,60,60" origin="0.5,0.5" />
+      <Body radius="25" height="5" density="30" />
       <Deconstruct time="10">
         <Item identifier="fpgacircuit" />
         <Item identifier="copper" />
@@ -245,13 +245,13 @@
         </StatusEffect>
       </WifiComponent>
       <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-        <sprite name="Headset Wearable" texture="%ModDir:2518816103%/Items/AdvancedHeadset.png" limb="Head" hidelimb="false" inheritlimbdepth="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="0,0,45,45" origin="0.5,0.6" />
-		<sprite name="Headset Torso Protect" texture="Content/Items/Jobgear/Mechanic/safetyharness.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="0,0,1,1" spritecolor="255,255,255,0" />
+        <sprite name="Headset Wearable" texture="%ModDir:2518816103%/Items/BTheadsets.png" limb="Head" hidelimb="false" inheritlimbdepth="true" ignorelimbscale="true" scale="0.35" hideotherwearables="false" sourcerect="194,200,60,60" origin="0.5,0.7" />
+        <sprite name="Headset Torso Protect" texture="%ModDir:2518816103%/Items/BTheadsets.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="0,0,1,1" spritecolor="255,255,255,0" />
         <StatusEffect type="OnWearing" interval="1" target="This,Contained,Character" setvalue="true">
           <Affliction identifier="radio" strength="300" />
         </StatusEffect>
-		<damagemodifier afflictiontypes="stun" armorsector="0.0,360.0" damagemultiplier="0.95" />
-		<damagemodifier afflictiontypes="nausea" armorsector="0.0,360.0" damagemultiplier="0.80" />
+        <damagemodifier afflictiontypes="stun" armorsector="0.0,360.0" damagemultiplier="0.95" />
+        <damagemodifier afflictiontypes="nausea" armorsector="0.0,360.0" damagemultiplier="0.80" />
         <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.7" setvalue="true" disabledeltatime="true" />
       </Wearable>
     </Item>
