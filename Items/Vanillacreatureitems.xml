@@ -518,9 +518,9 @@
       <Item identifier="sulphuricacid" amount="2" />
       <Item identifier="zinc" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir:2518816103%/Items/Chems.png" sourcerect="392,0,55,111" />
-    <Sprite texture="%ModDir:2518816103%/Items/Chems.png" depth="0.54" sourcerect="392,0,55,111" />
-    <Body width="20" height="44" density="13" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="603,128,27,58" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="603,128,27,58" />
+    <Body width="27" height="58" density="13" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
   <Item name="Watcher Bursted Cornea" identifier="watchercornea" category="Misc" tags="smallitem" scale="0.5" maxstacksize="1" pickdistance="150" impactsoundtag="impact_soft" cargocontaineridentifier="metalcrate" description="The bursted len of the Watcher. Deconstructs into silicon and carbon. Researchers will pay quite a bit for this as will craftsmen in colonies.">
