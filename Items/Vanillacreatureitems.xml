@@ -903,8 +903,8 @@
       <RequiredItem identifier="iron" amount="1" />
       <RequiredItem identifier="giantspinespike" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir:2518816103%/Items/spinelingrailgun.png" sourcerect="1,44,99,15" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:2518816103%/Items/spinelingrailgun.png" sourcerect="1,44,99,15" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="10,256,98,16" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="10,256,98,16" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="20" />
     <Holdable canbecombined="false" slots="LeftHand,RightHand" holdpos="0,-15" handle1="-30,-5" holdangle="170" aimable="false" msg="ItemMsgPickUpSelect">
       <!-- slow down the character when holding the item -->
