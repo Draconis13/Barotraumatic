@@ -26,8 +26,8 @@
       <RequiredItem identifier="antibleeding1" />
       <RequiredItem identifier="flare" />
     </Fabricate>
-    <InventoryIcon texture="makeshiftfuelbomb.png" sourcerect="0,0,35,74" origin="0.5,0.5" />
-    <Sprite texture="makeshiftfuelbomb.png" sourcerect="0,0,35,74" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Tools/makeshiftfuelbomb.png" sourcerect="0,0,35,74" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Tools/makeshiftfuelbomb.png" sourcerect="0,0,35,74" depth="0.55" origin="0.5,0.5" />
     <Body width="35" height="74" density="20" />
 	    <Throwable characterusable="false" slots="Any,RightHand+LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="This">
@@ -39,10 +39,10 @@
           <Affliction identifier="explosiondamage" strength="13" />
           <Affliction identifier="stun" strength="3.35" />
         </Explosion>
-		<Explosion range="800" ballastfloradamage="90" structuredamage="1" itemdamage="5" force="8" distancefalloff="true" applyFireEffects="true" smoke="true" >
+        <Explosion range="800" ballastfloradamage="90" structuredamage="1" itemdamage="5" force="8" distancefalloff="true" applyFireEffects="true" smoke="true" >
           <Affliction identifier="burn" strength="10" />
           <Affliction identifier="burning" strength="7" probability="0.1" dividebylimbcount="false" />
-		  <Affliction identifier="bleeding" strength="2.5" probability="0.1" dividebylimbcount="false" />
+          <Affliction identifier="bleeding" strength="2.5" probability="0.1" dividebylimbcount="false" />
           <Affliction identifier="explosiondamage" strength="1.75" />
           <Affliction identifier="stun" strength="0.15" />
         </Explosion>
@@ -123,31 +123,30 @@
       <RequiredItem identifier="oxygentank" amount="2" />
       <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
-    <InventoryIcon texture="makeshifto2bomb.png" sourcerect="0,0,50,82" origin="0.5,0.5" />
-    <Sprite texture="makeshifto2bomb.png" sourcerect="0,0,50,82" depth="0.55" origin="0.5,0.5" />
-    <Body width="50" height="75" density="17" />
-	
-	    <Throwable characterusable="false" slots="Any,RightHand+LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Tools/makeshiftfuelbomb.png" sourcerect="40,0,50,82" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Tools/makeshiftfuelbomb.png" sourcerect="40,0,50,82" depth="0.55" origin="0.5,0.5" />
+    <Body width="50" height="75" density="17" />	
+	  <Throwable characterusable="false" slots="Any,RightHand+LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="10000" selectionmode="All" />
         <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="10000" />
-		<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="6" velocitymin="700" velocitymax="1200" scalemin="0.1" scalemax="0.15" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="6" velocitymin="700" velocitymax="1200" scalemin="0.1" scalemax="0.15" />
         <Explosion range="550.0" ballastfloradamage="100" structuredamage="30" levelwalldamage="140" itemdamage="300" force="5" severlimbsprobability="0.35" decal="explosion" decalsize="0.5" smoke="true" applyfireeffects="false" flames="false">
           <Affliction identifier="explosiondamage" strength="15" />
-		  <Affliction identifier="lacerations" strength="15" />
+          <Affliction identifier="lacerations" strength="15" />
           <Affliction identifier="bleeding" strength="20" />
           <Affliction identifier="bleeding" strength="10" probability="0.3" dividebylimbcount="false" />
           <Affliction identifier="burn" strength="12" />
           <Affliction identifier="stun" strength="2.65" />
         </Explosion>
-		<Explosion range="1100" ballastfloradamage="10" structuredamage="5" levelwalldamage="0" itemdamage="0" force="5" severlimbsprobability="0.2" decal="explosion" decalsize="0" applyfireeffects="false" flames="false">
+        <Explosion range="1100" ballastfloradamage="10" structuredamage="5" levelwalldamage="0" itemdamage="0" force="5" severlimbsprobability="0.2" decal="explosion" decalsize="0" applyfireeffects="false" flames="false">
           <Affliction identifier="explosiondamage" strength="10" />
-		  <Affliction identifier="lacerations" strength="8" />
-		  <Affliction identifier="burn" strength="5" />
-		  <Affliction identifier="bleeding" strength="8" />
+          <Affliction identifier="lacerations" strength="8" />
+          <Affliction identifier="burn" strength="5" />
+          <Affliction identifier="bleeding" strength="8" />
           <Affliction identifier="bleeding" strength="6" dividebylimbcount="false" probability="0.4" />
           <Affliction identifier="stun" strength="1.75" />
-        </Explosion>
+          </Explosion>
         <Remove />
       </StatusEffect>
       <!-- Skip the removal of safeties and explode immediatly if inside of a detonator, railgun shell or a depth charge-->
