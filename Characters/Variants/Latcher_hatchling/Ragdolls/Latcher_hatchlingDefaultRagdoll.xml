@@ -76,14 +76,14 @@
     <sprite SourceRect="741,429,64,74" Origin="0.5,0.5" Depth="0.61" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <attack StructureSoundType="StructureBlunt" Context="Any" TargetType="Any" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough" AfterAttackDelay="0.1" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="False" Retreat="False" Range="1000" DamageRange="1000" MinRange="0" Duration="2" CoolDown="5" SecondaryCoolDown="0" CoolDownRandomFactor="0" FullSpeedAfterAttack="True" StructureDamage="0" CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False" RequiredAngle="30" RequiredAngleToShoot="0" AimRotationTorque="0" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1" SeverLimbsProbability="0" Priority="1" Blink="False">
       <StatusEffect type="OnFailure" target="This">
-        <SpawnItem identifier="toothspikes" spawnposition="This" count="3" aimspread="15" rotationtype="Collider" rotation="0" />
+        <SpawnItem identifier="toothspike_hatchling" spawnposition="This" count="3" aimspread="15" rotationtype="Collider" rotation="0" />
         <sound file="Content/Characters/Latcher/ABYSSM_teeth.ogg" range="2000" volume="1" dontmuffle="true" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This" delay="0.1">
-        <SpawnItem identifier="toothspikes" spawnposition="This" count="2" aimspread="5" rotationtype="Collider" rotation="0" />
+        <SpawnItem identifier="toothspike_hatchling" spawnposition="This" count="2" aimspread="5" rotationtype="Collider" rotation="0" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This" delay="0.2">
-        <SpawnItem identifier="toothspikes" spawnposition="This" count="2" aimspread="10" rotationtype="Collider" rotation="0" />
+        <SpawnItem identifier="toothspike_hatchling" spawnposition="This" count="2" aimspread="10" rotationtype="Collider" rotation="0" />
       </StatusEffect>
     </attack>
   </limb>
@@ -271,7 +271,7 @@
         <sound file="Content/Characters/Latcher/ABYSSM_tongueMove.ogg" range="2000" volume="1" dontmuffle="false" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This" delay="0.2">
-        <SpawnItem identifier="tonguetendonscharacter" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="0" />
+        <SpawnItem identifier="tonguetendoncharacter_hatchling" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="0" />
       </StatusEffect>
     </attack>
   </limb>
