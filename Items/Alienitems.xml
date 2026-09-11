@@ -6,153 +6,6 @@
   <!-- //////////// OVERRIDES ////////////// -->
   <!-- //////////// OVERRIDES ////////////// -->
 
-  <Item name="" identifier="tonguetendons" tags="" health="100" hideinmenus="true" category="" sonarsize="0" scale="1" damagedbyexplosions="false" damagedbyprojectiles="false" damagedbyrepairtools="false" damagedbymeleeweapons="false" impactsoundtag="impact_soft">
-    <Sprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
-    <Body radius="100" density="10" />
-    <Rope sourcepullforce="1000" targetpullforce="0" projectilepullforce="0" maxlength="5000" snaponcollision="false" spritewidth="30" tile="true" snapanimduration="1" breakfrommiddle="false" maxangle="60">
-      <Sprite name="tongue" texture="Content/Characters/Latcher/Latcher.png" sourcerect="16,0,480,256" depth="0.57" origin="0.5,0.5" />
-      <EndSprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="544,0,228,256" depth="0.56" origin="0.5,0.5" />
-      <!-- Automatically snap after 14 seconds -->
-      <StatusEffect type="OnUse" target="This" Snapped="true" delay="14" />
-      <!-- Remove 1 second after snapping -->
-      <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
-        <Conditional Snapped="true" />
-        <Remove />
-      </StatusEffect>
-      <!-- Snap after 3 seconds if not stuck to anything -->
-      <StatusEffect type="OnUse" target="This" Snapped="true" delay="3" checkconditionalalways="true">
-        <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
-      </StatusEffect>
-    </Rope>
-    <Projectile characterusable="false" launchimpulse="6.0" sticktostructures="true" sticktoitems="false" sticktodeflective="true" sticktocharacters="false" maxtargetstohit="1" prismatic="false">
-      <Attack structuredamage="30" />
-      <StatusEffect type="OnImpact" target="This">
-        <sound file="Content/Characters/Latcher/ABYSSM_tongueHit.ogg" range="2000" volume="1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Latcher/ABYSSM_tongueHit_1.ogg" range="2000" volume="1" selectionmode="random" dontmuffle="true" />
-        <particleemitter drawontop="true" particle="tonguehitsplash" particleamount="20" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
-        <particleemitter drawontop="false" particle="damagebubbles" particleamount="20" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
-        <particleemitter drawontop="true" particle="damagebubbles" particleamount="10" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
-      </StatusEffect>
-      <StatusEffect type="Always" target="This">
-        <Conditional Snapped="true" />
-        <sound file="Content/Characters/Latcher/ABYSSM_tongueMove_1.ogg" range="2000" volume="1" dontmuffle="false" />
-      </StatusEffect>
-    </Projectile>
-  </Item>
-
-  <Item name="" identifier="tonguetendonscharacter" nameidentifier="tonguetendons" tags="" health="100" hideinmenus="true" category="" sonarsize="0" scale="0.2" damagedbyexplosions="false" damagedbyprojectiles="false" damagedbyrepairtools="false" damagedbymeleeweapons="false" impactsoundtag="impact_soft">
-    <Sprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
-    <Body radius="100" density="10" />
-    <Rope sourcepullforce="20000" targetpullforce="230" projectilepullforce="100" maxlength="3000" snaponcollision="false" spritewidth="30" tile="true" snapanimduration="1" breakfrommiddle="false" maxangle="60" lerpforces="true">
-      <Sprite name="tongue" texture="Content/Characters/Latcher/Latcher.png" sourcerect="16,0,480,256" depth="0.57" origin="0.5,0.5" />
-      <EndSprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="544,0,228,256" depth="0.56" origin="0.5,0.5" />
-      <!-- Automatically snap after 5 seconds -->
-      <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" />
-      <!-- Remove 1 second after snapping -->
-      <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
-        <Conditional Snapped="true" />
-        <Remove />
-      </StatusEffect>
-      <!-- Snap after 3 seconds if not stuck to anything -->
-      <StatusEffect type="OnUse" target="This" Snapped="true" delay="3" checkconditionalalways="true">
-        <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
-      </StatusEffect>
-    </Rope>
-    <Projectile characterusable="false" launchimpulse="6.0" sticktostructures="false" sticktoitems="false" sticktodeflective="true" sticktocharacters="true" maxtargetstohit="1" sticktolighttargets="true" prismatic="false">
-      <Attack structuredamage="10">
-        <Affliction identifier="blunttrauma" strength="20" />
-        <Affliction identifier="stun" strength="0.5" />
-      </Attack>
-      <StatusEffect type="OnActive" target="UseTarget,This" comparison="And">
-        <Conditional Snapped="false" />
-        <Affliction identifier="drag" strength="1" />
-      </StatusEffect>
-      <StatusEffect type="OnActive" target="UseTarget,This" comparison="And" checkconditionalalways="true">
-        <Conditional ishuman="true" />
-        <Conditional isdead="false" />
-        <Affliction identifier="drag" strength="1" />
-        <Affliction identifier="stun" strength="3" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This">
-        <particleemitter drawontop="true" particle="tonguehitsplash" particleamount="20" scalemin="1" scalemax="5" anglemin="0" anglemax="360" />
-        <particleemitter drawontop="false" particle="damagebubbles" particleamount="20" scalemin="1" scalemax="5" anglemin="0" anglemax="360" />
-        <particleemitter drawontop="true" particle="damagebubbles" particleamount="10" scalemin="1" scalemax="5" anglemin="0" anglemax="360" />
-      </StatusEffect>
-      <StatusEffect type="Always" target="This">
-        <Conditional Snapped="true" />
-        <sound file="Content/Characters/Latcher/ABYSSM_tongueMove_1.ogg" range="2000" volume="1" dontmuffle="false" />
-      </StatusEffect>
-    </Projectile>
-  </Item>
-
-  <Item name="toothspikes" identifier="toothspikes" category="Misc" scale="0.2" sonarsize="0.2" hideinmenus="true">
-    <Sprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1794,924,256,64" depth="0.55" origin="0.5,0.5" />
-    <Body width="240" height="40" density="20" />
-    <Projectile characterusable="false" launchimpulse="20" maxtargetstohit="2" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true" removeonhit="true">
-      <Attack structuredamage="5" itemdamage="5" severlimbsprobability="0.5">
-        <!--Hits up to 5 limbs, so the actual damage can be 5x-->
-        <Affliction identifier="lacerations" strength="2" />
-        <Affliction identifier="bleeding" strength="2" />
-        <Affliction identifier="stun" strength="0.1" />
-      </Attack>
-      <StatusEffect type="OnActive" target="This" lifetime="0.5">
-        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This" condition="-34"></StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure" />
-        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="2000" scalemin="0.1" scalemax="0.2" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure" />
-        <Conditional hastag="eq door" />
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.1" scalemax="0.5" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Projectile>
-  </Item>
-
-  <Item name="" identifier="giantspinelingspike" nameidentifier="spinelingspike" translationidentifier="spinelingspike" category="Misc" scale="0.5" sonarsize="6" hideinmenus="true">
-    <Sprite texture="Content/Characters/Spineling_giant/Spineling_giant.png" sourcerect="0,860,720,72" depth="0.55" />
-    <Body width="600" height="35" density="20" />
-    <Projectile characterusable="false" launchimpulse="400" maxtargetstohit="10" sticktocharacters="false" sticktoitems="false" sticktostructures="true" friendlyfire="false" damagedoors="true">
-      <Attack structuredamage="100" itemdamage="100" severlimbsprobability="2.0" penetration="0.5">
-        <Affliction identifier="lacerations" strength="25" />
-        <Affliction identifier="bleeding" strength="13" />
-        <Affliction identifier="stun" strength="1" />
-      </Attack>
-      <StatusEffect type="OnActive" target="This" lifetime="0.5">
-        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="2">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure" />
-        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="2000" scalemin="0.1" scalemax="0.2" />
-        <Explosion ignorecover="true" onlyinside="true" range="600" force="10" playtinnitus="false" showeffects="false" applyfireeffects="false">
-          <Affliction identifier="stun" strength="1" />
-        </Explosion>
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure" />
-        <Conditional hastag="eq door" />
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Projectile>
-    <LightComponent range="400" castshadows="False" drawbehindsubs="False" ison="True" blinkfrequency="0" lightcolor="255,255,255,30" isactive="True" minvoltage="0" powerconsumption="0" vulnerabletoemp="False" pickingtime="0" canbepicked="False" allowingameediting="False" msg="">
-      <Sprite texture="Content/Characters/Spineling_giant/Spineling_giant.png" sourcerect="0,940,720,72" origin="0.55,0.5" alpha="0.5" />
-    </LightComponent>
-  </Item>
-    
   <!-- //////////// END OF OVERRIDES ////////////// -->
   <!-- //////////// END OF OVERRIDES ////////////// -->
   <!-- //////////// END OF OVERRIDES ////////////// -->
@@ -206,7 +59,6 @@
       <StatusEffect type="OnActive" delay="13" Snapped="true" target="This"></StatusEffect>
     </Projectile>
   </Item>
-
 
   <Item name="Electric Pulse" identifier="Telepulse" category="alien" Tags="" canbepicked="false" description="" scale="0.5" sonarsize="0" health="1" damagedbyexplosions="false" damagedbyprojectiles="false" damagedbymeleeweapons="false" damagedbyrepairtools="false">
     <Sprite texture="Content/Items/Materials/Crystal.png" depth="1.0" sourcerect="0,1,1,1" origin="0.5,0.6" />
@@ -2070,6 +1922,7 @@
     </Throwable>
   </Item>
 
+  <!-- fuzzy latcher -->
   <Item name="Trapper Toothspike" identifier="btctoothspikeweb" category="Misc" scale="1" sonarsize="2" hideinmenus="true">
     <Sprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1794,924,256,64" depth="0.55" origin="0.5,0.5" />
     <Body width="240" height="40" density="20" />
@@ -2154,6 +2007,79 @@
     </StatusEffect> -->
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <!-- latcher hatchling  -->
+  <Item name="" identifier="tonguetendoncharacter_hatchling" nameidentifier="tonguetendon" tags="" health="100" hideinmenus="true" category="" sonarsize="0" scale="1" damagedbyexplosions="false" damagedbyprojectiles="false" damagedbyrepairtools="false" damagedbymeleeweapons="false" impactsoundtag="impact_soft">
+    <Sprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
+    <Body radius="100" density="10" />
+    <Rope sourcepullforce="0" targetpullforce="500" projectilepullforce="0" maxlength="3000" snaponcollision="false" spritewidth="256" tile="true" snapanimduration="1" breakfrommiddle="false" maxangle="60" lerpforces="false">
+      <Sprite name="tongue" texture="Content/Characters/Latcher/Latcher.png" sourcerect="16,0,480,256" depth="0.57" origin="0.5,0.5" />
+      <EndSprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="544,0,228,256" depth="0.56" origin="0.5,0.5" />
+      <SnapSound file="Content/Items/Weapons/HarpoonGun1.ogg" range="500" frequencymultiplier="3.0,4.0" />
+      <!-- Automatically snap after 5 seconds -->
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" />
+      <!-- Remove 1 second after snapping -->
+      <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
+        <Conditional Snapped="true" />
+        <Remove />
+      </StatusEffect>
+      <!-- Snap after 3 seconds if not stuck to anything -->
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="3" checkconditionalalways="true">
+        <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
+      </StatusEffect>
+    </Rope>
+    <Projectile characterusable="false" launchimpulse="60.0" sticktostructures="false" sticktoitems="false" sticktodoors="false" sticktodeflective="true" sticktocharacters="true" maxtargetstohit="1" sticktolighttargets="true" prismatic="false">
+      <Attack structuredamage="10">
+        <Affliction identifier="blunttrauma" strength="20" />
+        <Affliction identifier="stun" strength="5" />
+      </Attack>
+      <StatusEffect type="OnActive" target="UseTarget,This" comparison="And" disabledeltatime="true">
+        <Conditional Snapped="false" />
+        <Affliction identifier="drag" strength="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <particleemitter drawontop="true" particle="tonguehitsplash" particleamount="20" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
+        <particleemitter drawontop="false" particle="damagebubbles" particleamount="20" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
+        <particleemitter drawontop="true" particle="damagebubbles" particleamount="10" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This">
+        <Conditional Snapped="true" />
+        <sound file="Content/Characters/Latcher/ABYSSM_tongueMove_1.ogg" range="20000" volume="1" dontmuffle="false" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+
+  <Item name="" identifier="toothspike_hatchling" category="Misc" scale="0.2" sonarsize="0.2" hideinmenus="true">
+    <Sprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1794,924,256,64" depth="0.55" origin="0.5,0.5" />
+    <Body width="240" height="40" density="20" />
+    <Projectile characterusable="false" launchimpulse="20" maxtargetstohit="2" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true" removeonhit="true">
+      <Attack structuredamage="5" itemdamage="5" severlimbsprobability="0.5">
+        <!--Hits up to 5 limbs, so the actual damage can be 5x-->
+        <Affliction identifier="lacerations" strength="2" />
+        <Affliction identifier="bleeding" strength="2" />
+        <Affliction identifier="stun" strength="0.1" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="0.5">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="-34"></StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="2000" scalemin="0.1" scalemax="0.2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.1" scalemax="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
   </Item>
 
   <!-- Fractal siren projectile, spawns a gravity well -->
