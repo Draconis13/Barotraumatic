@@ -19,7 +19,6 @@
   <Item file="%ModDir%/Items/EMmaterials.xml" />
   <Item file="%ModDir%/Items/Vanillacreatureitems.xml" />
   <Item file="%ModDir%/Items/Alien/Alienitems.xml" />
-  <Item file="%ModDir%/Items/OtherScreatureitems.xml" />
   <Item file="%ModDir%/Items/Spawners.xml" />
   <Item file="%ModDir%/Items/Clothes/mechanic_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/thalamusdivesuits.xml" />
