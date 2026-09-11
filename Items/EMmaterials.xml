@@ -476,62 +476,62 @@
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" absoluteoffset="0,-30" style="ItemUI" />
       <Button text="ABYSSCREATURE_DOOMWORM">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/Combat/COMBAT_DoomWorm.ogg" range="20000" volume="1" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/Combat/COMBAT_DoomWorm.ogg" range="20000" volume="1" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="SUDDENBOSS_ENCOUNTER">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/Combat/COMBAT_SuddenBossEncounter.ogg" range="20000" volume="1" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/Combat/COMBAT_SuddenBossEncounter.ogg" range="20000" volume="1" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="DYINGINABYSS_PEACEFUL">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/Combat/COMBAT_AbyssPeacefuldying.ogg" range="20000" volume="1" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/Combat/COMBAT_AbyssPeacefuldying.ogg" range="20000" volume="1" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="PZ_THEHORDE">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/Thehorde.ogg" range="20000" volume="1" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/Thehorde.ogg" range="20000" volume="1" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="PZ_MOREARECOMING">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/epic3.ogg" range="20000" volume="1" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/epic3.ogg" range="20000" volume="1" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="GAMEPLAY_PROGRESSIVE1">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/Progressive1.ogg" range="20000" volume="1" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/Progressive1.ogg" range="20000" volume="1" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="GAMEPLAY_PROGRESSIVE2">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/Progressive2.ogg" range="20000" volume="2" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/Progressive2.ogg" range="20000" volume="2" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="GAMEPLAY_PROGRESSIVE3">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/Progressive3.ogg" range="20000" volume="2" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/Progressive3.ogg" range="20000" volume="2" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="GAMEPLAY_RESCUEINCAPACITATED">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/epic4.ogg" range="20000" volume="1" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/epic4.ogg" range="20000" volume="1" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="AMBIENCE_RESEARCHSTATION">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/Research1.ogg" range="20000" volume="1" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/Research1.ogg" range="20000" volume="1" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="AMBIENCE_SUBEDITOR">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/Barotraumatic_SubEditor.ogg" range="20000" volume="2" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/Barotraumatic_SubEditor.ogg" range="20000" volume="2" dontmuffle="true" />
         </StatusEffect>
       </Button>
       <Button text="GUITARRIFF">
         <StatusEffect type="OnUse" targettype="This" delay="2" IsOn="false" drawhudwhenequipped="true">
-          <Sound file="%ModDir:2518816103%/Audio/Guitar Riff.ogg" range="20000" volume="1" dontmuffle="true" />
+          <sound file="%ModDir:2518816103%/Sounds/Guitar Riff.ogg" range="20000" volume="1" dontmuffle="true" />
         </StatusEffect>
       </Button>
     </CustomInterface>

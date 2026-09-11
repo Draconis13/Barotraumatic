@@ -18,7 +18,7 @@
   </ai>
   <StatusEffect type="OnDeath" target="This" delay="0.2">
     <SpawnCharacter speciesname="clownsawcrazy" count="1" spread="0" />
-    <sound file="%ModDir:2518816103%/Audio/opencrate.ogg" dontmuffle="true" range="2000" volume="1" />
+    <sound file="%ModDir:2518816103%/Sounds/opencrate.ogg" dontmuffle="true" range="2000" volume="1" />
     <RemoveCharacter />
   </StatusEffect>
   <StatusEffect type="Always" target="Character">

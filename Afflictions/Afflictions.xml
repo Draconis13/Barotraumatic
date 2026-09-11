@@ -110,7 +110,7 @@
     <Effect minstrength="1" maxstrength="10" strengthchange="-9">
       <StatusEffect target="Character" comparison="and" targetlimb="Head" checkconditionalalways="true">
         <Conditional IsPlayer="True" />
-        <Sound file="%ModDir:2518816103%/Audio/Combat/COMBAT_Pirateboardsub.ogg" loop="True" volume="1.6" dontmuffle="true" />
+        <sound file="%ModDir:2518816103%/Sounds/Combat/COMBAT_Pirateboardsub.ogg" loop="True" volume="1.6" dontmuffle="true" />
       </StatusEffect>
     </Effect>
   </Affliction>
@@ -119,7 +119,7 @@
     <Effect minstrength="1" maxstrength="10" strengthchange="-9">
       <StatusEffect target="Character" comparison="and" targetlimb="Head" checkconditionalalways="true">
         <Conditional IsPlayer="True" />
-        <Sound file="%ModDir:2518816103%/Audio/Combat/COMBAT_SuddenBossEncounter.ogg" loop="True" volume="1.8" dontmuffle="true" />
+        <sound file="%ModDir:2518816103%/Sounds/Combat/COMBAT_SuddenBossEncounter.ogg" loop="True" volume="1.8" dontmuffle="true" />
       </StatusEffect>
     </Effect>
   </Affliction>
@@ -135,7 +135,7 @@
     <Effect minstrength="0" maxstrength="20" strengthchange="-1">
       <StatusEffect target="Character" interval="1" duration="1.1">
         <Conditional IsLocalPlayer="true" />
-        <Sound file="%ModDir:2518816103%/Audio/ShockLoop.ogg" volume="5" loop="true" dontmuffle="true" />
+        <sound file="%ModDir:2518816103%/Sounds/ShockLoop.ogg" volume="5" loop="true" dontmuffle="true" />
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
@@ -146,7 +146,7 @@
     <Effect minstrength="0" maxstrength="20" strengthchange="-1">
       <StatusEffect target="Character" interval="1" duration="1.1">
         <Conditional IsLocalPlayer="true" />
-        <Sound file="%ModDir:2518816103%/Audio/ShockLoop.ogg" volume="5" loop="true" dontmuffle="true" />
+        <sound file="%ModDir:2518816103%/Sounds/ShockLoop.ogg" volume="5" loop="true" dontmuffle="true" />
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
@@ -586,10 +586,10 @@
         <Affliction identifier="burn" strength="15" />
         <Affliction identifier="organdamage" strength="15" />
         <Affliction identifier="internaldamage" strength="15" />
-        <Sound file="%ModDir:2518816103%/Audio/Scream1.ogg" range="600" selectionmode="Random" />
-        <Sound file="%ModDir:2518816103%/Audio/Scream2.ogg" range="600" />
-        <Sound file="%ModDir:2518816103%/Audio/Scream3.ogg" range="600" />
-        <Sound file="%ModDir:2518816103%/Audio/Scream4.ogg" range="600" />
+        <sound file="%ModDir:2518816103%/Sounds/Scream1.ogg" range="600" selectionmode="Random" />
+        <sound file="%ModDir:2518816103%/Sounds/Scream2.ogg" range="600" />
+        <sound file="%ModDir:2518816103%/Sounds/Scream3.ogg" range="600" />
+        <sound file="%ModDir:2518816103%/Sounds/Scream4.ogg" range="600" />
       </StatusEffect>
       <StatusEffect Type="Always" target="Character" stackable="false" delay="4">
         <DropContainedItems />
@@ -2175,7 +2175,7 @@
     <Effect minstrength="1" maxstrength="2" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="1.0">
       <!-- <StatusEffect target="Character" >
         <Conditional IsLocalPlayer="true" />
-        <Sound file="%ModDir:2518816103%/Audio/ShockLoop.ogg" volume="2" loop="true" dontmuffle="true" frequencymultiplier="0.5"/>
+        <sound file="%ModDir:2518816103%/Sounds/ShockLoop.ogg" volume="2" loop="true" dontmuffle="true" frequencymultiplier="0.5"/>
       </StatusEffect> -->
     </Effect>
     <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />

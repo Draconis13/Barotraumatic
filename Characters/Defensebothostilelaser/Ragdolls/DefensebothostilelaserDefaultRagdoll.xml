@@ -30,7 +30,7 @@
         <RequiredItem item="defensebotammobox" type="Picked" ExcludeBroken="true" />
         <SpawnItem identifier="defensebotlaser" spawnposition="This" count="1" aimspread="0" rotationtype="Limb" rotation="-90" />
         <ParticleEmitter particle="laserspark2" particleamount="1" velocitymin="0" velocitymax="0" CopyEntityAngle="True" CopyEntityDir="False" />
-        <Sound file="%ModDir:2518816103%/Audio/ek_laserrifle_mono.ogg" type="OnUse" range="3000" />
+        <sound file="%ModDir:2518816103%/Sounds/ek_laserrifle_mono.ogg" type="OnUse" range="3000" />
         <Explosion range="150.0" force="0" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="0" flash="true" />
       </StatusEffect>
       <!-- -0.5 -> 200 shots per magazine-->

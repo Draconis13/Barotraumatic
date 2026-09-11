@@ -290,10 +290,10 @@
       <StatusEffect type="OnImpact" target="This">
         <particleemitter drawontop="true" particle="shrapnel" particleamount="20" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
         <particleemitter drawontop="false" particle="iceshards" particleamount="20" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
-        <sound file="%ModDir:2518816103%/Audio/IceCrash1.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
-        <sound file="%ModDir:2518816103%/Audio/IceCrash2.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
-        <sound file="%ModDir:2518816103%/Audio/IceCrash3.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
-        <sound file="%ModDir:2518816103%/Audio/IceCrash4.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
+        <sound file="%ModDir:2518816103%/Sounds/IceCrash1.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
+        <sound file="%ModDir:2518816103%/Sounds/IceCrash2.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
+        <sound file="%ModDir:2518816103%/Sounds/IceCrash3.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
+        <sound file="%ModDir:2518816103%/Sounds/IceCrash4.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
         <Explosion ignorecover="true" onlyinside="true" range="2000" camerashake="120" distancefalloff="true" structuredamage="5" force="120" playtinnitus="false" showeffects="false" applyfireeffects="false">
           <Affliction identifier="stun" strength="0.6" />
         </Explosion>

@@ -35,7 +35,7 @@ HOTFIX
 [*] Goofyfish, Whitefish and Glowfish are no longer pets, moved to "Scavenger" group, will nibble at humans
 [*] Removed low quality creatures from spawnlist: Legacyendworm, Charybdisre, Watcherwanderer, Lurker
 [*] Psilosaur sprite updated 
-[*] 
+[*] Bots now flee from Teleglitch
 [*] 
 [*] 
 [/List]

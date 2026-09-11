@@ -40,7 +40,7 @@
   </inventory>
   <StatusEffect type="OnActive" target="NearbyCharacters" range="5000" onlyoutside="true">
     <Affliction identifier="watchersgaze" strength="5" />
-    <Sound file="%ModDir:2518816103%/Audio/whispers.ogg" loop="true" range="5000" volume="2" dontmuffle="true" />
+    <sound file="%ModDir:2518816103%/Sounds/whispers.ogg" loop="true" range="5000" volume="2" dontmuffle="true" />
   </StatusEffect>
   <StatusEffect type="OnActive" target="NearbyCharacters" range="5000">
     <Affliction identifier="watchersgaze" strength="5" />
