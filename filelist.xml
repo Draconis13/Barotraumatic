@@ -381,4 +381,5 @@
   <Item file="%ModDir%/Characters/Yellowboy/Yellowboyegg.xml" />
   <Character file="%ModDir%/Characters/Variants/Trichordate_random/Trichordate_random.xml" />
   <Character file="%ModDir%/Characters/Watcherling/Watcherling.xml" />
+  <Character file="%ModDir%/Characters/Molochbaby/Molochbaby.xml" />
 </contentpackage>
