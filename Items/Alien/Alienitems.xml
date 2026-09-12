@@ -1312,7 +1312,7 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="0.9" />
     </Price>
     <PreferredContainer primary="medfabcab" secondary="medcontainer" />
-    <Sprite texture="EMItems.png" depth="0.7" sourcerect="584,69,44,52" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.7" sourcerect="584,69,44,52" origin="0.5,0.5" />
     <Deconstruct time="10">
       <Item identifier="stabilozine" />
       <Item identifier="antibloodloss1" />
@@ -2797,10 +2797,7 @@
       </StatusEffect>
     </TriggerComponent>
     <LightComponent lightcolor="100,120,80,50" Range="220" powerconsumption="0" IsOn="true" Offset="0,0" PulseFrequency="0.2" PulseAmount="0.2" />
-  </Item>
-    
-  
-  
+  </Item>  
   
   <!-- /////////////////// UTILITIES ////////////////// -->
   <!-- These items have an effect when inside creature inventory -->

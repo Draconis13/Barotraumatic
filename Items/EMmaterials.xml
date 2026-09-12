@@ -15,8 +15,8 @@
       <Item identifier="calcium" />
       <Item identifier="carbon" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="0,0,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="0,0,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="0,0,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="0,0,64,64" />
     <Body width="29" height="42" density="13" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -35,8 +35,8 @@
       <Item identifier="potassium" />
       <Item identifier="potassium" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="64,0,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="64,0,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="64,0,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="64,0,64,64" />
     <Body width="49" height="44" density="13" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -55,8 +55,8 @@
       <Item identifier="silicon" />
       <Item identifier="potassium" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="128,0,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="128,0,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="128,0,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="128,0,64,64" />
     <Body width="20" height="44" density="13" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -73,8 +73,8 @@
       <Item identifier="carbon" />
       <Item identifier="opium" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="192,0,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="192,0,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="192,0,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="192,0,64,64" />
     <Body width="20" height="44" density="19" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -92,8 +92,8 @@
       <Item identifier="phosphorus" />
       <Item identifier="incendium" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="256,0,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="256,0,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="256,0,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="256,0,64,64" />
     <Body width="20" height="44" density="19" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -112,8 +112,8 @@
       <Item identifier="titanium" />
       <Item identifier="phosphorus" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="320,0,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="320,0,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="320,0,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="320,0,64,64" />
     <Body width="27" height="32" density="20" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -131,8 +131,8 @@
       <Item identifier="titanium" />
       <Item identifier="iron" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="512,0,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="512,0,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="512,0,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="512,0,64,64" />
     <Body width="16" height="61" density="17" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -150,8 +150,8 @@
       <Item identifier="calcium" />
       <Item identifier="potassium" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="384,0,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="384,128,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="384,0,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="384,128,64,64" />
     <Body width="16" height="45" density="15" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-15,-5" holdangle="10" reload="1.35" range="50" aimangle="-30" DualWieldReloadTimePenaltyMultiplier="1.15" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="12" structuredamage="14" >
@@ -183,8 +183,8 @@
       <Item identifier="titanium" />
       <Item identifier="potassium" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="448,0,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="448,128,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="448,0,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="448,128,64,64" />
     <Body width="16" height="45" density="15" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-15,-5" holdangle="10" reload="1.45" range="50" aimangle="-30" DualWieldReloadTimePenaltyMultiplier="1.15" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.2" itemdamage="16"  structuredamage="18" >
@@ -213,8 +213,8 @@
       <Item identifier="titanium" />
       <Item identifier="calcium" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="384,64,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="384,64,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="384,64,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="384,64,64,64" />
     <Body width="50" height="38" density="20" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="60,0" handle1="-15,-8" holdangle="35" aimangle="-50" reload="1.3" DualWieldReloadTimePenaltyMultiplier="1.2" range="65" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="5" severlimbsprobability="0.5" itemdamage="14.5" structuredamage="13" penetration="0.2" >
@@ -241,8 +241,8 @@
       <Item identifier="carbon" />
       <Item identifier="copper" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="128,64,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="128,64,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="128,64,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="128,64,64,64" />
     <Body width="63" height="32" density="20" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="60,0" handle1="-5,-5" holdangle="10" reload="0.86" range="60" DualWieldReloadTimePenaltyMultiplier="1.35" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="4" severlimbsprobability="0.3" itemdamage="10" structuredamage="8" >
@@ -270,8 +270,8 @@
       <Item identifier="carbon" />
       <Item identifier="sodium" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="256,64,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="256,64,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="256,64,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="256,64,64,64" />
     <Body width="49" height="45" density="20" />
     <Throwable characterusable="false" canBeCombined="false" slots="Any,RightHand,LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnNotContained" target="Hull" oxygen="-4000.0" >
@@ -310,8 +310,8 @@
       <Item identifier="sulphuricacid" />
       <Item identifier="chlorine" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="64,64,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="64,64,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="64,64,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="64,64,64,64" />
     <Body width="50" height="50" density="15" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -328,8 +328,8 @@
       <Item identifier="chlorine" />
       <Item identifier="magnesium" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="192,64,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="192,64,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="192,64,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="192,64,64,64" />
     <Body width="47" height="41" density="10" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -347,8 +347,8 @@
 	  <Item identifier="copper" />
       <Item identifier="carbon" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="320,64,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="320,64,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="320,64,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="320,64,64,64" />
     <Body width="36" height="36" density="10" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -366,8 +366,8 @@
       <Item identifier="paralyxis" />
       <Item identifier="carbon" />
     </Deconstruct>
-    <InventoryIcon texture="EMItems.png" sourcerect="448,64,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="448,64,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="448,64,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="448,64,64,64" />
     <Body width="57" height="39" density="10" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
@@ -385,11 +385,11 @@
       <Item identifier="carbon" />
     </Deconstruct>
     <PreferredContainer primary="locker" />
-    <InventoryIcon texture="EMItems.png" sourcerect="512,64,64,64" />
-    <Sprite texture="EMItems.png" depth="0.54" sourcerect="512,64,64,64" />
+    <InventoryIcon texture="%ModDir:2518816103%/Items/EMItems.png" sourcerect="512,64,64,64" />
+    <Sprite texture="%ModDir:2518816103%/Items/EMItems.png" depth="0.54" sourcerect="512,64,64,64" />
     <Body radius="24" width="15" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite texture="EMItems.png" limb="Head"  inherittexturescale="false" inheritorigin="false" inheritlimbdepth="true" hidelimb="false" rotation="-120" scale="0.425" hideotherwearables="false" sourcerect="0,128,128,109" origin="0.45,0.8" hidewearablesoftype="moustache,beard" />
+      <sprite texture="%ModDir:2518816103%/Items/EMItems.png" limb="Head"  inherittexturescale="false" inheritorigin="false" inheritlimbdepth="true" hidelimb="false" rotation="-120" scale="0.425" hideotherwearables="false" sourcerect="0,128,128,109" origin="0.45,0.8" hidewearablesoftype="moustache,beard" />
       <StatusEffect type="OnWearing" target="Character" HideFace="true" setvalue="true" disabledeltatime="true" />
       <StatusEffect type="OnWearing" target="Character" delay="1" stackable="false" checkconditionalalways="true">
         <conditional isDead="eq false" />
