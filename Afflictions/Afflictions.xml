@@ -467,7 +467,7 @@
     <Effect minstrength="0" maxstrength="2" strengthchange="-1">
       <StatusEffect target="Character" delay="0.2">
         <Conditional IsLocalPlayer="true" />
-        <Sound file="%ModDir%/Characters/Variants/Honkfather/honkfatherinterference.ogg" loop="True" volume="0.5" />
+        <Sound file="%ModDir:2518816103%/Characters/Variants/Honkfather/honkfatherinterference.ogg" loop="True" volume="0.5" />
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
@@ -489,10 +489,10 @@
       <StatusEffect target="Character">
         <Conditional IsLocalPlayer="True" />
         <Affliction identifier="psychosis" amount="2" />
-        <sound file="%ModDir%/Characters/Clowns/Clownwanderer/clowninterference.ogg" selectionmode="Random" volume="1.75" dontmuffle="True" />
-        <sound file="%ModDir%/Characters/Clowns/Clownwanderer/clowninterference2.ogg" volume="1.75" dontmuffle="True" />
-        <sound file="%ModDir%/Characters/Clowns/Clownwanderer/risa.ogg" volume="1.75" dontmuffle="True" />
-        <sound file="%ModDir%/Characters/Clowns/Clownwanderer/risa1.ogg" volume="1.75" dontmuffle="True" />
+        <sound file="%ModDir:2518816103%/Characters/Clowns/Clownwanderer/clowninterference.ogg" selectionmode="Random" volume="1.75" dontmuffle="True" />
+        <sound file="%ModDir:2518816103%/Characters/Clowns/Clownwanderer/clowninterference2.ogg" volume="1.75" dontmuffle="True" />
+        <sound file="%ModDir:2518816103%/Characters/Clowns/Clownwanderer/risa.ogg" volume="1.75" dontmuffle="True" />
+        <sound file="%ModDir:2518816103%/Characters/Clowns/Clownwanderer/risa1.ogg" volume="1.75" dontmuffle="True" />
       </StatusEffect>
     </Effect>
   </Affliction>
@@ -982,9 +982,9 @@
         <Affliction identifier="cthulhuspook2" strength="5" probability="0.25" />
         <Affliction identifier="cthulhuspook3" strength="5" probability="0.25" />
         <Affliction identifier="cthulhuspook4" strength="5" probability="0.25" />
-        <sound file="%ModDir%/Audio/strangehorn.ogg" volume="2" dontmuffle="True" frequencymultiplier="0.75" selectionmode="random" />
-        <sound file="%ModDir%/Audio/strangehorn.ogg" volume="2" dontmuffle="True" frequencymultiplier="0.6" selectionmode="random" />
-        <sound file="%ModDir%/Audio/strangehorn.ogg" volume="2" dontmuffle="True" frequencymultiplier="1.1" selectionmode="random" />
+        <sound file="%ModDir:2518816103%/Sounds/strangehorn.ogg" volume="2" dontmuffle="True" frequencymultiplier="0.75" selectionmode="random" />
+        <sound file="%ModDir:2518816103%/Sounds/strangehorn.ogg" volume="2" dontmuffle="True" frequencymultiplier="0.6" selectionmode="random" />
+        <sound file="%ModDir:2518816103%/Sounds/strangehorn.ogg" volume="2" dontmuffle="True" frequencymultiplier="1.1" selectionmode="random" />
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
@@ -993,28 +993,28 @@
   <Affliction name="Spooked 1" identifier="cthulhuspook" description="Watch out.." type="cthulhuspookeffect" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <Effect minstrength="1" maxstrength="2" strengthchange="-1" minafflictionoverlayalphamultiplier="0.4" maxafflictionoverlayalphamultiplier="0.4"></Effect>
-    <AfflictionOverlay texture="%ModDir%/UI/insane1.png" sourcerect="0,0,1024,640" color="255,255,255,10" />
+    <AfflictionOverlay texture="%ModDir:2518816103%/UI/insane1.png" sourcerect="0,0,1024,640" color="255,255,255,10" />
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
   <Affliction name="Spooked 2" identifier="cthulhuspook2" description="Watch out.." type="cthulhuspookeffect" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <Effect minstrength="1" maxstrength="2" strengthchange="-1" minafflictionoverlayalphamultiplier="0.4" maxafflictionoverlayalphamultiplier="0.4"></Effect>
-    <AfflictionOverlay texture="%ModDir%/UI/insane2.png" sourcerect="0,0,1024,640" color="0,0,255,10" />
+    <AfflictionOverlay texture="%ModDir:2518816103%/UI/insane2.png" sourcerect="0,0,1024,640" color="0,0,255,10" />
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
   <Affliction name="Spooked 3" identifier="cthulhuspook3" description="Watch out.." type="cthulhuspookeffect" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <Effect minstrength="1" maxstrength="2" strengthchange="-1" minafflictionoverlayalphamultiplier="0.4" maxafflictionoverlayalphamultiplier="0.4"></Effect>
-    <AfflictionOverlay texture="%ModDir%/UI/insane3.png" sourcerect="0,0,1024,640" color="255,255,255,10" />
+    <AfflictionOverlay texture="%ModDir:2518816103%/UI/insane3.png" sourcerect="0,0,1024,640" color="255,255,255,10" />
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
   <Affliction name="Spooked 4" identifier="cthulhuspook4" description="Watch out.." type="cthulhuspookeffect" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.4"></Effect>
     <Effect minstrength="1" maxstrength="2" strengthchange="-1" minafflictionoverlayalphamultiplier="0.85" maxafflictionoverlayalphamultiplier="0.4"></Effect>
-    <AfflictionOverlay texture="%ModDir%/UI/insane4.png" sourcerect="0,0,1024,640" color="255,255,255,10" />
+    <AfflictionOverlay texture="%ModDir:2518816103%/UI/insane4.png" sourcerect="0,0,1024,640" color="255,255,255,10" />
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,127" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
@@ -1026,7 +1026,7 @@
       <StatusEffect target="Character" disabledeltatime="true">
         <Conditional ishuman="true" />
         <Conditional IsLocalPlayer="true" />
-        <Sound file="%ModDir%/Audio/Whispers.ogg" loop="true" range="5000" dontmuffle="true" />
+        <Sound file="%ModDir:2518816103%/Sounds/Whispers.ogg" loop="true" range="5000" dontmuffle="true" />
       </StatusEffect>
       <StatusEffect target="Character" targetlimb="Head" SpeedMultiplier="1.1" HealthMultiplier="1.5" setvalue="true">
         <Conditional speciesname="crawler" />
@@ -1135,8 +1135,8 @@
     <PeriodicEffect mininterval="10" maxinterval="20">
       <StatusEffect target="Character" comparison="And" checkconditionalalways="true">
         <Conditional IsLocalPlayer="True" />
-        <sound file="%ModDir%/Audio/insane3.ogg" volume="0.5" selectionmode="random" />
-        <sound file="%ModDir%/Audio/whispers2.ogg" volume="0.5" />
+        <sound file="%ModDir:2518816103%/Sounds/insane3.ogg" volume="0.5" selectionmode="random" />
+        <sound file="%ModDir:2518816103%/Sounds/whispers2.ogg" volume="0.5" />
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="386,386,124,124" color="150,26,26,255" origin="5,5" />
@@ -1161,7 +1161,7 @@
         <Affliction identifier="psychosis" strength="2" />
       </StatusEffect>
     </PeriodicEffect>
-    <icon texture="%ModDir%/UI/BTafflictionicons.png" sourcerect="256,0,128,128" color="23,93,14,255" origin="0,0" />
+    <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="256,0,128,128" color="23,93,14,255" origin="0,0" />
   </Affliction>
 
   <Override>
@@ -1302,7 +1302,7 @@
           <ParticleEmitter particle="gazerage" particlespersecond="20" scalemin="0.6" scalemax="1" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" copyentityangle="false" />
         </StatusEffect>
       </Effect>
-      <!-- <AfflictionOverlay texture="%ModDir%/Characters/Watcher/seeyou.png" sourcerect="0,0,1024,680" color="255,255,255,8" origin="0,0" /> -->
+      <!-- <AfflictionOverlay texture="%ModDir:2518816103%/Characters/Watcher/seeyou.png" sourcerect="0,0,1024,680" color="255,255,255,8" origin="0,0" /> -->
       <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
     </Affliction>
 
@@ -1742,7 +1742,7 @@
       </StatusEffect>
       <StatusEffect type="Always" target="Character" stackable="true" disabledeltatime="true">
         <Conditional Crawlielatched1="gt 0" />
-        <Sound file="%ModDir%/Characters/Huskcrawlie1/latchedloop.ogg" loop="true" range="500" selectionmode="Random" />
+        <Sound file="%ModDir:2518816103%/Characters/Huskcrawlie1/latchedloop.ogg" loop="true" range="500" selectionmode="Random" />
       </StatusEffect>
       <StatusEffect type="Always" target="Character" targetlimbs="Torso" stackable="false" delay="0.8" disabledeltatime="true">
         <Conditional Crawlielatched1="gt 0" />
@@ -1764,7 +1764,7 @@
       </StatusEffect>
       <StatusEffect type="Always" target="Character" stackable="true" disabledeltatime="true">
         <Conditional Crawlielatched2="gt 0" />
-        <Sound file="%ModDir%/Characters/Huskcrawlie1/latchedloop.ogg" loop="true" range="500" selectionmode="Random" />
+        <Sound file="%ModDir:2518816103%/Characters/Huskcrawlie1/latchedloop.ogg" loop="true" range="500" selectionmode="Random" />
       </StatusEffect>
       <StatusEffect type="Always" target="Character" targetlimbs="Torso" stackable="false" delay="0.8" disabledeltatime="true">
         <Conditional Crawlielatched2="gt 0" />
@@ -1816,7 +1816,7 @@
   </Affliction>
 
   <AfflictionHusk name="Crook Cape" identifier="crookcapeBTC" type="crookcape" healableinmedicalclinic="false" limbspecific="false" targets="human" huskedspeciesname="crookcape" indicatorlimb="Torso" showiconthreshold="0.5" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="0.5" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="100" hideiconafterdelay="true" isbuff="true" iconcolors="125,175,130,255;125,175,130,255;125,175,130,255">
-    <Icon texture="%ModDir%/Characters/Crook/crooktalenticon.png" sourcerect="0,0,128,128" color="125,175,130,255" />
+    <Icon texture="%ModDir:2518816103%/Characters/Crook/crooktalenticon.png" sourcerect="0,0,128,128" color="125,175,130,255" />
     <Effect minstrength="0" maxstrength="100" strengthchange="-0.015" />
   </AfflictionHusk>
   <Affliction name="biowormburndamage" identifier="biowormburndamage" type="biowormburndamage" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
@@ -1845,7 +1845,7 @@
     <Effect minstrength="0" maxstrength="100" strengthchange="0" convulseamount="3">
       <StatusEffect type="Always" target="Character" delay="1" stackable="false" checkconditionalalways="true" forcesounds="true" forcePlaySounds="true" comparison="AND">
         <Conditional fractaluseflash="gt 0" />
-        <sound file="%ModDir%/Characters/Fractalherald/fractalstun.ogg" range="3000" frequencymultiplier="0.8,1.0" dontmuffle="true" />
+        <sound file="%ModDir:2518816103%/Characters/Fractalherald/fractalstun.ogg" range="3000" frequencymultiplier="0.8,1.0" dontmuffle="true" />
         <!-- Effect without distance fall off to ensure some stun and flash effect -->
         <Explosion range="1550" force="0" smoke="false" sparks="false" flames="false" debris="false" underwaterbubble="false" playtinnitus="true" DistanceFalloff="false" flash="true" screenColor="255,255,255,255" screenColorDuration="10">
           <Affliction identifier="electricshock" strength="8" />
@@ -1960,7 +1960,7 @@
       <StatusEffect target="Character" ObstructVisionAmount="0.5" />
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0" />
-    <AfflictionOverlay texture="%ModDir%/Characters/Peanutslug/GooOverlay1.png" />
+    <AfflictionOverlay texture="%ModDir:2518816103%/Characters/Peanutslug/GooOverlay1.png" />
   </Affliction>
 
   <Affliction name="psilotoadvore" identifier="psilotoadvore" type="psilotoadvore" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
@@ -1973,7 +1973,7 @@
       <StatusEffect forcePlaySounds="true" target="Character" interval="0.1" checkconditionalalways="true" ConditionalComparison="And">
         <Conditional SelectedBy="neq null" />
         <Conditional psilotoadvore="gte 95" />
-        <sound file="%ModDir%/Sounds/bodyexplode.ogg" volume="0.8" range="1500" frequencymultiplier="0.8" />
+        <sound file="%ModDir:2518816103%/Sounds/bodyexplode.ogg" volume="0.8" range="1500" frequencymultiplier="0.8" />
         <ParticleEmitter particle="heavygib" particleamount="20" velocitymin="60" velocitymax="90" anglemin="0" anglemax="360" scalemin="1" scalemax="1.2" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
         <ParticleEmitter particle="blackgib" particleamount="50" velocitymin="60" velocitymax="150" anglemin="0" anglemax="360" scalemin="1" scalemax="1.6" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
         <DropContainedItems />
@@ -1985,19 +1985,19 @@
       </StatusEffect>
       <StatusEffect target="Character" comparison="and">
         <Conditional psilotoadvore="gte 1" />
-        <sound file="%ModDir%/Characters/Crook/eatloop.ogg" volume="0.5" range="1000" frequencymultiplier="0.9" loop="true" />
+        <sound file="%ModDir:2518816103%/Characters/Crook/eatloop.ogg" volume="0.5" range="1000" frequencymultiplier="0.9" loop="true" />
       </StatusEffect>
       <StatusEffect target="Character" comparison="and">
         <Conditional psilotoadvore="gte 45" />
-        <sound file="%ModDir%/Characters/Crook/eatloop.ogg" volume="0.7" range="1100" frequencymultiplier="1.1" loop="true" />
+        <sound file="%ModDir:2518816103%/Characters/Crook/eatloop.ogg" volume="0.7" range="1100" frequencymultiplier="1.1" loop="true" />
       </StatusEffect>
       <StatusEffect target="Character" comparison="and">
         <Conditional psilotoadvore="gte 85" />
-        <sound file="%ModDir%/Characters/Crook/eatloop.ogg" volume="1" range="1300" frequencymultiplier="1.5" loop="true" />
+        <sound file="%ModDir:2518816103%/Characters/Crook/eatloop.ogg" volume="1" range="1300" frequencymultiplier="1.5" loop="true" />
       </StatusEffect>
       <StatusEffect target="Character" comparison="and">
         <Conditional psilotoadvore="gte 85" />
-        <sound file="%ModDir%/Characters/Crook/eatloop.ogg" volume="1" range="1600" frequencymultiplier="0.6" loop="true" />
+        <sound file="%ModDir:2518816103%/Characters/Crook/eatloop.ogg" volume="1" range="1600" frequencymultiplier="0.6" loop="true" />
       </StatusEffect>
     </Effect>
   </Affliction>
