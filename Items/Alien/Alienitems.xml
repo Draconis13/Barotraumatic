@@ -2774,8 +2774,31 @@
     </TriggerComponent>
   </Item>
 
-  
-  
+  <!-- weaker acid mist for brainmoss -->
+  <Item name="mossacidemitter" identifier="mossacidemitter" Scale="1" tags="" sonarsize="0" impacttolerance="0.001" health="8" IsDangerous="true" noninteractable="true" hideinmenus="true">
+    <Body radius="200" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <!-- smoother particles this way -->
+      <StatusEffect type="OnSpawn" target="This" duration="7" oneshot="true" >
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="10" distancemin="30" distancemax="150" ScaleMin="1.5" ScaleMax="2" anglemin="0" anglemax="360" ColorMultiplier="255,255,255,150" drawontop="true"/>
+      </StatusEffect>
+      <!-- reduce condition to remove the emitter after 8 seconds -->
+      <StatusEffect type="Always" target="This" interval="0.2" condition="-0.2" disabledeltatime="true">
+        <Explosion range="300" structuredamage="20" itemdamage="10" smoke="true" flames="false" force="0" sparks="false" shockwave="false" underwaterbubble="false" camerashake="0" flash="false" playtinnitus="false" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <TriggerComponent triggeredby="Human" force="0" radius="200" allowingameediting="false">
+      <StatusEffect type="OnActive" target="Character" delay="0.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="acidburn" strength="0.3" />
+      </StatusEffect>
+    </TriggerComponent>
+    <LightComponent lightcolor="100,120,80,50" Range="220" powerconsumption="0" IsOn="true" Offset="0,0" PulseFrequency="0.2" PulseAmount="0.2" />
+  </Item>
+    
   
   
   

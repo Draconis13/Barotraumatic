@@ -1,39 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Character SpeciesName="Brainmoss2" SpeciesTranslationOverride="" DisplayName="" Group="thalamus" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="1" UsePathFinding="True" PathFinderPriority="0.4999999" HideInSonar="True" HideInThermalGoggles="False" SonarDisruption="0.5" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+<Character SpeciesName="Brainmoss2" SpeciesTranslationOverride="" DisplayName="" Group="thalamus" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="1" UsePathFinding="True" PathFinderPriority="0.5" HideInSonar="True" HideInThermalGoggles="False" SonarDisruption="0.5" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
   <ragdolls folder="default" />
   <animations folder="default" />
-  <health Vitality="150" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0.25" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False" Immunities="radiationsickness,paralysis,sufforinpoisoning" />
-  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
-    <Item Identifier="k_em_thalamusthorn" /> 
+  <health Vitality="200" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.5" BurnReduction="0.25" ConstantHealthRegeneration="0.25" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False" Immunities="radiationsickness,paralysis,acidburn" />
+  <Inventory Slots="Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
     <Item Identifier="k_em_thalamusthorn" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
     <Item Identifier="k_em_thalamusstump" />
   </Inventory>
-    <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2"> 
-    <Item Identifier="k_em_thalamusthorn" /> 
-    <Item Identifier="k_em_thalamusthorn" />
-    <Item Identifier="sufforin" />
-    <Item Identifier="k_em_thalamusstump" />
+  <Inventory Slots="Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2"> 
+    <Item Identifier="mucusball" />
   </Inventory>
-    <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="1" probability="1" />
-    <SpawnItem identifiers="k_em_thalamusstump" spawnposition="ThisInventory" count="1" probability="0.1" />
-    <SpawnItem identifiers="sufforin" spawnposition="ThisInventory" count="1" probability="0.05" />
+  <StatusEffect type="OnDeconstructed" target="Character">
+    <SpawnItem identifiers="k_em_thalamusstump" spawnposition="ThisInventory" count="1" probability="0.2" />
+    <SpawnItem identifiers="sulphuricacid" spawnposition="ThisInventory" count="1" probability="0.2" />
   </StatusEffect>
-  <StatusEffect type="Always" delay="1" stackable="false" target="This" targetlimb="Head">
+  <StatusEffect type="Always" delay="5" stackable="false" target="This" targetlimb="Head">
     <Conditional IsDead="false" />
-    <Explosion range="500" structuredamage="0" force="0" smoke="false" flames="false" sparks="false" shockwave="false" underwaterbubble="false" severlimbsprobability="0.0" camerashake="0" camerashakerange="550" flashrange="550" flashduration="1.0">
-      <Affliction identifier="radiationsickness" strength="4" />
-      <Affliction identifier="burn" strength="0.4" />
-    </Explosion>
     <ParticleEmitter particle="bubbles" particleamount="10" scalemin="1" scalemax="1" velocitymin="10" velocitymax="50" anglemin="0" anglemax="360" />
-    <sound file="%ModDir:2518816103%/Characters/Brainmoss1/mossrad.ogg" range="650" volume="1" />
   </StatusEffect>
-  <sound gender="None" File="%ModDir:2518816103%/Characters/Brainmoss1/moss1.ogg" State="Idle" Range="5000" Volume="0.6" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/Brainmoss1/moss2.ogg" State="Idle" Range="5000" Volume="0.6" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/Brainmoss1/moss3.ogg" State="Idle" Range="5000" Volume="0.6" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/Brainmoss1/moss4.ogg" State="Idle" Range="5000" Volume="0.6" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/Brainmoss1/moss5.ogg" State="Idle" Range="5000" Volume="0.6" Tags="" />
-  <ai CombatStrength="250" Sight="1" Hearing="10" MaxPerceptionDistance="-1" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="50" AttackWhenProvoked="False" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target">
+  <StatusEffect type="OnDeath" target="This" targetlimb="Head">
+    <ParticleEmitter particle="bubbles" particleamount="10" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="waterblood" drawontop="True" particleamount="2" scalemin="2" scalemax="4" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" colormultiplier="255,255,255,150"/>
+    <ParticleEmitter particle="organeruption" particleamount="10" scalemin="0.5" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" colormultiplier="70,80,50,255" drawontop="true" lifetimemultiplier="2"/>
+    <ParticleEmitter particle="organeruption" particleamount="5" scalemin="0.5" scalemax="1" velocitymin="30" velocitymax="80" anglemin="0" anglemax="360" colormultiplier="150,50,50,255" drawontop="true" lifetimemultiplier="2"/>
+    <ParticleEmitter particle="bloodtrail" particleamount="1" scalemin="2" scalemax="2" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" drawontop="true" />
+    <ParticleEmitter particle="Shockwave" particleamount="1" scalemin="2" scalemax="2" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" drawontop="true" />
+    <SpawnItem identifier="mossacidemitter" spawnposition="This" count="1" />
+  </StatusEffect>
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Brainmoss1/moss1.ogg" State="Idle" Range="1500" Volume="0.8" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Brainmoss1/moss2.ogg" State="Idle" Range="1500" Volume="0.8" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Brainmoss1/moss3.ogg" State="Idle" Range="1500" Volume="0.8" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Brainmoss1/moss4.ogg" State="Idle" Range="1500" Volume="0.8" Tags="" />
+  <sound gender="None" File="%ModDir:2518816103%/Characters/Brainmoss1/moss5.ogg" State="Idle" Range="1500" Volume="0.8" Tags="" />
+  <sound gender="None" File="Content/Map/Thalamus/Sounds/CARRIER_organs6.ogg" State="Die" Range="2000" Volume="3" Tags="" />
+  <sound gender="None" File="Content/Map/Thalamus/Sounds/CARRIER_organs7.ogg" State="Die" Range="2000" Volume="3" Tags="" />
+  <sound gender="None" File="Content/Map/Thalamus/Sounds/CARRIER_organs8.ogg" State="Die" Range="2000" Volume="3" Tags="" />
+  <sound gender="None" File="Content/Map/Thalamus/Sounds/CARRIER_organs9.ogg" State="Die" Range="2000" Volume="3" Tags="" />
+  <ai CombatStrength="250" Sight="2" Hearing="5" MaxPerceptionDistance="-1" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="30" AttackWhenProvoked="False" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target">
     <target ignorewhileinside="False" ignorewhileoutside="False" Tag="decoy" State="Attack" Priority="600" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target ignorewhileinside="False" ignorewhileoutside="False" Tag="stronger" State="PassiveAggressive" Priority="200" ReactDistance="2000" AttackDistance="500" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target ignorewhileinside="False" ignorewhileoutside="False" Tag="provocative" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
