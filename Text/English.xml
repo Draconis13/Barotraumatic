@@ -239,17 +239,17 @@
   <character.charybdisre>Baby Charybdis</character.Charybdisre>
   <character.charybdissavage>Savage Leatherback</character.Charybdissavage>
   <character.chelicerate>Chelicerate</character.Chelicerate>
-  <character.clownbomber>Lost Clown</character.Clownbomber>
-  <character.clownbomberdriver>Clownbomberdriver</character.Clownbomberdriver>
+  <!-- <character.clownbomber>Lost Clown</character.Clownbomber> -->
+  <!-- <character.clownbomberdriver>Clownbomberdriver</character.Clownbomberdriver> -->
   <character.clownbox>Metal Crate</character.Clownbox>
-  <character.clowndeathmask>Clowndeathmask</character.Clowndeathmask>
+  <!-- <character.clowndeathmask>Clowndeathmask</character.Clowndeathmask> -->
   <character.clownhead>Clownhead</character.Clownhead>
   <character.clownhead_spawn>Spawn of Clownhead</character.Clownhead_spawn>
-  <character.clownhomie>Lost Clown</character.Clownhomie>
-  <character.clownsawcrazy>Meat Grinder</character.ClownSawcrazy>
-  <character.clownwanderer>Lost Clown</character.ClownWanderer>
-  <character.clownwandererelite>Lost Clown</character.ClownWandererElite>
-  <character.clownwrecker>Clown Wrecker</character.Clownwrecker>
+  <!-- <character.clownhomie>Lost Clown</character.Clownhomie> -->
+  <!-- <character.clownsawcrazy>Meat Grinder</character.ClownSawcrazy> -->
+  <!-- <character.clownwanderer>Lost Clown</character.ClownWanderer> -->
+  <!-- <character.clownwandererelite>Lost Clown</character.ClownWandererElite> -->
+  <!-- <character.clownwrecker>Clown Wrecker</character.Clownwrecker> -->
   <character.cnidae>Cnidae</character.Cnidae>
   <character.cnidaeprime>Prime Cnidae</character.Cnidaeprime>
   <character.crawler_large2>Crawler</character.Crawler_Large2>
@@ -328,8 +328,8 @@
   <character.hullfish>Hull Fish</character.Hullfish>
   <character.humancrookcape>Humancrookcape</character.Humancrookcape>
   <character.humanhuskcrawlielatched>Humanhuskcrawlielatched</character.Humanhuskcrawlielatched>
-  <character.humanimmortal>HumanImmortal</character.HumanImmortal>
-  <character.humanimmortalnovice>HumanImmortalnovice</character.HumanImmortalnovice>
+  <!-- <character.humanimmortal>HumanImmortal</character.HumanImmortal> -->
+  <!-- <character.humanimmortalnovice>HumanImmortalnovice</character.HumanImmortalnovice> -->
   <character.husk_abyss>Husk Abyss</character.Husk_Abyss>
   <character.husk_centipede>Husk Centipede</character.Husk_centipede>
   <character.husk_chimera_artifact>Husk</character.Husk_chimera_artifact>
@@ -368,9 +368,9 @@
   <character.icewhale>Glacial Praywhale</character.IceWhale>
   <character.invisiblecthulhuspawner>Invisiblecthulhuspawner</character.Invisiblecthulhuspawner>
   <character.invisiblecthulhuspawner2>Invisiblecthulhuspawner2</character.Invisiblecthulhuspawner2>
-  <character.jovianbomber>Pirate</character.Jovianbomber>
-  <character.joviandiver>Pirate</character.Joviandiver>
-  <character.jovianwrecker>Pirate Salvager</character.Jovianwrecker>
+  <!-- <character.jovianbomber>Pirate</character.Jovianbomber> -->
+  <!-- <character.joviandiver>Pirate</character.Joviandiver> -->
+  <!-- <character.jovianwrecker>Pirate Salvager</character.Jovianwrecker> -->
   <character.latcher_hatchling>Latcher Hatchling</character.Latcher_hatchling>
   <character.latcherabyss>Latcher</character.Latcherabyss>
   <character.lavathresher>Thermal Thresher</character.Lavathresher>
