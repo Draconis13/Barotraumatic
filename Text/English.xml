@@ -234,7 +234,6 @@
   <character.carrierflakrandom>Thalamus Mobile Flakcannon</character.Carrierflakrandom>
   <character.carrierleviathan>Carrier Leviathan</character.Carrierleviathan>
   <character.caver>Caver</character.Caver>
-  <character.charybdis>Charybdis</character.Charybdis>
   <character.charybdisadol>Young Charybdis</character.Charybdisadol>
   <character.charybdisold>Mother Leatherback</character.Charybdisold>
   <character.charybdisre>Baby Charybdis</character.Charybdisre>
@@ -253,12 +252,8 @@
   <character.clownwrecker>Clown Wrecker</character.Clownwrecker>
   <character.cnidae>Cnidae</character.Cnidae>
   <character.cnidaeprime>Prime Cnidae</character.Cnidaeprime>
-  <character.coelanth>Coelanth</character.Coelanth>
-  <character.crawler>Crawler</character.Crawler>
-  <character.crawler_hatchling>Crawler</character.Crawler_hatchling>
   <character.crawler_large2>Crawler</character.Crawler_Large2>
   <character.crawleralphamale>Crawler Alpha Male</character.Crawleralphamale>
-  <character.crawlerbroodmother>Crawler Broodmother</character.Crawlerbroodmother>
   <character.crawlerbroodmotherold>Galvanic Crawler Broodmother</character.Crawlerbroodmotherold>
   <character.crawlercrablet>Crawler crablet</character.Crawlercrablet>
   <character.crawlermetamorph>Crawler Metamorph</character.Crawlermetamorph>
@@ -270,19 +265,16 @@
   <character.crookbtcinside>Crook</character.CrookBTCinside>
   <character.crookbtcoutside>Crook</character.CrookBTCoutside>
   <character.crookbtcsatisfied>Crook</character.CrookBTCsatisfied>
-  <character.cthulhu>Cthulhu</character.Cthulhu>
   <character.cthulhuadolescent>Cthulhu Progeny</character.Cthulhuadolescent>
   <character.cyclops>Cyclops</character.Cyclops>
   <character.deadnoughthomingshell>Homing Torpedo</character.DeadnoughtHomingshell>
   <character.deathgill>Deathgill</character.Deathgill>
   <character.deepseaclownnew>Deep Sea Clown</character.Deepseaclownnew>
   <character.deepseaclownnewsaw>The Deep Sea Clown</character.DeepseaclownnewSaw>
-  <character.defensebot>Defense Bot</character.Defensebot>
   <character.defensebothostile>Hostile Defense Bot</character.Defensebothostile>
   <character.defensebothostilelaser>Hostile Defense Bot</character.Defensebothostilelaser>
   <character.endurance>Fractal Sentry</character.Endurance>
   <character.endwhale>End Whale</character.Endwhale>
-  <character.endworm>Endworm</character.Endworm>
   <character.endworm_young>Endworm Young</character.Endworm_young>
   <character.endwormcoral>The Glacier</character.Endwormcoral>
   <character.endwormre>Europan Polychaetes</character.Endwormre>
@@ -295,8 +287,6 @@
   <character.fractaldestroyer>Fractal Destroyer</character.Fractaldestroyer>
   <character.fractalenforcer>Fractal Enforcer</character.FractalEnforcer>
   <character.fractalenforcer2>Fractal Enforcer</character.FractalEnforcer2>
-  <character.fractalguardian>Fractal Guardian</character.Fractalguardian>
-  <character.fractalguardian2>Fractal Guardian</character.Fractalguardian2>
   <character.fractalguardianrepairbot>Fractal Repair Bot</character.Fractalguardianrepairbot>
   <character.fractalguardianwanderer>Wandering Fractal Guardian</character.Fractalguardianwanderer>
   <character.fractalherald>Fractal Herald</character.Fractalherald>
@@ -314,11 +304,9 @@
   <character.goofyfish>Goofy Fish</character.GoofyFish>
   <character.grayeel>Gray Eel</character.grayeel>
   <character.guardianattackbot>Guardian Attack Bot</character.Guardianattackbot>
-  <character.guardianrepairbot>Guardian Repair Bot</character.Guardianrepairbot>
   <character.guppy>Guppy</character.Guppy>
   <character.hallucination1>Creepy Crawler</character.Hallucination1>
   <character.hallucination2>Murder Raptor</character.Hallucination2>
-  <character.hammerhead>Hammerhead</character.Hammerhead>
   <character.hammerhead_breacher>Hammerhead_breacher</character.Hammerhead_breacher>
   <character.hammerhead_digermnamed>Hammerhead Ancient</character.Hammerhead_DigermNamed>
   <character.hammerhead_hard>Hammerhead Veteran</character.Hammerhead_hard>
@@ -327,8 +315,6 @@
   <character.hammerhead_swordfish>Swordfish</character.Hammerhead_swordfish>
   <character.hammerhead_swordfishexplode>Unstable Swordfish</character.Hammerhead_swordfishexplode>
   <character.hammerhead_young>Hammerhead Young</character.Hammerhead_young>
-  <character.hammerheadgold>Golden Hammerhead</character.Hammerheadgold>
-  <character.hammerheadmatriarch>Hammerhead Matriarch</character.Hammerheadmatriarch>
   <character.hammerheadmatriarchconcept>Hammerhead Broodmother</character.Hammerheadmatriarchconcept>
   <character.hammerheadmauler>Hammerhead Mauler</character.Hammerheadmauler>
   <character.harpoonwhale>Harpoon Whale</character.Harpoonwhale>
@@ -349,7 +335,6 @@
   <character.husk_chimera_artifact>Husk</character.Husk_chimera_artifact>
   <character.husk_chimera_elder>Husk</character.Husk_chimera_elder>
   <character.husk_chimera_unarmoured>Husk</character.Husk_chimera_unarmoured>
-  <character.husk_exosuit>Husk</character.Husk_exosuit>
   <character.husk_oldsuit>Husk Ancient</character.Husk_Oldsuit>
   <character.husk_prowlerhulk>Husk Rampager</character.Husk_prowlerhulk>
   <character.husk_pucs>Husk PUCS</character.Husk_PUCS>
@@ -365,7 +350,6 @@
   <character.husk_spawn5>Husk Spawn</character.Husk_spawn5>
   <character.husk_spawn6>Husk Spawn</character.Husk_spawn6>
   <character.huskchimerabroodmother>Husk Chimera Broodmother</character.Huskchimerabroodmother>
-  <character.huskcontainer>Huskified Storage Container</character.Huskcontainer>
   <character.huskcontainerhostile>Husk Container</character.Huskcontainerhostile>
   <character.huskcrawlie1>Husked Carcass</character.Huskcrawlie1>
   <character.huskcrawlie1nohead>Husked Carcass</character.Huskcrawlie1nohead>
@@ -387,7 +371,6 @@
   <character.jovianbomber>Pirate</character.Jovianbomber>
   <character.joviandiver>Pirate</character.Joviandiver>
   <character.jovianwrecker>Pirate Salvager</character.Jovianwrecker>
-  <character.latcher>Latcher</character.Latcher>
   <character.latcher_hatchling>Latcher Hatchling</character.Latcher_hatchling>
   <character.latcherabyss>Latcher</character.Latcherabyss>
   <character.lavathresher>Thermal Thresher</character.Lavathresher>
@@ -398,7 +381,6 @@
   <character.magmalarva>Pyrophoric Larva</character.Magmalarva>
   <character.magmaworm>Magma Worm</character.Magmaworm>
   <character.manraptor>Spliced</character.Manraptor>
-  <character.mantis>Mantis</character.Mantis>
   <character.mantisnew>Mantis</character.Mantisnew>
   <character.mantispink>Pink Mantis</character.Mantispink>
   <character.mantispinkpet>Pink Mantis Pet</character.Mantispinkpet>
@@ -415,10 +397,7 @@
   <character.minesmallmission>Mine</character.Minesmallmission>
   <character.minesmallmissiondetached>Mine</character.Minesmallmissiondetached>
   <character.minoga>Minoga</character.Minoga>
-  <character.moloch>Moloch</character.Moloch>
   <character.moloch_nuclear>Injured Moloch</character.Moloch_nuclear>
-  <character.molochbaby>Moloch Pupa</character.Molochbaby>
-  <character.molochblack>Black Moloch</character.Molochblack>
   <character.molochblackrandom>Molochblackrandom</character.Molochblackrandom>
   <character.molochgreen>Abyssal Moloch</character.Molochgreen>
   <character.molochold>Moloch Matriarch</character.Molochold>
@@ -438,11 +417,7 @@
   <character.molochvariantblack6>Black Moloch</character.Molochvariantblack6>
   <character.mothercrawler>Mother Crawler</character.Mothercrawler>
   <character.muddragon>Mud Dragon</character.Muddragon>
-  <character.mudraptor>Mudraptor</character.Mudraptor>
-  <character.mudraptor_hatchling>Mudraptor</character.Mudraptor_Hatchling>
   <character.mudraptor_mother>Mudraptor Mother</character.Mudraptor_mother>
-  <character.mudraptor_pet>Petraptor</character.Mudraptor_pet>
-  <character.mudraptor_unarmored>Mudraptor</character.Mudraptor_unarmored>
   <character.mudraptor_veteran>Mudraptor veteran</character.Mudraptor_veteran>
   <character.mudraptor_veteran2>Mudraptor veteran</character.Mudraptor_veteran2>
   <character.mudraptor_veteranold>Mudraptor Veteran</character.Mudraptor_veteranold>
@@ -452,9 +427,7 @@
   <character.nightraptor>Night Raptor</character.Nightraptor>
   <character.nuclearmine>Nuclear Mine</character.NuclearMine>
   <character.observer>Dybbuk</character.Observer>
-  <character.orangeboy>Orange Boy</character.Orangeboy>
   <character.paralyticshark>Paralytic Shark</character.Paralyticshark>
-  <character.peanut>Peanut</character.Peanut>
   <character.peanutslug>Peanought</character.Peanutslug>
   <character.peanutslug2>Dreadnut</character.Peanutslug2>
   <character.plantskeleton>Dessicated Husk</character.Plantskeleton>
@@ -463,7 +436,6 @@
   <character.praywhalebaby>Baby Praywhale</character.Praywhalebaby>
   <character.praywhalemineral>Crystaline Praywhale</character.Praywhalemineral>
   <character.psilosaur>Psilosaur</character.Psilosaur>
-  <character.psilotoad>Psilotoad</character.Psilotoad>
   <character.psilotoadadult>Psilotoadadult</character.Psilotoadadult>
   <character.psilotoadadultpet>Psilotoadadultpet</character.Psilotoadadultpet>
   <character.psilotoadmonster>Psiloturtle</character.Psilotoadmonster>
@@ -485,11 +457,8 @@
   <character.shrimpbrut_kse>Shrimp Spawn</character.Shrimpbrut_kse>
   <character.silverhammerhead>Silver Hammerhead</character.Silverhammerhead>
   <character.skrimsl>Skrimsl</character.Skrimsl>
-  <character.spineling>Spineling</character.Spineling>
   <character.spineling_electric2>Electric Spineling</character.Spineling_Electric2>
-  <character.spineling_giant>Giant Spineling</character.Spineling_giant>
   <character.spineling_hard>Spineling</character.Spineling_hard>
-  <character.spineling_morbusine>Viperling</character.Spineling_morbusine>
   <character.spineyfish>Saberback</character.Spineyfish>
   <character.stalker>Stalker</character.Stalker>
   <character.stonewanderercrystal>Crystal Wanderer</character.Stonewanderercrystal>
@@ -508,7 +477,6 @@
   <character.thrasher>Gnasher</character.Thrasher>
   <character.thresherking>Thresher King</character.Thresherking>
   <character.tigersharkthresher>Barracuda</character.TigerSharkThresher>
-  <character.tigerthresher>Tiger Thresher</character.Tigerthresher>
   <character.trichordate>Trichordate</character.Trichordate>
   <character.trichordate_random>Trichordate_random</character.Trichordate_random>
   <character.trichordatebloodsucker>Trichordate Bloodsucker</character.TrichordateBloodSucker>
@@ -531,7 +499,6 @@
   <character.viperling_giant>Giant viperling</character.Viperling_giant>
   <character.voidleviathan>Void Leviathan</character.Voidleviathan>
   <character.voidstalker>Void Stalker</character.Voidstalker>
-  <character.watcher>Watcher</character.Watcher>
   <character.watcherelite>Sentinal Watcher</character.Watcherelite>
   <character.watcherling>Watcherling</character.Watcherling>
   <character.watcherold>Watcher</character.Watcherold>
