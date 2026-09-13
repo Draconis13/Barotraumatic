@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-  <Character speciesname="Molochrandom" humanoid="False" group="moloch" SpeciesTranslationOverride="" husk="False" needsair="False" canspeak="False" noise="100" blooddecal="blackblood" bleedparticlewater="blackwaterblood" disabledistance="30000" caneat="False">
+  <Character speciesname="Molochrandom" humanoid="False" group="moloch" SpeciesTranslationOverride="moloch" husk="False" needsair="False" canspeak="False" noise="100" blooddecal="blackblood" bleedparticlewater="blackwaterblood" disabledistance="30000" caneat="False">
     <ragdolls folder="default" />
     <animations folder="default" />
     <damageemitter particle="blackgib" drawontop="True" particleamount="10" velocitymin="200" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.3" scalemax="0.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
