@@ -139,10 +139,6 @@
   <Character file="%ModDir%/Characters/Minesmall/Minesmall.xml" />
   <Character file="%ModDir%/Characters/Minesmalldetached/Minesmalldetached.xml" />
   <Character file="%ModDir%/Characters/Minedetached/Minedetached.xml" />
-  <Character file="%ModDir%/Characters/Variants/Minemission/Minemission.xml" />
-  <Character file="%ModDir%/Characters/Variants/Minesmallmission/Minesmallmission.xml" />
-  <Character file="%ModDir%/Characters/Variants/Minesmallmissiondetached/Minesmallmissiondetached.xml" />
-  <Character file="%ModDir%/Characters/Variants/Minedetachedmission/Minedetachedmission.xml" />
   <Character file="%ModDir%/Characters/GrayEel/GrayEel.xml" />
   <Character file="%ModDir%/Characters/GoofyFish/GoofyFish.xml" />
   <Character file="%ModDir%/Characters/Glowfish/Glowfish.xml" />
