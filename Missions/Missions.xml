@@ -472,25 +472,25 @@
     <message header="Targets terminated" text="The Hammerheads are dead. Navigate the submarine out of the cavern to claim the reward." />
   </MonsterMission>
   <MonsterMission successmessage="The mines have successfully been destroyed." sonarlabel="Mine Signal" reward="1250" maxsonarmarkerdistance="18000" commonness="35" difficulty="1" description="Some naval mines that were placed between the path from [location1] and [location2] have now been thrown off from their position and now dangerously roam the path. The administrators are offering [reward] to anyone who gets rid of these naval mines to allow commercial flights to enter the path safely again." type="Monster" tags="killmonster,killmonster_set1" identifier="demining1" name="Demining Operations">
-    <monster character="Minemission" min="2" max="3" scatter="3000" />
-    <monster character="Minesmallmission" min="1" max="3" scatter="3000" />
-    <monster character="Minedetachedmission" min="2" max="3" scatter="3000" />
+    <monster character="Mine" min="2" max="3" scatter="3000" />
+    <monster character="Minesmall" min="1" max="3" scatter="3000" />
+    <monster character="Minedetached" min="2" max="3" scatter="3000" />
     <Reputation identifier="location" amount="1" />
     <Icon color="105,105,105" sourcerect="4,263,243,244" texture="Content/UI/MissionIcons.png" />
     <LocationType from="AnyOutpost" to="Any" />
     <message text="The mines that threatened the path have now been cleared and the path is now safe for travel again. Navigate the submarine out of the cavern to claim the reward." header="Target terminated" />
   </MonsterMission>
   <MonsterMission successmessage="The mines have successfully been destroyed." sonarlabel="Mine Signal" reward="1775" maxsonarmarkerdistance="18000" commonness="35" difficulty="1" description="Some naval mines that were placed between the path from [location1] and [location2] have now been thrown off from their position and now dangerously roam the path. The administrators are offering [reward] to anyone who gets rid of these naval mines to allow commercial flights to enter the path safely again." type="Monster" tags="killmonster,killmonster_set2" identifier="demining2" name="Demining Operations">
-    <monster character="Minemission" min="3" max="4" scatter="3000" />
-    <monster character="Minesmallmission" min="2" max="3" scatter="4000" />
-    <monster character="Minedetachedmission" min="3" max="5" scatter="5000" />
+    <monster character="Mine" min="3" max="4" scatter="3000" />
+    <monster character="Minesmall" min="2" max="3" scatter="4000" />
+    <monster character="Minedetached" min="3" max="5" scatter="5000" />
     <Reputation identifier="location" amount="2" />
     <Icon color="105,105,105" sourcerect="4,263,243,244" texture="Content/UI/MissionIcons.png" />
     <LocationType from="AnyOutpost" to="Any" />
     <message text="The mines that threatened the path have now been cleared and the path is now safe for travel again. Navigate the submarine out of the cavern to claim the reward." header="Target terminated" />
   </MonsterMission>
   <MonsterMission successmessage="The mines have successfully been destroyed." sonarlabel="Mine Signals" reward="2150" maxsonarmarkerdistance="18000" commonness="40" difficulty="3" description="The authorities have detected a large formation of naval mines around [location1] and [location2]. These mines are unhooked and are purpously placed to destroy and disrupt a transportation route. The authorities are offering [reward] to anyone who could disarm or explode the mines in the area to resume commercial flights." type="Monster" tags="killmonster,killmonster_set3" identifier="massdemining" name="Clearing a Massive Minefield">
-    <monster character="Minedetachedmission" min="10" max="18" scatter="5000" />
+    <monster character="Minedetached" min="10" max="18" scatter="5000" />
     <Reputation identifier="location" amount="3" />
     <Icon color="105,105,105" sourcerect="4,263,243,244" texture="Content/UI/MissionIcons.png" />
     <LocationType from="AnyOutpost" to="Any" />
@@ -1404,7 +1404,7 @@
     <message header="Beacon reactivated" text="The beacon station is back online. Make sure it stays transmitting, and navigate the submarine to [location2] to claim your reward." />
   </BeaconMission>
   <BeaconMission name="Activate Beacon" identifier="beaconbtunder" textidentifier="beaconmission" tags="beacon,beaconnoreward" type="Beacon" description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." difficulty="2" commonness="200" reward="2500">
-    <monster character="minedetachedmission" min="3" max="5" />
+    <monster character="Minedetached" min="3" max="5" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55" />
     <message header="Beacon reactivated" text="The beacon station is back online. Make sure it stays transmitting, and navigate the submarine to [location2] to claim your reward." />
   </BeaconMission>
