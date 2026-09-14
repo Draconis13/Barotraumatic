@@ -17,7 +17,6 @@
       <Affliction identifier="explosiondamage" strength="150" dividebylimbcount="true" />
       <Affliction identifier="burn" strength="10" probability="0.2" dividebylimbcount="false" />
       <Affliction identifier="bleeding" strength="20" probability="0.05" dividebylimbcount="false" />
-      <Affliction identifier="radiationsickness" strength="25" />
     </Explosion>
     <ParticleEmitter particle="brownchunks" colormultiplier="120,100,100,255" particleamount="15" distancemin="100" distancemax="200" scalemin="1.5" scalemax="3" velocitymin="7500" velocitymax="10000" anglemin="0" anglemax="360" lifetimemultiplier="3" />
     <ParticleEmitter particle="sonarflorawave" particleamount="2" scalemin="30" scalemax="30" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" lifetimemultiplier="4" />
