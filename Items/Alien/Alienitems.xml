@@ -2799,6 +2799,32 @@
     <LightComponent lightcolor="100,120,80,50" Range="220" powerconsumption="0" IsOn="true" Offset="0,0" PulseFrequency="0.2" PulseAmount="0.2" />
   </Item>  
   
+  
+  <Item name="" identifier="watcherlingprojectile" category="Weapon" scale="0.5" sonarsize="1" hideinmenus="true" noninteractable="true">
+    <Sprite texture="Content/items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" color="0,0,0,255" />
+    <Body radius="15" density="10" gravityscale="0" />
+    <Holdable slots="RightHand+LeftHand" aimable="false" />
+    <Projectile characterusable="false" >
+      <StatusEffect type="OnActive" target="This" Condition="-50" >
+        <ParticleEmitter particle="psychosisfx" anglemin="0" anglemax="360" particlespersecond="25" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1" lifetimemultiplier="1" ColorMultiplier="255,255,255,150"/>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-100" stackable="false">
+        <ParticleEmitter particle="shockwaveinverted" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1" lifetimemultiplier="1" colormultiplier="255,50,30,255"/>
+        <Explosion range="150.0" structuredamage="0" itemdamage="0" force="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" playtinnitus="false" applyfireeffects="false" shockwave="false"
+           camerashake="120" camerashakerange="150"
+           flashcolor="30,10,5,180" flashrange="150" flashduration="5.0"
+           screencolor="255,50,30,150" screencolorrange="150" screencolorduration="5.0">
+          <Affliction identifier="watcherlingdebuff" strength="3" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" Condition="-50" delay="1" stackable="false" />
+    </Projectile>
+    <LightComponent range="50" castshadows="False" drawbehindsubs="False" ison="True" flicker="1" flickerspeed="0.5" lightcolor="255,50,30,50" isactive="True" minvoltage="0" powerconsumption="0" />
+  </Item>
+  
   <!-- /////////////////// UTILITIES ////////////////// -->
   <!-- These items have an effect when inside creature inventory -->
   <!-- /////////////////// UTILITIES ////////////////// -->

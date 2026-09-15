@@ -2028,27 +2028,60 @@
     </Effect>
   </Affliction>
 
-  <Affliction name="Young Watcher's Gaze" identifier="watchersgazelite" description="" type="gaze" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="100" affectmachines="false">
+  <!-- applies a limited amount of watchers gaze -->
+  <Affliction identifier="watchersgazelite" type="gaze" targets="human" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" karmachangeonapplied="0" maxstrength="100" affectmachines="false">
     <Description textidentifier="afflictiondescription.watchersgaze.self" target="Self" />
     <Description textidentifier="afflictiondescription.watchersgaze" target="OtherCharacter" />
-    <Effect minstrength="0" maxstrength="50" minscreendistort="0" maxscreendistort="0.25" minscreenblur="0" maxscreenblur="0.2" minradialdistort="0" maxradialdistort="0.25" strengthchange="-4"></Effect>
-    <Effect minstrength="50" maxstrength="60" minscreendistort="0.25" maxscreendistort="0.5" minscreenblur="0.2" maxscreenblur="0.5" minradialdistort="0.25" maxradialdistort="0.5" strengthchange="-5">
-      <StatusEffect target="Character">
+    <Effect minstrength="0" maxstrength="50" strengthchange="-5"></Effect>
+    <Effect minstrength="50" maxstrength="60" strengthchange="-5">
+      <StatusEffect target="Character" comparison="And">
         <Conditional ishuman="true" />
-        <Affliction identifier="nausea" strength="0.5" />
-        <Affliction identifier="psychosis" strength="0.5" />
+        <Conditional watchersgaze="lt 60" />
+        <Affliction identifier="watchersgaze" strength="5" />
       </StatusEffect>
     </Effect>
-    <Effect minstrength="60" maxstrength="100" minscreendistort="0.5" maxscreendistort="1" minscreenblur="0.5" maxscreenblur="1.0" minradialdistort="0.5" maxradialdistort="2" minchromaticaberration="0" maxchromaticaberration="20" strengthchange="-9">
-      <StatusEffect target="Character">
+    <Effect minstrength="60" maxstrength="100" strengthchange="-10">
+      <StatusEffect target="Character" comparison="And">
         <Conditional ishuman="true" />
-        <Affliction identifier="nausea" strength="1" />
-        <Affliction identifier="psychosis" strength="2.5" />
+        <Conditional watchersgaze="lt 60" />
+        <Affliction identifier="watchersgaze" strength="5" />
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
   </Affliction>
 
+
+  <!-- Watcherling shot affliction, does a bunch of debuffs and visual effects -->
+  <Affliction
+    identifier="watcherlingdebuff"
+    type="debuff"
+    targets="Human"
+    limbspecific="false"
+    showiconthreshold="1000" 
+    showicontoothersthreshold="1000" 
+    showinhealthscannerthreshold="1000"
+    maxstrength="3">
+    <Effect minstrength="0" maxstrength="3"
+      minscreendistort="0.0"
+      maxscreendistort="0.3"
+      minradialdistort="0.0"
+      maxradialdistort="0.3"
+      minscreenblur="0.0"
+      maxscreenblur="0.3"
+      minchromaticaberration="0.0"
+      maxchromaticaberration="0.3"
+      screeneffectfluctuationfrequency="1"
+      convulseamount="0.5"
+      minspeedmultiplier="1.0"
+      maxspeedmultiplier="0.25"
+      strengthchange="-1.0">
+      <StatValue stattype="RangedSpreadReduction" minvalue="0" maxvalue="-2" />
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="-2" />
+      <StatValue stattype="SoundRangeMultiplier" minvalue="0" maxvalue="1" />
+      <StatValue stattype="SightRangeMultiplier" minvalue="0" maxvalue="1" />
+      <StatValue stattype="FlowResistance" minvalue="0" maxvalue="-2" />
+    </Effect>
+  </Affliction>
   
   <Affliction
     identifier="huskkillerpoison"
@@ -2181,6 +2214,7 @@
     <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
     <AfflictionOverlayAnimated texture="%ModDir:2518816103%/Characters/ShadowWhale/orangeflash.png" sourcerect="0,0,1920,1080" origin="0.5,0.5" alpha="1.0" animspeed="12" columns="2" rows="2" />
   </Affliction>
+  
   
   
 </Afflictions>

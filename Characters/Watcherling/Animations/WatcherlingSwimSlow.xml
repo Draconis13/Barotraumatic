@@ -1,6 +1,6 @@
 ﻿<WatcherlingSwimSlow
   UseSineMovement="False"
-  Flip="True"
+  Flip="False"
   FlipCooldown="2"
   FlipDelay="1"
   Mirror="True"
@@ -12,7 +12,7 @@
   TailTorqueMultiplier="1"
   FootAngles="8: 0,7: 0.34906584"
   UpdateAnimationWhenNotMoving="False"
-  TailAngle="60"
+  TailAngle="90"
   SteerTorque="10"
   LegTorque="25"
   AnimationType="SwimSlow"
