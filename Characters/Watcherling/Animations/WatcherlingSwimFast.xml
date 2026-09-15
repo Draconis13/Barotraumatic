@@ -8,7 +8,7 @@
   WaveAmplitude="11.969412"
   WaveLength="55.261845"
   RotateTowardsMovement="True"
-  TailTorque="100"
+  TailTorque="10"
   TailTorqueMultiplier="1"
   FootAngles="8: 0,7: 0.5235988"
   UpdateAnimationWhenNotMoving="False"
