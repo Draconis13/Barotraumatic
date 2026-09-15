@@ -1,12 +1,12 @@
 ﻿<Character SpeciesName="Watcherling" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="Watcheroid" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="False" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="True" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="50" Visibility="30" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
   <ragdolls folder="default" />
   <animations folder="default" />
-  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage1.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
-  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage2.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
-  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage3.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
-  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage4.ogg" State="Damage" Range="10000" Volume="1" Tags="" />
-  <sound gender="None" dontmuffle="true" File="Content/Characters/Watcher/WATCHER_death1.ogg" State="Die" Range="10000" Volume="1" Tags="" />
-  <sound gender="None" dontmuffle="true" File="Content/Characters/Watcher/WATCHER_death2.ogg" State="Die" Range="10000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage1.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage2.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage3.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Watcher/WATCHER_takeDamage4.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound gender="None" dontmuffle="true" File="Content/Characters/Watcher/WATCHER_death1.ogg" State="Die" Range="5000" Volume="1" Tags="" />
+  <sound gender="None" dontmuffle="true" File="Content/Characters/Watcher/WATCHER_death2.ogg" State="Die" Range="5000" Volume="1" Tags="" />
   <damageemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.2" ScaleMax="0.4" VelocityMin="200" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <bloodemitter Particle="blood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="2" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <bloodemitter Particle="waterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="3" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="3" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
@@ -25,21 +25,6 @@
     <target Tag="weaker" State="Observe" Priority="10" ReactDistance="0" AttackDistance="600" Timer="20" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target Tag="stronger" State="Avoid" Priority="200" ReactDistance="2000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" />
   </ai>
-  <!-- <StatusEffect type="OnDeath" target="This" targetlimb="Head" delay="0.1" stackable="false">
-    <Explosion ignorecover="true" range="1000" force="0" flames="false" shockwave="false" structuredamage="0" sparks="false" flash="false" underwaterbubble="false" camerashake="50" playtinnitus="false" applyFireEffects="false" />
-    <SpawnItem identifier="acidemitter" spawnposition="This" count="4" spread="100" />
-    <Removecharacter />
-    <ParticleEmitter particle="organeruption" particleamount="50" scalemin="2" scalemax="2" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" />
-    <ParticleEmitter particle="whitegoosplash" particleamount="5" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="3" scalemax="3" />
-    <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion1.ogg" range="10000" volume="1" selectionmode="Random" dontmuffle="true" />
-    <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion2.ogg" range="10000" volume="1" selectionmode="Random" dontmuffle="true" />
-    <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion3.ogg" range="10000" volume="1" selectionmode="Random" dontmuffle="true" />
-  </StatusEffect> -->
-  <!-- <StatusEffect targettype="NearbyCharacters" checkconditionalways="true" range="600" comparison="and">
-    <Conditional ishuman="true" />
-    <Conditional IsDead="false" />
-    <AITrigger target="This" state="Flee" duration="5" probability="1" mindamage="0" allowtobeoverridden="false" allowtooverride="true" />
-  </StatusEffect> -->
   <StatusEffect type="OnActive" target="NearbyCharacters" range="2000" targets="human">
     <Affliction identifier="watchersgazelite" strength="5" />
     <Sound file="Content/Characters/Watcher/WATCHER_idleLoop.ogg" loop="true" range="1000" volume="0.2" dontmuffle="true" />
@@ -50,4 +35,10 @@
   <StatusEffect type="OnActive" target="NearbyCharacters" range="600" targets="monster" onlyoutside="true">
     <Affliction identifier="watchersgaze" strength="15" />
   </StatusEffect>
+    <StatusEffect type="OnDeath" target="This" targetlimb="Head">
+      <ParticleEmitter particle="bubbles" particleamount="60" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="+30" anglemax="30" />
+      <ParticleEmitter particle="bloodsplashwater" particleamount="3" scalemin="0.5" scalemax="1" velocitymin="25" velocitymax="200" anglemin="0" anglemax="360" distancemin="20" distancemax="50" />
+      <ParticleEmitter drawontop="True" particle="gib" particleamount="10" scalemin="0.5" scalemax="0.75" velocitymin="200" velocitymax="500" anglemin="-30" anglemax="30" CopyEntityAngle="true"  />
+      <ParticleEmitter drawontop="False" particle="waterblood" particleamount="3" scalemin="1" scalemax="2" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+    </StatusEffect>
 </Character>

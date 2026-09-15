@@ -36,6 +36,12 @@ HOTFIX
 [*] Removed low quality creatures from spawnlist: Legacyendworm, Charybdisre, Watcherwanderer, Lurker
 [*] Psilosaur sprite updated 
 [*] Bots now flee from Teleglitch
+[*] Brainmoss reworked with new effects
+[*] Removed useless Minemission variants
+[*] Watcherling reworked
+[*] 
+[*] 
+[*] 
 [*] 
 [*] 
 [/List]
@@ -44,7 +50,7 @@ HOTFIX
 
 [List]
 [*] Cleaned up the mod, deleted useless unused files
-[*] Several audio format fixes (stereo to mono)
+[*] Many audio files converted from stereo to mono
 [*] 
 [*] 
 [*] 
@@ -67,7 +73,7 @@ HOTFIX
    - Watcherling: change ragdoll, floating eyestalk
    - Charybdisold: rework sprite, change famility to "leatherback"
    - Ancientmudraptor: make more fractal-looking
-   - Brainmoss: why drunk??
+   - Stonewanderers: find a gimmick, those enemies are basically worse molochs. Attach to mainpath walls like mantis?
    
    CRITICAL
    - Cnidae/Cnidaeprime: resprite and ragdoll
