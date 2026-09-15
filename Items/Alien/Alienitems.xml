@@ -2814,7 +2814,7 @@
            camerashake="120" camerashakerange="150"
            flashcolor="30,10,5,180" flashrange="150" flashduration="5.0"
            screencolor="255,50,30,150" screencolorrange="150" screencolorduration="5.0">
-          <Affliction identifier="watcherlingdebuff" strength="3" />
+          <Affliction identifier="watcherlingdebuff" strength="6" />
         </Explosion>
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">

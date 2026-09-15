@@ -2060,8 +2060,8 @@
     showiconthreshold="1000" 
     showicontoothersthreshold="1000" 
     showinhealthscannerthreshold="1000"
-    maxstrength="3">
-    <Effect minstrength="0" maxstrength="3"
+    maxstrength="5">
+    <Effect minstrength="0" maxstrength="5"
       minscreendistort="0.0"
       maxscreendistort="0.3"
       minradialdistort="0.0"

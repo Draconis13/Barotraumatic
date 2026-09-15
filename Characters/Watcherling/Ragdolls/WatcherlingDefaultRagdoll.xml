@@ -16,14 +16,10 @@
       <deformablesprite texture="%ModDir:2518816103%/Characters/Watcherling/Watcherling.png" sourcerect="685,602,262,262" origin="0.5,0.5" depth="0.521" DeadColor="30,0,50,255" DeadColorTime="5" />
     </conditionalsprite>
     <damagemodifier DamageSound="gore" DamageParticle="waterblood" DamageMultiplier="3" ProbabilityMultiplier="1" ArmorSector="45,135" DeflectProjectiles="False" AfflictionIdentifiers="gunshotwound,lacerations,blunttrauma,burn" AfflictionTypes="" />
-    <lightsource castshadows="false" Color="255,255,255,0" Range="0" Scale="1" Offset="0,0" Directional="True" >
+    <lightsource Color="255,255,255,0" Range="0" Scale="1" castshadows="false" pulsefrequency="0.2" pulseamount="0.5"  >
       <Conditional IsDead="false" />
       <lighttexture Texture="Content/Lights/pointlight_falloff.png" Origin="0.5,0.5" Size="1,1" />
       <deformablesprite texture="%ModDir:2518816103%/Characters/Watcherling/Watcherling.png" sourcerect="685,342,262,262" Origin="0.5,0.5" alpha="1" />
-    </lightsource>
-    <lightsource castshadows="false" Color="255,50,20,255" Range="500" Scale="1" Offset="0,0" Directional="True" PulseFrequency="3" PulseAmount="0.5" >
-      <Conditional hasstatustag="watcherlingattacking" />
-      <lighttexture Texture="Content/Lights/Guardianlight.png" Origin="0.2,0.5" Size="0.4,0.2" />
     </lightsource>
     <StatusEffect type="OnDeath" target="This">
       <ParticleEmitter particle="bubbles" particleamount="60" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="+30" anglemax="30" />
@@ -31,16 +27,6 @@
       <ParticleEmitter drawontop="True" particle="gib" particleamount="50" scalemin="1" scalemax="2" velocitymin="200" velocitymax="500" anglemin="-30" anglemax="30" />
       <ParticleEmitter drawontop="False" particle="waterblood" particleamount="10" scalemin="8" scalemax="12" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
     </StatusEffect>
-    <attack StructureSoundType="StructureBlunt" Context="Outside" TargetType="Character" TargetLimbType="Torso" HitDetectionType="Distance" AfterAttack="Reverse" AfterAttackDelay="0" AfterAttackSecondary="FallbackUntilCanAttack" AfterAttackSecondaryDelay="2" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="650" DamageRange="650" MinRange="0" Duration="1" CoolDown="12" SecondaryCoolDown="0" CoolDownRandomFactor="0.2" FullSpeedAfterAttack="True" StructureDamage="0" CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False" RequiredAngle="8" RequiredAngleToShoot="0" AimRotationTorque="50" RotationLimbIndex="1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1" SeverLimbsProbability="0" Priority="1" Blink="False">
-      <!-- <conditional targetself="true" /> -->
-      <StatusEffect type="OnFailure" target="This" forceplaysounds="true">
-        <SpawnItem identifier="watcherlingprojectile" spawnposition="This" Impulse="80" count="1" aimspread="0" rotationtype="Limb" rotation="0" />
-        <ParticleEmitter particle="risingbubbles" particlespersecond="20" anglemin="60" anglemax="120" velocitymin="10" velocitymax="100" scalemin="0.8" scalemax="1.5" />
-      </StatusEffect>
-      <StatusEffect type="OnFailure" target="This" tags="watcherlingattacking" Duration="1" setvalue="true" >
-        <sound file="Content/Items/Alien/AlienPump.ogg" range="10000" loop="true" volume="2.0" frequencymultiplier="0.35" />
-      </StatusEffect>
-    </attack>
   </limb>
   <limb Name="Nerves" ID="2" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="292" Width="284" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
     <deformablesprite SourceRect="381,494,284,292" Origin="0.5,0.5" Depth="0.51" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0">
@@ -110,6 +96,20 @@
     <deformablesprite SourceRect="0,0,100,100" Origin="0.5,0.5" Depth="0.6" Texture="" IgnoreTint="False" Color="255,255,255,0" DeadColor="0,0,0,0" DeadColorTime="0">
     </deformablesprite>
     <damagemodifier DamageSound="gore" DamageParticle="waterblood" DamageMultiplier="3" ProbabilityMultiplier="1" ArmorSector="45,135" DeflectProjectiles="False" AfflictionIdentifiers="gunshotwound,lacerations,blunttrauma,burn" AfflictionTypes="" />
+    <lightsource castshadows="false" Color="255,50,20,255" Range="500" Scale="1" Offset="0,0" Directional="True" PulseFrequency="3" PulseAmount="0.5" >
+      <Conditional hasstatustag="watcherlingattacking" />
+      <lighttexture Texture="Content/Lights/Guardianlight.png" Origin="0.3,0.5" Size="0.4,0.2" />
+    </lightsource>
+    <attack StructureSoundType="StructureBlunt" Context="Outside" TargetType="Character" TargetLimbType="Torso" HitDetectionType="Distance" AfterAttack="Reverse" AfterAttackDelay="0" AfterAttackSecondary="FallbackUntilCanAttack" AfterAttackSecondaryDelay="2" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="650" DamageRange="650" MinRange="0" Duration="1" CoolDown="12" SecondaryCoolDown="0" CoolDownRandomFactor="0.2" FullSpeedAfterAttack="True" StructureDamage="0" CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False" RequiredAngle="8" RequiredAngleToShoot="0" AimRotationTorque="50" RotationLimbIndex="1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1" SeverLimbsProbability="0" Priority="1" Blink="False">
+      <!-- <conditional targetself="true" /> -->
+      <StatusEffect type="OnFailure" target="This" forceplaysounds="true">
+        <SpawnItem identifier="watcherlingprojectile" spawnposition="This" Impulse="80" count="1" aimspread="0" rotationtype="Limb" rotation="0" />
+        <ParticleEmitter particle="muzzleflashpulselaser" particleamount="1" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" scalemin="1" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This" tags="watcherlingattacking" Duration="1" setvalue="true" >
+        <sound file="Content/Items/Alien/AlienPump.ogg" range="10000" loop="true" volume="2.0" frequencymultiplier="0.35" />
+      </StatusEffect>
+    </attack>
   </limb>
   
   
