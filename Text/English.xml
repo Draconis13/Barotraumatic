@@ -206,378 +206,242 @@
   <missiondescription.clearmermaidruin>Reports of radio transmissions resembling singing coming from a ruin close to [location1] have already resulted in several investigating teams going missing. A reward of [reward] credits has been issued to stop the source of the transmission.</missiondescription.clearmermaidruin>
   <missionmessage0.clearmermaidruin>The Mermaid and fractal creatures have been wiped out. Navigate the submarine out of the cavern to claim the reward.</missionmessage0.clearmermaidruin>
   <missionsuccess.clearmermaidruin>Mermaid has been destroyed.</missionsuccess.clearmermaidruin>
-  <character.fractaldestroyer>Fractal Destroyer</character.fractaldestroyer>
-  <character.voidleviathan>Void Leviathan</character.voidleviathan>
-  <character.Voidstalker>Void Stalker</character.Voidstalker>
-  <character.Voidleech>Void leech</character.Voidleech>
-  <character.Xan_Scavenger>Scavenger</character.Xan_Scavenger>
-  <character.Xanothresher>Xanothresher</character.Xanothresher>
-  <character.Crawler_hatchling>Crawler</character.Crawler_hatchling>
-  <character.Lionthresher>Barracuda</character.Lionthresher>
-  <character.Mudbouncer>Mudbouncer</character.Mudbouncer>
-  <character.Charybdisre>Baby Charybdis</character.Charybdisre>
-  <character.Bossmoloch>Hydrothermal Moloch</character.Bossmoloch>
-  <character.Immortal>Husk Immortal</character.Immortal>
-  <character.Bruteflora>Infected Brute</character.Bruteflora>
-  <character.Trichordate>Trichordate</character.Trichordate>
-  <character.TrichordateBloodsucker>Trichordate Bloodsucker</character.TrichordateBloodsucker>
-  <character.TrichordateMetalvore>Trichordate Metalvore</character.TrichordateMetalvore>
-  <character.TrichordateVitriolic>Trichordate Vitriolic</character.TrichordateVitriolic>
+  <!-- Characters -->
+  <character.abyssalcrawler>Abyssal Crawler</character.Abyssalcrawler>
+  <character.abyssalhammerhead>Abyssal Hammerhead</character.Abyssalhammerhead>
+  <character.abyssalthresher>Abyssal Thresher</character.Abyssalthresher>
+  <character.abyssmonster>Latcher Scuttler</character.Abyssmonster>
+  <character.abysswatcher>Dyatel</character.Abysswatcher>
+  <character.alphacharybdis>Alpha Charybdis</character.AlphaCharybdis>
+  <character.alphaendworm>Black Endworm</character.AlphaEndworm>
+  <character.ancientmudraptor>Ancient Mudraptor</character.Ancientmudraptor>
+  <character.bioworm>Bio Worm</character.Bioworm>
+  <character.bombshark>Mudraptor Gutbomb</character.Bombshark>
+  <character.bossmoloch>Hydrothermal Moloch</character.Bossmoloch>
+  <character.brainmoss1>Brain Moss</character.Brainmoss1>
+  <character.brainmoss2>Radioactive Brain Moss</character.Brainmoss2>
+  <character.brutebtc>Brute Security Robot</character.BruteBTC>
+  <character.carrier>Carrier</character.Carrier>
+  <character.carrierflaknormal>Thalamus Mobile Flakcannon</character.Carrierflaknormal>
+  <character.carrierleviathan>Carrier Leviathan</character.Carrierleviathan>
+  <character.caver>Caver</character.Caver>
+  <character.charybdisadol>Young Charybdis</character.Charybdisadol>
+  <character.charybdisold>Mother Leatherback</character.Charybdisold>
+  <character.charybdisre>Baby Charybdis</character.Charybdisre>
+  <character.charybdissavage>Savage Leatherback</character.Charybdissavage>
+  <character.chelicerate>Chelicerate</character.Chelicerate>
+  <!-- <character.clownbomber>Lost Clown</character.Clownbomber> -->
+  <!-- <character.clownbomberdriver>Clownbomberdriver</character.Clownbomberdriver> -->
+  <character.clownbox>Metal Crate</character.Clownbox>
+  <!-- <character.clowndeathmask>Clowndeathmask</character.Clowndeathmask> -->
+  <character.clownhead>Clownhead</character.Clownhead>
+  <character.clownhead_spawn>Spawn of Clownhead</character.Clownhead_spawn>
+  <!-- <character.clownhomie>Lost Clown</character.Clownhomie> -->
+  <!-- <character.clownsawcrazy>Meat Grinder</character.ClownSawcrazy> -->
+  <!-- <character.clownwanderer>Lost Clown</character.ClownWanderer> -->
+  <!-- <character.clownwandererelite>Lost Clown</character.ClownWandererElite> -->
+  <!-- <character.clownwrecker>Clown Wrecker</character.Clownwrecker> -->
+  <character.cnidae>Cnidae</character.Cnidae>
+  <character.cnidaeprime>Prime Cnidae</character.Cnidaeprime>
+  <character.crawleralphamale>Crawler Alpha Male</character.Crawleralphamale>
+  <character.crawlerbroodmotherold>Galvanic Crawler Broodmother</character.Crawlerbroodmotherold>
+  <character.crawlercrablet>Crawler crablet</character.Crawlercrablet>
+  <character.crawlermetamorph>Crawler Metamorph</character.Crawlermetamorph>
+  <character.crawlernaught>King Crawler</character.Crawlernaught>
+  <character.crookbtc>Crook</character.CrookBTC>
+  <character.cthulhuadolescent>Cthulhu Progeny</character.Cthulhuadolescent>
+  <character.cyclops>Cyclops</character.Cyclops>
+  <character.deadnoughthomingshell>Homing Torpedo</character.DeadnoughtHomingshell>
+  <character.deathgill>Deathgill</character.Deathgill>
+  <character.deepseaclownnew>Deep Sea Clown</character.Deepseaclownnew>
+  <character.defensebothostile>Hostile Defense Bot</character.Defensebothostile>
+  <character.endurance>Fractal Sentry</character.Endurance>
+  <character.endwhale>End Whale</character.Endwhale>
+  <character.endworm_young>Endworm Young</character.Endworm_young>
+  <character.endwormcoral>The Glacier</character.Endwormcoral>
+  <character.endwormre>Europan Polychaetes</character.Endwormre>
+  <character.epicentrum>Epicentrum</character.Epicentrum>
+  <character.europanboxcutter>Europan Box Cutter</character.Europanboxcutter>
+  <character.europantrout>Europan Trout</character.Europantrout>
+  <character.exosuit>Broken Exosuit</character.Exosuit>
+  <character.fault>Fault</character.Fault>
+  <character.fractalbreacher>Fractal Breacher</character.FractalBreacher>
+  <character.fractaldestroyer>Fractal Destroyer</character.Fractaldestroyer>
+  <character.fractalenforcer>Fractal Enforcer</character.FractalEnforcer>
+  <character.fractalguardianrepairbot>Fractal Repair Bot</character.Fractalguardianrepairbot>
+  <character.fractalguardianwanderer>Wandering Fractal Guardian</character.Fractalguardianwanderer>
+  <character.fractalherald>Fractal Herald</character.Fractalherald>
+  <character.fractalmermaid>Fractal Mermaid</character.Fractalmermaid>
+  <character.fractalmermaidinvisattack></character.Fractalmermaidinvisattack>
+  <character.fractalpenance>Penance Warrior</character.Fractalpenance>
+  <character.fractalsinger>Fractal Singer</character.Fractalsinger>
+  <character.fractalsiren>Fractal Siren</character.Fractalsiren>
+  <character.fractalwalker>Fractal Walker</character.Fractalwalker>
+  <character.ghostshrimp>Ghost Shrimp</character.Ghostshrimp>
+  <character.giantcrab>Giant Crab</character.Giantcrab>
+  <character.giantcrabice>Giant Ice Crab</character.Giantcrabice>
+  <character.gianttrapper>Giant Trapper Spider</character.Gianttrapper>
+  <character.glowfish>Glow Fish</character.Glowfish>
+  <character.goofyfish>Goofy Fish</character.GoofyFish>
   <character.grayeel>Gray Eel</character.grayeel>
-  <character.Mantisnew>Mantis</character.Mantisnew>
-  <character.Observer>Dybbuk</character.Observer>
-  <character.Hydrathresher>Hydrathresher</character.Hydrathresher>
-  <character.Carrier>Carrier</character.Carrier>
-  <character.Carrierleviathan>Carrier Leviathan</character.Carrierleviathan>
-  <character.Huskhammerspawn>Hammerhead Spawn</character.Huskhammerspawn>
-  <character.Huskbroodmother>Husk Broodmother</character.Huskbroodmother>
-  <character.Helmetcrablet>Helmet Crablet</character.Helmetcrablet>
-  <character.Crawlercrablet>Crawler crablet</character.Crawlercrablet>
-  <character.Endwormre>Europan Polychaetes</character.Endwormre>
-  <character.Crawlerhusk>Crawler Husk</character.Crawlerhusk>
-  <character.Huskslasher>Slasher</character.Huskslasher>
-  <character.Juggernaut>Juggernaut</character.Juggernaut>
-  <character.Paralyser>Paralyser</character.Paralyser>
-  <character.Huskinfector>Infector</character.Huskinfector>
-  <character.Huskbroodemperor>Husk Brood Emperor</character.Huskbroodemperor>
-  <character.Cnidae>Cnidae</character.Cnidae>
-  <character.Bomber>Husk Bomber</character.Bomber>
-  <character.Teleglitch>Electric Anomaly</character.Teleglitch>
-  <character.Thalamid>Thalamid</character.Thalamid>
-    <character.Thalamusksuitbomber>Thalamusk</character.Thalamusksuitbomber>
-  <character.Ravager>Ravager</character.Ravager>
-  <character.AlphaEndworm>Black Endworm</character.AlphaEndworm>
-  <character.AlphaEndworm_m>Black Endworm</character.AlphaEndworm_m>
-  <character.AlphaCharybdis>Alpha Charybdis</character.AlphaCharybdis>
-  <character.wastecrawler>Waste Crawler</character.wastecrawler>
-  <character.wastetigerthresher>Waste Tiger Thresher</character.wastetigerthresher>
-  <character.wastebonethresher>Waste Bone Thresher</character.wastebonethresher>
-  <character.wastemantis>Waste Mantis</character.wastemantis>
-  <character.Endwhale>End Whale</character.Endwhale>
-  <character.Rockworm>Rock Worm</character.Rockworm>
-  <character.Deadnought>Deadnought</character.Deadnought>
-  <character.Mine>Mine</character.Mine>
-  <character.MineSmall>Mine</character.MineSmall>
-  <character.Minedetachedmission>Mine</character.Minedetachedmission>
-  <character.Minemission>Mine</character.Minemission>
-  <character.Fractalwalker>Fractal Walker</character.Fractalwalker>
-  <character.Geosphere>Geosphere</character.Geosphere>
-  <character.Shadowleech>Shadow Leech</character.Shadowleech>
-  <character.Thermaleel>Thermal Eel</character.Thermaleel>
-  <character.Stonewanderer>Stone Wanderer</character.Stonewanderer>
-  <character.Hotdog>Hot Dog</character.Hotdog>
-  <character.Minoga>Minoga</character.Minoga>
-  <character.Archimorur>Archimorur</character.Archimorur>
-  <character.Husker>Calyxophage</character.Husker>
-  <character.Endwormcoral>The Glacier</character.Endwormcoral>
-  <character.Endwormnew>Giant Shellworm</character.Endwormnew>
-  <character.Abysswatcher>Dyatel</character.Abysswatcher>
-  <character.Charybdissavage>Savage Leatherback</character.Charybdissavage>
-  <character.Thalamuscarrier>Thalamus Carrier</character.Thalamuscarrier>
-  <character.Icedleatherback>Iced Leatherback</character.Icedleatherback>
-  <character.Icecrab>Ice Crab</character.Icecrab>
-  <character.Brainmoss1>Brain Moss</character.Brainmoss1>
-  <character.Brainmoss2>Radioactive Brain Moss</character.Brainmoss2>
-  <character.Brainmoss3>Brain Moss</character.Brainmoss3>
-  <character.Turretcarrier>Turret Carrier</character.Turretcarrier>
-  <character.Paralyticshark>Paralytic Shark</character.Paralyticshark>
-  <character.Epicentrum>Epicentrum</character.Epicentrum>
-  <character.Shadowwhale>Shadow Whale</character.Shadowwhale>
-  <character.Magmarlarva>Magmalarva</character.Magmarlarva>
-  <character.Magmaworm>Magma Worm</character.Magmaworm>
-  <character.Abyssalhammerhead>Abyssal Hammerhead</character.Abyssalhammerhead>
-  <character.Mantisbig>Big Mantis</character.Mantisbig>
-  <character.Abyssalmantis>Abyssal Mantis</character.Abyssalmantis>
-  <character.Abyssalthresher>Abyssal Thresher</character.Abyssalthresher>
-  <character.Deepseaclown>The Deep Sea Clown</character.Deepseaclown>
-    <character.DeepseaclownnewSaw>The Deep Sea Clown</character.DeepseaclownnewSaw>
-  <character.Mothercrawler>Mother Crawler</character.Mothercrawler>
-  <character.Europa>Reflection of Europa</character.Europa>
-  <character.Redfish>Red Fish</character.Redfish>
-  <character.Pirafish>Pira Fish</character.Pirafish>
-  <character.Clownbox>Metal Crate</character.Clownbox>
-  <character.Thrasher>Gnasher</character.Thrasher>
-  <character.Irma>Irma</character.Irma>
-  <character.CharybdisRex>Matured Leatherback</character.CharybdisRex>
-  <character.CharybdisUgly>Coral Leatherback</character.CharybdisUgly>
-  <character.Icewhale>Glacial Praywhale</character.Icewhale>
-  <character.Irmahusk>Irma Husk</character.Irmahusk>
-  <character.TigerSharkThresher>Barracuda</character.TigerSharkThresher>
-  <character.Thrasherhusk>Gnasher Husk</character.Thrasherhusk>
-  <character.Punkfish>Punk Fish</character.Punkfish>
-  <character.Punkfishhusk>Punk Fish Husk</character.Punkfishhusk>
-  <character.Impfish>Imp Fish</character.Impfish>
-  <character.Glowfish>Glow Fish</character.Glowfish>
-  <character.Glowfishhusk>Glow Fish Husk</character.Glowfishhusk>
-  <character.Devilfish>Devil Fish</character.Devilfish>
-  <character.Toothfish>Tooth Fish</character.Toothfish>
-  <character.Skeletonfish>Skeleton Fish</character.Skeletonfish>
-  <character.Goofyfish>Goofy Fish</character.Goofyfish>
-  <character.Hullfish>Hull Fish</character.Hullfish>
-  <character.Voidfish>Void Fish</character.Voidfish>
-  <character.Hullfishhusk>Hull Fish Husk</character.Hullfishhusk>
-  <character.Whitefish>White Fish</character.Whitefish>
-  <character.Babymoloch>Baby Moloch</character.Babymoloch>
-  <character.FractalguardianRe>Maneba</character.FractalguardianRe>
-  <character.Fractalguardianre2>Ronteal</character.Fractalguardianre2>
-  <character.GiantTrapper>Giant Trapper Spider</character.GiantTrapper>
-  <character.Fractalguardianre3>Harvester</character.Fractalguardianre3>
-  <character.Undying>Fractal Walker</character.Undying>
-  <character.Undyingrad>Fractal Radiant</character.Undyingrad>
-  <character.Fractalpenance>Penance Warrior</character.Fractalpenance>
-  <character.Latcher_hatchling>Latcher Hatchling</character.Latcher_hatchling>
-  <character.Hammerhead_hunter>Hammerhead Hunter</character.Hammerhead_hunter>
-  <character.Sermon>Jacov Subra</character.Sermon>
-  <character.Watcher_laser>Watcher?</character.Watcher_laser>
-  <character.Molochthermal>Lava Moloch</character.Molochthermal>
-  <character.Molochold>Moloch Matriarch</character.Molochold>
-  <character.Europanboxcutter>Europan Box Cutter</character.Europanboxcutter>
-  <character.Shroomjelly>Shroom Jelly</character.Shroomjelly>
-  <character.Endurance>Fractal Sentry</character.Endurance>
-  <character.Deepseaclownnew>Deep Sea Clown</character.Deepseaclownnew>
-  <character.Suffering>The Suffering</character.Suffering>
-  <character.Moloch_nuclear>Injured Moloch</character.Moloch_nuclear>
-  <character.Hammerhead_swordfish>Swordfish</character.Hammerhead_swordfish>
-  <character.Wasteskeleton>Bloodied Skeleton</character.Wasteskeleton>
-  <character.Clownsawcrazy>Meat Grinder</character.Clownsawcrazy>
-  <character.Clownwanderer>Lost Clown</character.Clownwanderer>
-  <character.Clownhomie>Lost Clown</character.Clownhomie>
-  <character.Clownbomber>Lost Clown</character.Clownbomber>
-  <character.Clownwrecker>Clown Wrecker</character.Clownwrecker>
-  <character.joviandiver>Pirate</character.joviandiver>
-  <character.jovianbomber>Pirate</character.jovianbomber>
-  <character.jovianwrecker>Pirate Salvager</character.jovianwrecker>
-  <character.spineling_hard>Spineling</character.spineling_hard>
-  <character.Cyclops>Cyclops</character.Cyclops>
-  <character.Cyclops2>Cyclops</character.Cyclops2>
-  <character.Cyclops3>Cyclops</character.Cyclops3>
-  <character.Cyclops_bossmusic>Cyclops</character.Cyclops_bossmusic>
-  <character.Crawlersmart>Crawler</character.Crawlersmart>
-  <character.Crawler_large2>Crawler</character.Crawler_large2>
-  <character.Teleglitch_paranormal>???</character.Teleglitch_paranormal>
-  <character.Crawlernaught>King Crawler</character.Crawlernaught>
-  <character.Abyssalcrawler>Abyssal Crawler</character.Abyssalcrawler>
-  <character.Abyssalcrawler2>Abyssal Crawler</character.Abyssalcrawler2>
-  <character.legacyendworm>Massive Shell Worm</character.legacyendworm>
-  <character.legacycrawler>Crawfish</character.legacycrawler>
-  <character.Watcheralpha>Watcher Urchin</character.Watcheralpha>
-  <character.Watcherold>Watcher</character.Watcherold>
-  <character.Crawlerold>Crawler</character.Crawlerold>
-  <character.WatcherWanderer>Wanderer</character.WatcherWanderer>
-  <character.Lurker>Lurker</character.Lurker>
-  <character.Charybdisold>Mother Leatherback</character.Charybdisold>
-  <character.Charybdisadol>Young Charybdis</character.Charybdisadol>
-  <character.Cnidaeprime>Prime Cnidae</character.Cnidaeprime>
-  <character.Giantcrab>Giant Crab</character.Giantcrab>
-  <character.Giantcrabice>Giant Ice Crab</character.Giantcrabice>
-  <character.PrayWhale>Praywhale</character.PrayWhale>
-  <character.Praywhalebaby>Baby Praywhale</character.Praywhalebaby>
-  <character.Praywhalemineral>Crystaline Praywhale</character.Praywhalemineral>
-  <character.Honkfather>The Honkfather</character.Honkfather>
-  <character.Cetus>Julia</character.Cetus>
-  <character.Endworm_m>Endworm</character.Endworm_m>
-  <character.Ghostshrimp>Ghost Shrimp</character.Ghostshrimp>
-  <character.Hornshrimp>Horn Shrimp</character.Hornshrimp>
-  <character.Razzershrimp_kse>Razor Shrimp</character.Razzershrimp_kse>
-  <character.Shrimpbrut_kse>Shrimp Spawn</character.Shrimpbrut_kse>
-  <character.IceShark>Ice Shark</character.IceShark>
-  <character.Muddragon>Mud Dragon</character.Muddragon>
-  <character.Caver>Caver</character.Caver>
-  <character.Harpoonwhale>Harpoon Whale</character.Harpoonwhale>
-  <character.Seaurchin>Sea Urchin</character.Seaurchin>
-  <character.Seaurchinqueen>Sea Urchin Queen</character.Seaurchinqueen>
-  <character.Bombshark>Mudraptor Gutbomb</character.Bombshark>
-  <character.Pylon>PYLON</character.Pylon>
-  <character.ancientmudraptor>Ancient Mudraptor</character.ancientmudraptor>
-  <character.Carrierflakrandom>Thalamus Mobile Flakcannon</character.Carrierflakrandom>
-  <character.Carrierflaknormal>Thalamus Mobile Flakcannon</character.Carrierflaknormal>
-  <character.Carrierflakdirectional>Thalamus Mobile Flakcannon</character.Carrierflakdirectional>
-  <character.Carrierflakphysicorium>Thalamus Mobile Flakcannon</character.Carrierflakphysicorium>
-  <character.Carrierflakexploding>Thalamus Mobile Flakcannon</character.Carrierflakexploding>
-  <character.Grayeel>Gray Eel</character.Grayeel>
-  <character.Defensebothostile>Hostile Defense Bot</character.Defensebothostile>
-  <character.Defensebothostilelaser>Hostile Defense Bot</character.Defensebothostilelaser>
-  <character.Guardianattackbot>Guardian Attack Bot</character.Guardianattackbot>
-  <character.Nightraptor>Night Raptor</character.Nightraptor>
-  <character.Mudraptor_veteran>Mudraptor veteran</character.Mudraptor_veteran>
-  <character.Mudraptor_veteran2>Mudraptor veteran</character.Mudraptor_veteran2>
-  <character.Wreckdemon>Moving Metal</character.Wreckdemon>
-  <character.Wolfeel>Wolf Eel</character.Wolfeel>
-  <character.Angel>Angel</character.Angel>
-  <character.HER>???</character.HER>
-  <character.SpinelingEMP>Spineling</character.SpinelingEMP>
-  <character.SpinelingFire>Spineling</character.SpinelingFire>
-  <character.Spinelingrandom>Spineling</character.Spinelingrandom>
-  <character.Stalker>Stalker</character.Stalker>
-  <character.Crawler_nightmare>Crawler</character.Crawler_nightmare>
-  <character.Crawler_faraday>Crawler</character.Crawler_faraday>
-  <character.Crawler_nasonov>Crawler</character.Crawler_nasonov>
-  <character.Crawler_sky>Crawler</character.Crawler_sky>
-  <character.Crawler_psychosis>Crawler</character.Crawler_psychosis>
-  <character.Crawler_thermal>Crawler</character.Crawler_thermal>
-  <character.Mudraptor_faraday>Mudraptor</character.Mudraptor_faraday>
-  <character.Mudraptor_nasonov>Mudraptor</character.Mudraptor_nasonov>
-  <character.Mudraptor_sky>Mudraptor</character.Mudraptor_sky>
-  <character.Mudraptor_psychosis>Mudraptor</character.Mudraptor_psychosis>
-  <character.Mudraptor_thermal>Mudraptor</character.Mudraptor_thermal>
-  <character.Crawlerrandom>Crawlerrandom</character.Crawlerrandom>
-  <character.Mudraptorrandom>Mudraptor</character.Mudraptorrandom>
-  <character.Husksprintercombat>Husk</character.Husksprintercombat>
-  <character.Husksprinterhumanold>Husk</character.Husksprinterhumanold>
-  <character.Husksprinterhumanraw>Husk</character.Husksprinterhumanraw>
-  <character.Husksprinterold>Husk</character.Husksprinterold>
-  <character.Husksprinterpoptop>Husk</character.Husksprinterpoptop>
-  <character.Crawler_spineling>Crawler</character.Crawler_spineling>
-  <character.Crawler_watcher>Crawler</character.Crawler_watcher>
-  <character.Mudraptor_watcher>Mudraptor</character.Mudraptor_watcher>
-  <character.Mudraptor_spineling>Mudraptor</character.Mudraptor_spineling>
-  <character.Mechflora>Lugger Cargo Robot</character.Mechflora>
-  <character.Mechflorathalamus>Infected Luggar Robot</character.Mechflorathalamus>
-  <character.Seasnek>Seasnek</character.Seasnek>
-  <character.Seasnekbiter>Seasnek</character.Seasnekbiter>
-  <character.fractalbreacher>Fractal Breacher</character.fractalbreacher>
-  <character.Carrier>Carrier</character.Carrier>
-  <character.Hammerhead_young>Hammerhead Young</character.Hammerhead_young>
-  <character.MudraptorGray>Mother Mudraptor</character.MudraptorGray>
-  <character.hammerheadmauler>Hammerhead Mauler</character.hammerheadmauler>
-  <character.Fractalgolem>Fractal Golem</character.Fractalgolem>
-  <character.ClownwandererElite>Lost Clown</character.ClownwandererElite>
-  <character.Exosuit>Broken Exosuit</character.Exosuit>
-  <character.Plantskeleton>Dessicated Husk</character.Plantskeleton>
-  <character.Hammerheadmatriarchconcept>Hammerhead Broodmother</character.Hammerheadmatriarchconcept>
-  <character.Sentinel>Sentinel</character.Sentinel>
-  <character.Sentinelinvisible></character.Sentinelinvisible>
-  <character.Latcherabyss>Latcher</character.Latcherabyss>
-  <character.TuluWild>Tulu</character.TuluWild>
-  <character.Psilotoadmonster>Psiloturtle</character.Psilotoadmonster>
-    <character.Europantrout>Europan Trout</character.Europantrout>
-	<character.Fractalguardian2>Fractal Guardian</character.Fractalguardian2>
-  <character.Fractalsiren>Fractal Siren</character.Fractalsiren>
-  <character.Hammerhead_Diger>Hammerhead Veteran</character.Hammerhead_Diger>
-  <character.Hammerhead_DigermNamed>Hammerhead Ancient</character.Hammerhead_DigermNamed>
-  <character.Hammerhead_Hard>Hammerhead Veteran</character.Hammerhead_Hard>
-  <character.Hammerhead_mNamed>Moping Jack</character.Hammerhead_mNamed>
-  <character.Largecabinent_mockery>Metal Crate</character.Largecabinent_mockery>  
-  <character.Mudrex>Tyrant Mudraptor</character.Mudrex> 
-  <character.AlphaEndworm_m>Black Endworm</character.AlphaEndworm_m> 
-  <character.Angelinvisible>???</character.Angelinvisible>
-  <character.Spineling_Electric2>Electric Spineling</character.Spineling_Electric2>
-  <character.Mantisshrimpsmall>Juvenile Mantis Shrimp</character.Mantisshrimpsmall>
-  <character.Huskchimerabroodmother>Husk Chimera Broodmother</character.Huskchimerabroodmother>
-  <character.Husk_chimera_elder>Husk Chimera Elder</character.Husk_chimera_elder>
-  <character.Husk_chimera_artifact>Husk Chimera</character.Husk_chimera_artifact>
-  <character.Viperling_giant>Giant viperling</character.Viperling_giant>
-  <character.Husk_prowlerhulk>Husk Rampager</character.Husk_prowlerhulk>
-  <character.Husk_Slipsuit>Husk Slipsuit</character.Husk_Slipsuit>
-  <character.Husk_PUCS>Husk PUCS</character.Husk_PUCS>
-  <character.Husk_Abyss>Husk Abyss</character.Husk_Abyss>
-  <character.Husk_Oldsuit>Husk Ancient</character.Husk_Oldsuit>
-  <character.Huskcontainerhostile>Husk Container</character.Huskcontainerhostile>
-  <character.ScavieBTC>Rotting Scavie</character.ScavieBTC>
-  <character.BruteBTC>Brute Security Robot</character.BruteBTC>
-  <character.Hermitdugong>Hermit Dugong</character.Hermitdugong>
-  <character.Hermitbig>Hermit Sundered</character.Hermitbig>
-  <character.Hermitnew>Hermit Shuttle</character.Hermitnew>
-  <character.Hermitshell>Hermit Moloch</character.Hermitshell>
-  <character.Hermitspawn>Hermit Spawn</character.Hermitspawn> 
-  <character.Hallucination1>Creepy Crawler</character.Hallucination1>
-  <character.Hallucination2>Murder Raptor</character.Hallucination2> 
-  <character.Huskcrawlie1>Husked Carcass</character.Huskcrawlie1>
-  <character.Huskcrawlie2>Husked Carcass</character.Huskcrawlie2>
-  <character.Huskcrawlie3>Husked Carcass</character.Huskcrawlie3>
-  <character.Huskcrawlie4>Husked Carcass</character.Huskcrawlie4>
-  <character.Huskcrawlie1nohead>Husked Carcass</character.Huskcrawlie1nohead>
-  <character.Psilosaur>Psilosaur</character.Psilosaur>
-  <character.Psiloturtle>Psiloturtle</character.Psiloturtle>
-  <character.Cthulhuadolescent>Cthulhu Progeny</character.Cthulhuadolescent>
-  <character.Endworm_young>Endworm Young</character.Endworm_young> 
-  <character.Clownhead>Clownhead</character.Clownhead>
-  <character.Clownhead_spawn>Spawn of Clownhead</character.Clownhead_spawn> 
-  <character.Fractalherald>Fractal Herald</character.Fractalherald>
-  <character.Molochgreen>Abyssal Moloch</character.Molochgreen>
-  <character.Bioworm>Bio Worm</character.Bioworm>
-  <character.Biowormbig>Bio Worm</character.Biowormbig>
-  <character.Thalatocyte>Thalatocyte</character.Thalatocyte>
-  <character.Molochvariant1>Moloch</character.Molochvariant1>
-  <character.Molochvariant2>Moloch</character.Molochvariant2>
-  <character.Molochvariant3>Moloch</character.Molochvariant3>
-  <character.Molochvariant4>Moloch</character.Molochvariant4>
-  <character.Molochvariant5>Moloch</character.Molochvariant5>
-  <character.Molochvariant6>Moloch</character.Molochvariant6> 
-  <character.Molochvariantblack1>Black Moloch</character.Molochvariantblack1>
-  <character.Molochvariantblack2>Black Moloch</character.Molochvariantblack2>
-  <character.Molochvariantblack3>Black Moloch</character.Molochvariantblack3>
-  <character.Molochvariantblack4>Black Moloch</character.Molochvariantblack4>
-  <character.Molochvariantblack5>Black Moloch</character.Molochvariantblack5>
-  <character.Molochvariantblack6>Black Moloch</character.Molochvariantblack6>
-  <character.Yellowboy>Yellowboy</character.Yellowboy>
-  <character.Yellowboyhatchling>Yellowboy Hatchling</character.Yellowboyhatchling>
-  <character.Yellowboyspawner>Yellowboy</character.Yellowboyspawner>
-  <character.Yellowboyspawnerarmored>Yellowboy</character.Yellowboyspawnerarmored>
-  <character.Yellowboywarrior>Yellowboy Warrior</character.Yellowboywarrior>
-  <character.Husknyx>Husk Nyx</character.Husknyx>
-  <character.Crawleralphamale>Crawler Alpha Male</character.Crawleralphamale>
-  <character.Crawlermetamorph>Crawler Metamorph</character.Crawlermetamorph>
-  <character.Mudraptorhuskhunter>Mudraptor Huskhunter</character.Mudraptorhuskhunter> 
-  <character.Hammerhead_swordfishexplode>Unstable Swordfish</character.Hammerhead_swordfishexplode>
-  <character.Spineyfish>Saberback</character.Spineyfish> 
-  <character.Abyssmonster>Latcher Scuttler</character.Abyssmonster> 
-  <character.Mantispink>Pink Mantis</character.Mantispink> 
-  <character.Mantispinkpet>Pink Mantis Pet</character.Mantispinkpet> 
-  <character.Crawlerbroodmotherold>Galvanic Crawler Broodmother</character.Crawlerbroodmotherold>
-  <character.DeadnoughtHomingshell>Homing Torpedo</character.DeadnoughtHomingshell>
-  <character.FractalEnforcer>Fractal Enforcer</character.FractalEnforcer>
-  <character.FractalEnforcer2>Fractal Enforcer</character.FractalEnforcer2>
-  <character.Fractalguardianrepairbot>Fractal Repair Bot</character.Fractalguardianrepairbot>
-  <character.Fractalguardianwanderer>Wandering Fractal Guardian</character.Fractalguardianwanderer>
-  <character.Fractalmermaid>Fractal Mermaid</character.Fractalmermaid>
-  <character.Lavathresher>Thermal Thresher</character.Lavathresher>
-  <character.Legacycharybdis>Leatherback</character.Legacycharybdis>
-  <character.Magmalarva>Pyrophoric Larva</character.Magmalarva>
-  <character.Mantisshrimp>Mantis Shrimp</character.Mantisshrimp>
-  <character.Minedetached> Mine</character.Minedetached>
-  <character.Minesmalldetached>Mine</character.Minesmalldetached>
-  <character.Minesmallmission>Mine</character.Minesmallmission>
-  <character.Minesmallmissiondetached>Mine</character.Minesmallmissiondetached>
-  <character.Mudraptor_veteranold>Mudraptor Veteran</character.Mudraptor_veteranold>
-  <character.NuclearMine>Nuclear Mine</character.NuclearMine>
-  <character.Psilotoadadult> </character.Psilotoadadult>
-  <character.Silverhammerhead>Silver Hammerhead</character.Silverhammerhead>
-  <character.Stonewanderercrystal>Crystal Wanderer</character.Stonewanderercrystal>
-  <character.Stonewanderercrystallarge>Large Crystal Wanderer </character.Stonewanderercrystallarge>
-  <character.Stonewandererice>Ice Wanderer</character.Stonewandererice>
-  <character.Stonewanderericelarge>Large Ice Wanderer</character.Stonewanderericelarge>
-  <character.Stonewandererlava>Lava Wanderer</character.Stonewandererlava>
-  <character.Stonewandererlavalarge>Large Lava Wanderer </character.Stonewandererlavalarge>
-  <character.Thresherking>Thresher King</character.Thresherking>
-  <character.Turretcarrierchaingun>Thalamus Chaingun</character.Turretcarrierchaingun>
-  <character.Turretcarriercoil>Thalamus Coilgun</character.Turretcarriercoil>
-  <character.Turretcarrierdoublecoil>Thalamus Double Coilgun </character.Turretcarrierdoublecoil>
-  <character.Turretcarrierflak>Thalamus Flakgun</character.Turretcarrierflak>
-  <character.Turretcarrierpulselaser>Thalamus Pulse Laser</character.Turretcarrierpulselaser>
-  <character.Turretcarrierrail>Thalamus Railgun</character.Turretcarrierrail>
-  <character.Undyingfaraday>Undying</character.Undyingfaraday> 
-  <character.Watcherelite>Sentinal Watcher</character.Watcherelite>
-  <character.Husk_scylla>Scylla</character.Husk_scylla> Husk_spawn1
-  <character.Husk_spawn1>Husk Spawn</character.Husk_spawn1>
-  <character.Husk_spawn2>Husk Spawn</character.Husk_spawn2>
-  <character.Husk_spawn3>Husk Spawn</character.Husk_spawn3>
-  <character.Husk_spawn4>Husk Spawn</character.Husk_spawn4>
-  <character.Husk_spawn5>Husk Spawn</character.Husk_spawn5>
-  <character.Husk_spawn6>Husk Spawn</character.Husk_spawn6>
-  <character.Husk_spawn6>Husk Spawn</character.Husk_spawn6>
-  <character.Peanutslug>Peanought</character.Peanutslug>
-  <character.Peanutslug2>Dreadnut</character.Peanutslug2>
-  <character.Husk_centipede>Husk Centipede</character.Husk_centipede>
-  <character.Manraptor>Spliced</character.Manraptor>
-  <character.Fractalguardianwanderer>Fractal Guardian Wanderer</character.Fractalguardianwanderer> 
+  <character.guardianattackbot>Guardian Attack Bot</character.Guardianattackbot>
+  <character.guppy>Guppy</character.Guppy>
+  <character.hallucination1>Creepy Crawler</character.Hallucination1>
+  <character.hallucination2>Murder Raptor</character.Hallucination2>
+  <character.hammerhead_breacher>Hammerhead Breacher</character.Hammerhead_breacher>
+  <character.hammerhead_digermnamed>Hammerhead Ancient</character.Hammerhead_DigermNamed>
+  <character.hammerhead_hard>Hammerhead Veteran</character.Hammerhead_hard>
+  <character.hammerhead_hunter>Hammerhead Hunter</character.Hammerhead_hunter>
+  <character.hammerhead_probe>Hammerhead Probe</character.Hammerhead_probe>
+  <character.hammerhead_swordfish>Swordfish</character.Hammerhead_swordfish>
+  <character.hammerhead_swordfishexplode>Unstable Swordfish</character.Hammerhead_swordfishexplode>
+  <character.hammerhead_young>Hammerhead Young</character.Hammerhead_young>
+  <character.hammerheadmatriarchconcept>Hammerhead Broodmother</character.Hammerheadmatriarchconcept>
+  <character.hammerheadmauler>Hammerhead Mauler</character.Hammerheadmauler>
+  <character.harpoonwhale>Harpoon Whale</character.Harpoonwhale>
+  <character.helmetcrablet>Helmet Crablet</character.Helmetcrablet>
+  <character.hermit>Hermit</character.Hermit>
+  <character.hermitbig>Hermit Sundered</character.Hermitbig>
+  <character.hermitdugong>Hermit Dugong</character.Hermitdugong>
+  <character.hermitshell>Hermit Moloch</character.Hermitshell>
+  <character.hermitspawn>Hermit Spawn</character.Hermitspawn>
+  <character.hornshrimp>Horn Shrimp</character.Hornshrimp>
+  <character.hullfish>Hull Fish</character.Hullfish>
+  <character.humancrookcape>Humancrookcape</character.Humancrookcape>
+  <character.humanhuskcrawlielatched>Humanhuskcrawlielatched</character.Humanhuskcrawlielatched>
+  <!-- <character.humanimmortal>HumanImmortal</character.HumanImmortal> -->
+  <!-- <character.humanimmortalnovice>HumanImmortalnovice</character.HumanImmortalnovice> -->
+  <character.husk_abyss>Husk Abyss</character.Husk_Abyss>
+  <character.husk_centipede>Husk Centipede</character.Husk_centipede>
+  <character.husk_oldsuit>Husk Ancient</character.Husk_Oldsuit>
+  <character.husk_prowlerhulk>Husk Rampager</character.Husk_prowlerhulk>
+  <character.husk_pucs>Husk PUCS</character.Husk_PUCS>
+  <character.husk_scylla>Scylla</character.Husk_scylla>
+  <character.husk_slipsuit>Husk Slipsuit</character.Husk_Slipsuit>
+  <character.husk_spawn1>Husk Spawn</character.Husk_spawn1>
+  <character.huskchimerabroodmother>Husk Chimera Broodmother</character.Huskchimerabroodmother>
+  <character.huskcontainerhostile>Husk Container</character.Huskcontainerhostile>
+  <character.huskcrawlie1>Husked Carcass</character.Huskcrawlie1>
+  <character.husker>Calyxophage</character.Husker>
+  <character.icecrab>Ice Crab</character.Icecrab>
+  <character.iceshark>Ice Shark</character.Iceshark>
+  <character.icewhale>Glacial Praywhale</character.IceWhale>
+  <character.invisiblecthulhuspawner></character.Invisiblecthulhuspawner>
+  <character.invisiblecthulhuspawner2></character.Invisiblecthulhuspawner2>
+  <!-- <character.jovianbomber>Pirate</character.Jovianbomber> -->
+  <!-- <character.joviandiver>Pirate</character.Joviandiver> -->
+  <!-- <character.jovianwrecker>Pirate Salvager</character.Jovianwrecker> -->
+  <character.latcher_hatchling>Latcher Hatchling</character.Latcher_hatchling>
+  <character.lavathresher>Thermal Thresher</character.Lavathresher>
+  <character.leatherback>Leatherback</character.Leatherback>
+  <character.legacycrawler>Crawfish</character.Legacycrawler>
+  <character.legacyendworm>Massive Shell Worm</character.Legacyendworm>
+  <character.magmalarva>Pyrophoric Larva</character.Magmalarva>
+  <character.magmaworm>Magma Worm</character.Magmaworm>
+  <character.manraptor>Spliced</character.Manraptor>
+  <character.mantispink>Pink Mantis</character.Mantispink>
+  <character.mantispinkpet>Pink Mantis Pet</character.Mantispinkpet>
+  <character.mantisshrimp>Mantis Shrimp</character.Mantisshrimp>
+  <character.mantisshrimpsmall>Juvenile Mantis Shrimp</character.MantisShrimpSmall>
+  <character.mechflora>Lugger Cargo Robot</character.Mechflora>
+  <character.mechflorathalamus>Infected Luggar Robot</character.Mechflorathalamus>
+  <character.mine>Mine</character.Mine>
+  <character.minoga>Minoga</character.Minoga>
+  <character.moloch_nuclear>Injured Moloch</character.Moloch_nuclear>
+  <character.molochgreen>Abyssal Moloch</character.Molochgreen>
+  <character.molochold>Moloch Matriarch</character.Molochold>
+  <character.molochthermal>Lava Moloch</character.Molochthermal>
+  <character.mothercrawler>Mother Crawler</character.Mothercrawler>
+  <character.muddragon>Mud Dragon</character.Muddragon>
+  <character.mudraptor_mother>Mudraptor Mother</character.Mudraptor_mother>
+  <character.mudraptor_veteran>Mudraptor Veteran</character.Mudraptor_veteran>
+  <character.mudraptorgray>Mother Mudraptor</character.MudraptorGray>
+  <character.mudrex>Tyrant Mudraptor</character.Mudrex>
+  <character.nightraptor>Night Raptor</character.Nightraptor>
+  <character.nuclearmine>Nuclear Mine</character.NuclearMine>
+  <character.observer>Dybbuk</character.Observer>
+  <character.paralyticshark>Paralytic Shark</character.Paralyticshark>
+  <character.peanutslug>Peanought</character.Peanutslug>
+  <character.peanutslug2>Dreadnut</character.Peanutslug2>
+  <character.plantskeleton>Dessicated Husk</character.Plantskeleton>
+  <character.plantworm>Plantworm</character.Plantworm>
+  <character.praywhale>Praywhale</character.Praywhale>
+  <character.praywhalebaby>Baby Praywhale</character.Praywhalebaby>
+  <character.praywhalemineral>Crystaline Praywhale</character.Praywhalemineral>
+  <character.psilosaur>Psilosaur</character.Psilosaur>
+  <character.psilotoadadult>Adult Psilotoad</character.Psilotoadadult>
+  <character.psilotoadadultpet>Adult Psilotoad Pet</character.Psilotoadadultpet>
+  <character.psilotoadmonster>Psiloturtle</character.Psilotoadmonster>
+  <character.psiloturtle>Psiloturtle</character.Psiloturtle>
+  <character.pylon>PYLON</character.Pylon>
+  <character.pylonbolt>Pylonbolt</character.Pylonbolt>
+  <character.railgunshell>Railgunshell</character.Railgunshell>
+  <character.razzershrimp_kse>Razor Shrimp</character.Razzershrimp_kse>
+  <character.riftworm>Riftworm</character.Riftworm>
+  <character.rockworm>Rock Worm</character.Rockworm>
+  <character.scaviebtc>Rotting Scavie</character.ScavieBTC>
+  <character.scorpion>Scorpion</character.Scorpion>
+  <character.seasnek>Seasnek</character.Seasnek>
+  <character.seaurchin>Sea Urchin</character.Seaurchin>
+  <character.seaurchinqueen>Sea Urchin Queen</character.Seaurchinqueen>
+  <character.shadowleech>Shadow Leech</character.Shadowleech>
+  <character.shadowwhale>Shadow Whale</character.Shadowwhale>
+  <character.shrimpbrut_kse>Shrimp Spawn</character.Shrimpbrut_kse>
+  <character.silverhammerhead>Silver Hammerhead</character.Silverhammerhead>
+  <character.skrimsl>Skrimsl</character.Skrimsl>
+  <character.spineling_electric2>Electric Spineling</character.Spineling_Electric2>
+  <character.spineyfish>Saberback</character.Spineyfish>
+  <character.stalker>Stalker</character.Stalker>
+  <character.stonewanderercrystal>Crystal Wanderer</character.Stonewanderercrystal>
+  <character.stonewanderercrystallarge>Large Crystal Wanderer </character.Stonewanderercrystallarge>
+  <character.stonewandererice>Ice Wanderer</character.Stonewandererice>
+  <character.stonewanderericelarge>Large Ice Wanderer</character.Stonewanderericelarge>
+  <character.stonewandererlava>Lava Wanderer</character.Stonewandererlava>
+  <character.stonewandererlavalarge>Large Lava Wanderer </character.Stonewandererlavalarge>
+  <character.teleglitch>Electric Anomaly</character.Teleglitch>
+  <character.thalamid>Thalamid</character.Thalamid>
+  <character.thalamuscarrier>Thalamus Carrier</character.Thalamuscarrier>
+  <character.thalamusk>Thalamusk</character.Thalamusk>
+  <character.thalatocyte>Thalatocyte</character.Thalatocyte>
+  <character.thermaleel>Thermal Eel</character.Thermaleel>
+  <character.thrasher>Gnasher</character.Thrasher>
+  <character.thresherking>Thresher King</character.Thresherking>
+  <character.tigersharkthresher>Barracuda</character.TigerSharkThresher>
+  <character.trichordate>Trichordate</character.Trichordate>
+  <character.trichordatebloodsucker>Trichordate Bloodsucker</character.TrichordateBloodSucker>
+  <character.trichordatemetalvore>Trichordate Metalvore</character.TrichordateMetalvore>
+  <character.trichordatevitriolic>Trichordate Vitriolic</character.TrichordateVitriolic>
+  <character.tuluwild>Tulu</character.TuluWild>
+  <character.turretcarrier>Turret Carrier</character.Turretcarrier>
+  <character.turretcarrierchaingun>Thalamus Chaingun</character.Turretcarrierchaingun>
+  <character.turretcarriercoil>Thalamus Coilgun</character.Turretcarriercoil>
+  <character.turretcarrierdoublecoil>Thalamus Double Coilgun </character.Turretcarrierdoublecoil>
+  <character.turretcarrierflak>Thalamus Flakgun</character.Turretcarrierflak>
+  <character.turretcarrierpulselaser>Thalamus Pulse Laser</character.Turretcarrierpulselaser>
+  <character.turretcarrierrail>Thalamus Railgun</character.Turretcarrierrail>
+  <character.twin>Twin</character.Twin>
+  <character.undying>Fractal Walker</character.Undying>
+  <character.undyingfaraday>Undying</character.Undyingfaraday>
+  <character.undyingrad>Fractal Radiant</character.Undyingrad>
+  <character.viperling_giant>Giant viperling</character.Viperling_giant>
+  <character.voidleviathan>Void Leviathan</character.Voidleviathan>
+  <character.voidstalker>Void Stalker</character.Voidstalker>
+  <character.watcherelite>Sentinal Watcher</character.Watcherelite>
+  <character.watcherling>Watcherling</character.Watcherling>
+  <character.watcherwanderer>Wanderer</character.WatcherWanderer>
+  <character.whitefish>White Fish</character.WhiteFish>
+  <character.wolfeel>Wolf Eel</character.Wolfeel>
+  <character.xan_scavenger>Scavenger</character.Xan_scavenger>
+  <character.yellowboy>Yellowboy</character.Yellowboy>
+  <character.yellowboyhatchling>Yellowboy Hatchling</character.Yellowboyhatchling>
+  <character.yellowboywarrior>Yellowboy Warrior</character.Yellowboywarrior>
+
   <AfflictionDescription.BTradio.150>Basic Radio Range (150M).</AfflictionDescription.BTradio.150>
   <AfflictionDescription.BTradio.250>Civilian Radio Range (250M).</AfflictionDescription.BTradio.250>
   <AfflictionDescription.BTradio.300>FM Radio Range (300M).</AfflictionDescription.BTradio.300>
   <AfflictionDescription.BTradio.500>Military Radio Range (500M).</AfflictionDescription.BTradio.500>
   <AfflictionDescription.BTradio.800>Broadcast Radio Range (800M).</AfflictionDescription.BTradio.800>
   <loadingscreentip>The crook has learned to scavenge human environments for food. Most feed it monster corpses to keep it satisfied— otherwise, it might start eyeing humans as its next meal...</loadingscreentip>
-  <character.crook>Crook</character.crook>
   <entityname.crookfurBTC>Crook Fur</entityname.crookfurBTC>
   <entitydescription.crookfurBTC>Can be used as a crafting material in a fabricator.</entitydescription.crookfurBTC>
   <entityname.crookcapeitemBTC>Crook Cape</entityname.crookcapeitemBTC>

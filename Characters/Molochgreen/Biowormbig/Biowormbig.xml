@@ -1,4 +1,4 @@
-﻿<Character speciesname="Biowormbig" humanoid="False" blooddecal="" BleedParticleAir="cellgib" BleedParticleWater="cellgib" group="moloch" husk="False" needsair="False" canspeak="False" noise="100" visiblity="100" eatingspeed="5" displayname="" visibility="100" pathfinderpriority="1" hasinfo="False" usehuskappendage="False" AISlowTurretPriority="0.5">
+﻿<Character speciesname="Biowormbig" SpeciesTranslationOverride="bioworm" humanoid="False" blooddecal="" BleedParticleAir="cellgib" BleedParticleWater="cellgib" group="moloch" husk="False" needsair="False" canspeak="False" noise="100" visiblity="100" eatingspeed="5" displayname="" visibility="100" pathfinderpriority="1" hasinfo="False" usehuskappendage="False" AISlowTurretPriority="0.5">
   <ragdolls folder="default" />
   <animations folder="default" />
   <DamageEmitter particle="cellgib" particleamount="45" scalemin="1" scalemax="2" velocitymin="15" velocitymax="50" anglemin="0" anglemax="360" ColorMultiplier="0,200,0,255" />
