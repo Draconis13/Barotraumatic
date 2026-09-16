@@ -2076,10 +2076,9 @@
       maxspeedmultiplier="0.25"
       strengthchange="-1.0">
       <StatValue stattype="RangedSpreadReduction" minvalue="0" maxvalue="-2" />
-      <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="-2" />
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="-0.5" />
       <StatValue stattype="SoundRangeMultiplier" minvalue="0" maxvalue="1" />
       <StatValue stattype="SightRangeMultiplier" minvalue="0" maxvalue="1" />
-      <StatValue stattype="FlowResistance" minvalue="0" maxvalue="-2" />
     </Effect>
   </Affliction>
   
