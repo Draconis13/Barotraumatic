@@ -2,8 +2,8 @@
   <ragdolls folder="default" />
   <animations folder="default" />
   <health targetinnerwalls="True" Vitality="1000" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0.1" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" >
-      <Limb>
-	  <VitalityMultiplier identifier="burn" multiplier="1.3" />
+    <Limb>
+      <VitalityMultiplier identifier="burn" multiplier="1.3" />
       <VitalityMultiplier identifier="acidburn" multiplier="0.1" />
     </Limb>
   </health>
@@ -25,6 +25,11 @@
     <target damagethreshold="0" Tag="nasonov" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target damagethreshold="0" Tag="wall" State="Attack" Priority="50" ReactDistance="5500" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="2000" IgnoreTargetSize="False" CircleRotationSpeed="2" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
   </ai>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+    <Item Identifier="adrenalinegland" />
+    <Item Identifier="adrenalinegland" />
+    <Item Identifier="adrenalinegland" />
+  </Inventory>
   <StatusEffect type="OnDeath" target="This" targetlimb="Torso">
     <ParticleEmitter particle="organeruption" particleamount="50" scalemin="0.5" scalemax="1" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" />
     <ParticleEmitter particle="heavygib" drawontop="true" particleamount="1" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
@@ -34,31 +39,48 @@
     <sound file="Content/map/thalamus/sounds/CARRIER_brainDeath1.ogg" range="3000" volume="1" selectionmode="Random" />
     <sound file="Content/map/thalamus/sounds/CARRIER_brainDeath2.ogg" range="3000" volume="1" selectionmode="Random" />
   </StatusEffect>
-  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
-    <Item Identifier="adrenalinegland" />
-    <Item Identifier="adrenalinegland" />
-    <Item Identifier="adrenalinegland" />
-  </Inventory>
+  <StatusEffect type="OnDeath" target="This" delay="0.7" duration="3" stackable="false" >
+    <ParticleEmitter particle="gib" particlespersecond="25" scalemin="1" scalemax="2" velocitymin="10" velocitymax="20" anglemin="0" anglemax="360" distancemin="30" distancemax="120" ColorMultiplier="150,30,0,220"  />
+    <ParticleEmitter particle="organeruption" particlespersecond="5" scalemin="0.4" scalemax="0.5" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" distancemin="30" distancemax="120" />
+  </StatusEffect>
   <StatusEffect type="OnDeath" target="This" disabledeltatime="true" stackable="false" onlyoutside="false" delay="3">
     <Sound file="Content/Sounds/Damage/Gore1.ogg" range="700" volume="0.5" selectionmode="Random" />
     <Sound file="Content/Sounds/Damage/Gore2.ogg" range="700" volume="0.5" />
     <Sound file="Content/Sounds/Damage/Gore3.ogg" range="700" volume="0.5" />
-    <Explosion range="300.0" structuredamage="3" itemdamage="0" force="3.0" severlimbsprobability="0.0" decal="blood" decalSize="3.0">
+    <Explosion range="300.0" structuredamage="0" itemdamage="0" force="3.0" severlimbsprobability="0.0" decal="blood" showeffects="false">
       <Affliction identifier="nausea" strength="25" />
-	  <Affliction identifier="acidburn" strength="5" />
+      <Affliction identifier="acidburn" strength="5" />
     </Explosion>
-    <ParticleEmitter particle="organeruption" particleamount="15" scalemin="0.4" scalemax="0.5" velocitymin="150" velocitymax="500" anglemin="0" anglemax="360" />
-    <ParticleEmitter particle="heavygib" drawontop="true" particleamount="13" scalemin="0.35" scalemax="0.4" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
-    <ParticleEmitter particle="gib" particleamount="5" scalemin="0.25" scalemax="0.3" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
-    <ParticleEmitter particle="bloodsplash" particleamount="30" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.75" scalemax="1.7" />
-    <ParticleEmitter particle="whitegoosplash" particleamount="15" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.8" scalemax="1.0" />
+    <ParticleEmitter particle="organeruption" particleamount="35" scalemin="0.8" scalemax="1.2" velocitymin="150" velocitymax="500" anglemin="0" anglemax="360" distancemin="30" distancemax="120"/>
+    <ParticleEmitter particle="heavygib" drawontop="true" particleamount="15" scalemin="0.8" scalemax="1.2" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="gib" particleamount="15" scalemin="0.8" scalemax="1.2" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" distancemin="30" distancemax="120"/>
+    <ParticleEmitter particle="bloodsplash" particleamount="10" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="1.5" scalemax="2" />
+    <ParticleEmitter particle="whitegoosplash" particleamount="5" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.8" scalemax="1.2" distancemin="30" distancemax="120"/>
+    <RemoveCharacter />
   </StatusEffect>
-  	  <StatusEffect type="OnActive" oneshot="true" target="this">
-      <Conditional HealthPercentage="lte 35" />
-      <SpawnItem identifier="acidemitter" count="1" />
-    </StatusEffect>
+  <!-- I need multiple of these or it will only break a single tail -->
+  <StatusEffect type="OnDeath" target="Limb" targetlimb="Tail" >
+    <BreakLimb />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="Limb" targetlimb="Tail" >
+    <BreakLimb />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="Limb" targetlimb="Tail" >
+    <BreakLimb />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="Limb" targetlimb="Tail" >
+    <BreakLimb />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="Limb" targetlimb="Waist" delay="0.3" >
+    <BreakLimb />
+  </StatusEffect>
+  
+  <StatusEffect type="OnActive" oneshot="true" target="this">
+    <Conditional HealthPercentage="lte 35" />
+    <SpawnItem identifier="mossacidemitter" count="1" />
+  </StatusEffect>
 	<StatusEffect type="OnActive" oneshot="true" target="this">
-      <Conditional HealthPercentage="lte 70" />
-      <SpawnItem identifier="acidemitter" count="1" />
-    </StatusEffect>
+    <Conditional HealthPercentage="lte 70" />
+    <SpawnItem identifier="mossacidemitter" count="1" />
+  </StatusEffect>
 </Character>
