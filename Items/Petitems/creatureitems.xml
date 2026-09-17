@@ -181,8 +181,8 @@
     <Deconstruct time="10">
       <Item identifier="phosphorus" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir:2518816103%/Items/Petitems/WhiteFish_Light.png" sourcerect="0,0,13,21" />
-    <Sprite texture="%ModDir:2518816103%/Items/Petitems/WhiteFish_Light.png" depth="0.54" sourcerect="0,0,13,21" />
+    <InventoryIcon texture="%ModDir:2518816103%/Characters/Whitefish/WhiteFish_Light.png" sourcerect="0,0,13,21" />
+    <Sprite texture="%ModDir:2518816103%/Characters/Whitefish/WhiteFish_Light.png" depth="0.54" sourcerect="0,0,13,21" />
     <Body width="29" height="42" density="13" />
     <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
   </Item>
