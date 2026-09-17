@@ -51,11 +51,11 @@
       <Affliction identifier="nausea" strength="25" />
       <Affliction identifier="acidburn" strength="5" />
     </Explosion>
-    <ParticleEmitter particle="organeruption" particleamount="35" scalemin="0.8" scalemax="1.2" velocitymin="150" velocitymax="500" anglemin="0" anglemax="360" distancemin="30" distancemax="120"/>
-    <ParticleEmitter particle="heavygib" drawontop="true" particleamount="15" scalemin="0.8" scalemax="1.2" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="organeruption" particleamount="35" scalemin="0.8" scalemax="1.2" velocitymin="150" velocitymax="500" anglemin="0" anglemax="360" distancemin="30" distancemax="120" ColorMultiplier="170,70,20,255"/>
+    <ParticleEmitter particle="heavygib" drawontop="true" particleamount="15" scalemin="1.2" scalemax="1.6" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" distancemin="30" distancemax="120" lifetimemultiplier="2"/>
     <ParticleEmitter particle="gib" particleamount="15" scalemin="0.8" scalemax="1.2" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" distancemin="30" distancemax="120"/>
-    <ParticleEmitter particle="bloodsplash" particleamount="10" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="1.5" scalemax="2" />
-    <ParticleEmitter particle="whitegoosplash" particleamount="5" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.8" scalemax="1.2" distancemin="30" distancemax="120"/>
+    <ParticleEmitter particle="bloodsplash" particleamount="10" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="2" scalemax="3" distancemin="30" distancemax="120" lifetimemultiplier="2"/>
+    <ParticleEmitter particle="whitegoosplash" particleamount="5" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" scalemin="0.8" scalemax="1.2" distancemin="30" distancemax="120"/>
     <RemoveCharacter />
   </StatusEffect>
   <!-- I need multiple of these or it will only break a single tail -->
