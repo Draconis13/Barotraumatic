@@ -17,7 +17,7 @@
     <target damagethreshold="0" Tag="engine" State="Follow" Priority="20" ReactDistance="500" AttackDistance="0" Timer="50" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" />
   </ai>
   <!-- this conceals the fish when it is being chased by  predator -->
-  <StatusEffect type="Always" target="Character" disabledeltatime="true" duration="2" stackable="false" >
+  <StatusEffect type="OnActive" target="Character" disabledeltatime="true" duration="2" stackable="false" >
     <Conditional AIstate="Flee" />
     <Conditional AIstate="Escape" />
     <Affliction identifier="concealed" amount="1" />
