@@ -2159,7 +2159,7 @@
       strengthchange="-0.05"
       minscreenblur="0.0"
       maxscreenblur="0.1">
-      <StatusEffect target="Limb" >
+      <StatusEffect target="Limb" interval="1" disabledeltatime="true">
         <Conditional Bleeding="gt 0" />
         <Conditional mass="lt 20" />
         <Affliction identifier="Bleeding" amount="2" />
