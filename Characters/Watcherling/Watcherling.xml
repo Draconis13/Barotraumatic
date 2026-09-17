@@ -26,10 +26,10 @@
     <target Tag="stronger" State="Avoid" Priority="200" ReactDistance="2000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" />
   </ai>
   <StatusEffect type="OnActive" target="NearbyCharacters" range="2000" targets="human">
-    <Affliction identifier="watchersgazelite" strength="5" />
+    <Affliction identifier="watchersgazelite" strength="10" />
     <Sound file="Content/Characters/Watcher/WATCHER_idleLoop.ogg" loop="true" range="1000" volume="0.2" dontmuffle="true" />
   </StatusEffect>
-  <StatusEffect type="OnActive" target="NearbyCharacters" range="600" targets="human" onlyoutside="true">
+  <StatusEffect type="OnActive" target="NearbyCharacters" range="800" targets="human" onlyoutside="true">
     <Affliction identifier="watchersgazelite" strength="10" />
   </StatusEffect>
   <StatusEffect type="OnActive" target="NearbyCharacters" range="600" targets="monster" onlyoutside="true">

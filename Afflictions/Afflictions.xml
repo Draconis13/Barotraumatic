@@ -2044,7 +2044,7 @@
       <StatusEffect target="Character" comparison="And">
         <Conditional ishuman="true" />
         <Conditional watchersgaze="lt 60" />
-        <Affliction identifier="watchersgaze" strength="5" />
+        <Affliction identifier="watchersgaze" strength="10" />
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
