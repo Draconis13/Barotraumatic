@@ -2207,7 +2207,7 @@
       <StatValue stattype="RangedSpreadReduction" minvalue="0" maxvalue="-0.5" />
     </Effect>
     <Effect minstrength="1" maxstrength="2" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="1.0">
-      <StatValue stattype="RangedSpreadReduction" minvalue="0.5" maxvalue="-0.5" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="-0.5" maxvalue="-0.5" />
       <!-- <StatusEffect target="Character" >
         <Conditional IsLocalPlayer="true" />
         <sound file="%ModDir:2518816103%/Sounds/ShockLoop.ogg" volume="2" loop="true" dontmuffle="true" frequencymultiplier="0.5"/>
