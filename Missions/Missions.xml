@@ -725,9 +725,9 @@
     <LocationType from="AnyOutpost" to="Any" />
     <message header="missionheader0.generickill" text="missionmessage0.generickill" />
   </MonsterMission>
-  <MonsterMission name="Terminate a Major Swarm" identifier="killcrawlerswarmbt1" tags="killmonster,killswarm,killswarm_set1" type="Monster" description="A huge swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." difficulty="2" commonness="65" reward="4200" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated." monsterfile="Crawler_large" monstercount="10">
-    <monster character="crawler" min="6" max="14" />
-    <monster character="crawlerbroodmother" min="1" max="2" />
+  <MonsterMission name="Terminate a Major Swarm" identifier="killcrawlerswarmbt1" tags="killmonster,killswarm,killswarm_set2" type="Monster" description="A huge swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." difficulty="2" commonness="65" reward="4200" sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated." monsterfile="Crawler_large" monstercount="10">
+    <monster character="crawler" min="6" max="10" />
+    <monster character="crawlerbroodmother" min="1" max="1" />
     <Reputation identifier="location" amount="2" />
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48" />
     <LocationType from="AnyOutpost" to="Any" />
