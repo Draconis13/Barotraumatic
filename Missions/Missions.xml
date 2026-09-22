@@ -40,6 +40,54 @@
   <!-- KILL MONSTER MISSIONS -->
   <!-- KILL MONSTER MISSIONS -->
   
+
+  <MonsterMission name="Kill a Scavenger" description="A rogue Scavenger is wandering around the area between [location1] and [location2], The authorities are awarding a small sum of [reward] marks to anyone who eliminates it. Anyone that kills the deadly creature will also be free to keep whatever they found on it" successmessage="The Scavenger have been terminated."
+  identifierl="killScavenger"
+  type="Monster" 
+  tags="killmonster,killmonster_set1" 
+  commonness="50" 
+  difficulty="2" 
+  reward="1350" 
+  sonarlabel="Scavenger" maxsonarmarkerdistance="10000" monsterfile="xan_scavenger" monstercount="1">
+    <Reputation identifier="location" amount="1" />
+    <Icon texture="%ModDir:2518816103%/UI/XanIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
+    <LocationType from="AnyOutpost" to="Any" />
+    <message header="Target eliminated" text="The targets have been eliminated. Navigate the submarine out of the cavern." />
+  </MonsterMission>
+  
+  <MonsterMission name="Gnasher School"
+  identifierl="Gnasher1" description="Submarines travelling between [location1] and [location2] have reported being harassed by a school of Gnashers. A bounty of [reward] marks has been posted for dealing with these annoying fish." 
+  tags="killmonster,killmonster_set1"
+  type="Monster" 
+  difficulty="1" 
+  commonness="50" 
+  reward="1500" 
+  sonarlabel="Gnasher" maxsonarmarkerdistance="10000">
+    <monster character="Thrasher" min="6" max="7" />
+    <Reputation identifier="location" amount="1" />
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48" />
+    <LocationType from="AnyOutpost" to="Any" />
+    <message header="missionheader0.generickill" text="missionmessage0.generickill" />
+  </MonsterMission>
+
+  <MonsterMission
+    name="Barracuda School"
+    identifier="Barracuda1"
+    description="Submarianers traveling between [location1] and [location2] have sighted a small school of Barracuda. A small bounty of [reward] has been posted for their destruction since trophies from the caracasses are quite valueable." 
+    tags="killmonster,killmonster_set1"
+    type="Monster"    
+    difficulty="1"    
+    commonness="70"
+    reward="1000"
+    sonarlabel="Barracuda" maxsonarmarkerdistance="10000">
+    <monster character="TigerSharkThresher" min="2" max="3"/>
+    <monster character="Lionthresher" min="3" max="4"/>
+    <Reputation identifier="location" amount="1" />
+    <LocationType from="AnyOutpost" to="Any" />
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+    <message header="missionheader0.generickill" text="missionmessage0.generickill" />
+  </MonsterMission>
+  
   <MonsterMission name="Terminate a Infested Submarine" description="Scouts have reported of a large Wrecked Carrier that has been taken over by infestated growth. It is now still moving around [location1] and [location2] and the authorities are offering a reward of [reward] to any submarine that takes out the mobile thalamus. Be warned that it has a hook on its front side and must be approached carefully." successmessage="The ship has been terminated."
   identifierl="killthalamuscarrier"
   type="Monster" 
@@ -338,19 +386,6 @@
     <message header="missionheader0.generickill" text="missionmessage0.generickill" />
   </MonsterMission>
 
-  <MonsterMission name="Kill a Scavenger" description="A rogue Scavenger is wandering around the area between [location1] and [location2], The authorities are awarding a small sum of [reward] marks to anyone who eliminates it. Anyone that kills the deadly creature will also be free to keep whatever they found on it" successmessage="The Scavenger have been terminated."
-  identifierl="killScavenger"
-  type="Monster" 
-  tags="killmonster,killmonster_set1" 
-  commonness="50" 
-  difficulty="2" 
-  reward="1350" 
-  sonarlabel="Scavenger" maxsonarmarkerdistance="10000" monsterfile="xan_scavenger" monstercount="1">
-    <Reputation identifier="location" amount="1" />
-    <Icon texture="%ModDir:2518816103%/UI/XanIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="Target eliminated" text="The targets have been eliminated. Navigate the submarine out of the cavern." />
-  </MonsterMission>
 
   <MonsterMission name="Kill Clownhead" description="The Local clown syndicate at [location1] has posted an unusual bounty. They need a crew headed to [location2] to deal with something they call a Clownhead, a prank that has gotten out of hand. They are paying [reward] to anyone who gets the last laugh." successmessage="The Clownhead has gotten the punchline and sinker."
   identifierl="killclownhead1"
@@ -549,22 +584,6 @@
     <message header="missionheader0.generickill" text="missionmessage0.generickill" />
   </MonsterMission>
 
-  
-  <MonsterMission name="Gnasher School"
-  identifierl="Gnasher1" description="Submarines travelling between [location1] and [location2] have reported being harassed by a school of Gnashers. A bounty of [reward] marks has been posted for dealing with these annoying fish." 
-  tags="killmonster,killmonster_set1"
-  type="Monster" 
-  difficulty="1" 
-  commonness="50" 
-  reward="1500" 
-  sonarlabel="Gnasher" maxsonarmarkerdistance="10000">
-    <monster character="Thrasher" min="6" max="7" />
-    <Reputation identifier="location" amount="1" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="missionheader0.generickill" text="missionmessage0.generickill" />
-  </MonsterMission>
-
   <MonsterMission name="Gnasher Swarm"
   identifierl="Gnasher2" description="Submarines travelling between [location1] and [location2] have reported being damaged by a large swarm of Gnashers. A bounty of [reward] marks has been posted for preventing them from causing any more damage." 
   tags="killmonster,killmonster_set2"
@@ -614,44 +633,17 @@
     <message header="missionheader0.generickill" text="missionmessage0.generickill" />
   </MonsterMission>
 
-  <MonsterMission
-    name="Barracuda School"
-    identifier="Barracuda1"
-    description="Submarianers traveling between [location1] and [location2] have sighted a small school of Barracuda. A small bounty of [reward] has been posted for their destruction since trophies from the caracasses are quite valueable." 
-  tags="killmonster,killmonster_set1"
-    type="Monster"
-    
-  difficulty="1"
-    
-  commonness="70"
-    
-  reward="1000"
-    
-  sonarlabel="Barracuda"
-    maxsonarmarkerdistance="10000">
-    <monster character="TigerSharkThresher" min="2" max="3"/>
-    <monster character="Lionthresher" min="3" max="4"/>
-    <Reputation identifier="location" amount="1" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
-    <message header="missionheader0.generickill" text="missionmessage0.generickill" />
-  </MonsterMission>
 
    <MonsterMission
     name="Large Barracuda School"
     identifier="Barracuda2"
     description="Submarianers traveling between [location1] and [location2] have encountered a dangerously large school of Barracuda. A bounty of [reward] has been posted for their destruction and the trophies from the caracasses are quite valueable." 
-  tags="killmonster,killmonster_set2"
+    tags="killmonster,killmonster_set2"
     type="Monster"
-    
-  difficulty="2"
-    
-  commonness="20"
-    
-  reward="2000"
-    
-  sonarlabel="Barracuda"
-    maxsonarmarkerdistance="10000">
+    difficulty="2"
+    commonness="20"
+    reward="2000"
+    sonarlabel="Barracuda" maxsonarmarkerdistance="10000">
     <monster character="TigerSharkThresher" min="5" max="6"/>
     <monster character="Lionthresher" min="4" max="5"/>
     <Reputation identifier="location" amount="1" />
@@ -664,16 +656,11 @@
     name="Hullfish School"
     identifier="Hullfish1"
     description="Submarines traveling between [location1] and [location2] have been damaged by a dangerously large school of Hullfish. A bounty of [reward] has been posted for their destruction due to economic damage." 
-  tags="killmonster,killmonster_set1"
+    tags="killmonster,killmonster_set1"
     type="Monster"
-    
-  difficulty="1"
-    
-  commonness="60"
-    
-  reward="1800"
-    
-  sonarlabel="Hullfish"
+    difficulty="1"
+    commonness="60"
+    reward="1800" sonarlabel="Hullfish"
     maxsonarmarkerdistance="10000">
     <monster character="hullfish" min="10" max="13"/>
     <Reputation identifier="location" amount="1" />
@@ -686,17 +673,12 @@
     name="Massive Hullfish Swarm"
     identifier="Hullfish2"
     description="Submarines traveling between [location1] and [location2] have been heavily damage by a massives schools of Hullfish. A bounty of [reward] has been posted for their destruction due to severe economic damage." 
-  tags="killmonster,killmonster_set2"
+    tags="killmonster,killmonster_set2"
     type="Monster"
-    
-  difficulty="2"
-    
-  commonness="20"
-    
-  reward="2200"
-    
-  sonarlabel="Hullfish"
-    maxsonarmarkerdistance="10000">
+    difficulty="2"
+    commonness="20"
+    reward="2200"
+    sonarlabel="Hullfish" maxsonarmarkerdistance="10000">
     <monster character="hullfish" min="19" max="23"/>
     <Reputation identifier="location" amount="1" />
     <LocationType from="AnyOutpost" to="Any" />
@@ -708,17 +690,12 @@
     name="Kill Shrimp"
     identifier="Killshrimp1"
     description="Submarines traveling between [location1] and [location2] have had operations disrupted by a group of shrimp, A reward of [reward] has been posted to exterminate them." 
-  tags="killmonster,killmonster_set1"
+    tags="killmonster,killmonster_set1"
     type="Monster"
-    
-  difficulty="1"
-    
-  commonness="70"
-    
-  reward="1500"
-    
-  sonarlabel="Shrimp"
-    maxsonarmarkerdistance="10000">
+    difficulty="1"
+    commonness="70"
+    reward="1500"
+    sonarlabel="Shrimp" maxsonarmarkerdistance="10000">
     <monster character="Legacycrawler" min="6" max="8"/>
     <Reputation identifier="location" amount="1" />
     <LocationType from="AnyOutpost" to="Any" />
@@ -730,17 +707,12 @@
     name="Kill Shrimp"
     identifier="Killshrimp2"
     description="Submarines traveling between [location1] and [location2] have had to abandon operations due to attacks by large groups of shrimp, A reward of [reward] has been posted to cull their numbers." 
-  tags="killmonster,killmonster_set2"
+    tags="killmonster,killmonster_set2"
     type="Monster"
-    
-  difficulty="1"
-    
-  commonness="40"
-    
-  reward="2500"
-    
-  sonarlabel="Shrimp"
-    maxsonarmarkerdistance="10000">
+    difficulty="1"
+    commonness="40"
+    reward="2500"
+    sonarlabel="Shrimp" maxsonarmarkerdistance="10000">
     <monster character="Legacycrawler" min="9" max="12"/>
     <Reputation identifier="location" amount="1" />
     <LocationType from="AnyOutpost" to="Any" />
@@ -752,17 +724,12 @@
     name="Kill Mantids"
     identifier="Killmantispink"
     description="Submarines traveling between [location1] and [location2] have been accosted by a small coldwater mantis subspecies usually found in caves, A reward of [reward] has been posted to deal with them, but careful they pinch." 
-  tags="killmonster,killmonster_set1"
+    tags="killmonster,killmonster_set1"
     type="Monster"
-    
-  difficulty="1"
-    
-  commonness="50"
-    
-  reward="2000"
-    
-  sonarlabel="Mantis"
-    maxsonarmarkerdistance="10000">
+    difficulty="1"
+    commonness="50"
+    reward="2000"
+    sonarlabel="Mantis" maxsonarmarkerdistance="10000">
     <monster character="mantispink" min="4" max="5"/>
     <Reputation identifier="location" amount="1" />
     <LocationType from="AnyOutpost" to="Any" />
@@ -775,17 +742,12 @@
     name="Kill Mantids"
     identifier="killmantids1"
     description="Submarines traveling between [location1] and [location2] have been accosted by a pack of rogue mantids outside of their usual range and caves, A reward of [reward] has been posted to eliminate them." 
-  tags="killmonster,killmonster_set2"
+    tags="killmonster,killmonster_set2"
     type="Monster"
-    
-  difficulty="2"
-    
-  commonness="40"
-    
-  reward="2300"
-    
-  sonarlabel="Mantis"
-    maxsonarmarkerdistance="10000">
+    difficulty="2"
+    commonness="40"
+    reward="2300"
+    sonarlabel="Mantis" maxsonarmarkerdistance="10000">
     <monster character="mantis" min="5" max="6"/>
     <Reputation identifier="location" amount="1" />
     <LocationType from="AnyOutpost" to="Any" />
@@ -798,17 +760,12 @@
     name="Kill A Bonethresher"
     identifier="killbonethresherBT"
     description="A rogue thresher pack led by a Bonethresher has been sighted between [location1] and [location2] well outside of their normal deeper biomes, A reward of [reward] has been posted to eliminate this unusual threat." 
-  tags="killmonster,killmonster_set1"
+    tags="killmonster,killmonster_set1"
     type="Monster"
-    
-  difficulty="2"
-    
-  commonness="20"
-    
-  reward="3000"
-    
-  sonarlabel="Thresher"
-    maxsonarmarkerdistance="10000">
+    difficulty="2"
+    commonness="20"
+    reward="3000"
+    sonarlabel="Thresher" maxsonarmarkerdistance="10000">
     <monster character="Bonethresher" min="1" max="1"/>
     <monster character="Tigerthresher" min="5" max="6"/>
     <Reputation identifier="location" amount="1" />
@@ -2131,16 +2088,12 @@
  
    <EscortMission
     identifier="escort1BTTEST"
-    
-  tags="escortcommoners,escort"
+tags="escortcommoners,escort"
     type="Escort"
-    
-  difficulty="1"
+difficulty="1"
     description="A mining crew was forced to leave the abyss after encountering multiple abyss entities, forcing them to leave their deep divers out in the open. A day later their beacon was activated and authorities are rewarding [reward] to whoever can rescue the abandoned divers before its too late."
-    
-  commonness="10000"
-    
-  reward="1000"
+commonness="10000"
+reward="1000"
 	
   spawntype="Cave" 
     baseescortedcharacters="1">
