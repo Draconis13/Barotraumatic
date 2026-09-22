@@ -43,7 +43,7 @@
 
   <MonsterMission name="Kill a Scavenger"
   description="A rogue Scavenger is wandering around the area between [location1] and [location2], The authorities are awarding a small sum of [reward] marks to anyone who eliminates it. Anyone that kills the deadly creature will also be free to keep whatever they found on it" successmessage="The Scavenger have been terminated."
-  identifierl="killScavenger"
+  identifier="killScavenger"
   type="Monster" 
   tags="killmonster,killmonster_set1" 
   commonness="50" 
@@ -58,7 +58,7 @@
   </MonsterMission>
   
   <MonsterMission name="Gnasher School"
-  identifierl="Gnasher1"
+  identifier="Gnasher1"
   description="Submarines travelling between [location1] and [location2] have reported being harassed by a school of Gnashers. A bounty of [reward] marks has been posted for dealing with these annoying fish." 
   tags="killmonster,killmonster_set1"
   type="Monster" 
@@ -93,7 +93,7 @@
   
   <MonsterMission name="Terminate a Infested Submarine"
   description="Scouts have reported of a large Wrecked Carrier that has been taken over by infestated growth. It is now still moving around [location1] and [location2] and the authorities are offering a reward of [reward] to any submarine that takes out the mobile thalamus. Be warned that it has a hook on its front side and must be approached carefully." successmessage="The ship has been terminated."
-  identifierl="killthalamuscarrier"
+  identifier="killthalamuscarrier"
   type="Monster" 
   tags="killmonster,killmonster_set3" 
   commonness="100" 
@@ -109,7 +109,7 @@
 
    <MonsterMission name="Terminate a Infested Submarine"
   description="Scouts have reported of a large Wrecked Carrier that has been taken over by infestated growth. It is now still moving around [location1] and [location2] and the authorities are offering a reward of [reward] to any submarine that takes out the hermit, Be warned that initial thalamus reports were incorrect and it is some kind of clawed crab like creature." successmessage="The ship has been terminated."
-  identifierl="killhermitdugong"
+  identifier="killhermitdugong"
   type="Monster" 
   tags="killmonster,killmonster_set3" 
   commonness="100" 
@@ -125,7 +125,7 @@
 
   <MonsterMission name="Terminate Hermit Flotilla"
   description="Long distance sonar has picked up a group of derelict submarines piloted by the anomolous crab-like hermits. Their movement has been tracked between [location1] and [location2] With administrators posting a bounty of [reward] to any crew who can sink these crustaceans." successmessage="The ship has been terminated."
-  identifierl="killhermitsubs"
+  identifier="killhermitsubs"
   type="Monster" 
   tags="killmonster,killmonster_set3" 
   commonness="100" 
@@ -141,7 +141,7 @@
   </MonsterMission>
 
   <MonsterMission name="Kill a Moloch"
-  identifierl="killnuclearmoloch"
+  identifier="killnuclearmoloch"
   description="A recent clearing operation went wrong when the Attack ship shot a nuclear shell at a Moloch and the shell got stuck inside its core and didn't detonate. The Attack ship fled the scene however the Injured Moloch still wanders the area dangerously with an active nuclear shell inside it. Authorities are willing to pay [reward] marks to anyone that could kill the creature, and keep your distance from it!" 
   tags="killmonster,killmonster_set2"
   type="Monster" 
@@ -157,7 +157,7 @@
   </MonsterMission>
 
   <MonsterMission name="Kill a Moloch"
-  identifierl="killmolochgreen"
+  identifier="killmolochgreen"
   description="Strange bioluminescant green lights have been sighted by ships arriving at [location1] and some smaller vessals from [location2] been lost in transit. Together this indicates an Abyssal moloch colonized by bio worms has risen to hunt in the passageway. A reward of [reward] has been posted to destroy it." 
   tags="killmonster,killmonster_set2"
   type="Monster" 
@@ -173,7 +173,7 @@
   </MonsterMission>
 
   <MonsterMission name="Investigate a Floral Growth"
-  identifierl="killthalamid"
+  identifier="killthalamid"
   type="Monster" 
   tags="killmonster,killmonster_set2"
   description="The Station Administrator reports sightings of a large mobile Thalamus hunting vessel between [location1] and [location2]. They offer you [reward] to eliminate the threat." 
@@ -189,7 +189,7 @@
   </MonsterMission>
 
   <MonsterMission name="Investigate a Floral Growth"
-  identifierl="killthalamid2"
+  identifier="killthalamid2"
   type="Monster" 
   tags="killmonster,killmonster_set2"
   description="The Station Administrator reports sightings of a large mobile Thalamus hunting vessel between [location1] and [location2]. They offer you [reward] to eliminate the threat." 
@@ -207,7 +207,7 @@
   </MonsterMission>
 
   <MonsterMission name="Investigate a Floral Growth"
-  identifierl="killthalamid3"
+  identifier="killthalamid3"
   type="Monster" 
   tags="killmonster,killmonster_set3"
   description="The Station Administrator reports sightings of a large mobile Thalamus hunting vessel between [location1] and [location2]. They offer you [reward] to eliminate the threat." 
@@ -226,7 +226,7 @@
   </MonsterMission>
 
   <MonsterMission name="Destroy a Fractal Sentry"
-  identifierl="killfractalsentry" 
+  identifier="killfractalsentry" 
   tags="killmonster,killmonster_set3"
   type="Monster"
   description="A Fractal Sentry has metastasized from the structure of a local ruin, it has now became a extremely dangerous threat towards traveling ships. [location1] will reward anyone for [reward] marks towards whoever could destroy the Sentry between [location1] and [location2]." 
@@ -242,7 +242,7 @@
   </MonsterMission>
 
   <MonsterMission name="Destroy a Pylon"
-  identifierl="killpylon" 
+  identifier="killpylon" 
   tags="killmonster,killmonster_set3"
   type="Monster"
   description="A Fractal Pylon has metastasized from the structure of a local ruin, it has now became a dangerous threat towards traveling ships. [location1] will reward anyone for [reward] marks towards whoever could destroy the Sentry between [location1] and [location2]." 
@@ -259,7 +259,7 @@
 
   <MonsterMission name="Salvaging a Derelict"
   description="A medium-sized attack submarine, went missing two months ago between [location1] and [location2].while the vessel was presumed to be taken by the abyss,the vehicle's and the crew's emergency beacons were recently activated, A reward of [reward] Marks has been promised to any crew who can investigate the beacon." successmessage="The researchers of [location1] are eager to know all the details of the encounter, but seem hesitant to answer any questions regarding the vessel. They do however offer you [reward] Marks as &quot;reimbursement for your troubles&quot;."
-  identifierl="killcarrierleviathan3" 
+  identifier="killcarrierleviathan3" 
   tags="killmonster,killswarm,killswarm_set3" 
   commonness="90"
   type="Monster" 
@@ -276,7 +276,7 @@
   <!-- TODO: we are benching cnidae in favor of cnidaeprime -->
   <!-- <MonsterMission name="Terminate Cnidae"
   description="An aggressive triumverate of gas producing Cnidae is disrupting the route between [location1] and [location2],A reward of [reward] Marks has been promised to anyone who can eliminate the threat." successmessage="The Cnidae has been terminated."
-  identifierl="killcoelanthre"
+  identifier="killcoelanthre"
   type="Monster" 
   tags="killmonster,killmonster_set2" 
   commonness="80" 
@@ -293,7 +293,7 @@
   <MonsterMission name="Beast From the Abyss"
   description="Seismic readings are indicating that something colossal has emerged from the depths of Europa. A reward of [reward] has been promised to those who get rid of whatever is causing the seismic activity."
   monsterfile="Rockworm" successmessage="The Endworm has been terminated."
-  identifierl="killrockworm"
+  identifier="killrockworm"
   type="Monster" 
   tags="killmonster,killmonster_set2" 
   commonness="10" 
@@ -308,7 +308,7 @@
   <MonsterMission name="Beast From the Abyss"
   description="Seismic readings are indicating that something colossal has emerged from the depths of Europa. A reward of [reward] has been promised to those who get rid of whatever is causing the seismic activity."
   monsterfile="Endwormre" successmessage="The Endworm has been terminated."
-  identifierl="killendwormre"
+  identifier="killendwormre"
   type="Monster" 
   tags="killmonster,killmonster_set4" 
   commonness="20" 
@@ -322,7 +322,7 @@
   <MonsterMission name="Injured Dispatch"
   description="An assault vessel managed to target and severely wound a Latcher in the Abyss however it managed to escape from the crew and is now fleeing around the path at [location1] and [location2] and could be still dangerous. Station administrators are offering a shared reward of [reward] to whoever can finish it off, the rest of the money will go to the first Assault vessel that wounded it."
   monsterfile="Latcherabyss" successmessage="The Latcher has been terminated."
-  identifierl="woundedabyss"
+  identifier="woundedabyss"
   type="Monster" 
   tags="killmonster,killmonster_set3" 
   commonness="50" 
@@ -336,7 +336,7 @@
 
   <MonsterMission name="Kill a Husk Immortal"
   description="An Anomalous Husk cultist has appeared between [location1] and [location2]. Rarely found operating in open water, They will no doubt be accompanied by other husk creatures in persuit of their alien goals. A reward of [reward] has been promised to any crew brave enough confront them and administer lethal justice." successmessage="The Immortal has been terminated."
-  identifierl="killimmortal"
+  identifier="killimmortal"
   type="Monster" 
   tags="killmonster,killmonster_set3" 
   commonness="10" 
@@ -355,7 +355,7 @@
 
   <MonsterMission name="Terminate a Dybbuk"
   description="A particurarly aggressive Dybbuk has been causing severe psychological damage to nearby vessels traveling between [location1] and [location2]. A reward of [reward] marks has been promised to anyone who can eliminate it." successmessage="The Dybbuk has been terminated."
-  identifierl="killobserver"
+  identifier="killobserver"
   type="Monster" 
   tags="killmonster,killmonster_set3" 
   commonness="50" 
@@ -372,7 +372,7 @@
   <!-- TODO: don't like 3x unique creatures-->
   <MonsterMission name="Terminate Dyatel"
   description="A particurarly aggressive group of Dyatel, Speculated to be Dybbuk's larval form, have left the abyss and are targeting vessels traveling between [location1] and [location2]. A reward of [reward] marks has been promised to anyone who can eliminate them, expect hit and run attacks." successmessage="The Dyatel have been terminated."
-  identifierl="killobserver2"
+  identifier="killobserver2"
   type="Monster" 
   tags="killmonster,killmonster_set3" 
   commonness="50" 
@@ -388,7 +388,7 @@
 
   <MonsterMission name="Slay a Baby Charybdis"
   description="A Baby Charybdis has been attacking vessels traveling between [location1] and [location2]. A reward of [reward] marks has been promised to anyone who can eliminate it." successmessage="The Baby Charybdis has been terminated."
-  identifierl="killcharybdisre"
+  identifier="killcharybdisre"
   type="Monster" 
   tags="killmonster,killmonster_set2" 
   commonness="50" 
@@ -404,7 +404,7 @@
 
   <MonsterMission name="Slay an Anomalous Moloch"
   description="A Peculiar Moloch specimen has been spotted between [location1] and [location2]. Its aggressive nature has been detrimental to the trading routes,and as such, a reward of [reward] marks has been promised to anyone who can eliminate it." successmessage="The Moloch has been terminated."
-  identifierl="killbossmoloch" 
+  identifier="killbossmoloch" 
   tags="killmonster,killmonster_set3"
   type="Monster" 
   commonness="30" 
@@ -421,7 +421,7 @@
 
   <MonsterMission name="Kill Clownhead"
   description="The Local clown syndicate at [location1] has posted an unusual bounty. They need a crew headed to [location2] to deal with something they call a Clownhead, a prank that has gotten out of hand. They are paying [reward] to anyone who gets the last laugh." successmessage="The Clownhead has gotten the punchline and sinker."
-  identifierl="killclownhead1"
+  identifier="killclownhead1"
   type="Monster" 
   tags="killmonster,killmonster_set3" 
   commonness="35" 
@@ -440,7 +440,7 @@
   <MonsterMission name="Investigating A Missing Shipment"
   description="A small shipment of Ancient Brute Security Robots went gone missing between [location1] and [location2] ages ago.While it was assumed the shipment was lost to the abyss, the Brutes' rescue beacons recently activated in a nearby cave. Anyone willing to investigate the beacons will be rewarded" successmessage="You meet a representative of the company responsible for the production of the Brutes, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
   spawntype="Cave"
-  identifierl="killbrute"
+  identifier="killbrute"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set2" 
   commonness="20" 
@@ -457,7 +457,7 @@
   <MonsterMission name="Investigating A Missing Shipment"
   description="A small shipment of Ancient Brute Security Robots went gone missing between [location1] and [location2] ages ago.While it was assumed the shipment was lost to the abyss, the Brutes' rescue beacons recently activated. Anyone willing to investigate the beacons will be rewarded" successmessage="You meet a representative of the company responsible for the production of the Brutes, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
   spawntype="Abyss"
-  identifierl="killbrute2"
+  identifier="killbrute2"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set2" 
   commonness="30" 
@@ -474,7 +474,7 @@
   <MonsterMission name="Investigating A Missing Shipment"
   description="A large shipment of Ancient Brute Security Robots has gone missing between [location1] and [location2] long ago. While it was assumed the shipment was lost to the abyss,the Brutes' rescue beacons recently activated. Anyone willing to investigate the beacons will be rewarded " successmessage="You meet a representative of the company responsible for the production of the Brutes, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
   spawntype="Abyss"
-  identifierl="killbrute3"
+  identifier="killbrute3"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set2" 
   commonness="25" 
@@ -491,7 +491,7 @@
   <MonsterMission name="Investigating A Missing Shipment"
   description="A small shipment of Ancient Lug Cargo Robots went gone missing between [location1] and [location2] ages ago.While it was assumed the shipment was lost to the abyss, the Lug's rescue beacons recently activated in a nearby cave. Anyone willing to investigate the beacons will be rewarded" successmessage="You meet a representative of the company responsible for the production of the Luggars, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
   spawntype="Cave"
-  identifierl="killluggar1"
+  identifier="killluggar1"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set1" 
   commonness="25" 
@@ -508,7 +508,7 @@
   <MonsterMission name="Investigating A Missing Shipment"
   description="A large shipment of Ancient Lug Cargo Robots has gone missing between [location1] and [location2] long ago. While it was assumed the shipment was lost to the abyss,the Lug's rescue beacons recently activated. Anyone willing to investigate the beacons will be rewarded " successmessage="You meet a representative of the company responsible for the production of the Luggars, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
   spawntype="Abyss"
-  identifierl="killluggar2"
+  identifier="killluggar2"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set2" 
   commonness="30" 
@@ -525,7 +525,7 @@
   <MonsterMission name="Investigating A Missing Shipment"
   description="A large shipment of Ancient Cargo Robots has gone missing between [location1] and [location2] long ago. While it was assumed the shipment was lost to the abyss,the Lug's rescue beacons recently activated. Anyone willing to investigate the beacons will be rewarded " successmessage="You meet a representative of the company responsible for the production of the Luggars, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
   spawntype="Abyss"
-  identifierl="killluggar3"
+  identifier="killluggar3"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set2" 
   commonness="10" 
@@ -542,7 +542,7 @@
 
   <MonsterMission name="Kill the mysterious creature"
   description="Various small vessels and drones have gone missing between [location1] and [location2].The only Witnesses suffer from heavy psychosis and hallucinations and thus we don't have a description of what's causing the disappereances,however a particular infrasonic signal has been marked as the prime suspect.Anyone willing to investigate the signal will be rewarded. " successmessage="The Researchers of [location2] are particularly interested in the encounter and offer [reward] for your troubles"
-  identifierl="killvoidstalker"
+  identifier="killvoidstalker"
   type="Monster" 
   tags="killmonster,killmonster_set2" 
   commonness="20" 
@@ -557,7 +557,7 @@
   </MonsterMission>
 
   <MonsterMission name="Salvaging a Derelict"
-  identifierl="salvagekillcarrier" 
+  identifier="salvagekillcarrier" 
   tags="killmonster,killmonster_set2"
   type="Monster"
   description="A small cargo vessel went missing approximately two months ago when transporting xenomaterials from [location1] to [location2]. The vessel was presumed to be taken by the abyss, but now its emergency beacon seems to have been activated near [location2]. Find the vessel and recover the cargo." 
@@ -575,7 +575,7 @@
   <!-- TODO: wtf 8 shadowwhales??? change number and text-->
   <!-- <MonsterMission name="Terminate a large Shadow Whale swarm"
   description="Scouts have reported of a large swarm of Shadow Whales wandering the area between [location1] and [location2]. These Whales are invisible on sonar and can pose a big threat towards unprepared ships. The authorities are offering a reward of [reward] to any submarine that takes out the large swarm." successmessage="The swarm has been terminated."
-  identifierl="killshadowwhales"
+  identifier="killshadowwhales"
   type="Monster" 
   tags="killmonster,killmonster_set4" 
   commonness="45" 
@@ -591,7 +591,7 @@
 
   <!-- TODO: this doesn't work because wasteyard is no longer a thing... -->
   <!-- <MonsterMission name="The Twins"
-  identifierl="twins"
+  identifier="twins"
   type="Monster" 
   spawntype="Mainpath" 
   tags="killmonster,killmonster_set4"
@@ -615,7 +615,7 @@
   </MonsterMission> -->
 
   <MonsterMission name="Ice Shark Pack"
-  identifierl="Iceshark1"
+  identifier="Iceshark1"
   description="Submarines travelling between [location1] and [location2] have reported being attacked by a pack of Ice Sharks. A bounty of [reward] marks has been posted for dealing with these aggressive predators." 
   tags="killmonster,killmonster_set2"
   type="Monster" 
@@ -631,7 +631,7 @@
   </MonsterMission>
 
   <MonsterMission name="Gnasher Swarm"
-  identifierl="Gnasher2"
+  identifier="Gnasher2"
   description="Submarines travelling between [location1] and [location2] have reported being damaged by a large swarm of Gnashers. A bounty of [reward] marks has been posted for preventing them from causing any more damage." 
   tags="killmonster,killmonster_set2"
   type="Monster" 
@@ -647,7 +647,7 @@
   </MonsterMission>
 
   <MonsterMission name="Destroy Brain Moss"
-  identifierl="Brainmosspack"
+  identifier="Brainmosspack"
   description="Submarines passing between [location1] and [location2] have logged a radiation spikes consistant with a pack of the poorly understood Thalamus Brain Moss. The administrator has earmarked [reward] to whoever destroys these contaminated abberations." 
   tags="killmonster,killmonster_set2"
   type="Monster" 
@@ -665,7 +665,7 @@
   </MonsterMission>
 
   <MonsterMission name="Brain Drain"
-  identifierl="Brainmosspack2"
+  identifier="Brainmosspack2"
   description="Submarines passing between [location1] and [location2] have been attacked by a large cluster of Thalamus Brain Moss organisms. A bounty of [reward] has been posted for their destruction." 
   tags="killmonster,killmonster_set3"
   type="Monster" 
@@ -832,7 +832,7 @@
   description="Some filthy clowns have been causing some disruption around [location1] and [location2]. The authorities don't want to waste their time and are offering you [reward] if you could stop their shenanigans."
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set1"
-  identifierl="killclowns" name="Crowd Control">
+  identifier="killclowns" name="Crowd Control">
     <monster character="Clownwanderer" min="4" max="5" />
     <Reputation identifier="location" amount="2" />
     <Reputation identifier="huskcult" amount="5" />
@@ -850,7 +850,7 @@
   description="Some filthy clowns have been causing some disruption around [location1] and [location2]. The authorities don't want to waste their time and are offering you [reward] if you could stop their shenanigans."
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set2"
-  identifierl="killclowns2" name="Crowd Control">
+  identifier="killclowns2" name="Crowd Control">
     <monster character="Clownwanderer" min="2" max="6" />
     <monster character="Clownbomber" min="1" max="2" />
     <monster character="Clownsawcrazy" min="1" max="1" />
@@ -870,7 +870,7 @@
   description="A swarm of Ice Crabs have been sighted between [location1] and [location2], alongside a Giant Crab. Authorities are offering [reward] to whoever can eliminate them."
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set1"
-  identifierl="killicecrabswarm" name="Ice Crab Swarm">
+  identifier="killicecrabswarm" name="Ice Crab Swarm">
     <monster character="Icecrab" min="3" max="4" />
     <monster character="Giantcrabice" min="1" max="1" />
     <Reputation identifier="location" amount="1" />
@@ -880,7 +880,7 @@
   </MonsterMission>
 
   <MonsterMission name="Killing a Abyssal Hammerhead Herd"
-  identifierl="killabysshammerhead" 
+  identifier="killabysshammerhead" 
   tags="killmonster,killswarm,killswarm_set2"
   type="Monster"
   description="A particularly aggressive group of Abyssal Hammerheads have been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creatures." 
@@ -896,7 +896,7 @@
   </MonsterMission>
 
   <MonsterMission name="Killing a Abyssal Hammerhead Swarm"
-  identifierl="killabysshammerhead2" 
+  identifier="killabysshammerhead2" 
   tags="killmonster,killswarm,killswarm_set3"
   type="Monster"
   description="A massive group of Abyssal Hammerheads have risen from the abyss and have attacked vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creatures." 
@@ -919,7 +919,7 @@
   description="Some naval mines that were placed between the path from [location1] and [location2] have now been thrown off from their position and now dangerously roam the path. The administrators are offering [reward] to anyone who gets rid of these naval mines to allow commercial flights to enter the path safely again."
   type="Monster" 
   tags="killmonster,killmonster_set1"
-  identifierl="demining1" name="Demining Operations">
+  identifier="demining1" name="Demining Operations">
     <monster character="Mine" min="2" max="3" scatter="3000" />
     <monster character="Minesmall" min="1" max="3" scatter="3000" />
     <monster character="Minedetached" min="2" max="3" scatter="3000" />
@@ -937,7 +937,7 @@
   description="Some naval mines that were placed between the path from [location1] and [location2] have now been thrown off from their position and now dangerously roam the path. The administrators are offering [reward] to anyone who gets rid of these naval mines to allow commercial flights to enter the path safely again."
   type="Monster" 
   tags="killmonster,killmonster_set2"
-  identifierl="demining2" name="Demining Operations">
+  identifier="demining2" name="Demining Operations">
     <monster character="Mine" min="3" max="4" scatter="3000" />
     <monster character="Minesmall" min="2" max="3" scatter="4000" />
     <monster character="Minedetached" min="3" max="5" scatter="5000" />
@@ -955,7 +955,7 @@
   description="The authorities have detected a large formation of naval mines around [location1] and [location2]. These mines are unhooked and are purpously placed to destroy and disrupt a transportation route. The authorities are offering [reward] to anyone who could disarm or explode the mines in the area to resume commercial flights."
   type="Monster" 
   tags="killmonster,killmonster_set3"
-  identifierl="massdemining" name="Clearing a Massive Minefield">
+  identifier="massdemining" name="Clearing a Massive Minefield">
     <monster character="Minedetached" min="10" max="18" scatter="5000" />
     <Reputation identifier="location" amount="3" />
     <Icon color="105,105,105" sourcerect="4,263,243,244" texture="Content/UI/MissionIcons.png" />
@@ -965,7 +965,7 @@
  
   <MonsterMission name="Purging a Nascant Husk Brood Nexus "
   description="This area has become a nexus for husk activity. Biological readings suggest a large number of lifeform are gathering here,and particurlarly aggressive husk encounters recently manifested in the region. Researchers are offering [reward] Marks for anyone capable of eliminating the threats. As it is a considerable undertaking to remove so many husked creatures." successmessage="The Brood has been Purged."
-  identifierl="killbroodemperor2"
+  identifier="killbroodemperor2"
   type="Monster" 
   tags="killmonster,killswarm,killmonsterswarm,killswarm_set3" 
   commonness="20" 
@@ -991,7 +991,7 @@
 
   <MonsterMission name="Purging a Developed Husk Brood Nexus "
   description="This area has been a nexus for husk activity. Biological readings suggest a considerable number of lifeform have converged and from reports fused, resulting in a massive and particurlarly aggressive husk that has had time to metastasize in the region. Researchers are offering [reward] Marks for anyone capable of eliminating the threats. Survival is not expected for anyone under-prepared." successmessage="The Brood has been Purged."
-  identifierl="killbroodemperor3"
+  identifier="killbroodemperor3"
   type="Monster" 
   tags="killmonster,killswarm,killmonsterswarm,killswarm_set4" 
   commonness="10" 
@@ -1017,7 +1017,7 @@
   <!-- TODO: cnidaes are getting a rework -->
   <!-- <MonsterMission name="Terminate a pack of Cnidae"
   description="An aggressive pack of Cnidae's is disrupting the route between [location1] and [location2],A reward of [reward] Marks has been promised to anyone who can eliminate the threat." successmessage="The Cnidae has been terminated."
-  identifierl="killcoelanthre2"
+  identifier="killcoelanthre2"
   type="Monster" 
   tags="killmonsterswarm_set3" 
   commonness="15" 
@@ -1035,7 +1035,7 @@
   <!-- TODO: cnidaes are getting a rework -->
   <!-- <MonsterMission name="Terminate a pack of Cnidae"
   description="An aggressive pack of Cnidae's is disrupting the route between [location1] and [location2],A reward of [reward] Marks has been promised to anyone who can eliminate the threat." successmessage="The Cnidae has been terminated."
-  identifierl="killCnidaeprime"
+  identifier="killCnidaeprime"
   type="Monster" 
   tags="killmonsterswarm_set3" 
   commonness="10" 
@@ -1052,7 +1052,7 @@
 
   <MonsterMission name="Scavenger Galore"
   description="Some Scavengers established their territory between [location1] and [location2], and as such they developed an aggressive territorial behaviour, Anyone foolish enough to try and clear out the threat will be free to keep whatever they found" successmessage="The Scavengers have been terminated."
-  identifierl="killScavengers"
+  identifier="killScavengers"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set3" 
   commonness="40" 
@@ -1072,7 +1072,7 @@
   -->
   <MonsterMission name="Deadzone"
   description="Subs have gone down between [location1] and [location2]. Recovered logbooks all report electrical phenomana, strange lights and phantom ruins in thier last entries. A massive reward of [reward] has been promised to any crew who can possibly deal with this lethal threat." successmessage="The threat has been terminated."
-  identifierl="deadzone1"
+  identifier="deadzone1"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set4" 
   commonness="10" 
@@ -1091,7 +1091,7 @@
   
   <MonsterMission name="Terminate a Massive Thresher swarm"
   description="A massive swarm of Threshers has been attacking vessels between [location1] and [location2], effectively stopping all commercial routes. A reward of [reward] has been promised to any crew capable of terminating the swarm" successmessage="The swarm has been terminated."
-  identifierl="killmmassivethresher"
+  identifier="killmmassivethresher"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set4" 
   commonness="31" 
@@ -1109,7 +1109,7 @@
 
   <!-- TODO: don't like 3x unique creatures-->
   <MonsterMission name="Killing a Harpoon whale trio."
-  identifierl="killharpoonwhale" 
+  identifier="killharpoonwhale" 
   tags="killmonster,killmonster_set3"
   type="Monster"
   description="A trio of deadly harpoon whales are attacking traffic between [location1] and [location2], survivors of the attacks have posted a sizeable bounty of [reward] for killing the creatures." 
@@ -1126,7 +1126,7 @@
   
   <!-- TODO: don't like 3x unique creatures-->
   <MonsterMission name="Killing a Psilosaurus pod."
-  identifierl="killpsilosaur" 
+  identifier="killpsilosaur" 
   tags="killmonster,killmonster_set3"
   type="Monster"
   description="A trio of dangerous psilosaurs are stalking submarines between [location1] and [location2], survivors of attacks have posted a bounty of [reward] for killing the creatures." 
@@ -1143,7 +1143,7 @@
 
   
   <MonsterMission name="Killing a Moloch Herd"
-  identifierl="killmolochbt" 
+  identifier="killmolochbt" 
   tags="killmonster,killmonster_set3"
   type="Monster"
   description="A particularly aggressive Moloch herd and their offspring have been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creatures." 
@@ -1162,7 +1162,7 @@
   </MonsterMission>
 
   <MonsterMission name="Killing a Moloch Herd"
-  identifierl="killmolochblackbt" 
+  identifier="killmolochblackbt" 
   tags="killmonster,killmonster_set4" textidentifier="killmoloch"
   type="Monster"
   description="A particularly aggressive Moloch and her offspring have been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to those who kill the creature." 
@@ -1181,7 +1181,7 @@
   </MonsterMission>
 
   <MonsterMission name="Killing an Alpha Mudraptor brood"
-  identifierl="killalphamudraptor1" 
+  identifier="killalphamudraptor1" 
   tags="killmonster,killmonster_set4"
   type="Monster"
   description="A rarely seen Mudraptor Veteren of unusual size has attracted a massive brood that has begun preying on vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to anyone who can remove this threat." 
@@ -1200,7 +1200,7 @@
   </MonsterMission>
 
   <MonsterMission name="Stopping Unusual Mudraptor Attacks"
-  identifierl="killnightraptor" 
+  identifier="killnightraptor" 
   tags="killmonster,killmonster_set2"
   type="Monster"
   description="Unusual mudraptor attacks have been reportered between [location1] and [location2], the attacks came suddenly and without warning. A reward of [reward] credits has been promised to anyone who can stop these creatures." 
@@ -1216,7 +1216,7 @@
   </MonsterMission>
 
   <MonsterMission name="Stopping Unusual Mudraptor Attacks"
-  identifierl="killnightraptor2" 
+  identifier="killnightraptor2" 
   tags="killmonster,killmonster_set2"
   type="Monster"
   description="Unusual mudraptor attacks have been reportered between [location1] and [location2], the attacks came suddenly and without warning. A reward of [reward] credits has been promised to anyone who can stop these creatures." 
@@ -1233,7 +1233,7 @@
   </MonsterMission>
 
   <MonsterMission name="Coelanth School removal"
-  identifierl="kiilcoelanth1" 
+  identifier="kiilcoelanth1" 
   tags="killmonster,killmonster_set3"
   type="Monster"
   description="A unusually large school of hostile xeno fish have begun hunting between [location1] and [location2]. A reward of [reward] credits has been promised to anyone who can stop these creatures." 
@@ -1249,7 +1249,7 @@
   </MonsterMission>
 
   <MonsterMission name="Killing a Matriarch"
-  identifierl="killmatriarchbt1" 
+  identifier="killmatriarchbt1" 
   tags="killmonster,killmonster_set3"
   type="Monster"
   description="Eliminate the Hammerhead Matriarch and her minions." 
@@ -1267,7 +1267,7 @@
   </MonsterMission>
 
   <MonsterMission name="Killing a Matriarch Kingdom"
-  identifierl="killmatriarchbt4" 
+  identifier="killmatriarchbt4" 
   tags="killmonster,killmonster_set4"
   type="Monster"
   description="Eliminate the Hammerhead Matriarch and her kingdom of minions." 
@@ -1285,7 +1285,7 @@
   </MonsterMission>
 
   <MonsterMission name="Terminate a Seaurchin Swarm"
-  identifierl="killseaurchin1" 
+  identifier="killseaurchin1" 
   tags="killmonster,killswarm,killswarm_set1"
   type="Monster"
   description="A large swarm of Seaurchin has been attacking vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can remove it." 
@@ -1304,7 +1304,7 @@
 
   <!-- TODO: only leaving this here for later, let's not make those "huge swarm" missions, if we want to add swarm missions do not add more monsters, instead add unique ones -->
 <!--   <MonsterMission name="Terminate a Major Swarm"
-  identifierl="killcrawlerswarmbt1" 
+  identifier="killcrawlerswarmbt1" 
   tags="killmonster,killswarm,killswarm_set3"
   type="Monster"
   description="A huge swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." 
@@ -1323,7 +1323,7 @@
 
   <!-- TODO: too many enemies -->
   <MonsterMission name="Terminate a Husk Crawler Swarm"
-  identifierl="killcrawlerhuskswarmbt" 
+  identifier="killcrawlerhuskswarmbt" 
   tags="killmonster,killswarm,killswarm_set3"
   type="Monster"
   description="A Massive swarm of husk crawlers along with several larger anomolous contacts has been spotted by vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." 
@@ -1457,7 +1457,7 @@
 
   <MonsterMission name="Terminate a Large Thresher swarm"
   description="A huge swarm of threshers has been attacking vessels between [location1] and [location2]. Witnesses report also the appearence of less-known thresher lifeforms. A reward of [reward] has been promised to any crew capable of terminating the swarm." successmessage="The swarm has been terminated."
-  identifierl="killmajorthesher"
+  identifier="killmajorthesher"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set3" 
   commonness="40" 
@@ -1492,7 +1492,7 @@
 
   <MonsterMission name="Clown Uprising"
   description="The path between [location1] and [location2] have been a sight for a wave of brutal attacks from submarine crews over the past few days. Authorities reported that a clown syndicate is operating in the area and must be taken care of. They are offering [reward] for whoever can get rid of them." successmessage="The area now seems clear of any clowns in the area. Good work."
-  identifierl="killclownsyndicate"
+  identifier="killclownsyndicate"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set2" 
   commonness="80" 
@@ -1515,7 +1515,7 @@
   <!-- TODO: monster numbers are too random and need to get rid of the bad swimmer enemies -->
   <MonsterMission name="Fractal Migration"
   description="Divers reported a large column of Fractal inhabitants have escaped from a ruin and now dangerously roam the area between [location1] and [location2]. Administrators are offering [reward] for any armed submarine crew that could wipe out the roaming creatures." successmessage="The area now seems clear of any fractal guardians in the area. Good work."
-  identifierl="killfractalguardians"
+  identifier="killfractalguardians"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set3" 
   commonness="50" 
@@ -1540,7 +1540,7 @@
   <!-- TODO: monster numbers are too random and need to get rid of the bad swimmer enemies -->
   <MonsterMission name="Fractal Migration"
   description="Divers reported a large column of Fractal inhabitants have escaped from a ruin and now dangerously roam the area between [location1] and [location2]. Administrators are offering [reward] for any armed submarine crew that could wipe out the roaming creatures." successmessage="The area now seems clear of any fractal guardians in the area. Good work."
-  identifierl="killfractalguardiansDE"
+  identifier="killfractalguardiansDE"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set3" 
   commonness="35" 
@@ -1565,7 +1565,7 @@
   <!-- TODO: monster numbers are too random and need to get rid of the bad swimmer enemies -->
   <MonsterMission name="Fractal Migration"
   description="Divers reported a large column of Fractal inhabitants have escaped from a ruin and now dangerously roam the area between [location1] and [location2]. Administrators are offering [reward] for any armed submarine crew that could wipe out the roaming creatures." successmessage="The area now seems clear of any fractal guardians in the area. Good work."
-  identifierl="killfractalguardiansDEmermaid"
+  identifier="killfractalguardiansDEmermaid"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set3" 
   commonness="20" 
@@ -1590,7 +1590,7 @@
 
   <!-- TODO: very outdated nest missions, replace and refresh -->
   <NestMission name="Raiding a Huge Mudraptor Nest"
-  identifierl="mudraptornestraid"
+  identifier="mudraptornestraid"
   description="A large Mudraptor nest has been spotted around [location1] and [location2]. Sonar and heat seeking scanners revealed around over 10 mudraptors inside the cave and many eggs. Authorities estimate that without taking action for the next couple days, the outposts nearby the area will be overrun and abandoned. The Coalition hasn't taken action yet however the authorities are offering [reward] to whoever can exterminate the large nest. Expect high casualties and death." 
   tags="nest,mudraptornest,raid"
   type="nest" 
@@ -1648,7 +1648,7 @@
   </NestMission>
 
   <NestMission name="Clearing a Mudraptor Nest"
-  identifierl="mudraptornestraidDE"
+  identifier="mudraptornestraidDE"
   description="A large Mudraptor nest has been spotted around [location1] and [location2]. Sonar and heat seeking scanners revealed around over 10 mudraptors inside the cave and many eggs. Authorities estimate that without taking action for the next couple days, the outposts nearby the area will be overrun and abandoned. The Coalition hasn't taken action yet however the authorities are offering [reward] to whoever can exterminate the large nest. Expect high casualties and death." 
   tags="nest,mudraptornest,raid"
   type="nest" 
@@ -1704,7 +1704,7 @@
   </NestMission>
 
   <MonsterMission name="Terminate Husked Abyss Miners"
-  identifierl="rescueabyssminer1" 
+  identifier="rescueabyssminer1" 
   tags="killmonster,killmonster_set3" 
   spawntype="Abyss"
   type="Monster"
@@ -1724,7 +1724,7 @@
   </MonsterMission>
 
   <MonsterMission name="Investigating a mysterious distress beacon."
-  identifierl="killhumanhuskswarm1" 
+  identifier="killhumanhuskswarm1" 
   tags="killmonster,killswarm,killswarm_set2"
   type="Monster"
   description="Authorities have lost contact with a submarine a few weeks ago until now. When an SOS beacon was reported where the submarine was last seen around [location1] and [location2]. Authorities are rewarding [reward] to anyone who investigates the signal as they suspect the crew is now husks." 
@@ -1746,7 +1746,7 @@
   <!-- TRANSPORT MISSIONS -->
   <!-- SALVAGE MISSIONS -->
   <MonsterMission name="Salvaging an artifact"
-  identifierl="teleglitch2"
+  identifier="teleglitch2"
   type="Monster" 
   tags="killmonster,killmonster_set2"
   description="Researchers of [location1] have picked up an infrasonic signal highly similar to those emitted by alien artifacts previously discovered on Europa. Investigate the signal and retrieve the potential artifact." 
@@ -1762,7 +1762,7 @@
   </MonsterMission>
 
   <MonsterMission name="Salvaging an artifact"
-  identifierl="surprisefractal" 
+  identifier="surprisefractal" 
   tags="killmonster,killmonster_set4"
   type="Monster"
   description="Researchers of [location1] have picked up an infrasonic signal highly similar to those emitted by alien artifacts previously discovered on Europa. Investigate the signal and retrieve the potential artifact." 
@@ -1777,7 +1777,7 @@
   </MonsterMission>
 
   <SalvageMission name="Clown relic retrival"
-  identifierl="salvageclowns" textidentifier="salvageclowns1" 
+  identifier="salvageclowns" textidentifier="salvageclowns1" 
   tags="salvage,salvagewreck"
   type="Salvage"
   description="Local clowns have posted a bounty to retrive a lost relic located near [location1], frustratingly they refuse to elaborate what the item is and the reward of [reward] is absurd, however directions to the wreck which hopefully has other salvage are quite clear." 
@@ -1800,7 +1800,7 @@
   </SalvageMission>
 
   <SalvageMission name="Husk icon recovery"
-  identifierl="salvagehuskcult" textidentifier="salvagehuskcult1" 
+  identifier="salvagehuskcult" textidentifier="salvagehuskcult1" 
   tags="salvage,salvagewreck"
   type="Salvage"
   description="The Church of the Husk has issued a reward for a religious icon located on a vessal that went down between [location1] and [location2], For a cheaply made aluminium figurine they are offering a modest [reward] for its return." 
@@ -1824,7 +1824,7 @@
 
   <!-- CAVE MISSIONS -->
   <MonsterMission name="Trichordate Infestation"
-  identifierl="trichoradatecave1"
+  identifier="trichoradatecave1"
   description="A recent expedition has uncovered a large nest of rare Trichordate parasites in a cave between [location1] and [location2]. While individually weak, large swarms can overpower lone or unwary divers. as such [reward] has been allocated to pay whoever can clear out the infestation." 
   tags="killmonster,killmonster_set2"
   type="monster" 
@@ -1843,7 +1843,7 @@
   </MonsterMission>
 
   <MonsterMission name="Abyssal Ghost Shrimp swarm"
-  identifierl="ghostshrimpnest" 
+  identifier="ghostshrimpnest" 
   tags="killmonster,killswarm,killswarm_set3"
   type="Monster"
   description="Passing Vessals have reported the distinctive popping noise emitted by a large group of abyssal Ghost Shrimp, coming from an abyssal region between [location1] and [location2]. A reward of [reward] credits has been promised to any crew that can clear this navigational hazard." 
@@ -1860,7 +1860,7 @@
   </MonsterMission>
 
   <MonsterMission name="Scavenger Hunt"
-  identifierl="scavengerhunt" 
+  identifier="scavengerhunt" 
   tags="killmonster,killswarm,killswarm_set2"
   type="Monster"
   description="A cave containing a communal mix of bottom dwelling creatures has been located near [location1]. An unusually high reward of [reward] credits has been allocated to clear the infestation before it grows and risk of a reptillian Scavenger being responsible." 
@@ -1884,7 +1884,7 @@
 
   
   <MonsterMission name="Yellowboy Nest"
-  identifierl="yellowboycave" 
+  identifier="yellowboycave" 
   tags="killmonster,killswarm,killswarm_set2"
   type="Monster"
   description="A cave being recently prospected turned up a large nest of yellowboy mantisoids, They need to be culled in order to safely resume mining operations around [location1]." 
@@ -1905,7 +1905,7 @@
 
   <!-- TODO: how many husked miner missions do you have??? -->
   <MonsterMission name="Terminate Husked Miners"
-  identifierl="rescueminer" 
+  identifier="rescueminer" 
   tags="killmonster,killmonster_set1" 
   spawntype="Cave"
   type="Monster"
@@ -1923,7 +1923,7 @@
   </MonsterMission>
 
   <MonsterMission name="Terminate Husked Miners"
-  identifierl="rescueminer2" 
+  identifier="rescueminer2" 
   tags="killmonster,killmonster_set2" 
   spawntype="Cave"
   type="Monster"
@@ -1941,7 +1941,7 @@
   </MonsterMission>
 
   <MonsterMission name="Unusual Husk Activity"
-  identifierl="husknasanov" 
+  identifier="husknasanov" 
   tags="killmonster,killmonster_set2" 
   spawntype="Cave"
   type="Monster"
@@ -1962,7 +1962,7 @@
   </MonsterMission>
 
   <!--   <MonsterMission name="Rescue stranded Miners"
-  identifierl="rescueminer2" 
+  identifier="rescueminer2" 
   tags="killmonster,killmonster_set2" 
   spawntype="Cave"
   type="Monster"
@@ -1984,7 +1984,7 @@
   <!--
  
      <EscortMission name="Rescue stranded Miners"
-  identifierl="rescueminerreal1" 
+  identifier="rescueminerreal1" 
   tags="escort,escortcommoners" 
   spawntype="Cave"
   type="Escort"
@@ -1996,7 +1996,7 @@
 	 <Characters 
   spawntype="Cave" hostile="false">
 	 <Character from="MiningsurvivorsBT"
-  identifierl="SolesurvivorBT" requirerescue="true" allowordering="true"  />
+  identifier="SolesurvivorBT" requirerescue="true" allowordering="true"  />
 	 </Characters>
      <Reputation identifier="location" amount="1" />
      <Icon texture="%ModDir:2518816103%/UI/XanIcons2.png" sourcerect="790,0,235,231" color="0,0,139" />
@@ -2006,7 +2006,7 @@
 
   
     <EscortMission name="Rescue stranded Abyss Miners"
-  identifierl="rescueabyssminerreal1" 
+  identifier="rescueabyssminerreal1" 
   tags="escort,escortcommoners" 
   spawntype="Abyss"  type="Escort"
   description="A mining crew was forced to leave the abyss after encountering multiple abyss entities, forcing them to leave their deep divers out in the open. A day later their beacon was activated and authorities are rewarding [reward] to whoever can rescue the abandoned divers before its too late." 
@@ -2017,7 +2017,7 @@
 	 <Characters 
   spawntype="Abyss" hostile="false">
 	 <Character from="MiningsurvivorsBT"
-  identifierl="SolesurvivorBT" requirerescue="true" allowordering="true"  />
+  identifier="SolesurvivorBT" requirerescue="true" allowordering="true"  />
 	 </Characters>
     <Reputation identifier="location" amount="1" />
     <Icon texture="%ModDir:2518816103%/UI/XanIcons2.png" sourcerect="790,0,235,231" color="0,0,139" />
@@ -2040,7 +2040,7 @@ reward="1000"
 	<Characters 
   spawntype="Abyss" hostile="false">
 	<Character from="MiningsurvivorsBT"
-  identifierl="SolesurvivorBT" requirerescue="true" allowordering="true"  />
+  identifier="SolesurvivorBT" requirerescue="true" allowordering="true"  />
 	</Characters>
 	<TriggerEvent >
     <SpawnAction npcsetidentifier="SolesurvivorBT" npcidentifier="SolesurvivorBT" targettag="btlostdiver" TeamID="Team1" />
@@ -2056,7 +2056,7 @@ reward="1000"
   <!-- CLEARING MISSIONS -->
   <!-- SURPRISE MISSIONS -->
   <MonsterMission name="Investigating a mysterious signal"
-  identifierl="teleglitch1"
+  identifier="teleglitch1"
   type="Monster" 
   tags="killmonster,killmonster_set2"
   description="A mysterious infrasonic signal has suddenly shown up around [location1]. Researchers want you to investigate the signal. Report back any findings." 
@@ -2073,7 +2073,7 @@ reward="1000"
 
   <!-- TODO: cannot trigger naturally, no minimum difficulty, repeatable and overall stupid -->
   <!-- <BeaconMission name="Activate Beacon"
-  identifierl="beaconbttroll" textidentifier="beaconmission" 
+  identifier="beaconbttroll" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2088,7 +2088,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbttroll2" textidentifier="beaconmission" 
+  identifier="beaconbttroll2" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2103,7 +2103,7 @@ reward="1000"
   </BeaconMission> -->
 
   <MonsterMission name="Investigate a mysterious signal"
-  identifierl="killhumanimmortal" 
+  identifier="killhumanimmortal" 
   tags="killmonster,killmonster_set3"
   type="Monster"
   description="A mysterious infrasonic signal has suddenly shown up around [location1]. Researchers want you to investigate the signal. Report back any findings." 
@@ -2121,7 +2121,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Investigating a mysterious signal"
-  identifierl="deepseaclownnewmission" 
+  identifier="deepseaclownnewmission" 
   tags="killmonster,killswarm,killswarm_set3"
   type="Monster"
   description="A mysterious infrasonic signal has suddenly shown up around [location1]. Researchers want you to investigate the signal. Report back any findings." 
@@ -2139,7 +2139,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Investigating a mysterious signal"
-  identifierl="deepseaclownnewsawmission" 
+  identifier="deepseaclownnewsawmission" 
   tags="killmonster,killswarm,killswarm_set3"
   type="Monster"
   description="A mysterious infrasonic signal has suddenly shown up around [location1]. Researchers want you to investigate the signal. Report back any findings." 
@@ -2158,7 +2158,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Investigating a mysterious signal"
-  identifierl="teleglitchswarm"
+  identifier="teleglitchswarm"
   type="Monster" 
   tags="killmonster,killswarm,killswarm_set4"
   description="A mysterious infrasonic signal has suddenly shown up around [location1]. Researchers want you to investigate the signal. Report back any findings." 
@@ -2174,7 +2174,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Investigating a mysterious distress beacon."
-  identifierl="killhumanhuskswarmhuskgrounds1" 
+  identifier="killhumanhuskswarmhuskgrounds1" 
   tags="killmonster,killswarm,killswarm_set3"
   type="Monster"
   description="Authorities have lost contact with a submarine a few weeks ago until now. An SOS beacon was reported where the submarine was last seen around [location1] and [location2]. Authorities are rewarding [reward] to anyone who investigates the signal." 
@@ -2210,7 +2210,7 @@ reward="1000"
   <!-- BEACON MISSIONS -->
   <!-- TODO: NONE OF THE BEACON MISSIONS CAN TRIGGER WITHOUT sideobjective="true", ALSO THE MONSTERS FORMATTING IS WRONG -->
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtem7" textidentifier="beaconmission" 
+  identifier="beaconbtem7" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2223,7 +2223,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtem8" textidentifier="beaconmission" 
+  identifier="beaconbtem8" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2236,7 +2236,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtem10" textidentifier="beaconmission" 
+  identifier="beaconbtem10" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2249,7 +2249,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtem11" textidentifier="beaconmission" 
+  identifier="beaconbtem11" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2262,7 +2262,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtem12" textidentifier="beaconmission" 
+  identifier="beaconbtem12" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2275,7 +2275,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtnc1" textidentifier="beaconmission" 
+  identifier="beaconbtnc1" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2288,7 +2288,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtnc2" textidentifier="beaconmission" 
+  identifier="beaconbtnc2" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2302,7 +2302,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtnc3" textidentifier="beaconmission" 
+  identifier="beaconbtnc3" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2315,7 +2315,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtnc4" textidentifier="beaconmission" 
+  identifier="beaconbtnc4" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2328,7 +2328,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtss3" textidentifier="beaconmission" 
+  identifier="beaconbtss3" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2341,7 +2341,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtss4" textidentifier="beaconmission" 
+  identifier="beaconbtss4" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2354,7 +2354,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtss5" textidentifier="beaconmission" 
+  identifier="beaconbtss5" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2367,7 +2367,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtss9" textidentifier="beaconmission" 
+  identifier="beaconbtss9" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2383,7 +2383,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbtunder" textidentifier="beaconmission" 
+  identifier="beaconbtunder" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2396,7 +2396,7 @@ reward="1000"
   </BeaconMission>
 
   <BeaconMission name="Activate Beacon"
-  identifierl="beaconbt1" textidentifier="beaconmission" 
+  identifier="beaconbt1" textidentifier="beaconmission" 
   tags="beacon,beaconnoreward"
   type="Beacon"
   description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
@@ -2430,7 +2430,7 @@ reward="1000"
   
   <!-- TODO: no spawntype="abyss" -->
   <!-- <MonsterMission name="Latcher Sighting"
-  identifierl="killlatcher"
+  identifier="killlatcher"
   description="Scout ships have spotted a Latcher that is wandering the area between [location1] and [location2], using the place as its hunting ground. All commercial flights to this route have been stalled and authorities are offering [reward] to whoever can eliminate the Latcher." 
   tags="killmonsterrare,killmonster_set2"
   type="Monster" 
@@ -2446,7 +2446,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting Grounds"
-  identifierl="killlatcher2"
+  identifier="killlatcher2"
   description="Scout reports indicate that a Latcher is wandering the area between [location1] and [location2], using the place as its hunting ground. All commercial flights to this route have been stalled and authorities are offering [reward] to whoever can eliminate the Latcher." 
   tags="killmonsterrare,huntinggrounds,killmonster_set3"
   type="Monster" 
@@ -2462,7 +2462,7 @@ reward="1000"
   </MonsterMission> -->
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward3"
+  identifier="huntinggroundsnoreward3"
   description="Seismic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2479,7 +2479,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward5"
+  identifier="huntinggroundsnoreward5"
   description="Seismic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2496,7 +2496,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward10"
+  identifier="huntinggroundsnoreward10"
   description="Nearby beacon stations have reported Seismic readings and massive electricity faults in their systems. They warned that there could be a Leviathan size creature between [location1] and [location2] emitting large amounts of electromagnetic pulses. Authorities have blocked off the route and are awarding [reward] marks to whoever can eliminate the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2513,7 +2513,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward12"
+  identifier="huntinggroundsnoreward12"
   description="Seismic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2528,7 +2528,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward13"
+  identifier="huntinggroundsnoreward13"
   description="Scattered reports indicate that something collossal has entered the area between [location1] and [location2]. All commercial flights have been grounded and authorities are offering a hefty [reward] marks to whoever can eliminate the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2545,7 +2545,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsswarm2"
+  identifier="huntinggroundsswarm2"
   description="Captains have reported a swarm of Endworms between [location1] and [location2]. Commercial flights have been blocked off and so far no attack ship has gone and cleared them out yet. Authorities are offering [reward] marks to anyone brave enough to face 4 Endworms in the area." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2563,7 +2563,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsswarm3"
+  identifier="huntinggroundsswarm3"
   description="Attacked ships have reported a pair of Rockworms between [location1] and [location2]. It is unknown if this is some kind of mating pair or a territorial dispute between the creatures as none can approach. Authorities are offering [reward] marks to anyone who can deal with this." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2580,7 +2580,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward4"
+  identifier="huntinggroundsnoreward4"
   description="Seismetic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2597,7 +2597,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Emergency Takedown"
-  identifierl="huntinggroundsoutside"
+  identifier="huntinggroundsoutside"
   description="Scout ships have spotted a horrifying Charybdis roaming the area between [location1] and [location2], wrecking havoc on the ecosystem. Without any nearby coaltion forces, authorities are rewarding [reward] marks to any attack ship to kill the beast before it causes anymore mayhem to the nearby outposts." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2614,7 +2614,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward6"
+  identifier="huntinggroundsnoreward6"
   description="Nearby beacon stations have reported seismetic readings and massive electricity faults in their systems. They warned that there could be a Leviathan size creature between [location1] and [location2] emitting large amounts of electromagnetic pulses. Authorities have blocked off the route and are awarding [reward] marks to whoever can eliminate the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2631,7 +2631,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward7"
+  identifier="huntinggroundsnoreward7"
   description="Hydrophone readings between [location1] and [location2] indicate a stealthy Leviathan size creature is stalking the area. All routes are closed and adminstrators are rewarding [reward] marks to whoever can eliminate the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2648,7 +2648,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Mobile Threat"
-  identifierl="huntinggroundsnoreward8"
+  identifier="huntinggroundsnoreward8"
   description="Attack ships are reporting a large mobile entity shooting at submarines from long distances. All commercial routes to [location1] and [location2] are closed off until the mobile threat is eliminated. A reward of [reward] marks have been prized to whoever can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2665,7 +2665,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsswarm1"
+  identifier="huntinggroundsswarm1"
   description="Attack ships have reported a large swarm of Cyclops between [location1] and [location2]. Commercial flights have been blocked off and so far no attack ship has gone and cleared them out yet. Authorities are offering [reward] marks to anyone brave enough to face 6 Cyclops in the area." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2682,7 +2682,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward9"
+  identifier="huntinggroundsnoreward9"
   description="Seismetic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2699,7 +2699,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward16"
+  identifier="huntinggroundsnoreward16"
   description="Seismetic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2716,7 +2716,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="underhuntinggroundsnoreward1"
+  identifier="underhuntinggroundsnoreward1"
   description="Seismic readings in the area indicate an Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2733,7 +2733,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="underhuntinggroundsnoreward3"
+  identifier="underhuntinggroundsnoreward3"
   description="An Endwhale was recently spotted in the area between [location1] and [location2]. Authorities are awarding [reward] marks to anyone who can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2750,7 +2750,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward14"
+  identifier="huntinggroundsnoreward14"
   description="Seismic readings in the area indicate an Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2767,7 +2767,7 @@ reward="1000"
   </MonsterMission>
 
   <MonsterMission name="Hunting grounds"
-  identifierl="huntinggroundsnoreward15"
+  identifier="huntinggroundsnoreward15"
   description="Seismic readings in the area indicate an Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2785,7 +2785,7 @@ reward="1000"
 
   <!-- TODO: don't put this in huntinggrounds if it doesnt spawn in abyss -->
   <!-- <MonsterMission name="The Resurrection"
-  identifierl="huntinggroundsnoreward11"
+  identifier="huntinggroundsnoreward11"
   description="Research vessels have reported a large Fractal Destroyer has been brought back to life between [location1] and [location2]! Authorities are offering [reward] marks to whoever can eliminate the large mobile creature before it causes havoc on the nearby outposts." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
   type="Monster" sideobjective="true" 
@@ -2803,7 +2803,7 @@ reward="1000"
 
   <!-- OUTPOST MISSIONS -->
   <OutpostDestroyMission name="Outpost Recovery"
-  identifierl="abandonedoutposthumansbt1" 
+  identifier="abandonedoutposthumansbt1" 
   tags="abandonedoutpost" textidentifier="abandonedoutposthumans"
   type="OutpostDestroy" 
   reward="5000" 
@@ -2837,7 +2837,7 @@ reward="1000"
   </OutpostDestroyMission>
 
   <OutpostDestroyMission name="Outpost Recovery"
-  identifierl="abandonedoutposthumansbt2" 
+  identifier="abandonedoutposthumansbt2" 
   tags="abandonedoutpost" textidentifier="abandonedoutposthumans"
   type="OutpostDestroy" 
   reward="5000" 
@@ -2868,7 +2868,7 @@ reward="1000"
   </OutpostDestroyMission>
 
   <OutpostNestMission name="Outpost Recovery"
-  identifierl="abandonedoutpostmudraptorbt" textidentifier="abandonedoutpostmonsters" 
+  identifier="abandonedoutpostmudraptorbt" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="5000" 
@@ -2910,7 +2910,7 @@ reward="1000"
   </OutpostNestMission>
 
   <OutpostNestMission name="Outpost Recovery"
-  identifierl="abandonedoutpostcrawlerbt" textidentifier="abandonedoutpostmonsters" 
+  identifier="abandonedoutpostcrawlerbt" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="5000" 
@@ -2956,7 +2956,7 @@ reward="1000"
   </OutpostNestMission>
 
   <OutpostDestroyMission name="Outpost Cleansing"
-  identifierl="abandonedoutpostcrawlerhusk" textidentifier="abandonedoutposthusks" 
+  identifier="abandonedoutpostcrawlerhusk" textidentifier="abandonedoutposthusks" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="4100" 
@@ -2981,7 +2981,7 @@ reward="1000"
   </OutpostDestroyMission>
 
   <OutpostDestroyMission name="Outpost Clearing"
-  identifierl="abandonedoutpostyellowboyzinthehoodBTC" textidentifier="abandonedoutpostmonsters" 
+  identifier="abandonedoutpostyellowboyzinthehoodBTC" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
   reward="4100" 
@@ -3007,7 +3007,7 @@ reward="1000"
   </OutpostDestroyMission>
 
     <OutpostDestroyMission name="Outpost Clearing"
-  identifierl="abandonedoutpostmantisBTC" textidentifier="abandonedoutpostmonsters" 
+  identifier="abandonedoutpostmantisBTC" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
   reward="4100" 
@@ -3028,7 +3028,7 @@ reward="1000"
   </OutpostDestroyMission>
 
   <OutpostDestroyMission name="Fractal Takeover"
-  identifierl="abandonedoutpostfractal" textidentifier="abandonedoutpostmonsters" 
+  identifier="abandonedoutpostfractal" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
   reward="4100" 
@@ -3054,7 +3054,7 @@ reward="1000"
   </OutpostDestroyMission>
 
   <OutpostDestroyMission name="Outpost Clearing"
-  identifierl="abandonedoutpostlatcher" textidentifier="abandonedoutpostmonsters" 
+  identifier="abandonedoutpostlatcher" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
   reward="4100" 
@@ -3077,7 +3077,7 @@ reward="1000"
   </OutpostDestroyMission>
 
   <OutpostDestroyMission name="Outpost Cleansing"
-  identifierl="abandonedoutposthusk" textidentifier="abandonedoutposthusks" 
+  identifier="abandonedoutposthusk" textidentifier="abandonedoutposthusks" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="4000" 
@@ -3105,7 +3105,7 @@ reward="1000"
   </OutpostDestroyMission>
 
   <OutpostDestroyMission name="Outpost Cleansing"
-  identifierl="abandonedoutposthusk2" textidentifier="abandonedoutposthusks" 
+  identifier="abandonedoutposthusk2" textidentifier="abandonedoutposthusks" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="4100" 
@@ -3133,7 +3133,7 @@ reward="1000"
   </OutpostDestroyMission>
 
     <OutpostDestroyMission name="Outpost Cleansing"
-  identifierl="abandonedoutposthusk3" textidentifier="abandonedoutposthusks" 
+  identifier="abandonedoutposthusk3" textidentifier="abandonedoutposthusks" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="4100" 
@@ -3160,7 +3160,7 @@ reward="1000"
   </OutpostDestroyMission>
 
       <OutpostDestroyMission name="Outpost Cleansing"
-  identifierl="abandonedoutposthusk4" textidentifier="abandonedoutposthusks" 
+  identifier="abandonedoutposthusk4" textidentifier="abandonedoutposthusks" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="4100" 
@@ -3189,7 +3189,7 @@ reward="1000"
   </OutpostDestroyMission>
 
         <OutpostDestroyMission name="Outpost Cleansing"
-  identifierl="abandonedoutpostwhatthehusk" textidentifier="abandonedoutposthusks" 
+  identifier="abandonedoutpostwhatthehusk" textidentifier="abandonedoutposthusks" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="5000" 
@@ -3226,7 +3226,7 @@ reward="1000"
   </OutpostDestroyMission>
 
       <OutpostDestroyMission name="Outpost Cleansing"
-  identifierl="abandonedoutpostmudraptorrampant" textidentifier="abandonedoutpostmonsters" 
+  identifier="abandonedoutpostmudraptorrampant" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
   reward="4100" 
@@ -3254,7 +3254,7 @@ reward="1000"
 
   
   <OutpostDestroyMission name="Outpost Cleansing"
-  identifierl="abandonedoutpostboattrash" textidentifier="abandonedoutpostmonsters" 
+  identifier="abandonedoutpostboattrash" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
   reward="5500" 
@@ -3289,7 +3289,7 @@ reward="1000"
 
   
   <OutpostNestMission name="Cult Outpost Assassination"
-  identifierl="abandonedoutpostcultist" textidentifier="abandonedoutpostcultist" 
+  identifier="abandonedoutpostcultist" textidentifier="abandonedoutpostcultist" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="4000" 
@@ -3323,7 +3323,7 @@ reward="1000"
   </OutpostNestMission>
 
   <OutpostNestMission name="Clown Outpost Assassination"
-  identifierl="abandonedoutpostclown" textidentifier="abandonedoutpostclown" 
+  identifier="abandonedoutpostclown" textidentifier="abandonedoutpostclown" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="3500" 
@@ -3358,7 +3358,7 @@ reward="1000"
   </OutpostNestMission>
 
     <OutpostNestMission name="Clown Outpost Assassination"
-  identifierl="abandonedoutpostclownbandit" textidentifier="abandonedoutpostclown" 
+  identifier="abandonedoutpostclownbandit" textidentifier="abandonedoutpostclown" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="3500" 
@@ -3396,7 +3396,7 @@ reward="1000"
 
   
   <OutpostDestroyMission name="Outpost Cleansing"
-  identifierl="abandonedoutpostfroggetaboutit" textidentifier="abandonedoutpostmonsters" 
+  identifier="abandonedoutpostfroggetaboutit" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
   reward="5500" 
