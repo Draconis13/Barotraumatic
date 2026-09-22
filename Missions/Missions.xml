@@ -206,11 +206,10 @@
     <message header="Target Eliminated" text="The Strange Creature has been terminated. You should report the incident to [location2]." />
   </MonsterMission>
 
-  <!-- TODO: use turretcarrier_random? -->
   <MonsterMission name="Investigate a Floral Growth"
   identifierl="killthalamid3"
   type="Monster" 
-  tags="killmonster,killmonster_set2"
+  tags="killmonster,killmonster_set3"
   description="The Station Administrator reports sightings of a large mobile Thalamus hunting vessel between [location1] and [location2]. They offer you [reward] to eliminate the threat." 
   commonness="30" 
   difficulty="3" 
@@ -370,8 +369,8 @@
     <message header="missionheader0.generickill" text="missionmessage0.generickill" />
   </MonsterMission>
 
-  <!-- TODO: 3 watchers conflict because they remove the affliction on death, rework watcher later -->
-  <!-- <MonsterMission name="Terminate Dyatel"
+  <!-- TODO: don't like 3x unique creatures-->
+  <MonsterMission name="Terminate Dyatel"
   description="A particurarly aggressive group of Dyatel, Speculated to be Dybbuk's larval form, have left the abyss and are targeting vessels traveling between [location1] and [location2]. A reward of [reward] marks has been promised to anyone who can eliminate them, expect hit and run attacks." successmessage="The Dyatel have been terminated."
   identifierl="killobserver2"
   type="Monster" 
@@ -385,7 +384,7 @@
     <Icon texture="%ModDir:2518816103%/UI/XanIcons.png" sourcerect="0,256,256,256" color="214,50,48" />
     <LocationType from="AnyOutpost" to="Any" />
     <message header="missionheader0.generickill" text="missionmessage0.generickill" />
-  </MonsterMission> -->
+  </MonsterMission>
 
   <MonsterMission name="Slay a Baby Charybdis"
   description="A Baby Charybdis has been attacking vessels traveling between [location1] and [location2]. A reward of [reward] marks has been promised to anyone who can eliminate it." successmessage="The Baby Charybdis has been terminated."
@@ -573,7 +572,7 @@
     <message header="Target destroyed" text="The missing vessel appears to have been taken over by some sort of parasitic growth, but it seems to be incapacitated now. You should report the incident to [location2]." />
   </MonsterMission>
 
-  <!-- TODO: wtf 8 shadowwhales??? -->
+  <!-- TODO: wtf 8 shadowwhales??? change number and text-->
   <!-- <MonsterMission name="Terminate a large Shadow Whale swarm"
   description="Scouts have reported of a large swarm of Shadow Whales wandering the area between [location1] and [location2]. These Whales are invisible on sonar and can pose a big threat towards unprepared ships. The authorities are offering a reward of [reward] to any submarine that takes out the large swarm." successmessage="The swarm has been terminated."
   identifierl="killshadowwhales"
@@ -964,15 +963,14 @@
     <message text="The mines that threatened the path have now been cleared and the path is now safe for travel again. Navigate the submarine out of the cavern to claim the reward." header="Target terminated" />
   </MonsterMission>
  
-  <!-- TODO: severely reduce this spawnlist, or increase reward and difficulty -->
-  <!-- <MonsterMission name="Purging a Nascant Husk Brood Nexus "
+  <MonsterMission name="Purging a Nascant Husk Brood Nexus "
   description="This area has become a nexus for husk activity. Biological readings suggest a large number of lifeform are gathering here,and particurlarly aggressive husk encounters recently manifested in the region. Researchers are offering [reward] Marks for anyone capable of eliminating the threats. As it is a considerable undertaking to remove so many husked creatures." successmessage="The Brood has been Purged."
   identifierl="killbroodemperor2"
   type="Monster" 
-  tags="killmonster,killswarm,killmonsterswarm,killswarm_set2" 
+  tags="killmonster,killswarm,killmonsterswarm,killswarm_set3" 
   commonness="20" 
   sonarlabel="Target" 
-  reward="2800" maxsonarmarkerdistance="18000" 
+  reward="4200" maxsonarmarkerdistance="18000" 
   difficulty="2">
     <monster character="crawlerhusk" min="3" max="4" />
     <monster character="Husk_RandomLight" min="2" max="3" />
@@ -989,17 +987,16 @@
     <Icon color="214,50,48" sourcerect="768,0,256,256" texture="%ModDir:2518816103%/UI/XanIcons3.png" />
     <LocationType from="AnyOutpost" to="Any" />
     <message text="The Brood has been Purged. Navigate the submarine out of the cavern to claim the reward." header="Target terminated" />
-  </MonsterMission> -->
+  </MonsterMission>
 
-  <!-- TODO: severely reduce this spawnlist, or increase reward and difficulty -->
-  <!-- <MonsterMission name="Purging a Developed Husk Brood Nexus "
+  <MonsterMission name="Purging a Developed Husk Brood Nexus "
   description="This area has been a nexus for husk activity. Biological readings suggest a considerable number of lifeform have converged and from reports fused, resulting in a massive and particurlarly aggressive husk that has had time to metastasize in the region. Researchers are offering [reward] Marks for anyone capable of eliminating the threats. Survival is not expected for anyone under-prepared." successmessage="The Brood has been Purged."
   identifierl="killbroodemperor3"
   type="Monster" 
-  tags="killmonster,killswarm,killmonsterswarm,killswarm_set2" 
+  tags="killmonster,killswarm,killmonsterswarm,killswarm_set4" 
   commonness="10" 
   sonarlabel="Target" 
-  reward="3500" maxsonarmarkerdistance="18000" 
+  reward="5300" maxsonarmarkerdistance="18000" 
   difficulty="4">
     <monster character="crawlerhusk" min="2" max="3" />
     <monster character="Husk_RandomLight" min="1" max="2" />
@@ -1015,7 +1012,7 @@
     <Icon color="214,50,48" sourcerect="768,0,256,256" texture="%ModDir:2518816103%/UI/XanIcons3.png" />
     <LocationType from="AnyOutpost" to="Any" />
     <message text="The Brood has been Purged. Navigate the submarine out of the cavern to claim the reward." header="Target terminated" />
-  </MonsterMission> -->
+  </MonsterMission>
 
   <!-- TODO: cnidaes are getting a rework -->
   <!-- <MonsterMission name="Terminate a pack of Cnidae"
@@ -1070,81 +1067,9 @@
     <message header="Targets eliminated" text="The targets have been eliminated. Navigate the submarine out of the cavern." />
   </MonsterMission>
 
-  <MonsterMission name="Terminate a Large Thresher swarm"
-  description="A huge swarm of threshers has been attacking vessels between [location1] and [location2]. Witnesses report also the appearence of less-known thresher lifeforms. A reward of [reward] has been promised to any crew capable of terminating the swarm." successmessage="The swarm has been terminated."
-  identifierl="killmajorthesher"
-  type="Monster" 
-  tags="killmonster,killswarm,killswarm_set3" 
-  commonness="40" 
-  difficulty="3" 
-  reward="4200" 
-  sonarlabel="Thresher" maxsonarmarkerdistance="10000">
-    <!-- space reserved for new giant thresher <monster character="Xanothresher" /> -->
-    <monster character="bonethresher" min="2" max="3" />
-    <monster character="abyssalthresher" min="2" max="3" />
-    <monster character="tigerthresher" min="4" max="6" />
-    <Reputation identifier="location" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,758,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="Target eliminated" text="The target has been eliminated. Navigate the submarine out of the cavern." />
-  </MonsterMission>
 
-  <!-- TODO: no way this is a set1 mission, also the reward is higher than set2 -->
-  <!-- <MonsterMission name="Terminate a Large Mudraptor swarm"
-  description="A large swarm of Mudraptors has been attacking vessels between [location1] and [location2]. A reward of [reward] has been promised to any crew capable of terminating the swarm." successmessage="The swarm has been terminated."
-  identifierl="killmajormudraptor"
-  type="Monster" 
-  tags="killmonster,killswarm,killswarm_set1" 
-  commonness="46" 
-  difficulty="2" 
-  reward="4400" 
-  sonarlabel="Mudraptor" maxsonarmarkerdistance="10000">
-    <monster character="mudraptor" count="8" />
-    <monster character="mudraptor_unarmored" count="2" />
-    <Reputation identifier="location" amount="3" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,512,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="Targets eliminated" text="The targets has been eliminated. Navigate the submarine out of the cavern." />
-  </MonsterMission> -->
-
-  <MonsterMission name="Terminate a Major Mudraptor swarm"
-  description="A huge swarm of Mudraptors has been attacking vessels between [location1] and [location2]. Witnesses report also the presence of a veteran Mudraptor. A reward of [reward] has been promised to any crew capable of terminating the swarm" successmessage="The swarm has been terminated."
-  identifierl="killmajormudraptor2"
-  type="Monster" 
-  tags="killmonster,killswarm,killswarm_set2" 
-  commonness="30" 
-  difficulty="3" 
-  reward="4250" 
-  sonarlabel="Mudraptor" maxsonarmarkerdistance="10000">
-    <monster character="mudraptor_veteran" min="1" max="1" />
-    <monster character="mudraptor" count="9" />
-    <monster character="mudraptor_unarmored" count="3" />
-    <Reputation identifier="location" amount="4" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,512,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="Targets eliminated" text="The targets has been eliminated. Navigate the submarine out of the cavern." />
-  </MonsterMission>
-
-  
-  <MonsterMission name="Terminate a Massive Mudraptor swarm"
-  description="A massive swarm of Mudraptors has been rally up around [location1] and [location2]. Witnesses report a large number of veteran Mudraptors. A reward of [reward] has been promised to any crew capable of terminating the swarm" successmessage="The swarm has been terminated."
-  identifierl="killmajormudraptor3"
-  type="Monster" 
-  tags="killmonster,killswarm,killswarm_set4" 
-  commonness="30" 
-  difficulty="4" 
-  reward="5000" 
-  sonarlabel="Mudraptor" maxsonarmarkerdistance="10000">
-    <monster character="mudraptor_veteran" min="4" max="5" />
-    <monster character="mudraptor" min="3" max="4" />
-    <monster character="Mudrex" min="1" max="1" />
-    <Reputation identifier="location" amount="4" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,512,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="Targets eliminated" text="The targets has been eliminated. Navigate the submarine out of the cavern." />
-  </MonsterMission>
-
-  <!-- TODO: that's way too many glitches -->
+  <!-- TODO: that's way too many glitches
+  -->
   <MonsterMission name="Deadzone"
   description="Subs have gone down between [location1] and [location2]. Recovered logbooks all report electrical phenomana, strange lights and phantom ruins in thier last entries. A massive reward of [reward] has been promised to any crew who can possibly deal with this lethal threat." successmessage="The threat has been terminated."
   identifierl="deadzone1"
@@ -1152,7 +1077,7 @@
   tags="killmonster,killswarm,killswarm_set4" 
   commonness="10" 
   difficulty="4" 
-  reward="5000" 
+  reward="5555" 
   sonarlabel="???" maxsonarmarkerdistance="10000">
     <monster character="Teleglitch" min="5" max="6" />
     <monster character="Teleglitch_paranormal" count="2" />
@@ -1182,6 +1107,7 @@
     <message header="missionheader0.killthresherswarm1" text="missionmessage0.killthresherswarm1" />
   </MonsterMission>
 
+  <!-- TODO: don't like 3x unique creatures-->
   <MonsterMission name="Killing a Harpoon whale trio."
   identifierl="killharpoonwhale" 
   tags="killmonster,killmonster_set3"
@@ -1197,8 +1123,8 @@
     <LocationType from="AnyOutpost" to="Any" />
     <message header="Targets terminated" text="The Harpoon whales are dead. Navigate the submarine out of the cavern to claim the reward." />
   </MonsterMission>
-
   
+  <!-- TODO: don't like 3x unique creatures-->
   <MonsterMission name="Killing a Psilosaurus pod."
   identifierl="killpsilosaur" 
   tags="killmonster,killmonster_set3"
@@ -1358,29 +1284,28 @@
     <LocationType from="AnyOutpost" to="Any" />
   </MonsterMission>
 
-  <!-- TODO: set1 rebalance -->
-  <!-- <MonsterMission name="Terminate a Seaurchin Swarm"
+  <MonsterMission name="Terminate a Seaurchin Swarm"
   identifierl="killseaurchin1" 
   tags="killmonster,killswarm,killswarm_set1"
   type="Monster"
   description="A large swarm of Seaurchin has been attacking vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can remove it." 
   difficulty="2" 
   commonness="65" 
-  reward="3500" 
+  reward="2250" 
   sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated."
   monsterfile="seaurchin" monstercount="10">
-    <monster character="seaurchin" min="8" max="10" />
-    <monster character="seaurchinqueen" min="1" max="2" />
+    <monster character="seaurchin" min="4" max="6" />
+    <monster character="seaurchinqueen" min="1" max="1" />
     <Reputation identifier="location" amount="2" />
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48" />
     <LocationType from="AnyOutpost" to="Any" />
     <message header="missionheader0.generickill" text="missionmessage0.generickill" />
-  </MonsterMission> -->
+  </MonsterMission>
 
-  <!-- TODO: remove broodmother and add some other crawlers, this is set1  -->
+  <!-- TODO: only leaving this here for later, let's not make those "huge swarm" missions, if we want to add swarm missions do not add more monsters, instead add unique ones -->
 <!--   <MonsterMission name="Terminate a Major Swarm"
   identifierl="killcrawlerswarmbt1" 
-  tags="killmonster,killswarm,killswarm_set1"
+  tags="killmonster,killswarm,killswarm_set3"
   type="Monster"
   description="A huge swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." 
   difficulty="2" 
@@ -1388,27 +1313,9 @@
   reward="4200" 
   sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated."
   monsterfile="Crawler_large" monstercount="10">
-    <monster character="crawler" min="6" max="1" />
+    <monster character="crawler" min="6" max="8" />
     <monster character="crawlerbroodmother" min="1" max="1" />
     <Reputation identifier="location" amount="2" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward." />
-  </MonsterMission>
-
-  <MonsterMission name="Terminate a Massive Swarm"
-  identifierl="killcrawlerswarmbt2" 
-  tags="killmonster,killswarm,killswarm_set2"
-  type="Monster"
-  description="A Massive swarm of crawlers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." 
-  difficulty="3" 
-  commonness="55" 
-  reward="5000" 
-  sonarlabel="Swarm" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated." >
-    <monster character="crawlerbroodmother" count="2" />
-    <monster character="crawler" min="7" max="9" />
-    <monster character="Crawler_large" min="3" max="4" />
-    <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48" />
     <LocationType from="AnyOutpost" to="Any" />
     <message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward." />
@@ -1432,8 +1339,8 @@
     <message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward." />
   </MonsterMission>
 
-  <!-- TODO: too many enemies -->
-  <MonsterMission identifier="killspinelingswarmbt1" textidentifier="killgiantspinelingbt1" name="missionname.killspinelingswarm1"
+  <!-- TODO: only leaving this here for later, let's not make those "huge swarm" missions, if we want to add swarm missions do not add more monsters, instead add unique ones -->
+  <!-- <MonsterMission identifier="killspinelingswarmbt1" textidentifier="killgiantspinelingbt1" name="missionname.killspinelingswarm1"
   description="missiondescription.killspinelingswarm1" 
   tags="killmonster,killswarm,killswarm_set2"
   type="Monster" 
@@ -1479,8 +1386,10 @@
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,768,256,256" color="214,50,48" />
     <LocationType from="AnyOutpost" to="Any" />
     <message header="missionheader0.killgiantspineling1" text="missionmessage0.killgiantspineling1" />
-  </MonsterMission>
+  </MonsterMission> -->
 
+  <!-- TODO: only leaving this here for later, let's not make those "huge swarm" missions, if we want to add swarm missions do not add more monsters, instead add unique ones -->
+  <!-- TODO: that's a lot of mudraptor missions -->
   <MonsterMission identifier="killmudraptorsbt1" 
   tags="killmonster,killswarm,killswarm_set3"
   type="Monster"
@@ -1546,28 +1455,32 @@
     <message header="missionheader0.killmudraptors1" text="missionmessage0.killmudraptors1" />
   </MonsterMission>
 
-  <MonsterMission identifier="killthresherswarmbt1" 
-  tags="killmonster,killswarm,killswarm_set4"
-  description="A huge swarm of threshers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it."
+  <MonsterMission name="Terminate a Large Thresher swarm"
+  description="A huge swarm of threshers has been attacking vessels between [location1] and [location2]. Witnesses report also the appearence of less-known thresher lifeforms. A reward of [reward] has been promised to any crew capable of terminating the swarm." successmessage="The swarm has been terminated."
+  identifierl="killmajorthesher"
   type="Monster" 
-  difficulty="4" 
-  commonness="100" 
-  reward="5000" maxsonarmarkerdistance="10000">
-    <monster character="tigerthresher" min="7" max="8" />
+  tags="killmonster,killswarm,killswarm_set3" 
+  commonness="40" 
+  difficulty="3" 
+  reward="4200" 
+  sonarlabel="Thresher" maxsonarmarkerdistance="10000">
+    <!-- space reserved for new giant thresher <monster character="Xanothresher" /> -->
     <monster character="bonethresher" min="2" max="3" />
-    <Reputation identifier="location" amount="2" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,256,256,256" color="214,50,48" />
+    <monster character="abyssalthresher" min="2" max="3" />
+    <monster character="tigerthresher" min="4" max="6" />
+    <Reputation identifier="location" amount="5" />
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,758,256,256" color="214,50,48" />
     <LocationType from="AnyOutpost" to="Any" />
-    <message header="missionheader0.killthresherswarm1" text="missionmessage0.killthresherswarm1" />
+    <message header="Target eliminated" text="The target has been eliminated. Navigate the submarine out of the cavern." />
   </MonsterMission>
-
+  
   <MonsterMission identifier="killthresherswarmbt2" textidentifier="killthresherswarm1"
   description="A massive swarm of threshers has been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] credits has been promised to any crew who can neutralize it." 
   tags="killmonster,killswarm,killswarm_set4"
   type="Monster" 
-  difficulty="3" 
+  difficulty="4" 
   commonness="100" 
-  reward="5000" maxsonarmarkerdistance="10000">
+  reward="5100" maxsonarmarkerdistance="10000">
     <monster character="tigerthresher" min="5" max="6" />
     <monster character="bonethresher" min="3" max="4" />
     <monster character="Thresherking" min="1" max="1" />
@@ -1599,7 +1512,7 @@
     <message header="Clowns Destroyed" text="You've cleared the area of any tomfoolery. You should report the incident to [location2]." />
   </MonsterMission>
 
-  <!-- TODO: monster numbers are too random and some of these are shit swimmers-->
+  <!-- TODO: monster numbers are too random and need to get rid of the bad swimmer enemies -->
   <MonsterMission name="Fractal Migration"
   description="Divers reported a large column of Fractal inhabitants have escaped from a ruin and now dangerously roam the area between [location1] and [location2]. Administrators are offering [reward] for any armed submarine crew that could wipe out the roaming creatures." successmessage="The area now seems clear of any fractal guardians in the area. Good work."
   identifierl="killfractalguardians"
@@ -1624,7 +1537,7 @@
     <message header="Fractal Creatures Destroyed" text="You've cleared the area of any fractal guardians. You should report the incident to [location2]." />
   </MonsterMission>
 
-  <!-- TODO: monster numbers are too random and some of these are shit swimmers-->
+  <!-- TODO: monster numbers are too random and need to get rid of the bad swimmer enemies -->
   <MonsterMission name="Fractal Migration"
   description="Divers reported a large column of Fractal inhabitants have escaped from a ruin and now dangerously roam the area between [location1] and [location2]. Administrators are offering [reward] for any armed submarine crew that could wipe out the roaming creatures." successmessage="The area now seems clear of any fractal guardians in the area. Good work."
   identifierl="killfractalguardiansDE"
@@ -1649,7 +1562,7 @@
     <message header="Fractal Creatures Destroyed" text="You've cleared the area of any fractal guardians. You should report the incident to [location2]." />
   </MonsterMission>
 
-  <!-- TODO: monster numbers are too random and some of these are shit swimmers-->
+  <!-- TODO: monster numbers are too random and need to get rid of the bad swimmer enemies -->
   <MonsterMission name="Fractal Migration"
   description="Divers reported a large column of Fractal inhabitants have escaped from a ruin and now dangerously roam the area between [location1] and [location2]. Administrators are offering [reward] for any armed submarine crew that could wipe out the roaming creatures." successmessage="The area now seems clear of any fractal guardians in the area. Good work."
   identifierl="killfractalguardiansDEmermaid"
@@ -1683,7 +1596,8 @@
   type="nest" 
   sonarlabel="nest" 
   spawntype="cave" 
-  reward="5100" itemspawnradius="200" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="2000" nestobjectamount="28" 
+  reward="5100"
+  itemspawnradius="200" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="2000" nestobjectamount="28" 
   difficulty="4" 
   commonness="75">
     <Items>
@@ -2250,7 +2164,7 @@ reward="1000"
   description="A mysterious infrasonic signal has suddenly shown up around [location1]. Researchers want you to investigate the signal. Report back any findings." 
   commonness="45" 
   difficulty="4" 
-  reward="2000" 
+  reward="5300" 
   sonarlabel="Infrasonic Signal" maxsonarmarkerdistance="10000" successmessage="Upon reaching the signal, you found out that the signal was being emitted by some kind of sentient anomaly. [location2] agreed to pay you [reward] for your discovery.">
     <monster character="Teleglitch" count="3" />
     <Reputation identifier="location" amount="4" />
