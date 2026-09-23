@@ -2210,40 +2210,8 @@ reward="1000"
   <!-- ABYSS MISSIONS -->
   
   <!-- TODO: add min and max difficulty levels to these hunting grounds. Or do we even care? -->
+  <!-- TODO: some of these are mainpath...-->
   
-  <!-- TODO: no spawntype="abyss" -->
-  <!-- <MonsterMission name="Latcher Sighting"
-  identifier="killlatcher"
-  description="Scout ships have spotted a Latcher that is wandering the area between [location1] and [location2], using the place as its hunting ground. All commercial flights to this route have been stalled and authorities are offering [reward] to whoever can eliminate the Latcher." 
-  tags="killmonsterrare,killmonster_set2"
-  type="Monster" 
-  difficulty="3" 
-  commonness="30" 
-  reward="8000" maxsonarmarkerdistance="10000" 
-  sonarlabel="Latcher"
-  monsterfile="Latcher">
-    <Reputation identifier="separatists" amount="3" />
-    <Reputation identifier="coalition" amount="3" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
-    <message header="missionheader0.huntinggrounds1" text="missionmessage0.huntinggrounds1" />
-  </MonsterMission>
-
-  <MonsterMission name="Hunting Grounds"
-  identifier="killlatcher2"
-  description="Scout reports indicate that a Latcher is wandering the area between [location1] and [location2], using the place as its hunting ground. All commercial flights to this route have been stalled and authorities are offering [reward] to whoever can eliminate the Latcher." 
-  tags="killmonsterrare,huntinggrounds,killmonster_set3"
-  type="Monster" 
-  difficulty="3" 
-  commonness="50" 
-  reward="8000" maxsonarmarkerdistance="10000" 
-  sonarlabel="Latcher"
-  monsterfile="Latcher">
-    <Reputation identifier="separatists" amount="3" />
-    <Reputation identifier="coalition" amount="3" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
-    <message header="missionheader0.huntinggrounds1" text="missionmessage0.huntinggrounds1" />
-  </MonsterMission> -->
-
   <MonsterMission name="Hunting grounds"
   identifier="huntinggroundsnoreward3"
   description="Seismic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
@@ -2252,26 +2220,11 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="8500" 
-  sonarlabel="target" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
+  spawntype="Abyss" 
+  sonarlabel="target"
+  maxsonarmarkerdistance="20000"
+  successmessage=""
   monsterfile="Voidleviathan">
-    <Reputation identifier="separatists" amount="3" />
-    <Reputation identifier="coalition" amount="3" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
-    <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward." />
-  </MonsterMission>
-
-  <MonsterMission name="Hunting grounds"
-  identifier="huntinggroundsnoreward5"
-  description="Seismic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
-  tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
-  type="Monster" sideobjective="true" 
-  difficulty="4" 
-  commonness="0" 
-  reward="8500" 
-  sonarlabel="target" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
-  monsterfile="Fractaldestroyer">
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
@@ -2286,26 +2239,13 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="8500" 
+  spawntype="Abyss"
   sonarlabel="Pulse Readings" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
+  maxsonarmarkerdistance="20000"
+  successmessage=""
   monsterfile="Fractaldestroyer">
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
-    <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward." />
-  </MonsterMission>
-
-  <MonsterMission name="Hunting grounds"
-  identifier="huntinggroundsnoreward12"
-  description="Seismic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
-  tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
-  type="Monster" sideobjective="true" 
-  difficulty="4" 
-  commonness="0" 
-  reward="8500" 
-  sonarlabel="target" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
-  monsterfile="Fault">
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
     <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward." />
   </MonsterMission>
@@ -2318,8 +2258,10 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="8500" 
-  sonarlabel="Seismic Readings" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
+  spawntype="Abyss" 
+  sonarlabel="Seismic Readings"
+  maxsonarmarkerdistance="20000"
+  successmessage=""
   monsterfile="Fault">
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
@@ -2335,8 +2277,10 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="8000" 
-  sonarlabel="Endworms" 
-  spawntype="Mainpath" maxsonarmarkerdistance="20000" successmessage="">
+  spawntype="Mainpath"
+  sonarlabel="Endworms"
+  maxsonarmarkerdistance="20000"
+  successmessage="">
     <monster character="Endworm" count="1" />
     <monster character="Endworm_young" count="3" />
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
@@ -2353,26 +2297,11 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="6500" 
-  sonarlabel="Rockworm" 
-  spawntype="Mainpath" maxsonarmarkerdistance="20000" successmessage="">
+  spawntype="Mainpath"
+  sonarlabel="Rockworm"
+  maxsonarmarkerdistance="20000"
+  successmessage="">
     <monster character="Rockworm" count="2" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
-    <Reputation identifier="separatists" amount="3" />
-    <Reputation identifier="coalition" amount="3" />
-    <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward." />
-  </MonsterMission>
-
-  <MonsterMission name="Hunting grounds"
-  identifier="huntinggroundsnoreward4"
-  description="Seismetic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
-  tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
-  type="Monster" sideobjective="true" 
-  difficulty="4" 
-  commonness="0" 
-  reward="6500" 
-  sonarlabel="Target" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
-  monsterfile="AlphaCharybdis">
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
@@ -2387,8 +2316,10 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="6500" 
-  sonarlabel="Target" 
-  spawntype="Mainpath" maxsonarmarkerdistance="20000" successmessage=""
+  spawntype="Mainpath"
+  sonarlabel="Target"
+  maxsonarmarkerdistance="20000"
+  successmessage=""
   monsterfile="AlphaCharybdis">
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
     <Reputation identifier="separatists" amount="3" />
@@ -2404,8 +2335,10 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="6500" 
-  sonarlabel="Pulse Readings" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
+  spawntype="Abyss"
+  sonarlabel="Pulse Readings"
+  maxsonarmarkerdistance="20000"
+  successmessage=""
   monsterfile="AlphaEndworm">
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
@@ -2422,7 +2355,9 @@ reward="1000"
   commonness="0" 
   reward="6500" 
   sonarlabel="Pulse Readings" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
+  spawntype="Abyss"
+  maxsonarmarkerdistance="20000"
+  successmessage=""
   monsterfile="GiantTrapper">
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
@@ -2439,7 +2374,9 @@ reward="1000"
   commonness="0" 
   reward="6500" 
   sonarlabel="Pulse Readings" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
+  spawntype="Abyss"
+   maxsonarmarkerdistance="20000"
+   successmessage=""
   monsterfile="Endurance">
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
@@ -2455,26 +2392,11 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="7500" 
+  spawntype="Mainpath"
   sonarlabel="Cyclops" 
-  spawntype="Mainpath" maxsonarmarkerdistance="20000" successmessage="">
+  maxsonarmarkerdistance="20000"
+  successmessage="">
     <monster character="Cyclops" count="3" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
-    <Reputation identifier="separatists" amount="3" />
-    <Reputation identifier="coalition" amount="3" />
-    <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward." />
-  </MonsterMission>
-
-  <MonsterMission name="Hunting grounds"
-  identifier="huntinggroundsnoreward9"
-  description="Seismetic readings in the area indicate a Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
-  tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
-  type="Monster" sideobjective="true" 
-  difficulty="4" 
-  commonness="0" 
-  reward="7500" 
-  sonarlabel="Target" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
-  monsterfile="AlphaEndworm">
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
@@ -2489,29 +2411,14 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="8500" 
-  sonarlabel="Target" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
+  spawntype="Abyss" 
+  sonarlabel="target"
+  maxsonarmarkerdistance="20000"
+  successmessage=""
   monsterfile="Cthulhu">
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
-    <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward." />
-  </MonsterMission>
-
-  <MonsterMission name="Hunting grounds"
-  identifier="underhuntinggroundsnoreward1"
-  description="Seismic readings in the area indicate an Leviathan size creature is within the area. All routes to [location1] and [location2] are closed off until the creature is eliminated. Administrators are rewarding a hefty [reward] marks to anyone who can kill the creature." 
-  tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
-  type="Monster" sideobjective="true" 
-  difficulty="4" 
-  commonness="0" 
-  reward="6500" 
-  sonarlabel="target" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
-  monsterfile="Endwhale">
-    <Reputation identifier="separatists" amount="3" />
-    <Reputation identifier="coalition" amount="3" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
     <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward." />
   </MonsterMission>
 
@@ -2523,8 +2430,10 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="6500" 
-  sonarlabel="target" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
+  spawntype="Abyss" 
+  sonarlabel="target"
+  maxsonarmarkerdistance="20000"
+  successmessage=""
   monsterfile="Endwhale">
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
@@ -2540,8 +2449,10 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="5500" 
-  sonarlabel="target" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
+  spawntype="Abyss" 
+  sonarlabel="target"
+  maxsonarmarkerdistance="20000"
+  successmessage=""
   monsterfile="Endwormre">
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
@@ -2557,8 +2468,10 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="5500" 
-  sonarlabel="target" 
-  spawntype="Abyss" maxsonarmarkerdistance="20000" successmessage=""
+  spawntype="Abyss" 
+  sonarlabel="target"
+  maxsonarmarkerdistance="20000"
+  successmessage=""
   monsterfile="Bossmoloch">
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
@@ -2566,8 +2479,7 @@ reward="1000"
     <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward." />
   </MonsterMission>
 
-  <!-- TODO: don't put this in huntinggrounds if it doesnt spawn in abyss -->
-  <!-- <MonsterMission name="The Resurrection"
+  <MonsterMission name="The Resurrection"
   identifier="huntinggroundsnoreward11"
   description="Research vessels have reported a large Fractal Destroyer has been brought back to life between [location1] and [location2]! Authorities are offering [reward] marks to whoever can eliminate the large mobile creature before it causes havoc on the nearby outposts." 
   tags="huntinggroundsnoreward,huntinggrounds,killmonsterrare"
@@ -2576,13 +2488,15 @@ reward="1000"
   commonness="0" 
   reward="8500" 
   sonarlabel="Target" 
-  spawntype="Mainpath" maxsonarmarkerdistance="20000" successmessage=""
-  monsterfile="Fractaldestroyer">
+  spawntype="Mainpath"
+   maxsonarmarkerdistance="20000"
+   successmessage=""
+    monsterfile="Fractaldestroyer">
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48" />
     <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward." />
-  </MonsterMission> -->
+  </MonsterMission>
 
   <!-- OUTPOST MISSIONS -->
   <OutpostDestroyMission name="Outpost Recovery"
