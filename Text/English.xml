@@ -441,6 +441,7 @@
   <AfflictionDescription.BTradio.300>FM Radio Range (300M).</AfflictionDescription.BTradio.300>
   <AfflictionDescription.BTradio.500>Military Radio Range (500M).</AfflictionDescription.BTradio.500>
   <AfflictionDescription.BTradio.800>Broadcast Radio Range (800M).</AfflictionDescription.BTradio.800>
+
   <loadingscreentip>The crook has learned to scavenge human environments for food. Most feed it monster corpses to keep it satisfied— otherwise, it might start eyeing humans as its next meal...</loadingscreentip>
   <entityname.crookfurBTC>Crook Fur</entityname.crookfurBTC>
   <entitydescription.crookfurBTC>Can be used as a crafting material in a fabricator.</entitydescription.crookfurBTC>

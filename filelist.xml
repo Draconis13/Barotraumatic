@@ -319,7 +319,6 @@
   <Character file="%ModDir%/Characters/Cthulhuadolescent/Cthulhuadolescent.xml" />
   <Afflictions file="%ModDir%/Characters/Cthulhuadolescent/Cthulhuarmordamage.xml" />
   <Character file="%ModDir%/Characters/Husk_chimera_artifact/Husk_chimera_artifact.xml" />
-  <Text file="%ModDir%/Characters/Crook/Crooklocalizationenglish.xml" />
   <Talents file="%ModDir%/Characters/Crook/Crooktalents.xml" />
   <Sounds file="%ModDir%/Characters/Crook/Crooksteps.xml" />
   <Character file="%ModDir%/Characters/Crook/CrookBTC.xml" />
