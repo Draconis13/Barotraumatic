@@ -317,7 +317,6 @@
   <Character file="%ModDir%/Characters/Psilotoadadult/Psilotoadadult.xml" />
   <Character file="%ModDir%/Characters/Psilotoadadult/Psilotoadadultpet.xml" />
   <Character file="%ModDir%/Characters/Cthulhuadolescent/Cthulhuadolescent.xml" />
-  <Afflictions file="%ModDir%/Characters/Cthulhuadolescent/Cthulhuarmordamage.xml" />
   <Character file="%ModDir%/Characters/Husk_chimera_artifact/Husk_chimera_artifact.xml" />
   <Talents file="%ModDir%/Characters/Crook/Crooktalents.xml" />
   <Sounds file="%ModDir%/Characters/Crook/Crooksteps.xml" />
@@ -372,8 +371,6 @@
   <Character file="%ModDir%/Characters/Peanutslug2/Peanutslug2.xml" />
   <Character file="%ModDir%/Characters/Husk_centipede/Husk_centipede.xml" />
   <Character file="%ModDir%/Characters/Manraptor/Manraptor.xml" />
-  <Afflictions file="%ModDir%/Characters/Yellowboy/Yellowboyafflictions.xml" />
-  <Item file="%ModDir%/Characters/Yellowboy/Yellowboyegg.xml" />
   <Character file="%ModDir%/Characters/Variants/Trichordate_random/Trichordate_random.xml" />
   <Character file="%ModDir%/Characters/Watcherling/Watcherling.xml" />
   <Character file="%ModDir%/Characters/Molochbaby/Molochbaby.xml" />
