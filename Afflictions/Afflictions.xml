@@ -1741,6 +1741,7 @@
       </StatusEffect>
     </Effect>
   </AfflictionHusk>
+  
   <AfflictionHusk name="Crawlielatched" identifier="Crawlielatched2" type="Crawlielatched" healableinmedicalclinic="false" limbspecific="false" targets="human" huskedspeciesname="huskcrawlielatched" indicatorlimb="Head" hideiconafterdelay="true" showiconthreshold="1000" showinhealthscannerthreshold="1000" showicontoothersthreshold="1000" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="4" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="100" iconcolors="94,54,95;163,73,164;200,191,231">
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
     <Effect minstrength="0" maxstrength="100" strengthchange="-8">
@@ -1763,6 +1764,7 @@
       </StatusEffect>
     </Effect>
   </AfflictionHusk>
+  
   <Affliction name="crawliebeheaded" identifier="crawliebeheaded" type="crawliebeheaded" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="0" />
   </Affliction>
@@ -1806,6 +1808,7 @@
     <Icon texture="%ModDir:2518816103%/Characters/Crook/crooktalenticon.png" sourcerect="0,0,128,128" color="125,175,130,255" />
     <Effect minstrength="0" maxstrength="100" strengthchange="-0.015" />
   </AfflictionHusk>
+  
   <Affliction name="biowormburndamage" identifier="biowormburndamage" type="biowormburndamage" showiconthreshold="1000" ShowIconToOthersThreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100" affectmachines="true">
     <Effect minstrength="0" maxstrength="100" strengthchange="-5">
       <StatusEffect type="OnActive" target="Character" stackable="false" interval="0.2" disabledeltatime="true">
