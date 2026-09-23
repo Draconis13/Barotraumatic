@@ -2825,6 +2825,46 @@
     <LightComponent range="50" castshadows="False" drawbehindsubs="False" ison="True" flicker="1" flickerspeed="0.5" lightcolor="255,50,30,50" isactive="True" minvoltage="0" powerconsumption="0" />
   </Item>
   
+  <!-- scavie claws, what is it? -->
+  <Item name="claws" description="Filthy claws." hideinmenus="true" identifier="scavieclawsbtc" nameidentifier="" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon" Scale="0.6" impactsoundtag="impact_metal_light" inventoryiconcolor="230,215,160,255" spritecolor="230,215,160" >
+    <Price baseprice="160" sold="false" />
+     <Deconstruct>
+      </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
+    <Body width="72" height="40" density="1" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" locked="true" aimpos="50,0" handle1="-10,0" holdangle="30" reload="1.3" range="90"  DualWieldReloadTimePenaltyMultiplier="1.6" combatPriority="25" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="8" structuredamage="8" structuresoundtype="StructureSlash">
+        <Affliction identifier="bitewounds" strength="3" />
+		<Affliction identifier="lacerations" strength="7.5" />
+        <Affliction identifier="bleeding" strength="8" />
+		<Affliction identifier="infection" amount="5" probability="0.2" />
+        <Affliction identifier="stun" strength="0.05" />
+		<Affliction identifier="stun" strength="0.10" probability="0.1" />
+        <StatusEffect type="OnUse" target="Character">
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+	  <StatusEffect type="OnNotContained" target="This" delay="0.5" stackable="false">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <!-- /////////////////// UTILITIES ////////////////// -->
   <!-- These items have an effect when inside creature inventory -->
   <!-- /////////////////// UTILITIES ////////////////// -->
