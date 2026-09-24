@@ -73,56 +73,56 @@
     </ai>
     <inventory accessiblebyowner="True" Slots="RightHand, LeftHand, Any, Any, Any, Any, Any" Commonness="100">
       <Item slot="RightHand" Identifier="fractalpistol" />
-	  <Item slot="LeftHand" Identifier="fractalpistol" />
+      <Item slot="LeftHand" Identifier="fractalpistol" />
       <Item Identifier="aliencircuitry" />
       <Item Identifier="zinc" />
       <Item Identifier="alienpowercell" />
     </inventory>
     <inventory accessiblebyowner="True" Slots="RightHand, LeftHand, Any, Any, Any, Any, Any" Commonness="100">
       <Item slot="RightHand" Identifier="fractalpistol" />
-	  <Item slot="LeftHand" Identifier="fractalpistol" />
+      <Item slot="LeftHand" Identifier="fractalpistol" />
       <Item Identifier="alienpowercell" />
       <Item Identifier="zinc" />
       <Item Identifier="guardianlifesupport" />
     </inventory>
     <inventory accessiblebyowner="True" Slots="RightHand, LeftHand, Any, Any, Any, Any, Any" Commonness="100">
       <Item slot="RightHand" Identifier="fractalpistol" />
-	  <Item slot="LeftHand" Identifier="fractalpistol" />
+      <Item slot="LeftHand" Identifier="fractalpistol" />
       <Item Identifier="alienpowercell" />
       <Item Identifier="zinc" />
       <Item Identifier="guardiandome" />
     </inventory>
     <inventory accessiblebyowner="True" Slots="RightHand, LeftHand, Any, Any, Any, Any, Any" Commonness="25">
       <Item slot="RightHand" Identifier="fractalpistol" />
-	  <Item slot="LeftHand" Identifier="fractalpistol" />
+      <Item slot="LeftHand" Identifier="fractalpistol" />
       <Item Identifier="alienpowercell" />
       <Item Identifier="aliencircuitry" />
       <Item Identifier="oxygeniteshard" />
     </inventory>
     <inventory accessiblebyowner="True" Slots="RightHand, LeftHand, Any, Any, Any, Any, Any" Commonness="25">
       <Item slot="RightHand" Identifier="fractalpistol" />
-	  <Item slot="LeftHand" Identifier="fractalpistol" />
+      <Item slot="LeftHand" Identifier="fractalpistol" />
       <Item Identifier="alienpowercell" />
       <Item Identifier="aliencircuitry" />
       <Item Identifier="fulgurium" />
     </inventory>
     <inventory accessiblebyowner="True" Slots="RightHand, LeftHand, Any, Any, Any, Any, Any" Commonness="25">
       <Item slot="RightHand" Identifier="fractalpistol" />
-	  <Item slot="LeftHand" Identifier="fractalpistol" />
+      <Item slot="LeftHand" Identifier="fractalpistol" />
       <Item Identifier="alienpowercell" />
       <Item Identifier="aliencircuitry" />
       <Item Identifier="physicorium" />
     </inventory>
     <inventory accessiblebyowner="True" Slots="RightHand, LeftHand, Any, Any, Any, Any, Any" Commonness="25">
       <Item slot="RightHand" Identifier="fractalpistol" />
-	  <Item slot="LeftHand" Identifier="fractalpistol" />
+      <Item slot="LeftHand" Identifier="fractalpistol" />
       <Item Identifier="alienpowercell" />
       <Item Identifier="guardianparts" />
       <Item Identifier="dementonite" />
     </inventory>
     <inventory accessiblebyowner="True" Slots="RightHand, LeftHand, Any, Any, Any, Any, Any" Commonness="1">
       <Item slot="RightHand" Identifier="fractalpistol" />
-	  <Item slot="LeftHand" Identifier="fractalpistol" />
+      <Item slot="LeftHand" Identifier="fractalpistol" />
       <Item Identifier="alienpowercell" />
       <item Identifier="guardianparts" />
     </inventory>
