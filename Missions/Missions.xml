@@ -10,9 +10,7 @@
   <!-- - Balance the spawns, no bullshit like 3x abyss monsters -->
   <!-- - Adjust the set properly especially _set1 -->
   <!-- - Reduce the highest rewards, watch out for missions giving over 5000 -->
-  <!-- - Assing minleveldifficulty to EVERY Mission
-  textidentifier=""
-  -->  
+  <!-- - Assing minleveldifficulty to EVERY Mission -->  
   <!-- - Sort all the missions by monsterset, swarmset and difficulty -->
   <!-- - Localization -->
   <!-- - Format monster spawns properly (no more monsterfile, use min and max instead of count) -->
@@ -1558,7 +1556,6 @@
     <message header="Clowns Destroyed" text="You've cleared the area of any tomfoolery. You should report the incident to [location2]." />
   </MonsterMission>
 
-  <!-- TODO: monster numbers are too random and need to get rid of the bad swimmer enemies -->
   <MonsterMission
   textidentifier=""
   name="Fractal Migration"
@@ -1580,7 +1577,6 @@
     <message header="Fractal Creatures Destroyed" text="You've cleared the area of any fractal guardians. You should report the incident to [location2]." />
   </MonsterMission>
 
-  <!-- TODO: very outdated nest missions, replace and refresh -->
   <NestMission
   textidentifier=""
   name="Raiding a Huge Mudraptor Nest"
@@ -1870,7 +1866,6 @@
     <message header="Cave Cleared Out" text="Yellowboy nest has been cleared. Navigate the submarine out of the claim a well earned reward." />
   </MonsterMission>
 
-  <!-- TODO: how many husked miner missions do you have??? -->
   <MonsterMission
   textidentifier=""
   name="Terminate Husked Miners"
@@ -2092,10 +2087,8 @@ reward="1000"
   </MonsterMission>
 
 
-  <!-- ABYSS MISSIONS -->
-  
+  <!-- ABYSS MISSIONS -->  
   <!-- TODO: add min and max difficulty levels to these hunting grounds. Or do we even care? -->
-  <!-- TODO: some of these are mainpath...-->
   
   <MonsterMission
   textidentifier=""
@@ -2170,7 +2163,7 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="8000" 
-  spawntype="Mainpath"
+  spawntype="Abyss"
   sonarlabel="Endworms"
   maxsonarmarkerdistance="20000"
   successmessage="">
@@ -2192,7 +2185,7 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="6500" 
-  spawntype="Mainpath"
+  spawntype="Abyss"
   sonarlabel="Rockworm"
   maxsonarmarkerdistance="20000"
   successmessage="">
@@ -2213,7 +2206,7 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="6500" 
-  spawntype="Mainpath"
+  spawntype="Abyss"
   sonarlabel="Target"
   maxsonarmarkerdistance="20000"
   successmessage=""
@@ -2297,7 +2290,7 @@ reward="1000"
   difficulty="4" 
   commonness="0" 
   reward="7500" 
-  spawntype="Mainpath"
+  spawntype="Abyss"
   sonarlabel="Cyclops" 
   maxsonarmarkerdistance="20000"
   successmessage="">
@@ -2403,7 +2396,7 @@ reward="1000"
   commonness="0" 
   reward="8500" 
   sonarlabel="Target" 
-  spawntype="Mainpath"
+  spawntype="Abyss"
    maxsonarmarkerdistance="20000"
    successmessage=""
     monsterfile="Fractaldestroyer">
