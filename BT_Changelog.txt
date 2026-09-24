@@ -18,6 +18,8 @@ HOTFIX
 
 [hr]xx/xx/2026
 
+[b]Additions:[/b]
+
 [List]
 [*] 
 [*] 
@@ -27,7 +29,15 @@ HOTFIX
 [b]Changes:[/b]
 
 [List]
-[*] Shadowwhale resprited and updated
+[*] Completely reworked the enemy spawn list:
+[*] Rebalanced enemy packs and addressed outliers (example: 3x abyssal creature pack)
+[*] Prevented enemies from killing eachother (like spawning mudraptors and crawlers in the same place)
+[*] Some backend technical and formatting improvements that will make patching and updating easier in the future
+[*] 
+[*] Mission rebalances, tweaks and fixes. SOME MISSIONS WERE DELETED, EXPECT ERROR MESSAGES AND RELOAD BACKUPS IF NEEDED
+[*] 
+[*] Lots of creature fixes and reworks:
+[*] Shadowwhale rebalanced and reworked with a new effect
 [*] Shadowleech reworked, causes a bleding infection
 [*] Trichordates will no longer drunk you to death
 [*] Guppy resprited and updated
@@ -37,14 +47,12 @@ HOTFIX
 [*] Psilosaur sprite updated 
 [*] Bots now flee from Teleglitch
 [*] Brainmoss reworked with new effects
-[*] Removed useless Minemission variants
-[*] Watcherling reworked
+[*] Watcherling reworked with a new model and attacks
+[*] Endwhale attack, resistances and ragdoll fixed
+[*] Many other minor resprites and visual improvements
 [*] 
 [*] 
-[*] 
-[*] 
-[*] 
-[*] 
+[*] Crook cape extra money nerfed from 20% to 5%
 [/List]
 
 [b]Fixes:[/b] 
@@ -71,14 +79,13 @@ HOTFIX
    Rework list
    - Undyings: remove item from chest to kill them while incapacitated
    - BruteBTC: sprite rework? make it look less human
-   - Watcherling: change ragdoll, floating eyestalk
    - Charybdisold: rework sprite, change famility to "leatherback"
    - Ancientmudraptor: make more fractal-looking
    - Stonewanderers: find a gimmick, those enemies are basically worse molochs. Attach to mainpath walls like mantis?
    
    CRITICAL
    - Cnidae/Cnidaeprime: resprite and ragdoll
-   - Pylon: resprite and ragdoll
+   - Pylon: resprite, change pylonbolt ragdoll
    - Voidstalker: resprite and ragdoll
    
 
