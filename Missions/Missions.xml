@@ -87,7 +87,7 @@
     type="Monster"    
     difficulty="1"    
     commonness="70"
-    reward="1000"
+    reward="1600"
     sonarlabel="Barracuda" maxsonarmarkerdistance="10000">
     <monster character="TigerSharkThresher" min="2" max="3"/>
     <monster character="Lionthresher" min="3" max="4"/>
@@ -313,7 +313,7 @@
   difficulty="2" 
   reward="3000" 
   sonarlabel="Cnidae" maxsonarmarkerdistance="10000" >
-    <monster character="Cnidae" count="3" />
+    <monster character="CnidaePrime" count="3" />
     <Reputation identifier="location" amount="1" />
     <LocationType from="AnyOutpost" to="Any" />
     <Icon texture="%ModDir:2518816103%/UI/XanIcons3.png" sourcerect="0,256,256,256" color="214,50,48" />
@@ -397,19 +397,19 @@
   description="A particurarly aggressive Dybbuk has been causing severe psychological damage to nearby vessels traveling between [location1] and [location2]. A reward of [reward] marks has been promised to anyone who can eliminate it." successmessage="The Dybbuk has been terminated."
   identifier="killobserver"
   type="Monster" 
-  tags="killmonster,killmonster_set3" 
+  tags="killmonster,killmonster_set2" 
   commonness="50" 
   difficulty="3" 
   reward="3800" 
-  sonarlabel="Dybbuk" maxsonarmarkerdistance="10000"
-  monsterfile="Observer">
+  sonarlabel="Dybbuk" maxsonarmarkerdistance="10000">
+    <monster character="Observer" count="1" />
+    <monster character="Watcherling" count="3" />
     <Reputation identifier="location" amount="2" />
     <Icon texture="%ModDir:2518816103%/UI/XanIcons.png" sourcerect="0,256,256,256" color="214,50,48" />
     <LocationType from="AnyOutpost" to="Any" />
     <message header="missionheader0.generickill" text="missionmessage0.generickill" />
   </MonsterMission>
 
-  <!-- TODO: don't like 3x unique creatures-->
   <MonsterMission
   textidentifier=""
   name="Terminate Dyatel"
@@ -421,7 +421,8 @@
   difficulty="3" 
   reward="4800" 
   sonarlabel="Dyatel" maxsonarmarkerdistance="10000">
-    <monster character="Abysswatcher" count="3" />
+    <monster character="Abysswatcher" count="1" />
+    <monster character="Watcherling" count="3" />
     <Reputation identifier="location" amount="2" />
     <Icon texture="%ModDir:2518816103%/UI/XanIcons.png" sourcerect="0,256,256,256" color="214,50,48" />
     <LocationType from="AnyOutpost" to="Any" />
@@ -484,11 +485,11 @@
     <message header="Fishy got Squishy" text="What even WAS that?. Navigate the submarine out of the cavern, quickly." />
   </MonsterMission>
 
-  <!-- TODO: awful description and I hate these random swimming robots in general -->
+  <!-- TODO: I hate these random swimming robots in general -->
   <MonsterMission
   textidentifier=""
   name="Investigating A Missing Shipment"
-  description="A small shipment of Ancient Brute Security Robots went gone missing between [location1] and [location2] ages ago.While it was assumed the shipment was lost to the abyss, the Brutes' rescue beacons recently activated in a nearby cave. Anyone willing to investigate the beacons will be rewarded" successmessage="You meet a representative of the company responsible for the production of the Brutes, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
+  description="A small shipment of Brute Security Robots has gone missing between [location1] and [location2]. The robots supposedly malfunctioned and reactivated in a nearby cave. Disable the robots before they turn on passing divers." successmessage="You successfully terminated the Brute robots." 
   spawntype="Cave"
   identifier="killbrute"
   type="Monster" 
@@ -507,49 +508,11 @@
   <MonsterMission
   textidentifier=""
   name="Investigating A Missing Shipment"
-  description="A small shipment of Ancient Brute Security Robots went gone missing between [location1] and [location2] ages ago.While it was assumed the shipment was lost to the abyss, the Brutes' rescue beacons recently activated. Anyone willing to investigate the beacons will be rewarded" successmessage="You meet a representative of the company responsible for the production of the Brutes, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
-  spawntype="Abyss"
-  identifier="killbrute2"
-  type="Monster" 
-  tags="killmonster,killswarm,killswarm_set2" 
-  commonness="30" 
-  difficulty="2" 
-  reward="2500" 
-  sonarlabel="Rescue beacons" maxsonarmarkerdistance="10000">
-    <monster character="BruteBTC" count="4" />
-    <Reputation identifier="location" amount="1" />
-    <Icon texture="%ModDir:2518816103%/UI/XanIcons.png" sourcerect="512,256,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="Targets investigated" text="The missing Brutes appears to have been taken over by some sort of parasitic growth, but they have been dispatched . You should report the incident to [location2]." />
-  </MonsterMission>
-
-  <MonsterMission
-  textidentifier=""
-  name="Investigating A Missing Shipment"
-  description="A large shipment of Ancient Brute Security Robots has gone missing between [location1] and [location2] long ago. While it was assumed the shipment was lost to the abyss,the Brutes' rescue beacons recently activated. Anyone willing to investigate the beacons will be rewarded " successmessage="You meet a representative of the company responsible for the production of the Brutes, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
-  spawntype="Abyss"
-  identifier="killbrute3"
-  type="Monster" 
-  tags="killmonster,killswarm,killswarm_set2" 
-  commonness="25" 
-  difficulty="2" 
-  reward="3000" 
-  sonarlabel="Rescue beacons" maxsonarmarkerdistance="10000">
-    <monster character="BruteBTC" count="6" />
-    <Reputation identifier="location" amount="2" />
-    <Icon texture="%ModDir:2518816103%/UI/XanIcons.png" sourcerect="500,256,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="Targets investigated" text="The missing Brutes appears to have been taken over by some sort of parasitic growth, but they have been dispatched . You should report the incident to [location2]." />
-  </MonsterMission>
-
-  <MonsterMission
-  textidentifier=""
-  name="Investigating A Missing Shipment"
   description="A small shipment of Ancient Lug Cargo Robots went gone missing between [location1] and [location2] ages ago.While it was assumed the shipment was lost to the abyss, the Lug's rescue beacons recently activated in a nearby cave. Anyone willing to investigate the beacons will be rewarded" successmessage="You meet a representative of the company responsible for the production of the Luggars, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
   spawntype="Cave"
   identifier="killluggar1"
   type="Monster" 
-  tags="killmonster,killswarm,killswarm_set1" 
+  tags="killmonster,killswarm,killswarm_set2" 
   commonness="25" 
   difficulty="2" 
   reward="2250" 
@@ -564,30 +527,11 @@
   <MonsterMission
   textidentifier=""
   name="Investigating A Missing Shipment"
-  description="A large shipment of Ancient Lug Cargo Robots has gone missing between [location1] and [location2] long ago. While it was assumed the shipment was lost to the abyss,the Lug's rescue beacons recently activated. Anyone willing to investigate the beacons will be rewarded " successmessage="You meet a representative of the company responsible for the production of the Luggars, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
-  spawntype="Abyss"
-  identifier="killluggar2"
-  type="Monster" 
-  tags="killmonster,killswarm,killswarm_set2" 
-  commonness="30" 
-  difficulty="2" 
-  reward="2500" 
-  sonarlabel="Rescue beacons" maxsonarmarkerdistance="10000">
-    <monster character="Mechflora" count="6" />
-    <Reputation identifier="location" amount="2" />
-    <Icon texture="%ModDir:2518816103%/UI/XanIcons.png" sourcerect="500,256,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="Targets investigated" text="The missing Luggars appear to have been taken over by some sort of parasitic growth, but they have been dispatched . You should report the incident to [location2]." />
-  </MonsterMission>
-
-  <MonsterMission
-  textidentifier=""
-  name="Investigating A Missing Shipment"
   description="A large shipment of Ancient Cargo Robots has gone missing between [location1] and [location2] long ago. While it was assumed the shipment was lost to the abyss,the Lug's rescue beacons recently activated. Anyone willing to investigate the beacons will be rewarded " successmessage="You meet a representative of the company responsible for the production of the Luggars, he introduces himself and gives you [reward] Marks for the &quot;inconvenience&quot;; he then leaves as quickly as he arrived." 
   spawntype="Abyss"
   identifier="killluggar3"
   type="Monster" 
-  tags="killmonster,killswarm,killswarm_set2" 
+  tags="killmonster,killswarm,killswarm_set3" 
   commonness="10" 
   difficulty="2" 
   reward="2500" 
@@ -606,9 +550,9 @@
   description="Various small vessels and drones have gone missing between [location1] and [location2].The only Witnesses suffer from heavy psychosis and hallucinations and thus we don't have a description of what's causing the disappereances,however a particular infrasonic signal has been marked as the prime suspect.Anyone willing to investigate the signal will be rewarded. " successmessage="The Researchers of [location2] are particularly interested in the encounter and offer [reward] for your troubles"
   identifier="killvoidstalker"
   type="Monster" 
-  tags="killmonster,killmonster_set2" 
+  tags="killmonster,killmonster_set3" 
   commonness="20" 
-  reward="2400" 
+  reward="3600" 
   difficulty="3" 
   sonarlabel="Infrasonic Signal" maxsonarmarkerdistance="10000"
   monsterfile="Voidstalker">
@@ -636,11 +580,10 @@
     <message header="Target destroyed" text="The missing vessel appears to have been taken over by some sort of parasitic growth, but it seems to be incapacitated now. You should report the incident to [location2]." />
   </MonsterMission>
 
-  <!-- TODO: wtf 8 shadowwhales??? change number and text-->
-  <!-- <MonsterMission
+  <MonsterMission
   textidentifier=""
-  name="Terminate a large Shadow Whale swarm"
-  description="Scouts have reported of a large swarm of Shadow Whales wandering the area between [location1] and [location2]. These Whales are invisible on sonar and can pose a big threat towards unprepared ships. The authorities are offering a reward of [reward] to any submarine that takes out the large swarm." successmessage="The swarm has been terminated."
+  name="Terminate a Shadow Whale"
+  description="Scouts have reported Shadow Whales wandering the area between [location1] and [location2]. These Whales are invisible on sonar and can pose a big threat towards unprepared ships. The authorities are offering a reward of [reward] to any submarine that takes out the pod." successmessage="The swarm has been terminated."
   identifier="killshadowwhales"
   type="Monster" 
   tags="killmonster,killmonster_set4" 
@@ -648,12 +591,12 @@
   difficulty="3" 
   reward="4000" 
   sonarlabel="Specified Location" maxsonarmarkerdistance="10000">
-    <monster character="Shadowwhale" min="5" max="8" />
+    <monster character="Shadowwhale" min="2" max="2" />
     <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55" />
     <LocationType from="AnyOutpost" to="Any" />
     <message header="Target  eliminated" text="The target has been eliminated. Navigate the submarine out of the cavern." />
-  </MonsterMission> -->
+  </MonsterMission>
 
   <!-- TODO: this doesn't work because wasteyard is no longer a thing... -->
   <!-- <MonsterMission
@@ -1110,46 +1053,6 @@
     <message text="The Brood has been Purged. Navigate the submarine out of the cavern to claim the reward." header="Target terminated" />
   </MonsterMission>
 
-  <!-- TODO: cnidaes are getting a rework -->
-  <!-- <MonsterMission
-  textidentifier=""
-  name="Terminate a pack of Cnidae"
-  description="An aggressive pack of Cnidae's is disrupting the route between [location1] and [location2],A reward of [reward] Marks has been promised to anyone who can eliminate the threat." successmessage="The Cnidae has been terminated."
-  identifier="killcoelanthre2"
-  type="Monster" 
-  tags="killmonsterswarm_set3" 
-  commonness="15" 
-  difficulty="3" 
-  reward="3500" 
-  sonarlabel="Cnidaes" maxsonarmarkerdistance="10000">
-    <Reputation identifier="location" amount="3" />
-    <monster character="Cnidae" count="4" />
-    <monster character="Cnidaeprime" min="0" max="1" />
-    <Icon texture="%ModDir:2518816103%/UI/XanIcons3.png" sourcerect="0,256,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="missionheader0.generickill" text="missionmessage0.generickill" />
-  </MonsterMission> -->
-
-  <!-- TODO: cnidaes are getting a rework -->
-  <!-- <MonsterMission
-  textidentifier=""
-  name="Terminate a pack of Cnidae"
-  description="An aggressive pack of Cnidae's is disrupting the route between [location1] and [location2],A reward of [reward] Marks has been promised to anyone who can eliminate the threat." successmessage="The Cnidae has been terminated."
-  identifier="killCnidaeprime"
-  type="Monster" 
-  tags="killmonsterswarm_set3" 
-  commonness="10" 
-  difficulty="3" 
-  reward="3500" 
-  sonarlabel="Cnidaes" maxsonarmarkerdistance="10000">
-    <Reputation identifier="location" amount="3" />
-    <monster character="Cnidae" count="3" />
-    <monster character="Cnidaeprime" count="2" />
-    <Icon texture="%ModDir:2518816103%/UI/XanIcons3.png" sourcerect="0,256,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="missionheader0.generickill" text="missionmessage0.generickill" />
-  </MonsterMission> -->
-
   <MonsterMission
   textidentifier=""
   name="Scavenger Galore"
@@ -1213,7 +1116,6 @@
     <message header="missionheader0.killthresherswarm1" text="missionmessage0.killthresherswarm1" />
   </MonsterMission>
 
-  <!-- TODO: don't like 3x unique creatures-->
   <MonsterMission
   textidentifier=""
   name="Killing a Harpoon whale trio."
@@ -1232,7 +1134,6 @@
     <message header="Targets terminated" text="The Harpoon whales are dead. Navigate the submarine out of the cavern to claim the reward." />
   </MonsterMission>
   
-  <!-- TODO: don't like 3x unique creatures-->
   <MonsterMission
   textidentifier=""
   name="Killing a Psilosaurus pod."
@@ -1250,7 +1151,6 @@
     <LocationType from="AnyOutpost" to="Any" />
     <message header="Targets terminated" text="The Psilosaurs are dead. Navigate the submarine out of the cavern to claim the reward." />
   </MonsterMission>
-
   
   <MonsterMission
   textidentifier=""
@@ -1450,7 +1350,6 @@
     <message header="Target terminated" text="The swarm is terminated. Navigate the submarine out of the cavern to claim the reward." />
   </MonsterMission> -->
 
-  <!-- TODO: too many enemies -->
   <MonsterMission
   textidentifier=""
   name="Terminate a Husk Crawler Swarm"
@@ -1461,7 +1360,7 @@
   difficulty="4" 
   commonness="85" 
   reward="4000" maxsonarmarkerdistance="10000">
-    <monster character="crawlerhusk" min="10" max="12" />
+    <monster character="crawlerhusk" min="6" max="8" />
     <monster character="Husk_chimera" min="2" max="2" />
     <monster character="Huskchimerabroodmother" min="1" max="1" />
     <Reputation identifier="location" amount="2" />
@@ -1671,73 +1570,13 @@
   difficulty="3" 
   reward="4000" 
   sonarlabel="Fractal Creatures" maxsonarmarkerdistance="18000">
-    <monster character="undyingthermal" min="0" max="1" />
     <monster character="undyingfaraday" min="0" max="1" />
-    <monster character="Fractalguardian" min="1" max="2" />
-    <monster character="Fractalguardian2" min="1" max="2" />
-    <monster character="FractalEnforcer" min="1" max="2" />
-    <monster character="fractalsiren" min="0" max="1" />
-    <monster character="undying" min="3" max="3" />
+    <monster character="Fractalguardian3" min="2" max="2" />
     <monster character="FractalBreacher" min="1" max="1" />
-    <monster character="fractalwalker" min="1" max="2" />
+    <monster character="FractalEnforcer" min="1" max="1" />
     <Reputation identifier="location" amount="3" />
     <Icon color="214,50,48" sourcerect="267,779,234,234" texture="Content/UI/MissionIcons.png" />
     <LocationType from="AnyOutpost" to="Any" />
-    <message header="Fractal Creatures Destroyed" text="You've cleared the area of any fractal guardians. You should report the incident to [location2]." />
-  </MonsterMission>
-
-  <!-- TODO: monster numbers are too random and need to get rid of the bad swimmer enemies -->
-  <MonsterMission
-  textidentifier=""
-  name="Fractal Migration"
-  description="Divers reported a large column of Fractal inhabitants have escaped from a ruin and now dangerously roam the area between [location1] and [location2]. Administrators are offering [reward] for any armed submarine crew that could wipe out the roaming creatures." successmessage="The area now seems clear of any fractal guardians in the area. Good work."
-  identifier="killfractalguardiansDE"
-  type="Monster" 
-  tags="killmonster,killswarm,killswarm_set3" 
-  commonness="35" 
-  difficulty="3" 
-  reward="4000" 
-  sonarlabel="Fractal Creatures" maxsonarmarkerdistance="18000">
-    <monster character="undyingthermal" min="0" max="1" />
-    <monster character="undyingfaraday" min="0" max="1" />
-    <monster character="Fractalguardian" min="1" max="2" />
-    <monster character="Fractalguardian2" min="2" max="2" />
-    <monster character="FractalEnforcer" min="1" max="2" />
-    <monster character="fractalsiren" min="0" max="1" />
-    <monster character="undying" min="2" max="3" />
-    <monster character="FractalBreacher" min="1" max="1" />
-    <monster character="fractalwalker" min="1" max="2" />
-    <Reputation identifier="location" amount="3" />
-    <LocationType to="UnderAttack" from="AnyOutpost" />
-    <Icon color="214,50,48" sourcerect="267,779,234,234" texture="Content/UI/MissionIcons.png" />
-    <message header="Fractal Creatures Destroyed" text="You've cleared the area of any fractal guardians. You should report the incident to [location2]." />
-  </MonsterMission>
-
-  <!-- TODO: monster numbers are too random and need to get rid of the bad swimmer enemies -->
-  <MonsterMission
-  textidentifier=""
-  name="Fractal Migration"
-  description="Divers reported a large column of Fractal inhabitants have escaped from a ruin and now dangerously roam the area between [location1] and [location2]. Administrators are offering [reward] for any armed submarine crew that could wipe out the roaming creatures." successmessage="The area now seems clear of any fractal guardians in the area. Good work."
-  identifier="killfractalguardiansDEmermaid"
-  type="Monster" 
-  tags="killmonster,killswarm,killswarm_set3" 
-  commonness="20" 
-  difficulty="3" 
-  reward="4000" 
-  sonarlabel="Fractal Creatures" maxsonarmarkerdistance="18000">
-    <monster character="undyingthermal" min="0" max="1" />
-    <monster character="undyingfaraday" min="0" max="1" />
-    <monster character="Fractalguardian" min="1" max="1" />
-    <monster character="Fractalguardian2" min="0" max="1" />
-    <monster character="FractalEnforcer" min="1" max="1" />
-    <monster character="fractalsiren" min="2" max="3" />
-    <monster character="Fractalsinger" min="1" max="2" />
-    <monster character="undying" min="3" max="4" />
-    <monster character="FractalBreacher" min="1" max="2" />
-    <monster character="fractalwalker" min="1" max="2" />
-    <Reputation identifier="location" amount="3" />
-    <LocationType to="UnderAttack" from="AnyOutpost" />
-    <Icon color="214,50,48" sourcerect="267,779,234,234" texture="Content/UI/MissionIcons.png" />
     <message header="Fractal Creatures Destroyed" text="You've cleared the area of any fractal guardians. You should report the incident to [location2]." />
   </MonsterMission>
 
@@ -1747,7 +1586,7 @@
   name="Raiding a Huge Mudraptor Nest"
   identifier="mudraptornestraid"
   description="A large Mudraptor nest has been spotted around [location1] and [location2]. Sonar and heat seeking scanners revealed around over 10 mudraptors inside the cave and many eggs. Authorities estimate that without taking action for the next couple days, the outposts nearby the area will be overrun and abandoned. The Coalition hasn't taken action yet however the authorities are offering [reward] to whoever can exterminate the large nest. Expect high casualties and death." 
-  tags="nest,mudraptornest,raid"
+  tags="nest,mudraptornesthard,raid"
   type="nest" 
   sonarlabel="nest" 
   spawntype="cave" 
@@ -1793,70 +1632,12 @@
       <Item identifier="largemudraptoregg" />
       <Item identifier="largemudraptoregg" />
     </Items>
-    <Monster character="Mudraptor" min="3" max="4" />
-    <Monster character="Mudraptor_unarmored" min="4" max="6" />
+    <Monster character="Mudraptor" min="2" max="3" />
+    <Monster character="Mudraptor_unarmored" min="3" max="5" />
     <Monster character="Mudraptor_veteran" />
     <Reputation identifier="location" amount="3" />
     <Icon texture="%ModDir:2518816103%/UI/XanIcons.png" sourcerect="260,511,253,248" color="214,50,48" />
     <LocationType from="AnyOutpost" to="Any" />
-    <message text="missionmessage0.mudraptornest" />
-  </NestMission>
-
-  <NestMission
-  textidentifier=""
-  name="Clearing a Mudraptor Nest"
-  identifier="mudraptornestraidDE"
-  description="A large Mudraptor nest has been spotted around [location1] and [location2]. Sonar and heat seeking scanners revealed around over 10 mudraptors inside the cave and many eggs. Authorities estimate that without taking action for the next couple days, the outposts nearby the area will be overrun and abandoned. The Coalition hasn't taken action yet however the authorities are offering [reward] to whoever can exterminate the large nest. Expect high casualties and death." 
-  tags="nest,mudraptornest,raid"
-  type="nest" 
-  spawntype="cave" 
-  reward="5100" itemspawnradius="200" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500" nestobjectamount="20" 
-  difficulty="4" 
-  commonness="85">
-    <Items>
-      <Item identifier="largemudraptoregg">
-        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" />
-      </Item>
-      <Item identifier="largemudraptoregg">
-        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" />
-      </Item>
-      <Item identifier="largemudraptoregg">
-        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" />
-      </Item>
-      <Item identifier="largemudraptoregg">
-        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" />
-      </Item>
-      <Item identifier="largemudraptoregg">
-        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" />
-      </Item>
-      <Item identifier="largemudraptoregg">
-        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="9" />
-      </Item>
-      <Item identifier="largemudraptoregg">
-        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="9" />
-      </Item>
-      <Item identifier="largemudraptoregg">
-        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="9" />
-      </Item>
-      <Item identifier="largemudraptoregg">
-        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="9" />
-      </Item>
-      <Item identifier="largemudraptoregg">
-        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" delay="9" />
-      </Item>
-      <Item identifier="largemudraptoregg" />
-      <Item identifier="largemudraptoregg" />
-      <Item identifier="largemudraptoregg" />
-      <Item identifier="largemudraptoregg" />
-      <Item identifier="largemudraptoregg" />
-      <Item identifier="largemudraptoregg" />
-    </Items>
-    <Monster character="Mudraptor" min="3" max="4" />
-    <Monster character="Mudraptor_unarmored" min="4" max="6" />
-    <Monster character="Mudraptor_veteran" />
-    <Reputation identifier="location" amount="2" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="260,511,253,248" color="214,50,48" />
-    <LocationType to="UnderAttack" from="AnyOutpost" />
     <message text="missionmessage0.mudraptornest" />
   </NestMission>
 
@@ -1916,6 +1697,7 @@
   commonness="50" 
   difficulty="2" 
   reward="1900" 
+  spawntype="cave" 
   sonarlabel="Infrasonic signal" maxsonarmarkerdistance="10000" successmessage="Upon reaching the signal, you found out that the signal was being emitted by some kind of sentient anomaly. You should report the incident to [location2].">
     <monster character="Teleglitch" />
     <Reputation identifier="location" amount="1" />
@@ -1946,12 +1728,16 @@
   identifier="salvageclowns" textidentifier="salvageclowns1" 
   tags="salvage,salvagewreck"
   type="Salvage"
-  description="Local clowns have posted a bounty to retrive a lost relic located near [location1], frustratingly they refuse to elaborate what the item is and the reward of [reward] is absurd, however directions to the wreck which hopefully has other salvage are quite clear." 
-  difficulty="3" 
+  description="Local clowns have posted a bounty to retrive a lost relic from a fallen submarine near [location1]." 
+  difficulty="2" 
   commonness="50" resourceHandoverAmount="0" 
-  reward="1015" 
+  reward="1234" 
   sonarlabel="Wreck" achievementidentifier="salvagewreckmission" 
-  spawntype="wreck" showmessagewhenpickedup="true" itemtag="clowns" containertag="locker" requirewreck="true" 
+  spawntype="wreck"
+  requirewreck="true" 
+  showmessagewhenpickedup="true"
+  itemtag="clowns"
+  containertag="locker"
   minleveldifficulty="25">
     <Portrait texture="Content/Map/LocationPortraits/Wreck1.png" sourcerect="0,0,2160,1080" premultiplyalpha="false" />
     <Portrait texture="Content/Map/LocationPortraits/Wreck2.png" sourcerect="0,0,2160,1080" premultiplyalpha="false" />
@@ -1970,12 +1756,16 @@
   identifier="salvagehuskcult" textidentifier="salvagehuskcult1" 
   tags="salvage,salvagewreck"
   type="Salvage"
-  description="The Church of the Husk has issued a reward for a religious icon located on a vessal that went down between [location1] and [location2], For a cheaply made aluminium figurine they are offering a modest [reward] for its return." 
+  description="The Church of the Husk has issued a reward for a religious icon located on a vessal that went down between [location1] and [location2]. They are offering a modest [reward] for its return." 
   difficulty="3" 
   commonness="50" resourceHandoverAmount="0" 
   reward="2000" 
   sonarlabel="Wreck" achievementidentifier="salvagewreckmission" 
-  spawntype="wreck" showmessagewhenpickedup="true" itemidentifier="huskfigurine" containertag="locker" requirewreck="true" 
+  spawntype="wreck"
+  requirewreck="true" 
+  showmessagewhenpickedup="true"
+  itemidentifier="huskfigurine"
+  containertag="locker"
   minleveldifficulty="25">
     <Portrait texture="Content/Map/LocationPortraits/Wreck1.png" sourcerect="0,0,2160,1080" premultiplyalpha="false" />
     <Portrait texture="Content/Map/LocationPortraits/Wreck2.png" sourcerect="0,0,2160,1080" premultiplyalpha="false" />
@@ -2023,7 +1813,7 @@
   difficulty="3" 
   sonarlabel="character.ghostshrimp" 
   commonness="40">
-    <Monster character="Ghostshrimp" min="10" max="12" />
+    <Monster character="Ghostshrimp" min="7" max="9" />
     <Reputation identifier="location" amount="2" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType from="AnyOutpost" to="Any" />
@@ -2038,14 +1828,16 @@
   type="Monster"
   description="A cave containing a communal mix of bottom dwelling creatures has been located near [location1]. An unusually high reward of [reward] credits has been allocated to clear the infestation before it grows and risk of a reptillian Scavenger being responsible." 
   spawntype="cave" 
-  reward="3000" 
+  reward="3350" 
   sonarlabel="Swarm"  monsterspawnradius="200" nestobjectradius="1000" nestobjectamount="15" 
   difficulty="3" 
   commonness="52">
     <Monster character="minoga" min="3" max="4" />
     <Monster character="scorpion" min="3" max="4" />
     <Monster character="grayeel" min="1" max="2" />
-    <Monster character="caver" min="0" max="2" />
+    <Monster character="hullfish" min="0" max="2" />
+    <Monster character="gnasher" min="0" max="2" />
+    <Monster character="caver" min="0" max="1" />
     <Monster character="Trichordatebloodsucker" min="0" max="3" /> 
     <monster character="Trichordatemetalvore" min="0" max="2" />
     <monster character="xan_scavenger" min="0" max="1" />
@@ -2086,10 +1878,10 @@
   tags="killmonster,killmonster_set1" 
   spawntype="Cave"
   type="Monster"
-  description="A submarine crew lost contact from their forward mining group in a cave. With their ship damaged, they claim the mining groups beacon has been activated and suspect they have become husks. They're awarding [reward] marks to whoever can go remove them from the cave." 
+  description="A submarine crew has lost contact with their forward mining group a few days ago. They suspect they have since turned into husks. They're awarding [reward] marks to whoever can remove them from the cave." 
   difficulty="2" 
   commonness="30" 
-  reward="3600" 
+  reward="1750" 
   sonarlabel="Distress Beacon" maxsonarmarkerdistance="10000" successmessage="The miners were forced to be taken out. You inform the ships captain about their loss. They decided to reward you anyway.">
     <monster character="Husk" min="3" max="4" />
     <monster character="Husksprinterold" min="1" max="2" />
@@ -2106,13 +1898,13 @@
   tags="killmonster,killmonster_set2" 
   spawntype="Cave"
   type="Monster"
-  description="A submarine crew lost contact from their forward mining group in a cave. With their ship damaged, they claim the mining groups beacon has been activated and suspect they have become husks. They're awarding [reward] marks to whoever can go remove them from the cave." 
+  description="A submarine crew has lost contact with their forward mining group a few days ago. They suspect they have since turned into husks. They're awarding [reward] marks to whoever can remove them from the cave." 
   difficulty="2" 
   commonness="20" 
-  reward="4000" 
+  reward="2100" 
   sonarlabel="Distress Beacon" maxsonarmarkerdistance="10000" successmessage="The miners were forced to be taken out.">
-    <monster character="Husksprinterold" min="5" max="6" />
-    <monster character="Husksprintercombat" min="1" max="1" />
+    <monster character="Husks_abyss" min="3" max="4" />
+    <monster character="Husksprintercombat" min="1" max="2" />
     <Reputation identifier="location" amount="1" />
     <Icon texture="%ModDir:2518816103%/UI/XanIcons2.png" sourcerect="790,0,235,231" color="0,0,139" />
     <LocationType from="AnyOutpost" to="Any" />
@@ -2123,13 +1915,13 @@
   textidentifier=""
   name="Unusual Husk Activity"
   identifier="husknasanov" 
-  tags="killmonster,killmonster_set2" 
+  tags="killmonster,killmonster_set3" 
   spawntype="Cave"
   type="Monster"
-  description="Submarine crews have reported increased husk activity at a former dig site along with unusual sensor readings more consistant with ruins. Uneasy submarinars have understandably avoided the area and authorities eager to reopen the linea are awarding [reward] marks to whoever can go remove whatever is in the cave." 
+  description="Submarine crews have reported increased husk activity at a former dig site along with unusual sensor readings. Authorities are awarding [reward] marks to whoever can remove the threat." 
   difficulty="3" 
   commonness="10" 
-  reward="4000" 
+  reward="3600" 
   sonarlabel="Distorted Signal" maxsonarmarkerdistance="10000" successmessage="The miners were forced to be taken out.">
 	<!-- Randomizer monsters instantly die and are replaced with unlabeled monsters but the remaining target appears to be alone when it is not -->
     <monster character="Husk_RandomLight" min="2" max="3" />
@@ -2141,31 +1933,10 @@
     <LocationType from="AnyOutpost" to="Any" />
     <message header="Husk activity Ended" text="You have stopped whatever this was. Navigate the submarine out of the cavern to report the news." />
   </MonsterMission>
-
-  <!--   <MonsterMission
-  textidentifier=""
-  name="Rescue stranded Miners"
-  identifier="rescueminer2" 
-  tags="killmonster,killmonster_set2" 
-  spawntype="Cave"
-  type="Monster"
-  description="A submarine crew lost contact from their forward mining group in a cave a day ago. With their ship damaged, they suddenly claim the mining groups beacon has been activated but the crews ship is not functional to move out. They're awarding [reward] marks to whoever can go rescue them from the cave." 
-  difficulty="2" 
-  commonness="75" 
-  reward="4000" 
-  sonarlabel="Distress Beacon" maxsonarmarkerdistance="10000" successmessage="The miners were forced to be taken out.">
-    <monster character="Husksprinterold" min="5" max="6" />
-    <monster character="Husksprintercombat" min="1" max="1" />
-    <Reputation identifier="location" amount="1" />
-    <Icon texture="%ModDir:2518816103%/UI/XanIcons2.png" sourcerect="790,0,235,231" color="0,0,139" />
- <LocationType from="AnyOutpost" to="Any" />
-    <message header="Mining Crew found" text="Looks like the mining crew were attacked and turned into husks. Navigate the submarine out of the cavern to report the news." />
-	  </MonsterMission>
-
-   -->
+  
   <!-- ESCORT MISSIONS -->
-  <!--
- 
+  
+  <!-- 
      <EscortMission
   textidentifier=""
   name="Rescue stranded Miners"
@@ -2240,7 +2011,8 @@ reward="1000"
     <message header="missionheader0.escort1" text="missionmessage0.escort1"/>
   </EscortMission>
   -->
-  <!-- CLEARING MISSIONS -->
+  
+  
   <!-- SURPRISE MISSIONS -->
   <MonsterMission
   textidentifier=""
@@ -2260,61 +2032,6 @@ reward="1000"
     <message header="Target eliminated" text="Upon reaching the signal, you found out that the signal was being emitted by some kind of sentient anomaly. You should report the incident to [location2]." />
   </MonsterMission>
 
-  <!-- TODO: cannot trigger naturally, no minimum difficulty, repeatable and overall stupid -->
-  <!-- <BeaconMission
-  textidentifier=""
-  name="Activate Beacon"
-  identifier="beaconbttroll" textidentifier="beaconmission" 
-  tags="beacon,beaconnoreward"
-  type="Beacon"
-  description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
-  difficulty="4" 
-  commonness="50" 
-  reward="2500">
-    <monster character="fractaldestroyer" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <Reputation identifier="location" amount="1" />
-    <message header="Wait, what was that noise?" text="Wait, what was that noise?" />
-  </BeaconMission>
-
-  <BeaconMission
-  textidentifier=""
-  name="Activate Beacon"
-  identifier="beaconbttroll2" textidentifier="beaconmission" 
-  tags="beacon,beaconnoreward"
-  type="Beacon"
-  description="The beacon station between [location1] and [location2] is down - get in there and get it back online and transmitting an active sonar signal." 
-  difficulty="4" 
-  commonness="50" 
-  reward="2500">
-    <monster character="Latcher" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <Reputation identifier="location" amount="1" />
-    <message header="Wait, what was that noise?" text="Wait, what was that noise?" />
-  </BeaconMission> -->
-
-  <MonsterMission
-  textidentifier=""
-  name="Investigate a mysterious signal"
-  identifier="killhumanimmortal" 
-  tags="killmonster,killmonster_set3"
-  type="Monster"
-  description="A mysterious infrasonic signal has suddenly shown up around [location1]. Researchers want you to investigate the signal. Report back any findings." 
-  difficulty="2" 
-  commonness="80" 
-  reward="2000" maxsonarmarkerdistance="10000" 
-  sonarlabel="Unknown Signal" successmessage="Upon reaching the signal, you found out that the signal was being emitted by a human through unknown sources. [location2] agreed to pay you [reward] for your discovery.">
-    <monster character="humanimmortal" min="1" max="1" />
-    <Reputation identifier="location" amount="1" />
-    <Reputation identifier="clowns" amount="5" />
-    <Reputation identifier="huskcult" amount="-2" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,768,256,256" color="214,50,48" />
-    <LocationType from="AnyOutpost" to="Any" />
-    <message header="missionheader0.generickill" text="missionmessage0.generickill" />
-  </MonsterMission>
-
   <MonsterMission
   textidentifier=""
   name="Investigating a mysterious signal"
@@ -2322,10 +2039,10 @@ reward="1000"
   tags="killmonster,killswarm,killswarm_set3"
   type="Monster"
   description="A mysterious infrasonic signal has suddenly shown up around [location1]. Researchers want you to investigate the signal. Report back any findings." 
-  difficulty="3" 
+  difficulty="2" 
   commonness="38" 
-  reward="2000" 
-  sonarlabel="Infrasonic Signal" maxsonarmarkerdistance="10000" successmessage="Upon reaching the signal, you found out that the signal was being emitted by some kind of mutant human. [location2] agreed to pay you [reward] for your discovery.">
+  reward="2100" 
+  sonarlabel="Infrasonic Signal" maxsonarmarkerdistance="10000" successmessage="Upon reaching the signal, you found out that the signal was being emitted by some kind of warped clown entity. [location2] agreed to pay you [reward] for your discovery.">
     <monster character="Deepseaclownnew" count="3" />
     <Reputation identifier="huskcult" amount="3" />
     <Reputation identifier="clowns" amount="3" />
@@ -2339,13 +2056,13 @@ reward="1000"
   textidentifier=""
   name="Investigating a mysterious signal"
   identifier="deepseaclownnewsawmission" 
-  tags="killmonster,killswarm,killswarm_set3"
+  tags="killmonster,killswarm,killswarm_set4"
   type="Monster"
   description="A mysterious infrasonic signal has suddenly shown up around [location1]. Researchers want you to investigate the signal. Report back any findings." 
   difficulty="3" 
   commonness="10" 
-  reward="2000" 
-  sonarlabel="Infrasonic Signal" maxsonarmarkerdistance="10000" successmessage="Upon reaching the signal, you found out that the signal was being emitted by some kind of mutant human. [location2] agreed to pay you [reward] for your discovery.">
+  reward="3333" 
+  sonarlabel="Infrasonic Signal" maxsonarmarkerdistance="10000" successmessage="Upon reaching the signal, you found out that the signal was being emitted by some kind of warped clown entity. [location2] agreed to pay you [reward] for your discovery.">
     <monster character="Deepseaclownnew" count="2" />
     <monster character="Deepseaclownnewsaw" count="1" />
     <Reputation identifier="huskcult" amount="3" />
@@ -2374,41 +2091,6 @@ reward="1000"
     <message header="Target eliminated" text="Upon reaching the signal, you found out that the signal was being emitted by some kind of sentient anomaly. You should report the incident to [location2]." />
   </MonsterMission>
 
-  <MonsterMission
-  textidentifier=""
-  name="Investigating a mysterious distress beacon."
-  identifier="killhumanhuskswarmhuskgrounds1" 
-  tags="killmonster,killswarm,killswarm_set3"
-  type="Monster"
-  description="Authorities have lost contact with a submarine a few weeks ago until now. An SOS beacon was reported where the submarine was last seen around [location1] and [location2]. Authorities are rewarding [reward] to anyone who investigates the signal." 
-  difficulty="2" 
-  commonness="90" 
-  reward="4900" 
-  sonarlabel="Distress Beacon" maxsonarmarkerdistance="10000" successmessage="The swarm has been terminated.">
-    <monster character="Husk" min="3" max="5" />
-    <monster character="Husksprinterold" min="1" max="2" />
-    <monster character="Husksprinterhumanold" min="1" max="2" />
-    <monster character="Husk_RandomTiny" min="0" max="2" />
-    <monster character="Husksprintercombat" min="1" max="1" />
-    <monster character="Husksprintercombat" min="0" max="1" />
-    <Reputation identifier="location" amount="1" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="12,268,234,234" color="0,0,139" />
-    <LocationType to="HuskGroundsDE" from="Research" />
-    <LocationType to="HuskGroundsDE" from="City" />
-    <LocationType to="HuskGroundsDE" from="Military" />
-    <LocationType to="HuskGroundsDE" from="Outpost" />
-    <LocationType to="HuskGroundsDE" from="Research" />
-    <LocationType to="HuskGroundsDE" from="None" />
-    <LocationType to="HuskGroundsDE" from="Lair" />
-    <LocationType to="UnderAttack" from="Research" />
-    <LocationType to="UnderAttack" from="City" />
-    <LocationType to="UnderAttack" from="Military" />
-    <LocationType to="UnderAttack" from="Outpost" />
-    <LocationType to="UnderAttack" from="Research" />
-    <LocationType to="UnderAttack" from="None" />
-    <LocationType to="UnderAttack" from="Lair" />
-    <message header="Target terminated" text="The husk swarm is terminated. Navigate the submarine out of the cavern to claim the reward." />
-  </MonsterMission>
 
   <!-- ABYSS MISSIONS -->
   
@@ -2731,7 +2413,11 @@ reward="1000"
     <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward." />
   </MonsterMission>
 
+
+
+
   <!-- OUTPOST MISSIONS -->
+  <!-- TODO: make sure they all have minleveldifficulty, add targetitem="reactor" only if the mission description says you need to blow up the reactor. Also don't put oversized monsters in there -->
   <OutpostDestroyMission
   name="Outpost Recovery"
   identifier="abandonedoutposthumansbt1" 
@@ -2739,7 +2425,11 @@ reward="1000"
   type="OutpostDestroy" 
   reward="5000" 
   difficulty="4" 
-  commonness="40" allowretry="true" targetitem="reactor" unhideentitysubcategories="abandonedhuman">
+  commonness="40"
+  allowretry="true"
+  targetitem="reactor"
+  unhideentitysubcategories="abandonedhuman"
+  minleveldifficulty="65">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
@@ -2774,7 +2464,11 @@ reward="1000"
   type="OutpostDestroy" 
   reward="5000" 
   difficulty="4" 
-  commonness="30" allowretry="true" targetitem="reactor" unhideentitysubcategories="abandonedhuman">
+  commonness="30"
+  allowretry="true"
+  targetitem="reactor"
+  unhideentitysubcategories="abandonedhuman"
+  minleveldifficulty="65">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
@@ -2807,7 +2501,9 @@ reward="1000"
   reward="5000" 
   difficulty="4" 
   commonness="20" allowretry="true" 
-  sonarlabel="Nest" unhideentitysubcategories="abandonedmonster">
+  sonarlabel="Nest"
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="65">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
@@ -2815,8 +2511,8 @@ reward="1000"
       <Character identifier="Husk_RandomLight" min="0" max="3" requirekill="false" />
       <Character identifier="mudraptor_unarmored" min="2" max="3" requirekill="true" />
       <Character identifier="mudraptor" min="6" max="8" requirekill="true" />
-      <Character identifier="mudraptor_veteran" min="1" max="2" requirekill="true" multiplayeronly="true" />
-	  <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="securitymodule" probability="0.2" requirekill="false" />
+      <Character identifier="mudraptor_veteran" min="1" max="1" requirekill="true" multiplayeronly="true" />
+      <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="securitymodule" probability="0.2" requirekill="false" />
     </Characters>
     <Items>
       <Item identifier="largemudraptoregg" spawnpointtags="nest">
@@ -2850,7 +2546,8 @@ reward="1000"
   reward="5000" 
   difficulty="3" 
   commonness="20" allowretry="true" 
-  sonarlabel="Nest" unhideentitysubcategories="abandonedmonster">
+  sonarlabel="Nest"
+  unhideentitysubcategories="abandonedmonster">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
@@ -2896,8 +2593,11 @@ reward="1000"
   type="OutpostDestroy" 
   reward="4100" 
   difficulty="4" 
-  commonness="25" allowretry="true" 
-  sonarlabel="target" targetitem="reactor" unhideentitysubcategories="abandonedmonster">
+  commonness="25"
+  allowretry="true" 
+  sonarlabel="target"
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="50">
     <Reputation identifier="clowns" amount="5" />
     <Reputation identifier="huskcult" amount="-3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
@@ -2922,13 +2622,16 @@ reward="1000"
   type="AbandonedOutpost" 
   reward="4100" 
   difficulty="4" 
-  commonness="20" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedmonster">
+  commonness="20"
+  allowretry="true" 
+  sonarlabel="target"
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="42">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,5" cooldownafterchange="15" />
     <Characters>
-      <Character identifier="Mantis" min="0" max="2" requirekill="false" asfaraspossible="true" />
+      <Character identifier="Mantis" min="0" max="1" requirekill="false" asfaraspossible="true" />
       <Character identifier="Orangeboy" min="0" max="1" requirekill="false" />
       <Character identifier="Yellowboy" min="2" max="4" requirekill="false" />
       <Character identifier="Yellowboywarrior" min="4" max="5" requirekill="true" />
@@ -2942,22 +2645,25 @@ reward="1000"
     <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostDestroyMission>
 
-    <OutpostDestroyMission
+  <OutpostDestroyMission
   name="Outpost Clearing"
   identifier="abandonedoutpostmantisBTC" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
   reward="4100" 
   difficulty="4" 
-  commonness="20" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedmonster">
+  commonness="20" 
+  allowretry="true" 
+  sonarlabel="target" 
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="42">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,5" cooldownafterchange="15" />
     <Characters>
-      <Character identifier="Mantis" min="7" max="8" requirekill="true" />
-      <Character identifier="MantisShrimp" min="0" max="2" requirekill="true" />
-      <Character identifier="Mantispink" min="0" max="4" requirekill="true" />
+      <Character identifier="Mantis" min="4" max="5" requirekill="true" />
+      <Character identifier="MantisShrimp" min="2" max="3" requirekill="true" />
+      <Character identifier="Mantispink" min="2" max="3" requirekill="true" />
       <Character identifier="Yellowboyspawnerarmored" min="0" max="1" probability="0.2" requirekill="false" />
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="securitymodule" probability="0.2" requirekill="false" />
     </Characters>
@@ -2971,22 +2677,22 @@ reward="1000"
   type="AbandonedOutpost" 
   reward="4100" 
   difficulty="4" 
-  commonness="30" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedmonster">
+  commonness="30" 
+  allowretry="true" 
+  sonarlabel="target" 
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="50">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,5" cooldownafterchange="15" />
     <Characters>
       <Character identifier="bandit_elite" from="abandonedoutpostnpcs" min="0" max="3" />
       <Character identifier="Undying" min="3" max="4" requirekill="true" />
-      <Character identifier="Undying" min="3" max="4" requirekill="true" />
-      <Character identifier="Undyingthermal" min="0" max="1" requirekill="true" />
-      <Character identifier="Undyingfaraday" min="0" max="1" requirekill="true" />
-      <Character identifier="Undyingrad" min="1" max="2" requirekill="true" />
-      <Character identifier="Fractalwalker" min="1" max="2" requirekill="true" />
-      <Character identifier="Fractalwalker" min="0" max="1" requirekill="true" />
+      <Character identifier="Undying" min="2" max="2" requirekill="true" multiplayeronly="true"/>
+      <Character identifier="Fractalwalker" min="2" max="2" requirekill="true" />
+      <Character identifier="Fractalwalker" min="1" max="1" requirekill="true" multiplayeronly="true" />
       <Character identifier="Ancientmudraptor" min="1" max="1" requirekill="true" />
-      <Character identifier="Fractalsiren" min="0" max="1" requirekill="true" />
+      <Character identifier="Fractalsiren" min="1" max="1" requirekill="true" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostDestroyMission>
@@ -2998,17 +2704,20 @@ reward="1000"
   type="AbandonedOutpost" 
   reward="4100" 
   difficulty="4" 
-  commonness="25" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedmonster">
+  commonness="25"
+  allowretry="true" 
+  sonarlabel="target"
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="58">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,5" cooldownafterchange="15" />
     <Characters>
       <Character identifier="Latcher_hatchling" min="2" max="2" requirekill="true" />
       <Character identifier="Latcher_hatchling" min="2" max="2" requirekill="true" />
-      <Character identifier="Latcher_hatchling" min="2" max="2" requirekill="true" />
-      <Character identifier="Latcher_hatchling" min="1" max="2" requirekill="true" />
-      <Character identifier="Latcher_hatchling" min="1" max="2" requirekill="true" />
+      <Character identifier="Latcher_hatchling" min="1" max="1" requirekill="true" />
+      <Character identifier="Latcher_hatchling" min="1" max="1" requirekill="true" />
+      <Character identifier="Latcher_hatchling" min="1" max="1" requirekill="true" multiplayeronly="true" />
       <Character identifier="Yellowboyspawnerarmored" min="0" max="1" probability="0.1" asfaraspossible="true" requirekill="false" />
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="securitymodule" probability="0.2" requirekill="false" />
     </Characters>
@@ -3022,8 +2731,11 @@ reward="1000"
   type="OutpostDestroy" 
   reward="4000" 
   difficulty="4" 
-  commonness="5" allowretry="true" 
-  sonarlabel="target" targetitem="reactor" unhideentitysubcategories="abandonedmonster">
+  commonness="5" 
+  allowretry="true" 
+  sonarlabel="target" 
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="50">
     <Reputation identifier="clowns" amount="5" />
     <Reputation identifier="huskcult" amount="-3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
@@ -3049,10 +2761,13 @@ reward="1000"
   identifier="abandonedoutposthusk2" textidentifier="abandonedoutposthusks" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
-  reward="4100" 
+  reward="4000" 
   difficulty="4" 
-  commonness="30" allowretry="true" 
-  sonarlabel="target" targetitem="reactor" unhideentitysubcategories="abandonedmonster">
+  commonness="5" 
+  allowretry="true" 
+  sonarlabel="target" 
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="50">
     <Reputation identifier="clowns" amount="5" />
     <Reputation identifier="huskcult" amount="-3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
@@ -3080,8 +2795,11 @@ reward="1000"
   type="OutpostDestroy" 
   reward="4100" 
   difficulty="4" 
-  commonness="30" allowretry="true" 
-  sonarlabel="target" targetitem="reactor" unhideentitysubcategories="abandonedmonster">
+  commonness="30"
+  allowretry="true" 
+  sonarlabel="target"
+  targetitem="reactor"
+  unhideentitysubcategories="abandonedmonster">
     <Reputation identifier="clowns" amount="5" />
     <Reputation identifier="huskcult" amount="-3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
@@ -3101,29 +2819,30 @@ reward="1000"
     <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostDestroyMission>
 
-      <OutpostDestroyMission
+  <OutpostDestroyMission
   name="Outpost Cleansing"
   identifier="abandonedoutposthusk4" textidentifier="abandonedoutposthusks" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
   reward="4100" 
   difficulty="4" 
-  commonness="30" allowretry="true" 
-  sonarlabel="target" targetitem="reactor" unhideentitysubcategories="abandonedmonster">
+  commonness="30"
+  allowretry="true" 
+  sonarlabel="target"
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="65">
     <Reputation identifier="clowns" amount="5" />
     <Reputation identifier="huskcult" amount="-3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="15" />
     <Characters>
-      <Character identifier="Huskchimerabroodmother" min="1" max="1" asfaraspossible="true" requirekill="true" />
       <Character identifier="Husk_RandomLight" min="1" max="2" requirekill="true" />
       <Character identifier="Crawlerhusk" min="3" max="5" requirekill="true" />
       <Character identifier="Husk" min="0" max="1" requirekill="true" />
       <Character identifier="Husksprintercombat" min="0" max="1" requirekill="true" />
       <Character identifier="Husk_exosuit" min="1" max="1" requirekill="true" />
       <Character identifier="Husk_RandomHeavy" min="1" max="2" requirekill="true" />
-      <Character identifier="Husk_chimera_elder" min="1" max="1" requirekill="true" />
       <Character identifier="Husk_RandomTiny" min="2" max="4" requirekill="false" />
       <Character identifier="Husk_chimera_unarmoured" min="2" max="3" requirekill="true" />
       <Character identifier="bandit_elite" from="abandonedoutpostnpcs" moduleflags="securitymodule" min="0" max="3" requirekill="false" />
@@ -3138,8 +2857,11 @@ reward="1000"
   type="OutpostDestroy" 
   reward="5000" 
   difficulty="4" 
-  commonness="30" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedmonster">
+  commonness="30"
+  allowretry="true" 
+  sonarlabel="target"
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="58">
     <Reputation identifier="clowns" amount="2" />
     <Reputation identifier="huskcult" amount="2" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
@@ -3176,21 +2898,21 @@ reward="1000"
   type="AbandonedOutpost" 
   reward="4100" 
   difficulty="4" 
-  commonness="30" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedmonster">
+  commonness="30"
+  allowretry="true" 
+  sonarlabel="target"
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="65">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="15" />
     <Characters>
       <Character identifier="Mudraptor_unarmored" min="2" max="3" requirekill="true" />
       <Character identifier="Mudraptor" min="3" max="3" requirekill="false" />
-      <Character identifier="MudraptorGray" min="1" max="2" requirekill="true" />
-      <Character identifier="Mudraptor_hatchling" min="0" max="3" requirekill="false" />
+      <Character identifier="MudraptorGray" min="1" max="1" requirekill="true" />
+      <Character identifier="Mudraptor_hatchling" min="5" max="7" requirekill="false" />
       <Character identifier="WolfEel" min="0" max="2" requirekill="true" />
-      <Character identifier="mudraptor_veteranold" min="0" max="1" requirekill="true" />
-      <Character identifier="Mudraptor_veteran" min="2" max="2" requirekill="true" />
-      <Character identifier="Mudraptor_veteran2" min="1" max="1" requirekill="true" />
-      <Character identifier="Mudrex" min="1" max="1" asfaraspossible="true"  requirekill="true" />
+      <Character identifier="Mudraptor_veteran" min="1" max="1" requirekill="true" />
       <Character identifier="bandit" from="abandonedoutpostnpcs" min="0" max="2" moduleflags="securitymodule" />
       <Character identifier="Yellowboyspawnerarmored" min="0" max="1" probability="0.1" requirekill="false" />
     </Characters>
@@ -3205,8 +2927,11 @@ reward="1000"
   type="AbandonedOutpost" 
   reward="5500" 
   difficulty="4" 
-  commonness="15" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedmonster">
+  commonness="15" 
+  allowretry="true" 
+  sonarlabel="target" 
+  unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="42">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="15" />
@@ -3225,9 +2950,9 @@ reward="1000"
       <Character identifier="bandit_medic" from="abandonedoutpostnpcsbt" moduleflags="researchmodule" requirekill="true" />
       <Character identifier="banditleader_heavy" from="abandonedoutpostnpcs" spawnpointtags="banditleader" requirekill="true" />
       <Character identifier="banditleader" from="abandonedoutpostnpcs" moduleflags="crewmodule" requirekill="true" />
-      <Character identifier="xan_scavenger" min="1" max="1" asfaraspossible="true"  requirekill="true" />
-      <Character identifier="xan_scavenger" min="1" max="1" asfaraspossible="true"  requirekill="true" />
-      <Character identifier="xan_scavenger" min="0" max="1" asfaraspossible="true"  requirekill="true" />
+      <Character identifier="xan_scavenger" min="1" max="1" asfaraspossible="true" requirekill="true" />
+      <Character identifier="xan_scavenger" min="1" max="1" asfaraspossible="true" requirekill="true" />
+      <Character identifier="xan_scavenger" min="0" max="1" asfaraspossible="true" requirekill="true" />
 	  <Character identifier="bandit_elite" from="abandonedoutpostnpcs" min="0" max="2" moduleflags="securitymodule" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
@@ -3241,8 +2966,11 @@ reward="1000"
   type="OutpostDestroy" 
   reward="4000" 
   difficulty="4" 
-  commonness="20" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedhuman">
+  commonness="20"
+  allowretry="true" 
+  sonarlabel="target"
+  unhideentitysubcategories="abandonedhuman"
+  minleveldifficulty="50">
     <Reputation identifier="clowns" amount="5" />
     <Reputation identifier="huskcult" amount="-3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48" />
@@ -3276,8 +3004,11 @@ reward="1000"
   type="OutpostDestroy" 
   reward="3500" 
   difficulty="3" 
-  commonness="20" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedhuman">
+  commonness="20"
+  allowretry="true" 
+  sonarlabel="target"
+  unhideentitysubcategories="abandonedhuman"
+  minleveldifficulty="42">
     <Reputation identifier="clowns" amount="-3" />
     <Reputation identifier="huskcult" amount="5" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48" />
@@ -3312,8 +3043,11 @@ reward="1000"
   type="OutpostDestroy" 
   reward="3500" 
   difficulty="3" 
-  commonness="20" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedhuman">
+  commonness="20" 
+  allowretry="true" 
+  sonarlabel="target" 
+  unhideentitysubcategories="abandonedhuman"
+  minleveldifficulty="50">
     <Reputation identifier="clowns" amount="-3" />
     <Reputation identifier="huskcult" amount="5" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48" />
@@ -3349,30 +3083,26 @@ reward="1000"
   identifier="abandonedoutpostfroggetaboutit" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
-  reward="5500" 
+  reward="4800" 
   difficulty="4" 
   commonness="15" allowretry="true" 
-  sonarlabel="target" unhideentitysubcategories="abandonedmonster">
+  sonarlabel="target" unhideentitysubcategories="abandonedmonster"
+  minleveldifficulty="58">
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="15" />
     <Characters>
-      <Character identifier="Husk_RandomLight" min="0" max="1" requirekill="false" />
       <Character identifier="Husk_RandomTiny" min="0" max="2" requirekill="false" />
-      <Character identifier="Peanutslug2" min="1" max="2" requirekill="true" />
-      <Character identifier="Peanutslug" min="3" max="3" requirekill="true" />
+      <Character identifier="Peanutslug" min="1" max="1" requirekill="true" />
       <Character identifier="Psilotoadadult" min="3" max="4" requirekill="true" />
       <Character identifier="Yellowboyspawner" min="1" max="1" requirekill="false" />
       <Character identifier="Yellowboywarrior" min="1" max="1" requirekill="false" />
       <Character identifier="Psilotoad" min="0" max="1" requirekill="false" />
-      <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="researchmodule" requirekill="false" />
       <Character identifier="hostage" from="abandonedoutpostnpcs" moduleflags="securitymodule" requirekill="false" />
       <Character identifier="bandit_medic" from="abandonedoutpostnpcsbt" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="banditleader_heavy" from="abandonedoutpostnpcs" spawnpointtags="banditleader" requirekill="true" />
       <Character identifier="banditleader" from="abandonedoutpostnpcs" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="bandit_elite" from="abandonedoutpostnpcs" min="1" max="1" moduleflags="securitymodule" />
-      <Character identifier="Husk_centipede" min="0" max="1" asfaraspossible="true"  requirekill="true" />
-      <Character identifier="xan_scavenger" min="0" max="1" asfaraspossible="true"  requirekill="true" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostDestroyMission>
