@@ -150,7 +150,7 @@
   </StatusEffect>
   <StatusEffect type="OnActive" target="This" stackable="false" delay="0.2" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
     <Conditional isdead="false" />
-    <Conditional speciesname="eq crook" />
+    <Conditional speciesname="eq crookbtc" />
     <SpawnCharacter speciesname="crookBTCoutside" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
   </StatusEffect>
   	<StatusEffect type="OnDeconstructed" target="Character">
