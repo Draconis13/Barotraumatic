@@ -1826,7 +1826,7 @@
     <Deconstruct time="25">
       <Item identifier="alienblood" />
       <Item identifier="alienblood" />
-      <Item identifier="saline" />
+      <Item identifier="antibloodloss1" />
     </Deconstruct>
     <Body radius="55" width="5" friction="1.0" restitution="0.01" angulardamping="0.8" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,10" handle2="0,-10">
@@ -1853,7 +1853,7 @@
     <Deconstruct time="25">
       <Item identifier="alienblood" />
       <Item identifier="alienblood" />
-      <Item identifier="saline" />
+      <Item identifier="antibloodloss1" />
     </Deconstruct>
     <Body radius="55" width="5" friction="1.0" restitution="0.01" angulardamping="0.8" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,10" handle2="0,-10">
