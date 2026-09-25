@@ -16,13 +16,11 @@ HOTFIX
 
 ---------------------------------------------------------------------------
 
-[hr]xx/xx/2026
+[hr]25/09/2026
 
 [b]Additions:[/b]
 
 [List]
-[*] 
-[*] 
 [*] 
 [/List]
 
@@ -60,9 +58,6 @@ HOTFIX
 [List]
 [*] Cleaned up the mod, deleted useless unused files
 [*] Many audio files converted from stereo to mono
-[*] 
-[*] 
-[*] 
 [/List]
 
 
