@@ -35,7 +35,7 @@
       <Item identifier="decapitatedarm" copycondition="true" commonness="0.2" />
       <Item identifier="decapitatedleg" copycondition="true" commonness="0.2" />
       <Item identifier="crawlerleg" copycondition="true" commonness="0.2" />
-      <Item identifier="crawlerfins" copycondition="true" commonness="0.4" />
+      <Item identifier="crawlerfin" copycondition="true" commonness="0.4" />
       <Item identifier="scrap" copycondition="true" commonness="0.75" />
       <Item identifier="slimebacteria" copycondition="true" commonness="0.75" />
       <Item identifier="poop" copycondition="true" commonness="0.3" />
@@ -355,7 +355,7 @@
       <Item identifier="fulgurium" copycondition="true" amount="1" commonness="0.1" />
       <Item identifier="physicorium" copycondition="true" amount="1" commonness="0.1" />
       <Item identifier="crawlerleg" copycondition="true" amount="3" commonness="0.34" />
-      <Item identifier="crawlerfins" copycondition="true" amount="3" commonness="0.34" />
+      <Item identifier="crawlerfin" copycondition="true" amount="3" commonness="0.34" />
       <Item identifier="titanium" copycondition="true" amount="2" commonness="0.5" />
       <Item identifier="dementonite" copycondition="true" commonness="0.1" />
       <Item identifier="thresherclaw" copycondition="true" commonness="0.5" />
