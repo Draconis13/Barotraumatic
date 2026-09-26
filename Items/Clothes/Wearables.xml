@@ -376,7 +376,7 @@
       <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagesound="LimbClown" />
     </Wearable>
   </Item>
-  <Item name="Clown diving suit" identifier="Clown_divingsuit" category="Diving" tags="diving,deepdiving,divingsuit,clowngear" scale="0.5" fireproof="true" description="Looks like some maniac glued a nose and wig to this basic diving suit and used layers of toxic lead/copper hull paint to make it resemble what could be generously called a clown... Pressure Resistance(4000)" impactsoundtag="impact_metal_heavy">
+  <Item name="Clown diving suit" identifier="Clown_divingsuit" category="Diving" tags="diving,deepdiving,divingsuit,clowngear" scale="0.5" fireproof="true" description="Looks like some maniac glued a nose and wig to this basic diving suit and used layers of toxic lead/copper hull paint to make it resemble what could be generously called a clown... Pressure Resistance(4000)" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
     <Price baseprice="890" soldeverywhere="false">
       <Price storeidentifier="outpost" multiplier="1" sold="false" />
       <Price storeidentifier="city" multiplier="1" sold="false" />

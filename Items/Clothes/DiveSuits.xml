@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="Infected dive suit" identifier="Infected_divingsuit" category="Diving" tags="diving,deepdiving,divingsuit" scale="0.5" fireproof="true" description="This suit seems to have been infected by some kind of ballast flora that produces oxygen as a byproduct to being fed blood. The entire suit is covered inside and out. Extremely contagious to nearby personnel and items." equipconfirmationtext="handcuffequipconfirmation" impactsoundtag="impact_metal_heavy">
+  <Item name="Infected dive suit" identifier="Infected_divingsuit" category="Diving" tags="diving,deepdiving,divingsuit" scale="0.5" fireproof="true" description="This suit seems to have been infected by some kind of ballast flora that produces oxygen as a byproduct to being fed blood. The entire suit is covered inside and out. Extremely contagious to nearby personnel and items." equipconfirmationtext="handcuffequipconfirmation" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="wreckdivingsuitcontainer" spawnprobability="0.01" />
     <Price baseprice="3750" soldeverywhere="false">
       <Price storeidentifier="outpost" multiplier="1" sold="false" />
