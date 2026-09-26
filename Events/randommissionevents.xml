@@ -1807,7 +1807,7 @@ MonsterEvent
         <MonsterEvent characterfile="Shadowwhale" minamount="2" maxamount="3" spawntype="abyss" musictype="deep" delaybetweenspawns="60" />
         <MonsterEvent characterfile="Voidstalker" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
         <MonsterEvent characterfile="Thalamuscarrier" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
-        <MonsterEvent characterfile="Carrierlevithan" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
+        <MonsterEvent characterfile="Carrierleviathan" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
         <MonsterEvent characterfile="Hammerheadmauler" minamount="1" maxamount="2" spawntype="abyss" musictype="deep" />		
         <MonsterEvent characterfile="Riftworm" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
         <MonsterEvent characterfile="Hermitdugong" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />

@@ -2665,7 +2665,7 @@ _____ \_ |__ ___.__. ______ ______
  <!--     <MonsterEvent characterfile="Shadowwhale" minamount="2" maxamount="3" spawntype="abyss" musictype="deep" delaybetweenspawns="5" /> -->
           <MonsterEvent characterfile="Voidstalker" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
           <MonsterEvent characterfile="Thalamuscarrier" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
-          <MonsterEvent characterfile="Carrierlevithan" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
+          <MonsterEvent characterfile="Carrierleviathan" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
  <!--     <MonsterEvent characterfile="Hammerheadmauler" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" /> -->
 		  <MonsterEvent characterfile="GiantTrapper" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" musictype="deep" />
           <MonsterEvent characterfile="Riftworm" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
@@ -4479,7 +4479,7 @@ _____ \_ |__ ___.__. ______ ______
  <!--     <MonsterEvent characterfile="Shadowwhale" minamount="2" maxamount="3" spawntype="abyss" musictype="deep" delaybetweenspawns="5" /> -->
           <MonsterEvent characterfile="Voidstalker" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
           <MonsterEvent characterfile="Thalamuscarrier" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
-          <MonsterEvent characterfile="Carrierlevithan" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
+          <MonsterEvent characterfile="Carrierleviathan" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
  <!--     <MonsterEvent characterfile="Hammerheadmauler" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" /> -->
 		  <MonsterEvent characterfile="GiantTrapper" minamount="1" maxamount="1" maxamountperlevel="1" spawntype="abyss" musictype="deep" />
           <MonsterEvent characterfile="Riftworm" minamount="1" maxamount="1" spawntype="abyss" musictype="deep" />
