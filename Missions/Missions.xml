@@ -1898,7 +1898,7 @@
   commonness="20" 
   reward="2100" 
   sonarlabel="Distress Beacon" maxsonarmarkerdistance="10000" successmessage="The miners were forced to be taken out.">
-    <monster character="Husks_abyss" min="3" max="4" />
+    <monster character="Husk_Abyss" min="3" max="4" />
     <monster character="Husksprintercombat" min="1" max="2" />
     <Reputation identifier="location" amount="1" />
     <Icon texture="%ModDir:2518816103%/UI/XanIcons2.png" sourcerect="790,0,235,231" color="0,0,139" />
