@@ -23,7 +23,7 @@
       </StatusEffect>
       <Affliction Strength="0.65" Identifier="stun" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
       <Affliction Strength="1.2" Identifier="stun" Probability="0.5" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
-      <Affliction Strength="12.5" Identifier="bitewounds" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
+      <Affliction Strength="15" Identifier="bitewounds" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
       <Affliction Strength="18" Identifier="huskinfection" Probability="0.7" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
       <StatusEffect type="OnUse" target="UseTarget,Limb" comparison="or">
         <Conditional speciesname="crawler" />
@@ -35,7 +35,7 @@
         <Conditional speciesname="!eq human" />
         <Affliction identifier="bitewounds" strength="30" DivideByLimbCount="True" MultiplyByMaxVitality="False"  />
         <Affliction Strength="15" Identifier="bleeding" Probability="0.5" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
-        <Affliction identifier="internaldamage" strength="18" DivideByLimbCount="True" MultiplyByMaxVitality="False"  />
+        <Affliction identifier="internaldamage" strength="13" DivideByLimbCount="True" MultiplyByMaxVitality="False"  />
       </StatusEffect>
     </attack>
   </limb>
