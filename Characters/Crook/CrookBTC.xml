@@ -113,34 +113,34 @@
     <RequiredAffliction type="damage, burn" minstrength="1" />
     <Affliction identifier="crookangerBTC" strength="20" probability="1" />
   </StatusEffect>
-  <StatusEffect type="OnActive" target="This" stackable="false" delay="0.5" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+  <StatusEffect type="OnActive" target="This" oneshot="true" stackable="false" delay="0.5" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
     <Conditional isdead="false" />
     <Conditional crookangerBTC="gt 90" />
     <Conditional speciesname="neq crookBTCaggressive" />
-    <SpawnCharacter speciesname="crookBTCaggressive" oneshot="true" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
+    <SpawnCharacter speciesname="crookBTCaggressive" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
   </StatusEffect>
-  <StatusEffect type="OnActive" target="This" stackable="false" delay="1" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+  <StatusEffect type="OnActive" target="This" oneshot="true" stackable="false" delay="1" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
     <Conditional isdead="false" />
     <Conditional crooksatisfactionBTC="gt 90" />
     <Conditional speciesname="neq crookBTCaggressive" />
     <Conditional speciesname="neq crookBTCsatisfied" />
     <SpawnItem identifier="crookfurBTC" spawnposition="This" count="2" spread="1" SpawnRotationType="None" Rotation="90" aimspread="30" Impulse="3" />
-    <SpawnCharacter speciesname="crookBTCsatisfied" oneshot="true" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
+    <SpawnCharacter speciesname="crookBTCsatisfied" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
   </StatusEffect>
-  <StatusEffect type="OnActive" target="This" stackable="false" delay="10" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND" onlyoutside="true">
+  <StatusEffect type="OnActive" target="This" oneshot="true" stackable="false" delay="10" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND" onlyoutside="true">
     <Conditional isdead="false" />
     <Conditional speciesname="eq crookBTCinside" />
-    <SpawnCharacter speciesname="crookBTCoutside" oneshot="true" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
+    <SpawnCharacter speciesname="crookBTCoutside" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
   </StatusEffect>
   <StatusEffect type="OnActive" target="This" stackable="false" delay="60" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND" onlyoutside="true">
     <Conditional isdead="false" />
     <Conditional speciesname="eq crookBTCsatisfied" />
     <RemoveCharacter />
   </StatusEffect>
-  <StatusEffect type="OnActive" target="This" stackable="false" delay="180" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+  <StatusEffect type="OnActive" target="This" oneshot="true" stackable="false" delay="180" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
     <Conditional isdead="false" />
     <Conditional speciesname="eq crookBTCoutside" />
-    <SpawnCharacter speciesname="crookBTCsatisfied" oneshot="true" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
+    <SpawnCharacter speciesname="crookBTCsatisfied" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
   </StatusEffect>
   <StatusEffect type="OnActive" target="This" stackable="false" delay="5" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND" onlyinside="true">
     <Conditional isdead="false" />
@@ -148,10 +148,10 @@
     <Conditional AIState="neq Eat" />
     <Affliction identifier="stun" strength="0.5" probability="1" />
   </StatusEffect>
-  <StatusEffect type="OnActive" target="This" stackable="false" delay="0.2" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
+  <StatusEffect type="OnActive" target="This" oneshot="true" stackable="false" delay="0.2" checkconditionalalways="true" disabledeltatime="true" ConditionalComparison="AND">
     <Conditional isdead="false" />
     <Conditional speciesname="eq crookbtc" />
-    <SpawnCharacter speciesname="crookBTCoutside" oneshot="true" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
+    <SpawnCharacter speciesname="crookBTCoutside" count="1" transfercontrol="true" removepreviouscharacter="true" transferafflictions="true" transferbuffs="true" />
   </StatusEffect>
   	<StatusEffect type="OnDeconstructed" target="Character">
     <SpawnItem identifiers="alienblood" spawnposition="ThisInventory" count="1" probability="1" />
