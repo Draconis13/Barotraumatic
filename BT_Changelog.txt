@@ -1,7 +1,3 @@
----------------------------------------------------------------------------
-
-KNOWN ISSUES:
--
 
 ---------------------------------------------------------------------------
 
@@ -13,51 +9,46 @@ HOTFIX
 [*] 
 [/List]
 
-
+ 
 ---------------------------------------------------------------------------
 
-[hr]25/09/2026
+[hr]XX/10/2026
+
+BIG TECHNICAL UPDATE
+WARNING: MAY CAUSE SOME ERRORS, EXPECT A HOTFIX SOON AFTER
 
 [b]Additions:[/b]
 
 [List]
-[*] 
+[*] New creature: Piezo Moloch (moloch that discharges electricty)
+[*] New creature: Porphyrios (leatherback whale with sonar clap)
+[*] New creature: Lava Spineling
+[*] New creature: Thresher Baron (big bone thresher)
+[*] New creature: Husked Watcher 
+[*] New creature: 
+[*] New creature: 
 [/List]
+
 
 [b]Changes:[/b]
 
 [List]
-[*] Completely reworked the enemy spawn list:
-[*] Rebalanced enemy packs and addressed outliers (example: 3x abyssal creature pack)
-[*] Prevented enemies from killing eachother (like spawning mudraptors and crawlers in the same place)
-[*] Some backend technical and formatting improvements that will make patching and updating easier in the future
-[*] 
-[*] Mission rebalances, tweaks and fixes. SOME MISSIONS WERE DELETED, EXPECT ERROR MESSAGES AND RELOAD BACKUPS IF NEEDED
-[*] 
-[*] Lots of creature fixes and reworks:
-[*] Shadowwhale rebalanced and reworked with a new effect
-[*] Shadowleech reworked, causes a bleding infection
-[*] Trichordates will no longer drunk you to death
-[*] Guppy resprited and updated
-[*] Gnasher and Hullfish are now in the "Scavenger" group
-[*] Goofyfish, Whitefish and Glowfish are no longer pets, moved to "Scavenger" group, will nibble at humans
-[*] Removed low quality creatures from spawnlist: Legacyendworm, Charybdisre, Watcherwanderer, Lurker
-[*] Psilosaur sprite updated 
-[*] Bots now flee from Teleglitch
-[*] Brainmoss reworked with new effects
-[*] Watcherling reworked with a new model and attacks
-[*] Endwhale attack, resistances and ragdoll fixed
-[*] Many other minor resprites and visual improvements
+[*] Changed a lot of creature IDs as part of ongoing efforts to clean up the mod. Creature IDs used to be all over the place, which made finding creatures hard to properly list and resulted in extra effort when working on the mod. This doesn't affect gameplay, but with creature ids being changed, it could cause errors.
+[*] Boss Moloch resprite and rework into Impaler Moloch
 [*] 
 [*] 
-[*] Crook cape extra money nerfed from 20% to 5%
+[*] 
+[*] 
+[*] 
 [/List]
+
 
 [b]Fixes:[/b] 
 
 [List]
-[*] Cleaned up the mod, deleted useless unused files
-[*] Many audio files converted from stereo to mono
+[*] Fixed Husk_Scylla throwing missing limb errors
+[*] Fixed errors regarding creature loot using the wrong ID or not fitting in inventories
+[*] Fixed errors about wrong creature IDs
 [/List]
 
 
@@ -67,7 +58,6 @@ HOTFIX
    TODO: for later
    - Clean up file structure and file locations, update filelist
    - Delete unused files
-   - Rename all creatures to group them on the list; for example remname Undying into Fractal_Undying or AlphaCharybdis to Charybdis_alpha
    - Balance enemy loot
    - Merge items in a single spritesheet
    - Add swarmbehavior to all enemies
@@ -75,7 +65,6 @@ HOTFIX
    Rework list
    - Undyings: remove item from chest to kill them while incapacitated
    - BruteBTC: sprite rework? make it look less human
-   - Charybdisold: rework sprite, change famility to "leatherback"
    - Ancientmudraptor: make more fractal-looking
    - Stonewanderers: find a gimmick, those enemies are basically worse molochs. Attach to mainpath walls like mantis?
    
@@ -83,20 +72,4 @@ HOTFIX
    - Cnidae/Cnidaeprime: resprite and ragdoll
    - Pylon: resprite, change pylonbolt ragdoll
    - Voidstalker: resprite and ragdoll
-   
 
-	RENAMING LIST:
-	NOTE, THE GOAL IS TO GROUP THE FISH ID TOGETHER. THE DISPLAYED NAME OF THE FISH CAN BE WHATEVER WE WANT THEM TO BE
-	
-	Exosuit => ThalamusExosuit	
-	
-	LegacyCrawler => RoachShrimp (?)
-	
-	Carrier/TurretCarrier/anything that has to do wth carriers
-	
-		
-  
-  <!-- /////////////////////////////////////////////// -->
-  <!-- /////////////////////////////////////////////// -->
-  <!-- /////////////////////////////////////////////// -->
-   
