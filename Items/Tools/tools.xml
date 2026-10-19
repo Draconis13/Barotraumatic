@@ -98,11 +98,11 @@
       <StatusEffect type="OnSuccess" target="Limb" severlimbsprobability="0.06">
         <Conditional EntityType="eq Limb" />
 		<Affliction identifier="lacerations" strength="26" />
-        <Affliction identifier="lacerations" strength="13" probability="0.4" />
-        <Affliction identifier="internaldamage" strength="15" />
-        <Affliction identifier="internaldamage" strength="12" probability="0.3" />
-        <Affliction identifier="bleeding" strength="18" />
-        <Affliction identifier="bleeding" strength="10" probability="0.2" />
+        <Affliction identifier="lacerations" strength="13" probability="0.5" />
+        <Affliction identifier="internaldamage" strength="16" />
+        <Affliction identifier="internaldamage" strength="13" probability="0.3" />
+        <Affliction identifier="bleeding" strength="15" />
+        <Affliction identifier="bleeding" strength="15" probability="0.2" />
         <Affliction identifier="Stun" strength="1.3" />
         <Affliction identifier="Stun" strength="1.70" probability="0.3" />
         <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" range="800" selectionmode="Random" />
