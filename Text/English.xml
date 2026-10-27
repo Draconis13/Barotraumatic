@@ -471,5 +471,7 @@
 
   <entityname.undyingcore>Undying Core</entityname.undyingcore>
   <entitydescription.undyingcore>This power source is the beating heart of the so-called "Undyings", and must be removed to permanently shut them down. \nIt is assumed that this device takes over suits of human origin and reshapes them into a mechanical puppet to protect the alien structure.</entitydescription.undyingcore>
+  <entityname.alienpasskey>Alien Key</entityname.alienpasskey>
+  <entitydescription.alienpasskey>An alien microchip of unknown purpose that self-destructs when touched.</entitydescription.alienpasskey>
 
 </infotext>

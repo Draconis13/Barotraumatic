@@ -3025,13 +3025,23 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  
-  
-  
-  
-  
-  
-  
+
+  <Item name="Undying Core" identifier="undyingcore" category="Alien" description="" Tags="alien,undyingcore" sonarsize="5" spritecolor="255,255,255,255" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" sourcerect="429,178,40,40" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2518816103%/Items/Alien/Fractalweapons.png" depth="0.6" sourcerect="429,178,40,40" origin="0.5,0.5" />
+    <Body width="40" height="40" density="20" friction="0.95" />
+    <Deconstruct time="5">
+      <Item identifier="aliencircuitry" amount="2" />
+    </Deconstruct>
+    <Holdable slots="RightHand+LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnPicked" target="This" oneshot="true">
+        <!-- <Conditional hastag="neq artifactcontainer" targetcontainer="true" /> -->
+        <Explosion range="300.0" empstrength="0.15" camerashake="2" stun="0" force="2.0" showeffects="false" />
+      </StatusEffect>
+    </Holdable>
+    <LightComponent range="50.0" lightcolor="35,80,180,150" IsOn="true" castshadows="false" allowingameediting="false" pulseamount="0.5" pulsefrequency="0.25" flicker="0.5" flickerspeed="0.5" />
+  </Item>
+    
   
   
   <!-- /////////////////// UTILITIES ////////////////// -->

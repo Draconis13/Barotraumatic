@@ -2561,9 +2561,9 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
   </Affliction>
   
-
+  <!-- makes undyings extremely resistant to damage when unconscious, heals them after a delay -->
   <Affliction identifier="fractalundyingimmortality" type="buff" maxstrength="1" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
-    <Effect minstrength="0" maxstrength="1" strengthchange="-1" resistancefor="damage" minresistance="0.99" maxresistance="0.99"  convulseamount="0.5">    
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" resistancefor="damage,bleeding,burn" minresistance="0.99" maxresistance="0.99"  convulseamount="0.5">    
       <StatusEffect target="Character" targetlimbs="Torso,LeftArm,RightArm,LeftLeg,RightLeg,Waist">
         <ParticleEmitter particle="shrapnel" anglemax="360" distancemin="30" distancemax="120" velocitymin="-250" velocitymax="-500" particlespersecond="15" lifetimemultiplier="2" />      
       </StatusEffect>
@@ -2574,6 +2574,7 @@
         <Conditional health="lt 0" />
         <Sound File="%ModDir:2518816103%/Characters/FractalUndying/FractalUndying_healing.ogg" Range="1000" volume="4" frequencymultiplier="1"/>
         <ReduceAffliction type="damage" strength="8" />
+        <ReduceAffliction type="burn" strength="5" />
         <ReduceAffliction type="stun" strength="0.5" />
       </StatusEffect>
     </PeriodicEffect>

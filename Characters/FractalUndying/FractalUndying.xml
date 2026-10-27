@@ -11,36 +11,19 @@
       <VitalityMultiplier type="stun" multiplier="0.2" />
     </Limb>  
   </health>
-  <!-- <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
-    <Item slot="RightHand,LeftHand" equip="true" Identifier="alienpistol" />
-    <Item Identifier="alienpowercell" />
-    <Item Identifier="fulgurium" />
-    <Item Identifier="idcard" />
-  </Inventory>
-  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
-    <Item Identifier="dementonite" />
-    <Item Identifier="thorium" />
-    <Item Identifier="alientrinket2" />
-    <Item Identifier="alienpowercell" />
-    <Item Identifier="idcard" />
-  </Inventory> -->
   <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="10">
     <Item Identifier="undyingcore" />
-    <Item Identifier="alientrinket3" />
-    <Item Identifier="alienpowercell" />
     <Item Identifier="idcard" />
   </Inventory>
   <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="1">
     <Item Identifier="undyingcore" />
     <Item slot="RightHand,LeftHand" equip="true" Identifier="immortalalienshotgun" />
-    <Item Identifier="alientrinket3" />
     <Item Identifier="alienpowercell" />
     <Item Identifier="idcard" />
   </Inventory>
   <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="1">
     <Item Identifier="undyingcore" />
     <Item slot="RightHand,LeftHand" equip="true" Identifier="immortalalienassaultrifle" />
-    <Item Identifier="alientrinket3" />
     <Item Identifier="alienpowercell" />
     <Item Identifier="idcard" />
   </Inventory>
