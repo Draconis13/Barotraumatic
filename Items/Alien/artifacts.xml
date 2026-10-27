@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="Artifact Shard" identifier="pieceskyholderartifact" description="Pieces of an artifact. Its blue in color and it feels hard to breathe when you hold it." category="Alien" Tags="alien,alienartifact,smallalienartifact,smallitem" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" allowsellingwhenbroken="true" hideconditionbar="true">
+  <Item name="Artifact Shard" identifier="pieceskyholderartifact" description="Pieces of an artifact. Its blue in color and it feels hard to breathe when you hold it." category="Alien" Tags="alien,alienartifact,smallalienartifact,smallitem,artifactshard" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" allowsellingwhenbroken="true" hideconditionbar="true">
     <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
     <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
 	<Upgrade gameversion="0.9.3.1" scale="0.5" />
@@ -42,7 +42,7 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="Artifact Shard" identifier="piecethermalartifact" description="Pieces of an artifact. Its red hue in color and feels very hot!" category="Alien" Tags="alien,alienartifact,smallalienartifact,smallitem" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+  <Item name="Artifact Shard" identifier="piecethermalartifact" description="Pieces of an artifact. Its red hue in color and feels very hot!" category="Alien" Tags="alien,alienartifact,smallalienartifact,smallitem,artifactshard" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
     <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
@@ -91,7 +91,7 @@
       </StatusEffect>
     </LightComponent>
   </Item>
-  <Item name="Artifact Shard" identifier="piecefaradayartifact" category="Alien" description="Pieces of an artifact. Its slightly green in color and it feels uneasy to hold onto." Tags="smallitem,alien,alienartifact,smallalienartifact" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" allowsellingwhenbroken="true" hideconditionbar="true">
+  <Item name="Artifact Shard" identifier="piecefaradayartifact" category="Alien" description="Pieces of an artifact. Its slightly green in color and it feels uneasy to hold onto." Tags="alien,alienartifact,smallalienartifact,smallitem,artifactshard" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" allowsellingwhenbroken="true" hideconditionbar="true">
     <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
     <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
 	<Upgrade gameversion="0.9.3.1" scale="0.5" />
@@ -142,7 +142,7 @@
       </StatusEffect>
     </ElectricalDischarger>
   </Item>
-  <Item name="Artifact Shard" identifier="piecenasonovartifact" category="Alien" description="A shard possibly from a larger artifact. Its orange in color and it looks really astonishing. It seems to attract peoples attention." Tags="smallitem,alien,nasonov,alienartifact,smallalienartifact" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" allowsellingwhenbroken="true" hideconditionbar="true">
+  <Item name="Artifact Shard" identifier="piecenasonovartifact" category="Alien" description="A shard possibly from a larger artifact. Its orange in color and it looks really astonishing. It seems to attract peoples attention." Tags="alien,alienartifact,smallalienartifact,smallitem,artifactshard" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" allowsellingwhenbroken="true" hideconditionbar="true">
     <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
     <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
 	<Upgrade gameversion="0.9.3.1" scale="0.5" />
@@ -177,7 +177,7 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="Artifact Shard" identifier="piecepsychosisartifact" category="Alien" description="A shard possibly from a larger artifact. It seems to be slightly out of focus at all times though it feels solid enough." Tags="smallitem,alien,alienartifact,smallalienartifact" sonarsize="5" spritecolor="200,200,200,255" scale="0.5" impactsoundtag="impact_metal_heavy">
+  <Item name="Artifact Shard" identifier="piecepsychosisartifact" category="Alien" description="A shard possibly from a larger artifact. It seems to be slightly out of focus at all times though it feels solid enough." Tags="alien,alienartifact,smallalienartifact,smallitem,artifactshard" sonarsize="5" spritecolor="200,200,200,255" scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
     <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
 	<Upgrade gameversion="0.9.3.1" scale="0.5" />

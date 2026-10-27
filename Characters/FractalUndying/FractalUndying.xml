@@ -6,8 +6,12 @@
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian3.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian4.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian5.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
-  <health Vitality="200" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.05" ConstantHealthRegeneration="0.08" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0.4" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
-  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
+  <health Vitality="150" minvitality="-100" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.05" ConstantHealthRegeneration="0.01" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0.4" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" >
+    <Limb name="Torso">
+      <VitalityMultiplier type="stun" multiplier="0.2" />
+    </Limb>  
+  </health>
+  <!-- <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
     <Item slot="RightHand,LeftHand" equip="true" Identifier="alienpistol" />
     <Item Identifier="alienpowercell" />
     <Item Identifier="fulgurium" />
@@ -19,21 +23,21 @@
     <Item Identifier="alientrinket2" />
     <Item Identifier="alienpowercell" />
     <Item Identifier="idcard" />
-  </Inventory>
-  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+  </Inventory> -->
+  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="10">
     <Item Identifier="sulphuriteshard" />
     <Item Identifier="alientrinket3" />
     <Item Identifier="alienpowercell" />
     <Item Identifier="idcard" />
   </Inventory>
-  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="1">
     <Item Identifier="sulphuriteshard" />
     <Item slot="RightHand,LeftHand" equip="true" Identifier="immortalalienshotgun" />
     <Item Identifier="alientrinket3" />
     <Item Identifier="alienpowercell" />
     <Item Identifier="idcard" />
   </Inventory>
-  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="1">
     <Item Identifier="sulphuriteshard" />
     <Item slot="RightHand,LeftHand" equip="true" Identifier="immortalalienassaultrifle" />
     <Item Identifier="alientrinket3" />
@@ -60,4 +64,24 @@
     <target Tag="turret" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target Tag="husk" State="Attack" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
   </ai>
+  <StatusEffect type="OnActive" targettype="This" >
+    <conditional isunconscious="True" />
+    <Affliction identifier="fractalundyingimmortality" strength="999" />
+    <Sound File="%ModDir:2518816103%/Characters/FractalUndying/FractalUndying_regen.ogg" Range="700" loop="True" volume="3"/>
+    <ParticleEmitter particle="shockwaveinverted" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.45" scalemax="0.65" emitinterval="2" initialdelay="0.5" lifetimemultiplier="2" colormultiplier="30,220,80,255"/>
+    <ParticleEmitter particle="shockwaveinverted" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.45" scalemax="0.65" emitinterval="2" initialdelay="0.5" lifetimemultiplier="2" colormultiplier="180,50,180,255"/>
+  </StatusEffect>
+  <!-- <StatusEffect type="OnDamaged" targettype="This" >
+    <conditional isunconscious="True" />
+    <conditional health="lt 0" />
+    <ParticleEmitter particle="ShieldHit" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.01" scalemax="0.02" emitinterval="2" lifetimemultiplier="1" />
+  </StatusEffect> -->
+  <StatusEffect type="OnActive" targettype="This" targetlimb="torso" disabledeltatime="true" >
+    <RequiredItem items="artifactshard" type="Picked" RequireEmpty="true" targetslot="2"/>
+    <Affliction identifier="internaldamage" strength="99999" />
+    <Sound File="Content/Characters/Defensebot/DEFENCEBOT_interact2.ogg" Range="500" loop="false" frequencymultiplier="0.35" />
+    <ParticleEmitter particle="ElectricShock" DistanceMin="10" DistanceMax="50" ParticleAmount="5" ScaleMin="0.2" ScaleMax="0.3" colormultiplier="100,255,100,255" />
+    <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="1000" scalemin="0.5" scalemax="0.8" lifetimemultiplier="2" />
+    <ParticleEmitter drawontop="true" particle="spark" distancemin="0" distancemax="30" anglemin="0" anglemax="360" particleamount="10" velocitymin="50" velocitymax="100" scalemin="0.8" scalemax="1.2" lifetimemultiplier="2" />
+  </StatusEffect>
 </Character>
