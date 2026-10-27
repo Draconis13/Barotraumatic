@@ -2565,7 +2565,7 @@
   <Affliction identifier="fractalundyingimmortality" type="buff" maxstrength="1" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" resistancefor="damage,bleeding,burn" minresistance="0.99" maxresistance="0.99"  convulseamount="0.5">    
       <StatusEffect target="Character" targetlimbs="Torso,LeftArm,RightArm,LeftLeg,RightLeg,Waist">
-        <ParticleEmitter particle="shrapnel" anglemax="360" distancemin="30" distancemax="120" velocitymin="-250" velocitymax="-500" particlespersecond="15" lifetimemultiplier="2" />      
+        <ParticleEmitter particle="shrapnel" anglemax="360" distancemin="30" distancemax="120" velocitymin="-250" velocitymax="-500" particlespersecond="15" lifetimemultiplier="0.3" />      
       </StatusEffect>
     </Effect>
     <PeriodicEffect mininterval="10" maxinterval="15">
@@ -2573,9 +2573,10 @@
         <Conditional isdead="false" />
         <Conditional health="lt 0" />
         <Sound File="%ModDir:2518816103%/Characters/FractalUndying/FractalUndying_healing.ogg" Range="1000" volume="4" frequencymultiplier="1"/>
-        <ReduceAffliction type="damage" strength="8" />
-        <ReduceAffliction type="burn" strength="5" />
-        <ReduceAffliction type="stun" strength="0.5" />
+        <ReduceAffliction type="damage" strength="10" />
+        <ReduceAffliction type="burn" strength="10" />
+        <ReduceAffliction type="stun" strength="1" />
+        <Affliction identifier="slow" strength="30" />
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />
