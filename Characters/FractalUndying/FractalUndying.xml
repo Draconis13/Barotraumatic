@@ -6,7 +6,7 @@
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian3.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian4.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian5.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
-  <health Vitality="150" minvitality="-100" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.05" ConstantHealthRegeneration="0.01" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0.4" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" >
+  <health Vitality="150" minvitality="-100" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.05" ConstantHealthRegeneration="0.01" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0.2" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" >
     <Limb name="Torso">
       <VitalityMultiplier type="stun" multiplier="0.2" />
     </Limb>  
@@ -25,20 +25,20 @@
     <Item Identifier="idcard" />
   </Inventory> -->
   <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="10">
-    <Item Identifier="sulphuriteshard" />
+    <Item Identifier="undyingcore" />
     <Item Identifier="alientrinket3" />
     <Item Identifier="alienpowercell" />
     <Item Identifier="idcard" />
   </Inventory>
   <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="1">
-    <Item Identifier="sulphuriteshard" />
+    <Item Identifier="undyingcore" />
     <Item slot="RightHand,LeftHand" equip="true" Identifier="immortalalienshotgun" />
     <Item Identifier="alientrinket3" />
     <Item Identifier="alienpowercell" />
     <Item Identifier="idcard" />
   </Inventory>
   <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="1">
-    <Item Identifier="sulphuriteshard" />
+    <Item Identifier="undyingcore" />
     <Item slot="RightHand,LeftHand" equip="true" Identifier="immortalalienassaultrifle" />
     <Item Identifier="alientrinket3" />
     <Item Identifier="alienpowercell" />
@@ -77,7 +77,7 @@
     <ParticleEmitter particle="ShieldHit" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.01" scalemax="0.02" emitinterval="2" lifetimemultiplier="1" />
   </StatusEffect> -->
   <StatusEffect type="OnActive" targettype="This" targetlimb="torso" disabledeltatime="true" >
-    <RequiredItem items="artifactshard" type="Picked" RequireEmpty="true" targetslot="2"/>
+    <RequiredItem items="undyingcore" type="Picked" RequireEmpty="true" targetslot="2"/>
     <Affliction identifier="internaldamage" strength="99999" />
     <Sound File="Content/Characters/Defensebot/DEFENCEBOT_interact2.ogg" Range="500" loop="false" frequencymultiplier="0.35" />
     <ParticleEmitter particle="ElectricShock" DistanceMin="10" DistanceMax="50" ParticleAmount="5" ScaleMin="0.2" ScaleMax="0.3" colormultiplier="100,255,100,255" />

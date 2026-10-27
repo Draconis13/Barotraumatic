@@ -2574,6 +2574,7 @@
         <Conditional health="lt 0" />
         <Sound File="%ModDir:2518816103%/Characters/FractalUndying/FractalUndying_healing.ogg" Range="1000" volume="4" frequencymultiplier="1"/>
         <ReduceAffliction type="damage" strength="8" />
+        <ReduceAffliction type="stun" strength="0.5" />
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="%ModDir:2518816103%/UI/BTafflictionicons.png" sourcerect="0,1,0,1" color="100,255,180,255" origin="0,0" />

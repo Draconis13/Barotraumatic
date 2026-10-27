@@ -469,5 +469,7 @@
   <Afflictiondescription.leechanticoagulant>Leech bites contain a powerful anti-coagulant effect. Any bleeding wound will gradually worsen over time unless fully cured.</Afflictiondescription.leechanticoagulant>
 
 
+  <entityname.undyingcore>Undying Core</entityname.undyingcore>
+  <entitydescription.undyingcore>This power source is the beating heart of the so-called "Undyings", and must be removed to permanently shut them down. \nIt is assumed that this device takes over suits of human origin and reshapes them into a mechanical puppet to protect the alien structure.</entitydescription.undyingcore>
 
 </infotext>
