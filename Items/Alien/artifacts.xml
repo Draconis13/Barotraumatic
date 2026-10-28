@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+
+  <!-- We don't really spawn these anymore do we?  -->
+
   <Item name="Artifact Shard" identifier="pieceskyholderartifact" description="Pieces of an artifact. Its blue in color and it feels hard to breathe when you hold it." category="Alien" Tags="alien,alienartifact,smallalienartifact,smallitem,artifactshard" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" allowsellingwhenbroken="true" hideconditionbar="true">
     <!-- <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.0075" />
     <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" /> -->
