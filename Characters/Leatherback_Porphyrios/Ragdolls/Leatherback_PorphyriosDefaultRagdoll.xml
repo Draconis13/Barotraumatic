@@ -122,7 +122,7 @@
     <sprite SourceRect="1712,346,74,74" Origin="0.5,0.5" Depth="0" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <attack StructureSoundType="StructureBlunt" Context="Any" TargetType="Character, Structure" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="Reverse" AfterAttackDelay="2" AfterAttackSecondary="PursueIfCanAttack" AfterAttackSecondaryDelay="3" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="3000" DamageRange="3000" MinRange="0" Duration="0.25" CoolDown="20" SecondaryCoolDown="3" CoolDownRandomFactor="0" FullSpeedAfterAttack="True" StructureDamage="0" CreateWallDamageProjectiles="False" EmitStructureDamageParticles="False" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False" RequiredAngle="360" RequiredAngleToShoot="0" AimRotationTorque="0" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="1" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1" SeverLimbsProbability="0" Priority="1" Blink="True">
       <StatusEffect type="OnUse" target="this">
-        <Explosion ignorecover="false" onlyoutside="true" range="5000" force="1" flames="false" shockwave="true" sparks="false" flash="false" underwaterbubble="false" camerashake="10" playtinnitus="true" structuredamage="0" applyFireEffects="false" smoke="false">
+        <Explosion ignorecover="false" onlyoutside="true" range="5000" force="1" flames="false" shockwave="true" sparks="false" flash="false" underwaterbubble="false" camerashake="60" playtinnitus="true" structuredamage="0" applyFireEffects="false" smoke="false">
           <Affliction identifier="sonicdmg" strength="100" probability="1" />
         </Explosion>
         <ParticleEmitter particle="shockwave" particleamount="10" drawontop="True" scale="15" />
@@ -131,7 +131,7 @@
         <sound File="%ModDir%/Characters/Leatherback_Porphyrios/Porphyrios_roar2.ogg" Range="10000" Volume="3" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="this" delay="1.1">
-        <Explosion ignorecover="false" onlyoutside="true" range="5000" force="1" flames="false" shockwave="true" sparks="false" flash="false" underwaterbubble="false" camerashake="10" playtinnitus="true" structuredamage="0" applyFireEffects="false" smoke="false">
+        <Explosion ignorecover="false" onlyoutside="true" range="5000" force="1" flames="false" shockwave="true" sparks="false" flash="false" underwaterbubble="false" camerashake="50" playtinnitus="true" structuredamage="0" applyFireEffects="false" smoke="false">
           <Affliction identifier="sonicdmg" strength="100" probability="1" />
         </Explosion>
         <ParticleEmitter particle="shockwave" particleamount="10" drawontop="True" scale="12" />

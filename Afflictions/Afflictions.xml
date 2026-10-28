@@ -2550,7 +2550,9 @@
     treatmentthreshold="1000"
     maxstrength="100"
     affectmachines="false">
-    <Effect minstrength="0" maxstrength="100" strengthchange="-100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-100"
+            minradialdistort="0.0"
+            maxradialdistort="3.0">
         <StatusEffect type="OnActive" target="Character" interval="1" disabledeltatime="true" ConditionalComparison="And">
           <Conditional InWater="true"/>
           <Conditional maxhealth="lte 999"/>
