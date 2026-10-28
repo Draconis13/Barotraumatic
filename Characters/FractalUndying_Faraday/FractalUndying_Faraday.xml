@@ -1,4 +1,4 @@
-﻿<Character SpeciesName="FractalUndying_Faraday" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="ancientalien" Humanoid="True" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="True" ShowHealthBar="True" UseBossHealthBar="False" Noise="150" Visibility="150" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+﻿<Character SpeciesName="FractalUndying_Faraday" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="ancientalien" Humanoid="True" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="True" ShowHealthBar="True" UseBossHealthBar="False" Noise="150" Visibility="150" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0.3" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
   <ragdolls folder="default" />
   <animations folder="%ModDir:2518816103%/Characters/FractalUndying/Animations" />
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian1.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
@@ -6,22 +6,24 @@
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian3.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian4.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian5.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
-  <health Vitality="200" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0.08" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="0" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
+  <health Vitality="200" minvitality="-100" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.05" ConstantHealthRegeneration="0.01" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0.2" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" >
+    <Limb name="Torso">
+      <VitalityMultiplier type="stun" multiplier="0.2" />
+    </Limb>  
+  </health>
+  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="10">
+    <Item Identifier="undyingcore" />
+    <Item Identifier="idcard" />
+  </Inventory>
   <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="1">
-    <Item Identifier="alienpowercell" />
-    <Item amount="2" Identifier="fulgurium" />
-    <Item Identifier="idcard" />
-  </Inventory>
-  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="2">
-    <Item Identifier="fulgurium" />
-    <Item Identifier="thorium" />
-    <Item Identifier="alientrinket2" />
+    <Item Identifier="undyingcore" />
+    <Item slot="RightHand,LeftHand" equip="true" Identifier="immortalalienshotgun" />
     <Item Identifier="alienpowercell" />
     <Item Identifier="idcard" />
   </Inventory>
-  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="3">
-    <Item Identifier="fulgurium" />
-    <Item Identifier="alientrinket3" />
+  <Inventory Slots="LeftHand, RightHand, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="1">
+    <Item Identifier="undyingcore" />
+    <Item slot="RightHand,LeftHand" equip="true" Identifier="immortalalienassaultrifle" />
     <Item Identifier="alienpowercell" />
     <Item Identifier="idcard" />
   </Inventory>
@@ -45,27 +47,32 @@
     <target Tag="turret" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target Tag="husk" State="Attack" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
   </ai>
-  <StatusEffect type="OnActive" target="This" stackable="false" delay="0.1">
-    <Explosion range="10" empstrength="0.01" force="1" shockwave="false" flames="false" smoke="false" sparks="false" underwaterbubble="false" camerashake="5" playtinnitus="false">
-      <Affliction identifier="burn" strength="0.2" />
-    </Explosion>
-    <ParticleEmitter particle="faradayfx" anglemax="360" distancemax="80" scalemultiplier="2.6,2.6" particleamount="1" />
+
+  <!-- make undying immortal when knocked out, also give some conceal so bots don't shoot it -->
+  <StatusEffect type="OnActive" targettype="This" >
+    <conditional health="lt 0" />
+    <Affliction identifier="fractalundyingimmortality" strength="999" />
+    <Affliction identifier="concealed" strength="1" />
+    <Sound File="%ModDir:2518816103%/Characters/FractalUndying/FractalUndying_regen.ogg" Range="700" loop="True" volume="3"/>
+    <ParticleEmitter particle="shockwaveinverted" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.45" scalemax="0.65" emitinterval="2" initialdelay="0.5" lifetimemultiplier="2" colormultiplier="30,220,80,255"/>
+    <ParticleEmitter particle="shockwaveinverted" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.45" scalemax="0.65" emitinterval="2" initialdelay="0.5" lifetimemultiplier="2" colormultiplier="180,50,180,255"/>
   </StatusEffect>
-  <StatusEffect type="OnDeath" delay="2" target="This" targetlimb="Torso">
-    <Explosion range="400" structuredamage="10" empstrength="15" force="90" smoke="false" sparks="true" shockwave="false" underwaterbubble="false" severlimbsprobability="1.0" camerashake="50" camerashakerange="500">
-      <Affliction identifier="burn" strength="25" />
-      <Affliction identifier="explosiondamage" strength="5" />
-      <Affliction identifier="stun" strength="4" />
-    </Explosion>
-    <ParticleEmitter particle="faradayfx" anglemax="360" drawontop="True" scalemin="18" scalemax="18" distancemax="100" velocitymin="0" velocitymax="20" scalemultiplier="2.6,2.6" particleamount="1" />
-    <ParticleEmitter particle="ElectricShock" anglemax="360" drawontop="True" scalemin="18" scalemax="18" distancemax="100" velocitymin="0" velocitymax="20" scalemultiplier="2.6,2.6" particleamount="1" />
-    <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" selectionmode="All" range="8000" />
-    <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" selectionmode="All" range="8000" />
+  <!-- die instantly when core is taken out -->
+  <StatusEffect type="OnActive" targettype="This" targetlimb="torso" disabledeltatime="true" >
+    <RequiredItem items="undyingcore" type="Picked" RequireEmpty="true" targetslot="2"/>
+    <Affliction identifier="internaldamage" strength="99999" />
+    <Sound File="Content/Characters/Defensebot/DEFENCEBOT_interact2.ogg" Range="500" loop="false" frequencymultiplier="0.35" />
+    <ParticleEmitter particle="ElectricShock" DistanceMin="10" DistanceMax="50" ParticleAmount="5" ScaleMin="0.2" ScaleMax="0.3" colormultiplier="100,255,100,255" />
+    <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="1000" scalemin="0.5" scalemax="0.8" lifetimemultiplier="2" />
+    <ParticleEmitter drawontop="true" particle="spark" distancemin="0" distancemax="30" anglemin="0" anglemax="360" particleamount="10" velocitymin="50" velocitymax="100" scalemin="0.8" scalemax="1.2" lifetimemultiplier="2" />
   </StatusEffect>
-  <StatusEffect type="Always" target="Character" comparison="and" delay="1.34" checkconditionalalways="true" stackable="false">
-    <Affliction identifier="humanarmed" amount="500" />
-    <SpawnItem identifier="fractalpistol" spawnposition="ThisInventory" equip="true" />
-    <Conditional humanarmed="eq 0" />
-    <Requireditem item="alienpistol" type="picked" allowvariants="true" />
-  </StatusEffect>
+  <!-- passive radiation -->
+  <StatusEffect type="OnActive" target="NearbyCharacters" range="250" targets="human" interval="1" disabledeltatime="true">
+    <Affliction identifier="radiationsickness" strength="2" />
+  </StatusEffect>  
+  <!-- <StatusEffect type="OnDamaged" targettype="This" >
+    <conditional isunconscious="True" />
+    <conditional health="lt 0" />
+    <ParticleEmitter particle="ShieldHit" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.01" scalemax="0.02" emitinterval="2" lifetimemultiplier="1" />
+  </StatusEffect> -->
 </Character>
