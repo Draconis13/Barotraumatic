@@ -47,18 +47,17 @@
     <target Tag="turret" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target Tag="husk" State="Attack" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
   </ai>
+
+  <!-- make undying immortal when knocked out, also give some conceal so bots don't shoot it -->
   <StatusEffect type="OnActive" targettype="This" >
-    <conditional isunconscious="True" />
+    <conditional health="lt 0" />
     <Affliction identifier="fractalundyingimmortality" strength="999" />
+    <Affliction identifier="concealed" strength="1" />
     <Sound File="%ModDir:2518816103%/Characters/FractalUndying/FractalUndying_regen.ogg" Range="700" loop="True" volume="3"/>
     <ParticleEmitter particle="shockwaveinverted" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.45" scalemax="0.65" emitinterval="2" initialdelay="0.5" lifetimemultiplier="2" colormultiplier="30,220,80,255"/>
     <ParticleEmitter particle="shockwaveinverted" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.45" scalemax="0.65" emitinterval="2" initialdelay="0.5" lifetimemultiplier="2" colormultiplier="180,50,180,255"/>
   </StatusEffect>
-  <!-- <StatusEffect type="OnDamaged" targettype="This" >
-    <conditional isunconscious="True" />
-    <conditional health="lt 0" />
-    <ParticleEmitter particle="ShieldHit" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.01" scalemax="0.02" emitinterval="2" lifetimemultiplier="1" />
-  </StatusEffect> -->
+  <!-- die instantly when core is taken out -->
   <StatusEffect type="OnActive" targettype="This" targetlimb="torso" disabledeltatime="true" >
     <RequiredItem items="undyingcore" type="Picked" RequireEmpty="true" targetslot="2"/>
     <Affliction identifier="internaldamage" strength="99999" />
@@ -67,4 +66,9 @@
     <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="1000" scalemin="0.5" scalemax="0.8" lifetimemultiplier="2" />
     <ParticleEmitter drawontop="true" particle="spark" distancemin="0" distancemax="30" anglemin="0" anglemax="360" particleamount="10" velocitymin="50" velocitymax="100" scalemin="0.8" scalemax="1.2" lifetimemultiplier="2" />
   </StatusEffect>
+  <!-- <StatusEffect type="OnDamaged" targettype="This" >
+    <conditional isunconscious="True" />
+    <conditional health="lt 0" />
+    <ParticleEmitter particle="ShieldHit" anglemin="0" anglemax="360" DistanceMin="0" DistanceMax="0" particleamount="3" velocitymin="0" velocitymax="0" scalemin="0.01" scalemax="0.02" emitinterval="2" lifetimemultiplier="1" />
+  </StatusEffect> -->
 </Character>
