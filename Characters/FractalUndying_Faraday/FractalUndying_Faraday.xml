@@ -6,6 +6,7 @@
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian3.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian4.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
   <sound gender="None" File="%ModDir:2518816103%/Characters/Fractalwalker/Fractalguardian5.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+  <!-- tougher than regular undying -->
   <health Vitality="200" minvitality="-100" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.05" ConstantHealthRegeneration="0.01" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0.2" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" >
     <Limb name="Torso">
       <VitalityMultiplier type="stun" multiplier="0.2" />
