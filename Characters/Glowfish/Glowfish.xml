@@ -14,6 +14,7 @@
     <target damagethreshold="0" Tag="leucocyte" State="Attack" Priority="50" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" />
     <target damagethreshold="0" Tag="sonar" State="Follow" Priority="60" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" />
     <target damagethreshold="0" Tag="engine" State="Follow" Priority="20" ReactDistance="500" AttackDistance="0" Timer="50" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" />
+      <SwarmBehavior mindistfromclosest="100" maxdistfromcenter="600" cohesion="0.5" />
   </ai>
   <!-- this conceals the fish when it is being chased by  predator -->
   <StatusEffect type="OnActive" target="Character" disabledeltatime="true" duration="2" stackable="false" >
