@@ -2565,7 +2565,7 @@
   <Affliction identifier="fractalundyingimmortality" type="buff" maxstrength="1" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" healableinmedicalclinic="false">
     <Effect minstrength="0" maxstrength="1" strengthchange="-1" resistancefor="damage,bleeding,burn" minresistance="0.99" maxresistance="0.99"  convulseamount="0.5">    
       <StatusEffect target="Character" targetlimbs="Torso,LeftArm,RightArm,LeftLeg,RightLeg,Waist">
-        <ParticleEmitter particle="shrapnel" anglemax="360" distancemin="30" distancemax="120" velocitymin="-250" velocitymax="-500" particlespersecond="15" lifetimemultiplier="0.3" />      
+        <ParticleEmitter particle="shrapnel" anglemax="360" distancemin="30" distancemax="120" velocitymin="-250" velocitymax="-500" particlespersecond="15" lifetimemultiplier="0.15" />      
       </StatusEffect>
     </Effect>
     <PeriodicEffect mininterval="10" maxinterval="15">
