@@ -57,13 +57,12 @@ WARNING: MAY CAUSE SOME ERRORS, EXPECT A HOTFIX SOON AFTER
    
    TODO: for later
    - Clean up file structure and file locations, update filelist
-   - Delete unused files
+   - Missing Localization (missions, items...)
    - Balance enemy loot
    - Merge items in a single spritesheet
    - Add swarmbehavior to all enemies
    
    Rework list
-   - Undyings: remove item from chest to kill them while incapacitated
    - BruteBTC: sprite rework? make it look less human
    - Ancientmudraptor: make more fractal-looking
    - Stonewanderers: find a gimmick, those enemies are basically worse molochs. Attach to mainpath walls like mantis?
@@ -73,3 +72,18 @@ WARNING: MAY CAUSE SOME ERRORS, EXPECT A HOTFIX SOON AFTER
    - Pylon: resprite, change pylonbolt ragdoll
    - Voidstalker: resprite and ragdoll
 
+
+
+
+	//////////////// VANILLA BARO UPDATES ////////////////
+		
+
+52cf90bafb: Attempt at making hammerheads less frustrating and less "seafloor gameplay", first iteration (experimental and wip)
+Regular hammerheads now also avoid gunfire with a damage threshold of 20 (regular coilgun ammo won't do)
+Golden hammerheads also require a damage threshold of 20 (regular coilgun ammo won't do anymore)
+Less structure damage for both hammerheads, making instant flooding of the whole submarine a bit less likely
+Use CreateWallDamageProjectiles="true"  and <SpawnItem identifier="walldamageprojectile"> to spawn projectiles even when only very little walldamage is done
+Made golden hammerheads actually rare (10% chance instead of 25% chance) in Europa Ridge
+
+
+f0a763ebb6: Fix to threshers being able to keep you stunlocked indefinitely. It seems this was caused by cd57144, which gave the threshers an attack that makes them start eating you after the initial bite. It only has a 2 second cooldown, so in practice they can keep eating you indefinitely. Another issue was that monsters eating someone would not let go when switching away from the attack state except when they switch to another attack limb.
