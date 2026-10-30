@@ -1,31 +1,18 @@
 
 ---------------------------------------------------------------------------
-
-[hr]xx/xx/2026
-
 HOTFIX 
 
 [List]
 [*] 
-[/List]
-
- 
+[/List] 
 ---------------------------------------------------------------------------
 
-[hr]XX/10/2026
+[hr]XX/11/2026[/hr]
 
-BIG TECHNICAL UPDATE
-WARNING: MAY CAUSE SOME ERRORS, EXPECT A HOTFIX SOON AFTER
 
 [b]Additions:[/b]
 
 [List]
-[*] New creature: Piezo Moloch (moloch that discharges electricty)
-[*] New creature: Porphyrios (leatherback whale with sonar clap)
-[*] New creature: Lava Spineling
-[*] New creature: Thresher Baron (big bone thresher)
-[*] New creature: Husked Watcher 
-[*] New creature: 
 [*] New creature: 
 [/List]
 
@@ -33,11 +20,7 @@ WARNING: MAY CAUSE SOME ERRORS, EXPECT A HOTFIX SOON AFTER
 [b]Changes:[/b]
 
 [List]
-[*] Changed a lot of creature IDs as part of ongoing efforts to clean up the mod. Creature IDs used to be all over the place, which made finding creatures hard to properly list and resulted in extra effort when working on the mod. This doesn't affect gameplay, but with creature ids being changed, it could cause errors.
-[*] Boss Moloch resprite and rework into Impaler Moloch
-[*] 
-[*] 
-[*] 
+[*] Fractal Undyings reworked: when undyings go down, they cannot be killed, and regenerate after a delay. You need to manually remove the core from their inventory to kill them
 [*] 
 [*] 
 [/List]
@@ -46,9 +29,10 @@ WARNING: MAY CAUSE SOME ERRORS, EXPECT A HOTFIX SOON AFTER
 [b]Fixes:[/b] 
 
 [List]
-[*] Fixed Husk_Scylla throwing missing limb errors
-[*] Fixed errors regarding creature loot using the wrong ID or not fitting in inventories
-[*] Fixed errors about wrong creature IDs
+[*] Fixed Crook duplication bug
+[*] Fixed Leatherback freezing up against stronger enemies
+[*] Lots of creature collider size fixes
+[*] Added some missing swarmbehavior (makes creature packs stay together)
 [/List]
 
 
