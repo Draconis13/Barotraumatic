@@ -49,7 +49,6 @@
     <item amount="4" Identifier="fulgurium" />
     <item amount="6" Identifier="thorium" />
     <item amount="6" Identifier="alienpowercell" />
-    <item Identifier="pylonholdable" />
   </inventory>
   <StatusEffect type="OnActive" target="this">
     <Conditional HealthPercentage="lte 60" />
