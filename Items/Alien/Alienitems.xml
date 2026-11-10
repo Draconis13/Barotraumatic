@@ -1352,7 +1352,6 @@
       <Price storeidentifier="merchantengineering" sold="false" multiplier="0.9" />
     </Price>
     <PreferredContainer primary="engcab" />
-    <PreferredContainer secondary="wreckengcab,abandonedengcab,pirateengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
     <Deconstruct time="10">
       <Item identifier="plastic" />
     </Deconstruct>

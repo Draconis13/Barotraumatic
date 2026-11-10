@@ -2528,7 +2528,6 @@ reward="1000"
       </Item>
       <Item identifier="largemudraptoregg" spawnpointtags="nest" />
     </Items>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostNestMission>
 
   <OutpostNestMission
@@ -2576,7 +2575,6 @@ reward="1000"
       </Item>
       <Item identifier="crawleregg" spawnpointtags="nest" />
     </Items>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostNestMission>
 
   <OutpostDestroyMission
@@ -2584,7 +2582,7 @@ reward="1000"
   identifier="abandonedoutpostcrawlerhusk" textidentifier="abandonedoutposthusks" 
   tags="abandonedoutpost"
   type="OutpostDestroy" 
-  reward="4100" 
+  reward="3700" 
   difficulty="4" 
   commonness="25"
   allowretry="true" 
@@ -2613,7 +2611,7 @@ reward="1000"
   identifier="abandonedoutpostyellowboyzinthehoodBTC" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
-  reward="4100" 
+  reward="3700" 
   difficulty="4" 
   commonness="20"
   allowretry="true" 
@@ -2635,7 +2633,6 @@ reward="1000"
       <Character identifier="bandit_heavy" from="abandonedoutpostnpcs" min="0" max="3" />
       <Character identifier="Husk_RandomLight" min="0" max="3" probability="0.2" requirekill="false" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostDestroyMission>
 
   <OutpostDestroyMission
@@ -2660,7 +2657,6 @@ reward="1000"
       <Character identifier="Yellowboyspawnerarmored" min="0" max="1" probability="0.2" requirekill="false" />
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="securitymodule" probability="0.2" requirekill="false" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostDestroyMission>
 
   <OutpostDestroyMission
@@ -2687,7 +2683,6 @@ reward="1000"
       <Character identifier="FractalMudraptor" min="1" max="1" requirekill="true" />
       <Character identifier="Fractalsiren" min="1" max="1" requirekill="true" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostDestroyMission>
 
   <OutpostDestroyMission
@@ -2711,10 +2706,9 @@ reward="1000"
       <Character identifier="Latcher_hatchling" min="1" max="1" requirekill="true" />
       <Character identifier="Latcher_hatchling" min="1" max="1" requirekill="true" />
       <Character identifier="Latcher_hatchling" min="1" max="1" requirekill="true" multiplayeronly="true" />
-      <Character identifier="Yellowboyspawnerarmored" min="0" max="1" probability="0.1" asfaraspossible="true" requirekill="false" />
-      <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="securitymodule" probability="0.2" requirekill="false" />
+      <Character identifier="Yellowboyspawnerarmored" min="0" max="1" probability="0.4" asfaraspossible="true" requirekill="false" />
+      <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="securitymodule" probability="0.3" requirekill="false" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostDestroyMission>
 
   <OutpostDestroyMission
@@ -2948,7 +2942,6 @@ reward="1000"
       <Character identifier="xan_scavenger" min="0" max="1" asfaraspossible="true" requirekill="true" />
 	  <Character identifier="bandit_elite" from="abandonedoutpostnpcs" min="0" max="2" moduleflags="securitymodule" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostDestroyMission>
 
   
@@ -2987,7 +2980,6 @@ reward="1000"
       <Character identifier="huskextremist_leader" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="true" />
 	  <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="securitymodule" probability="0.2" requirekill="false" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostNestMission>
 
   <OutpostNestMission
@@ -3067,7 +3059,6 @@ reward="1000"
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="seccrewmodule" requirekill="true" multiplayeronly="true" />
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostNestMission>
 
   
@@ -3076,7 +3067,7 @@ reward="1000"
   identifier="abandonedoutpostfroggetaboutit" textidentifier="abandonedoutpostmonsters" 
   tags="abandonedoutpost"
   type="AbandonedOutpost" 
-  reward="4800" 
+  reward="3500" 
   difficulty="4" 
   commonness="15" allowretry="true" 
   sonarlabel="target" unhideentitysubcategories="abandonedmonster"
@@ -3097,7 +3088,6 @@ reward="1000"
       <Character identifier="banditleader" from="abandonedoutpostnpcs" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="bandit_elite" from="abandonedoutpostnpcs" min="1" max="1" moduleflags="securitymodule" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
   </OutpostDestroyMission>
 
   

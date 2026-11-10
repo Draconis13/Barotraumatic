@@ -97,8 +97,8 @@
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="Limb" severlimbsprobability="0.06">
         <Conditional EntityType="eq Limb" />
-		<Affliction identifier="lacerations" strength="26" />
-        <Affliction identifier="lacerations" strength="13" probability="0.5" />
+		<Affliction identifier="lacerations" strength="30" />
+        <Affliction identifier="lacerations" strength="14" probability="0.5" />
         <Affliction identifier="internaldamage" strength="16" />
         <Affliction identifier="internaldamage" strength="13" probability="0.3" />
         <Affliction identifier="bleeding" strength="15" />
@@ -158,7 +158,7 @@
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="Limb" severlimbsprobability="0.06">
         <Conditional EntityType="eq Limb" />
-		<Affliction identifier="lacerations" strength="26" />
+		<Affliction identifier="lacerations" strength="30" />
         <Affliction identifier="lacerations" strength="13" probability="0.4" />
         <Affliction identifier="internaldamage" strength="15" />
         <Affliction identifier="internaldamage" strength="12" probability="0.3" />

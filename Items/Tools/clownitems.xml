@@ -160,7 +160,7 @@
     <Sprite texture="%ModDir:2518816103%/Items/Tools/halloweenItems.png" sourcerect="0,0,292,94" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="77" density="40" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="78,-57" aimpos="74,-30" handle1="-121,2" handle2="-20,52" holdangle="0" swingamount="15,20" swingspeed="9" swingwhenusing="true" />
-    <RepairTool firedamage="8.0" structurefixamount="-0.125" range="45" barrelpos="20,10" combatpriority="45" repairmultiple="true" repairthroughwalls="true" maxoverlappingwalldist="0.5" repairthroughholes="true" levelwallfixamount="-5.0" targetforce="10">
+    <RepairTool firedamage="8.0" structurefixamount="-0.125" range="48" barrelpos="20,10" combatpriority="45" repairmultiple="true" repairthroughwalls="true" maxoverlappingwalldist="0.5" repairthroughholes="true" levelwallfixamount="-5.0" targetforce="10">
       <RequiredItems identifier="batterycell,fulguriumbatterycell" type="Contained" msg="ItemMsgBatteryCellRequired"></RequiredItems>
       <StatusEffect type="OnUse" target="Contained" targetidentifiers="batterycell" Condition="-2.0" />
       <StatusEffect type="OnUse" target="Contained" targetidentifiers="fulguriumbatterycell" Condition="-1.0" />
