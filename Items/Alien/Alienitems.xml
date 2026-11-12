@@ -1312,7 +1312,7 @@
   </Item>
 
   <Item name="Decaying Klaxon" identifier="carriersirenitem" description="A blaring reactor klaxon leaking putrid corroded fluids, its somehow still producing an awful noise while visibly falling apart." category="Electrical" Tags="smallitem,sound" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" inventoryiconcolor="110,120,110,0" spritecolor="110,120,110,0" isshootable="true" IsActive="True" GrabWhenSelected="true">
-    <Price baseprice="100" minleveldifficulty="5">
+    <Price baseprice="100" minleveldifficulty="5" sold="false">
       <Price storeidentifier="merchantoutpost" sold="false" />
       <Price storeidentifier="merchantcity" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
@@ -1321,7 +1321,6 @@
       <Price storeidentifier="merchantengineering" sold="false" multiplier="0.9" />
     </Price>
     <PreferredContainer primary="engcab" />
-    <PreferredContainer secondary="wreckengcab,abandonedengcab,pirateengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
     <Deconstruct time="10">
       <Item identifier="plastic" />
     </Deconstruct>
