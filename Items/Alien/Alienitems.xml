@@ -1940,10 +1940,6 @@
   
   <Item name="Barbed Grapple" identifier="BTCwebspears" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo,handheldammo" Scale="0.15" impactsoundtag="impact_metal_light" hideinmenus="true" >
     <Deconstruct time="5" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="6">
-      <RequiredSkill identifier="weapons" level="20" />
-      <RequiredItem identifier="steel" />
-    </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,968,55,55" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="85,398,170,14" depth="0.55" origin="0.5,0.5" />
     <Body width="190" height="8" density="10" />
