@@ -897,7 +897,7 @@
     <monster character="Icecrab" min="3" max="4" />
     <monster character="Giantcrabice" min="1" max="1" />
     <Reputation identifier="location" amount="1" />
-    <Icon color="214,50,48" sourcerect="267,11,236,235" texture="Content/UI/MissionIcons.png" />
+    <Icon color="214,50,48" sourcerect="768,768,256,256" texture="Content/UI/MissionIcons.png" />
     <LocationType from="AnyOutpost" to="Any" />
     <message header="Target eliminated" text="The target has been eliminated. Navigate the submarine out of the cavern." />
   </MonsterMission>
