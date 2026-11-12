@@ -897,7 +897,7 @@
     <monster character="Icecrab" min="3" max="4" />
     <monster character="Giantcrabice" min="1" max="1" />
     <Reputation identifier="location" amount="1" />
-    <Icon color="214,50,48" sourcerect="267,11,236,235" texture="Content/UI/MissionIcons.png" />
+    <Icon color="214,50,48" sourcerect="768,768,256,256" texture="Content/UI/MissionIcons.png" />
     <LocationType from="AnyOutpost" to="Any" />
     <message header="Target eliminated" text="The target has been eliminated. Navigate the submarine out of the cavern." />
   </MonsterMission>
@@ -2870,8 +2870,8 @@ reward="1000"
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="seccrewmodule" requirekill="true" />
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" />
-      <Character identifier="hostage" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="false" />
-      <Character identifier="hostage" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="false" />
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
       <Character identifier="huskextremist" from="abandonedoutpostnpcs" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="huskextremist" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" />
       <Character identifier="huskextremist_leader" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="true" />
@@ -2931,8 +2931,8 @@ reward="1000"
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="seccrewmodule" requirekill="true" />
       <Character identifier="BTPsychoclown" from="BTPsychoclownstation" moduleflags="researchmodule" requirekill="true"  />
-      <Character identifier="hostage" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="false" />
-      <Character identifier="hostage" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="false" />
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
       <Character identifier="bandit_heavy" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" requirekill="true" />
       <Character identifier="bandit_medic" from="abandonedoutpostnpcsbt" moduleflags="researchmodule" requirekill="true" />
       <Character identifier="banditleader_heavy" from="abandonedoutpostnpcs" spawnpointtags="banditleader" requirekill="true" />
@@ -2969,9 +2969,9 @@ reward="1000"
       <Character identifier="Husk_RandomTiny" min="1" max="2" requirekill="false" />
       <Character identifier="Husksprinterhumanold" min="1" max="2" requirekill="true" />
       <Character identifier="crawlerhusk" min="0" max="2" requirekill="true" />
-      <Character identifier="hostage" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="false" />
-      <Character identifier="hostage" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="false" />
-      <Character identifier="hostage" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="false" />
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
       <Character identifier="huskextremist" from="abandonedoutpostnpcs" moduleflags="crewmodule" requirekill="true" />
       <Character identifier="huskextremist" from="abandonedoutpostnpcs" moduleflags="researchmodule" requirekill="true" />
       <Character identifier="huskextremist" from="abandonedoutpostnpcs" moduleflags="engineeringmodule" requirekill="true" />

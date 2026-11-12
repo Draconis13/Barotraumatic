@@ -415,37 +415,6 @@
     <aitarget minsightrange="1000" maxsightrange="10000" soundrange="10000" />
   </Item>
 
-  <Item name="pylon holdable" identifier="pylonholdable" category="Material" Tags="smallitem" canbepicked="false" description="" scale="0.5" sonarsize="0" health="60" damagedbyexplosions="false" damagedbymonsters="false" damagedbyprojectiles="false" damagedbymeleeweapons="false" damagedbyrepairtools="false" hideinmenus="true" >
-    <Sprite texture="Content/Items/Materials/Crystal.png" depth="1.0" sourcerect="0,1,0,1" origin="0.5,0.6" />
-    <Body width="500" height="500" density="25" />
-    <Holdable slots="Any,RightHand,LeftHand" controlpose="false" aimpos="120,0" handle1="0,11" holdangle="0" usehandrotationforholdangle="true" msg="ItemMsgPickUpSelect" />
-    <LightComponent lightcolor="178,196,207,255" range="100" powerconsumption="0" flicker="0.2" flickerspeed="0.5" pulsefrequency="0.2" pulseamount="0.8" ison="true" drawbehindsubs="true" />
-    <ElectricalDischarger duration="0.2" outdoorsonly="true" powerconsumption="0" range="6000" rangemultiplierinwalls="1">
-      <Attack targetimpulse="50">
-        <conditional speciesname="eq human" />
-        <Affliction identifier="burn" strength="10" />
-        <Affliction identifier="emp" strength="5" />
-        <Affliction identifier="stalkershocked" strength="2" />
-      </Attack>
-    </ElectricalDischarger>
-    <ItemComponent>
-      <!-- when the component activates, apply extra load to nearby items and deactive the component -->
-      <StatusEffect type="OnActive" target="NearbyItems" targettags="junctionbox" range="2000.0" stackable="false" delay="0.95" extraload="500" />
-      <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="false" setvalue="true">
-        <Conditional IsActive="ItemComponent" targetitemcomponent="ItemComponent" />
-      </StatusEffect>
-      <!-- reactivate after one second -->
-      <StatusEffect type="Always" target="This" stackable="false" delay="1.0" IsActive="true" setvalue="true" />
-      <StatusEffect type="Always" target="This" stackable="false" delay="1.3">
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="0.2">
-        <RemoveItem />
-      </StatusEffect>
-    </ItemComponent>
-    <aitarget minsightrange="1000" maxsightrange="10000" soundrange="10000" />
-  </Item>
-
   <Item name="pylon explosivethunder" identifier="pylonexplosivethunder" category="Material" Tags="" canbepicked="false" description="" scale="0.5" sonarsize="30" health="60" damagedbyexplosions="true" damagedbymonsters="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" hideinmenus="true" >
     <Sprite texture="Content/Items/Materials/Crystal.png" depth="1.0" sourcerect="0,1,0,1" origin="0.5,0.6" />
     <Body width="500" height="500" density="25" bodytype="Static" />
@@ -1343,7 +1312,7 @@
   </Item>
 
   <Item name="Decaying Klaxon" identifier="carriersirenitem" description="A blaring reactor klaxon leaking putrid corroded fluids, its somehow still producing an awful noise while visibly falling apart." category="Electrical" Tags="smallitem,sound" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" inventoryiconcolor="110,120,110,0" spritecolor="110,120,110,0" isshootable="true" IsActive="True" GrabWhenSelected="true">
-    <Price baseprice="100" minleveldifficulty="5">
+    <Price baseprice="100" minleveldifficulty="5" sold="false">
       <Price storeidentifier="merchantoutpost" sold="false" />
       <Price storeidentifier="merchantcity" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
