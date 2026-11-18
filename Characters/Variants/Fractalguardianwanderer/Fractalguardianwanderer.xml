@@ -163,6 +163,7 @@
     <Conditional isdead="false" />
     <Conditional inwater="true" />
     <Conditional healthpercentage="lt 60" />
+    <Conditional emp="lte 25" />
     <SpawnCharacter speciesname="guardianrepairbot" spawnposition="This" count="1" />
   </StatusEffect>
 </Character>
