@@ -11,11 +11,11 @@
       <Limb name="Torso" />
     </health>
     <Inventory slots="Any, Any" accessiblewhenalive="True" commonness="1" />
-    <ai combatstrength="10" sight="1" hearing="1" fleehealththreshold="0" aggressiveboarding="False" aggressiongreed="10" aggressionhurt="200" attackwhenprovoked="False" avoidgunfire="True" enforceaggressivebehaviorformissions="False" targetouterwalls="False" randomattack="False" avoidtime="3" minfleetime="20">
+    <ai combatstrength="10" sight="1" hearing="0" fleehealththreshold="0" aggressiveboarding="False" aggressiongreed="10" aggressionhurt="200" attackwhenprovoked="False" avoidgunfire="True" enforceaggressivebehaviorformissions="False" targetouterwalls="False" randomattack="False" avoidtime="3" minfleetime="20">
       <target tag="human" state="Freeze" priority="800" reactdistance="0" attackdistance="0" timer="0" />
       <target tag="stronger" state="Avoid" priority="10" reactdistance="1000" attackdistance="0" timer="0" />
       <target tag="weaker" state="Avoid" priority="10" reactdistance="1000" attackdistance="0" timer="0" />
-      <petbehavior maxhappiness="100" unhappythreshold="50" happythreshold="80" happinessdecreaserate="0.035" hungerincreaserate="0.013" playforce="6.0">
+      <petbehavior maxhappiness="100" unhappythreshold="50" happythreshold="80" happinessdecreaserate="0.035" hungerincreaserate="0.03" playforce="6.0">
         <eat tag="petfood1" ignorecontained="true" requiredhunger="30-100" hunger="-50" happiness="5" priority="100" />
         <eat tag="dead" requiredhunger="70-100" hunger="-100" happiness="10" priority="100" />
         <itemproduction rate="0.0" invhungerrate="0.002" requiredhunger="0-30">
