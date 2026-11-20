@@ -1,10 +1,3 @@
-
----------------------------------------------------------------------------
-HOTFIX 
-
-[List]
-[*] 
-[/List] 
 ---------------------------------------------------------------------------
 
 [hr]XX/11/2026[/hr]
@@ -33,11 +26,19 @@ HOTFIX
 [*] Fixed Leatherback freezing up against stronger enemies
 [*] Lots of creature collider size fixes
 [*] Added some missing swarmbehavior (makes creature packs stay together)
+[*] Fixed Pylon discharging electricity after death
+[*] Fixed Hostages spawning in random places in abandoned outpost
 [/List]
 
 
 ---------------------------------------------------------------------------
 
+   TODO: DLC
+	- Adjust monster loot to include DLC items
+	- Add canbeseveredalive="" properties to joints on creatures when necessary (torso-head)
+	- AllowSeveringLegs="false" in <Health for humanoids (husks and others), unless we want severing (needs testing)
+	- Replace Peanut animations 
+	- Add faunaresearchitem tag to creature loot so it works with DLC (idk what that tag does)
    
    TODO: for later
    - Clean up file structure and file locations, update filelist
