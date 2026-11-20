@@ -28,6 +28,7 @@
 [*] Added some missing swarmbehavior (makes creature packs stay together)
 [*] Fixed Pylon discharging electricity after death
 [*] Fixed Hostages spawning in random places in abandoned outpost
+[°] Fixed some items that shouldn't appear in campaign or be craftable
 [/List]
 
 
