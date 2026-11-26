@@ -23,10 +23,6 @@
           <Affliction identifier="stun" strength="7.5" probability="1" />
         </Explosion>
 	  </StatusEffect>
-      <StatusEffect type="OnUse" target="This" stackable="false">
-	  	<SpawnItem identifier="btspawnnothing" spawnposition="This" count="1" />
-        <SpawnItem identifier="wormspawn" spawnposition="This" count="1" />
-      </StatusEffect>
       <StatusEffect type="OnUse" target="This" stackable="false" spawnitemrandomly="true">
         <SpawnItem identifier="btspawnnothing" spawnposition="This" count="1" />
 		<SpawnItem identifier="btspawnnothing" spawnposition="This" count="1" />
@@ -37,6 +33,7 @@
       <StatusEffect type="OnUse" target="This" stackable="false" spawnitemrandomly="true">
 	  	<SpawnItem identifier="btspawnnothing" spawnposition="This" count="1" />
         <SpawnItem identifier="btspawnnothing" spawnposition="This" count="1" />
+		<SpawnItem identifier="btspawnnothing" spawnposition="This" count="1" />
 		<SpawnItem identifier="btspawnnothing" spawnposition="This" count="1" />
 		<SpawnItem identifier="btspawnnothing" spawnposition="This" count="1" />
         <SpawnItem identifier="wormspawnbig" spawnposition="This" count="1" />
@@ -46,7 +43,7 @@
         <SpawnItem identifier="wormspawnbig" spawnposition="This" count="1" />
         <SpawnItem identifier="wormspawn" spawnposition="This" count="1" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" stackable="false" delay="5" oneshot="true">
+      <StatusEffect type="OnUse" target="This" stackable="false" delay="2.5" oneshot="true">
         <SpawnItem identifier="wormspawnbig" spawnposition="This" count="1" />
         <SpawnItem identifier="wormspawn" spawnposition="This" count="1" />
       </StatusEffect>

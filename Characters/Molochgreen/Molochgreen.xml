@@ -68,15 +68,15 @@
   	 <StatusEffect type="OnActive" interval="1" oneshot="true" target="this" disabledeltatime="true" >
       <Conditional HealthPercentage="lte 50" />
 	<Affliction identifier="haste" amount="40" MultiplyByMaxVitality="true" />
-    <SpawnItem identifier="wormspawnbig" spawnposition="This" scatter="800" count="2" />
-    <SpawnItem identifier="wormspawn" spawnposition="This" scatter="200" count="5" />
+    <SpawnItem identifier="wormspawnbig" spawnposition="This" scatter="800" count="1" />
+    <SpawnItem identifier="wormspawn" spawnposition="This" scatter="200" count="3" />
     </StatusEffect>
   <StatusEffect type="OnDeath" target="This" stackable="false" >
     <SpawnItem identifier="wormspawnbig" spawnposition="This" scatter="800" count="2" />
     <SpawnItem identifier="wormspawn" spawnposition="This" scatter="800" count="3" />
   </StatusEffect>
   <StatusEffect type="OnDeath" target="This" delay="2" stackable="false" >
-    <SpawnItem identifier="wormspawnbig" spawnposition="This" scatter="800" count="3" />
-    <SpawnItem identifier="wormspawn" spawnposition="This" scatter="800" count="4" />
+    <SpawnItem identifier="wormspawnbig" spawnposition="This" scatter="800" count="2" />
+    <SpawnItem identifier="wormspawn" spawnposition="This" scatter="800" count="3" />
   </StatusEffect>
 </Character>
