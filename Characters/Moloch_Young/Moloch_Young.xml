@@ -45,5 +45,8 @@
     <target tag="tool" state="PassiveAggressive" priority="50" reactdistance="1000" attackdistance="0" ignoreifnotinsamesub="True"/>
     <target tag="molochbaby" state="Protect" priority="10" reactdistance="1000" attackdistance="0" />
     <target tag="turret" state="Attack" priority="1" reactdistance="0" attackdistance="0" />
+	<target tag="sonar" state="Attack" priority="100" />
+    <target tag="wall" state="Aggressive" priority="10" reactdistance="1000" />
+    <latchonto attachtowalls="false" attachtosub="true" mindeattachspeed="7" maxdeattachspeed="10" damageondetach="0" detachstun="0" attachlimb="AttachTarget" attachlimbrotation="0" />
   </ai>
   </Character>
