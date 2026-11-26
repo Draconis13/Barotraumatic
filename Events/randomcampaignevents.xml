@@ -611,7 +611,9 @@ ___.
         <MonsterEvent characterfile="Mudraptor_unarmored" minamount="2" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
       </EventSet>
       <EventSet identifier="empty" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="50">
-        <ScriptedEvent identifier="shockjock2" />
+        <ScriptedEvent identifier="randombeaconeventset1" >
+          <TriggerEventAction eventtag="emptybeaconevent1" />
+        </ScriptedEvent>
       </EventSet>
     </EventSet>
     
@@ -1351,7 +1353,9 @@ ___.
         <MonsterEvent characterfile="Wolfeel" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.1" spawnpointtag="encounter" />
       </EventSet>
       <EventSet identifier="empty" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="50">
-        <ScriptedEvent identifier="shockjock2" />
+        <ScriptedEvent identifier="randombeaconeventset1" >
+          <TriggerEventAction eventtag="emptybeaconevent1" />
+        </ScriptedEvent>
       </EventSet>
     </EventSet>
     
@@ -2454,7 +2458,9 @@ ___.
         <MonsterEvent characterfile="Mudraptor_mother" minamount="0" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
       </EventSet>
       <EventSet identifier="empty" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="30">
-        <ScriptedEvent identifier="shockjock2" />
+        <ScriptedEvent identifier="randombeaconeventset1" >
+          <TriggerEventAction eventtag="emptybeaconevent1" />
+        </ScriptedEvent>
       </EventSet>
     </EventSet>
     
@@ -4262,7 +4268,9 @@ ___.
         <MonsterEvent characterfile="Mudraptor_mother" minamount="0" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
       </EventSet>
       <EventSet identifier="empty" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="30">
-        <ScriptedEvent identifier="shockjock2" />
+        <ScriptedEvent identifier="randombeaconeventset1" >
+          <TriggerEventAction eventtag="emptybeaconevent1" />
+        </ScriptedEvent>
       </EventSet>
     </EventSet>
     
@@ -6172,7 +6180,9 @@ ___.
         <MonsterEvent characterfile="Huskcontainerhostile" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.3" spawnpointtag="beacon_mudraptor" />
       </EventSet>
       <EventSet identifier="empty" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="20">
-        <ScriptedEvent identifier="shockjock2" />
+        <ScriptedEvent identifier="randombeaconeventset2" >
+          <TriggerEventAction eventtag="emptybeaconevent2" />
+        </ScriptedEvent>
       </EventSet>
     </EventSet>
 
@@ -8773,7 +8783,9 @@ ___.
         <MonsterEvent characterfile="Huskcontainerhostile" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.3" spawnpointtag="beacon_mudraptor" />
       </EventSet>
       <EventSet identifier="empty" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="20">
-        <ScriptedEvent identifier="shockjock2" />
+        <ScriptedEvent identifier="randombeaconeventset2" >
+          <TriggerEventAction eventtag="emptybeaconevent2" />
+        </ScriptedEvent>
       </EventSet>
     </EventSet>
 
@@ -11409,7 +11421,9 @@ ___.
         <MonsterEvent characterfile="Mudraptor_veteran" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
       </EventSet>
       <EventSet identifier="empty" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
-        <ScriptedEvent identifier="shockjock2" />
+        <ScriptedEvent identifier="randombeaconeventset3" >
+          <TriggerEventAction eventtag="emptybeaconevent3" />
+        </ScriptedEvent>
       </EventSet>
     </EventSet>
 
@@ -14270,7 +14284,9 @@ ___.
         <MonsterEvent characterfile="Huskcontainerhostile" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.3" spawnpointtag="beacon_mudraptor" />
       </EventSet>
       <EventSet identifier="empty" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
-        <ScriptedEvent identifier="shockjock2" />
+        <ScriptedEvent identifier="randombeaconeventset3" >
+          <TriggerEventAction eventtag="emptybeaconevent3" />
+        </ScriptedEvent>
       </EventSet>
     </EventSet>
 
@@ -17034,94 +17050,226 @@ ___.
      \/     \/     \/     \/           \/     \/ 
      -->
 
-    <!-- populate the ruins -->
-    <EventSet identifier="ruins" chooserandom="false" allowatstart="true" perruin="true" triggereventcooldown="false" ignorecooldown="true">
-      <EventSet identifier="fractalguardian_spawns" chooserandom="true" eventcount="5" triggereventcooldown="false" allowatstart="true">
-        <MonsterEvent characterfile="Swarmfeeder" minamount="4" maxamount="6" spawntype="ruin" probability="1" spawnpointtag="swarmfeeder" />
-        <MonsterEvent characterfile="Fractalguardian" minamount="1" maxamount="1" spawntype="ruin" probability="1" spawnpointtag="fractalguardian" />
-        <MonsterEvent characterfile="Fractalguardian2" minamount="1" maxamount="1" spawntype="ruin" probability="1" spawnpointtag="fractalguardian" />
-        <MonsterEvent characterfile="Fractalguardian3" minamount="1" maxamount="1" spawntype="ruin" probability="1" spawnpointtag="fractalguardian" />
-        <MonsterEvent characterfile="FractalUndying" minamount="1" maxamount="2" spawntype="ruin" probability="1" spawnpointtag="fractalguardian" />
-        <MonsterEvent characterfile="Fractalwalker" minamount="1" maxamount="2" spawntype="ruin" probability="1" spawnpointtag="fractalguardian" />        
-        <MonsterEvent characterfile="Fractalbreacher" minamount="1" maxamount="1" spawntype="ruin" probability="1" spawnpointtag="fractalguardian" />
-        <MonsterEvent characterfile="fractalsinger" minamount="1" maxamount="1" spawntype="ruin" probability="1" spawnpointtag="fractalguardian" />
-        <MonsterEvent characterfile="FractalSiren" minamount="1" maxamount="1" spawntype="ruin" probability="1" spawnpointtag="fractalguardian" />
-        <MonsterEvent characterfile="FractalMudraptor" minamount="1" maxamount="2" spawntype="ruin" probability="1" spawnpointtag="fractalguardian" />
-      </EventSet>
-      <!-- guarantees a spawn at any of the 3 possible entrance modules which are all tagged differently -->
-      <EventSet identifier="ruin_encounters" chooserandom="true" triggereventcooldown="false" allowatstart="true">
-        <EventSet identifier="entrance1" requiredspawnpointtag="encounter_entrance1" chooserandom="false" triggereventcooldown="false" allowatstart="true">
-          <MonsterEvent characterfile="Fractalguardian" minamount="1" maxamount="1" spawntype="ruin" spawnpointtag="encounter_entrance1" />
+    <!-- Populate the beacon stations -->
+    <EventSet identifier="beaconstation_populate" chooserandom="true" triggereventcooldown="false" allowatstart="true">
+      <EventSet identifier="beaconstation_encounters" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="50">
+        <ScriptedEvent identifier="encounterlayer">
+          <LayerAction layer="encounters" enabled="true" />
+          <DamageBeaconStationAction DisconnectWireProbability="0.25" DamageWallProbability="0.25" DamageDeviceProbability="0.5" />
+        </ScriptedEvent>
+        <EventSet identifier="beaconstation_encounterspawn" chooserandom="true" triggereventcooldown="false" allowatstart="true">
+          <EventSet identifier="husks" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="35">
+            <MonsterEvent characterfile="Husk_RandomLight" amount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Husk_prowler" amount="1" spawntype="beaconstation" spawnprobability="0.75" spawnpointtag="encounter" />
+            <EventSet identifier="extra" chooserandom="true" triggereventcooldown="false" allowatstart="true">
+              <MonsterEvent characterfile="Husk_exosuit" amount="1" spawntype="beaconstation" spawnprobability="0.25" spawnpointtag="encounter" />
+              <MonsterEvent characterfile="Husk_RandomHeavy" amount="1" spawntype="beaconstation" spawnprobability="0.25" spawnpointtag="encounter" />
+            </EventSet>
+          </EventSet>
+          <EventSet identifier="husk_crawlers" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="30">
+            <MonsterEvent characterfile="Crawlerhusk" amount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Crawlerhusk" amount="1" spawntype="beaconstation" spawnprobability="0.75" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Husk_RandomLight" amount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Husk_RandomTiny" amount="1" spawntype="beaconstation" spawnprobability="0.75" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="mudraptors" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="30">
+            <MonsterEvent characterfile="Mudraptor_unarmored" amount="1" spawntype="beaconstation" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Mudraptor" amount="1" spawntype="beaconstation" spawnpointtag="encounter" spawnprobability="0.75" />
+          </EventSet>
+          <EventSet identifier="Monster1" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="30">
+            <MonsterEvent characterfile="CthulhuWild" minamount="2" maxamount="2" spawntype="beaconstation" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="Fractals" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="30">
+            <MonsterEvent characterfile="Fractalwalker" minamount="2" maxamount="3" spawntype="beaconstation" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="FractalUndying" minamount="1" maxamount="2" spawntype="beaconstation" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="FractalUndying_Faraday" minamount="0" maxamount="1" spawntype="beaconstation" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="FractalMudraptor" minamount="1" maxamount="2" spawntype="beaconstation" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="clown" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="5">
+            <ScriptedEvent identifier="beaconclown" />
+          </EventSet>
+          <EventSet identifier="Scavengershome" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
+            <MonsterEvent characterfile="Minoga" minamount="2" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="encounter" delaybetweenspawns="5" />
+            <MonsterEvent characterfile="Scorpion" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="GrayEel" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Trichordatemetalvore" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.2" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Xan_scavenger" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.9" spawnpointtag="beacon_mudraptor" />
+          </EventSet>
+          <EventSet identifier="Trichordates" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
+            <MonsterEvent characterfile="Trichordate" minamount="0" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" delaybetweenspawns="5" />
+            <MonsterEvent characterfile="TrichordateBloodsucker" minamount="2" maxamount="3" spawntype="beaconstation" spawnprobability="0.8" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="TrichordateVitriolic" minamount="1" maxamount="3" spawntype="beaconstation" spawnprobability="0.8" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Trichordatemetalvore" minamount="2" maxamount="3" spawntype="beaconstation" spawnprobability="1" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="tulu" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="35">
+            <MonsterEvent characterfile="CthulhuWild" minamount="2" maxamount="3" spawntype="beaconstation" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="Fractii" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="25">
+            <MonsterEvent characterfile="Fractalwalker" minamount="2" maxamount="3" spawntype="beaconstation" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="FractalUndying" minamount="1" maxamount="2" spawntype="beaconstation" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="FractalUndying_Faraday" minamount="0" maxamount="1" spawntype="beaconstation" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="FractalMudraptor" minamount="1" maxamount="2" spawntype="beaconstation" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="Fractiibreach" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="25">
+            <MonsterEvent characterfile="Fractalwalker" minamount="1" maxamount="2" spawntype="beaconstation" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="FractalUndying" minamount="0" maxamount="1" spawntype="beaconstation" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Fractalbreacher" minamount="2" maxamount="3" spawntype="beaconstation" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="husks" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="15">
+            <MonsterEvent characterfile="Husk_exosuit" amount="1" spawntype="beaconstation" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Husksprintercombat" minamount="0" maxamount="1" spawntype="beaconstation" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Husk_RandomLight" minamount="1" maxamount="3" spawntype="beaconstation" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="Humanimmortal" minamount="0" maxamount="1" spawntype="beaconstation" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="huskchimerasquad" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
+            <MonsterEvent characterfile="Husk_chimera_elder" minamount="1" maxamount="1" spawntype="beaconstation" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="Husk_prowler" minamount="1" maxamount="1" spawntype="beaconstation" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Husk_RandomHeavy" minamount="1" maxamount="2" spawntype="beaconstation" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="Huskcontainerhostile" minamount="0" maxamount="1" spawntype="beaconstation" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="deepclowns" chooserandom="true" triggereventcooldown="false" allowatstart="true" commonness="30" eventcount="1">
+            <ScriptedEvent identifier="beaconclown" />
+            <MonsterEvent characterfile="ClownwandererElite" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="DeepseaclownnewSaw" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="Deepseaclownnew" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="Clownbomber" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="0.8" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="Huskimmortals" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
+            <MonsterEvent characterfile="Humanimmortal" minamount="1" maxamount="2" scatter="3000" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" delaybetweenspawns="5" />
+            <MonsterEvent characterfile="Humanimmortalnovice" minamount="1" maxamount="1" scatter="3000" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" delaybetweenspawns="5" />
+            <MonsterEvent characterfile="Husk_RandomLight" minamount="2" maxamount="2" scatter="3000" spawntype="beaconstation" spawnprobability="1" spawnpointtag="encounter" delaybetweenspawns="5" />
+            <MonsterEvent characterfile="Husk_RandomHeavy" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.7" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="Huskcontainerhostile" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.8" spawnpointtag="saferoom" />
+          </EventSet>
+          <EventSet identifier="Lostclowns" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
+            <MonsterEvent characterfile="Clownwanderer" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="ClownwandererElite" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="Clownsawcrazy" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="Clownbomber" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="0.8" spawnpointtag="encounter" />
+          </EventSet>
+          <EventSet identifier="Jovians" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
+            <MonsterEvent characterfile="Joviandiver" minamount="2" maxamount="3" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="Jovianwrecker" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" />
+            <MonsterEvent characterfile="Jovianbomber" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="0.7" spawnpointtag="encounter" />
+            <MonsterEvent characterfile="Manraptor" minamount="2" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="saferoom" />
+          </EventSet>
         </EventSet>
-        <EventSet identifier="entrance2" requiredspawnpointtag="encounter_entrance2" chooserandom="false" triggereventcooldown="false" allowatstart="true">
-          <MonsterEvent characterfile="Fractalguardian" minamount="1" maxamount="1" spawntype="ruin" spawnpointtag="encounter_entrance2" />
-        </EventSet>
-        <EventSet identifier="entrance3" requiredspawnpointtag="encounter_entrance3" chooserandom="false" triggereventcooldown="false" allowatstart="true">
-          <MonsterEvent characterfile="Fractalguardian" minamount="1" maxamount="1" spawntype="ruin" spawnpointtag="encounter_entrance3" />
-        </EventSet>
       </EventSet>
-      <!-- workshop module spawns -->
-      <EventSet identifier="workshop_guardians" chooserandom="false" triggereventcooldown="false" allowatstart="true">
-        <MonsterEvent characterfile="Fractalguardian" amount="1" spawntype="ruin" probability="0.5" spawnpointtag="workshopguardian" />
-        <MonsterEvent characterfile="Fractalguardian2" amount="1" spawntype="ruin" probability="0.5" spawnpointtag="workshopguardian" />
-        <MonsterEvent characterfile="Fractalguardian3" amount="1" spawntype="ruin" probability="0.5" spawnpointtag="workshopguardian" />
-        <MonsterEvent characterfile="Fractalbreacher" amount="1" spawntype="ruin" probability="0.5" spawnpointtag="workshopguardian" />
-      </EventSet>
-      <!-- This spawns a Fractal Herald on the temple item in ruins to make a miniboss fight, how fun! -->
-      <EventSet identifier="temple_herald" chooserandom="false" triggereventcooldown="false" allowatstart="true">
-        <ScriptedEvent identifier="temple_herald_plateau">
-          <TagAction Criteria="structureidentifier:aliensculpturejove" Tag="aliensculpturejove" SubmarineType="Ruin" ContinueIfNoTargetsFound="true" />
-          <SpawnAction SpeciesName="Fractalherald" SpawnLocation="Ruin" SpawnPointTag="aliensculpturejove" RequireSpawnPointTag="true" />
+      <EventSet identifier="bandits" requiredspawnpointtag="beacon_bandit" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="20">
+        <ScriptedEvent identifier="beaconbandit">
+          <TriggerEventAction identifier="beaconbandits5" />
         </ScriptedEvent>
       </EventSet>
-      <!-- husks in ruins, chance to have no husks at all -->
-      <EventSet identifier="allruinhusks" chooserandom="true" triggereventcooldown="false" allowatstart="true">
-        <EventSet identifier="nohusks" chooserandom="false" triggereventcooldown="false" allowatstart="true" Commonness="100">
-          <!-- no husks spawn in this ruin -->
-        </EventSet>
-        <EventSet identifier="ruinhusks" chooserandom="false" triggereventcooldown="false" allowatstart="true" Commonness="50">
-          <EventSet identifier="guaranteedhusks" chooserandom="false" triggereventcooldown="false" allowatstart="true">
-            <!-- husk spawnpoint -->
-            <MonsterEvent characterfile="Husk_RandomTiny" minamount="1" maxamount="2" spawntype="ruin" probability="1" spawnpointtag="husk" />
-            <MonsterEvent characterfile="Husk_RandomLight" minamount="1" maxamount="2" spawntype="ruin" probability="1" spawnpointtag="husk" />
-            <!-- entrances -->
-            <MonsterEvent characterfile="Crawlerhusk" minamount="1" maxamount="1" spawntype="ruin" probability="1" spawnpointtag="encounter_entrance1" />
-            <MonsterEvent characterfile="Crawlerhusk" minamount="1" maxamount="1" spawntype="ruin" probability="1" spawnpointtag="encounter_entrance2" />
-            <MonsterEvent characterfile="Crawlerhusk" minamount="1" maxamount="1" spawntype="ruin" probability="1" spawnpointtag="encounter_entrance3" />
-            <MonsterEvent characterfile="Husk_RandomTiny" minamount="1" maxamount="1" spawntype="ruin" probability="0.5" spawnpointtag="encounter_entrance1" />
-            <MonsterEvent characterfile="Husk_RandomTiny" minamount="1" maxamount="1" spawntype="ruin" probability="0.5" spawnpointtag="encounter_entrance2" />
-            <MonsterEvent characterfile="Husk_RandomTiny" minamount="1" maxamount="1" spawntype="ruin" probability="0.5" spawnpointtag="encounter_entrance3" />
-            <!-- mazehusk -->
-            <MonsterEvent characterfile="Husk_RandomLight" minamount="1" maxamount="1" spawntype="ruin" spawnpointtag="mazehusk" />
-            <MonsterEvent characterfile="Husk_RandomTiny" minamount="1" maxamount="2" spawntype="ruin" probability="0.5" spawnpointtag="mazehusk" />
-          </EventSet>
-          <EventSet identifier="randomhusks" chooserandom="false" triggereventcooldown="false" allowatstart="true">
-            <EventSet identifier="ruinhusks1" chooserandom="false" triggereventcooldown="false" allowatstart="true">
-              <MonsterEvent characterfile="Husk_RandomLight" minamount="1" maxamount="2" spawntype="ruin" />
-              <MonsterEvent characterfile="Husk_RandomLight" minamount="1" maxamount="1" spawntype="ruin" probability="0.5" />
-              <MonsterEvent characterfile="Husk_RandomTiny" minamount="1" maxamount="1" spawntype="ruin" probability="0.5" />
-            </EventSet>
-            <EventSet identifier="ruinhusks2" chooserandom="false" triggereventcooldown="false" allowatstart="true">
-              <MonsterEvent characterfile="Husk_RandomLight" minamount="1" maxamount="2" spawntype="ruin" />
-              <MonsterEvent characterfile="Humanimmortal" minamount="1" maxamount="1" spawntype="ruin" probability="1" />
-              <MonsterEvent characterfile="Humanimmortalnovice" minamount="1" maxamount="1" spawntype="ruin" probability="1" />
-              <MonsterEvent characterfile="Huskcontainerhostile" minamount="1" maxamount="1" spawntype="ruin" probability="0.5" />
-            </EventSet>
-            <EventSet identifier="ruinhusks3" chooserandom="false" triggereventcooldown="false" allowatstart="true">
-              <MonsterEvent characterfile="Husk_RandomHeavy" minamount="1" maxamount="2" spawntype="mazehusk" />
-            </EventSet>
-          </EventSet>
-        </EventSet>
-        <!-- spawn clowns instead of husks -->
-        <EventSet identifier="entrance3_clowns" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="25">
-          <MonsterEvent characterfile="Clownwanderer" minamount="1" maxamount="2" spawntype="ruin" spawnpointtag="encounter_entrance3" />
-          <MonsterEvent characterfile="Clownwrecker" minamount="1" maxamount="2" probability="0.5" spawntype="ruin" spawnpointtag="encounter_entrance3" />
-          <MonsterEvent characterfile="Clowndeathmask" minamount="0" maxamount="1" probability="0.4" spawntype="ruin" spawnpointtag="encounter_entrance3" />
-          <MonsterEvent characterfile="Clownsawcrazy" minamount="1" maxamount="1" probability="0.4" spawntype="ruin" spawnpointtag="encounter_entrance3" />
-        </EventSet>
+      <EventSet identifier="banditshostage1" requiredspawnpointtag="beacon_bandit" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
+        <ScriptedEvent identifier="beaconbandit">
+          <TriggerEventAction identifier="beaconbandits5" />
+        </ScriptedEvent>
+        <SpawnAction npcsetidentifier="abandonedoutpostnpcs" npcidentifier="hostage" targettag="beacon_hostage" spawnpointtag="saferoom" spawnlocation="beaconstation" requirespawnpointtag="true" team="FriendlyNPC" />
+        <AfflictionAction targettag="beacon_hostage" affliction="blunttrauma" strength="10" />
+      </EventSet>
+      <EventSet identifier="banditshostage2" requiredspawnpointtag="beacon_bandit" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="5">
+        <ScriptedEvent identifier="beaconbandit">
+          <TriggerEventAction identifier="beaconbandits5" />
+        </ScriptedEvent>
+        <SpawnAction npcsetidentifier="abandonedoutpostnpcs" npcidentifier="hostage" targettag="beacon_hostage" spawnpointtag="saferoom" spawnlocation="beaconstation" requirespawnpointtag="true" team="FriendlyNPC" />
+        <AfflictionAction targettag="beacon_hostage" affliction="blunttrauma" strength="10" />
+        <AfflictionAction targettag="beacon_hostage" affliction="huskinfection" strength="25" />
+      </EventSet>
+      <EventSet identifier="banditsmonster1" requiredspawnpointtag="beacon_bandit" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="5">
+        <ScriptedEvent identifier="beaconbandit">
+          <TriggerEventAction identifier="beaconbandits5" />
+        </ScriptedEvent>
+        <MonsterEvent characterfile="Crawlersmart" amount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Crawler_large2" amount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+      </EventSet>
+      <EventSet identifier="banditsmonster2" requiredspawnpointtag="beacon_bandit" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="5">
+        <ScriptedEvent identifier="beaconbandit">
+          <TriggerEventAction identifier="beaconbandits5" />
+        </ScriptedEvent>
+        <MonsterEvent characterfile="Xan_scavenger" amount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
+      </EventSet>
+      <EventSet identifier="banditsmonster3" requiredspawnpointtag="beacon_bandit" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="5">
+        <ScriptedEvent identifier="beaconbandit">
+          <TriggerEventAction identifier="beaconbandits5" />
+        </ScriptedEvent>
+        <SpawnAction npcsetidentifier="abandonedoutpostnpcs" npcidentifier="hostage" targettag="beacon_hostage" spawnpointtag="saferoom" spawnlocation="beaconstation" requirespawnpointtag="true" team="FriendlyNPC" />
+        <AfflictionAction targettag="beacon_hostage" affliction="blunttrauma" strength="10" />
+        <AfflictionAction targettag="beacon_hostage" affliction="huskinfection" strength="75" />
+        <MonsterEvent characterfile="Husk_RandomLight" amount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
+      </EventSet>
+      <EventSet identifier="banditsmonster3" requiredspawnpointtag="beacon_bandit" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="5">
+        <ScriptedEvent identifier="beaconbandit">
+          <TriggerEventAction identifier="beaconbandits4" />
+        </ScriptedEvent>
+        <SpawnAction npcsetidentifier="abandonedoutpostnpcs" npcidentifier="hostage" targettag="beacon_hostage" spawnpointtag="saferoom" spawnlocation="beaconstation" requirespawnpointtag="true" team="FriendlyNPC" />
+        <AfflictionAction targettag="beacon_hostage" affliction="blunttrauma" strength="10" />
+        <AfflictionAction targettag="beacon_hostage" affliction="huskinfection" strength="75" />
+        <MonsterEvent characterfile="Husk_RandomTiny" amount="4" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
+      </EventSet>
+      <EventSet identifier="crawlernest" requiredspawnpointtag="beacon_crawler" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="5">
+        <ScriptedEvent identifier="nestlayer">
+          <LayerAction layer="crawler_nest" enabled="true" />
+        </ScriptedEvent>
+        <MonsterEvent characterfile="Crawler" minamount="2" maxamount="3" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Crawler_large2" minamount="2" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+      </EventSet>
+      <EventSet identifier="crawlernest2" requiredspawnpointtag="beacon_crawler" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="5">
+        <ScriptedEvent identifier="nestlayer">
+          <LayerAction layer="crawler_nest" enabled="true" />
+        </ScriptedEvent>
+        <MonsterEvent characterfile="Crawler" minamount="2" maxamount="3" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Crawlerold" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Crawler_large" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Crawler_large2" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.6" spawnpointtag="beacon_crawler" />
+      </EventSet>
+      <EventSet identifier="crawlernest3" requiredspawnpointtag="beacon_crawler" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="5">
+        <ScriptedEvent identifier="nestlayer">
+          <LayerAction layer="crawler_nest" enabled="true" />
+        </ScriptedEvent>
+        <MonsterEvent characterfile="Crawlersmart" minamount="2" maxamount="3" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Crawlerold" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Crawler_large2" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Crawlernaught" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.6" spawnpointtag="beacon_crawler" />
+      </EventSet>
+      <EventSet identifier="crawlernest3" requiredspawnpointtag="beacon_crawler" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="5">
+        <ScriptedEvent identifier="nestlayer">
+          <LayerAction layer="crawler_nest" enabled="true" />
+        </ScriptedEvent>
+        <MonsterEvent characterfile="Crawlersmart" minamount="2" maxamount="3" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Crawlerold" minamount="2" maxamount="3" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Skrimsl" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.6" spawnpointtag="beacon_crawler" />
+      </EventSet>
+      <EventSet identifier="Scavienest" requiredspawnpointtag="beacon_crawler" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="1">
+        <ScriptedEvent identifier="nestlayer">
+          <LayerAction layer="crawler_nest" enabled="true" />
+        </ScriptedEvent>
+        <MonsterEvent characterfile="ScavieBTC" minamount="2" maxamount="3" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="GrayEel" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.6" spawnpointtag="beacon_crawler" />
+        <MonsterEvent characterfile="Scorpion" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="0.6" spawnpointtag="beacon_crawler" />
+      </EventSet>
+      <EventSet identifier="mudraptornest" requiredspawnpointtag="beacon_mudraptor" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="15">
+        <ScriptedEvent identifier="nestlayer">
+          <LayerAction layer="mudraptor_nest" enabled="true" />
+        </ScriptedEvent>
+        <MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
+        <MonsterEvent characterfile="Mudraptor_mother" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="0.7" spawnpointtag="beacon_mudraptor" />
+        <MonsterEvent characterfile="Mudraptor_veteran" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
+      </EventSet>
+      <EventSet identifier="mudraptornest2" requiredspawnpointtag="beacon_mudraptor" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
+        <ScriptedEvent identifier="nestlayer">
+          <LayerAction layer="mudraptor_nest" enabled="true" />
+        </ScriptedEvent>
+        <MonsterEvent characterfile="Mudraptor" amount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
+        <MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
+        <MonsterEvent characterfile="Mudraptor_veteran2" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
+      </EventSet>
+      <EventSet identifier="empty" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
+        <ScriptedEvent identifier="randombeaconeventset3" >
+          <TriggerEventAction eventtag="emptybeaconevent3" />
+        </ScriptedEvent>
       </EventSet>
     </EventSet>
-    
+
 <!-- 
                                 __            
 __  _  _________   ____   ____ |  | __  ______
@@ -19370,7 +19518,9 @@ ___.
         <MonsterEvent characterfile="Mudraptor_veteran2" minamount="1" maxamount="1" spawntype="beaconstation" spawnprobability="1" spawnpointtag="beacon_mudraptor" />
       </EventSet>
       <EventSet identifier="empty" chooserandom="false" triggereventcooldown="false" allowatstart="true" commonness="10">
-        <ScriptedEvent identifier="shockjock2" />
+        <ScriptedEvent identifier="randombeaconeventset3" >
+          <TriggerEventAction eventtag="emptybeaconevent3" />
+        </ScriptedEvent>
       </EventSet>
     </EventSet>
 
