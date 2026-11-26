@@ -20,6 +20,10 @@
       <Affliction Strength="1" Identifier="huskinfection" Probability="0.5" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
       <Affliction Strength="0.5" Identifier="stun" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
     </attack>
+	<lightsource Color="255,255,255,255" Range="240" Scale="1" Offset="0,0" Rotation="0" Directional="False" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
+      <lighttexture Texture="Content/Lights/lightcone.png" Origin="0.01,0.5" Size="1,1" />
+	  <Conditional HealthPercentage="gte 40" />
+    </lightsource>
   </limb>
   <limb Name="RightArm (2)" ID="2" Type="RightArm" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="15" Height="50" Width="0" Density="10" IgnoreCollisions="False" AngularDamping="50" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="3" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
     <sprite SourceRect="272,0,64,96" Origin="0.5,0.5" Depth="0.02" Texture="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprintercombat/rustedcombatsuit.png" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />

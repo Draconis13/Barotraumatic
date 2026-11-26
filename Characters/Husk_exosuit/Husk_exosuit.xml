@@ -4,7 +4,7 @@
   <animations folder="default" />
   <damageemitter drawontop="True" Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="0.1" ScaleMax="0.3" VelocityMin="50" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="5" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <gibemitter Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="0.2" ScaleMax="0.3" VelocityMin="200" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="5" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
-  <health minvitality="-100" Vitality="500" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="10" BurnReduction="0.2" ConstantHealthRegeneration="1" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="0.4" EmpVulnerability="0" ApplyAfflictionColors="False" Immunities="">
+  <health minvitality="-100" Vitality="500" AllowSeveringLegs="false" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="10" BurnReduction="0.2" ConstantHealthRegeneration="1" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="0.4" EmpVulnerability="0" ApplyAfflictionColors="False" Immunities="">
     <Limb name="Head">
       <VitalityMultiplier type="burn" multiplier="2.0" />
     </Limb>
