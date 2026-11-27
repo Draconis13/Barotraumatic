@@ -1,11 +1,11 @@
-﻿<Character SpeciesName="Husksprinterhumanraw" Tags="" SpeciesTranslationOverride="husk" DisplayName="" Group="husk" Humanoid="True" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="True" ShowHealthBar="True" UseBossHealthBar="False" Noise="300" Visibility="300" BloodDecal="blackblood" BleedParticleAir="blackblood" BleedParticleWater="blackwaterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="True" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False" SimplePhysicsDistanceOffscreen="500">
+﻿<Character Tags="" DisplayName="" HasInfo="False" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="True" ShowHealthBar="True" UseBossHealthBar="False" BleedParticleMultiplier="1" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False" SpeciesName="Husksprinterhumanraw" SpeciesTranslationOverride="husk" Group="husk" Humanoid="True" CanInteract="True" Noise="300" Visibility="300" BloodDecal="blackblood" BleedParticleAir="blackblood" BleedParticleWater="blackwaterblood" CanEat="False" HideInThermalGoggles="True" SimplePhysicsDistanceOffscreen="500">
   <ragdolls folder="default" />
   <animations folder="default" />
-  <bloodemitter Particle="blackblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="5" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
-  <bloodemitter Particle="blackwaterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
-  <gibemitter Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="50" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
-  <gibemitter Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="50" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
-  <health minvitality="-90" Vitality="110" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="2.5" BurnReduction="0.1" ConstantHealthRegeneration="0.5" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="0.5" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="">
+  <bloodemitter AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" HighQualityCollisionDetection="False" CopyEntityAngle="False" Particle="blackblood" ParticleAmount="5" />
+  <bloodemitter AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" HighQualityCollisionDetection="False" CopyEntityAngle="False" Particle="blackwaterblood" ParticleAmount="1" />
+  <gibemitter AngleMin="0" ScaleMin="1" ScaleMax="1" EmitInterval="0" ParticlesPerSecond="0" HighQualityCollisionDetection="False" CopyEntityAngle="False" Particle="blackgib" AngleMax="360" VelocityMin="50" VelocityMax="500" ParticleAmount="10" />
+  <gibemitter AngleMin="0" ScaleMin="1" ScaleMax="1" EmitInterval="0" ParticlesPerSecond="0" HighQualityCollisionDetection="False" CopyEntityAngle="False" Particle="blackgib" AngleMax="360" VelocityMin="50" VelocityMax="500" ParticleAmount="10" />
+  <health minvitality="-90" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" Vitality="110" BleedingReduction="2.5" BurnReduction="0.1" ConstantHealthRegeneration="0.5" PoisonVulnerability="0.5">
     <MedUISilhouette texture="Content/UI/Health/MedUI_Silhouette.png" columns="8" rows="2" sourcerect="0,0,1008,748" />
     <MedUIExtra texture="Content/UI/Health/MedUIExtra.png" columns="4" rows="4" sourcerect="0,0,1024,1024" />
     <Limb name="Head">
@@ -45,364 +45,364 @@
       <VitalityMultiplier type="burn" multiplier="1.0" />
     </Limb>
   </health>
-  <ai CombatStrength="90" Sight="0.5" Hearing="1" MaxPerceptionDistance="-1" AggressionHurt="150" AggressionGreed="5" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="False" RandomAttack="False" CanOpenDoors="True" UsePathFindingToGetInside="True" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="True" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0.2">
-    <target Tag="decoy" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="provocative" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="weapon" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="nasonov" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="crawler" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="human" State="Attack" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="sonar" State="Attack" Priority="30" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="room" State="Attack" Priority="10" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="turret" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="searchlight" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="swarmfeeder" State="Idle" Priority="0" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="True" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-    <target Tag="huskinfected" State="Idle" Priority="0" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="True" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="1" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  <ai Hearing="1" MaxPerceptionDistance="-1" FleeHealthThreshold="0" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" EnforceAggressiveBehaviorForMissions="True" RandomAttack="False" KeepDoorsClosed="False" AvoidAbyss="True" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" CombatStrength="90" Sight="0.5" AggressionHurt="150" AggressionGreed="5" AttackWhenProvoked="True" AggressiveBoarding="True" TargetOuterWalls="False" CanOpenDoors="True" UsePathFindingToGetInside="True" StayInAbyss="True" PlayDeadProbability="0.2">
+    <target ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="decoy" State="Attack" Priority="100" IgnoreIfNotInSameSub="True" />
+    <target ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="provocative" State="Attack" Priority="100" IgnoreIfNotInSameSub="True" />
+    <target ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="weapon" State="Attack" Priority="100" IgnoreIfNotInSameSub="True" />
+    <target ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="nasonov" State="Attack" Priority="100" IgnoreInside="True" />
+    <target ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="crawler" State="Attack" Priority="100" IgnoreIncapacitated="True" />
+    <target ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="human" State="Attack" Priority="80" IgnoreIncapacitated="True" />
+    <target ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="sonar" State="Attack" Priority="30" IgnoreInside="True" />
+    <target ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="room" State="Attack" Priority="10" />
+    <target ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="turret" State="Attack" Priority="1" IgnoreInside="True" />
+    <target ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="searchlight" State="Attack" Priority="1" IgnoreInside="True" />
+    <target State="Idle" Priority="0" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="swarmfeeder" IgnoreInside="True" IgnoreOutside="True" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" />
+    <target State="Idle" Priority="0" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" Tag="huskinfected" IgnoreInside="True" IgnoreOutside="True" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="1" />
   </ai>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="30">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="30">
     <Item equip="true" Identifier="idcard" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="20">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="20">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="12">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="12">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="bodyarmor" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="bodyarmor" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="Head" Identifier="divingmask" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="Head" Identifier="divingmask" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="piratebodyarmor" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="piratebodyarmor" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="bombervest" />
     <Item slot="Head" Identifier="clowndivingmask" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="Head" Identifier="raggedclownmask" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="Head" Identifier="clownmask" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="bombervest" />
     <Item slot="Head" Identifier="raggedclownmask" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="12">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="12">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="scrap" />
     <Item slot="InnerClothes" Identifier="engineerseparatistsuniform1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="scrap" />
     <Item slot="InnerClothes" Identifier="engineerseparatistsuniform1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="engineerseparatistsuniform2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="scrap" />
     <Item slot="InnerClothes" Identifier="orangejumpsuit2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="scrap" />
     <Item slot="InnerClothes" Identifier="orangejumpsuit2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="orangejumpsuit2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="scrap" />
     <Item slot="InnerClothes" Identifier="bluejumpsuit1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="scrap" />
     <Item slot="InnerClothes" Identifier="bluejumpsuit1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="bluejumpsuit2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="scrap" />
     <Item slot="InnerClothes" Identifier="mechanicseparatistsuniform1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="scrap" />
     <Item slot="InnerClothes" Identifier="mechanicseparatistsuniform1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="mechanicseparatistsuniform2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="ethanol" />
     <Item slot="InnerClothes" Identifier="assistantclothes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="watchmanclothes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="crewchiefclothes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="opium" />
     <Item slot="InnerClothes" Identifier="researcherclothes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item Identifier="opium" />
     <Item slot="InnerClothes" Identifier="medicalofficerclothes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="orangejumpsuit1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="prisonerclothes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="cultistrobes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="cultistrobes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskfigurine" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="cultistrobes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="separatistcommoner1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="separatistcommoner2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="separatistcommoner3" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="medicseparatistsuniform1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="medicseparatistsuniform2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="doctorsuniform1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="doctorsuniform2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="commonerclothes1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="commonerclothes1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="commonerclothes2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="commonerclothes2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="commonerclothes3" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="commonerclothes3" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="commonerclothes4" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="commonerclothes4" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="securitypatrolclothes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="securitypatrolclothes" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="banditclothes1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="banditclothes2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="5">
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="banditclothes2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="banditclothes1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="bodyarmor" />
     <Item slot="InnerClothes" Identifier="securityuniform1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="bodyarmor" />
     <Item slot="InnerClothes" Identifier="securityuniform2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="piratebodyarmor" />
     <Item slot="InnerClothes" Identifier="securityseparatistsuniform1" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="piratebodyarmor" />
     <Item slot="InnerClothes" Identifier="securityseparatistsuniform2" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="3">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="bombervest" />
     <Item slot="Head" Identifier="clowndivingmask" />
     <Item slot="InnerClothes" Identifier="clowncostume" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="2">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="Head" Identifier="clownmask" />
     <Item slot="InnerClothes" Identifier="clowncostume" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" Commonness="2">
     <Item Identifier="huskeggsbasic" />
     <Item equip="true" Identifier="idcard" />
     <Item slot="Head" Identifier="raggedclownmask" />
     <Item slot="InnerClothes" Identifier="clowncostume" />
   </inventory>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" AccessibleWhenAlive="False" Commonness="1" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface">
     <Item Identifier="huskeggsbasic" />
     <Item Identifier="huskstinger" />
     <Item equip="true" Identifier="idcard" />
@@ -415,16 +415,16 @@
     <SpawnItem identifiers="alienblood" spawnposition="ThisInventory" count="1" probability="0.1" />
     <SpawnItem identifiers="huskeggsbasic" spawnposition="ThisInventory" count="1" probability="0.03" />
   </StatusEffect>
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/idle1.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/idle2.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/idle3.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/idle4.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/attack1.ogg" State="Attack" Range="1500" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/attack2.ogg" State="Attack" Range="1500" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/attack3.ogg" State="Attack" Range="1500" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/damage1.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/damage2.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/damage3.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/death1.ogg" State="Die" Range="1000" Volume="1" Tags="" />
-  <sound gender="None" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/death2.ogg" State="Die" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" State="Idle" Range="1000" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/idle1.ogg" />
+  <sound gender="None" State="Idle" Range="1000" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/idle2.ogg" />
+  <sound gender="None" State="Idle" Range="1000" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/idle3.ogg" />
+  <sound gender="None" State="Idle" Range="1000" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/idle4.ogg" />
+  <sound gender="None" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/attack1.ogg" State="Attack" Range="1500" />
+  <sound gender="None" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/attack2.ogg" State="Attack" Range="1500" />
+  <sound gender="None" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/attack3.ogg" State="Attack" Range="1500" />
+  <sound gender="None" Range="1000" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/damage1.ogg" State="Damage" />
+  <sound gender="None" Range="1000" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/damage2.ogg" State="Damage" />
+  <sound gender="None" Range="1000" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/damage3.ogg" State="Damage" />
+  <sound gender="None" Range="1000" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/death1.ogg" State="Die" />
+  <sound gender="None" Range="1000" Volume="1" Tags="" File="%ModDir:2518816103%/Characters/NightmareCreatures/StationCreatures/Husksprinterhumanold/death2.ogg" State="Die" />
 </Character>

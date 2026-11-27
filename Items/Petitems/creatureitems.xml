@@ -81,7 +81,7 @@
       <RequiredSkill identifier="medical" level="5" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
-      <StatusEffect tags="medical" type="OnUse" target="Character, This" duration="15">
+      <StatusEffect tags="medical" target="Character, This" duration="15">
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="bloodloss" amount="2" />
 		<Affliction identifier="nausea" amount="2.25" />

@@ -54,6 +54,6 @@
     <item Identifier="quartz" />
   </inventory>
     <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="1" probability="1" />
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="1" probability="1" />
   </StatusEffect>
 </Character>

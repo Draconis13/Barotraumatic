@@ -24,17 +24,17 @@
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
     <Item Identifier="Prawnshell" />
     <Item Identifier="shrimpclaw" />
-    <Item forcetoslot="true" amount="2" Identifier="alienblood" />
+    <Item amount="2" Identifier="alienblood" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
     <Item Identifier="Prawnshell" />
     <Item Identifier="shrimpantenna" />
-    <Item forcetoslot="true" amount="2" Identifier="alienblood" />
+    <Item amount="2" Identifier="alienblood" />
     <Item Identifier="shrimpclaw" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="Prawnshell" />
-    <Item forcetoslot="true" Identifier="diversremains" />
+    <Item Identifier="diversremains" />
     <Item Identifier="shrimpclaw" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
@@ -44,7 +44,7 @@
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="Prawnshell" />
-    <Item forcetoslot="true" Identifier="diversremains" />
+    <Item Identifier="diversremains" />
     <Item Identifier="shrimpantenna" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
@@ -54,12 +54,12 @@
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
     <Item Identifier="Prawnshell" />
-    <Item forcetoslot="true" amount="2" Identifier="alienblood" />
+    <Item amount="2" Identifier="alienblood" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="Prawnshell" />
     <Item Identifier="shrimpantenna" />
-    <Item forcetoslot="true" amount="2" Identifier="alienblood" />
+    <Item amount="2" Identifier="alienblood" />
   </Inventory>
   <sound File="%ModDir:2518816103%\Characters\Prawn_Horned\Bauur1.OGG" State="Damage" Range="1500" Volume="1" Tags="" />
   <sound File="%ModDir:2518816103%\Characters\Prawn_Horned\Bauur2.OGG" State="Damage" Range="1000" Volume="1" Tags="" />

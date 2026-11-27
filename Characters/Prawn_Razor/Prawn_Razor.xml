@@ -20,10 +20,10 @@
     <target Tag="Prawn_Horned" State="Idle" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
   </ai>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
-    <Item forcetoslot="true" Identifier="diversremains" />
-    <Item forcetoslot="true" Identifier="scrap" />
-    <Item forcetoslot="true" Identifier="scrap" />
-    <Item forcetoslot="true" Identifier="razorshrimpshell" />
+    <Item Identifier="diversremains" />
+    <Item Identifier="scrap" />
+    <Item Identifier="scrap" />
+    <Item Identifier="razorshrimpshell" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.6">
     <Item Identifier="diversremains" />
@@ -42,9 +42,9 @@
   </Inventory>
     <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="shrimpstomach" />
-	<Item forcetoslot="true" Identifier="scrap" />
-    <Item forcetoslot="true" Identifier="scrap" />
-    <Item forcetoslot="true" Identifier="razorshrimpshell" />
+	<Item Identifier="scrap" />
+    <Item Identifier="scrap" />
+    <Item Identifier="razorshrimpshell" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1.2">
     <Item Identifier="shrimpstomach" />
@@ -54,10 +54,10 @@
     <item Identifier="Hydroxyapatite" />
   </Inventory>
       <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
-    <Item forcetoslot="true" Identifier="shrimpantenna" />
-	<Item forcetoslot="true" Identifier="scrap" />
-    <Item forcetoslot="true" Identifier="scrap" />
-    <Item forcetoslot="true" Identifier="razorshrimpshell" />
+    <Item Identifier="shrimpantenna" />
+	<Item Identifier="scrap" />
+    <Item Identifier="scrap" />
+    <Item Identifier="razorshrimpshell" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1.2">
     <Item Identifier="shrimpantenna" />

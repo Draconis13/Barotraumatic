@@ -20,7 +20,7 @@
     <item Identifier="alienblood" />
   </inventory>
   	<StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="1" probability="1" />
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="alienblood" spawnposition="ThisInventory" count="1" probability="0.02" />
   </StatusEffect>
   <bloodemitter Particle="blood" AngleMin="0" AngleMax="0" ScaleMin="0.8" ScaleMax="1" VelocityMin="0" VelocityMax="1" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="True" CopyEntityAngle="False" />

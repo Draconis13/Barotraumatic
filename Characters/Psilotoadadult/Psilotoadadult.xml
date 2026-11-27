@@ -21,7 +21,7 @@
   <Inventory slots="Any, Any, Any, Any, Any, Any" accessiblewhenalive="True" commonness="1" >
   <Item Identifier="hallucinogenicbufotoxin" />
   <Item Identifier="btcsmallswimbladder" />
-  <Item forcetoslot="true" amount="1" Identifier="psilotoadegg" />
+  <Item amount="1" Identifier="psilotoadegg" />
   </Inventory>
   <sound File="%ModDir%/Characters/Psilotoadadult/Froggeridle.ogg" State="Idle" Range="3500" Volume="1" Tags="" />
   <sound File="%ModDir%/Characters/Psilotoadadult/Froggeridle2.ogg" State="Idle" Range="3500" Volume="1" Tags="" />

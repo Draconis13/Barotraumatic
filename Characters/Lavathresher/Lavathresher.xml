@@ -59,7 +59,7 @@
     <Item identifier="diversremains" />
   </Inventory>
 	  <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="1" probability="1" />
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="alienblood" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="alienblood" spawnposition="ThisInventory" count="1" probability="0.5" />
   </StatusEffect>

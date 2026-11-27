@@ -25,13 +25,13 @@
       <!-- Cocking sound, delayed by 1.0 seconds. -->
       <!--               What a cock!             -->
         <StatusEffect type="OnUse" target="this" delay="0.8">
-          <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-          <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
-          <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+          <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" range="3000" selectionmode="Random" />
+          <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" range="3000" />
+          <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" range="3000" />
           <ParticleEmitter particle="casingfirearm" colormultiplier="0.5,0.5,0.5,1" ScaleMultiplier="1.5,1.5" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
         </StatusEffect>
 	 <StatusEffect type="OnBroken" target="This">
-        <sound file="%ModDir%/sounds/pumpshotgunreload.ogg" type="OnUse" volume="0.9" range="3000.0" loop="false" />
+        <sound file="%ModDir%/sounds/pumpshotgunreload.ogg" volume="0.9" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="4.6" stackable="false" />  
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-17"></StatusEffect>
@@ -49,14 +49,14 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <StatusEffect type="OnUse" target="this">
+        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+	  <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <Sound file="Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
-      <StatusEffect type="OnUse" target="this">
-        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
       <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
         <SpawnItem identifier="smground" spawnposition="ThisInventory" />
@@ -69,7 +69,7 @@
       </StatusEffect>
 	  	 <StatusEffect type="OnBroken" target="This">
 	 <ParticleEmitter particle="casingfirearm" colormultiplier="25,25,25,255" ScaleMultiplier="3.6,2.5" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
-        <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" type="OnUse" volume="0.9" range="3000.0" loop="false" />
+        <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" volume="0.9" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2.8" stackable="false" />
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-4.8"></StatusEffect>
@@ -107,7 +107,7 @@
       </StatusEffect>
 	  	  	 <StatusEffect type="OnBroken" target="This">
 	 <ParticleEmitter particle="casingfirearm" ScaleMultiplier="3.6,2.5" colormultiplier="25,25,25,255" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
-        <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" type="OnUse" volume="0.9" range="3000.0" loop="false" />
+        <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" volume="0.9" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2.8" stackable="false" />
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-4.8"></StatusEffect>
@@ -142,7 +142,7 @@
       </StatusEffect>
 	  	 <StatusEffect type="OnBroken" target="This">
 	    <ParticleEmitter particle="casingfirearm" particleamount="6" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
-        <sound file="%ModDir%/sounds/revolverreload.ogg" type="OnUse" volume="0.9" range="3000.0" loop="false" />
+        <sound file="%ModDir%/sounds/revolverreload.ogg" volume="0.9" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="4.2" stackable="false" />
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-17"></StatusEffect>
@@ -158,9 +158,9 @@
     <RangedWeapon reload="3" barrelpos="85,14" spread="1" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" />
-      <Sound file="Content/Items/Weapons/HarpoonGun2.ogg" type="OnUse" />
-      <Sound file="Content/Items/Weapons/HarpoonGun3.ogg" type="OnUse" />
+      <Sound file="Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" range="2000" />
+      <Sound file="Content/Items/Weapons/HarpoonGun2.ogg" type="OnUse" range="2000" />
+      <Sound file="Content/Items/Weapons/HarpoonGun3.ogg" type="OnUse" range="2000" />
       <StatusEffect type="OnUse" target="this">
         <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -174,7 +174,7 @@
         <Remove />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This">
-      <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" type="OnUse" volume="0.9" range="3000.0" loop="false" />
+      <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" volume="0.9" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="4.6" stackable="false" />  
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-17"></StatusEffect>
@@ -199,7 +199,11 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="Old Diving Knife" description="Heavy titanium alloy blade with double edged blade, The tip has been used to gouge and pry metal but remains quite sharp." hideinmenus="true" identifier="humanknife" nameidentifier="" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gunsmith,mountableweapon" Scale="0.6" impactsoundtag="impact_metal_light" inventoryiconcolor="230,215,160,255" spritecolor="230,215,160" >
+  <Item name="Old Diving Knife" description="Heavy titanium alloy blade with double edged point, The tip has been used to gouge and pry metal but remains quite sharp." hideinmenus="true" identifier="humanknife" nameidentifier="" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gunsmith,mountableweapon" Scale="0.6" impactsoundtag="impact_metal_light" inventoryiconcolor="230,215,160,255" spritecolor="230,215,160" >
+    <PreferredContainer primary="weaponholder" />
+    <PreferredContainer primary="secarmcab" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.02" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.02" />
   <Price baseprice="160" sold="false" />
 	 <Deconstruct>
       <Item identifier="titanium" />
@@ -317,8 +321,8 @@
     <Body radius="40" density="15" />
     <Holdable slots="Any,RightHand+LeftHand" holdpos="80,-20" aimpos="100,0" handle1="0,0" controlpose="true" aimable="false" msg="ItemMsgPickUpSelect" />
     <ItemComponent IsActive="false" CharacterUsable="true">
-      <sound type="OnUse" file="Content/Items/Jobgear/Clown/ITEM_cymbalMono.ogg" range="3500" volume="10" SoundSelectionMode="All" />
-      <sound type="OnUse" file="Content/Items/Jobgear/Clown/ITEM_cymbalStereo.ogg" range="2500" volume="1" />
+      <sound file="Content/Items/Jobgear/Clown/ITEM_cymbalMono.ogg" type="OnUse" range="3500" volume="10" SoundSelectionMode="All" />
+      <sound file="Content/Items/Jobgear/Clown/ITEM_cymbalStereo.ogg" type="OnUse" range="2500" volume="1" />
       <StatusEffect type="OnUse" target="This" condition="-100" disabledeltatime="true" >
 	  <Explosion range="1000.0" force="5.0" distancefalloff="true" structuredamage="20" itemdamage="2" shockwave="true" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
 	  </StatusEffect>
@@ -425,7 +429,7 @@
       <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
       <ParticleEmitterHitItem identifiers="ore" particle="iceshards" particlespersecond="5" anglemin="-40" anglemax="40" velocitymin="10" velocitymax="300" scalemin="0.5" scalemax="1.0" />
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="0" velocitymax="50" />
-      <sound file="Content/Items/Tools/PlasmaCutterLoop.ogg" type="OnUse" range="750.0" loop="true" />
+      <sound file="Content/Items/Tools/PlasmaCutterLoop.ogg" type="onuse" range="750.0" loop="true" />
       <Fixable identifier="structure" />
       <LightComponent LightColor="204,178,255,100" range="150" Flicker="0.5">
         <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
@@ -478,15 +482,15 @@
         <Affliction identifier="pressure" strength="80" probability="0.1" />
       </Attack>
       <StatusEffect type="OnUse" target="This">
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit1.ogg" range="800" frequencymultiplier="1.5" selectionmode="Random" />
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit2.ogg" range="800" frequencymultiplier="1.3" />
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit3.ogg" range="800" frequencymultiplier="1.1" />
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit4.ogg" range="800" frequencymultiplier="0.9" />
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit5.ogg" range="800" frequencymultiplier="0.7" />
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit6.ogg" range="800" frequencymultiplier="0.5" />
+        <sound file="Content/Items/Weapons/ToyHammerHit1.ogg" range="800" frequencymultiplier="1.5" selectionmode="Random" />
+        <sound file="Content/Items/Weapons/ToyHammerHit2.ogg" range="800" frequencymultiplier="1.3" />
+        <sound file="Content/Items/Weapons/ToyHammerHit3.ogg" range="800" frequencymultiplier="1.1" />
+        <sound file="Content/Items/Weapons/ToyHammerHit4.ogg" range="800" frequencymultiplier="0.9" />
+        <sound file="Content/Items/Weapons/ToyHammerHit5.ogg" range="800" frequencymultiplier="0.7" />
+        <sound file="Content/Items/Weapons/ToyHammerHit6.ogg" range="800" frequencymultiplier="0.5" />
       </StatusEffect>
       <StatusEffect type="OnUse" delay="0.25" target="UseTarget">
-        <Sound file="Content/Items/Weapons/honk.ogg" type="OnUse" volume="0.2" />
+        <Sound file="Content/Items/Weapons/honk.ogg" volume="0.2" />
       </StatusEffect>
     </MeleeWeapon>
     <aitarget sightrange="500" soundrange="1000" fadeouttime="3" />
@@ -500,7 +504,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <sound file="Content/Items/Weapons/WEAPONS_laserGunShot2.ogg" range="3000" type="OnUse" />
+      <sound file="Content/Items/Weapons/WEAPONS_laserGunShot2.ogg" range="3000" />
       <StatusEffect type="OnUse" target="this">
         <Explosion range="180.0" force="3.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="8.0" />
       </StatusEffect>
@@ -516,12 +520,12 @@
       <!-- Cocking sound, delayed by 1.0 seconds. -->
       <!--               What a cock!             -->
       <StatusEffect type="OnUse" target="this" delay="1.0">
-        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" range="3000" />
       </StatusEffect>
 	  	 <StatusEffect type="OnBroken" target="This">
-        <sound file="%ModDir%/sounds/pumpshotgunreload.ogg" type="OnUse" volume="0.9" range="3000.0" loop="false" />
+        <sound file="%ModDir%/sounds/pumpshotgunreload.ogg" volume="0.9" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="4.6" stackable="false" />  
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-17"></StatusEffect>
@@ -559,7 +563,7 @@
       <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="1" />
 	  	 <StatusEffect type="OnBroken" target="This">
-        <sound file="%ModDir%/sounds/pumpshotgunreload.ogg" type="OnUse" volume="0.9" range="3000.0" loop="false" />
+        <sound file="%ModDir%/sounds/pumpshotgunreload.ogg" volume="0.9" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="4.6" stackable="false" />  
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-9"></StatusEffect>
@@ -580,8 +584,8 @@
     <RangedWeapon launchimpulse="10.0" barrelpos="71,30" spread="0" combatPriority="80" reload="3.2" unskilledspread="10" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Content/Items/Weapons/SyringeGun1.ogg" type="OnUse" range="1000" volume="0.75" />
-      <Sound file="Content/Items/Weapons/SyringeGun2.ogg" type="OnUse" range="1000" volume="0.75" />
+      <Sound file="Content/Items/Weapons/SyringeGun1.ogg" range="1000" type="OnUse" volume="0.75" />
+      <Sound file="Content/Items/Weapons/SyringeGun2.ogg" range="1000" type="OnUse" volume="0.75" />
       <StatusEffect type="OnUse" target="this">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -595,7 +599,7 @@
         <Remove />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This">
-        <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" type="OnUse" volume="0.9" range="3000.0" loop="false" />
+        <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" volume="0.9" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="4.5" stackable="false" />
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-30"></StatusEffect>
@@ -630,7 +634,7 @@
       </StatusEffect>
 	 <StatusEffect type="OnBroken" target="This">
 	 <ParticleEmitter particle="casingfirearm" ScaleMultiplier="3.6,2.5" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
-        <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" type="OnUse" volume="0.9" range="3000.0" loop="false" />
+        <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" volume="0.9" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="3.5" stackable="false" />
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-3.3"></StatusEffect>
@@ -671,7 +675,7 @@
       <RequiredSkill identifier="weapons" level="0" />
 	  	<StatusEffect type="OnBroken" target="This">
 	    <ParticleEmitter particle="casingfirearm" ScaleMultiplier="1.3,1.1" particleamount="6" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
-        <sound file="%ModDir%/sounds/revolverreload.ogg" type="OnUse" volume="1.2" range="3000.0" loop="false" />
+        <sound file="%ModDir%/sounds/revolverreload.ogg" volume="1.2" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="4.8" stackable="false" />
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-17"></StatusEffect>
@@ -741,7 +745,7 @@
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This">
 	 <ParticleEmitter particle="casingfirearm" ScaleMultiplier="3.6,2.5" colormultiplier="25,25,25,255" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
-        <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" type="OnUse" volume="0.9" range="3000.0" loop="false" />
+        <sound file="%ModDir%/sounds/genericreloadmagazine.ogg" volume="0.9" range="3000.0" loop="false" />
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="3.5" stackable="false" />
 	  <StatusEffect type="OnUse" target="this" disabledeltatime="true" condition="-3.3"></StatusEffect>
@@ -757,9 +761,9 @@
     <Body radius="40" height="160" density="12" />
     <RangedWeapon reload="1" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" aimpos="30,-20" handle1="-2,-40" handle2="5,50" swingamount="10,20" swingspeed="1" swingwhenusing="true" msg="ItemMsgPickUpSelect">
-       <sound file="Content/Items/Misc/Guitar1.ogg" type="OnUse"  selectionmode="Random" range="600" loop="true" />
-        <sound file="Content/Items/Misc/Guitar2.ogg" type="OnUse" range="600" loop="true" />
-        <sound file="Content/Items/Misc/Guitar3.ogg" type="OnUse" range="600" loop="true" />
+       <sound file="Content/Items/Misc/Guitar1.ogg"  type="OnUse"  selectionmode="Random" range="600" loop="true" />
+        <sound file="Content/Items/Misc/Guitar2.ogg"  type="OnUse" range="600" loop="true" />
+        <sound file="Content/Items/Misc/Guitar3.ogg"  type="OnUse" range="600" loop="true" />
         <sound file="Content/Items/Misc/GuitarClown.ogg" type="OnUse" range="600" loop="true" />
 	 <StatusEffect type="OnNotContained" target="This" delay="1" stackable="false">
         <SpawnItem identifier="guitar" />
@@ -793,7 +797,7 @@
     <Holdable slots="RightHand+LeftHand" aimable="false" aimpos="25,15" handle1="-10,0" handle2="0,0" swingamount="20,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <sound file="Content/Items/Misc/Harmonica1.ogg" type="OnUse" selectionmode="Random" range="600" loop="true" />
       <sound file="Content/Items/Misc/Harmonica2.ogg" type="OnUse" range="600" loop="true" />
-      <StatusEffect statuseffecttags="playingharmonica" type="OnUse" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect statuseffecttags="playingharmonica" target="Character" duration="0.1" stackable="false" />
 	    <StatusEffect type="OnNotContained" target="This" delay="1" stackable="false">
         <SpawnItem identifier="harmonica" />
     <Remove />
@@ -1031,7 +1035,7 @@
       <StatusEffect type="OnUse" target="Contained" Condition="-0.2">
         <RequiredItem items="mobilebattery" type="Contained" />
       </StatusEffect>
-      <sound file="Content/Items/Diving/ScooterLoop.ogg" type="OnUse" range="500.0" loop="true" />
+      <sound file="Content/Items/Diving/ScooterLoop.ogg" range="500.0" type="OnUse" loop="true" />
     </Propulsion>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery" spawnwithid="batterycelldisposable">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />

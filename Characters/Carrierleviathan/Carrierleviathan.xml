@@ -46,22 +46,22 @@
     <Item Identifier="titanium" />
     <Item Identifier="titanium" />
     <Item Identifier="titanium" />
-    <Item amount="1" forcetoslot="true" Identifier="fuelrod" />
-    <Item forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item amount="1" Identifier="fuelrod" />
+    <Item Identifier="thoriumfuelrod" />
     <Item Identifier="scrap" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="2">
     <Item amount="2" Identifier="huskeggsbasic" />
-    <Item amount="1" forcetoslot="true" Identifier="fulguriumfuelrod" />
-    <Item amount="1" forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item amount="1" Identifier="fulguriumfuelrod" />
+    <Item amount="1" Identifier="thoriumfuelrod" />
     <item Identifier="scrap" />
     <item Identifier="scrap" />
     <item Identifier="diversremains" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="2">
     <Item amount="2" Identifier="titanium" />
-    <Item amount="1" forcetoslot="true" Identifier="thoriumfuelrod" />
-    <Item amount="1" forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item amount="1" Identifier="thoriumfuelrod" />
+    <Item amount="1" Identifier="thoriumfuelrod" />
     <Item amount="2" Identifier="huskeggsbasic" />
     <Item Identifier="scrap" />
     <item Identifier="scrap" />
@@ -69,16 +69,16 @@
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="1">
     <Item amount="2" Identifier="huskeggsbasic" />
-    <Item amount="1" forcetoslot="true" Identifier="fulguriumfuelrodvolatile" />
-    <Item amount="1" forcetoslot="true" Identifier="fuelrod" />
+    <Item amount="1" Identifier="fulguriumfuelrodvolatile" />
+    <Item amount="1" Identifier="fuelrod" />
     <item Identifier="scrap" />
     <item Identifier="scrap" />
     <item Identifier="diversremains" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, RightHand" AccessibleWhenAlive="False" Commonness="1">
     <Item amount="2" Identifier="titanium" />
-    <Item amount="1" forcetoslot="true" Identifier="fulguriumfuelrodvolatile" />
-    <Item amount="1" forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item amount="1" Identifier="fulguriumfuelrodvolatile" />
+    <Item amount="1" Identifier="thoriumfuelrod" />
     <Item amount="2" Identifier="huskeggsbasic" />
     <Item Identifier="scrap" />
     <item Identifier="scrap" />

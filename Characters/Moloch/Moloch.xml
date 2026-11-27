@@ -56,7 +56,7 @@
     </Inventory>
     <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="20">
       <Item Identifier="hydroxyapatite" />
-      <Item forcetoslot="true" Identifier="shellshield" />
+      <Item Identifier="shellshield" />
       <Item Identifier="brockite" />
     </Inventory>
     <ai CombatStrength="1250" Sight="0.075" Hearing="1" MaxPerceptionDistance="-1" AggressionHurt="5" AggressionGreed="1" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0">
@@ -86,7 +86,7 @@
 	  <item Identifier="hydroxyapatite" />
       <item Identifier="brockite" />
       <item Identifier="molochtentacles" />
-    <Item forcetoslot="true" Identifier="shellshield" />
+    <Item Identifier="shellshield" />
     </inventory>
   </Character>
 </Override>

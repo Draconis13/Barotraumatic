@@ -1,7 +1,7 @@
 ﻿<Character SpeciesName="Xan_scavenger" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="scavenger" Humanoid="False" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="7.5" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False" IsContainable="true">
   <ragdolls folder="%ModDir%/Characters/Xan_scavenger/Ragdolls/" />
   <animations folder="%ModDir%/Characters/Xan_scavenger/Animations/" />
-  <health Vitality="420" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.35" BurnReduction="0.05" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0.35" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="0.75" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
+  <health Vitality="440" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.35" BurnReduction="0.03" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0.35" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="0.7" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
   <damageemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.15" ScaleMax="0.2" VelocityMin="200" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <bloodemitter Particle="blood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <bloodemitter Particle="waterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
@@ -31,7 +31,7 @@
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="hydroxyapatite" />
-    <Item forcetoslot="true" Identifier="mudraptorshell" />
+    <Item Identifier="mudraptorshell" />
     <Item Identifier="idcard" />
     <Item amount="3" Identifier="scrap" />
   </Inventory>
@@ -52,11 +52,23 @@
     <Item Identifier="idcard" />
     <Item amount="4" Identifier="scrap" />
   </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
+    <Item amount="2" Identifier="hydroxyapatite" />
+    <Item Identifier="monstermeat" />
+    <Item Identifier="idcard" />
+    <Item amount="4" Identifier="scrap" />
+  </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="hydroxyapatite" />
-    <Item forcetoslot="true" Identifier="mudraptorshell" />
+    <Item Identifier="mudraptorshell" />
     <Item Identifier="idcard" />
     <Item amount="3" Identifier="scrap" />
+  </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
+    <Item amount="2" Identifier="hydroxyapatite" />
+    <Item Identifier="humanribs" />
+    <Item Identifier="idcard" />
+    <Item amount="4" Identifier="scrap" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <Item amount="2" Identifier="hydroxyapatite" />
@@ -65,7 +77,7 @@
     <Item amount="4" Identifier="scrap" />
   </Inventory>
   	<StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="1" probability="1" />
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="3" probability="1" />
 	<SpawnItem identifiers="calcium" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="scrap" spawnposition="ThisInventory" count="1" probability="0.5" />
 	<SpawnItem identifiers="scrap" spawnposition="ThisInventory" count="1" probability="0.5" />

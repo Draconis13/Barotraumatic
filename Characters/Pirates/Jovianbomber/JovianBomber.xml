@@ -69,7 +69,7 @@
     <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
     <Item Identifier="ethanol" />
     <Item amount="1" Identifier="antibleeding1" />
-    <Item slot="OuterClothes" equip="true" forcetoslot="true" Identifier="respawndivingsuit" />
+    <Item slot="OuterClothes" Identifier="respawndivingsuit" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="Headset" Identifier="headset" />
     <Item slot="InnerClothes" Identifier="separatistcommoner2" />

@@ -48,5 +48,10 @@
     <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
     <RemoveCharacter />
   </StatusEffect> -->
+    <StatusEffect type="OnDeconstructed" target="Character">
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="1" probability="1" />
+    <SpawnItem identifiers="saltbulb" spawnposition="ThisInventory" count="1" probability="0.25" />
+    <SpawnItem identifiers="food" spawnposition="ThisInventory" count="1" probability="0.1" />
+  </StatusEffect>
   </Character>
 </override>

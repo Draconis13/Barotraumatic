@@ -707,13 +707,13 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character, This" duration="15">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
         <ReduceAffliction identifier="bleeding" amount="25" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character, This" duration="15">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
         <ReduceAffliction identifier="bleeding" amount="1.25" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -776,13 +776,13 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character, This" duration="15">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
         <ReduceAffliction identifier="bleeding" amount="25" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character, This" duration="15">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
         <ReduceAffliction identifier="bleeding" amount="1.25" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">

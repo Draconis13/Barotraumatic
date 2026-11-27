@@ -100,7 +100,7 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
     <Item amount="2" Identifier="ethanol" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="toyhammer" />
+    <Item slot="RightHand,LeftHand" Identifier="toyhammer" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="Headset" Identifier="headset" />
     <Item slot="Head" Identifier="clowndivingmask" />
@@ -151,7 +151,7 @@
     <Item slot="Card" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="clowncostumesleeveless" />
     <Item amount="2" Identifier="antibleeding1" />
-	<Item slot="Lefthand" forcetoslot="true" Identifier="bikehorn" />
+	<Item slot="Lefthand" Identifier="bikehorn" />
     <Item slot="OuterClothes" Identifier="Clown_divingsuit">
       <Item identifier="oxygentank" />
     </Item>
@@ -161,7 +161,7 @@
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
     <Item slot="RightHand" equip="true" Identifier="humanrevolver" />
 	<Item Identifier="revolver" />
-	<Item slot="Lefthand" forcetoslot="true" Identifier="bikehorn" />
+	<Item slot="Lefthand" Identifier="bikehorn" />
     <Item Identifier="revolverround"  amount="5" maxamount="11" />
     <Item slot="OuterClothes" Identifier="Clown_divingsuit">
       <Item identifier="oxygentank" />
@@ -178,7 +178,7 @@
     <Item Identifier="ethanol" />
     <Item slot="RightHand" equip="true" Identifier="humanrevolver" />
 	<Item Identifier="revolver" />
-	<Item slot="Lefthand" forcetoslot="true" Identifier="bikehorn" />
+	<Item slot="Lefthand" Identifier="bikehorn" />
     <Item Identifier="revolverround" amount="6" />
     <Item slot="Headset" Identifier="headset" />
     <Item slot="Card" Identifier="idcard" />
@@ -364,7 +364,7 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
     <Item Identifier="ethanol" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="toyhammer" />
+    <Item slot="RightHand,LeftHand" Identifier="toyhammer" />
     <Item slot="Headset" Identifier="headset" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="Head" Identifier="mimemask" />
@@ -395,7 +395,7 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
     <Item amount="2" Identifier="ethanol" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="toyhammer" />
+    <Item slot="RightHand,LeftHand" Identifier="toyhammer" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="Headset" Identifier="headset" />
     <Item slot="Head" Identifier="clowndivingmask" />
@@ -446,7 +446,7 @@
     <Item slot="Card" Identifier="idcard" />
     <Item slot="InnerClothes" Identifier="clowncostumesleeveless" />
     <Item amount="2" Identifier="antibleeding1" />
-	<Item slot="Lefthand" forcetoslot="true" Identifier="bikehorn" />
+	<Item slot="Lefthand" Identifier="bikehorn" />
     <Item slot="OuterClothes" Identifier="btcclownrespawndivingsuit">
       <Item identifier="oxygentank" />
     </Item>
@@ -456,7 +456,7 @@
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
     <Item slot="RightHand" equip="true" Identifier="humanrevolver" />
 	<Item Identifier="revolver" />
-	<Item slot="Lefthand" forcetoslot="true" Identifier="bikehorn" />
+	<Item slot="Lefthand" Identifier="bikehorn" />
     <Item Identifier="revolverround"  amount="5" maxamount="11" />
     <Item slot="OuterClothes" Identifier="btcclownrespawndivingsuit">
       <Item identifier="oxygentank" />
@@ -472,7 +472,7 @@
     <Item Identifier="ethanol" />
     <Item slot="RightHand" equip="true" Identifier="humanrevolver" />
 	<Item Identifier="revolver" />
-	<Item slot="Lefthand" forcetoslot="true" Identifier="bikehorn" />
+	<Item slot="Lefthand" Identifier="bikehorn" />
     <Item Identifier="revolverround" amount="6" />
     <Item slot="Headset" Identifier="headset" />
     <Item slot="Card" Identifier="idcard" />
@@ -660,7 +660,7 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
     <Item Identifier="ethanol" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="toyhammer" />
+    <Item slot="RightHand,LeftHand" Identifier="toyhammer" />
     <Item slot="Headset" Identifier="headset" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="Head" Identifier="mimemask" />
@@ -673,7 +673,7 @@
   </inventory>
     <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
     <Item amount="2" Identifier="ethanol" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="toyhammer" />
+    <Item slot="RightHand,LeftHand" Identifier="toyhammer" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="Headset" Identifier="headset" />
     <Item slot="Head" Identifier="btcclownmaskhobo" />
@@ -763,7 +763,7 @@
   </inventory>
     <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
     <Item Identifier="ethanol" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="toyhammer" />
+    <Item slot="RightHand,LeftHand" Identifier="toyhammer" />
     <Item slot="Headset" Identifier="headset" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="Head" Identifier="btcclownmaskgrey" />

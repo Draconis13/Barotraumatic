@@ -31,7 +31,7 @@
   </Inventory>
   <Inventory Slots="Any, Any,Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="hydroxyapatite" />
-    <Item forcetoslot="true" Identifier="mudraptorshell" />
+    <Item Identifier="mudraptorshell" />
   </Inventory>
   <Inventory Slots="Any, Any,Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="hydroxyapatite" />

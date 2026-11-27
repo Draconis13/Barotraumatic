@@ -30,7 +30,7 @@
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="hydroxyapatite" />
-    <Item forcetoslot="true" Identifier="mudraptorshell" />
+    <Item Identifier="mudraptorshell" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="hydroxyapatite" />
@@ -56,12 +56,12 @@
     <Item Identifier="mudclaw" />
     <Item Identifier="mudclaw" />
   </Inventory>
-    <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="2" probability="1" />
+  <StatusEffect type="OnDeconstructed" target="Character">
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="2" probability="1" />
     <SpawnItem identifiers="hydroxyapatite" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="hydroxyapatite" spawnposition="ThisInventory" count="1" probability="0.5" />
     <SpawnItem identifiers="smallmudraptoregg" spawnposition="ThisInventory" count="1" probability="0.05" />
-    <SpawnItem identifiers="mudraptorshell" spawnposition="ThisInventory" count="1" probability="0.02" />
+    <SpawnItem identifiers="mudraptorshell" spawnposition="ThisInventory" count="1" probability="0.08" />
   </StatusEffect>
   <ai CombatStrength="240" Sight="1" Hearing="1" AggressionHurt="300" AggressionGreed="20" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="True" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Steering">
     <latchonto attachtowalls="true" attachtosub="false" attachlimb="HeadArmor" />

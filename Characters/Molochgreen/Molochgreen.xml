@@ -38,7 +38,7 @@
   <Inventory slots="Any, Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="1">
     <Item identifier="molochbone" />
     <Item identifier="hydroxyapatite" />
-    <Item identifier="shellshield" forcetoslot="true" />
+    <Item identifier="shellshield" />
     <Item identifier="brockite" />
   </Inventory>
   <ai combatstrength="2000" sight="0.075" hearing="1" aggressionhurt="5" aggressiongreed="1" fleehealththreshold="0" attackwhenprovoked="True" aggressiveboarding="False" avoidgunfire="False" enforceaggressivebehaviorformissions="True" targetouterwalls="True" randomattack="False">

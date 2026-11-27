@@ -640,7 +640,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.95" deflectprojectiles="false" />
     </Wearable>
   </Item>
-  <Item name="Jovian diving suit" identifier="jovian_divingsuit" category="Diving" tags="diving,deepdiving,divingsuit" scale="0.5" fireproof="true" description="A scavenged combat suit which seems to be a modified from a standard suit, but the oxygen source is an esoteric sealed chamber with a hook up for standard bottles. Pressure Resistance(5750)" impactsoundtag="impact_metal_heavy">
+  <Item name="Jovian diving suit" identifier="jovian_divingsuit" category="Diving" tags="diving,deepdiving,divingsuit" scale="0.5" fireproof="true" description="A scavenged combat suit which seems to be a modified from a standard suit, but the oxygen source is an esoteric sealed chamber with a hook up for standard bottles. Pressure Resistance(5750)" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
     <Price baseprice="980" soldeverywhere="false" minleveldifficulty="35">
       <Price storeidentifier="outpost" multiplier="1" sold="true" minavailable="0" maxavailable="1">
         <Reputation faction="separatists" min="40" />
@@ -792,7 +792,7 @@
     </ItemContainer>
     <aitarget maxsightrange="1500" />
   </Item>
-  <Item name="Heavy Jovian diving suit" identifier="Heavyjovian_divingsuit" category="Diving" tags="diving,deepdiving,divingsuit" scale="0.5" fireproof="true" description="Slow, bulky and a little rusty this adhoc abyss style suit provides decent protection and almost as much depth rating, similar to other jovian suits the oxygen source is an esoteric sealed chamber with a hook up for standard bottles. Pressure Resistance(6350)" impactsoundtag="impact_metal_heavy">
+  <Item name="Heavy Jovian diving suit" identifier="Heavyjovian_divingsuit" category="Diving" tags="diving,deepdiving,divingsuit" scale="0.5" fireproof="true" description="Slow, bulky and a little rusty this adhoc abyss style suit provides decent protection and almost as much depth rating, similar to other jovian suits the oxygen source is an esoteric sealed chamber with a hook up for standard bottles. Pressure Resistance(6350)" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1001" soldeverywhere="false" minleveldifficulty="35">
       <Price storeidentifier="outpost" multiplier="1" sold="false" />
       <Price storeidentifier="city" multiplier="1" sold="true" minavailable="0" maxavailable="2">
@@ -1554,7 +1554,7 @@
         <Affliction identifier="increasedmeleedamage2" amount="1" />
       </StatusEffect>
       <StatusEffect type="OnWearing" targettype="This" SoundRange="1000" setvalue="true">
-        <sound file="Content/Items/Alien/ALIEN_researchStationLoop.ogg" type="OnUse" range="650.0" loop="true" volume="0.65" frequencymultiplier="0.35" />
+        <sound file="Content/Items/Alien/ALIEN_researchStationLoop.ogg" range="650.0" loop="true" volume="0.65" frequencymultiplier="0.35" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <Remove />

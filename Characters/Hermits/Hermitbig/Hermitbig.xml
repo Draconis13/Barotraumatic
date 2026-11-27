@@ -30,7 +30,7 @@
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="8">
     <Item Identifier="antibleeding1" />
-    <Item forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item Identifier="thoriumfuelrod" />
     <Item amount="4" Identifier="scrap" />
     <item amount="3" Identifier="aluminium" />
     <item amount="4" Identifier="iron" />

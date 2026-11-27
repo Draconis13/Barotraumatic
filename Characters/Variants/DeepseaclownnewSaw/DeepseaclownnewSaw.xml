@@ -32,13 +32,13 @@
   </ai>
   <inventory Slots="Card, RightHand, LeftHand, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="4"> 
     <Item slot="Card" Identifier="idcard" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="Sawcrazychainsaw" />
+    <Item slot="RightHand" Identifier="Sawcrazychainsaw" />
     <Item Identifier="ethanol" />
     <Item Identifier="huskeggsbasic" />
   </inventory>
     <inventory Slots="Card, RightHand, LeftHand, Any, Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="4">
     <Item slot="Card" Identifier="idcard" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="clownsawcutter" />
+    <Item slot="RightHand" Identifier="wreckerbigshredder" />
     <Item Identifier="ethanol" />
     <Item Identifier="huskeggsbasic" />
   </inventory>

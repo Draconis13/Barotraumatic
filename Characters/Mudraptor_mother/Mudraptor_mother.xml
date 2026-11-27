@@ -42,7 +42,7 @@
   </Inventory>
       <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
       <Item Identifier="hydroxyapatite" />
-      <Item forcetoslot="true" Identifier="mudraptorshell" />
+      <Item Identifier="mudraptorshell" />
     </Inventory>
 	  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
       <Item Identifier="hydroxyapatite" />
@@ -87,7 +87,7 @@
     <Item Identifier="smallmudraptoregg" />
   </Inventory>
   <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="2" probability="1" />
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="2" probability="1" />
     <SpawnItem identifiers="hydroxyapatite" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="hydroxyapatite" spawnposition="ThisInventory" count="1" probability="0.5" />
     <SpawnItem identifiers="smallmudraptoregg" spawnposition="ThisInventory" count="1" probability="0.05" />

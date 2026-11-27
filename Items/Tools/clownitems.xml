@@ -35,7 +35,7 @@
       <StatusEffect type="OnSuccess" targettype="UseTarget" targets="weldable" Stuck="-13.0" />
       <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-10.0" />
       <StatusEffect type="OnPicked" target="Contained" targetidentifiers="batterycell,fulguriumbatterycell">
-        <sound file="%ModDir:2518816103%/Items/Tools/chainsaw.ogg" range="500.0" loop="true" />
+        <sound file="%ModDir:2518816103%/Items/Tools/chainsaw.ogg" type="OnUse" range="500.0" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-20.0" Condition="-8">
         <sound file="%ModDir:2518816103%/Items/Tools/chainsawMetal.ogg" range="500.0" loop="true" />
@@ -45,7 +45,7 @@
       </StatusEffect>
       <StatusEffect type="OnUse" target="Limb" severlimbsprobability="0.05">
         <Conditional EntityType="eq Limb" />
-        <Affliction identifier="lacerations" strength="22" />
+        <Affliction identifier="lacerations" strength="27" />
         <Affliction identifier="lacerations" strength="14" probability="0.35" />
         <Affliction identifier="internaldamage" strength="12" />
         <Affliction identifier="internaldamage" strength="10" probability="0.25" />
@@ -105,7 +105,7 @@
       <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-9.0" />
       <StatusEffect type="OnSuccess" targettype="Limb" severlimbsprobability="0.05">
         <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.92" />
-        <Affliction identifier="lacerations" strength="20" />
+        <Affliction identifier="lacerations" strength="24" />
         <Affliction identifier="lacerations" strength="13" probability="0.40" />
         <Affliction identifier="internaldamage" strength="14" />
         <Affliction identifier="internaldamage" strength="10" probability="0.35" />
@@ -167,7 +167,7 @@
       <StatusEffect type="OnSuccess" targettype="UseTarget" targets="weldable" Stuck="-13.0" />
       <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-10.0" />
       <StatusEffect type="OnPicked" target="Contained" targetidentifiers="batterycell,fulguriumbatterycell">
-        <sound file="%ModDir:2518816103%/Items/Tools/chainsaw.ogg" range="500.0" loop="true" />
+        <sound file="%ModDir:2518816103%/Items/Tools/chainsaw.ogg" type="OnUse" range="500.0" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-20.0" Condition="-8">
         <sound file="%ModDir:2518816103%/Items/Tools/chainsawMetal.ogg" range="500.0" loop="true" />
@@ -177,7 +177,7 @@
       </StatusEffect>
       <StatusEffect type="OnUse" target="Limb" severlimbsprobability="0.05">
         <Conditional EntityType="eq Limb" />
-        <Affliction identifier="lacerations" strength="22" />
+        <Affliction identifier="lacerations" strength="27" />
         <Affliction identifier="lacerations" strength="14" probability="0.35" />
         <Affliction identifier="internaldamage" strength="12" />
         <Affliction identifier="internaldamage" strength="10" probability="0.25" />
@@ -285,7 +285,7 @@
       <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-9.0" />
       <StatusEffect type="OnSuccess" targettype="Limb" severlimbsprobability="0.05">
         <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.92" />
-        <Affliction identifier="lacerations" strength="20" />
+        <Affliction identifier="lacerations" strength="24" />
         <Affliction identifier="lacerations" strength="13" probability="0.40" />
         <Affliction identifier="internaldamage" strength="14" />
         <Affliction identifier="internaldamage" strength="10" probability="0.35" />
@@ -329,6 +329,10 @@
     <AiTarget soundrange="3000" maxsightrange="3000" />
   </Item>
   <Item name="Meat Cleaver" identifier="meatcleaver" nameidentifier="meatcleaver" category="Equipment" Tags="smallitem,weapon" description="A heavy and somewhat dull blade that looks to have been fashioned from a scrap of submarine hull, while capable of gouging through bulkheads it feels strangely light and swings easily." cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="weaponholder" />
+    <PreferredContainer primary="secarmcab" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
     <Deconstruct time="10">
       <Item identifier="steel" />
       <Item identifier="titanium" />

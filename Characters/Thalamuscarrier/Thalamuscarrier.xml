@@ -214,7 +214,7 @@
     <Item Identifier="fuelrod" />
     <Item Identifier="fuelrod" />
     <Item Identifier="titaniumaluminiumalloy" />
-    <Item forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item Identifier="thoriumfuelrod" />
     <Item Identifier="k_em_thalamusstump" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
@@ -230,9 +230,9 @@
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="k_em_thalamusthorn" />
     <Item Identifier="k_em_thalamusstump" />
-    <Item forcetoslot="true" Identifier="thoriumfuelrod" />
-    <Item forcetoslot="true" Identifier="thoriumfuelrod" />
-    <Item forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item Identifier="thoriumfuelrod" />
+    <Item Identifier="thoriumfuelrod" />
+    <Item Identifier="thoriumfuelrod" />
     <Item Identifier="huskeggs" />
     <Item Identifier="huskeggs" />
     <Item Identifier="titaniumaluminiumalloy" />

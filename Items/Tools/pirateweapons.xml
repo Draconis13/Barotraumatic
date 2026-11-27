@@ -70,7 +70,7 @@
         <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
         <ParticleEmitter particle="grenadepin" emitinterval="10" particleamount="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
         <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
-        <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
+        <Sound file="Content/Items/Weapons/pinpull.ogg" range="720" />
       </StatusEffect>
       <StatusEffect type="OnActive" targettype="This" Condition="-10">
       <ParticleEmitter particle="flamethrowersmoke" particlespersecond="10" anglemin="0" anglemax="0" velocitymin="90" velocitymax="175" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />
@@ -171,7 +171,7 @@
         <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
         <ParticleEmitter particle="grenadepin" emitinterval="10" particleamount="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
         <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
-        <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
+        <Sound file="Content/Items/Weapons/pinpull.ogg" range="720" />
       </StatusEffect>
       <StatusEffect type="OnActive" targettype="This" Condition="-9">
         <ParticleEmitter particle="flamethrowersmoke" particlespersecond="25" anglemin="0" anglemax="0" velocitymin="85" velocitymax="150" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />

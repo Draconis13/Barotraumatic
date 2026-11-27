@@ -51,7 +51,7 @@
     <item Identifier="legacysharkjaw" />
   </inventory>
   <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="1" probability="1" />
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="paralyxis" spawnposition="ThisInventory" count="1" probability="0.05" />
   </StatusEffect>
 </Character>

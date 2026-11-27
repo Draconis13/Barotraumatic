@@ -148,7 +148,7 @@
     <Item Identifier="k_em_fractalthorn" />
     <Item Identifier="k_em_fractalthorn" />
     <Item Identifier="k_em_fractalthorn" />
-    <Item forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item Identifier="thoriumfuelrod" />
     <Item Identifier="fulguriumfuelrod" />
   </Inventory>
   <ai CombatStrength="20000" Sight="7" Hearing="7" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="True" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="1" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="6">

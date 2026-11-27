@@ -30,8 +30,8 @@
         </itemproduction>
       </petbehavior>
     </ai>
-	  <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="1" probability="1" />
+  <StatusEffect type="OnDeconstructed" target="Character">
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="food" spawnposition="ThisInventory" count="1" probability="0.1" />
   </StatusEffect>
     <sound file="Content/Characters/Peanut/PEANUT_idle1.ogg" state="Idle" range="1000" volume="1" />

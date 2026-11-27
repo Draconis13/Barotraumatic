@@ -21,15 +21,15 @@
     <target Tag="husk" State="Aggressive" Priority="100" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
   </ai>
   <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
-    <Item Identifier="fuelrod" />
+    <Item slot="OuterClothes" Identifier="wreckexosuit" />
+	<Item Identifier="fuelrod" />
     <Item Identifier="fpgacircuit" />
     <Item amount="2" Identifier="scrap" />
-    <Item slot="OuterClothes" forcetoslot="true" Identifier="wreckexosuit" />
   </inventory>
   <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="8">
-    <Item amount="2" Identifier="scrap" />
+    <Item slot="OuterClothes" Identifier="wreckexosuit" />
+	<Item amount="2" Identifier="scrap" />
     <Item Identifier="fpgacircuit" />
-    <Item slot="OuterClothes" forcetoslot="true" Identifier="wreckexosuit" />
   </inventory>
   <StatusEffect type="OnActive" delay="13" target="This">
     <Affliction identifier="strengthen" strength="5" />

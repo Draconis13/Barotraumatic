@@ -30,9 +30,9 @@
         <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
       </StatusEffect>
       <StatusEffect type="OnDeath" target="This" Snapped="true">
-        <Sound file="Content/Sounds/Damage/Gore1.ogg" range="2000" selectionmode="Random" />
-        <Sound file="Content/Sounds/Damage/Gore2.ogg" range="2000" />
-        <Sound file="Content/Sounds/Damage/Gore3.ogg" range="2000" />
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="2000" selectionmode="Random" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="2000" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="2000" />
         <ParticleEmitter particle="organeruption" particleamount="50" scalemin="0.5" scalemax="1" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" />
         <ParticleEmitter particle="heavygib" drawontop="true" particleamount="3" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
         <ParticleEmitter particle="gib" particleamount="20" scalemin="0.25" scalemax="1" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
@@ -290,10 +290,10 @@
       <StatusEffect type="OnImpact" target="This">
         <particleemitter drawontop="true" particle="shrapnel" particleamount="20" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
         <particleemitter drawontop="false" particle="iceshards" particleamount="20" scalemin="1" scalemax="3" anglemin="0" anglemax="360" />
-        <sound file="%ModDir:2518816103%/Sounds/IceCrash1.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
-        <sound file="%ModDir:2518816103%/Sounds/IceCrash2.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
-        <sound file="%ModDir:2518816103%/Sounds/IceCrash3.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
-        <sound file="%ModDir:2518816103%/Sounds/IceCrash4.ogg" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
+        <sound file="%ModDir:2518816103%/Sounds/IceCrash1.ogg" type="OnUse" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
+        <sound file="%ModDir:2518816103%/Sounds/IceCrash2.ogg" type="OnUse" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
+        <sound file="%ModDir:2518816103%/Sounds/IceCrash3.ogg" type="OnUse" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
+        <sound file="%ModDir:2518816103%/Sounds/IceCrash4.ogg" type="OnUse" range="4000" volume="2" dontmuffle="true" selectionmode="Random" />
         <Explosion ignorecover="true" onlyinside="true" range="2000" camerashake="120" distancefalloff="true" structuredamage="5" force="120" playtinnitus="false" showeffects="false" applyfireeffects="false">
           <Affliction identifier="stun" strength="0.6" />
         </Explosion>
@@ -1422,12 +1422,12 @@
       <!-- Expl time -->
       <StatusEffect type="OnNotContained" target="This" delay="13" Condition="-5000" duration="0.1" Stackable="false"></StatusEffect>
       <StatusEffect type="OnImpact" target="This">
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit1.ogg" range="4000" Volume="3" selectionmode="Random" />
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit2.ogg" range="4000" Volume="3" />
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit3.ogg" range="4000" Volume="3" />
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit4.ogg" range="4000" Volume="3" />
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit5.ogg" range="4000" Volume="3" />
-        <Sound type="OnUse" file="Content/Items/Weapons/ToyHammerHit6.ogg" range="4000" Volume="3" />
+        <Sound file="Content/Items/Weapons/ToyHammerHit1.ogg" range="4000" Volume="3" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ToyHammerHit2.ogg" range="4000" Volume="3" />
+        <Sound file="Content/Items/Weapons/ToyHammerHit3.ogg" range="4000" Volume="3" />
+        <Sound file="Content/Items/Weapons/ToyHammerHit4.ogg" range="4000" Volume="3" />
+        <Sound file="Content/Items/Weapons/ToyHammerHit5.ogg" range="4000" Volume="3" />
+        <Sound file="Content/Items/Weapons/ToyHammerHit6.ogg" range="4000" Volume="3" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" delay="7" Condition="-10000"></StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -2074,7 +2074,7 @@
     <Body width="10" height="10" density="10" gravityscale="0" />
     <Projectile characterusable="false" launchimpulse="0.0" damagedoors="false">
       <StatusEffect type="OnSpawn" target="This">
-        <sound file="Content/Items/Weapons/GRAVITYSHELLS_boom.ogg" volume="2" range="25000" type="OnUse" />
+        <sound file="Content/Items/Weapons/GRAVITYSHELLS_boom.ogg" volume="2" range="25000" />
         <!-- initial "explosion" -->
         <ParticleEmitter particle="cyborgammotracer" particleamount="25" anglemin="0" anglemax="360" distancemin="0" distancemax="150" scalemin="1" scalemax="2" velocitymin="-50" velocitymax="0" />
         <ParticleEmitter particle="gravityshellfx" particleamount="50" anglemin="0" anglemax="360" distancemin="0" distancemax="0" scalemin="0.1" scalemax="0.5" />

@@ -76,51 +76,51 @@
   <sound File="%ModDir%/Characters/Scavie/SCAVIE5.ogg" State="Attack" Range="500" Volume="1" Tags="" />
   <sound File="%ModDir%/Characters/Scavie/SCAVIE6.ogg" State="Attack" Range="500" Volume="1" Tags="" />
   <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
-    <Item slot="RightHand" forcetoslot="true" Identifier="scavieclawsbtc" />
-    <Item slot="LeftHand" forcetoslot="true" Identifier="scavieclawsbtc" />
+    <Item slot="RightHand" Identifier="scavieclawsbtc" />
+    <Item slot="LeftHand" Identifier="scavieclawsbtc" />
     <Item Identifier="ethanol" />
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
     <Item slot="Card" Identifier="idcard" />
   </inventory>
   <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
-    <Item slot="RightHand" forcetoslot="true" Identifier="scavieclawsbtc" />
-    <Item slot="LeftHand" forcetoslot="true" Identifier="scavieclawsbtc" />
+    <Item slot="RightHand" Identifier="scavieclawsbtc" />
+    <Item slot="LeftHand" Identifier="scavieclawsbtc" />
     <Item Identifier="ethanol" />
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
     <Item slot="Card" Identifier="idcard" />
   </inventory>
   <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
-    <Item slot="RightHand" forcetoslot="true" Identifier="scavieclawsbtc" />
-    <Item slot="LeftHand" forcetoslot="true" Identifier="scavieclawsbtc" />
+    <Item slot="RightHand" Identifier="scavieclawsbtc" />
+    <Item slot="LeftHand" Identifier="scavieclawsbtc" />
     <Item Identifier="ethanol" />
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
     <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" forcetoslot="true" Identifier="brokendivingsuit" />
+    <Item slot="OuterClothes" Identifier="brokendivingsuit" />
   </inventory>
     <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
-    <Item slot="RightHand" forcetoslot="true" Identifier="scavieclawsbtc" />
-    <Item slot="LeftHand" forcetoslot="true" Identifier="scavieclawsbtc" />
+    <Item slot="RightHand" Identifier="scavieclawsbtc" />
+    <Item slot="LeftHand" Identifier="scavieclawsbtc" />
     <Item Identifier="ethanol" />
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
     <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" forcetoslot="true" Identifier="bodyarmor" />
+    <Item slot="OuterClothes" Identifier="bodyarmor" />
   </inventory>
       <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
-    <Item slot="RightHand" forcetoslot="true" Identifier="scavieclawsbtc" />
-    <Item slot="LeftHand" forcetoslot="true" Identifier="scavieclawsbtc" />
+    <Item slot="RightHand" Identifier="scavieclawsbtc" />
+    <Item slot="LeftHand" Identifier="scavieclawsbtc" />
     <Item Identifier="ethanol" />
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
     <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" forcetoslot="true" Identifier="piratebodyarmor" />
+    <Item slot="OuterClothes" Identifier="piratebodyarmor" />
   </inventory>
   <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
-    <Item slot="RightHand" forcetoslot="true" Identifier="scavieclawsbtc" />
-    <Item slot="LeftHand" forcetoslot="true" Identifier="scavieclawsbtc" />
+    <Item slot="RightHand" Identifier="scavieclawsbtc" />
+    <Item slot="LeftHand" Identifier="scavieclawsbtc" />
     <Item Identifier="ethanol" />
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
@@ -128,8 +128,8 @@
     <Item slot="InnerClothes" Identifier="scavviejumpsuittied" />
   </inventory>
   <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
-    <Item slot="RightHand" forcetoslot="true" Identifier="scavieclawsbtc" />
-    <Item slot="LeftHand" forcetoslot="true" Identifier="scavieclawsbtc" />
+    <Item slot="RightHand" Identifier="scavieclawsbtc" />
+    <Item slot="LeftHand" Identifier="scavieclawsbtc" />
     <Item Identifier="ethanol" />
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
@@ -137,8 +137,8 @@
     <Item slot="InnerClothes" Identifier="scavviejumpsuittied" />
   </inventory>
   <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
-    <Item slot="RightHand" forcetoslot="true" Identifier="scavieclawsbtc" />
-    <Item slot="LeftHand" forcetoslot="true" Identifier="scavieclawsbtc" />
+    <Item slot="RightHand" Identifier="scavieclawsbtc" />
+    <Item slot="LeftHand" Identifier="scavieclawsbtc" />
     <Item Identifier="ethanol" />
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
@@ -146,8 +146,8 @@
     <Item slot="InnerClothes" Identifier="scavieclowncostume" />
   </inventory>
   <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
-    <Item slot="RightHand" forcetoslot="true" Identifier="scavieclawsbtc" />
-    <Item slot="LeftHand" forcetoslot="true" Identifier="scavieclawsbtc" />
+    <Item slot="RightHand" Identifier="scavieclawsbtc" />
+    <Item slot="LeftHand" Identifier="scavieclawsbtc" />
     <Item Identifier="ethanol" />
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
@@ -160,7 +160,7 @@
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
     <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" forcetoslot="true" Identifier="brokendivingsuit" />
+    <Item slot="OuterClothes" Identifier="brokendivingsuit" />
   </inventory>
     <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item slot="RightHand,LeftHand" Identifier="wreckerbigshredder" />
@@ -168,7 +168,7 @@
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
     <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" forcetoslot="true" Identifier="bodyarmor" />
+    <Item slot="OuterClothes" Identifier="bodyarmor" />
   </inventory>
       <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item slot="RightHand,LeftHand" Identifier="wreckerbigshredder" />
@@ -176,7 +176,7 @@
     <Item amount="2" Identifier="meth" />
     <Item amount="2" Identifier="antibleeding1" />
     <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" forcetoslot="true" Identifier="piratebodyarmor" />
+    <Item slot="OuterClothes" Identifier="piratebodyarmor" />
   </inventory>
   <inventory arrowslot="9" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item slot="RightHand,LeftHand" Identifier="wreckerbigshredder" />

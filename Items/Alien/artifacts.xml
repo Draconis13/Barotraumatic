@@ -90,7 +90,7 @@
         <ParticleEmitter particle="bubbles" particlespersecond="5" anglemin="60" anglemax="120" scalemin="0.5" scalemax="1" velocitymin="20" velocitymax="100" copyentityangle="false" drawontop="true" />
         <ParticleEmitter particle="steamspray" particlespersecond="10" anglemin="60" anglemax="120" scalemin="1" scalemax="2" velocitymin="300" velocitymax="500" copyentityangle="false" highqualitycollisiondetection="true" drawontop="true" />
         <ParticleEmitter particle="steamspray" particlespersecond="5" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1" velocitymin="20" velocitymax="50" copyentityangle="false" highqualitycollisiondetection="true" drawontop="true" colormultiplier="255,255,255,180" />
-        <sound file="Content/Items/Weapons/FlameThrowerLoop.ogg" type="OnUse" range="700.0" loop="True" />
+        <sound file="Content/Items/Weapons/FlameThrowerLoop.ogg" range="700.0" loop="True" />
       </StatusEffect>
     </LightComponent>
   </Item>
@@ -237,10 +237,10 @@
       <StatusEffect type="OnNotContained" target="This" interval="25" >
         <Conditional targetitemcomponent="Holdable" Attached="eq true" />
         <particleemitter particle="shockwavesmall" particleamount="1" scalemin="0.5" scalemax="0.5" />
-        <Sound file="Content/Characters/Husk/Husk_Idle1.ogg" type="OnUse" range="350" selectionmode="Random" />
-        <Sound file="Content/Characters/Husk/Husk_Idle2.ogg" type="OnUse" range="350" />
-        <Sound file="Content/Characters/Husk/Husk_Idle3.ogg" type="OnUse" range="350" />
-        <Sound file="Content/Characters/Husk/Husk_Idle4.ogg" type="OnUse" range="350" />
+        <Sound file="Content/Characters/Husk/Husk_Idle1.ogg" range="350" selectionmode="Random" />
+        <Sound file="Content/Characters/Husk/Husk_Idle2.ogg" range="350" />
+        <Sound file="Content/Characters/Husk/Husk_Idle3.ogg" range="350" />
+        <Sound file="Content/Characters/Husk/Husk_Idle4.ogg" range="350" />
       </StatusEffect>
     </Holdable>
   </Item>

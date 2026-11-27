@@ -117,10 +117,10 @@
       <Item identifier="uex" />
     </Item>
     <Item amount="2" Identifier="ethanol" />
-    <Item slot="RightHand" equip="true" forcetoslot="true" Identifier="humanrevolver" />
+    <Item slot="RightHand" equip="true" Identifier="humanrevolver" />
     <Item Identifier="revolver" />
     <Item Identifier="revolverround" amount="4" maxamount="12" />
-    <Item slot="LeftHand" forcetoslot="true" Identifier="divingknife" />
+    <Item slot="LeftHand" Identifier="divingknife" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="Headset" Identifier="headset" />
     <Item slot="Head" Identifier="piratehelmet" />

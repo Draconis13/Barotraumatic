@@ -61,6 +61,29 @@
     <Item Identifier="crawlerfin" />
     <Item Identifier="idcard" />
   </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="3">
+      <Item Identifier="alienblood" />
+      <Item Identifier="poop" />
+      <Item amount="1" Identifier="crawlertorso" />
+      <Item Identifier="crawlerfin" />
+	  <Item Identifier="idcard" />
+    </Inventory>
+	    <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="3">
+      <Item Identifier="alienblood" />
+      <Item amount="1" Identifier="crawlertorso" />
+      <Item Identifier="crawlerleg" />
+	  <Item Identifier="idcard" />
+    </Inventory>
+		      <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
+      <Item Identifier="alienblood" />
+      <Item Identifier="poop" />
+      <Item amount="1" Identifier="crawlertorso" />
+	  <Item Identifier="idcard" />
+    </Inventory>
+	<Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
+      <Item Identifier="alienblood" />
+      <Item amount="1" Identifier="crawlertorso" />
+    </Inventory>
   <ai TargetInnerWalls="True" CombatStrength="100" Sight="1" Hearing="1" MaxPerceptionDistance="-1" AggressionHurt="200" AggressionGreed="10" FleeHealthThreshold="10" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="False" RandomAttack="False" CanOpenDoors="True" UsePathFindingToGetInside="True" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Steering" PlayDeadProbability="0">
     <target Tag="stronger" State="Avoid" Priority="200" ReactDistance="2000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target Tag="human" State="PassiveAggressive" Priority="20" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
@@ -91,8 +114,10 @@
     <item Identifier="alienblood" />
     <item Identifier="idcard" />
   </inventory>
-  	  <StatusEffect type="OnDeconstructed" target="Character">
+  <StatusEffect type="OnDeconstructed" target="Character">
     <SpawnItem identifiers="alienblood" spawnposition="ThisInventory" count="1" probability="1" />
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="crawlermask" spawnposition="ThisInventory" count="1" probability="0.05" />
+    <SpawnItem identifiers="crawlertorso" spawnposition="ThisInventory" count="1" probability="0.1" />
   </StatusEffect>
 </Character>

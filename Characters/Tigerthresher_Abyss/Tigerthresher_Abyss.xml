@@ -30,33 +30,52 @@
   <bloodemitter Particle="waterblood" AngleMin="1" AngleMax="2" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <gibemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="2" VelocityMin="200" VelocityMax="1500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="30" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="2" VelocityMin="50" VelocityMax="1000" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="15" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
-    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+	<Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
       <Item Identifier="alienblood" />
-      <Item Identifier="hydroxyapatite" />
-      <Item amount="2" Identifier="thresherclaw" />
+	  <Item Identifier="threshertail" />
     </Inventory>
-    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
+	<Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
       <Item Identifier="alienblood" />
+      <Item amount="1" Identifier="thresherclaw" />
+    </Inventory>
+    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
       <Item Identifier="threshertail" />
       <Item Identifier="thresherclaw" />
+	  <Item Identifier="alienblood" />
     </Inventory>
-	  <Inventory slots="Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="3">
-    <Item identifier="alienblood" />
-    <Item identifier="diversremains" />
-  </Inventory>
-  	  <Inventory slots="Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="2">
+	    <Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
+      <Item identifier="tigerthresherbreastfillet" />
+      <Item Identifier="threshertail" />
+	  <Item Identifier="alienblood" />
+    </Inventory>
+	<Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
+      <Item identifier="tigerthresherbreastfillet" />
+      <Item Identifier="thresherclaw" />
+      <Item Identifier="alienblood" />
+    </Inventory>
+		<Inventory Slots="Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
+      <Item identifier="tigerthresherbreastfillet" />
+      <Item Identifier="alienblood" />
+    </Inventory>
+    <Inventory slots="Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="3">
     <Item identifier="alienblood" />
 	<Item Identifier="threshertail" />
     <Item identifier="diversremains" />
   </Inventory>
-    	  <Inventory slots="Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="2">
+  <Inventory slots="Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="3">
     <Item identifier="alienblood" />
 	<Item Identifier="thresherclaw" />
     <Item identifier="diversremains" />
   </Inventory>
-	  <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="1" probability="1" />
+  <Inventory slots="Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="3">
+    <Item identifier="alienblood" />
+	<Item Identifier="tigerthresherbreastfillet" />
+    <Item identifier="diversremains" />
+  </Inventory>
+	<StatusEffect type="OnDeconstructed" target="Character">
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="3" probability="1" />
+    <SpawnItem identifiers="tigerthresherbreastfillet" spawnposition="ThisInventory" count="1" probability="0.6" />
     <SpawnItem identifiers="alienblood" spawnposition="ThisInventory" count="1" probability="1" />
-    <SpawnItem identifiers="alienblood" spawnposition="ThisInventory" count="1" probability="0.5" />
+    <SpawnItem identifiers="alienblood" spawnposition="ThisInventory" count="1" probability="0.6" />
   </StatusEffect>
 </Character>

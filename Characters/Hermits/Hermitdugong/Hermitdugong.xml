@@ -42,14 +42,14 @@
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
     <Item Identifier="antibleeding1" />
-    <Item forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item Identifier="thoriumfuelrod" />
     <Item amount="3" Identifier="scrap" />
     <item amount="2" Identifier="aluminium" />
     <Item amount="1" Identifier="titanium" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="5">
     <Item Identifier="antibleeding1" />
-    <Item forcetoslot="true" Identifier="thoriumfuelrod" />
+    <Item Identifier="thoriumfuelrod" />
     <Item amount="2" Identifier="scrap" />
     <item amount="3" Identifier="steel" />
     <Item amount="1" Identifier="titanium" />

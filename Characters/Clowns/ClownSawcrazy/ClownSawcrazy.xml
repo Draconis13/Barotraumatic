@@ -86,7 +86,7 @@
     <Item slot="Headset" Identifier="headset" />
     <Item slot="OuterClothes" Identifier="piratebodyarmor" />
     <Item slot="InnerClothes" Identifier="clowncostume" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="clowndrillsaw" />
+    <Item slot="RightHand,LeftHand" Identifier="clowndrillsaw" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
     <Item Identifier="ethanol" />
@@ -97,7 +97,7 @@
     <Item slot="Headset" Identifier="headset" />
     <Item slot="OuterClothes" Identifier="piratebodyarmor" />
     <Item slot="InnerClothes" Identifier="clowncostume" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="Sawcrazychainsaw" />
+    <Item slot="RightHand,LeftHand" Identifier="Sawcrazychainsaw" />
   </inventory>
     <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="ethanol" />
@@ -108,7 +108,7 @@
     <Item slot="Headset" Identifier="headset" />
     <Item slot="OuterClothes" Identifier="piratebodyarmor" />
     <Item slot="InnerClothes" Identifier="mimeoutfit" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="clowndrillsaw" />
+    <Item slot="RightHand,LeftHand" Identifier="clowndrillsaw" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="ethanol" />
@@ -119,7 +119,7 @@
     <Item slot="Headset" Identifier="headset" />
     <Item slot="OuterClothes" Identifier="piratebodyarmor" />
     <Item slot="InnerClothes" Identifier="mimeoutfit" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="Sawcrazychainsaw" />
+    <Item slot="RightHand,LeftHand" Identifier="Sawcrazychainsaw" />
   </inventory>
       <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="ethanol" />
@@ -130,7 +130,7 @@
     <Item slot="Headset" Identifier="headset" />
     <Item slot="OuterClothes" Identifier="piratebodyarmor" />
     <Item slot="InnerClothes" Identifier="pierrotcostume" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="clowndrillsaw" />
+    <Item slot="RightHand,LeftHand" Identifier="clowndrillsaw" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="ethanol" />
@@ -141,7 +141,7 @@
     <Item slot="Headset" Identifier="headset" />
     <Item slot="OuterClothes" Identifier="piratebodyarmor" />
     <Item slot="InnerClothes" Identifier="pierrotcostume" />
-    <Item slot="RightHand,LeftHand" forcetoslot="true" Identifier="Sawcrazychainsaw" />
+    <Item slot="RightHand,LeftHand" Identifier="Sawcrazychainsaw" />
   </inventory>
   <Heads>
     <Head tags="head1,male" sheetindex="0,0" />

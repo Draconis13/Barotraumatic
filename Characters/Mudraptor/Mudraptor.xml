@@ -31,16 +31,16 @@
     </Inventory>
     <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
       <Item Identifier="hydroxyapatite" />
-      <Item forcetoslot="true" Identifier="mudraptorshell" />
+      <Item Identifier="mudraptorshell" />
     </Inventory>
 	  <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
       <Item Identifier="hydroxyapatite" />
-      <Item forcetoslot="true" Identifier="mudraptorshell" />
+      <Item Identifier="mudraptorshell" />
 	  <Item Identifier="mudhead" />
     </Inventory>
 	<Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
       <Item Identifier="hydroxyapatite" />
-      <Item forcetoslot="true" Identifier="mudraptorshell" />
+      <Item Identifier="mudraptorshell" />
 	  <Item Identifier="mudclaw" />
     </Inventory>
     <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="10">
@@ -101,10 +101,12 @@
       <Item identifier="hydroxyapatite" />
       <Item identifier="diversremains" />
     </Inventory>
-	  <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="2" probability="1" />
+  <StatusEffect type="OnDeconstructed" target="Character">
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="2" probability="1" />
     <SpawnItem identifiers="hydroxyapatite" spawnposition="ThisInventory" count="1" probability="1" />
-    <SpawnItem identifiers="smallmudraptoregg" spawnposition="ThisInventory" count="1" probability="0.03" />
+    <SpawnItem identifiers="hydroxyapatite" spawnposition="ThisInventory" count="1" probability="0.5" />
+    <SpawnItem identifiers="smallmudraptoregg" spawnposition="ThisInventory" count="1" probability="0.05" />
+    <SpawnItem identifiers="mudraptorshell" spawnposition="ThisInventory" count="1" probability="0.02" />
   </StatusEffect>
     <ai combatstrength="240" sight="1" hearing="1" aggressiveboarding="True" fleehealththreshold="0" aggressiongreed="20" aggressionhurt="300" attackwhenprovoked="True" avoidgunfire="False" enforceaggressivebehaviorformissions="True" targetouterwalls="True" randomattack="True">
       <latchonto attachtowalls="true" attachtosub="false" attachlimb="HeadArmor" />
