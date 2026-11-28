@@ -30,7 +30,7 @@
         <item identifier="hallucinogenicbufotoxin" />
       </itemproduction>
       <itemproduction rate="0.0015" requiredhappiness="80-100" requiredhunger="0-30">
-        <item identifier="psilotoadegg" commonness="30" />
+        <item identifier="psilotoadegg" forcetoslot="true" commonness="30" />
         <item identifier="" commonness="70" />
       </itemproduction>
     </petbehavior>

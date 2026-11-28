@@ -15,7 +15,7 @@
   <sound gender="None" File="%ModDir%/Characters/Psilotoadmonster/TURTLE_takedamage2.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
   <sound File="Content/Characters/Psilotoad/PSILOTOAD_positive.ogg" State="Happy" Range="1000" Volume="1" Tags="" />
   <Inventory Slots="Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
-    <!--  <Item Identifier="psilotoadegg" /> -->
+    <Item Identifier="psilotoadegg" forcetoslot="true" />
     <Item Identifier="deliriumine" />
   </Inventory>
   <Inventory Slots="Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="3">

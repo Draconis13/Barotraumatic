@@ -34,10 +34,10 @@
   </inventory>
   <inventory Slots="Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.2">
     <item amount="2" Identifier="mucusball" />
-    <item Identifier="peanutegg" />
+    <item Identifier="peanutegg" forcetoslot="true" />
   </inventory>
   <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="1" probability="0.5" />
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="1" probability="0.5" />
     <SpawnItem identifiers="mucusball" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="antibloodloss2" spawnposition="ThisInventory" count="1" probability="0.5" />
     <SpawnItem identifiers="scrap" spawnposition="ThisInventory" count="1" probability="0.03" />

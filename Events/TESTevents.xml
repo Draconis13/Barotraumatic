@@ -41,7 +41,7 @@
       <WaitAction time="0.5" />
       <SpawnAction SpeciesName="Caver" offset="3000" />
       <WaitAction time="0.5" />
-      <SpawnAction SpeciesName="Charybdisadol" offset="3000" />
+      <SpawnAction SpeciesName="Charybdis_young" offset="3000" />
       <WaitAction time="0.5" />
       <SpawnAction SpeciesName="Leatherback_Titan" offset="3000" />
       <WaitAction time="0.5" />

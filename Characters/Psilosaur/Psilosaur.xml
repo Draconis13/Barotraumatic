@@ -45,7 +45,7 @@
     <Inventory commoness="8" Slots="Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
       <Item identifier="alienblood" amount="2" />
       <Item identifier="hallucinogenicbufotoxin" amount="2" />
-      <Item identifier="psilotoadegg" />
+      <Item identifier="psilotoadegg" forcetoslot="true" />
       <Item identifier="swimbladder" />
       <Item Identifier="humanribs" amount="2" />
     </Inventory>

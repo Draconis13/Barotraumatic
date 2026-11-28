@@ -55,7 +55,7 @@
     </Inventory>
     <Inventory Slots="Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="20">
       <Item Identifier="hydroxyapatite" />
-      <Item Identifier="shellshield" />
+      <Item Identifier="shellshield" forcetoslot="true" />
       <Item Identifier="brockite" />
       <item Identifier="blackmolochshellpiece" />
     </Inventory>

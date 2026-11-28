@@ -33,6 +33,6 @@
   </inventory>
   <inventory Slots="Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.4">
     <item amount="2" Identifier="mucusball" />
-    <item Identifier="peanutegg" />
+    <item Identifier="peanutegg" forcetoslot="true" />
   </inventory>
 </Character>

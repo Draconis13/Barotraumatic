@@ -35,7 +35,7 @@
       <StatusEffect type="OnSuccess" targettype="UseTarget" targets="weldable" Stuck="-13.0" />
       <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-10.0" />
       <StatusEffect type="OnPicked" target="Contained" targetidentifiers="batterycell,fulguriumbatterycell">
-        <sound file="%ModDir:2518816103%/Items/Tools/chainsaw.ogg" type="OnUse" range="500.0" loop="true" />
+        <sound file="%ModDir:2518816103%/Items/Tools/chainsaw.ogg" range="500.0" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-20.0" Condition="-8">
         <sound file="%ModDir:2518816103%/Items/Tools/chainsawMetal.ogg" range="500.0" loop="true" />
@@ -167,7 +167,7 @@
       <StatusEffect type="OnSuccess" targettype="UseTarget" targets="weldable" Stuck="-13.0" />
       <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-10.0" />
       <StatusEffect type="OnPicked" target="Contained" targetidentifiers="batterycell,fulguriumbatterycell">
-        <sound file="%ModDir:2518816103%/Items/Tools/chainsaw.ogg" type="OnUse" range="500.0" loop="true" />
+        <sound file="%ModDir:2518816103%/Items/Tools/chainsaw.ogg" range="500.0" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-20.0" Condition="-8">
         <sound file="%ModDir:2518816103%/Items/Tools/chainsawMetal.ogg" range="500.0" loop="true" />
