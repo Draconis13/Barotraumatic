@@ -56,7 +56,7 @@
     <Item Identifier="mudclaw" />
   </Inventory>
   <StatusEffect type="OnDeconstructed" target="Character">
-    <SpawnItem identifiers="carbon" spawnposition="ThisInventory" count="2" probability="1" />
+    <SpawnItem identifiers="monstermeat" spawnposition="ThisInventory" count="2" probability="1" />
     <SpawnItem identifiers="hydroxyapatite" spawnposition="ThisInventory" count="1" probability="1" />
     <SpawnItem identifiers="hydroxyapatite" spawnposition="ThisInventory" count="1" probability="0.5" />
     <SpawnItem identifiers="smallmudraptoregg" spawnposition="ThisInventory" count="1" probability="0.05" />

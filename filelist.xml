@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Barotraumatic" modversion="1.0.277" corepackage="False" steamworkshopid="2518816103" gameversion="1.15.33.2" AccentColor="{R:255 G:255 B:255 A:255}">
+<contentpackage name="Barotraumatic" modversion="1.0.278" corepackage="False" steamworkshopid="2518816103" gameversion="1.15.33.2" AccentColor="{R:255 G:255 B:255 A:255}">
   <EventManagerSettings file="%ModDir%/Events/EventManagerSettings.xml" />
   <UIStyle file="%ModDir%/Text/style.xml" />
   <Missions file="%ModDir%/Events/Missions.xml" />

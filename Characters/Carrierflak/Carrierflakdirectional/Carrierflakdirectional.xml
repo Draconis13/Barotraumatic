@@ -8,7 +8,7 @@
     <ParticleEmitter particle="blackwaterblood" particlespersecond="1" scalemin="1" scalemax="2" velocitymin="0" velocitymax="50" anglemin="0" anglemax="360" />
   </StatusEffect>
  <Inventory Slots="Any, Any, Any, Any" AccessibleWhenAlive="True" Commonness="10">
-    <Item Identifier="flakcannondirectionalammobox" />
+    <Item Identifier="flakcannondirectionalammobox" forcetoslot="true" />
     <item Identifier="scrap" />
   </Inventory>
   <StatusEffect type="OnDeath" delay="5" target="This" targetlimb="Head">

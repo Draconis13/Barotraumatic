@@ -347,7 +347,7 @@
   <Item name="water elite noodle arm" identifier="watcherelitetentacle" tags="" health="100" hideinmenus="true" category="" sonarsize="0" scale="1" damagedbyexplosions="false" damagedbyprojectiles="false" damagedbyrepairtools="false" damagedbymeleeweapons="false" impactsoundtag="impact_soft">
     <Sprite texture="%ModDir%/Characters/Watcherelite/tentacle.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
     <Body radius="100" density="10" />
-    <Rope sourcepullforce="800" targetpullforce="-1000" projectilepullforce="0" maxlength="1800" snaponcollision="false" spritewidth="180" tile="false" snapanimduration="1" breakfrommiddle="false" maxangle="60">
+    <Rope sourcepullforce="0" targetpullforce="500" projectilepullforce="0" maxlength="2200" snaponcollision="false" spritewidth="180" tile="false" snapanimduration="1" breakfrommiddle="false" maxangle="60">
       <Sprite name="tentacle" texture="%ModDir%/Characters/Watcherelite/tentacle.png" sourcerect="0,0,1640,356" depth="0.57" origin="0.3,0.5" />
       <EndSprite texture="%ModDir%/Characters/Watcherelite/tentacle.png" sourcerect="0,0,1,1" depth="0.55" scale="0.90" origin="0.3,0.36" />
       <!-- Automatically snap after 14 seconds -->

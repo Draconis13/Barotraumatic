@@ -1,5 +1,5 @@
-﻿<AbyssmonsterSwimFast
-  type="Abyssmonster"
+﻿<Latcher_ScuttlerSwimFast
+  type="Latcher_Scuttler"
   UseSineMovement="True"
   Flip="False"
   FlipCooldown="5"

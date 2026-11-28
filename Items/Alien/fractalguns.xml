@@ -282,7 +282,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <sound file="Content/Items/Weapons/WEAPONS_laserGunShot2.ogg" range="3000" target="this" />
+      <sound file="Content/Items/Weapons/WEAPONS_laserGunShot2.ogg" type="OnUse" range="3000" target="this" />
       <StatusEffect type="OnUse" target="this">
         <Explosion range="180.0" force="3.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="8.0" />
       </StatusEffect>
